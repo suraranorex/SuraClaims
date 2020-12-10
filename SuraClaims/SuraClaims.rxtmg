@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="SuraClaims"
+      id="ff673497-82d8-49c9-8c26-3dd90949004b"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="SuraClaims"
+      id="ff673497-82d8-49c9-8c26-3dd90949004b"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
