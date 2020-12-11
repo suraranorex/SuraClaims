@@ -374,8 +374,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="SiniestroHogar"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<teardown
