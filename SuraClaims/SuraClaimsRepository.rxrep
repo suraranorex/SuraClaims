@@ -146,15 +146,6 @@ name="SuraClaimsRepository">
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table[@class='x-grid-item']/?/?/tr/td[3]/div[@innertext~'[A-Z]+']
 				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="77938439-a65f-4941-9975-48f6f11390c4"
-				name="Copy_of_tagNombreAsegurado"
-				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table[@class='x-grid-item']/?/?/tr/td[3]/div[@innertext~'[A-Z]+']
-				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -895,15 +886,6 @@ name="SuraClaimsRepository">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']//div[@innertext='&lt;ninguna&gt;']
 					</item>
 					<item
-					addcaps="unknown,webelement,litag"
-					capname="litag"
-					id="9e5b1a3e-4ce4-4333-99c6-a5c7be916dfc"
-					name="Copy_of_TipoDocumento"
-					refimgid="d557c4b7-c314-4eb5-b260-8bcd3dd94e8c"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//li[@innertext='D.N.I.']
-					</item>
-					<item
 					addcaps="unknown,webelement,spantag"
 					capname="textareatag"
 					id="8884f03c-2876-407c-af20-b5b53e41a96e"
@@ -1125,71 +1107,13 @@ name="SuraClaimsRepository">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext&gt;'Elementos b&#225;sicos del veh']
 					</item>
 					<item
-					addcaps="unknown,webelement,inputtag"
-					capname="inputtag"
-					id="6f2f196d-8bbd-4caf-ae3d-6b9cd8a4b057"
-					name="select_persona"
-					refimgid="f3dfe246-6a1c-450b-912f-e09d7c922f51"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tbody[#'centerPanel-tbody']/?/?/td/?/?/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[12]/td/div/div/div/div/div/div/div[2]/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Owner_PickerSura']
-					</item>
-					<item
-					addcaps="unknown,webelement,divtag"
-					capname="divtag"
-					id="eb265845-011a-476a-a441-b090618dd359"
-					name="lbl_ReposicionDe"
-					refimgid="ae6d4e1b-d7d7-4b31-88c5-18707a421c84"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[@innertext~'Reposicion de']
-					</item>
-					<item
-					addcaps="unknown,webelement,inputtag"
-					capname="inputtag"
-					id="aa33d05a-402e-4df2-a9b6-9118ee098b0b"
-					name="Button"
-					refimgid="9f0fa402-aa14-4ad4-98ee-051a7fa23d7b"
-					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[8]/td/fieldset/legend/div[1]/div/div/input[@type='button']"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
-					</item>
-					<item
 					addcaps="unknown,webelement,imgtag"
 					capname="imgtag"
 					id="401956ec-4a22-468a-9142-cc99cd25f56e"
 					name="Arrow_BuscaProveedor"
 					refimgid="01231b4c-aba0-46d0-9ecb-a9c297fc3e36"
-					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[8]/td/fieldset/div/div/div/div[1]/div/div/div/div/div/div[3]/a/img[@src='https://i-preproducciongestion.segurossura.com.ar/cc/resources/themes/theme-9/resources/images/app/drop_button.png']"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/fieldset/div/div/div/div[1]/div/div/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src='https://i-preproducciongestion.segurossura.com.ar/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
-					</item>
-					<item
-					addcaps="unknown,webelement,tdtag"
-					capname="tdtag"
-					id="8156cf67-e943-4b53-a48e-4da247e773cc"
-					name="XTableLayoutCell"
-					refimgid="ca4e5d90-ea2d-4a5b-9b54-6898a2953a6b"
-					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[9]/td"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[9]/td
-					</item>
-					<item
-					addcaps="unknown,webelement,divtag"
-					capname="divtag"
-					id="35c24573-2d3e-41aa-b465-b76c6d59dec0"
-					name="ArrowSelectTipoPagoPaso2"
-					refimgid="53967343-d099-4f98-967a-ccc3195b3576"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:Payment_PaymentType-trigger-picker']
-					</item>
-					<item
-					addcaps="unknown,webelement,divtag"
-					capname="divtag"
-					id="9abdaba9-8aee-45f1-bb1c-9d9fa5b84197"
-					name="IncendioParcial"
-					refimgid="b62dc1b9-5869-47a7-a991-ef0f221ae5ab"
-					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[2]/td/div/div/div[@innertext='Incendio Parcial']"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/?/?/table/tbody/tr//table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div[@innertext='Incendio Parcial']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -1217,24 +1141,6 @@ name="SuraClaimsRepository">
 					refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year' and @data-tabindexsaved='True']
-					</item>
-					<item
-					addcaps="unknown,webelement,litag"
-					capname="litag"
-					id="2657eed4-6e1d-4068-971e-928c546edd9a"
-					name="OptionSelecPersonaDeVehiculo"
-					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//li[@innertext~'[A-Z]+']
-					</item>
-					<item
-					addcaps="unknown,webelement,inputtag"
-					capname="inputtag"
-					id="c8ea55c2-2be2-48a7-812b-84724db4c52b"
-					name="txtPropietarioVehiculo"
-					refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Owner_PickerSura']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -1354,6 +1260,15 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
 				</item>
 				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="9000aee2-d1c1-46a8-8401-821981602e64"
+				name="op_policia_No"
+				refimgid="6e54dd22-0e01-4df0-a2e6-210070b6d33c"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
+				</item>
+				<item
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="d18137f3-0e2e-42d0-9ab2-ef14e7f2b579"
@@ -1443,6 +1358,115 @@ name="SuraClaimsRepository">
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Descripci&#243;n del tipo de s']
 				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="bb2b19cc-4065-4939-868b-e2d4cc04e4c2"
+				name="op_ambulancia"
+				refimgid="4bcc785d-4163-4303-aff5-97a1cc6da383"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]//table/tbody/tr[1]/td/div/div/?/?/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="318131d3-13ce-4243-be0e-581d65733e8b"
+				name="txt_TipoAccidente"
+				refimgid="f5fa8952-495a-400a-a775-9cf6aa318299"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AccidentTypeInputSura']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="49c78570-cbc3-4845-81e1-f755e92cdada"
+				name="txtmarca"
+				refimgid="9a00bdb9-0f7b-44e3-aadc-653502b0aa94"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="49e2551c-59aa-4d6e-84f4-3f565169a6a3"
+				name="Copy_of_txtmarca"
+				refimgid="9a00bdb9-0f7b-44e3-aadc-653502b0aa94"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make' and @data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="7d32b63a-56e0-47b9-86e4-b00f55aeaed6"
+				name="txtModelo"
+				refimgid="241c208a-d873-47e3-a61f-e170b8b2b2e0"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="93ca185b-2e2d-4cdd-8879-05863f51782d"
+				name="txtTipo"
+				refimgid="b9d75503-3bff-4557-baf8-9a55e074abdb"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='AUTO']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="a01ba668-e2fd-45f1-b869-21c19800e24f"
+				name="textMarca"
+				refimgid="9d98448e-cdc9-4422-853d-2bef7ff88f7c"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='CHEVROLET']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="0aba3c5b-cc60-4562-8043-df9ede6f111e"
+				name="TipoDocumento"
+				refimgid="d557c4b7-c314-4eb5-b260-8bcd3dd94e8c"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul//li[@innertext='D.N.I.']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="503fdd01-7a8a-41ca-a6f7-f3b5eea07301"
+				name="txtModelo1"
+				refimgid="6e5ffe59-e8c6-4655-976f-a2ff0bdde3b7"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='ONIX']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="eb265845-011a-476a-a441-b090618dd359"
+				name="lbl_ReposicionDe"
+				refimgid="ae6d4e1b-d7d7-4b31-88c5-18707a421c84"
+				searchtimeout="0ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'Reposicion de']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="aa33d05a-402e-4df2-a9b6-9118ee098b0b"
+				name="Button"
+				refimgid="9f0fa402-aa14-4ad4-98ee-051a7fa23d7b"
+				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[8]/td/fieldset/legend/div[1]/div/div/input[@type='button']"
+				searchtimeout="0ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="d6487c32-d016-448f-968c-f18320a9a686"
+				name="BuscarProveedor"
+				refimgid="d8376117-bfce-4379-83be-7bf03d414acf"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']
+				</item>
 			</folder>
 			<folder
 			capname="webdocument"
@@ -1498,33 +1522,6 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div//label[@innertext=$MetodoPagoSiniestro]/..//*[@type='button']
 				</item>
 				<item
-				addcaps="unknown,webelement,labeltag"
-				capname="labeltag"
-				id="51519ae9-e679-406d-809b-dfca744c3c82"
-				name="Cheque"
-				refimgid="bde8ed47-45e4-45cf-8816-82fb1e8fce83"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Cheque']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="c666e2ac-a621-4b2a-8062-ac1736a53dfb"
-				name="OpcionPago"
-				refimgid="63560f75-915c-4090-a4e3-ac4447dd9f1b"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@type='button']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="608fa5a8-243e-4dbc-aca1-230667f9e207"
-				name="txt_Cod_TextoRecibo"
-				refimgid="caf99e5d-a0f3-4038-87c5-d0861e26f8c9"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:ReceiptTextCodeSura']
-				</item>
-				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="2ba02e26-bdc8-4b6a-9a9b-9521e92ce65d"
@@ -1552,15 +1549,6 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//textarea[@innertext~'[A-Z][a-z]+']
 				</item>
 				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="a6b7b631-113f-4d56-abcd-b70300a511e7"
-				name="txt_LineaDeReserva"
-				refimgid="4f12adc9-5d95-40b2-8b4f-afc0e45c9804"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine']
-				</item>
-				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="3dc91bca-1b05-42ca-ab04-80007792efee"
@@ -1568,24 +1556,6 @@ name="SuraClaimsRepository">
 				refimgid="348f98e7-0e17-49f7-8420-cb298dca545a"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="c8866dde-8b31-4887-a833-444c29f7a2d0"
-				name="LineaDeReservaConNombreCuenta"
-				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="b7044a00-794a-4032-82da-c299daf4193e"
-				name="LineaDeReserva_Indemnizacion"
-				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//li[@innertext~'Indemnizaci&#243;n']
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
@@ -1662,15 +1632,6 @@ name="SuraClaimsRepository">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="0ec45411-2a13-4418-a425-b63bc8dbb059"
-				name="txt_ImporteAPagar"
-				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//div[@class='x-grid-cell-inner '][2]
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
 				id="b4063bbd-8f2f-48c5-a6a4-ff3edf38a071"
 				name="txt_ImporteAPagarConExprReg"
 				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
@@ -1685,15 +1646,6 @@ name="SuraClaimsRepository">
 				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td' and @data-tabindexsaved='True']/div
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="inputtag"
-				id="e2e564ba-6502-4428-8159-10cebd43f412"
-				name="Copy_of_txt_ImporteAPagar"
-				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody//table/tbody/tr/td[2]/div/div[3]/div[1]/div[1]/table[1]/tbody/tr/td[3]/div[@class='x-grid-cell-inner ']/../..//input[@data-tabindexsaved='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -1748,15 +1700,6 @@ name="SuraClaimsRepository">
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="ed38a379-fbda-4010-892b-fa798781c864"
-				name="Copy_of_txt_BancoEmisorSugerido"
-				refimgid="6b46bb2e-d3ed-4ef1-bbc1-530af644a591"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']/../..//input[@data-tabindexsaved='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -2199,15 +2142,6 @@ name="SuraClaimsRepository">
 				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
-				id="9b978519-2ba8-4985-b78c-7fc242bbe43d"
-				name="Copy_of_txtSAFE_MotorUber"
-				refimgid="b62a2d2c-527b-418d-b8bc-e12e1c93733b"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[5]//table/tbody/tr[2]/td/div/div//input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:UberFNOLInputSet:SafeSura']/../..//input[@data-tabindexsaved='True']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
 				id="b60ed88d-be82-48c6-8dc3-4485a0bd3dc4"
 				name="Copy_of_txtSAFE"
 				refimgid="7982382e-cf84-4d1a-b66a-d063fd0be6a4"
@@ -2281,35 +2215,6 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
 				</item>
 			</folder>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="0272a559-04aa-4970-be25-268b5fa13d32"
-			name="CenterPanel"
-			refimgid="c465c3ac-8a70-43e7-bf98-8fb540760ae9"
-			refpath="/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'centerPanel']"
-			searchtimeout="30000ms">
-				/dom[@domain=$Ambiente]//div[#'centerPanel']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="652b907f-769c-4f7b-bd54-a18e2ad72b07"
-			name="NombreCuenta"
-			refimgid="d31a94c5-99f6-46d4-b573-e9fbcf2072ae"
-			refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//div[#'infoBar-targetEl']/a[4]/span/span/span[2]/span[@innertext='AGUSTINA AGOSTO']"
-			searchtimeout="30000ms">
-				/dom[@domain=$Ambiente]//div[#'infoBar-targetEl']/a[4]//span[@innertext='AGUSTINA AGOSTO']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="5e356114-eed5-4c8b-b03a-489121928d4c"
-			name="Buscar"
-			refimgid="5c020819-cff6-4268-a8ab-8f3b327791c3"
-			searchtimeout="30000ms">
-				/dom[@domain=$Ambiente]/body/div[@id='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:LockSmithReplacementServiceInputSet:LockSmithReplacementServiceInputGroup:Assessor_Picker:Assessor_PickerMenuIcon-fieldMenu']//span[@innertext='Buscar']
-			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -2542,7 +2447,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="4e4648ce-0cd1-45e7-8b3b-cee8cdbff623"
 			name="bttn_CerrarContinueOnFail"
 			refimgid="719d9f8d-9810-41b5-a6a1-7378e11831f3"
-			searchtimeout="5000ms">
+			searchtimeout="0ms">
 				/dom[@domain=$Ambiente]//tbody[#'NewClaimDuplicatesWorksheet-tbody']//span[@innertext~'Crrar']
 			</item>
 			<item
@@ -2557,202 +2462,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
-		id="000fa91f-1d2b-44d8-ac2d-7e0e1e1d076c"
-		isrooted="True"
-		name="GuidewireClaimCenter"
-		refimgid="15a4f9f9-b4b1-48bd-a96d-ee32667d32ce"
-		searchtimeout="30000ms"
-		usecache="False">
-			<folder
-			capname="table"
-			id="4dfcfd5e-4761-40e6-8f79-7e5a9c02a53b"
-			isrooted="True"
-			name="FNOLVehicleIncidentPopupFNOLVehicleInci11"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="ccdc8851-1830-44c8-a896-098d68e972ff"
-				name="XFormArrowTriggerXFormArrowTrigge"
-				refimgid="e706185b-48db-44fd-93f3-62d40b213ae7"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/div/table/tbody/tr[4]/td/div/div/div/div[2]
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="4527aca7-3640-49b3-b643-49bcfe3c1df3"
-				name="OptionPatente"
-				refimgid="87706aea-2280-48ed-92b7-7b6ada7bcad3"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/div/table/tbody/tr[9]/td/div/div//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_LicensePlate']
-				</item>
-				<basepath>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table
-				</basepath>
-			</folder>
-			<folder
-			capname="divtag"
-			id="9f8097fc-418e-457f-8091-06c89a60f8c8"
-			isrooted="True"
-			name="FNOLVehicleIncidentPopupFNOLVehicleInci3"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="bb2b19cc-4065-4939-868b-e2d4cc04e4c2"
-				name="op_ambulancia"
-				refimgid="4bcc785d-4163-4303-aff5-97a1cc6da383"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]//table/tbody/tr[1]/td/div/div/?/?/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="318131d3-13ce-4243-be0e-581d65733e8b"
-				name="txt_TipoAccidente"
-				refimgid="f5fa8952-495a-400a-a775-9cf6aa318299"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AccidentTypeInputSura']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="49c78570-cbc3-4845-81e1-f755e92cdada"
-				name="txtmarca"
-				refimgid="9a00bdb9-0f7b-44e3-aadc-653502b0aa94"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="49e2551c-59aa-4d6e-84f4-3f565169a6a3"
-				name="Copy_of_txtmarca"
-				refimgid="9a00bdb9-0f7b-44e3-aadc-653502b0aa94"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make' and @data-tabindexsaved='True']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="7d32b63a-56e0-47b9-86e4-b00f55aeaed6"
-				name="txtModelo"
-				refimgid="241c208a-d873-47e3-a61f-e170b8b2b2e0"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="33caa373-22cc-4ae2-a8f0-f5863227bc16"
-				name="Copy_of_txtModelo"
-				refimgid="241c208a-d873-47e3-a61f-e170b8b2b2e0"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model' and @data-tabindexsaved='True']
-				</item>
-				<basepath>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div
-				</basepath>
-			</folder>
-			<folder
-			capname="ultag"
-			id="c53b3be1-7b5d-45cb-994e-7f1a5cf45bfa"
-			isrooted="True"
-			name="XListPlain"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="b6de0eb8-189d-44b4-b98c-b135b0cf4031"
-				name="txtAnio"
-				refimgid="53b21218-ce4a-4987-b083-4876886dbe10"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext=$ANIO]
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="93ca185b-2e2d-4cdd-8879-05863f51782d"
-				name="txtTipo"
-				refimgid="b9d75503-3bff-4557-baf8-9a55e074abdb"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='AUTO']
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="a01ba668-e2fd-45f1-b869-21c19800e24f"
-				name="textMarca"
-				refimgid="9d98448e-cdc9-4422-853d-2bef7ff88f7c"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='CHEVROLET']
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="e13ced28-aece-4b3d-b083-57c3246203a7"
-				name="SelectTipoAccidente"
-				refimgid="bd9a22de-904f-4dca-b6b8-3271993a5513"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext=$TipoAccidente]
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="0aba3c5b-cc60-4562-8043-df9ede6f111e"
-				name="TipoDocumento"
-				refimgid="d557c4b7-c314-4eb5-b260-8bcd3dd94e8c"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul//li[@innertext='D.N.I.']
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="503fdd01-7a8a-41ca-a6f7-f3b5eea07301"
-				name="txtModelo"
-				refimgid="6e5ffe59-e8c6-4655-976f-a2ff0bdde3b7"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='ONIX']
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="c93a2587-4248-4200-b3d9-2d2bcc6b4541"
-				name="selectPersona"
-				refimgid="d1dc6427-f3ed-495c-953e-ed770a718740"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='PRUEBA DOS']
-				</item>
-				<basepath>
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul
-				</basepath>
-			</folder>
-			<basepath>
-				/dom[@domain=$Ambiente]
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
 		</appfolder>
 		<appfolder
 		addcaps="form,nativewindow"
@@ -2792,52 +2501,6 @@ RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
 AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
-		<appfolder
-		capname="webdocument"
-		id="d7b9cfe4-c848-4cea-8043-0b79585085b2"
-		isrooted="True"
-		name="GuidewireClaimCenter1"
-		refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="4f9aab84-35ac-45b6-86e0-dec2ad06cf42"
-			name="XFormArrowTriggerXFormArrowTrigge"
-			refimgid="4b3806d7-0816-45bb-8b57-d4efed9484ee"
-			refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[5]/td/div/div[2]/div/table/tbody/tr/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[9]/td/div/div/div/div[2]"
-			searchtimeout="30000ms">
-				/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[2]
-			</item>
-			<item
-			addcaps="unknown,webelement,litag"
-			capname="litag"
-			id="7acb77d1-ff2b-4435-819b-40fb55005190"
-			name="GALICIA"
-			refimgid="eda9a957-52dd-44b4-937c-a2101b18a5d5"
-			searchtimeout="30000ms">
-				/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[@id~'boundlist-']//ul/li[@id~'ext-element-' and @innertext~'[A-Z]+']
-			</item>
-			<basepath>
-				/dom[@domain='i-preproducciongestion.segurossura.com.ar']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -2865,31 +2528,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			ssurgwsoadev4.opc.oracleoutsourcing.com
-		</var>
-		<var
-		id="07563e85-e6c4-486a-b76f-c8a1a03cc181"
-		name="ANIO">
-			2019
-		</var>
-		<var
-		id="95ce28b9-125c-45ab-8e46-9587ba4ad062"
-		name="Numero">
-			1828
-		</var>
-		<var
-		id="83afbc7c-2522-4fca-915b-3c16c502a604"
-		name="Calle">
-			Col&#243;n
-		</var>
-		<var
-		id="630c79ea-3329-426d-b16c-e260ac93df8a"
-		name="Localidad">
-			LANUS ESTE
-		</var>
-		<var
-		id="fa8c1c9a-9f82-4a4b-aed1-8b8713299d6e"
-		name="NombreCuenta">
+			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"

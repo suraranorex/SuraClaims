@@ -108,6 +108,42 @@ namespace SuraClaims
             set { _Provincia = value; }
         }
 
+        string _Localidad;
+
+        /// <summary>
+        /// Gets or sets the value of variable Localidad.
+        /// </summary>
+        [TestVariable("3a1cd2bf-dfea-4767-9a0f-6a4c889cce4a")]
+        public string Localidad
+        {
+            get { return _Localidad; }
+            set { _Localidad = value; }
+        }
+
+        string _Calle;
+
+        /// <summary>
+        /// Gets or sets the value of variable Calle.
+        /// </summary>
+        [TestVariable("aced0f7b-18bd-449c-8404-19d7faef06e9")]
+        public string Calle
+        {
+            get { return _Calle; }
+            set { _Calle = value; }
+        }
+
+        string _Numero;
+
+        /// <summary>
+        /// Gets or sets the value of variable Numero.
+        /// </summary>
+        [TestVariable("057287c0-d165-4e8a-8516-f625e2f0abe1")]
+        public string Numero
+        {
+            get { return _Numero; }
+            set { _Numero = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
         /// </summary>
@@ -116,36 +152,6 @@ namespace SuraClaims
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Localidad.
-        /// </summary>
-        [TestVariable("3a1cd2bf-dfea-4767-9a0f-6a4c889cce4a")]
-        public string Localidad
-        {
-            get { return repo.Localidad; }
-            set { repo.Localidad = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Calle.
-        /// </summary>
-        [TestVariable("aced0f7b-18bd-449c-8404-19d7faef06e9")]
-        public string Calle
-        {
-            get { return repo.Calle; }
-            set { repo.Calle = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Numero.
-        /// </summary>
-        [TestVariable("057287c0-d165-4e8a-8516-f625e2f0abe1")]
-        public string Numero
-        {
-            get { return repo.Numero; }
-            set { repo.Numero = value; }
         }
 
 #endregion

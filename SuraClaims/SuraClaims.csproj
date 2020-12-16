@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>d7df2e8d-950c-49f4-9e89-f7fcace2078d</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -184,6 +185,18 @@
       <id>5c34ba66-b849-408b-946c-6cd063dec42a</id>
       <BoundTo>60755564-b297-42f1-abf5-9e44a6b15d6a</BoundTo>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Cristales.cs">
+      <BoundTo>bf36a936-277c-4e55-b40f-3132887fced6</BoundTo>
+      <DependentUpon>Cristales.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8478c55e-7647-4053-9b57-01d5326bcc71</id>
+    </Compile>
+    <Compile Include="Cristales.UserCode.cs">
+      <BoundTo>bf36a936-277c-4e55-b40f-3132887fced6</BoundTo>
+      <DependentUpon>Cristales.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0630e4be-6e9d-47a3-b7d3-7b7dc4bc7d02</id>
     </Compile>
     <Compile Include="DatosFastTrack.cs">
       <DependentUpon>DatosFastTrack.rxrec</DependentUpon>
@@ -461,6 +474,18 @@
       <BoundTo>ca203c1b-4bdb-4de9-8617-078193caa1fa</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="Luneta.cs">
+      <BoundTo>e8ccfb6a-4fa9-48ba-964c-c94071067d94</BoundTo>
+      <DependentUpon>Luneta.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3bdf566f-bd70-49e1-9b65-cf6b2cf769f7</id>
+    </Compile>
+    <Compile Include="Luneta.UserCode.cs">
+      <BoundTo>e8ccfb6a-4fa9-48ba-964c-c94071067d94</BoundTo>
+      <DependentUpon>Luneta.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a676c754-c636-45ba-88d1-42900f08015d</id>
+    </Compile>
     <Compile Include="MenuLateralAcciones.cs">
       <DependentUpon>MenuLateralAcciones.rxrec</DependentUpon>
       <id>67bc5966-aa01-43a1-a7ba-b036d6e93612</id>
@@ -532,6 +557,18 @@
       <id>82fb4a3f-d2a8-4487-bd5b-968036e7ffb7</id>
       <BoundTo>d5e2f641-5af3-4e39-8863-ffa6190fcd2f</BoundTo>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Parabrisas.cs">
+      <BoundTo>18bdb7cf-55e5-4e2d-9924-14da42bf9ccb</BoundTo>
+      <DependentUpon>Parabrisas.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a43234c-7f7c-4809-9099-074267eeb21e</id>
+    </Compile>
+    <Compile Include="Parabrisas.UserCode.cs">
+      <BoundTo>18bdb7cf-55e5-4e2d-9924-14da42bf9ccb</BoundTo>
+      <DependentUpon>Parabrisas.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>026f4133-6ab6-401a-961f-dd15db635efc</id>
     </Compile>
     <Compile Include="Paso1_CodigoRecibo.cs">
       <DependentUpon>Paso1_CodigoRecibo.rxrec</DependentUpon>
@@ -716,6 +753,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>731a292e-bd20-4de4-9bc1-f6053024bf64</recordtableid>
     </None>
+    <None Include="Cristales.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>bf36a936-277c-4e55-b40f-3132887fced6</id>
+      <recordtableid>a5ffb965-8f7a-439e-b0e0-d8f7eedf4bc7</recordtableid>
+    </None>
     <None Include="DatosFastTrack.rxrec">
       <id>7d318871-1626-4e06-9160-3c36cd1629a5</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -873,6 +915,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>a0c0db04-d21d-4cb3-b5af-a01aede4d79f</recordtableid>
     </None>
+    <None Include="Luneta.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>e8ccfb6a-4fa9-48ba-964c-c94071067d94</id>
+      <recordtableid>7b7d29d9-9b68-4703-b95d-c997e0936b6e</recordtableid>
+    </None>
     <None Include="MenuLateralAcciones.rxrec">
       <id>aca3c897-cf2d-4847-b92e-a659e4100ed6</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -910,6 +957,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>df2ea8d6-9d3b-42d0-91d1-f797847d427f</id>
     </Content>
+    <None Include="Parabrisas.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>18bdb7cf-55e5-4e2d-9924-14da42bf9ccb</id>
+      <recordtableid>6d189fc2-82bb-474e-8a8e-d141eef3e5ae</recordtableid>
+    </None>
     <None Include="Paso1_CodigoRecibo.rxrec">
       <id>d77ea32d-55ef-48f1-82c5-5198d9a30590</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

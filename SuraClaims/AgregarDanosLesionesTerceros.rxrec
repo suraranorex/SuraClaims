@@ -38,6 +38,41 @@ mode="Global">
 		name="Marca">
 			CHEVROLET
 		</var>
+		<var
+		id="ea02b40d-4a41-4fdb-a346-5d2af69b93c1"
+		name="Patente">
+			jio098
+		</var>
+		<var
+		id="7a5727aa-2d9a-4b78-9b62-86ef3754f35a"
+		name="Nombre">
+			PRUEBA
+		</var>
+		<var
+		id="47a4e260-de20-471c-a433-b40cb2fe5ec8"
+		name="Apellido">
+			DOS
+		</var>
+		<var
+		id="d565afaa-4267-4c98-ad9f-12940914a519"
+		name="Modelo">
+			ONIX
+		</var>
+		<var
+		id="a43c0c39-8c94-4f4f-a7cb-e81f98522997"
+		name="Tipo">
+			AUTO
+		</var>
+		<var
+		id="8b97bcd9-22eb-481a-a71f-249e98221498"
+		name="NumeroDNI">
+			25667887
+		</var>
+		<var
+		id="a56dd401-e253-47eb-bb00-7046143ff00b"
+		name="TipoDocumento">
+			D.N.I.
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -665,6 +700,10 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="TipoDocumento">
+				</binding>
 			</bindings>
 			<info
 			id="b34ef9ce-d512-4eed-8d23-8e68139f6995"
@@ -1220,6 +1259,10 @@ j3o496SigBePelXpxTacvSgBaKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="NumeroDNI">
+				</binding>
 			</bindings>
 			<info
 			id="05b7c423-c3bb-46ea-9911-b4177fbe7f1a"
@@ -1703,6 +1746,10 @@ KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKcvSiimAtFFFABRRRQAUUUUAf//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Nombre">
+				</binding>
 			</bindings>
 			<info
 			id="c99f4096-7df9-4e32-b169-2d4b4d417c1f"
@@ -2228,6 +2275,10 @@ FFABRRRQB//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Apellido">
+				</binding>
 			</bindings>
 			<info
 			id="5738797d-7a5a-49c0-b03f-6fde8a500b97"
@@ -2940,162 +2991,12 @@ bnSUkjEduUhTyjEylCwIzkHqOQcnPvQkkOUpSd5O5asjObVPtQxNyG4AzzweCRyMVPRRQSFFFFAH
 			<bindings>
 			</bindings>
 			<info
-			id="4197e2f3-0ae7-46be-94a7-54f8a6de5088"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, inputtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="336,439,12,12"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-field x-form-radio x-form-radio-default x-form-cb x-form-cb-default &#32;
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:PoliceParticipationSura_false-inputEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-cb x-form-cb-default x-form-field x-form-radio x-form-radio-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						input
-					</attribute>
-					<attribute
-					name="autocomplete"
-					type="System.String">
-						off
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="checked"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="height"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						20
-					</attribute>
-					<attribute
-					name="tabindex"
-					type="System.String">
-						-1
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						button
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="componentid"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="hidefocus"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
+			id="9000aee2-d1c1-46a8-8401-821981602e64"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
 				</path>
 			</info>
-			<helperscreenshot
-			guid="01b03e06-30cd-4273-b285-66687ca461cd">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAwAEgDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
-ACmvGkm3zEV9rBl3DOD6j3p1RyTwxNtkljQ4zhmAoGk3sAt4FxiGMYxjCjjGMf8AoK/kPSnRxpEM
-RoqD0UY7Y/kB+VR/bLX/AJ+Yf++xSpcwSMFSeNmPQBwTSuh8suxLRRRTJCiiigBuSOTgimyy+WVU
-Izs2cBcf1IpOXG0A89cjFFxE0qhQUA77k3flyMUAPVizsMDAx371lX8Uc2twRyruQx8jOP71akUf
-llvmLbiDz9AP6VmXrKuu27OyqBH1Y4H8VTM3w9+Z27Msf2VZ/wDPAfTc3+NUnjhstZg8mMhNhJUH
-JJ+Yd6sT3U0t1EthLHIVRnePIIfBUYz26nBqt5kd5q9sY2I+Q7gRgqwLEgjsaUktLF05zbkpN7P8
-jZ86PBO4BQobcTxg05WV1DKwYHoQc1AbbDOVfGSCoIyFIJP9aliQopycknJIGBVnKPooooAKKMj1
-oyPWgAqvcWNtcuHmj3MBjO4jj8KsZHrRketDVxxk4u6ZQitILXU4vITZuhkzyT0ZPWq1+9ul7HdW
-h8y7Cb9iIzCVOnUA4Pofzq/d2cd2ymSSRQAVIRsblJBIPfHyjpiq0NjJBeoYyggjkdlw5BCsOV2g
-Yxu569qLIHJt3bNKijI9aMj1oEFFGR60UAf/2Q==
-			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
 		action="Click"
@@ -4254,6 +4155,10 @@ J7imBZMileD1JA+o/wD1U/BqEwAHdvbAJYLxjJ//AF1PQAmDRg0tFACYNGDS0UAJg0YNLRQAmDRg
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Modelo">
+				</binding>
 			</bindings>
 			<info
 			id="7d32b63a-56e0-47b9-86e4-b00f55aeaed6"
@@ -4996,6 +4901,10 @@ igCG7VntyEUswZTgEc4IPeql3DJcujvDME2kbB5ZIPrzkfiDmtGigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Tipo">
+				</binding>
 			</bindings>
 			<info
 			id="e71ae898-1d06-4e8e-90e0-2ec3fc7472d1"
@@ -5350,6 +5259,10 @@ igCG7VntyEUswZTgEc4IPeql3DJcujvDME2kbB5ZIPrzkfiDmtGigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Patente">
+				</binding>
 			</bindings>
 			<info
 			id="d6fd0bb1-4b36-4a07-9f11-0afd0defffc1"

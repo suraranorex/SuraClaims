@@ -54,8 +54,8 @@ mode="Global">
 			Loria
 		</var>
 		<var
-		id="466858b9-f105-4e53-8697-5583d69744c5"
-		name="Numero">
+		id="c6cd663b-0092-477d-97f7-e5550aedec69"
+		name="NumeroCalle">
 			1828
 		</var>
 	</variables>
@@ -1024,7 +1024,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Numero">
+				variable="NumeroCalle">
 				</binding>
 			</bindings>
 			<info

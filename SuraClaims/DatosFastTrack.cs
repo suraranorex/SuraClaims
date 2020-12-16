@@ -41,7 +41,7 @@ namespace SuraClaims
         /// </summary>
         public DatosFastTrack()
         {
-            Descripcion = "Cerradura";
+            Descripcion = "Luneta";
             Gravedad = "Pérdidas parciales";
         }
 

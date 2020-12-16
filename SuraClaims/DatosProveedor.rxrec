@@ -152,105 +152,12 @@ L/6G1WKq2Kyw2qrLGxkJLNjHBYkkdfep97f88n/Mf40CH0Uze3/PJ/zH+NFAH//Z
 			<bindings>
 			</bindings>
 			<info
-			id="5e356114-eed5-4c8b-b03a-489121928d4c"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="spantag"
-				rect="495,531,32,18"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:LockSmithReplacementServiceInputSet:LockSmithReplacementServiceInputGroup:Assessor_Picker:MenuItem_Search-textEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Buscar
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-menu-item-indent-no-separator x-menu-item-text x-menu-item-text-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
+			id="d6487c32-d016-448f-968c-f18320a9a686"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]/body/div[14]/div/div[2]//span[@innertext='Buscar']
+					/dom[@domain=$Ambiente]//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']
 				</path>
 			</info>
-			<helperscreenshot
-			guid="00d8ea25-e73a-4db8-9ebe-79f521fe6e13">
-				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
-			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
 		action="Click"

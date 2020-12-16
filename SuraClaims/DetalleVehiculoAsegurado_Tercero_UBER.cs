@@ -263,32 +263,32 @@ namespace SuraClaims
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca' at Center.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarcaInfo, new RecordItemIndex(33));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtmarca' at Center.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(33));
+            repo.SuraClaims.Motor.txtmarca.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarcaInfo, new RecordItemIndex(34));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txtmarca'.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(34));
+            repo.SuraClaims.Motor.txtmarca.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MarcaAutoAsegurado' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarcaInfo, new RecordItemIndex(35));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca.PressKeys(MarcaAutoAsegurado);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MarcaAutoAsegurado' with focus on 'SuraClaims.Motor.txtmarca'.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(35));
+            repo.SuraClaims.Motor.txtmarca.PressKeys(MarcaAutoAsegurado);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(36));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo' at Center.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModeloInfo, new RecordItemIndex(37));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtModelo' at Center.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(37));
+            repo.SuraClaims.Motor.txtModelo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModeloInfo, new RecordItemIndex(38));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txtModelo'.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(38));
+            repo.SuraClaims.Motor.txtModelo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ModeloAutoAsegurado' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModeloInfo, new RecordItemIndex(39));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo.PressKeys(ModeloAutoAsegurado);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ModeloAutoAsegurado' with focus on 'SuraClaims.Motor.txtModelo'.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(39));
+            repo.SuraClaims.Motor.txtModelo.PressKeys(ModeloAutoAsegurado);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(40));

@@ -47,7 +47,7 @@ namespace SuraClaims
             Provincia = "BUENOS AIRES";
             Localidad = "LOMAS DE ZAMORA";
             Calle = "Loria";
-            Numero = "1828";
+            NumeroCalle = "1828";
         }
 
         /// <summary>
@@ -108,6 +108,42 @@ namespace SuraClaims
             set { _Provincia = value; }
         }
 
+        string _Localidad;
+
+        /// <summary>
+        /// Gets or sets the value of variable Localidad.
+        /// </summary>
+        [TestVariable("5d66f2be-8a15-498c-8937-c612988099c1")]
+        public string Localidad
+        {
+            get { return _Localidad; }
+            set { _Localidad = value; }
+        }
+
+        string _Calle;
+
+        /// <summary>
+        /// Gets or sets the value of variable Calle.
+        /// </summary>
+        [TestVariable("e6f31989-f3cc-4c65-a47d-3438fe7e5047")]
+        public string Calle
+        {
+            get { return _Calle; }
+            set { _Calle = value; }
+        }
+
+        string _NumeroCalle;
+
+        /// <summary>
+        /// Gets or sets the value of variable NumeroCalle.
+        /// </summary>
+        [TestVariable("c6cd663b-0092-477d-97f7-e5550aedec69")]
+        public string NumeroCalle
+        {
+            get { return _NumeroCalle; }
+            set { _NumeroCalle = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
         /// </summary>
@@ -116,36 +152,6 @@ namespace SuraClaims
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Localidad.
-        /// </summary>
-        [TestVariable("5d66f2be-8a15-498c-8937-c612988099c1")]
-        public string Localidad
-        {
-            get { return repo.Localidad; }
-            set { repo.Localidad = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Calle.
-        /// </summary>
-        [TestVariable("e6f31989-f3cc-4c65-a47d-3438fe7e5047")]
-        public string Calle
-        {
-            get { return repo.Calle; }
-            set { repo.Calle = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Numero.
-        /// </summary>
-        [TestVariable("466858b9-f105-4e53-8697-5583d69744c5")]
-        public string Numero
-        {
-            get { return repo.Numero; }
-            set { repo.Numero = value; }
         }
 
 #endregion
@@ -295,8 +301,8 @@ namespace SuraClaims
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Calle'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_CalleInfo, new ActionTimeout(30000), new RecordItemIndex(30));
             repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_CalleInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Numero' with focus on 'SuraClaims.Motor.InformacionSiniestro.txtbox_Numero'.", repo.SuraClaims.Motor.InformacionSiniestro.txtbox_NumeroInfo, new RecordItemIndex(31));
-            repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Numero.PressKeys(Numero);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NumeroCalle' with focus on 'SuraClaims.Motor.InformacionSiniestro.txtbox_Numero'.", repo.SuraClaims.Motor.InformacionSiniestro.txtbox_NumeroInfo, new RecordItemIndex(31));
+            repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Numero.PressKeys(NumeroCalle);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso3' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new RecordItemIndex(32));

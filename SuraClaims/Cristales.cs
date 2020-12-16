@@ -24,29 +24,29 @@ namespace SuraClaims
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Cerradura recording.
+    ///The Cristales recording.
     /// </summary>
-    [TestModule("57ec232e-229d-4f59-bee9-b5093e4a518d", ModuleType.Recording, 1)]
-    public partial class Cerradura : ITestModule
+    [TestModule("a5ffb965-8f7a-439e-b0e0-d8f7eedf4bc7", ModuleType.Recording, 1)]
+    public partial class Cristales : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SuraClaimsRepository repository.
         /// </summary>
         public static SuraClaimsRepository repo = SuraClaimsRepository.Instance;
 
-        static Cerradura instance = new Cerradura();
+        static Cristales instance = new Cristales();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Cerradura()
+        public Cristales()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Cerradura Instance
+        public static Cristales Instance
         {
             get { return instance; }
         }

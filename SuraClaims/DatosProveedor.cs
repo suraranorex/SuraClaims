@@ -106,8 +106,8 @@ namespace SuraClaims
             repo.SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor.Click("8;6");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Buscar' at 23;10.", repo.SuraClaims.BuscarInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Buscar.Click("23;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.BuscarProveedor' at 23;10.", repo.SuraClaims.Motor.BuscarProveedorInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.BuscarProveedor.Click("23;10");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SelectProvinciaNinguna' at 11;12.", repo.SuraClaims.SelectProvinciaNingunaInfo, new RecordItemIndex(2));

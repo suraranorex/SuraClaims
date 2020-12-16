@@ -58,6 +58,18 @@ namespace SuraClaims
 
 #region Variables
 
+        string _ANIO;
+
+        /// <summary>
+        /// Gets or sets the value of variable ANIO.
+        /// </summary>
+        [TestVariable("12c92045-b539-43af-b6b1-20b4a6c6b89c")]
+        public string ANIO
+        {
+            get { return _ANIO; }
+            set { _ANIO = value; }
+        }
+
         string _Marca;
 
         /// <summary>
@@ -114,16 +126,6 @@ namespace SuraClaims
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable ANIO.
-        /// </summary>
-        [TestVariable("12c92045-b539-43af-b6b1-20b4a6c6b89c")]
-        public string ANIO
-        {
-            get { return repo.ANIO; }
-            set { repo.ANIO = value; }
         }
 
 #endregion
@@ -234,8 +236,8 @@ namespace SuraClaims
             repo.SuraClaims.Motor.btn_Aceptar.Click("27;11");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.op_ambulancia' at 8;7.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.op_ambulanciaInfo, new RecordItemIndex(21));
-            //repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.op_ambulancia.Click("8;7");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.op_ambulancia' at 8;7.", repo.SuraClaims.Motor.op_ambulanciaInfo, new RecordItemIndex(21));
+            //repo.SuraClaims.Motor.op_ambulancia.Click("8;7");
             //Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.btn_Danios_No' at 6;8.", repo.SuraClaims.Motor.btn_Danios_NoInfo, new RecordItemIndex(22));
@@ -263,44 +265,44 @@ namespace SuraClaims
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca' at 34;9.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarcaInfo, new RecordItemIndex(28));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca.Click("34;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtmarca' at 34;9.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(28));
+            repo.SuraClaims.Motor.txtmarca.Click("34;9");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarcaInfo, new RecordItemIndex(29));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txtmarca'.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(29));
+            repo.SuraClaims.Motor.txtmarca.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Marca' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarcaInfo, new RecordItemIndex(30));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtmarca.PressKeys(Marca);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Marca' with focus on 'SuraClaims.Motor.txtmarca'.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(30));
+            repo.SuraClaims.Motor.txtmarca.PressKeys(Marca);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(31));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.XListPlain.textMarca' at 48;10.", repo.GuidewireClaimCenter.XListPlain.textMarcaInfo, new RecordItemIndex(32));
-            //repo.GuidewireClaimCenter.XListPlain.textMarca.Click("48;10");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.textMarca' at 48;10.", repo.SuraClaims.Motor.textMarcaInfo, new RecordItemIndex(32));
+            //repo.SuraClaims.Motor.textMarca.Click("48;10");
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo' at 36;12.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModeloInfo, new RecordItemIndex(33));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo.Click("36;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtModelo' at 36;12.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(33));
+            repo.SuraClaims.Motor.txtModelo.Click("36;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModeloInfo, new RecordItemIndex(34));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txtModelo'.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(34));
+            repo.SuraClaims.Motor.txtModelo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Modelo' with focus on 'GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo'.", repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModeloInfo, new RecordItemIndex(35));
-            repo.GuidewireClaimCenter.FNOLVehicleIncidentPopupFNOLVehicleInci3.txtModelo.PressKeys(Modelo);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Modelo' with focus on 'SuraClaims.Motor.txtModelo'.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(35));
+            repo.SuraClaims.Motor.txtModelo.PressKeys(Modelo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(36));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.XListPlain.txtModelo' at 29;5.", repo.GuidewireClaimCenter.XListPlain.txtModeloInfo, new RecordItemIndex(37));
-            //repo.GuidewireClaimCenter.XListPlain.txtModelo.Click("29;5");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtModelo1' at 29;5.", repo.SuraClaims.Motor.txtModelo1Info, new RecordItemIndex(37));
+            //repo.SuraClaims.Motor.txtModelo1.Click("29;5");
             //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txtTipoVehiculo' at 88;7.", repo.SuraClaims.SiniestroTercero.txtTipoVehiculoInfo, new RecordItemIndex(38));
@@ -322,8 +324,8 @@ namespace SuraClaims
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculo'", repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(42));
             repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.XListPlain.txtTipo' at 27;7.", repo.GuidewireClaimCenter.XListPlain.txtTipoInfo, new RecordItemIndex(43));
-            //repo.GuidewireClaimCenter.XListPlain.txtTipo.Click("27;7");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtTipo' at 27;7.", repo.SuraClaims.Motor.txtTipoInfo, new RecordItemIndex(43));
+            //repo.SuraClaims.Motor.txtTipo.Click("27;7");
             //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.textPatente' at 29;8.", repo.SuraClaims.SiniestroTercero.textPatenteInfo, new RecordItemIndex(44));

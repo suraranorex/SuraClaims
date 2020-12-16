@@ -24,29 +24,29 @@ namespace SuraClaims
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Cerradura recording.
+    ///The Parabrisas recording.
     /// </summary>
-    [TestModule("57ec232e-229d-4f59-bee9-b5093e4a518d", ModuleType.Recording, 1)]
-    public partial class Cerradura : ITestModule
+    [TestModule("6d189fc2-82bb-474e-8a8e-d141eef3e5ae", ModuleType.Recording, 1)]
+    public partial class Parabrisas : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SuraClaimsRepository repository.
         /// </summary>
         public static SuraClaimsRepository repo = SuraClaimsRepository.Instance;
 
-        static Cerradura instance = new Cerradura();
+        static Parabrisas instance = new Parabrisas();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Cerradura()
+        public Parabrisas()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Cerradura Instance
+        public static Parabrisas Instance
         {
             get { return instance; }
         }
@@ -89,33 +89,14 @@ namespace SuraClaims
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Descripcion' at 43;10.", repo.SuraClaims.Motor.InformacionSiniestro.tag_DescripcionInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Motor.InformacionSiniestro.tag_Descripcion.Click("43;10");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.Cantidad' at 29;11.", repo.SuraClaims.Motor.InformacionBasica.CantidadInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Motor.InformacionBasica.Cantidad.Click("29;11");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Descripcion' at 44;9.", repo.SuraClaims.Motor.InformacionSiniestro.tag_DescripcionInfo, new RecordItemIndex(3));
-            repo.SuraClaims.Motor.InformacionSiniestro.tag_Descripcion.Click("44;9");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_tipo' at 36;7.", repo.SuraClaims.Motor.InformacionBasica.option_tipoInfo, new RecordItemIndex(4));
-            repo.SuraClaims.Motor.InformacionBasica.option_tipo.Click("36;7");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new RecordItemIndex(0));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SuraClaims.Motor.lbl_ReposicionDe'", repo.SuraClaims.Motor.lbl_ReposicionDeInfo, new ActionTimeout(10000), new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SuraClaims.Motor.lbl_ReposicionDe'", repo.SuraClaims.Motor.lbl_ReposicionDeInfo, new ActionTimeout(10000), new RecordItemIndex(1));
             repo.SuraClaims.Motor.lbl_ReposicionDeInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Button' at 7;7.", repo.SuraClaims.Motor.ButtonInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Button' at 7;7.", repo.SuraClaims.Motor.ButtonInfo, new RecordItemIndex(2));
             repo.SuraClaims.Motor.Button.Click("7;7");
             Delay.Milliseconds(0);
             

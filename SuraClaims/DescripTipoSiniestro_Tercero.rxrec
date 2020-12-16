@@ -58,6 +58,11 @@ mode="Global">
 		name="CantAsegu">
 			1
 		</var>
+		<var
+		id="0f1635ee-f2e4-49d3-a707-bf774fba2dea"
+		name="Dolencias">
+			No
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -2128,7 +2133,7 @@ FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1oyfWgB9FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1pQTmgD//Z
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Dolencia">
+				variable="Dolencias">
 				</binding>
 			</bindings>
 			<info
