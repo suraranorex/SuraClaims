@@ -407,6 +407,12 @@
 					variableid="a56dd401-e253-47eb-bb00-7046143ff00b"
 					variablename="TipoDocumento">
 					</var>
+					<var
+					dataname="Responsabilidad"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="811dedf4-3591-4699-a423-2ca44a8785f1"
+					variablename="Responsabilidad">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -1163,6 +1169,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
+			maxrange="3"
+			minrange="0"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -3057,7 +3065,7 @@
 		filename="GeneracionSiniestroMotorTercero.xlsx"
 		id="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 		includefile="Checked"
-		lastknownrowcount="25"
+		lastknownrowcount="8"
 		name="SiniestroMotorTercero"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -3158,6 +3166,9 @@
 				</column>
 				<column>
 					CantAsegu
+				</column>
+				<column>
+					Responsabilidad
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -3272,7 +3283,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="GenerarSiniestroMotor">
+	default="PagoSiniestro">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer

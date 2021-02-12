@@ -229,16 +229,25 @@ name="SuraClaimsRepository">
 					name="txtbox_HoraSiniestro"
 					refimgid="0adcd3dc-8ee5-4427-9c72-56459fb7aa97"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Hora']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Hora']/../..//input[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Claim_lossTime_Sura-inputEl']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
 					capname="inputtag"
+					id="c8de9d22-b379-4fda-8a9c-19e70e39897e"
+					name="Copy_of_txtbox_HoraSiniestroOrg"
+					refimgid="0adcd3dc-8ee5-4427-9c72-56459fb7aa97"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Hora']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
 					id="ee0ebe74-dabb-40c1-9acf-961e00d5e13a"
 					name="Copy_of_txtbox_HoraSiniestro"
 					refimgid="0adcd3dc-8ee5-4427-9c72-56459fb7aa97"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Hora']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Hora' and @data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -1320,7 +1329,7 @@ name="SuraClaimsRepository">
 				name="op_responsabilidad"
 				refimgid="63560f75-915c-4090-a4e3-ac4447dd9f1b"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[4]/td/div/div[2]/?/?/table/?/?/tr//table/?/?/tr/td[1]/?/?/table/tbody/tr[6]//table//div/div/?/?/table/tbody/tr/td[1]/div/div/?/?/input[@type='button']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Responsabilidad del Asegurado']/../../..//label[@innertext~$Responsabilidad]/../input[@type='button']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -2572,6 +2581,11 @@ AAAASUVORK5CYII=
 		<var
 		id="d68cbb4b-01e3-4bfd-88fc-1cb1fbf5f270"
 		name="CantAsegu">
+		</var>
+		<var
+		id="811dedf4-3591-4699-a423-2ca44a8785f1"
+		name="Responsabilidad">
+			No
 		</var>
 	</variables>
 </repository>

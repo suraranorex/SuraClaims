@@ -1022,6 +1022,10 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>b9e7b7c6-39f5-41e2-b917-a08ee4a85bb7</recordtableid>
     </None>
+    <None Include="StartVPN.bat">
+      <id>0fe300ad-d5c2-4438-b282-a8a8323e63aa</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="SuraClaimsRepository.rximg">
       <DependentUpon>SuraClaimsRepository.rxrep</DependentUpon>
       <id>9928e806-a653-4415-9cb5-1d6b709e21ff</id>

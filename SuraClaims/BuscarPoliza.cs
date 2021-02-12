@@ -204,8 +204,8 @@ namespace SuraClaims
             repo.SuraClaims.Txt_Validaciones.txt_BuscarOCrearPoliza.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_FechaSiniestro'", repo.SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_FechaSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(14));
-            repo.SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_FechaSiniestroInfo.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to not exist. Associated repository item: 'SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_FechaSiniestro'", repo.SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_FechaSiniestroInfo, new ActionTimeout(40000), new RecordItemIndex(14));
+            repo.SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_FechaSiniestroInfo.WaitForNotExists(40000);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$HoraSiniestro' with focus on 'SuraClaims.Generales.BuscarPoliza.txtbox_HoraSiniestro'.", repo.SuraClaims.Generales.BuscarPoliza.txtbox_HoraSiniestroInfo, new RecordItemIndex(15));
             repo.SuraClaims.Generales.BuscarPoliza.txtbox_HoraSiniestro.PressKeys(HoraSiniestro);

@@ -128,6 +128,16 @@ namespace SuraClaims
             set { repo.Ambiente = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable Responsabilidad.
+        /// </summary>
+        [TestVariable("811dedf4-3591-4699-a423-2ca44a8785f1")]
+        public string Responsabilidad
+        {
+            get { return repo.Responsabilidad; }
+            set { repo.Responsabilidad = value; }
+        }
+
 #endregion
 
         /// <summary>
