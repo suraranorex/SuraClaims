@@ -1037,6 +1037,9 @@
       <repoid>1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7</repoid>
       <reporootid>e236aa5f-717e-474a-818d-ab73ab951257</reporootid>
     </None>
+    <None Include="Utilitarios\VPNConnect.exe">
+      <id>8eed7690-cec4-45bc-9cb3-99f6f868d224</id>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="SuraClaims.rxtmg">
@@ -1047,6 +1050,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>70e170b1-1253-45ea-8bd9-db277511b62f</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilitarios">
+      <id>e282a8c4-342e-49bd-8e01-37c96af2ef24</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
