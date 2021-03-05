@@ -809,8 +809,11 @@
 				</conditiongroup>
 			</smartfoldernode>
 			<testcase
+			datarangeactive="True"
 			datasource="PagosSiniestros"
 			id="58368d11-e725-4331-93f0-6f443d6c9119"
+			maxrange="0"
+			minrange="0"
 			name="Pagos_Siniestros_Motor">
 			</testcase>
 			<testmodule
@@ -3283,7 +3286,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="GenerarSiniestroMotor">
+	default="PagoSiniestro">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
