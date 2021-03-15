@@ -129,8 +129,8 @@ namespace SuraClaims
             repo.SuraClaims.Motor.InformacionBasica.bttn_SelecNombre.Click("9;10");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_NombreN' at 64;10.", repo.SuraClaims.Motor.InformacionBasica.option_NombreNInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Motor.InformacionBasica.option_NombreN.Click("64;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.optionLI_NombreAsegurado' at 64;10.", repo.SuraClaims.Motor.InformacionBasica.optionLI_NombreAseguradoInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.InformacionBasica.optionLI_NombreAsegurado.Click("64;10");
             Delay.Milliseconds(0);
             
             // No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado

@@ -41,7 +41,7 @@ mode="Global">
 		<var
 		id="77ecfd0b-b588-4ea5-9f1d-5e825eacf5bc"
 		name="Calle">
-			Col&#243;n
+			Colón
 		</var>
 		<var
 		id="484205c6-f516-4301-af19-c8c4ce7d8a04"
@@ -135,15 +135,24 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="3000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="afa5aad3-3d0d-4345-baa6-f0b61b20a8f9"
+		waitaction="NotExists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<keyitem
 		action="Press"
 		data="A, Control"
@@ -528,7 +537,7 @@ mode="Global">
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Actos Malintencionados o Vand&#225;licos
+						Actos Malintencionados o Vandálicos
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -583,7 +592,7 @@ mode="Global">
 					<attribute
 					name="value"
 					type="System.String">
-						Actos Malintencionados o Vand&#225;licos
+						Actos Malintencionados o Vandálicos
 					</attribute>
 					<attribute
 					name="width"
@@ -739,7 +748,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 4 de 5: Agregar informaci&#243;n del siniestro
+						Paso 4 de 5: Agregar información del siniestro
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -941,7 +950,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 4 de 5: Agregar informaci&#243;n del siniestro
+						Paso 4 de 5: Agregar información del siniestro
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1050,7 +1059,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -1109,7 +1118,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 4 de 5: Agregar informaci&#243;n del siniestro
+						Paso 4 de 5: Agregar información del siniestro
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1141,7 +1150,7 @@ mode="Global">
 			id="fac0d96f-b615-4181-a05d-dcefe34122a9"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1200,7 +1209,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Validar Direcci&#243;n
+						Validar Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1226,7 +1235,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Dirección']
 				</path>
 			</info>
 			<helperscreenshot
@@ -1272,15 +1281,24 @@ oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
 igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="True"
-		optional="False">
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
+		searchpropertyid="88ce9840-e209-42a0-88df-5c20e6474484"
+		waitaction="Exists"
+		waittimeout="15000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="653b6cc4-9e97-4041-81c3-71c29545ce5c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='Verifica la dirección']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1336,7 +1354,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Verifica la direcci&#243;n
+						Verifica la dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1362,7 +1380,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[21]/div/div[2]//span[@innertext='Verifica la direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[21]/div/div[2]//span[@innertext='Verifica la dirección']
 				</path>
 			</info>
 			<helperscreenshot
@@ -1544,7 +1562,7 @@ bYJJRm+UdOR8v9O9P+ztl/kjyzZ8zPzHnODx/Wnbm9T+dG5vU/nQB//Z
 		enabled="True"
 		optional="False">
 			<comment>
-				Agrego lesiones - Informaci&#243;n B&#225;sica
+				Agrego lesiones - Información Básica
 			</comment>
 			<bindings>
 			</bindings>
@@ -1604,7 +1622,7 @@ bYJJRm+UdOR8v9O9P+ztl/kjyzZ8zPzHnODx/Wnbm9T+dG5vU/nQB//Z
 					<attribute
 					name="innertext"
 					type="System.String">
-						Agregar les&#243;n
+						Agregar lesón
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1630,7 +1648,7 @@ bYJJRm+UdOR8v9O9P+ztl/kjyzZ8zPzHnODx/Wnbm9T+dG5vU/nQB//Z
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Agregar les&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Agregar lesón']
 				</path>
 			</info>
 		</mouseitem>
@@ -1683,7 +1701,7 @@ bYJJRm+UdOR8v9O9P+ztl/kjyzZ8zPzHnODx/Wnbm9T+dG5vU/nQB//Z
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1697,7 +1715,7 @@ bYJJRm+UdOR8v9O9P+ztl/kjyzZ8zPzHnODx/Wnbm9T+dG5vU/nQB//Z
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -2256,7 +2274,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2270,7 +2288,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</mouseitem>
@@ -2663,7 +2681,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2677,7 +2695,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</mouseitem>
@@ -2787,7 +2805,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 		enabled="False"
 		optional="False">
 			<comment>
-				Descripci&#243;n de lesiones
+				Descripción de lesiones
 			</comment>
 			<bindings>
 			</bindings>
@@ -2847,7 +2865,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Descripci&#243;n de lesiones
+						Descripción de lesiones
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2873,7 +2891,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]//span[@innertext='Descripci&#243;n de lesiones']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]//span[@innertext='Descripción de lesiones']
 				</path>
 			</info>
 			<helperscreenshot
@@ -2959,7 +2977,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Descripci&#243;n de lesiones
+						Descripción de lesiones
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2973,7 +2991,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripci&#243;n de lesiones']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripción de lesiones']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -3027,7 +3045,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Calidad o medio de transporte de la v&#237;ctima
+						Calidad o medio de transporte de la víctima
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -3371,7 +3389,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -3426,7 +3444,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="value"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="width"
@@ -3527,7 +3545,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -3582,7 +3600,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="value"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="width"
@@ -3784,7 +3802,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='&#191;Se utiliz&#243; ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
 				</path>
 			</info>
 		</mouseitem>
@@ -4087,6 +4105,213 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<keyitem
+		action="Press"
+		data="A, Control"
+		duration="20ms"
+		enabled="True"
+		numLock="False"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="895c8951-2074-4ed9-b260-62fba41fa01f"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4fcb4162-75be-4435-b0b6-4ee8832e102b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Causa del siniestro']/../..//input
+				</path>
+			</info>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="Otros"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="21acb457-d0b3-4a33-a562-a3e3139c2ed7">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="CausaSiniestro">
+				</binding>
+			</bindings>
+			<info
+			id="4fcb4162-75be-4435-b0b6-4ee8832e102b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="299,314,123,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:LossCauseSura-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						Otros
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:LossCauseSura
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						Otros
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Causa del siniestro']/../..//input
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="3c358189-c146-4e1e-9622-97fb2e5edede"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="92c67bf4-2e40-4e7f-8229-d89407960e39"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[5]/?/?/label[@innertext='Datos Uber']
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4526,15 +4751,6 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				</path>
 			</info>
 		</WaitForRecordItem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -4619,91 +4835,6 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				</path>
 			</info>
 		</loggingrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="74405d3f-3b46-426a-9b31-01a40719c9d9"
-		sx="163"
-		sy="170"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="095dc31d-7f40-4650-a936-f1d5cd82bbf8"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="146,165,35,10"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-btn-inner x-btn-inner-default-toolbar-small
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Update-btnInnerEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Aceptar
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-btn-inner x-btn-inner-default-toolbar-small
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
-				</path>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"

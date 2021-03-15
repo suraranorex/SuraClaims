@@ -107,19 +107,23 @@ namespace SuraClaims
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.AP_Uber.txt_Nombre' and assigning its value to variable 'Nombre'.", repo.SuraClaims.AP_Uber.txt_NombreInfo, new RecordItemIndex(2));
-            Nombre = repo.SuraClaims.AP_Uber.txt_Nombre.Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber' and assigning its value to variable 'Nombre'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_UberInfo, new RecordItemIndex(2));
+            Nombre = repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", Nombre, new RecordItemIndex(3));
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.AP_Uber.txt_Nombre' and assigning its value to variable 'Nombre'.", repo.SuraClaims.AP_Uber.txt_NombreInfo, new RecordItemIndex(3));
+            //Nombre = repo.SuraClaims.AP_Uber.txt_Nombre.Element.GetAttributeValueText("InnerText");
+            //Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "User", Nombre, new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(5));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(5));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(6));
             repo.SuraClaims.Generales.bttn_Siguiente.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(7));
             repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
             
         }

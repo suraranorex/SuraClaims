@@ -84,6 +84,24 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="afa5aad3-3d0d-4345-baa6-f0b61b20a8f9"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<keysequenceitem
 		KeySequence="Ingreso el detalle del siniestro ocurrido"
 		duration="20ms"
@@ -495,7 +513,7 @@ mode="Global">
 			id="b29c07b8-bd0f-4f25-8d63-5177237e9123"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input
 				</path>
 			</info>
 		</keyitem>
@@ -514,7 +532,7 @@ mode="Global">
 			id="b29c07b8-bd0f-4f25-8d63-5177237e9123"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -556,7 +574,7 @@ mode="Global">
 			id="4d834871-fcf9-4260-af42-270cad12e9a5"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1016,7 +1034,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -1058,7 +1076,7 @@ mode="Global">
 			id="fac0d96f-b615-4181-a05d-dcefe34122a9"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1117,7 +1135,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Validar Direcci&#243;n
+						Validar Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1143,7 +1161,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Dirección']
 				</path>
 			</info>
 			<helperscreenshot
@@ -1189,15 +1207,24 @@ oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
 igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="3000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="a4e65dc9-1dfa-4444-862f-7a0f9d96a7be"
+		waitaction="Exists"
+		waittimeout="15000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="653b6cc4-9e97-4041-81c3-71c29545ce5c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='Verifica la dirección']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1253,7 +1280,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Verifica la direcci&#243;n
+						Verifica la dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1279,7 +1306,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[21]/div/div[2]//span[@innertext='Verifica la direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[21]/div/div[2]//span[@innertext='Verifica la dirección']
 				</path>
 			</info>
 			<helperscreenshot
@@ -1659,7 +1686,7 @@ Rbsf/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="5d394bc0-6aa5-4a98-9f0e-1bc24005d87b"
+			id="ca3761bf-98e3-496e-9511-778773b271f2"
 			sourcename="Recorder">
 				<element
 				capabilities="webelement, litag"
@@ -1985,7 +2012,7 @@ f/rmf5iodWGdQlHTOP5Ciin9sX/LpepFcKluE4LZFFFFc7bZ2KKS2P/Z
 			<bindings>
 			</bindings>
 			<info
-			id="5d394bc0-6aa5-4a98-9f0e-1bc24005d87b"
+			id="ca3761bf-98e3-496e-9511-778773b271f2"
 			sourcename="Recorder">
 				<element
 				capabilities="webelement, litag"

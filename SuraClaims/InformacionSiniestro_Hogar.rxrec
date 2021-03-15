@@ -115,6 +115,24 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="afa5aad3-3d0d-4345-baa6-f0b61b20a8f9"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -537,6 +555,24 @@ mode="Global">
 				</path>
 			</info>
 		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="d9bfec00-7767-44ad-8749-05f8c9b76c0e"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="20ms"
@@ -601,7 +637,7 @@ mode="Global">
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Actos Malintencionados o Vand&#225;licos
+						Actos Malintencionados o Vandálicos
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -656,7 +692,7 @@ mode="Global">
 					<attribute
 					name="value"
 					type="System.String">
-						Actos Malintencionados o Vand&#225;licos
+						Actos Malintencionados o Vandálicos
 					</attribute>
 					<attribute
 					name="width"
@@ -693,24 +729,6 @@ mode="Global">
 				</path>
 			</info>
 		</keysequenceitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="d9bfec00-7767-44ad-8749-05f8c9b76c0e"
-		waitaction="NotExists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -761,7 +779,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						&#191;Solo incidente?
+						¿Solo incidente?
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -781,7 +799,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/?/?/div/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]/td/?/?/label/span[@innertext='&#191;Solo incidente?']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/?/?/div/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]/td/?/?/label/span[@innertext='¿Solo incidente?']
 				</path>
 			</info>
 			<helperscreenshot

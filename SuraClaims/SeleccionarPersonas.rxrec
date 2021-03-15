@@ -73,6 +73,24 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
+			id="b666b12f-87e6-483c-9c93-677bad2f29ed"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<getvaluerecorditem
+		attrname="InnerText"
+		enabled="False"
+		optional="False"
+		searchpropertyid="9d3a2a8d-2f62-489e-9e6c-6cb422115b4b"
+		varname="Nombre">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
 			id="788ad31b-7f71-42bb-901b-f877bc73bd9f"
 			sourcename="RepositoryEditor">
 				<path>

@@ -148,6 +148,39 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="86c26e1a-4629-42b7-8513-828f87e862a4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ca3761bf-98e3-496e-9511-778773b271f2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -177,6 +210,30 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 		button="Left"
 		duration="300ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="37c5d95c-ed81-42ce-9328-1e53dea7c194"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="301afcaa-01b4-4076-b05b-36e04bde2da0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//a[@class='x-menu-item-link']//span
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -227,7 +284,7 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 					<attribute
 					name="innertext"
 					type="System.String">
-						Reembolso de gastos por asistencia m&#233;dicos/farmaceutica por accidente
+						Reembolso de gastos por asistencia médicos/farmaceutica por accidente
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -348,7 +405,7 @@ QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 			id="ca83115d-fd6b-4833-98cc-edfa58b6fedc"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposici&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -356,7 +413,7 @@ QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 		enabled="True"
 		optional="False">
 			<comment>
-				Nueva Exposici&#243;n
+				Nueva Exposición
 			</comment>
 			<bindings>
 			</bindings>
@@ -686,7 +743,7 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -703,6 +760,54 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'UBER']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="90ef1af1-1fff-4ccb-9c26-172ae55acd6b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4fd71e6e-b10b-4348-a35d-f02ee94ebbc5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext~$NOMBRE]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="182c31e7-8a2e-4bc7-8b26-727c70085b24"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5e1e470c-8efc-4249-a36f-8a56de32b0c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext~$NOMBRE]
 				</path>
 			</info>
 		</mouseitem>
@@ -1273,7 +1378,7 @@ AUUUUAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Nueva exposici&#243;n
+						Nueva exposición
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1287,7 +1392,7 @@ AUUUUAf/2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposici&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
 			</info>
 		</mouseitem>
@@ -1397,7 +1502,7 @@ AUUUUAf/2Q==
 		enabled="True"
 		optional="False">
 			<comment>
-				Agrego lesiones - Informaci&#243;n B&#225;sica
+				Agrego lesiones - Información Básica
 			</comment>
 			<bindings>
 			</bindings>
@@ -1457,7 +1562,7 @@ AUUUUAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Agregar les&#243;n
+						Agregar lesón
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1483,7 +1588,7 @@ AUUUUAf/2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Agregar les&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Agregar lesón']
 				</path>
 			</info>
 		</mouseitem>
@@ -1584,7 +1689,7 @@ AUUUUAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1598,7 +1703,7 @@ AUUUUAf/2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1743,7 +1848,7 @@ GXOMHBFRrGRnARM88d6looA//9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1760,6 +1865,54 @@ GXOMHBFRrGRnARM88d6looA//9k=
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//li[@innertext=$NOMBRE]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="cf6ca173-339e-48bd-97b0-e725bb60af14"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5d394bc0-6aa5-4a98-9f0e-1bc24005d87b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="420ef8ae-92d9-47e1-b5f4-28d5b9ab9a56"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5e1e470c-8efc-4249-a36f-8a56de32b0c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext~$NOMBRE]
 				</path>
 			</info>
 		</mouseitem>
@@ -2157,7 +2310,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2171,7 +2324,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</mouseitem>
@@ -2564,7 +2717,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2578,7 +2731,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</mouseitem>
@@ -2688,7 +2841,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 		enabled="True"
 		optional="False">
 			<comment>
-				Descripci&#243;n de lesiones
+				Descripción de lesiones
 			</comment>
 			<bindings>
 			</bindings>
@@ -2748,7 +2901,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Descripci&#243;n de lesiones
+						Descripción de lesiones
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2774,7 +2927,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]//span[@innertext='Descripci&#243;n de lesiones']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]//span[@innertext='Descripción de lesiones']
 				</path>
 			</info>
 			<helperscreenshot
@@ -2860,7 +3013,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Descripci&#243;n de lesiones
+						Descripción de lesiones
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2874,7 +3027,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripci&#243;n de lesiones']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripción de lesiones']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -2937,7 +3090,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Calidad o medio de transporte de la v&#237;ctima
+						Calidad o medio de transporte de la víctima
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -3281,7 +3434,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -3336,7 +3489,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="value"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="width"
@@ -3437,7 +3590,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -3492,7 +3645,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="value"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="width"
@@ -3694,7 +3847,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='&#191;Se utiliz&#243; ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
 				</path>
 			</info>
 		</mouseitem>
@@ -4162,6 +4315,30 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				</path>
 			</info>
 		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c36e6f9b-b435-44af-8b45-781a832e98b8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="84859e2a-2379-40d7-8a2d-bdba7bf55aaf"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Volver']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

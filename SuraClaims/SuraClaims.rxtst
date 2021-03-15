@@ -165,6 +165,12 @@
 					variableid="9250ab9e-671d-487e-bc79-52b006cac70c"
 					variablename="HoraSiniestro">
 					</var>
+					<var
+					dataname="paramNombreAsegurado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="ae84b857-1ee3-4b51-bbbf-a913cc524e04"
+					variablename="NombreAsegurado">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -250,9 +256,22 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="SiniestroAP"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+			maxrange="0"
+			minrange="0"
 			name="Siniestro_AP">
+				<parameters>
+					<param
+					name="paramNombreAsegurado"
+					value="">
+					</param>
+					<param
+					name="paramNombreLesionado"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="18d97118-4313-4d68-adb0-c4e0c6f4b126"
@@ -337,8 +356,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="SiniestroMotorUBER"
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Motor_UBER">
 			</testcase>
 			<testmodule
@@ -419,8 +441,8 @@
 			datarangeactive="True"
 			datasource="SiniestroHogar"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<teardown
@@ -600,6 +622,12 @@
 					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="9250ab9e-671d-487e-bc79-52b006cac70c"
 					variablename="HoraSiniestro">
+					</var>
+					<var
+					dataname="paramNombreAsegurado"
+					datasourceid="bc3fb22a-a353-463b-9ee7-233d85169e9a"
+					variableid="ae84b857-1ee3-4b51-bbbf-a913cc524e04"
+					variablename="NombreAsegurado">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1169,10 +1197,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="3"
+			maxrange="0"
 			minrange="0"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
@@ -1355,8 +1384,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="SiniestroAP_UBER"
 			id="86b95672-af0b-4da0-a95b-2ac941c6be90"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_AP_Uber">
 			</testcase>
 			<testmodule
@@ -1572,6 +1604,18 @@
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
+					<var
+					dataname="paramNombreAsegurado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="40d4fbbd-ac5c-4801-a089-9b02b3349092"
+					variablename="NombreAsegurado">
+					</var>
+					<var
+					dataname="paramNombreLesionado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="5708cec9-a319-4013-82b4-d7025ac889ce"
+					variablename="NOMBRE">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1657,9 +1701,15 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="12"
-			minrange="9"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Motor">
+				<parameters>
+					<param
+					name="paramNombreAsegurado"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<setup
 			id="bdc702ab-035b-4e8b-856b-aa6412330e17"
@@ -1798,7 +1848,21 @@
 					variableid="c3159271-eaa6-4d32-8d55-10f2250793a0"
 					variablename="Numero">
 					</var>
+					<var
+					dataname="paramNombreLesionado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="d1ee65ab-49e0-42e7-aed8-0e52c84fbf18"
+					variablename="NOMBRE">
+					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="paramNombreAsegurado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="40d4fbbd-ac5c-4801-a089-9b02b3349092"
+					variablename="NombreAsegurado">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<teardown
 			id="d25182fe-792b-4912-acf9-508f7ebc4d78"
@@ -1986,6 +2050,12 @@
 					variableid="bab5c512-8f69-4665-bc29-43a4f1d8a3ab"
 					variablename="Correo">
 					</var>
+					<var
+					dataname="paramNombreAsegurado"
+					datasourceid="bc3fb22a-a353-463b-9ee7-233d85169e9a"
+					variableid="40d4fbbd-ac5c-4801-a089-9b02b3349092"
+					variablename="NombreAsegurado">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -2011,6 +2081,18 @@
 					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
 					variableid="b192b42c-5848-4ee8-994f-fa890baade09"
 					variablename="Correo">
+					</var>
+					<var
+					dataname="paramNombreAsegurado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="60724536-c731-456a-8753-3a0b118e4399"
+					variablename="NombreAsegurado">
+					</var>
+					<var
+					dataname="paramNombreLesionado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="30ff3502-c9ff-43ba-b86b-1fee942d863d"
+					variablename="NombreLesionado">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3286,7 +3368,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PagoSiniestro">
+	default="GenerarSiniestrosHogar">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer

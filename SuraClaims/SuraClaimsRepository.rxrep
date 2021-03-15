@@ -53,7 +53,7 @@ name="SuraClaimsRepository">
 				name="bttn_IniciarSesion"
 				refimgid="1ae985ab-2488-4371-9444-14fec6be8b1c"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'Login-tbody']/tr//table/tbody/tr/td//table/?/?/tr/td/a//span[@innertext='Iniciar sesi&#243;n' or @innertext='Log In']
+					/dom[@domain=$Ambiente]//tbody[#'Login-tbody']/tr//table/tbody/tr/td//table/?/?/tr/td/a//span[@innertext='Iniciar sesión' or @innertext='Log In']
 				</item>
 				<basepath>
 					/dom[@domain=$Ambiente]//tbody[#'Login-tbody']/tr
@@ -184,7 +184,7 @@ name="SuraClaimsRepository">
 					name="txtbox_NumeroDePoliza"
 					refimgid="dbff71f1-3d82-40e9-b165-2dd1448fdbd1"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N&#176; de p&#243;liza']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -193,7 +193,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_NumeroDePoliza"
 					refimgid="dbff71f1-3d82-40e9-b165-2dd1448fdbd1"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N&#176; de p&#243;liza']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,atag"
@@ -290,7 +290,7 @@ name="SuraClaimsRepository">
 					name="MenuSup_NºDeSiniestro"
 					refimgid="4623c041-0538-42af-9e1f-995936f75566"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//span[@innertext='N.&#186; de siniestro:']
+						/dom[@domain=$Ambiente]//span[@innertext='N.º de siniestro:']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -358,6 +358,16 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Liquidaciones / Orden de']
 					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="3eb4bd3f-6ac4-4afd-b069-8daea8236e06"
+					name="HERNANGIMENEZZAPIOLA"
+					refimgid="4ba2aa1f-8996-4c45-801a-345ea2a1af84"
+					refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']/body/div[15]/div/div[2]/div/div/a/span[@innertext='HERNAN GIMENEZ ZAPIOLA']"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]/body/div[15]/div/div[2]//span[@innertext='HERNAN GIMENEZ ZAPIOLA']
+					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]
 					</basepath>
@@ -396,6 +406,15 @@ name="SuraClaimsRepository">
 					<item
 					addcaps="unknown,webelement,litag"
 					capname="litag"
+					id="28ec9676-fe6e-4a16-b00a-85f3e939b7a4"
+					name="option_Nombre2"
+					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//li[@innertext='[A-Z]+']
+					</item>
+					<item
+					addcaps="unknown,webelement,litag"
+					capname="litag"
 					id="ea20de49-d908-46e0-99ce-f059b2f30916"
 					name="Select_NombreAsegurado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
@@ -415,7 +434,7 @@ name="SuraClaimsRepository">
 					addcaps="unknown,webelement,litag"
 					capname="litag"
 					id="6919e5a5-b357-4a6d-85f3-20cb9193c1a6"
-					name="option_NombreN"
+					name="optionLI_NombreAsegurado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
@@ -433,10 +452,10 @@ name="SuraClaimsRepository">
 					addcaps="unknown,webelement,litag"
 					capname="litag"
 					id="78aa9580-7cd0-4b94-92bf-82cfe95f4da0"
-					name="option_NombreLesionado"
+					name="optionLI_NombreLesionado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
+						/dom[@domain=$Ambiente]//li[@innertext!=$NombreAsegurado]
 					</item>
 					<item
 					addcaps="unknown,webelement,litag"
@@ -446,6 +465,15 @@ name="SuraClaimsRepository">
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~$NOMBRE]
+					</item>
+					<item
+					addcaps="unknown,webelement,litag"
+					capname="litag"
+					id="5e1e470c-8efc-4249-a36f-8a56de32b0c5"
+					name="option_NombreLesionado4"
+					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//li[@innertext~$NOMBRE]
 					</item>
 					<item
 					addcaps="unknown,webelement,litag"
@@ -490,7 +518,7 @@ name="SuraClaimsRepository">
 					name="txtbox_RelacionConAsegurado"
 					refimgid="d3468e2a-5ca8-4d37-a054-50517aae83f9"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relaci&#243;n con el asegurado']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -499,7 +527,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_RelacionConAsegurado"
 					refimgid="d3468e2a-5ca8-4d37-a054-50517aae83f9"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relaci&#243;n con el asegurado']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -508,7 +536,7 @@ name="SuraClaimsRepository">
 					name="txtbox_CodigoDeArea"
 					refimgid="31a867e7-ee9f-4f6a-8906-1d969685244c"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -517,7 +545,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_CodigoDeArea"
 					refimgid="31a867e7-ee9f-4f6a-8906-1d969685244c"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -526,7 +554,7 @@ name="SuraClaimsRepository">
 					name="txtbox_Numero"
 					refimgid="ed8251a8-869d-42fe-a64d-795ddb901189"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -535,7 +563,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_Numero"
 					refimgid="ed8251a8-869d-42fe-a64d-795ddb901189"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -544,7 +572,7 @@ name="SuraClaimsRepository">
 					name="txtbox_TelefonoPrincipal"
 					refimgid="6463bc6f-6d64-4efa-8ecd-1015b9f6104c"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -553,7 +581,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_TelefonoPrincipal"
 					refimgid="6463bc6f-6d64-4efa-8ecd-1015b9f6104c"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -562,7 +590,7 @@ name="SuraClaimsRepository">
 					name="txtbox_CorreoElectronico"
 					refimgid="03f77c16-be55-41ea-9d30-1ff7e6df1965"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -571,7 +599,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_CorreoElectronico"
 					refimgid="03f77c16-be55-41ea-9d30-1ff7e6df1965"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					capname="inputtag"
@@ -640,7 +668,7 @@ name="SuraClaimsRepository">
 					name="txtbox_Subrogacion"
 					refimgid="f862d454-7830-48ac-a761-a52cb66401b6"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -649,7 +677,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_Subrogacion"
 					refimgid="f862d454-7830-48ac-a761-a52cb66401b6"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -676,7 +704,7 @@ name="SuraClaimsRepository">
 					name="bttn_ValidarDireccion"
 					refimgid="a0f8a37d-018a-46cb-8459-e4e570411cf6"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Direcci&#243;n']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Dirección']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -739,7 +767,7 @@ name="SuraClaimsRepository">
 					name="txtbox_Numero"
 					refimgid="2c002f64-4a92-49ce-a093-56873ba78373"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -748,7 +776,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_Numero"
 					refimgid="2c002f64-4a92-49ce-a093-56873ba78373"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,divtag"
@@ -775,7 +803,7 @@ name="SuraClaimsRepository">
 					name="txt_RelacionConPropietario_Asegurado"
 					refimgid="3b50a4ba-e70c-4787-91aa-5a219c0f6349"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relaci&#243;n con propietario']/../..//div[@innertext='Asegurado']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con propietario']/../..//div[@innertext='Asegurado']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -802,7 +830,7 @@ name="SuraClaimsRepository">
 					name="txt_DetalleDelVehiculoAsegurado"
 					refimgid="ca86c8e6-8f5d-4f49-ad6f-9567fd6aa086"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext~'Detalle del veh&#237;culo asegurado']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext~'Detalle del vehículo asegurado']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -820,7 +848,7 @@ name="SuraClaimsRepository">
 					name="txt_Danios"
 					refimgid="ad86ed70-66e3-4a0b-8c4f-c34330c982ad"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Da&#241;os']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -829,7 +857,7 @@ name="SuraClaimsRepository">
 					name="cb_Danios"
 					refimgid="1bcacb2e-7e25-4fcc-8abf-3854ae147759"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Da&#241;os']/../../..//label[@innertext=$DANIOS]/../input[@type='button']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']/../../..//label[@innertext=$DANIOS]/../input[@type='button']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -838,7 +866,7 @@ name="SuraClaimsRepository">
 					name="cb_Danios_No"
 					refimgid="1bcacb2e-7e25-4fcc-8abf-3854ae147759"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Da&#241;os']/../../..//label[@innertext=$DANIOS]/../input[@type='button']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']/../../..//label[@innertext=$DANIOS]/../input[@type='button']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -901,7 +929,7 @@ name="SuraClaimsRepository">
 					name="txtbox_DescripcionDeLosDanios"
 					refimgid="b7161891-ced3-4a01-847d-fbc67b742adf"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripci&#243;n de los da&#241;os']/../..//textarea
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -910,7 +938,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_DescripcionDeLosDanios"
 					refimgid="b7161891-ced3-4a01-847d-fbc67b742adf"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripci&#243;n de los da&#241;os']/../..//textarea[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -946,7 +974,7 @@ name="SuraClaimsRepository">
 					name="bttn_OtrosDanios"
 					refimgid="15be4b6f-ec87-41f8-bd25-dbad17e613db"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Otros Da&#241;os']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Otros Daños']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -982,7 +1010,7 @@ name="SuraClaimsRepository">
 					name="txtbox_DescripcionDanios"
 					refimgid="c58ff78a-33ba-4f1c-8038-ae3d7698e66e"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripci&#243;n de los da&#241;os']/../..//textarea
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -991,7 +1019,7 @@ name="SuraClaimsRepository">
 					name="Copy_of_txtbox_DescripcionDanios"
 					refimgid="c58ff78a-33ba-4f1c-8038-ae3d7698e66e"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripci&#243;n de los da&#241;os']/../..//textarea[@data-tabindexsaved='True']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,imgtag"
@@ -1036,7 +1064,7 @@ name="SuraClaimsRepository">
 					name="bttn_Agregar2"
 					refimgid="ed420ed8-581c-414d-84a9-1271607bbc4e"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Informaci&#243;n fiscal']/../../..//span[@innertext='Agregar']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Información fiscal']/../../..//span[@innertext='Agregar']
 					</item>
 					<item
 					addcaps="unknown,webelement,labeltag"
@@ -1084,7 +1112,7 @@ name="SuraClaimsRepository">
 					name="DetalleDelVehiculoDeTerceroYRegist"
 					refimgid="7c423d33-46f3-4fdc-a35a-8b54f4875ed6"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext~'Detalle del veh&#237;culo de tercero']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext~'Detalle del vehículo de tercero']
 					</item>
 					<item
 					addcaps="unknown,webelement,divtag"
@@ -1131,7 +1159,7 @@ name="SuraClaimsRepository">
 					name="lbl_MetodoDePago"
 					refimgid="5c94310b-8adb-4fdf-9b94-377185f9db86"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='M&#233;todo de pago']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Método de pago']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -1167,7 +1195,54 @@ name="SuraClaimsRepository">
 					name="lbl_Danos"
 					refimgid="110810f5-de23-49ab-a1f6-b0f6489abd27"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Da&#241;os']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Daños']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="84859e2a-2379-40d7-8a2d-bdba7bf55aaf"
+					name="bttn_Volver"
+					refimgid="e98332e6-0242-41a7-a213-69c326806f26"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Volver']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="2a473827-74e9-4925-975c-15bacf481714"
+					name="XBtnArrowXBtnArrowRightXBtnWrap"
+					refimgid="330f37c6-2212-4275-a60e-8aac5359ddfd"
+					refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[6]/td/div/div[1]/div/div/a[1]/span"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[6]/td/div/div[1]/div/div/a[1]/span
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="labeltag"
+					id="f235a2da-8d41-49fc-8e94-bb15a9f34e0d"
+					name="elotronombre"
+					refimgid="1207f2f3-f9b1-4d9c-a925-59306530e522"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='[A-Z]+']
+					</item>
+					<item
+					addcaps="unknown,webelement,labeltag"
+					capname="labeltag"
+					id="ba535fc2-c79c-4861-8ccb-92d2e2c2bde1"
+					name="HERNANGIMENEZZAPIOLA"
+					refimgid="97af568a-fe6e-4e94-95f9-dc9c64f014a1"
+					refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/table/tbody/tr/td[2]/div/table/tbody/tr[2]/td/div/table/tbody/tr/td/div/table/tbody/tr[1]/td/label[@innertext='HERNAN GIMENEZ ZAPIOLA']"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]//table/?/?/tr/td[2]/?/?/table/tbody/tr[2]/?/?/div/table/?/?/tr/td/div/table/tbody/tr[1]/?/?/label[@innertext='HERNAN GIMENEZ ZAPIOLA']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="divtag"
+					id="63d49439-1171-4625-bc57-6a8fcd282caf"
+					name="txt_RelacionConElAsegurado"
+					refimgid="29c993da-69bb-4e0e-855e-9bee4ff02008"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/..//..//..//div[@innertext='Asegurado']
 					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']
@@ -1180,7 +1255,7 @@ name="SuraClaimsRepository">
 				name="option_VerificaLaDireccion"
 				refimgid="634b6cdb-beb0-4b13-a6ee-2204a477df51"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//span[@innertext='Verifica la direcci&#243;n']
+					/dom[@domain=$Ambiente]//span[@innertext~'Verifica la dirección']
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
@@ -1365,7 +1440,7 @@ name="SuraClaimsRepository">
 				name="pestana_DescripTipoSiniestro"
 				refimgid="f60a5fc5-19bc-4e91-addb-e9cda63d2e51"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Descripci&#243;n del tipo de s']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Descripción del tipo de s']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1491,7 +1566,7 @@ name="SuraClaimsRepository">
 				name="lbl_Paso1_PagoSiniestro"
 				refimgid="6c395af5-6a84-4227-ac37-0e866e903173"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir informaci&#243;n']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir información']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1573,7 +1648,7 @@ name="SuraClaimsRepository">
 				name="LineaReserva_Asegurado"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//li[@innertext~'1&#170;']
+					/dom[@domain=$Ambiente]//li[@innertext~'1ª']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1808,7 +1883,7 @@ name="SuraClaimsRepository">
 				name="bttn_SoloIncidente"
 				refimgid="1680e8a0-d0a5-4c37-9e13-94824505d5eb"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//span[@innertext='&#191;Solo incidente?']/../..//label[@innertext='No']/../input[@type='button']
+					/dom[@domain=$Ambiente]//span[@innertext='¿Solo incidente?']/../..//label[@innertext='No']/../input[@type='button']
 				</item>
 				<item
 				addcaps="unknown,webelement,labeltag"
@@ -1835,7 +1910,7 @@ name="SuraClaimsRepository">
 				name="txt_NuevaExposicion"
 				refimgid="0331482b-8200-41ab-9a37-d25fd5a5abd6"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposici&#243;n']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -1878,7 +1953,7 @@ name="SuraClaimsRepository">
 				name="Copy_of_txtbox_RelacionConAsegurado"
 				refimgid="3cdfb592-9899-464d-b4c4-fd094845431d"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//span[@innertext='Relaci&#243;n con el asegurado']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain=$Ambiente]//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -1904,7 +1979,7 @@ name="SuraClaimsRepository">
 					name="txt_IncidenteLesion"
 					refimgid="5437f5f4-d095-41aa-a535-d530aa245d16"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -1914,6 +1989,15 @@ name="SuraClaimsRepository">
 					refimgid="e1c26cea-3d92-45ae-a81b-f7ad9dbe188b"
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Persona lesionada']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="2c75fd99-cdfa-4e25-9ae3-57d4a7b15ba2"
+					name="Copy_of_txtbox_PersonaLesionada"
+					refimgid="e1c26cea-3d92-45ae-a81b-f7ad9dbe188b"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Persona lesionada']/../..//input[@data-tabindexsaved='True']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -1958,7 +2042,7 @@ name="SuraClaimsRepository">
 					name="bttn_ReclamoPresentado"
 					refimgid="5c3a6ec3-aed1-4ea8-a430-2f4398871979"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Reclamo presentado']/../..//label[@innertext='S&#237;']/../input[@type='button']
+						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Reclamo presentado']/../..//label[@innertext='Sí']/../input[@type='button']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -1967,7 +2051,7 @@ name="SuraClaimsRepository">
 					name="bttn_DescripcionLesiones"
 					refimgid="94be042d-507b-4487-9281-c6cf8e03b172"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Descripci&#243;n de lesiones']
+						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Descripción de lesiones']
 					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table
@@ -1988,7 +2072,7 @@ name="SuraClaimsRepository">
 					name="txt_DescripcionLesiones"
 					refimgid="cda47839-40e6-499b-8faf-91c4441cab7c"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripci&#243;n de lesiones']
+						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripción de lesiones']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -2015,7 +2099,7 @@ name="SuraClaimsRepository">
 					name="bttn_Ambulancia"
 					refimgid="526c94e7-867e-4898-a2b3-2a5908e4dd24"
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='&#191;Se utiliz&#243; ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
+						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
 					</item>
 					<item
 					addcaps="unknown,webelement,imgtag"
@@ -2055,7 +2139,7 @@ name="SuraClaimsRepository">
 				name="bttn_AgregarLesion"
 				refimgid="d35c4c0d-a995-4f60-a0b5-18d23d14a258"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Agregar les&#243;n']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Agregar lesón']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -2087,11 +2171,38 @@ name="SuraClaimsRepository">
 				<item
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
+				id="301afcaa-01b4-4076-b05b-36e04bde2da0"
+				name="option_Reclamo"
+				refimgid="dcc452b0-e889-4b23-9d54-c282a5b61e61"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Muerte Accidental|Reembolso de gastos|Incapacidad Total']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="ef899e11-7414-4988-ae10-65409218062e"
+				name="option_MuerteAccidental"
+				refimgid="dcc452b0-e889-4b23-9d54-c282a5b61e61"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Muerte Accidental']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
 				id="d0ee884d-2da4-4ea7-8331-28d4ddab6f5d"
 				name="option_ReembolsoGastos"
 				refimgid="e70c2cf6-f5bf-46e0-9443-d92d10ddfea4"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Reembolso de gastos']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="9a963e65-76fb-4d99-ace1-481be373851d"
+				name="option_IncapacidadTotal"
+				refimgid="e70c2cf6-f5bf-46e0-9443-d92d10ddfea4"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext&gt;'Incapacidad Total']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -2202,7 +2313,16 @@ name="SuraClaimsRepository">
 				name="btn_AddIncidente"
 				refimgid="abb542e5-2ff0-4d78-a0c6-bbabc8de887c"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[4]//table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody//td/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
+					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="imgtag"
+				id="3bfd2295-78d4-4ee4-8307-b758bda61322"
+				name="btn_AddIncidente2"
+				refimgid="04ce7e62-1089-4805-9d5e-d112449a38a8"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//label[@innertext&gt;'Descripci&#243;n general de incidente']/../../..//img
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -2210,9 +2330,8 @@ name="SuraClaimsRepository">
 				id="d5185403-e774-4fba-88e9-3866ac209180"
 				name="SelectNuevoIncidente"
 				refimgid="268fe92c-1a4c-49e7-b060-21439f221c78"
-				refpath="/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[15]/div/div[2]/div/div/a/span[@innertext='Nuevo incidente...']"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[15]/div/div[2]//span[@innertext='Nuevo incidente...']
+					/dom[@domain=$Ambiente]//span[@innertext='Nuevo incidente...']
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
@@ -2221,7 +2340,7 @@ name="SuraClaimsRepository">
 				name="btn_AceptarExpo"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
+					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Aceptar']
 				</item>
 			</folder>
 			<item
@@ -2422,7 +2541,7 @@ name="SuraClaimsRepository">
 			name="bttn_CerrarSesion"
 			refimgid="c3255885-8b8e-4e76-a16f-b5edc690faab"
 			searchtimeout="30000ms">
-				/dom[@domain=$Ambiente]//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext~'Cerrar sesi&#243;n']
+				/dom[@domain=$Ambiente]//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext~'Cerrar sesión']
 			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
@@ -2517,7 +2636,7 @@ AAAASUVORK5CYII=
 		<var
 		id="73b293f5-81d3-4f77-9d30-008f1b362d6d"
 		name="DANIOS">
-			S&#237;
+			Sí
 		</var>
 		<var
 		id="e9ca260d-4e46-4817-af48-e015c794bdc6"
@@ -2556,12 +2675,12 @@ AAAASUVORK5CYII=
 		<var
 		id="8851a5e2-7df1-4816-9f6b-4d2173a5be11"
 		name="TipoAccidente">
-			Colisi&#243;n
+			Colisión
 		</var>
 		<var
 		id="ba032b61-6797-4f43-918d-6544fb2efeae"
 		name="TipoColision">
-			Veh&#237;culo
+			Vehículo
 		</var>
 		<var
 		id="9dbcfcbc-2e47-47b1-bc74-1ee244b115ce"

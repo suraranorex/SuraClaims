@@ -26,12 +26,12 @@ mode="Global">
 		<var
 		id="a1f3e695-bff6-4f81-8ea8-9af16e84c8bb"
 		name="TipoAccidente">
-			Colisi&#243;n
+			Colisión
 		</var>
 		<var
 		id="818e442a-84c8-4b4a-9ca1-923462714ab4"
 		name="TipoColision">
-			Veh&#237;culo
+			Vehículo
 		</var>
 		<var
 		id="2ba93c69-e8e8-41c3-95eb-44a7b419c612"
@@ -120,7 +120,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Descripci&#243;n del tipo de siniestro
+						Descripción del tipo de siniestro
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1339,7 +1339,7 @@ UAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Veh&#237;culo
+						Vehículo
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1393,7 +1393,7 @@ UAf/2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[13]/?/?/ul/li[@innertext='Veh&#237;culo']
+					/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[13]/?/?/ul/li[@innertext='Vehículo']
 				</path>
 			</info>
 			<helperscreenshot
@@ -3399,7 +3399,7 @@ FP0Jbb1buVYtKgufMmd5AzTSZ2kY++R6VoWlrHZxGOIsQTuJY802zt/ItkSQhn5Ln1YnJ/DJqbav
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 3 de 3: Agregar informaci&#243;n del siniestro
+						Paso 3 de 3: Agregar información del siniestro
 					</attribute>
 					<attribute
 					name="safeclass"

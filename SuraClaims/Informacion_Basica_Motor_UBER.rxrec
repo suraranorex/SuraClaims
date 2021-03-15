@@ -87,7 +87,7 @@ mode="Global">
 		enabled="False"
 		optional="False">
 			<comment>
-				No hace falta. Se completa autom&#225;ticamente porque no estoy cargando una persona nueva sino que seleccion&#233; al asegurado
+				No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado
 			</comment>
 			<bindings>
 			</bindings>
@@ -107,7 +107,7 @@ mode="Global">
 			id="d27a1200-75d1-4131-99ad-e02798c57322"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Relaci&#243;n con el asegurado']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -166,7 +166,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 2 de 3: Informaci&#243;n b&#225;sica
+						Paso 2 de 3: Información básica
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -198,7 +198,7 @@ mode="Global">
 			id="db98b2a7-6fc7-4ffa-9fe8-a9e62b9942d9"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Relaci&#243;n con el asegurado']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -221,7 +221,7 @@ mode="Global">
 			id="d989b65f-a7ac-4cec-be1c-4d14ea5188f5"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input
 				</path>
 			</info>
 		</keyitem>
@@ -240,7 +240,7 @@ mode="Global">
 			id="d989b65f-a7ac-4cec-be1c-4d14ea5188f5"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -299,7 +299,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 2 de 3: Informaci&#243;n b&#225;sica
+						Paso 2 de 3: Información básica
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -331,7 +331,7 @@ mode="Global">
 			id="075de9d9-5993-4e58-8214-0baa4cd55b6b"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -354,7 +354,7 @@ mode="Global">
 			id="a99b776e-d1aa-4846-b3d6-19df6bdd41fd"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input
 				</path>
 			</info>
 		</keyitem>
@@ -427,7 +427,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -486,7 +486,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 2 de 3: Informaci&#243;n b&#225;sica
+						Paso 2 de 3: Información básica
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -518,7 +518,7 @@ mode="Global">
 			id="d03996c3-d6b3-40bb-b3af-79436133b54d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -541,7 +541,7 @@ mode="Global">
 			id="a4ab78a7-c8af-4bc6-a395-dc794088b05d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input
 				</path>
 			</info>
 		</keyitem>
@@ -564,7 +564,7 @@ mode="Global">
 			id="a4ab78a7-c8af-4bc6-a395-dc794088b05d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -623,7 +623,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 2 de 3: Informaci&#243;n b&#225;sica
+						Paso 2 de 3: Información básica
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -655,7 +655,7 @@ mode="Global">
 			id="080c75be-4c3d-46b3-a259-5f7439a28544"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -678,7 +678,7 @@ mode="Global">
 			id="9cf937cc-b302-4868-853e-525f8e1bb177"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input
 				</path>
 			</info>
 		</keyitem>
@@ -701,7 +701,7 @@ mode="Global">
 			id="9cf937cc-b302-4868-853e-525f8e1bb177"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -760,7 +760,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 2 de 3: Informaci&#243;n b&#225;sica
+						Paso 2 de 3: Información básica
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -792,7 +792,7 @@ mode="Global">
 			id="928c7699-e911-48b8-bb0a-77265c91069b"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -984,7 +984,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 3 de 3: Agregar informaci&#243;n del siniestro
+						Paso 3 de 3: Agregar información del siniestro
 					</attribute>
 					<attribute
 					name="safeclass"

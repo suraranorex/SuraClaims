@@ -200,7 +200,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#176; de p&#243;liza']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -259,7 +259,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 1: Buscar o crear p&#243;liza
+						Paso 1: Buscar o crear póliza
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -291,7 +291,7 @@ mode="Global">
 			id="985e8fcd-e01a-41a8-843c-47f4e1775984"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#176; de p&#243;liza']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -670,7 +670,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 1: Buscar o crear p&#243;liza
+						Paso 1: Buscar o crear póliza
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1624,7 +1624,7 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 2 de 3: Informaci&#243;n b&#225;sica
+						Paso 2 de 3: Información básica
 					</attribute>
 					<attribute
 					name="safeclass"

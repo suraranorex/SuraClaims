@@ -180,159 +180,45 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="6fb34a78-2bc7-4bd6-a6f0-85ac24ccc194"
-		sx="410"
-		sy="441"
+		searchpropertyid="37c5d95c-ed81-42ce-9328-1e53dea7c194"
+		sx="0"
+		sy="0"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d0ee884d-2da4-4ea7-8331-28d4ddab6f5d"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="spantag"
-				rect="390,433,352,18"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_AssignSaveScreen:NewExposureLV_tb:AddExposure:4:item:2:item-textEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Reembolso de gastos por asistencia m&#233;dicos/farmaceutica por accidente
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-menu-item-indent-no-separator x-menu-item-text x-menu-item-text-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
+			id="301afcaa-01b4-4076-b05b-36e04bde2da0"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[16]/div/div[2]/div/div[3]/?/?/span[@innertext&gt;'Reembolso de gastos por asistencia']
+					/dom[@domain=$Ambiente]//a[@class='x-menu-item-link']//span
 				</path>
 			</info>
-			<helperscreenshot
-			guid="b44ec5db-8274-4823-88ba-3bd1f5036623">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABNAY0DASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoIP8A
-UJ9KkpkP+qX6U+gBsilo2UdSCKgFt82/C79ykN3AAGf61ZooAqG2fYVEcOS2S3d/rkH+tMNtIdqF
-EYiMLvP8JyeRx/hV6igCo1tK07PuVcgjcOuMYHb+tOFu2wBUji+VhhD6456CrNFAFP7K+G2xwqG2
-/KOnGfUf0pGtJDEFIjc7AuWP3fpxV2igBkqFwoGOGB/I1CLY+aSVTkkl/wCJgex4/wA4qzRQBTNr
-KfLwsS7MdO2Dz2/wqR0KW7A5Lbiy7QTznIqxRQBXEDFeWAJU8j+8epp1vEYyx2IgIA2oePr0FTUU
-AVltmWEjdufaQN2MAHt0/nmkitSCvmBCqkkD0zj2HpVqigCtHbsgUbI1KtksDy/B5PHWmRWsqsS2
-wZKkhfUHJ6AVcooAqzwtLcNhEPyAB2/hOTyOOtI1q5lkb5TuBw2cHkdOnT8at0UAVntFYYCIAEIH
-HRvWke2O1ljWMKzA7SBjp9DVqigCoLQmPD7GcRhVPoRnmj7K/mSn5TuDYbPPPY8f1q3RQBVa1Azs
-SPHynaeASOvalit3S5MjYIOTkHnnt0/rVmigCqsLG4d9ir+8zv8A4sYHHTp+NILV9jLhFyu0kH75
-9Tx/nNW6KAIZ4S0IjiVAoP3SBjH5H+VRpbupi3LHJtUDJP3fccf4dKtUUAVY7ZlVRtjQqcllPLcE
-ZPHXmmfZH2sAsaZUD5T97Bzzx3/GrtFAFVbTKoJEQgBvlPIBOOnApDauUYYTLBct3OMZB46cVboo
-Ajt4zFEFIAOegOQP0H8qkoooAKKKKACiiigAooooAKKKKACo1/1rf57VJUa/61v89qAJKKKKAGRf
-6pafVdbhEUKQ2R6Uv2qP0b8qrlZPPHuSynELkdQpqoskh8qMs2Y2G45+9np9eKq317cm9SK1k2Bk
-z8yjrz9aZ5mqf8/Mf/fI/wAKjXojb2asm5JXND7WcYUKzhWJUdeOlJFcSShQrRnc2Nw5HTPQH+tU
-PM1T/n5j/wC+R/hR5mqf8/Mf/fI/wp+92Dlh/Ovx/wAi89y8anLxk7ypJGNvpnkVJLI5tl2qS8mB
-hCM++DWb5mqf8/Mf/fI/wo8zVP8An5j/AO+R/hR73YOWH86/H/I0FuG/dq7JEejeZ3PoOetAnZs5
-dCQ4GwZDLz35rP8AM1T/AJ+Y/wDvkf4UeZqn/PzH/wB8j/Cj3uwcsP51+P8AkXRcuW3BlYiNjsX+
-E5HB5p8c8soUI0XzMRuAyOnoD/Ws/wAzVP8An5j/AO+R/hR5mqf8/Mf/AHyP8KPe7Byw/nX4/wCR
-f+0sBuZ0UGMMFx3/ADpYJ2lkTJHG4HHQ9Pc+tZ/map/z8x/98j/CjzNU/wCfmP8A75H+FHvdg5Yf
-zr8f8jaorF8zVP8An5j/AO+R/hR5mqf8/Mf/AHyP8KPe7Byw/nX4/wCRtUVi+Zqn/PzH/wB8j/Cj
-zNU/5+Y/++R/hR73YOWH86/H/I2qKxfM1T/n5j/75H+FHmap/wA/Mf8A3yP8KPe7Byw/nX4/5G1R
-WL5mqf8APzH/AN8j/CjzNU/5+Y/++R/hR73YOWH86/H/ACNqisXzNU/5+Y/++R/hR5mqf8/Mf/fI
-/wAKPe7Byw/nX4/5G1RWL5mqf8/Mf/fI/wAKPM1T/n5j/wC+R/hR73YOWH86/H/I2qKxfM1T/n5j
-/wC+R/hR5mqf8/Mf/fI/wo97sHLD+dfj/kbVFYvmap/z8x/98j/CjzNU/wCfmP8A75H+FHvdg5Yf
-zr8f8jaorF8zVP8An5j/AO+R/hR5mqf8/Mf/AHyP8KPe7Byw/nX4/wCRtUVi+Zqn/PzH/wB8j/Cj
-zNU/5+Y/++R/hR73YOWH86/H/I2qKxfM1T/n5j/75H+FHmap/wA/Mf8A3yP8KPe7Byw/nX4/5G1R
-WL5mqf8APzH/AN8j/CjzNU/5+Y/++R/hR73YOWH86/H/ACNqisXzNU/5+Y/++R/hR5mqf8/Mf/fI
-/wAKPe7Byw/nX4/5G1RWL5mqf8/Mf/fI/wAKPM1T/n5j/wC+R/hR73YOWH86/H/I2qKxfM1T/n5j
-/wC+R/hR5mqf8/Mf/fI/wo97sHLD+dfj/kbVFYvmap/z8x/98j/CjzNU/wCfmP8A75H+FHvdg5Yf
-zr8f8jaqNf8AWt/ntWQ82pojOblMKMnCj/Cr2lyvPbLJK252zk4x3pX1s0Dp2jzJpryLtFFFMzM9
-/vflTadJw5ptdMdkccviZRnO3U4z6IT/ADqxFcB1LNtxxyh3A+3TrUEw3anED3Qj+dWGgVgQc9vT
-t3rOF7v1Oiva0P8AD+rFMyAA5OD7Hj6+lMF0pfaY5FB3bWIyG2nBxjmlNup28nK8ZwOf0qGRHa2R
-45DG0SXLggA5w445qpSaMYxUifz0DYOcYBzg96XzVyQCcj2OPzqt5FxDcGKSVZIg3k5Awx+Xfz7Y
-4qz5Iz95sZJA7AmmncUo8rswWVT6jjJ4OB+NOR1fO3PHqCKZ5Ck5JJGNuOOlORNpJLFieMmnqToN
-89N2OcYJzg/5NOEilS2eB1yMYpn2dSMFmIxgA44FL5W2FkU5J9QB/IUahoL5yEE/NwcH5TS+amcD
-J4zwDUS25KbXPAORgD/CniFQVOT8owOlGo9BfOTAJyMjP3Tx9fSnK6sxAzkexx+dM8kYxvbpg9OR
-+VOEYEhfJyeO1GotAEqFsZPfqDjj3pPOTGcn/vk01Yeu9iRknHbmnCEd2ZiMYzjtRqGg5nCruOce
-yk0nmqTgEnjPQ4/OiWISAAkjH0/rTRAoK/MflGB0o1DQXzlwTycDJwCaXzUyBk8+xpvkLnO4/d29
-ulHkLvDliSOuQOf0o1DQUTIc8njJyQRQJQcYzjBPKkH8sUeSpABzgAj86QwhhhnZuCMnH+FGoaDh
-IpQtngdcjGKQTITjJznHKmhYVWNkBOG69KUxg+vUH8qNQ0EEq7myeAPQ/jSCYEkdADjnI7ZpBboN
-2CcH2HH6UvkjnczNk5OfpijUegvnJtz83PT5TzSiRWYAEnPPAOKTyuB+8fI6HjI/Sk8hcghmG0YH
-SjUWgCbLKAvByc89B+FL5yY6nrjG05/KlMalccgbdvHpTUgVDkE9c9vTHajUNBTMgOMn8FNL5i/L
-yfm6HBx+dAjA9epP50z7OmVOT8uMdO1GoaDvNTBPPBx908/T1pRKhBOeAMnimmAFdpZiM5A4+X9K
-QwArjcw4wcYGf0o1DQd5oyQM8HHIIpRKpUsNxH+6aQxAkkk4JBxSGAFApdiAeM44/SjUNBxkUIGz
-wemBSGZAAcnn/ZP+RSGL90iISApHP0o8kY4dgecnjmjUNB4dSxUEkjrxSGRQSCSMDPINKqBM471H
-9nTcWycnPp3o1DQd5q8fe56Dac0jTqqE9SATgA0vlnIPmNkd+OR+VIYFIIDMMjBxjn/OaNR6DvNT
-dtzz9KTz025G49P4T3pPIXzC4J56jA/wzSmIEdSOAM/SjUWgy4kUwyLk52HsfSrOi/8AHin4/wAz
-VSeFVjlcE52HPA9PpVvRh/oEZ+v8zWFT40d1H+A/VfkzQoooqRDTGDSeWKfRQBSutMhupA8jSAgY
-+Uj/AAqH+wrb/npL+Y/wrToqXFM1jXqRVkzEudJgt2SVhLJAARL8+CnTDcdhzmtSxt1tbRIVfeFy
-Q3qCSf61Myq6lWAZSMEEZBFUo4Ly1JjtjFJbj7iysQye2QDkU0ktiJTlLWTDU4EuDbQOSA8xJ29e
-Eaov7Ctv+ekv5j/CrEFtM1yLm7dGdVKpGg+VM9Tk8k4+nerdDinuVCrOCtFmZ/YVt/z0l/Mf4Uf2
-Fbf89JfzH+FadFLkj2L+sVf5jM/sK2/56S/mP8KP7Ctv+ekv5j/CtOijkj2D6xV/mMz+wrb/AJ6S
-/mP8KP7Ctv8AnpL+Y/wrToo5I9g+sVf5jM/sK2/56S/mP8KP7Ctv+ekv5j/CtOijkj2D6xV/mMz+
-wrb/AJ6S/mP8KP7Ctv8AnpL+Y/wrToo5I9g+sVf5jM/sK2/56S/mP8KP7Ctv+ekv5j/CtOijkj2D
-6xV/mMz+wrb/AJ6S/mP8KP7Ctv8AnpL+Y/wrToo5I9g+sVf5jM/sK2/56S/mP8KP7Ctv+ekv5j/C
-tOijkj2D6xV/mMz+wrb/AJ6S/mP8KP7Ctv8AnpL+Y/wrToo5I9g+sVf5jM/sK2/56S/mP8KP7Ctv
-+ekv5j/CtOijkj2D6xV/mMz+wrb/AJ6S/mP8KP7Ctv8AnpL+Y/wrToo5I9g+sVf5jM/sK2/56S/m
-P8KP7Ctv+ekv5j/CtOijkj2D6xV/mMz+wrb/AJ6S/mP8KP7Ctv8AnpL+Y/wrToo5I9g+sVf5jM/s
-K2/56S/mP8KP7Ctv+ekv5j/CtOijkj2D6xV/mMz+wrb/AJ6S/mP8KP7Ctv8AnpL+Y/wrToo5I9g+
-sVf5jM/sK2/56S/mP8KP7Ctv+ekv5j/CtOijkj2D6xV/mMz+wrb/AJ6S/mP8KP7Ctv8AnpL+Y/wr
-Too5I9g+sVf5jM/sK2/56S/mP8KP7Ctv+ekv5j/CtOijkj2D6xV/mMz+wrb/AJ6S/mP8KP7Ctv8A
-npL+Y/wrToo5I9g+sVf5jM/sK2/56S/mP8KvW1ultAsSElVzgnr1zUtFNRS2InVnNWkwooopmYUU
-UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
-QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
-			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b20c5a60-14c0-4382-83c8-89906298dad7"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9a963e65-76fb-4d99-ace1-481be373851d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext&gt;'Incapacidad Total']
+				</path>
+			</info>
 		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
@@ -348,7 +234,7 @@ QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 			id="ca83115d-fd6b-4833-98cc-edfa58b6fedc"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposici&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -356,7 +242,7 @@ QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 		enabled="True"
 		optional="False">
 			<comment>
-				Nueva Exposici&#243;n
+				Nueva Exposición
 			</comment>
 			<bindings>
 			</bindings>
@@ -1273,7 +1159,7 @@ AUUUUAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Nueva exposici&#243;n
+						Nueva exposición
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1287,7 +1173,7 @@ AUUUUAf/2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposici&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
 			</info>
 		</mouseitem>
@@ -1397,96 +1283,11 @@ AUUUUAf/2Q==
 		enabled="True"
 		optional="False">
 			<comment>
-				Agrego lesiones - Informaci&#243;n B&#225;sica
+				Agrego lesiones - Información Básica
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="f3896816-ee07-41bb-ba09-fccc53c6cc5d"
-		sx="219"
-		sy="603"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="0240420b-4cbe-483a-a018-2b1cc9ef4439"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="188,607,72,12"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-btn-inner x-btn-inner-default-toolbar-small
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:AddInjuriesButton-btnInnerEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Agregar les&#243;n
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-btn-inner x-btn-inner-default-toolbar-small
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Agregar les&#243;n']
-				</path>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1504,10 +1305,10 @@ AUUUUAf/2Q==
 			<bindings>
 			</bindings>
 			<info
-			id="a482eaa8-0e65-4d49-aa06-b58746bef91b"
+			id="3bfd2295-78d4-4ee4-8307-b758bda61322"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[4]//table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[15]/td/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src='https://ssurgwsoadev4.opc.oracleoutsourcing.com/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
+					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//label[@innertext&gt;'Descripci&#243;n general de incidente']/../../..//img
 				</path>
 			</info>
 		</mouseitem>
@@ -1584,7 +1385,7 @@ AUUUUAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1598,7 +1399,7 @@ AUUUUAf/2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1743,7 +1544,7 @@ GXOMHBFRrGRnARM88d6looA//9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1763,15 +1564,48 @@ GXOMHBFRrGRnARM88d6looA//9k=
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="5000ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
-		optional="False">
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a39fb996-2a3e-4324-97d9-83944df47d0c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="ca3761bf-98e3-496e-9511-778773b271f2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="cfffaec2-4cde-475f-afed-98f860996434"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2c75fd99-cdfa-4e25-9ae3-57d4a7b15ba2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Persona lesionada']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -2157,7 +1991,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2171,7 +2005,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</mouseitem>
@@ -2564,7 +2398,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Incidente de lesi&#243;n
+						Incidente de lesión
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2578,7 +2412,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesi&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
 			</info>
 		</mouseitem>
@@ -2688,7 +2522,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 		enabled="True"
 		optional="False">
 			<comment>
-				Descripci&#243;n de lesiones
+				Descripción de lesiones
 			</comment>
 			<bindings>
 			</bindings>
@@ -2748,7 +2582,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Descripci&#243;n de lesiones
+						Descripción de lesiones
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2774,7 +2608,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]//span[@innertext='Descripci&#243;n de lesiones']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]//span[@innertext='Descripción de lesiones']
 				</path>
 			</info>
 			<helperscreenshot
@@ -2860,7 +2694,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Descripci&#243;n de lesiones
+						Descripción de lesiones
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2874,19 +2708,10 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripci&#243;n de lesiones']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripción de lesiones']
 				</path>
 			</info>
 		</WaitForRecordItem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -2937,7 +2762,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Calidad o medio de transporte de la v&#237;ctima
+						Calidad o medio de transporte de la víctima
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -3281,7 +3106,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -3336,7 +3161,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="value"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="width"
@@ -3437,7 +3262,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="tagvalue"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="autocomplete"
@@ -3492,7 +3317,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					<attribute
 					name="value"
 					type="System.String">
-						Peat&#243;n
+						Peatón
 					</attribute>
 					<attribute
 					name="width"
@@ -3694,7 +3519,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='&#191;Se utiliz&#243; ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
 				</path>
 			</info>
 		</mouseitem>
@@ -4091,15 +3916,24 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="300ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="3c6ba7db-ee57-4609-bfb2-d66f96873ebe"
+		waitaction="Exists"
+		waittimeout="15000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="ca83115d-fd6b-4833-98cc-edfa58b6fedc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4211,6 +4045,48 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				</path>
 			</info>
 		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c36e6f9b-b435-44af-8b45-781a832e98b8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="84859e2a-2379-40d7-8a2d-bdba7bf55aaf"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Volver']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
+		searchpropertyid="a8a24ee7-adaf-4ff7-b8b6-2bdadf7ff87c"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a3dc6c0-e0c6-4fff-87b3-f743f6afc874"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

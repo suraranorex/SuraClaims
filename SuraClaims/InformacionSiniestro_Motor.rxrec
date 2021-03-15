@@ -84,171 +84,24 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="2000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<mouseitem
-		action="Move"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="ed0fbcc9-fb30-475a-ae88-87019f67463f"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="afa5aad3-3d0d-4345-baa6-f0b61b20a8f9"
+		waitaction="NotExists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="4c8adb8d-c1d8-4274-a6bb-a84fc8e175d1"
+			id="df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
 				</path>
 			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e74eb7d3-ac3c-4e86-b970-0acd8559f276"
-		sx="489"
-		sy="295"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4c8adb8d-c1d8-4274-a6bb-a84fc8e175d1"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, textareatag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="textareatag"
-				rect="375,267,228,56"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default x-form-textarea
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:Description-inputEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Da&#241;o Tercero
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-field x-form-text x-form-textarea x-form-text-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						textarea
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						Da&#241;o Tercero
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="cols"
-					type="System.String">
-						20
-					</attribute>
-					<attribute
-					name="maxlength"
-					type="System.String">
-						4000
-					</attribute>
-					<attribute
-					name="name"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:Description
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="rows"
-					type="System.String">
-						2
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="autocomplete"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="componentid"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea
-				</path>
-			</info>
-		</mouseitem>
+		</WaitForRecordItem>
 		<keysequenceitem
 		KeySequence="Ingreso el detalle del siniestro ocurrido"
 		duration="20ms"
@@ -264,20 +117,14 @@ mode="Global">
 				variable="DetalleSiniestro">
 				</binding>
 			</bindings>
+			<info
+			id="4c8adb8d-c1d8-4274-a6bb-a84fc8e175d1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea
+				</path>
+			</info>
 		</keysequenceitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="feced3d8-7721-48fb-ae82-79842858c261">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -564,7 +411,7 @@ mode="Global">
 			id="b29c07b8-bd0f-4f25-8d63-5177237e9123"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input
 				</path>
 			</info>
 		</keyitem>
@@ -583,7 +430,7 @@ mode="Global">
 			id="b29c07b8-bd0f-4f25-8d63-5177237e9123"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -625,7 +472,7 @@ mode="Global">
 			id="4d834871-fcf9-4260-af42-270cad12e9a5"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogaci&#243;n']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -771,6 +618,15 @@ mode="Global">
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Dirección
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<keyitem
 		action="Press"
 		data="A, Control"
@@ -1085,7 +941,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -1127,7 +983,7 @@ mode="Global">
 			id="fac0d96f-b615-4181-a05d-dcefe34122a9"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N&#250;mero']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1186,7 +1042,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Validar Direcci&#243;n
+						Validar Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1212,7 +1068,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Dirección']
 				</path>
 			</info>
 			<helperscreenshot
@@ -1258,15 +1114,24 @@ oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
 igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="3000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="9b527a23-350b-4386-a436-769a1a4c7b79"
+		waitaction="Exists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="653b6cc4-9e97-4041-81c3-71c29545ce5c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='Verifica la dirección']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1322,7 +1187,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 					<attribute
 					name="innertext"
 					type="System.String">
-						Verifica la direcci&#243;n
+						Verifica la dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1348,7 +1213,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[21]/div/div[2]//span[@innertext='Verifica la direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[21]/div/div[2]//span[@innertext='Verifica la dirección']
 				</path>
 			</info>
 			<helperscreenshot

@@ -135,8 +135,8 @@ namespace SuraClaims
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Vehiculo' at 21;8.", repo.SuraClaims.Motor.InformacionSiniestro.tag_VehiculoInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Motor.InformacionSiniestro.tag_Vehiculo.Click("21;8");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Vehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.tag_VehiculoInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Motor.InformacionSiniestro.tag_Vehiculo.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new ActionTimeout(30000), new RecordItemIndex(1));
@@ -156,8 +156,8 @@ namespace SuraClaims
             repo.SuraClaims.Motor.InformacionSiniestro.picker_Personal.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_Nombre2' at 35;12.", repo.SuraClaims.Motor.option_Nombre2Info, new RecordItemIndex(6));
-            repo.SuraClaims.Motor.option_Nombre2.Click("35;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_Nombre2' at Center.", repo.SuraClaims.Motor.option_Nombre2Info, new RecordItemIndex(6));
+            repo.SuraClaims.Motor.option_Nombre2.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_RelacionConPropietario_Asegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_RelacionConPropietario_AseguradoInfo, new ActionTimeout(30000), new RecordItemIndex(7));

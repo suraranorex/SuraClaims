@@ -867,8 +867,8 @@
     </None>
     <None Include="InformacionBasica_Motor.rxrec">
       <id>0c8ee23d-e534-4b95-a493-23d294c70da6</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>4afd7ade-4bd3-436e-85a2-aa47e7e56042</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="InformacionSiniestro_AP_Uber.rxrec">
       <id>6ed9bce4-05e1-4bf8-9b9f-c36d20348d8d</id>
@@ -892,8 +892,8 @@
     </None>
     <None Include="Informacion_Basica_AP.rxrec">
       <id>121dcbfe-22fe-4e5a-b2cd-d92b05b5cb39</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>a738d8f3-19bc-4927-a3c2-b398963683dc</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="Informacion_Basica_Motor_UBER.rxrec">
       <id>e926456b-5efd-4165-9ef5-c6765e10f665</id>
@@ -1019,8 +1019,8 @@
     </None>
     <None Include="SeleccionarPersonas.rxrec">
       <id>b48c60cc-6ea4-4f4a-b33b-0ea50d9994a5</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>b9e7b7c6-39f5-41e2-b917-a08ee4a85bb7</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="StartVPN.bat">
       <id>0fe300ad-d5c2-4438-b282-a8a8323e63aa</id>

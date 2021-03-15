@@ -89,6 +89,16 @@ namespace SuraClaims
             set { repo.Ambiente = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable NombreAsegurado.
+        /// </summary>
+        [TestVariable("40d4fbbd-ac5c-4801-a089-9b02b3349092")]
+        public string NombreAsegurado
+        {
+            get { return repo.NombreAsegurado; }
+            set { repo.NombreAsegurado = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -119,93 +129,93 @@ namespace SuraClaims
             repo.SuraClaims.Motor.InformacionBasica.bttn_SelecNombre.Click("9;10");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_Nombre' at 64;10.", repo.SuraClaims.Motor.InformacionBasica.option_NombreInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Motor.InformacionBasica.option_Nombre.Click("64;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.optionLI_NombreAsegurado' at Center.", repo.SuraClaims.Motor.InformacionBasica.optionLI_NombreAseguradoInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.InformacionBasica.optionLI_NombreAsegurado.Click();
             Delay.Milliseconds(0);
             
-            // No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado
-            //Report.Log(ReportLevel.Info, "Section", "No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(2));
+            repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
+            Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Asegurado' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAsegurado'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAseguradoInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_RelacionConElAsegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_RelacionConElAseguradoInfo, new ActionTimeout(20000), new RecordItemIndex(3));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_RelacionConElAseguradoInfo.WaitForExists(20000);
+            
+            // No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado
+            //Report.Log(ReportLevel.Info, "Section", "No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado", new RecordItemIndex(4));
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Asegurado' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAsegurado'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAseguradoInfo, new RecordItemIndex(5));
             //repo.SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAsegurado.PressKeys("Asegurado");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(4));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(6));
             //repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_RelacionConAsegurado'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_RelacionConAseguradoInfo, new ActionTimeout(30000), new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_RelacionConAsegurado'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_RelacionConAseguradoInfo, new ActionTimeout(30000), new RecordItemIndex(7));
             //repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_RelacionConAseguradoInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipal'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipalInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipal'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipalInfo, new RecordItemIndex(8));
             //Keyboard.PrepareFocus(repo.SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipal);
             //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Particular' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipal'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipalInfo, new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Particular' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipal'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipalInfo, new RecordItemIndex(9));
             //repo.SuraClaims.Motor.InformacionBasica.txtbox_TelefonoPrincipal.PressKeys("Particular");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(8));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(10));
             //repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_TelefonoPrincipal'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_TelefonoPrincipalInfo, new ActionTimeout(30000), new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_TelefonoPrincipal'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_TelefonoPrincipalInfo, new ActionTimeout(30000), new RecordItemIndex(11));
             //repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_TelefonoPrincipalInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeArea'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeAreaInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeArea'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeAreaInfo, new RecordItemIndex(12));
             //Keyboard.PrepareFocus(repo.SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeArea);
             //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '011' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeArea'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeAreaInfo, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '011' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeArea'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeAreaInfo, new RecordItemIndex(13));
             //repo.SuraClaims.Motor.InformacionBasica.txtbox_CodigoDeArea.PressKeys("011");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(12));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(14));
             //repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CodigoDeArea'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CodigoDeAreaInfo, new ActionTimeout(30000), new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CodigoDeArea'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CodigoDeAreaInfo, new ActionTimeout(30000), new RecordItemIndex(15));
             //repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CodigoDeAreaInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_Numero'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_NumeroInfo, new RecordItemIndex(14));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_Numero'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_NumeroInfo, new RecordItemIndex(16));
             //Keyboard.PrepareFocus(repo.SuraClaims.Motor.InformacionBasica.txtbox_Numero);
             //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NumTelefono' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_Numero'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_NumeroInfo, new RecordItemIndex(15));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NumTelefono' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_Numero'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_NumeroInfo, new RecordItemIndex(17));
             //repo.SuraClaims.Motor.InformacionBasica.txtbox_Numero.PressKeys(NumTelefono);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(18));
             //repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_Numero'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NumeroInfo, new ActionTimeout(30000), new RecordItemIndex(17));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_Numero'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NumeroInfo, new ActionTimeout(30000), new RecordItemIndex(19));
             //repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NumeroInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronico'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronicoInfo, new RecordItemIndex(18));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronico'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronicoInfo, new RecordItemIndex(20));
             //Keyboard.PrepareFocus(repo.SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronico);
             //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Correo' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronico'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronicoInfo, new RecordItemIndex(19));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Correo' with focus on 'SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronico'.", repo.SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronicoInfo, new RecordItemIndex(21));
             //repo.SuraClaims.Motor.InformacionBasica.txtbox_CorreoElectronico.PressKeys(Correo);
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(20));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(22));
             //repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CorreoElectronico'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CorreoElectronicoInfo, new ActionTimeout(30000), new RecordItemIndex(21));
-            //repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_CorreoElectronicoInfo.WaitForNotExists(30000);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(22));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(23));
-            repo.SuraClaims.Generales.bttn_Siguiente.MoveTo();
-            Delay.Milliseconds(0);
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(23));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(24));
             repo.SuraClaims.Generales.bttn_Siguiente.Click();

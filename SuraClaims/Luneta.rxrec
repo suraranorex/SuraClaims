@@ -45,7 +45,7 @@ mode="Global">
 			id="173e0b5c-a7dc-4f43-adca-56a5375fdafb"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del veh&#237;culo asegurado']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo asegurado']
 				</path>
 			</info>
 		</mouseitem>

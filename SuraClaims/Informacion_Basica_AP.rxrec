@@ -37,6 +37,10 @@ mode="Global">
 		id="60724536-c731-456a-8753-3a0b118e4399"
 		name="NombreAsegurado">
 		</var>
+		<var
+		id="30ff3502-c9ff-43ba-b86b-1fee942d863d"
+		name="NombreLesionado">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -63,6 +67,56 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="83fbfcfa-412a-4151-be0e-baf61796d254">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="NombreAsegurado">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<getvaluerecorditem
+		attrname="InnerText"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f315ad1a-46aa-4c52-a61a-24d55d0cbd50"
+		varname="NombreLesionado">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78aa9580-7cd0-4b94-92bf-82cfe95f4da0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext!=$NombreAsegurado and @inntertext~'[A-Z]+']
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="5e51c2e2-4576-480d-8b64-69844bcb978b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="NombreLesionado">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -295,7 +349,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -329,7 +383,7 @@ mode="Global">
 			id="3307446c-ec5b-4ae2-bed4-8903eed8e4ff"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Relaci&#243;n con el asegurado']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -361,7 +415,7 @@ mode="Global">
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		numLock="False"
 		optional="False"
 		presstime="20ms"
@@ -376,14 +430,14 @@ mode="Global">
 			id="a99b776e-d1aa-4846-b3d6-19df6bdd41fd"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input
 				</path>
 			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence="011"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="70cc4e06-daaf-44d2-a434-2b939dd46e53">
@@ -449,7 +503,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -457,7 +511,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -508,7 +562,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 2 de 4: Informaci&#243;n b&#225;sica
+						Paso 2 de 4: Información básica
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -527,7 +581,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="81bdaaa2-9106-4ada-9d1b-1c76a81f2c0b"
 		waitaction="NotExists"
@@ -540,7 +594,7 @@ mode="Global">
 			id="d03996c3-d6b3-40bb-b3af-79436133b54d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='C&#243;digo de Area']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -548,7 +602,7 @@ mode="Global">
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		numLock="False"
 		optional="False"
 		presstime="20ms"
@@ -563,14 +617,14 @@ mode="Global">
 			id="a4ab78a7-c8af-4bc6-a395-dc794088b05d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input
 				</path>
 			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence="32039201"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="257184a2-76c8-4c7b-8528-f44787a43619">
@@ -586,7 +640,7 @@ mode="Global">
 			id="a4ab78a7-c8af-4bc6-a395-dc794088b05d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -594,7 +648,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -615,7 +669,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="350113cc-c747-44b8-ae48-34b6a6bd29f7"
 		waitaction="NotExists"
@@ -628,7 +682,7 @@ mode="Global">
 			id="080c75be-4c3d-46b3-a259-5f7439a28544"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='N&#250;mero']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -636,7 +690,7 @@ mode="Global">
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		numLock="False"
 		optional="False"
 		presstime="20ms"
@@ -651,14 +705,14 @@ mode="Global">
 			id="d989b65f-a7ac-4cec-be1c-4d14ea5188f5"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input
 				</path>
 			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence="Laboral"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="bf904135-4a5f-4a70-a8d0-d2f27936187a">
@@ -670,7 +724,7 @@ mode="Global">
 			id="d989b65f-a7ac-4cec-be1c-4d14ea5188f5"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -678,7 +732,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -699,7 +753,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="8cac2bf4-3a6c-4886-9aa8-12ef3a36dc28"
 		waitaction="NotExists"
@@ -712,7 +766,7 @@ mode="Global">
 			id="075de9d9-5993-4e58-8214-0baa4cd55b6b"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tel&#233;fono principal']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -720,7 +774,7 @@ mode="Global">
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		numLock="False"
 		optional="False"
 		presstime="20ms"
@@ -735,14 +789,14 @@ mode="Global">
 			id="9cf937cc-b302-4868-853e-525f8e1bb177"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input
 				</path>
 			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence="prueba@gmail.com"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="c6899125-b89b-4f1c-8129-466caa6514d4">
@@ -758,7 +812,7 @@ mode="Global">
 			id="9cf937cc-b302-4868-853e-525f8e1bb177"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -766,7 +820,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -787,7 +841,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="8e0b4b93-a2e1-40eb-aec0-691326d449fe"
 		waitaction="NotExists"
@@ -800,7 +854,7 @@ mode="Global">
 			id="928c7699-e911-48b8-bb0a-77265c91069b"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electr&#243;nico']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>

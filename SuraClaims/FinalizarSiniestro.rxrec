@@ -33,8 +33,8 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
-		loc="35;9"
+		enabled="False"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="79948cc9-c1a1-4d38-86af-d990c579aa34"
@@ -84,7 +84,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Validar Direcci&#243;n
+						Validar Dirección
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -110,7 +110,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Direcci&#243;n']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Dirección']
 				</path>
 			</info>
 			<helperscreenshot
@@ -158,7 +158,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		</mouseitem>
 		<explicitdelayitem
 		duration="3000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -169,7 +169,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -185,7 +185,7 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			id="653b6cc4-9e97-4041-81c3-71c29545ce5c"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//span[@innertext='Verifica la direcci&#243;n']
+					/dom[@domain=$Ambiente]//span[@innertext='Verifica la dirección']
 				</path>
 			</info>
 		</mouseitem>
