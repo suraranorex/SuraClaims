@@ -181,8 +181,8 @@ namespace SuraClaims
             //repo.SuraClaims.Motor.InformacionBasica.optionLI_NombreLesionado.Click();
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisor' at Center.", repo.SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisorInfo, new RecordItemIndex(20));
-            repo.SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculasInfo, new RecordItemIndex(20));
+            repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.AP_Uber.Lesiones_InfoBasica.Copy_of_txtbox_PersonaLesionada'", repo.SuraClaims.AP_Uber.Lesiones_InfoBasica.Copy_of_txtbox_PersonaLesionadaInfo, new ActionTimeout(30000), new RecordItemIndex(21));

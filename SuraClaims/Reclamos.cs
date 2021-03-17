@@ -116,8 +116,8 @@ namespace SuraClaims
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
             Delay.Duration(5000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisor' at Center.", repo.SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisorInfo, new RecordItemIndex(2));
-            //repo.SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisor.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculasInfo, new RecordItemIndex(2));
+            //repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas.Click();
             //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_NombreLesionado3' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_NombreLesionado3Info, new RecordItemIndex(3));

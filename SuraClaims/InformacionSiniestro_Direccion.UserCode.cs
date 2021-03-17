@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims
 {
-    public partial class InformacionBasica_Motor
+    public partial class InformacionSiniestro_Direccion
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

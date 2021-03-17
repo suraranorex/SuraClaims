@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="DescripTipoSiniestro_Tercero"
+	classname="DescripTipoSiniestro_Tercero_Colision"
 	namespace="SuraClaims">
 	</codegen>
 	<variables>
@@ -70,131 +70,31 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="119;6"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="ffb7ca21-f150-428a-8b72-b34f26b998e4"
-		sx="494"
-		sy="258"
+		searchpropertyid="0037685b-624c-42c5-bffe-89a9aff7cb01"
+		sx="0"
+		sy="0"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="c4d177ac-a250-46a2-a12c-b071ffca3233"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="375,252,155,12"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-tab-inner x-tab-inner-default
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:VHDETTab-btnInnerEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Descripción del tipo de siniestro
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-tab-inner x-tab-inner-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
+			id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]/div/a[2]//span[@innertext&gt;'Descripci&#243;n del tipo de s']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
 			</info>
-			<helperscreenshot
-			guid="f9ccbeb8-0fb3-4069-8ec5-15d67590960e">
-				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
-2Q==
-			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="66;6"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="bc022cc6-033d-4cf3-a5a0-ed17a0cdd22f"
@@ -496,9 +396,52 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="yourtext"
+		KeySequence="Colisión"
 		duration="20ms"
 		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="8dc39eb3-7003-41ad-ab09-01869573abaf">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="318131d3-13ce-4243-be0e-581d65733e8b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext~'Tipo de accidente']/../..//input
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="86edd5e7-d0ea-4dde-8839-cce6fde0c588"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="35e1eb27-a510-4470-bc3b-f310094a0031"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext='Colisión']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="7186360d-a0da-4fda-b78e-7d3d4ccaa041">
@@ -659,8 +602,8 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
-		loc="33;8"
+		enabled="False"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="aa19eb88-3f49-4ba7-b424-f548ba103955"
@@ -672,28 +615,43 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 			<bindings>
 			</bindings>
 			<info
-			id="35e1eb27-a510-4470-bc3b-f310094a0031"
+			id="319f32a0-dfbd-4ee1-b7d4-a05c6757f488"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext=$TipoAccidente]
+					/dom[@domain=$Ambiente]//li[@innertext=$TipoAccidente]
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="3000ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
-		optional="False">
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0037685b-624c-42c5-bffe-89a9aff7cb01"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="31;12"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="a3f408c8-6aee-4ef9-b11c-4fca0a3cc564"
@@ -1294,7 +1252,7 @@ UAf/2Q==
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="29;5"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="058a6d17-b764-4ced-86d0-2d58043f67c4"
@@ -1483,11 +1441,35 @@ KAP/2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0037685b-624c-42c5-bffe-89a9aff7cb01"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="56;11"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="343a5bab-ca65-409f-961f-8731b00fb670"
@@ -1708,7 +1690,7 @@ QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="34;12"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="21f1e2cf-dac3-459a-8ea1-d325a3d395fe"
@@ -1929,11 +1911,35 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0037685b-624c-42c5-bffe-89a9aff7cb01"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="93;12"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="5ecd5c44-b1cf-4a35-8ccf-5a04830cb9a1"
@@ -2149,7 +2155,7 @@ FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1oyfWgB9FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1pQTmgD//Z
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="26;11"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="c35f0fc7-0ad8-4217-adf7-a15f43cb6248"
@@ -2341,11 +2347,35 @@ UUUUAFFFFADfLX0o8tfSiigA8tfSjy19KKKADy19KPLX0oooAPLX0o8tfSiigA8tfSjy19KKKADy
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0037685b-624c-42c5-bffe-89a9aff7cb01"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="55;9"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="9299f413-9ed9-434f-bf6b-208ae552c6ae"
@@ -2569,7 +2599,7 @@ RQAUDrRRQA+iiimAUUUUAFFFFABRRRQB/9k=
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="16;6"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="fa49b3c6-0fbd-4bd2-bc41-cbb07eb0a69b"
@@ -2775,7 +2805,7 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="46;2"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="7f26c7de-e4a8-4009-9f34-d031360bad9b"
@@ -3001,7 +3031,7 @@ gAooooAKKKKACiiigAooooAB1p9FFMAooooAKKKKAP/Z
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="25;12"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="677e8370-1b0c-420e-ac58-7e3b3c1246d4"
@@ -3194,6 +3224,30 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="0037685b-624c-42c5-bffe-89a9aff7cb01"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
 		searchpropertyid="1f70921f-c50a-4a03-acbf-8997fcb38b5c"
 		sx="0"
 		sy="0"
@@ -3238,7 +3292,51 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="25;5"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0037685b-624c-42c5-bffe-89a9aff7cb01"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
+				</path>
+			</info>
+		</mouseitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d0c9a1b5-1e80-437d-b003-e305d13e3fb9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="5d464e5a-ccd6-4daa-b4cb-c1bd865131da"
@@ -3417,6 +3515,50 @@ FP0Jbb1buVYtKgufMmd5AzTSZ2kY++R6VoWlrHZxGOIsQTuJY802zt/ItkSQhn5Ln1YnJ/DJqbav
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="16733e3a-c55e-4d98-9990-15f9cf7cba7e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7ce45af5-92ab-473b-b60a-0a92dcb75930"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bb49d13e-2294-4dc7-9464-3ef232593876"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
@@ -3433,7 +3575,7 @@ FP0Jbb1buVYtKgufMmd5AzTSZ2kY++R6VoWlrHZxGOIsQTuJY802zt/ItkSQhn5Ln1YnJ/DJqbav
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		DescripTipoSiniestro_Tercero.UserCode.cs
+		DescripTipoSiniestro_Tercero_Colision.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

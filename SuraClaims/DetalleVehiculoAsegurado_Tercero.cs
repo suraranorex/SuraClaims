@@ -146,27 +146,23 @@ namespace SuraClaims
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_Danios'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DaniosInfo, new ActionTimeout(30000), new RecordItemIndex(13));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DaniosInfo.WaitForExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Danios' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_DaniosInfo, new RecordItemIndex(14));
-            //repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios.Click();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Danios_No' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios_NoInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Danios_No' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios_NoInfo, new RecordItemIndex(14));
             repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios_No.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new RecordItemIndex(16));
-            repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Danios' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_DaniosInfo, new RecordItemIndex(15));
+            //repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Aceptar' at Center.", repo.SuraClaims.Motor.AceptarInfo, new RecordItemIndex(17));
-            repo.SuraClaims.Motor.Aceptar.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(16));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(17));
+            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(18));
             repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
-            
-            // Agregar Daños y Lesiones a Terceros
-            Report.Log(ReportLevel.Info, "Section", "Agregar Daños y Lesiones a Terceros", new RecordItemIndex(19));
             
         }
 

@@ -24,22 +24,22 @@ namespace SuraClaims
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The InformacionBasica_Motor recording.
+    ///The InformacionBasica recording.
     /// </summary>
     [TestModule("4afd7ade-4bd3-436e-85a2-aa47e7e56042", ModuleType.Recording, 1)]
-    public partial class InformacionBasica_Motor : ITestModule
+    public partial class InformacionBasica : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SuraClaimsRepository repository.
         /// </summary>
         public static SuraClaimsRepository repo = SuraClaimsRepository.Instance;
 
-        static InformacionBasica_Motor instance = new InformacionBasica_Motor();
+        static InformacionBasica instance = new InformacionBasica();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public InformacionBasica_Motor()
+        public InformacionBasica()
         {
             Correo = "prueba@gmail.com";
             NumTelefono = "32039201";
@@ -48,7 +48,7 @@ namespace SuraClaims
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static InformacionBasica_Motor Instance
+        public static InformacionBasica Instance
         {
             get { return instance; }
         }
@@ -137,8 +137,8 @@ namespace SuraClaims
             repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_RelacionConElAsegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_RelacionConElAseguradoInfo, new ActionTimeout(20000), new RecordItemIndex(3));
-            repo.SuraClaims.Motor.InformacionSiniestro.txt_RelacionConElAseguradoInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_Nombre'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NombreInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NombreInfo.WaitForNotExists(30000);
             
             // No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado
             //Report.Log(ReportLevel.Info, "Section", "No hace falta. Se completa automáticamente porque no estoy cargando una persona nueva sino que seleccioné al asegurado", new RecordItemIndex(4));

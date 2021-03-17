@@ -142,7 +142,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Descripci&#243;n de los da&#241;os']/../..//textarea
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea
 				</path>
 			</info>
 		</keysequenceitem>
@@ -201,7 +201,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Detalle del veh&#237;culo asegurado y ocupantes
+						Detalle del vehículo asegurado y ocupantes
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -233,7 +233,7 @@ mode="Global">
 			id="c028090d-0e1e-49e8-a261-afba87f1fe2c"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Descripci&#243;n de los da&#241;os']/../..//textarea[@data-tabindexsaved='True']
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -628,7 +628,7 @@ iIZWYHcoJ6jjt61p+WvpR5a+lADqKb5a+lHlr6UAOopvlr6UUAf/2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 3 de 3: Agregar informaci&#243;n del siniestro
+						Paso 3 de 3: Agregar información del siniestro
 					</attribute>
 					<attribute
 					name="safeclass"

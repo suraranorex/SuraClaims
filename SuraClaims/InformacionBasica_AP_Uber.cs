@@ -123,8 +123,8 @@ namespace SuraClaims
             repo.SuraClaims.Motor.InformacionBasica.option_Nombre.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.txtbox_Nombre'", repo.SuraClaims.Motor.InformacionBasica.txtbox_NombreInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.SuraClaims.Motor.InformacionBasica.txtbox_NombreInfo.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_Nombre'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NombreInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NombreInfo.WaitForNotExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.bttn_RelacionConAsegurado' at Center.", repo.SuraClaims.AP_Uber.bttn_RelacionConAseguradoInfo, new RecordItemIndex(3));
             repo.SuraClaims.AP_Uber.bttn_RelacionConAsegurado.Click();

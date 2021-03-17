@@ -51,112 +51,11 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<mouseitem
-		action="Move"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="210e4e68-38f3-4eea-b503-8785d2e7cd6e"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="2cf5d0de-9252-4889-a41f-422f91f822ba"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, atag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="atag"
-				rect="196,428,185,20"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-btn x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:AddVehicleButton
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-box-item x-btn x-btn-default-toolbar-small x-toolbar-item x-unselectable
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						a
-					</attribute>
-					<attribute
-					name="tabindex"
-					type="System.String">
-						-1
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="componentid"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="hidefocus"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[8]//table/tbody/tr[1]/td/div/div/div/a[1]
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="130;3"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="37510393-de18-4281-9bca-c630c12e0be9"
@@ -443,7 +342,7 @@ RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="36;1"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="a2a63129-b16f-4249-875d-43432da72261"
@@ -462,164 +361,30 @@ RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 				</path>
 			</info>
 		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<WaitForRecordItem
 		enabled="True"
-		loc="154;8"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="21808804-c7b0-476e-9989-fb2eaecd3248"
-		sx="329"
-		sy="189"
-		warnoutofbounds="False">
+		searchpropertyid="70e478a9-091b-4cac-997b-57f5757e04ea"
+		waitaction="Exists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
 			id="df0df1ea-bd96-4599-80c8-ea1af8c65712"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="spantag"
-				rect="175,181,211,16"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						g-title
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLContactPopup:FNOLContactScreen:ttlBar
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Detalle de los lesionados
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						g-title
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-				</element>
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext='Detalle de los lesionados']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
 				</path>
 			</info>
-			<helperscreenshot
-			guid="9ac010d1-bc17-4b59-88f0-0de710506f45">
-				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
-			</helperscreenshot>
-		</mouseitem>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="23;7"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="9f1d50a7-825c-4f09-86c7-4918a5ae152f"

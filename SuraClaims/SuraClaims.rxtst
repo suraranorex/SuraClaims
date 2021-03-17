@@ -35,6 +35,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="04c3462c-c235-4ebd-8893-97987056d7a1"
+			name="FastTrack_ConCantidad"
+			ref="54e678cf-a9c9-4446-bced-2b43202e21ed"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="06e72a35-6ca5-4ba3-9245-98c73d1d3dc7"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -74,20 +88,6 @@
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
-			id="0b1ba38d-9d93-431d-964c-e040b8fd342b"
-			name="NuevoSiniestroGuardadoTercero"
-			ref="04886b36-81b8-41c2-9f3a-858be51bc3f9"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="0b589973-3a00-4ee9-bbfd-61f00c54cd77"
 			name="MenuSuperior"
 			ref="5370da35-fa14-4882-9be6-a1a63f8f5b51"
@@ -100,6 +100,46 @@
 					variablename="Ambiente">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="0e65a8a3-3eec-498e-9702-685f2af16d2f"
+			name="InformacionSiniestro_Direccion"
+			ref="715b097f-045e-4890-b458-292598031417"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Provincia"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="2c6cf73a-1829-4f40-a152-de34496bb04f"
+					variablename="Provincia">
+					</var>
+					<var
+					dataname="Localidad"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="f9dabe66-e33d-4542-936d-f32004900f08"
+					variablename="Localidad">
+					</var>
+					<var
+					dataname="Calle"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="d8b3e241-48f0-437d-a83c-b9eade9ea9e4"
+					variablename="Calle">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Numero"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="0591efa1-403e-42d1-be00-2f488ce0dd78"
+					variablename="Numero">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="0e730055-2d1d-4512-a866-47303b98857d"
@@ -116,6 +156,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0f3989e2-8480-4f80-a63b-6db50fb7400a"
 			name="FinalizarSiniestro"
 			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
@@ -228,6 +269,7 @@
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="17270bac-09b8-440d-980a-76916c341414"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -236,20 +278,6 @@
 					<var
 					dataname="Ambiente"
 					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="1791a000-5982-4818-9d3a-89834f70dc6a"
-			name="Paso_3_InfoSiniestro_Tercero_Finalizar"
-			ref="accabe32-c95e-42e5-a325-01f624602d1c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
@@ -321,15 +349,18 @@
 					variableid="aced0f7b-18bd-449c-8404-19d7faef06e9"
 					variablename="Calle">
 					</var>
+				</databinding>
+				<missingdatabinding>
 					<var
 					dataname="Numero"
 					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
 					variableid="057287c0-d165-4e8a-8516-f625e2f0abe1"
 					variablename="Numero">
 					</var>
-				</databinding>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="1b03de91-ecfc-4c44-80d4-b7c452cc1ed7"
 			name="InformacionBasica_Hogar"
 			ref="c8c5ed1d-1384-48cf-bc1f-d3091e43bd0a"
@@ -376,10 +407,10 @@
 					variablename="Ambiente">
 					</var>
 					<var
-					dataname="ANIO"
+					dataname="Anio"
 					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 					variableid="54cf1981-6a92-4a52-889c-4e5b59a28c4d"
-					variablename="ANIO">
+					variablename="Anio">
 					</var>
 					<var
 					dataname="Marca"
@@ -429,13 +460,23 @@
 					variableid="a56dd401-e253-47eb-bb00-7046143ff00b"
 					variablename="TipoDocumento">
 					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="ANIO"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="54cf1981-6a92-4a52-889c-4e5b59a28c4d"
+					variablename="ANIO">
+					</var>
+				</missingdatabinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="Responsabilidad"
 					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 					variableid="811dedf4-3591-4699-a423-2ca44a8785f1"
 					variablename="Responsabilidad">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			datarangeactive="True"
@@ -445,6 +486,20 @@
 			minrange="0"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
+			<testmodule
+			id="21194456-7be9-4061-9468-c44c16801b75"
+			name="InformacionSiniestro_Subrogacion"
+			ref="2ce2bf51-1f9b-49da-bd2d-b491a4967baf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="213cf277-af80-4b37-ace4-9f0da73b8cb7"
 			name="teardown">
@@ -469,7 +524,7 @@
 			</teardown>
 			<testmodule
 			id="31a8ca85-11ad-4e24-96cd-4190aed8e88e"
-			name="DescripTipoSiniestro_Tercero"
+			name="DescripTipoSiniestro_Tercero_Colision"
 			ref="61e4dcef-1aae-4a13-840b-3898125ec2e1"
 			type="Recording">
 				<databinding>
@@ -543,31 +598,70 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="456a11ec-bf16-40d1-82ca-083c65caebb8"
-			name="Si_NoES_FasTrack">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="EsFastTrack"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="No">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
+			<testmodule
+			id="33c11d1d-d6cb-46c4-a0b1-72fbebd94da5"
+			name="InformacionSiniestro_Direccion"
+			ref="715b097f-045e-4890-b458-292598031417"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="426565e9-cbb5-4ad4-9808-397751c596ed"
+			name="DatosProveedor"
+			ref="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="CodProveedor"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
+					variablename="CodProveedor">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="44eb816b-91c0-4395-afb5-83903c573a6a"
+			name="Detalle_VehiculoOcupantes"
+			ref="84c0b7f4-586d-4c4a-822a-a4cd67c96893"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Gravedad"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="5409292c-d043-4972-961a-37febc6a19ef"
+					variablename="Gravedad">
+					</var>
+					<var
+					dataname="Descripcion"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="a192fcd0-2481-4b54-bbd8-a7196e4b3ca6"
+					variablename="Descripcion">
+					</var>
+					<var
+					dataname="DANIOS"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="73b293f5-81d3-4f77-9d30-008f1b362d6d"
+					variablename="DANIOS">
+					</var>
+					<var
+					dataname="INCENDIO"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e9ca260d-4e46-4817-af48-e015c794bdc6"
+					variablename="INCENDIO">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -587,6 +681,46 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<testmodule
+			id="47435bef-68d0-4e0c-9a8b-4be3e7e6b1a4"
+			name="InformacionSiniestro_Direccion"
+			ref="715b097f-045e-4890-b458-292598031417"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Provincia"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="2c6cf73a-1829-4f40-a152-de34496bb04f"
+					variablename="Provincia">
+					</var>
+					<var
+					dataname="Localidad"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="f9dabe66-e33d-4542-936d-f32004900f08"
+					variablename="Localidad">
+					</var>
+					<var
+					dataname="Calle"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="d8b3e241-48f0-437d-a83c-b9eade9ea9e4"
+					variablename="Calle">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Numero"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="0591efa1-403e-42d1-be00-2f488ce0dd78"
+					variablename="Numero">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="4a66146a-b680-4f52-89d7-eda3b0f57bdf"
 			name="BuscarPoliza"
@@ -631,31 +765,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="4b2fb012-8f16-4576-b6d3-e8785f9cf2f7"
-			name="Cerradura">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Cerradura">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="4b69f60e-4516-4d24-b626-9e0d0f98a80e"
 			name="MenuSuperior"
@@ -722,26 +831,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="4eeaf210-4ea0-4dfb-bb48-198a1ac48fb8"
-			name="DatosProveedor"
-			ref="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="CodProveedor"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
-					variablename="CodProveedor">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="5093bcd7-8ad9-4aa8-8135-e117b70d8ec9"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -794,6 +883,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="54684678-c957-48c8-90f6-d7fb2a9472ee"
 			name="Reclamos_Hogar"
 			ref="425e1d90-507b-42f0-b118-db68031d891f"
@@ -845,9 +935,9 @@
 			name="Pagos_Siniestros_Motor">
 			</testcase>
 			<testmodule
-			id="5a391f3f-f6b4-48e7-9714-f1c80755bbc5"
-			name="Informacion_Basica_Motor_UBER"
-			ref="dadf012c-9d31-47cc-a6ec-42e3d3a4fdef"
+			id="59d0bea9-1c5d-4cc7-a54d-e7bddf8263ca"
+			name="InformacionBasica"
+			ref="4afd7ade-4bd3-436e-85a2-aa47e7e56042"
 			type="Recording">
 				<databinding>
 					<var
@@ -859,42 +949,17 @@
 					<var
 					dataname="NumTelefono"
 					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="107826fe-3a52-44ff-b8e0-6f3577d636b1"
+					variableid="545baad1-7cdc-4ee6-873f-69ea55c3ce58"
 					variablename="NumTelefono">
 					</var>
 					<var
 					dataname="Correo"
 					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="7eaa9ba4-1844-4cd0-ae24-d9c107e7d7c3"
+					variableid="bab5c512-8f69-4665-bc29-43a4f1d8a3ab"
 					variablename="Correo">
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="5c4a7e37-cea7-455d-8bc8-41896717a71c"
-			name="Cristales">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Cristales">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<teardown
 			id="5c66a796-1f5d-412a-a866-dfb25ebd5a02"
 			name="teardown">
@@ -938,6 +1003,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="5e834d66-1abf-413c-9062-8bcddb15f8d4"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1034,38 +1100,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="631d6f5a-d81d-451f-9194-923d0ed37314"
-			name="DatosFastTrack"
-			ref="9228f25c-a0ec-42cb-9b29-98a2e51b62e6"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="Gravedad"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e6e0cdbd-318b-4536-b18f-cde1d4600023"
-					variablename="Gravedad">
-					</var>
-					<var
-					dataname="Descripcion"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="f6d32a4a-85e4-4725-a2b9-53f2d0712ed0"
-					variablename="Descripcion">
-					</var>
-					<var
-					dataname="DANIOS"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="73b293f5-81d3-4f77-9d30-008f1b362d6d"
-					variablename="DANIOS">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="64f0734d-c1fc-49fb-a459-c6301934a096"
 			name="MenuSuperior"
 			ref="5370da35-fa14-4882-9be6-a1a63f8f5b51"
@@ -1119,51 +1153,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="6d35ba8c-9c2a-431a-bd95-fe097ab23d86"
-			name="Parabrisas">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Parabrisas">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
-			<testmodule
-			id="6ff4627b-5ef4-4c06-a98b-9df5de8e89b5"
-			name="DatosProveedor"
-			ref="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="CodProveedor"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
-					variablename="CodProveedor">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="72afab8c-18b2-482e-8a47-12aedd4d2fb7"
 			name="Logout"
@@ -1173,6 +1162,20 @@
 					<var
 					dataname="Ambiente"
 					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="72db8d35-8fda-46ff-94a2-46062f63d0d0"
+			name="InformacionSiniestro_Subrogacion"
+			ref="2ce2bf51-1f9b-49da-bd2d-b491a4967baf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
@@ -1228,6 +1231,20 @@
 					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
 					variableid="ecbd8e9b-6086-4998-9ca9-8d8df24ca875"
 					variablename="TIPO_DANIOS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7587d8f5-1989-46db-b487-678e3ac16994"
+			name="FastTrack_SinCantidad"
+			ref="42161acf-fda5-4099-b35c-e5468f485c5f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1405,20 +1422,48 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="8b01f4f9-ce05-4dc2-b353-b8a7b949a735"
-			name="Cristales"
-			ref="a5ffb965-8f7a-439e-b0e0-d8f7eedf4bc7"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-				</databinding>
-			</testmodule>
+			<smartfoldernode
+			id="89fa68a6-9618-4127-aaec-5d106b43550a"
+			name="SinCantidadTipo">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Parabrisas">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Luneta">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="8e687535-887a-49ca-80da-df55dc495861"
 			name="BuscarPoliza"
@@ -1458,6 +1503,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="90a076af-d49a-49a7-b1e3-b97f3e935523"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1513,17 +1559,65 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
+			name="ConCantidadTipo">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Cerradura">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Cristales">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
-			id="9b6d603d-4f11-4071-b636-10639cfd69db"
-			name="Luneta"
-			ref="7b7d29d9-9b68-4703-b95d-c997e0936b6e"
+			id="9a5ea4c9-262c-4a4d-8c73-1361043d536a"
+			name="AgregarDaniosLesionesTerceros_Detalle"
+			ref="e04fa98f-3e00-4afe-bb2e-b02a11583603"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Responsabilidad"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="811dedf4-3591-4699-a423-2ca44a8785f1"
+					variablename="Responsabilidad">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1532,6 +1626,28 @@
 			name="SuraClaims"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			id="a18fafab-42dc-4bfb-b1a0-de4e1b0a75f6"
+			name="FinalizarSiniestro"
+			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="a33ed60e-5d3a-49ee-a946-29205c964959"
 			name="InformacionBasica_AP_Uber"
@@ -1559,6 +1675,77 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a5791425-7658-4176-8e6d-a1cc7340cbe5"
+			name="InformacionSiniestro_Motor"
+			ref="4d85d9e8-ddc0-4fd4-a74a-b0496a97a2e1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="DetalleSiniestro"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="a974a0de-e8e2-4f6b-ab3d-b7c3a64985bd"
+					variablename="DetalleSiniestro">
+					</var>
+					<var
+					dataname="CausaSiniestro"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="119a7b87-2417-4092-ae72-4944cfd5d7fc"
+					variablename="CausaSiniestro">
+					</var>
+					<var
+					dataname="TipoCalle"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="7ee17a1a-da13-4b0d-ba8d-23ba04d401db"
+					variablename="TipoCalle">
+					</var>
+					<var
+					dataname="Provincia"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="5702cd13-801a-40f6-ab45-3356cabd498b"
+					variablename="Provincia">
+					</var>
+					<var
+					dataname="Localidad"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="5d66f2be-8a15-498c-8937-c612988099c1"
+					variablename="Localidad">
+					</var>
+					<var
+					dataname="Calle"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="e6f31989-f3cc-4c65-a47d-3438fe7e5047"
+					variablename="Calle">
+					</var>
+					<var
+					dataname="NumeroCalle"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="c6cd663b-0092-477d-97f7-e5550aedec69"
+					variablename="NumeroCalle">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a58bea47-b14b-48ee-a95c-adff7b782285"
+			name="FinalizarSiniestro"
+			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="a8c65279-90aa-4e15-900a-118f272da137"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1684,7 +1871,7 @@
 			</testmodule>
 			<testmodule
 			id="bc002b2f-40ec-4a14-848f-c38568161dae"
-			name="InformacionBasica_Motor"
+			name="InformacionBasica"
 			ref="4afd7ade-4bd3-436e-85a2-aa47e7e56042"
 			type="Recording">
 				<databinding>
@@ -1701,7 +1888,7 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="0"
+			maxrange="1"
 			minrange="0"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
@@ -1737,49 +1924,10 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="ccc4626f-4ffc-445f-a420-fe89edaf516b"
-			name="FinalizarSiniestroUBER"
-			ref="538b2010-b4be-4310-b80f-fd272fea7399"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-				</databinding>
-			</testmodule>
 			<setup
 			id="ce1ede00-886a-44e4-a5c1-30ab73e390a8"
 			name="setup">
 			</setup>
-			<smartfoldernode
-			id="ce5ac4c2-275d-4dbc-b9f0-24ab2f59392c"
-			name="Luneta">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Luneta">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="ceba0e73-80be-4b7e-b580-ad2e55658c89"
 			name="Login"
@@ -1869,9 +2017,9 @@
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="d4e6b3b4-4270-44da-b68d-78a6d4d3d44e"
-			name="Cerradura"
-			ref="57ec232e-229d-4f59-bee9-b5093e4a518d"
+			id="d4e9c074-4f0d-48d2-8f0b-61c2899139c7"
+			name="Terminar_Detalle_VehiculoOcupantes"
+			ref="c2c2c4e6-a847-41d7-a0f9-0d449d03597d"
 			type="Recording">
 				<databinding>
 					<var
@@ -1883,42 +2031,114 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="e0e49e6e-2a00-413c-b9c6-e733fab8fcc9"
-			name="Detalle_VehiculoAsegurado_Ocupantes"
-			ref="574c4fdb-463d-4ca4-8be9-1b9ee6fd077e"
+			id="d72e1422-af3a-43ba-a5f9-6dc29b7fa353"
+			name="InformacionSiniestro_Direccion"
+			ref="715b097f-045e-4890-b458-292598031417"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
 					<var
-					dataname="Gravedad"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="eda29361-80d2-4354-afb7-9ee79bd4db5b"
-					variablename="Gravedad">
+					dataname="Provincia"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="2c6cf73a-1829-4f40-a152-de34496bb04f"
+					variablename="Provincia">
 					</var>
 					<var
-					dataname="Descripcion"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="5573c065-9359-4637-b5c6-98b00f0ce0d1"
-					variablename="Descripcion">
+					dataname="Localidad"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="f9dabe66-e33d-4542-936d-f32004900f08"
+					variablename="Localidad">
 					</var>
 					<var
-					dataname="DANIOS"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="73b293f5-81d3-4f77-9d30-008f1b362d6d"
-					variablename="DANIOS">
+					dataname="Calle"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="d8b3e241-48f0-437d-a83c-b9eade9ea9e4"
+					variablename="Calle">
 					</var>
 					<var
-					dataname="INCENDIO"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e9ca260d-4e46-4817-af48-e015c794bdc6"
-					variablename="INCENDIO">
+					dataname="NumeroCalle"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="40e1ab8b-6c71-4218-81ff-057fd2e6c09f"
+					variablename="NumeroCalle">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="dbac9d87-6fdc-43e0-a477-0b8ee07cf40e"
+			name="InformacionBasica"
+			ref="4afd7ade-4bd3-436e-85a2-aa47e7e56042"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NumTelefono"
+					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
+					variableid="545baad1-7cdc-4ee6-873f-69ea55c3ce58"
+					variablename="NumTelefono">
+					</var>
+					<var
+					dataname="Correo"
+					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
+					variableid="bab5c512-8f69-4665-bc29-43a4f1d8a3ab"
+					variablename="Correo">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="dd1491bc-189a-4749-b8df-097b386a8a10"
+			name="InformacionSiniestro_Direccion"
+			ref="715b097f-045e-4890-b458-292598031417"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Provincia"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="2c6cf73a-1829-4f40-a152-de34496bb04f"
+					variablename="Provincia">
+					</var>
+					<var
+					dataname="Localidad"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="f9dabe66-e33d-4542-936d-f32004900f08"
+					variablename="Localidad">
+					</var>
+					<var
+					dataname="Calle"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="d8b3e241-48f0-437d-a83c-b9eade9ea9e4"
+					variablename="Calle">
+					</var>
+					<var
+					dataname="NumeroCalle"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="40e1ab8b-6c71-4218-81ff-057fd2e6c09f"
+					variablename="NumeroCalle">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Numero"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="0591efa1-403e-42d1-be00-2f488ce0dd78"
+					variablename="Numero">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="e4bf6c50-cd65-4073-abbc-aa9b44b83670"
@@ -1993,26 +2213,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="e81d0934-c882-4a67-ba24-fe3ac5f8f0c8"
-			name="DatosProveedor"
-			ref="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="CodProveedor"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
-					variablename="CodProveedor">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="e87756d4-bbd0-4a60-a798-23e13d3cf193"
 			name="SeleccionarPersonas"
 			ref="b9e7b7c6-39f5-41e2-b917-a08ee4a85bb7"
@@ -2028,7 +2228,7 @@
 			</testmodule>
 			<testmodule
 			id="ea188701-7344-4bae-8f52-15d027bb3987"
-			name="InformacionBasica_Motor"
+			name="InformacionBasica"
 			ref="4afd7ade-4bd3-436e-85a2-aa47e7e56042"
 			type="Recording">
 				<databinding>
@@ -2097,50 +2297,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="ee88fea6-5bde-4bab-81b2-a4f94b38a785"
-			name="AgregarDatosLesionesTercerosUBER"
-			ref="45a1f435-7339-4d2f-9d20-6f28177bba84"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="ANIO"
-					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="12c92045-b539-43af-b6b1-20b4a6c6b89c"
-					variablename="ANIO">
-					</var>
-					<var
-					dataname="Marca"
-					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="a193a25c-7100-409f-9566-990c0882e7ff"
-					variablename="Marca">
-					</var>
-					<var
-					dataname="Modelo"
-					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="95b5abd3-ba58-4e0e-8094-a74d7c89cba2"
-					variablename="Modelo">
-					</var>
-					<var
-					dataname="Tipo"
-					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="aac4fca9-a557-4252-a941-55dcfaa4b89d"
-					variablename="Tipo">
-					</var>
-					<var
-					dataname="Patente"
-					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
-					variableid="3968f3fd-57c0-4026-91d2-49fc6599efbe"
-					variablename="Patente">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="f019d52f-2faa-4d40-8ed9-73981a50a7ce"
 			name="MenuSuperiorBuscaSiniestro"
 			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
@@ -2157,40 +2313,6 @@
 					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 					variableid="9f24559f-e441-47fa-9643-510005fbb861"
 					variablename="NroSiniestro">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="f03668c3-a712-438c-8a67-6d90a73e0403"
-			name="DatosProveedor"
-			ref="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="CodProveedor"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
-					variablename="CodProveedor">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="f08b053a-2f07-418a-be2b-13dbeb65623a"
-			name="Parabrisas"
-			ref="6d189fc2-82bb-474e-8a8e-d141eef3e5ae"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2277,26 +2399,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="fa33badc-65ee-4926-833a-67f7fc0c058e"
-			name="RestoDatosFastTrack"
-			ref="e9007d36-ba80-4a4c-83f8-08d74422002c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="INCENDIO"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e9ca260d-4e46-4817-af48-e015c794bdc6"
-					variablename="INCENDIO">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="fa3a4816-1ef9-4029-a7f9-f80cb86cb587"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -2343,6 +2445,120 @@
 					variablename="URL">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="fbaf707b-605c-4e7f-956a-3d27e1e10d9b"
+			name="AgregarDanosLesionesTerceros"
+			ref="1d1b1070-4721-45fa-a90b-86f7b3d30f93"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Patente"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="ea02b40d-4a41-4fdb-a346-5d2af69b93c1"
+					variablename="Patente">
+					</var>
+					<var
+					dataname="Tipo"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="a43c0c39-8c94-4f4f-a7cb-e81f98522997"
+					variablename="Tipo">
+					</var>
+					<var
+					dataname="Modelo"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="d565afaa-4267-4c98-ad9f-12940914a519"
+					variablename="Modelo">
+					</var>
+					<var
+					dataname="Marca"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="f6a1ccf1-50d3-4c87-a5d1-6979a34994d6"
+					variablename="Marca">
+					</var>
+					<var
+					dataname="Anio"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="54cf1981-6a92-4a52-889c-4e5b59a28c4d"
+					variablename="Anio">
+					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="4881108b-cef7-4b36-85c3-0cad28fb470a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="4881108b-cef7-4b36-85c3-0cad28fb470a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="ANIO"
+					datasourceid="adfaedc6-498d-4b48-b464-5f4f6f5f72b1"
+					variableid="54cf1981-6a92-4a52-889c-4e5b59a28c4d"
+					variablename="ANIO">
+					</var>
+					<var
+					dataname="Marca"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="f6a1ccf1-50d3-4c87-a5d1-6979a34994d6"
+					variablename="Marca">
+					</var>
+					<var
+					dataname="NumeroDNI"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="8b97bcd9-22eb-481a-a71f-249e98221498"
+					variablename="NumeroDNI">
+					</var>
+					<var
+					dataname="Nombre"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="7a5727aa-2d9a-4b78-9b62-86ef3754f35a"
+					variablename="Nombre">
+					</var>
+					<var
+					dataname="Apellido"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="47a4e260-de20-471c-a433-b40cb2fe5ec8"
+					variablename="Apellido">
+					</var>
+					<var
+					dataname="Modelo"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="d565afaa-4267-4c98-ad9f-12940914a519"
+					variablename="Modelo">
+					</var>
+					<var
+					dataname="Tipo"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="a43c0c39-8c94-4f4f-a7cb-e81f98522997"
+					variablename="Tipo">
+					</var>
+					<var
+					dataname="Patente"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="ea02b40d-4a41-4fdb-a346-5d2af69b93c1"
+					variablename="Patente">
+					</var>
+					<var
+					dataname="TipoDocumento"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="a56dd401-e253-47eb-bb00-7046143ff00b"
+					variablename="TipoDocumento">
+					</var>
+				</missingdatabinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Responsabilidad"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="811dedf4-3591-4699-a423-2ca44a8785f1"
+					variablename="Responsabilidad">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="fbd08e51-827e-4af7-9ac4-06e134bf5b6f"
@@ -2409,80 +2625,52 @@
 						</testmodule>
 						<testmodule
 						id="ea188701-7344-4bae-8f52-15d027bb3987"
-						name="InformacionBasica_Motor">
+						name="InformacionBasica">
 						</testmodule>
 						<testmodule
 						id="16465d34-f75c-47e8-8940-50a6fcb27c7e"
 						name="InformacionSiniestro_Motor">
 						</testmodule>
-						<smartfoldernode
-						id="456a11ec-bf16-40d1-82ca-083c65caebb8"
-						name="Si_NoES_FasTrack">
-							<testmodule
-							id="e0e49e6e-2a00-413c-b9c6-e733fab8fcc9"
-							name="Detalle_VehiculoAsegurado_Ocupantes">
-							</testmodule>
-						</smartfoldernode>
+						<testmodule
+						id="72db8d35-8fda-46ff-94a2-46062f63d0d0"
+						name="InformacionSiniestro_Subrogacion">
+						</testmodule>
+						<testmodule
+						id="47435bef-68d0-4e0c-9a8b-4be3e7e6b1a4"
+						name="InformacionSiniestro_Direccion">
+						</testmodule>
+						<testmodule
+						id="44eb816b-91c0-4395-afb5-83903c573a6a"
+						name="Detalle_VehiculoOcupantes">
+						</testmodule>
 						<smartfoldernode
 						id="4b785685-d9a4-422f-bf84-c41d099771f3"
 						name="Si_Es_FastTrack">
-							<testmodule
-							id="631d6f5a-d81d-451f-9194-923d0ed37314"
-							name="DatosFastTrack">
-							</testmodule>
 							<smartfoldernode
-							id="4b2fb012-8f16-4576-b6d3-e8785f9cf2f7"
-							name="Cerradura">
+							id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
+							name="ConCantidadTipo">
 								<testmodule
-								id="d4e6b3b4-4270-44da-b68d-78a6d4d3d44e"
-								name="Cerradura">
-								</testmodule>
-								<testmodule
-								id="4eeaf210-4ea0-4dfb-bb48-198a1ac48fb8"
-								name="DatosProveedor">
+								id="04c3462c-c235-4ebd-8893-97987056d7a1"
+								name="FastTrack_ConCantidad">
 								</testmodule>
 							</smartfoldernode>
 							<smartfoldernode
-							id="5c4a7e37-cea7-455d-8bc8-41896717a71c"
-							name="Cristales">
+							id="89fa68a6-9618-4127-aaec-5d106b43550a"
+							name="SinCantidadTipo">
 								<testmodule
-								id="8b01f4f9-ce05-4dc2-b353-b8a7b949a735"
-								name="Cristales">
-								</testmodule>
-								<testmodule
-								id="f03668c3-a712-438c-8a67-6d90a73e0403"
-								name="DatosProveedor">
-								</testmodule>
-							</smartfoldernode>
-							<smartfoldernode
-							id="ce5ac4c2-275d-4dbc-b9f0-24ab2f59392c"
-							name="Luneta">
-								<testmodule
-								id="9b6d603d-4f11-4071-b636-10639cfd69db"
-								name="Luneta">
-								</testmodule>
-								<testmodule
-								id="6ff4627b-5ef4-4c06-a98b-9df5de8e89b5"
-								name="DatosProveedor">
-								</testmodule>
-							</smartfoldernode>
-							<smartfoldernode
-							id="6d35ba8c-9c2a-431a-bd95-fe097ab23d86"
-							name="Parabrisas">
-								<testmodule
-								id="f08b053a-2f07-418a-be2b-13dbeb65623a"
-								name="Parabrisas">
-								</testmodule>
-								<testmodule
-								id="e81d0934-c882-4a67-ba24-fe3ac5f8f0c8"
-								name="DatosProveedor">
+								id="7587d8f5-1989-46db-b487-678e3ac16994"
+								name="FastTrack_SinCantidad">
 								</testmodule>
 							</smartfoldernode>
 							<testmodule
-							id="fa33badc-65ee-4926-833a-67f7fc0c058e"
-							name="RestoDatosFastTrack">
+							id="426565e9-cbb5-4ad4-9808-397751c596ed"
+							name="DatosProveedor">
 							</testmodule>
 						</smartfoldernode>
+						<testmodule
+						id="d4e9c074-4f0d-48d2-8f0b-61c2899139c7"
+						name="Terminar_Detalle_VehiculoOcupantes">
+						</testmodule>
 						<testmodule
 						id="7e39214c-b934-439e-890e-f0b4550a5178"
 						name="FinalizarSiniestro">
@@ -2525,11 +2713,19 @@
 						</testmodule>
 						<testmodule
 						id="bc002b2f-40ec-4a14-848f-c38568161dae"
-						name="InformacionBasica_Motor">
+						name="InformacionBasica">
 						</testmodule>
 						<testmodule
 						id="60d24fb3-4428-4723-a3e7-86a127adda6a"
 						name="InformacionSiniestro_Motor">
+						</testmodule>
+						<testmodule
+						id="21194456-7be9-4061-9468-c44c16801b75"
+						name="InformacionSiniestro_Subrogacion">
+						</testmodule>
+						<testmodule
+						id="d72e1422-af3a-43ba-a5f9-6dc29b7fa353"
+						name="InformacionSiniestro_Direccion">
 						</testmodule>
 						<testmodule
 						id="facd3a3b-ef74-4ca8-8639-8976d37a169c"
@@ -2540,16 +2736,16 @@
 						name="AgregarDanosLesionesTerceros">
 						</testmodule>
 						<testmodule
+						id="9a5ea4c9-262c-4a4d-8c73-1361043d536a"
+						name="AgregarDaniosLesionesTerceros_Detalle">
+						</testmodule>
+						<testmodule
 						id="31a8ca85-11ad-4e24-96cd-4190aed8e88e"
-						name="DescripTipoSiniestro_Tercero">
+						name="DescripTipoSiniestro_Tercero_Colision">
 						</testmodule>
 						<testmodule
-						id="1791a000-5982-4818-9d3a-89834f70dc6a"
-						name="Paso_3_InfoSiniestro_Tercero_Finalizar">
-						</testmodule>
-						<testmodule
-						id="0b1ba38d-9d93-431d-964c-e040b8fd342b"
-						name="NuevoSiniestroGuardadoTercero">
+						id="a18fafab-42dc-4bfb-b1a0-de4e1b0a75f6"
+						name="FinalizarSiniestro">
 						</testmodule>
 						<teardown
 						id="c269ca03-071a-44d1-b719-ae513a402521"
@@ -2588,24 +2784,32 @@
 						name="BuscarPoliza">
 						</testmodule>
 						<testmodule
-						id="5a391f3f-f6b4-48e7-9714-f1c80755bbc5"
-						name="Informacion_Basica_Motor_UBER">
+						id="59d0bea9-1c5d-4cc7-a54d-e7bddf8263ca"
+						name="InformacionBasica">
+						</testmodule>
+						<testmodule
+						id="a5791425-7658-4176-8e6d-a1cc7340cbe5"
+						name="InformacionSiniestro_Motor">
+						</testmodule>
+						<testmodule
+						id="dd1491bc-189a-4749-b8df-097b386a8a10"
+						name="InformacionSiniestro_Direccion">
 						</testmodule>
 						<testmodule
 						id="18d97118-4313-4d68-adb0-c4e0c6f4b126"
 						name="InformacionSiniestro_Motor_UBER">
 						</testmodule>
 						<testmodule
-						id="ee88fea6-5bde-4bab-81b2-a4f94b38a785"
-						name="AgregarDatosLesionesTercerosUBER">
+						id="fbaf707b-605c-4e7f-956a-3d27e1e10d9b"
+						name="AgregarDanosLesionesTerceros">
 						</testmodule>
 						<testmodule
 						id="5233ef01-d2f8-4ce3-8943-f56aa7bd0cea"
 						name="DetalleVehiculoAsegurado_Tercero_UBER">
 						</testmodule>
 						<testmodule
-						id="ccc4626f-4ffc-445f-a420-fe89edaf516b"
-						name="FinalizarSiniestroUBER">
+						id="a58bea47-b14b-48ee-a95c-adff7b782285"
+						name="FinalizarSiniestro">
 						</testmodule>
 						<teardown
 						id="213cf277-af80-4b37-ace4-9f0da73b8cb7"
@@ -2650,6 +2854,10 @@
 						<testmodule
 						id="d14a9908-c425-4690-bd9b-7b538273530d"
 						name="Informacion_Siniestro_AP">
+						</testmodule>
+						<testmodule
+						id="0e65a8a3-3eec-498e-9702-685f2af16d2f"
+						name="InformacionSiniestro_Direccion">
 						</testmodule>
 						<testmodule
 						id="add84395-1d7e-4306-bf34-fa0e37970c19"
@@ -2708,6 +2916,10 @@
 						name="InformacionSiniestro_AP_Uber">
 						</testmodule>
 						<testmodule
+						id="33c11d1d-d6cb-46c4-a0b1-72fbebd94da5"
+						name="InformacionSiniestro_Direccion">
+						</testmodule>
+						<testmodule
 						id="0e730055-2d1d-4512-a866-47303b98857d"
 						name="Reclamos_AP">
 						</testmodule>
@@ -2750,6 +2962,10 @@
 						<testmodule
 						id="7d34e85f-8af4-468f-8dd3-4b4c61bc3d65"
 						name="BuscarPoliza">
+						</testmodule>
+						<testmodule
+						id="dbac9d87-6fdc-43e0-a477-0b8ee07cf40e"
+						name="InformacionBasica">
 						</testmodule>
 						<testmodule
 						id="1b03de91-ecfc-4c44-80d4-b7c452cc1ed7"
@@ -2945,7 +3161,7 @@
 					Calle
 				</column>
 				<column>
-					Numero
+					NumeroCalle
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -3004,7 +3220,7 @@
 					Calle
 				</column>
 				<column>
-					Numero
+					NumeroCalle
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -3122,7 +3338,7 @@
 					Calle
 				</column>
 				<column>
-					Numero
+					NumeroCalle
 				</column>
 				<column>
 					Gravedad
@@ -3220,7 +3436,7 @@
 					Apellido
 				</column>
 				<column>
-					ANIO
+					Anio
 				</column>
 				<column>
 					Marca
@@ -3318,7 +3534,7 @@
 					Calle
 				</column>
 				<column>
-					Numero
+					NumeroCalle
 				</column>
 				<column>
 					Gravedad
@@ -3336,7 +3552,7 @@
 					INCENDIO
 				</column>
 				<column>
-					ANIO
+					Anio
 				</column>
 				<column>
 					Marca
@@ -3375,19 +3591,7 @@
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c">
 			</testcontainer>
 			<testcontainer
-			id="456a11ec-bf16-40d1-82ca-083c65caebb8">
-			</testcontainer>
-			<testcontainer
-			id="4b2fb012-8f16-4576-b6d3-e8785f9cf2f7">
-			</testcontainer>
-			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
-			</testcontainer>
-			<testcontainer
-			id="5c4a7e37-cea7-455d-8bc8-41896717a71c">
-			</testcontainer>
-			<testcontainer
-			id="6d35ba8c-9c2a-431a-bd95-fe097ab23d86">
 			</testcontainer>
 			<testcontainer
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
@@ -3397,9 +3601,6 @@
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
-			</testcontainer>
-			<testcontainer
-			id="ce5ac4c2-275d-4dbc-b9f0-24ab2f59392c">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

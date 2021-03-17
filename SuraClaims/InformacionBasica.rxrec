@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="InformacionBasica_Motor"
+	classname="InformacionBasica"
 	namespace="SuraClaims">
 	</codegen>
 	<variables>
@@ -110,18 +110,18 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="6ce5b68d-b324-4585-acac-2294f6e0c91b"
-		waitaction="Exists"
-		waittimeout="20000ms">
+		searchpropertyid="49b30404-7e40-4e55-b2a1-7124eed2ec97"
+		waitaction="NotExists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="63d49439-1171-4625-bc57-6a8fcd282caf"
+			id="4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/..//..//..//div[@innertext='Asegurado']
+					/dom[@domain=$Ambiente]//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1042,7 +1042,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		InformacionBasica_Motor.UserCode.cs
+		InformacionBasica.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -218,13 +218,16 @@ namespace SuraClaims
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_HoraSiniestro'", repo.SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_HoraSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(17));
             repo.SuraClaims.Generales.BuscarPoliza.Copy_of_txtbox_HoraSiniestroInfo.WaitForNotExists(30000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(18));
+            Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(19));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(19));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(20));
             repo.SuraClaims.Generales.bttn_Siguiente.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso2'", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new ActionTimeout(40000), new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso2'", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new ActionTimeout(40000), new RecordItemIndex(21));
             repo.SuraClaims.Txt_Validaciones.txt_Paso2Info.WaitForExists(40000);
             
         }

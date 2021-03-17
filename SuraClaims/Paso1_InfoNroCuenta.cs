@@ -117,8 +117,8 @@ namespace SuraClaims
             repo.SuraClaims.InformacionPagoSiniestro.txt_BancoEmisorSugerido.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisor' at Center.", repo.SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisorInfo, new RecordItemIndex(4));
-            repo.SuraClaims.InformacionPagoSiniestro.OptionSelecBancoEmisor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculasInfo, new RecordItemIndex(4));
+            repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisor'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisorInfo, new ActionTimeout(30000), new RecordItemIndex(5));

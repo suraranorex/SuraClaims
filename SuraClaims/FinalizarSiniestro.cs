@@ -102,34 +102,20 @@ namespace SuraClaims
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_ValidarDireccion' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_ValidarDireccionInfo, new RecordItemIndex(0));
-            //repo.SuraClaims.Motor.InformacionSiniestro.bttn_ValidarDireccion.Click();
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
-            //Delay.Duration(3000, false);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_VerificaLaDireccion' at Center.", repo.SuraClaims.Motor.option_VerificaLaDireccionInfo, new RecordItemIndex(2));
-            //repo.SuraClaims.Motor.option_VerificaLaDireccion.Click();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(3));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Finalizar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_FinalizarInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Finalizar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_FinalizarInfo, new RecordItemIndex(0));
             repo.SuraClaims.Motor.InformacionSiniestro.bttn_Finalizar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to exist. Associated repository item: 'SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestro'", repo.SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestroInfo, new ActionTimeout(50000), new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to exist. Associated repository item: 'SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestro'", repo.SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestroInfo, new ActionTimeout(50000), new RecordItemIndex(1));
             repo.SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestroInfo.WaitForExists(50000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(6));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestro' and assigning the part of its value captured by '[0-9]+' to variable 'NumSiniestro'.", repo.SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestroInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestro' and assigning the part of its value captured by '[0-9]+' to variable 'NumSiniestro'.", repo.SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestroInfo, new RecordItemIndex(3));
             NumSiniestro = repo.SuraClaims.Generales.SiniestroGenerado.txt_NumeroSiniestro.Element.GetAttributeValueText("InnerText", new Regex("[0-9]+"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", NumSiniestro, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "User", NumSiniestro, new RecordItemIndex(4));
             
             guardarNumSiniestro();
             Delay.Milliseconds(0);

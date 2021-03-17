@@ -141,95 +141,94 @@ namespace SuraClaims
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Vehiculo' at 21;8.", repo.SuraClaims.Motor.InformacionSiniestro.tag_VehiculoInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Vehiculo' at 21;8.", repo.SuraClaims.Motor.InformacionSiniestro.tag_VehiculoInfo, new RecordItemIndex(2));
             repo.SuraClaims.Motor.InformacionSiniestro.tag_Vehiculo.Click("21;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new ActionTimeout(30000), new RecordItemIndex(3));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo.WaitForExists(30000);
             
             // Datos de Asegurado
-            Report.Log(ReportLevel.Info, "Section", "Datos de Asegurado", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Section", "Datos de Asegurado", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUber' at 46;4.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUberInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUber' at 46;4.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUberInfo, new RecordItemIndex(5));
             repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUber.Click("46;4");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new ActionTimeout(30000), new RecordItemIndex(6));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo.WaitForExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.picker_Personal' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.picker_PersonalInfo, new RecordItemIndex(5));
-            //repo.SuraClaims.Motor.InformacionSiniestro.picker_Personal.Click();
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_Nombre2' at 35;12.", repo.SuraClaims.Motor.option_Nombre2Info, new RecordItemIndex(6));
-            //repo.SuraClaims.Motor.option_Nombre2.Click("35;12");
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUber' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUberInfo, new RecordItemIndex(7));
-            repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarConductorUber.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Agregar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarInfo, new RecordItemIndex(7));
+            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Agregar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Descripcion' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.tag_DescripcionInfo, new RecordItemIndex(8));
-            repo.SuraClaims.Motor.InformacionSiniestro.tag_Descripcion.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SuraClaims.Motor.txt_TipoDoc'", repo.SuraClaims.Motor.txt_TipoDocInfo, new ActionTimeout(10000), new RecordItemIndex(8));
+            repo.SuraClaims.Motor.txt_TipoDocInfo.WaitForExists(10000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_TipoDoc' at Center.", repo.SuraClaims.Motor.txt_TipoDocInfo, new RecordItemIndex(9));
+            repo.SuraClaims.Motor.txt_TipoDoc.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_DNI' at Center.", repo.SuraClaims.Motor.option_DNIInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_DNI' at Center.", repo.SuraClaims.Motor.option_DNIInfo, new RecordItemIndex(10));
             repo.SuraClaims.Motor.option_DNI.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(11));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_option_DNI'", repo.SuraClaims.Motor.Copy_of_option_DNIInfo, new ActionTimeout(10000), new RecordItemIndex(11));
-            repo.SuraClaims.Motor.Copy_of_option_DNIInfo.WaitForNotExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Apellido'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_ApellidoInfo, new ActionTimeout(20000), new RecordItemIndex(12));
+            repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_ApellidoInfo.WaitForNotExists(20000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.AP_Uber.txt_NumeroDoc' at Center.", repo.SuraClaims.AP_Uber.txt_NumeroDocInfo, new RecordItemIndex(12));
-            repo.SuraClaims.AP_Uber.txt_NumeroDoc.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_UberInfo, new RecordItemIndex(13));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber.MoveTo();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.txt_NumeroDoc' at Center.", repo.SuraClaims.AP_Uber.txt_NumeroDocInfo, new RecordItemIndex(13));
-            repo.SuraClaims.AP_Uber.txt_NumeroDoc.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_UberInfo, new RecordItemIndex(14));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '23143223' with focus on 'SuraClaims.AP_Uber.txt_NumeroDoc'.", repo.SuraClaims.AP_Uber.txt_NumeroDocInfo, new RecordItemIndex(14));
-            repo.SuraClaims.AP_Uber.txt_NumeroDoc.PressKeys("23143223");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '23143223' with focus on 'SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_UberInfo, new RecordItemIndex(15));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber.PressKeys("23143223");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(16));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to not exist. Associated repository item: 'SuraClaims.AP_Uber.Copy_of_txt_NumeroDoc'", repo.SuraClaims.AP_Uber.Copy_of_txt_NumeroDocInfo, new ActionTimeout(10000), new RecordItemIndex(16));
-            repo.SuraClaims.AP_Uber.Copy_of_txt_NumeroDocInfo.WaitForNotExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Apellido'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_ApellidoInfo, new ActionTimeout(20000), new RecordItemIndex(17));
+            repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_ApellidoInfo.WaitForNotExists(20000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.txt_Nombre' at Center.", repo.SuraClaims.AP_Uber.txt_NombreInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.txt_Nombre' at Center.", repo.SuraClaims.AP_Uber.txt_NombreInfo, new RecordItemIndex(18));
             repo.SuraClaims.AP_Uber.txt_Nombre.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Conductor' with focus on 'SuraClaims.AP_Uber.txt_Nombre'.", repo.SuraClaims.AP_Uber.txt_NombreInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Conductor' with focus on 'SuraClaims.AP_Uber.txt_Nombre'.", repo.SuraClaims.AP_Uber.txt_NombreInfo, new RecordItemIndex(19));
             repo.SuraClaims.AP_Uber.txt_Nombre.PressKeys("Conductor");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(20));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtApellido' at Center.", repo.SuraClaims.Motor.txtApellidoInfo, new RecordItemIndex(20));
-            repo.SuraClaims.Motor.txtApellido.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txtbox_Apellido' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txtbox_ApellidoInfo, new RecordItemIndex(21));
+            repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Apellido.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Uber' with focus on 'SuraClaims.Motor.txtApellido'.", repo.SuraClaims.Motor.txtApellidoInfo, new RecordItemIndex(21));
-            repo.SuraClaims.Motor.txtApellido.PressKeys("Uber");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Uber' with focus on 'SuraClaims.Motor.InformacionSiniestro.txtbox_Apellido'.", repo.SuraClaims.Motor.InformacionSiniestro.txtbox_ApellidoInfo, new RecordItemIndex(22));
+            repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Apellido.PressKeys("Uber");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionadosInfo, new RecordItemIndex(23));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDeLosLesionados.Click();
             Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_RelacionConPropietario_Asegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_RelacionConPropietario_AseguradoInfo, new ActionTimeout(30000), new RecordItemIndex(23));
-            //repo.SuraClaims.Motor.InformacionSiniestro.txt_RelacionConPropietario_AseguradoInfo.WaitForExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at 22;3.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(24));
             repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.Click("22;3");
@@ -243,75 +242,89 @@ namespace SuraClaims
             // Elementos básicos del vehículo
             Report.Log(ReportLevel.Info, "Section", "Elementos básicos del vehículo", new RecordItemIndex(27));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new RecordItemIndex(28));
-            repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculoInfo, new RecordItemIndex(28));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txtAnio' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txtAnioInfo, new RecordItemIndex(29));
-            repo.SuraClaims.Motor.InformacionSiniestro.txtAnio.Click();
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculoInfo, new RecordItemIndex(29));
+            //repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AnioAutoAsegurado' with focus on 'SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculoInfo, new RecordItemIndex(30));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo.PressKeys(AnioAutoAsegurado);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.InformacionSiniestro.txtAnio'.", repo.SuraClaims.Motor.InformacionSiniestro.txtAnioInfo, new RecordItemIndex(30));
-            repo.SuraClaims.Motor.InformacionSiniestro.txtAnio.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculoInfo, new RecordItemIndex(31));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_AnioVehiculo.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AnioAutoAsegurado' with focus on 'SuraClaims.Motor.InformacionSiniestro.txtAnio'.", repo.SuraClaims.Motor.InformacionSiniestro.txtAnioInfo, new RecordItemIndex(31));
-            repo.SuraClaims.Motor.InformacionSiniestro.txtAnio.PressKeys(AnioAutoAsegurado);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtAnioVehiculo'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtAnioVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(32));
+            repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtAnioVehiculoInfo.WaitForNotExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_Marca' at Center.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(33));
+            repo.SuraClaims.Motor.txt_Marca.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(32));
-            repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(34));
+            //repo.SuraClaims.Motor.txt_Marca.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MarcaAutoAsegurado' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(35));
+            repo.SuraClaims.Motor.txt_Marca.PressKeys(MarcaAutoAsegurado);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtmarca' at Center.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(33));
-            repo.SuraClaims.Motor.txtmarca.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(36));
+            repo.SuraClaims.Motor.txt_Marca.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txtmarca'.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(34));
-            repo.SuraClaims.Motor.txtmarca.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_txtmarca'", repo.SuraClaims.Motor.Copy_of_txtmarcaInfo, new ActionTimeout(30000), new RecordItemIndex(37));
+            repo.SuraClaims.Motor.Copy_of_txtmarcaInfo.WaitForNotExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_Modelo' at Center.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(38));
+            repo.SuraClaims.Motor.txt_Modelo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MarcaAutoAsegurado' with focus on 'SuraClaims.Motor.txtmarca'.", repo.SuraClaims.Motor.txtmarcaInfo, new RecordItemIndex(35));
-            repo.SuraClaims.Motor.txtmarca.PressKeys(MarcaAutoAsegurado);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(39));
+            //repo.SuraClaims.Motor.txt_Modelo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ModeloAutoAsegurado' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(40));
+            repo.SuraClaims.Motor.txt_Modelo.PressKeys(ModeloAutoAsegurado);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(36));
-            repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(41));
+            repo.SuraClaims.Motor.txt_Modelo.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txtModelo' at Center.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(37));
-            repo.SuraClaims.Motor.txtModelo.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_txt_Modelo'", repo.SuraClaims.Motor.Copy_of_txt_ModeloInfo, new ActionTimeout(30000), new RecordItemIndex(42));
+            repo.SuraClaims.Motor.Copy_of_txt_ModeloInfo.WaitForNotExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txt_TipoVehiculo' at Center.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(43));
+            repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txtModelo'.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(38));
-            repo.SuraClaims.Motor.txtModelo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(44));
+            //repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TipoAutoAsegurado' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(45));
+            repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys(TipoAutoAsegurado);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ModeloAutoAsegurado' with focus on 'SuraClaims.Motor.txtModelo'.", repo.SuraClaims.Motor.txtModeloInfo, new RecordItemIndex(39));
-            repo.SuraClaims.Motor.txtModelo.PressKeys(ModeloAutoAsegurado);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(46));
+            repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(40));
-            repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculo'", repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(47));
+            repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txtTipoVehiculo' at Center.", repo.SuraClaims.SiniestroTercero.txtTipoVehiculoInfo, new RecordItemIndex(41));
-            repo.SuraClaims.SiniestroTercero.txtTipoVehiculo.Click();
-            Delay.Milliseconds(0);
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(48));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.SiniestroTercero.txtTipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txtTipoVehiculoInfo, new RecordItemIndex(42));
-            repo.SuraClaims.SiniestroTercero.txtTipoVehiculo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TipoAutoAsegurado' with focus on 'SuraClaims.SiniestroTercero.txtTipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txtTipoVehiculoInfo, new RecordItemIndex(43));
-            repo.SuraClaims.SiniestroTercero.txtTipoVehiculo.PressKeys(TipoAutoAsegurado);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Aceptar' at Center.", repo.SuraClaims.Motor.AceptarInfo, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Aceptar' at Center.", repo.SuraClaims.Motor.AceptarInfo, new RecordItemIndex(49));
             repo.SuraClaims.Motor.Aceptar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(50));
             repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
             
         }

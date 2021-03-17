@@ -123,6 +123,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarDaniosLesionesTerceros_Detalle.cs">
+      <BoundTo>f67115c1-9880-48e4-84eb-9b2bc5dc803e</BoundTo>
+      <DependentUpon>AgregarDaniosLesionesTerceros_Detalle.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5295608f-b4e6-4618-a3d5-4b4a37ad9ed8</id>
+    </Compile>
+    <Compile Include="AgregarDaniosLesionesTerceros_Detalle.UserCode.cs">
+      <BoundTo>f67115c1-9880-48e4-84eb-9b2bc5dc803e</BoundTo>
+      <DependentUpon>AgregarDaniosLesionesTerceros_Detalle.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4cf952f7-1c87-4e75-83de-2ee60cb2f6d8</id>
+    </Compile>
     <Compile Include="AgregarDanosLesionesTerceros.cs">
       <DependentUpon>AgregarDanosLesionesTerceros.rxrec</DependentUpon>
       <id>7cf50dfe-a312-426c-ab50-78e0be86f917</id>
@@ -246,14 +258,14 @@
       <BoundTo>aa7d1c63-3389-4d75-80d7-10cd950b6914</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="DescripTipoSiniestro_Tercero.cs">
-      <DependentUpon>DescripTipoSiniestro_Tercero.rxrec</DependentUpon>
+    <Compile Include="DescripTipoSiniestro_Tercero_Colision.cs">
+      <DependentUpon>DescripTipoSiniestro_Tercero_Colision.rxrec</DependentUpon>
       <id>f086e1ba-6451-4e5c-a6f6-efa55e4a8f15</id>
       <BoundTo>e383895c-2d43-46c7-abb5-63216957e00e</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="DescripTipoSiniestro_Tercero.UserCode.cs">
-      <DependentUpon>DescripTipoSiniestro_Tercero.rxrec</DependentUpon>
+    <Compile Include="DescripTipoSiniestro_Tercero_Colision.UserCode.cs">
+      <DependentUpon>DescripTipoSiniestro_Tercero_Colision.rxrec</DependentUpon>
       <id>7d934e91-b90d-46dc-b057-11249867e8f0</id>
       <BoundTo>e383895c-2d43-46c7-abb5-63216957e00e</BoundTo>
       <UserCode>true</UserCode>
@@ -294,6 +306,42 @@
       <BoundTo>96368824-1b21-473f-a63d-436df1155c90</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="Detalle_VehiculoOcupantes.cs">
+      <BoundTo>2443cb65-6d22-4bc8-9e77-02a1651b6580</BoundTo>
+      <DependentUpon>Detalle_VehiculoOcupantes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca0b79a8-c4e0-4da9-a2de-7c30dcb76aef</id>
+    </Compile>
+    <Compile Include="Detalle_VehiculoOcupantes.UserCode.cs">
+      <BoundTo>2443cb65-6d22-4bc8-9e77-02a1651b6580</BoundTo>
+      <DependentUpon>Detalle_VehiculoOcupantes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c8a50bb1-6ac5-4fa2-afe2-9b0a26266b60</id>
+    </Compile>
+    <Compile Include="FastTrack_ConCantidad.cs">
+      <BoundTo>82cf71e0-5104-45b9-8f9b-2593b6038114</BoundTo>
+      <DependentUpon>FastTrack_ConCantidad.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33c6028b-9138-4202-980e-1a5a27b7d995</id>
+    </Compile>
+    <Compile Include="FastTrack_ConCantidad.UserCode.cs">
+      <BoundTo>82cf71e0-5104-45b9-8f9b-2593b6038114</BoundTo>
+      <DependentUpon>FastTrack_ConCantidad.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b68c698-e9d6-4023-9739-676255bc3015</id>
+    </Compile>
+    <Compile Include="FastTrack_SinCantidad.cs">
+      <BoundTo>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</BoundTo>
+      <DependentUpon>FastTrack_SinCantidad.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>006e7e8c-8968-4573-bf32-af5b022a95b6</id>
+    </Compile>
+    <Compile Include="FastTrack_SinCantidad.UserCode.cs">
+      <BoundTo>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</BoundTo>
+      <DependentUpon>FastTrack_SinCantidad.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64037402-265a-4c73-8511-cfb1901b538b</id>
+    </Compile>
     <Compile Include="FinalizaPagoSiniestro.cs">
       <DependentUpon>FinalizaPagoSiniestro.rxrec</DependentUpon>
       <id>bbae38c1-8012-4457-bedf-a5404d94dd52</id>
@@ -305,6 +353,18 @@
       <id>2b893f4c-aa60-4206-b25c-f6e3d5426c77</id>
       <BoundTo>5a444947-7098-40cd-904b-5c657cb06fc5</BoundTo>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="FinalizarDaniosLesionesTerceros.cs">
+      <BoundTo>9f128afb-b808-4f43-afb1-2fbff4e65111</BoundTo>
+      <DependentUpon>FinalizarDaniosLesionesTerceros.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b378b44-4dcf-435b-9899-3a65e146c532</id>
+    </Compile>
+    <Compile Include="FinalizarDaniosLesionesTerceros.UserCode.cs">
+      <BoundTo>9f128afb-b808-4f43-afb1-2fbff4e65111</BoundTo>
+      <DependentUpon>FinalizarDaniosLesionesTerceros.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8cdc84f9-1e36-4406-890f-bf6341f44a97</id>
     </Compile>
     <Compile Include="FinalizarSiniestro.cs">
       <DependentUpon>FinalizarSiniestro.rxrec</DependentUpon>
@@ -354,14 +414,14 @@
       <BoundTo>c34542c3-b922-4f37-b53f-e4e81850eca0</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="InformacionBasica_Motor.cs">
-      <DependentUpon>InformacionBasica_Motor.rxrec</DependentUpon>
+    <Compile Include="InformacionBasica.cs">
+      <DependentUpon>InformacionBasica.rxrec</DependentUpon>
       <id>9e4d524c-6a54-492e-9ec7-af975e1c3329</id>
       <BoundTo>0c8ee23d-e534-4b95-a493-23d294c70da6</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="InformacionBasica_Motor.UserCode.cs">
-      <DependentUpon>InformacionBasica_Motor.rxrec</DependentUpon>
+    <Compile Include="InformacionBasica.UserCode.cs">
+      <DependentUpon>InformacionBasica.rxrec</DependentUpon>
       <id>962c1588-8f3d-447e-8397-e1db27b91f0a</id>
       <BoundTo>0c8ee23d-e534-4b95-a493-23d294c70da6</BoundTo>
       <UserCode>true</UserCode>
@@ -377,6 +437,18 @@
       <id>7dcea15f-967a-4a35-9561-ad5504d260e3</id>
       <BoundTo>6ed9bce4-05e1-4bf8-9b9f-c36d20348d8d</BoundTo>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="InformacionSiniestro_Direccion.cs">
+      <BoundTo>579d9b09-2325-4adc-9ea8-07e30d23dda1</BoundTo>
+      <DependentUpon>InformacionSiniestro_Direccion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>012688fe-592f-4290-aeb1-416e21ef36bc</id>
+    </Compile>
+    <Compile Include="InformacionSiniestro_Direccion.UserCode.cs">
+      <BoundTo>579d9b09-2325-4adc-9ea8-07e30d23dda1</BoundTo>
+      <DependentUpon>InformacionSiniestro_Direccion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7ebaa725-efdc-4a33-b41e-c75305d10be2</id>
     </Compile>
     <Compile Include="InformacionSiniestro_Hogar.cs">
       <DependentUpon>InformacionSiniestro_Hogar.rxrec</DependentUpon>
@@ -413,6 +485,18 @@
       <id>b2e0a3b1-b030-4275-ae47-91545e35e717</id>
       <BoundTo>e3722975-9812-44ec-8bc0-e0223631e1e9</BoundTo>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="InformacionSiniestro_Subrogacion.cs">
+      <BoundTo>8e399225-71ce-499a-ad3b-3643ad258926</BoundTo>
+      <DependentUpon>InformacionSiniestro_Subrogacion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>596775af-e5d1-499f-b172-3d54496d7bc0</id>
+    </Compile>
+    <Compile Include="InformacionSiniestro_Subrogacion.UserCode.cs">
+      <BoundTo>8e399225-71ce-499a-ad3b-3643ad258926</BoundTo>
+      <DependentUpon>InformacionSiniestro_Subrogacion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a118e2f7-1632-4758-883e-070008b96675</id>
     </Compile>
     <Compile Include="Informacion_Basica_AP.cs">
       <DependentUpon>Informacion_Basica_AP.rxrec</DependentUpon>
@@ -723,8 +807,25 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <RepositoryCode>true</RepositoryCode>
     </Compile>
+    <Compile Include="Terminar_Detalle_VehiculoOcupantes.cs">
+      <BoundTo>bc7d495a-3b15-4afe-a486-f619caa21d11</BoundTo>
+      <DependentUpon>Terminar_Detalle_VehiculoOcupantes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d22af58a-9119-4f7d-8a7d-58aacf901d90</id>
+    </Compile>
+    <Compile Include="Terminar_Detalle_VehiculoOcupantes.UserCode.cs">
+      <BoundTo>bc7d495a-3b15-4afe-a486-f619caa21d11</BoundTo>
+      <DependentUpon>Terminar_Detalle_VehiculoOcupantes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0619689e-4ac8-4818-8acb-4802bb14a631</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AgregarDaniosLesionesTerceros_Detalle.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>f67115c1-9880-48e4-84eb-9b2bc5dc803e</id>
+      <recordtableid>e04fa98f-3e00-4afe-bb2e-b02a11583603</recordtableid>
+    </None>
     <None Include="AgregarDanosLesionesTerceros.rxrec">
       <id>726d36fa-b477-49e7-98c2-2938a0944ebc</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -778,10 +879,10 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>14cb40f8-14dc-4c5c-99b5-291b10000b0e</recordtableid>
     </None>
-    <None Include="DescripTipoSiniestro_Tercero.rxrec">
+    <None Include="DescripTipoSiniestro_Tercero_Colision.rxrec">
       <id>e383895c-2d43-46c7-abb5-63216957e00e</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>61e4dcef-1aae-4a13-840b-3898125ec2e1</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="DetalleVehiculoAsegurado_Tercero.rxrec">
       <id>cbd8698c-beee-4367-b0d4-97d7d8c10d0a</id>
@@ -798,10 +899,30 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>574c4fdb-463d-4ca4-8be9-1b9ee6fd077e</recordtableid>
     </None>
+    <None Include="Detalle_VehiculoOcupantes.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>2443cb65-6d22-4bc8-9e77-02a1651b6580</id>
+      <recordtableid>84c0b7f4-586d-4c4a-822a-a4cd67c96893</recordtableid>
+    </None>
+    <None Include="FastTrack_ConCantidad.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>82cf71e0-5104-45b9-8f9b-2593b6038114</id>
+      <recordtableid>54e678cf-a9c9-4446-bced-2b43202e21ed</recordtableid>
+    </None>
+    <None Include="FastTrack_SinCantidad.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</id>
+      <recordtableid>42161acf-fda5-4099-b35c-e5468f485c5f</recordtableid>
+    </None>
     <None Include="FinalizaPagoSiniestro.rxrec">
       <id>5a444947-7098-40cd-904b-5c657cb06fc5</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>1106a3eb-96c6-4af3-ab98-8542ec63048b</recordtableid>
+    </None>
+    <None Include="FinalizarDaniosLesionesTerceros.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>9f128afb-b808-4f43-afb1-2fbff4e65111</id>
+      <recordtableid>908f8705-0345-480d-83c1-ed983b077d56</recordtableid>
     </None>
     <None Include="FinalizarSiniestro.rxrec">
       <id>39ff8536-d3cd-4eba-8137-319f7d70b51a</id>
@@ -865,7 +986,7 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>c8c5ed1d-1384-48cf-bc1f-d3091e43bd0a</recordtableid>
     </None>
-    <None Include="InformacionBasica_Motor.rxrec">
+    <None Include="InformacionBasica.rxrec">
       <id>0c8ee23d-e534-4b95-a493-23d294c70da6</id>
       <recordtableid>4afd7ade-4bd3-436e-85a2-aa47e7e56042</recordtableid>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -874,6 +995,11 @@
       <id>6ed9bce4-05e1-4bf8-9b9f-c36d20348d8d</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>82160f09-1b26-4257-9faf-e5edd2c52ef5</recordtableid>
+    </None>
+    <None Include="InformacionSiniestro_Direccion.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>579d9b09-2325-4adc-9ea8-07e30d23dda1</id>
+      <recordtableid>715b097f-045e-4890-b458-292598031417</recordtableid>
     </None>
     <None Include="InformacionSiniestro_Hogar.rxrec">
       <id>e1c2ce84-399e-458f-85c1-09527aa6b397</id>
@@ -890,6 +1016,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>335b1193-4ca1-4305-99be-324813a08a34</recordtableid>
     </None>
+    <None Include="InformacionSiniestro_Subrogacion.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>8e399225-71ce-499a-ad3b-3643ad258926</id>
+      <recordtableid>2ce2bf51-1f9b-49da-bd2d-b491a4967baf</recordtableid>
+    </None>
     <None Include="Informacion_Basica_AP.rxrec">
       <id>121dcbfe-22fe-4e5a-b2cd-d92b05b5cb39</id>
       <recordtableid>a738d8f3-19bc-4927-a3c2-b398963683dc</recordtableid>
@@ -897,8 +1028,8 @@
     </None>
     <None Include="Informacion_Basica_Motor_UBER.rxrec">
       <id>e926456b-5efd-4165-9ef5-c6765e10f665</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>dadf012c-9d31-47cc-a6ec-42e3d3a4fdef</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="Informacion_Siniestro_AP.rxrec">
       <id>3b10ff1a-7331-42de-98db-b88d7ace9595</id>
@@ -994,8 +1125,8 @@
     </None>
     <None Include="Paso_3_InfoSiniestro_Tercero_Finalizar.rxrec">
       <id>7af2a807-b4c8-4ec9-b667-eb88156a00f5</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>accabe32-c95e-42e5-a325-01f624602d1c</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="Reclamos.rxrec">
       <id>b01a1564-6c93-49ca-9d6e-2194a5841ba9</id>
@@ -1036,6 +1167,11 @@
       <id>d7df2e8d-950c-49f4-9e89-f7fcace2078d</id>
       <repoid>1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7</repoid>
       <reporootid>e236aa5f-717e-474a-818d-ab73ab951257</reporootid>
+    </None>
+    <None Include="Terminar_Detalle_VehiculoOcupantes.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>bc7d495a-3b15-4afe-a486-f619caa21d11</id>
+      <recordtableid>c2c2c4e6-a847-41d7-a0f9-0d449d03597d</recordtableid>
     </None>
     <None Include="Utilitarios\VPNConnect.exe">
       <id>8eed7690-cec4-45bc-9cb3-99f6f868d224</id>

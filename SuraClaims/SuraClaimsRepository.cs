@@ -233,6 +233,18 @@ namespace SuraClaims
             set { _Responsabilidad = value; }
         }
 
+        string _Anio = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable Anio.
+        /// </summary>
+        [TestVariable("ec0fcc12-e2af-44b7-9f68-7bbd178c4875")]
+        public string Anio
+        {
+            get { return _Anio; }
+            set { _Anio = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -318,7 +330,7 @@ namespace SuraClaims
                 _siniestrotercero = new SuraClaimsRepositoryFolders.SiniestroTerceroFolder(this);
                 _bttn_configuracionInfo = new RepoItemInfo(this, "bttn_Configuracion", ".//span[#':TabLinkMenuButton-btnEl']/span[@enabled='True']", 30000, null, "6fab9c41-d337-42fb-a1ea-ecc3468f2ed8");
                 _selectprovincianingunaInfo = new RepoItemInfo(this, "SelectProvinciaNinguna", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]", 30000, null, "6818b134-7567-4bfb-8d13-8f50a705cfca");
-                _txt_codigoproveedorInfo = new RepoItemInfo(this, "txt_CodigoProveedor", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[1]/?/?/table/tbody/tr[4]/td/div/div//input[@name='AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:ProviderNumberSura']", 30000, null, "4fe58b84-fee7-4ecf-ab2a-ccc486b04e59");
+                _txt_codigoproveedorInfo = new RepoItemInfo(this, "txt_CodigoProveedor", ".//tbody[#'AddressBookPickerPopup-tbody']/input[@name='AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:ProviderNumberSura']", 30000, null, "4fe58b84-fee7-4ecf-ab2a-ccc486b04e59");
                 _btn_buscarproveedorInfo = new RepoItemInfo(this, "Btn_BuscarProveedor", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/?/?/table/tbody/tr[2]//table//div/div/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']", 30000, null, "6aa49382-283c-4b75-97ca-6899f2ca8d7e");
                 _seleccionarInfo = new RepoItemInfo(this, "Seleccionar", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[6]/td/div/div[4]/div[1]/?/?/table/?/?/tr/td[1]/?/?/a[@innertext='Seleccionar']", 30000, null, "d13233d5-48a5-48c4-930f-dfc63f2b4409");
                 _bttn_cerrarsesionInfo = new RepoItemInfo(this, "bttn_CerrarSesion", ".//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext~'Cerrar sesión']", 30000, null, "3207f4a1-f68b-4634-920a-5fcc9f25056a");
@@ -1538,6 +1550,7 @@ namespace SuraClaims
             RepoItemInfo _menulateralaccionesInfo;
             RepoItemInfo _submenulateliquiordendepagoInfo;
             RepoItemInfo _hernangimenezzapiolaInfo;
+            RepoItemInfo _input_proveedorInfo;
 
             /// <summary>
             /// Creates a new MenuLateral  folder.
@@ -1548,6 +1561,7 @@ namespace SuraClaims
                 _menulateralaccionesInfo = new RepoItemInfo(this, "MenuLateralAcciones", ".//span[#'Claim:ClaimMenuActions-btnEl']/span[@innertext='cciones']", 30000, null, "34cb2845-9228-46c7-a149-fef7a2905518");
                 _submenulateliquiordendepagoInfo = new RepoItemInfo(this, "SubMenuLateLiquiOrdenDePago", ".//span[@innertext~'Liquidaciones / Orden de']", 30000, null, "adab1433-da8f-48f7-b04d-9eb3eab7083c");
                 _hernangimenezzapiolaInfo = new RepoItemInfo(this, "HERNANGIMENEZZAPIOLA", "body/div[15]/div/div[2]//span[@innertext='HERNAN GIMENEZ ZAPIOLA']", 30000, null, "3eb4bd3f-6ac4-4afd-b069-8daea8236e06");
+                _input_proveedorInfo = new RepoItemInfo(this, "input_Proveedor", ".//input[@name~'ProviderNumberSura']", 30000, null, "2bec988b-1334-49c1-95ff-1676ca49a01d");
             }
 
             /// <summary>
@@ -1645,6 +1659,30 @@ namespace SuraClaims
                     return _hernangimenezzapiolaInfo;
                 }
             }
+
+            /// <summary>
+            /// The input_Proveedor item.
+            /// </summary>
+            [RepositoryItem("2bec988b-1334-49c1-95ff-1676ca49a01d")]
+            public virtual Ranorex.InputTag input_Proveedor
+            {
+                get
+                {
+                    return _input_proveedorInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_Proveedor item info.
+            /// </summary>
+            [RepositoryItemInfo("2bec988b-1334-49c1-95ff-1676ca49a01d")]
+            public virtual RepoItemInfo input_ProveedorInfo
+            {
+                get
+                {
+                    return _input_proveedorInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1658,6 +1696,7 @@ namespace SuraClaims
             RepoItemInfo _option_verificaladireccionInfo;
             RepoItemInfo _option_nombre2Info;
             RepoItemInfo _option_dniInfo;
+            RepoItemInfo _option_anioInfo;
             RepoItemInfo _copy_of_option_dniInfo;
             RepoItemInfo _celda_nrodniInfo;
             RepoItemInfo _celda_tipodocumentoInfo;
@@ -1669,19 +1708,21 @@ namespace SuraClaims
             RepoItemInfo _op_policia_noInfo;
             RepoItemInfo _btn_agregarInfo;
             RepoItemInfo _txt_tipodocInfo;
-            RepoItemInfo _txtapellidoInfo;
-            RepoItemInfo _txtnombreInfo;
-            RepoItemInfo _detalledeloslesionadosInfo;
+            RepoItemInfo _txtbox_apellidoInfo;
+            RepoItemInfo _txtbox_nombreInfo;
+            RepoItemInfo _txt_detalledeloslesionadosInfo;
             RepoItemInfo _op_responsabilidadInfo;
             RepoItemInfo _btn_aceptarInfo;
-            RepoItemInfo _txt_numeroInfo;
+            RepoItemInfo _txtbox_numeroInfo;
             RepoItemInfo _copy_of_txt_numeroInfo;
             RepoItemInfo _pestana_descriptiposiniestroInfo;
             RepoItemInfo _op_ambulanciaInfo;
+            RepoItemInfo _op_ambulancia_noInfo;
             RepoItemInfo _txt_tipoaccidenteInfo;
-            RepoItemInfo _txtmarcaInfo;
+            RepoItemInfo _txt_marcaInfo;
             RepoItemInfo _copy_of_txtmarcaInfo;
-            RepoItemInfo _txtmodeloInfo;
+            RepoItemInfo _txt_modeloInfo;
+            RepoItemInfo _copy_of_txt_modeloInfo;
             RepoItemInfo _txttipoInfo;
             RepoItemInfo _textmarcaInfo;
             RepoItemInfo _tipodocumentoInfo;
@@ -1701,30 +1742,33 @@ namespace SuraClaims
                 _option_verificaladireccionInfo = new RepoItemInfo(this, "option_VerificaLaDireccion", ".//span[@innertext~'Verifica la dirección']", 30000, null, "653b6cc4-9e97-4041-81c3-71c29545ce5c");
                 _option_nombre2Info = new RepoItemInfo(this, "option_Nombre2", ".//li[2]", 30000, null, "2be891e8-ca9a-4071-9cef-acb5a9a6b494");
                 _option_dniInfo = new RepoItemInfo(this, "option_DNI", ".//li[@innertext='D.N.I.']", 30000, null, "85070965-398c-4c95-af61-96c4b744fcc2");
+                _option_anioInfo = new RepoItemInfo(this, "option_Anio", ".//li[@innertext=$Anio]", 30000, null, "6a78c299-e097-46a7-ac89-ca55c42b39d0");
                 _copy_of_option_dniInfo = new RepoItemInfo(this, "Copy_of_option_DNI", ".//li[@innertext='D.N.I.']/../..//input[@data-tabindexsaved='True']", 30000, null, "8b599ac7-9cb3-46b2-a51f-80680cc12cd3");
                 _celda_nrodniInfo = new RepoItemInfo(this, "celda_NroDNI", ".//div[@id~'PersonNameInputSet']/div[3]//td[3]", 30000, null, "2b775f00-f068-49f9-bfdc-3e4c0896d2d3");
                 _celda_tipodocumentoInfo = new RepoItemInfo(this, "celda_TipoDocumento", ".//div[@id~'PersonNameInputSet']/div[3]//td[2]", 30000, null, "97a5bdbc-6932-432e-b884-e1450dbca4bc");
                 _option_nuevapersonaInfo = new RepoItemInfo(this, "option_NuevaPersona", ".//span[@innertext='Nueva persona']", 30000, null, "53347b97-7d13-49d8-a9c0-857d303e7499");
-                _btn_agregardanoylesionestercerosInfo = new RepoItemInfo(this, "btn_agregarDanoYLesionesTerceros", ".//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[8]//table/tbody/tr[1]/td/div/div/div/a[1]", 30000, null, "2cf5d0de-9252-4889-a41f-422f91f822ba");
-                _btn_agregarconductorInfo = new RepoItemInfo(this, "btn_AgregarConductor", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[1]/?/?/div/table/tbody/tr/td/?/?/table/tbody/tr[2]/td/div/div[1]/div/div/a[1]//span[@innertext='Agregar conductor']", 30000, null, "4b475e31-cd9a-4ad7-85ac-b729748573dc");
+                _btn_agregardanoylesionestercerosInfo = new RepoItemInfo(this, "btn_agregarDanoYLesionesTerceros", ".//tbody[#'centerPanel-tbody']//span[@innertext>'Agregar daños y lesiones']", 30000, null, "2cf5d0de-9252-4889-a41f-422f91f822ba");
+                _btn_agregarconductorInfo = new RepoItemInfo(this, "btn_AgregarConductor", ".//tbody[#'centerPanel-tbody']//span[@innertext='Agregar conductor']", 30000, null, "4b475e31-cd9a-4ad7-85ac-b729748573dc");
                 _aceptarInfo = new RepoItemInfo(this, "Aceptar", ".//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']", 30000, null, "b20d9984-c975-4f56-99d5-b6d92962081b");
                 _btn_danios_noInfo = new RepoItemInfo(this, "btn_Danios_No", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']", 30000, null, "4197e2f3-0ae7-46be-94a7-54f8a6de5088");
-                _op_policia_noInfo = new RepoItemInfo(this, "op_policia_No", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']", 30000, null, "9000aee2-d1c1-46a8-8401-821981602e64");
-                _btn_agregarInfo = new RepoItemInfo(this, "btn_AGregar", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[6]/td/div/div[1]/div/div/a[1]//span[@innertext='gregar']", 30000, null, "d18137f3-0e2e-42d0-9ab2-ef14e7f2b579");
+                _op_policia_noInfo = new RepoItemInfo(this, "op_policia_NO", ".//tbody[#'centerPanel-tbody']//span[@innertext~'policía']/../../..//label[@innertext~'No']/../input[@type='button']", 30000, null, "9000aee2-d1c1-46a8-8401-821981602e64");
+                _btn_agregarInfo = new RepoItemInfo(this, "btn_Agregar", ".//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']", 30000, null, "d18137f3-0e2e-42d0-9ab2-ef14e7f2b579");
                 _txt_tipodocInfo = new RepoItemInfo(this, "txt_TipoDoc", ".//tbody[#'centerPanel-tbody']//div[@innertext='<ninguna>']", 30000, null, "b34ef9ce-d512-4eed-8d23-8e68139f6995");
-                _txtapellidoInfo = new RepoItemInfo(this, "txtApellido", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//input[@name='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:LastName']", 30000, null, "5738797d-7a5a-49c0-b03f-6fde8a500b97");
-                _txtnombreInfo = new RepoItemInfo(this, "txtNombre", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//input[@name='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:FirstName']", 30000, null, "c99f4096-7df9-4e32-b169-2d4b4d417c1f");
-                _detalledeloslesionadosInfo = new RepoItemInfo(this, "DetalleDeLosLesionados", ".//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext='Detalle de los lesionados']", 30000, null, "df0df1ea-bd96-4599-80c8-ea1af8c65712");
+                _txtbox_apellidoInfo = new RepoItemInfo(this, "txtbox_Apellido", ".//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input", 30000, null, "5738797d-7a5a-49c0-b03f-6fde8a500b97");
+                _txtbox_nombreInfo = new RepoItemInfo(this, "txtbox_Nombre", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input", 30000, null, "c99f4096-7df9-4e32-b169-2d4b4d417c1f");
+                _txt_detalledeloslesionadosInfo = new RepoItemInfo(this, "txt_DetalleDeLosLesionados", ".//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']", 30000, null, "df0df1ea-bd96-4599-80c8-ea1af8c65712");
                 _op_responsabilidadInfo = new RepoItemInfo(this, "op_responsabilidad", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Responsabilidad del Asegurado']/../../..//label[@innertext~$Responsabilidad]/../input[@type='button']", 30000, null, "d31c7a75-5c81-40ea-99db-23136bde2876");
-                _btn_aceptarInfo = new RepoItemInfo(this, "btn_Aceptar", ".//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']", 30000, null, "f4244d5c-ca2f-4b6c-8a0e-b0ece229acce");
-                _txt_numeroInfo = new RepoItemInfo(this, "txt_Numero", ".//tbody[#'centerPanel-tbody']//div[@innertext='D.N.I.']/../..//div[@class='x-grid-cell-inner '][2]", 30000, null, "05b7c423-c3bb-46ea-9911-b4177fbe7f1a");
+                _btn_aceptarInfo = new RepoItemInfo(this, "btn_Aceptar", ".//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']", 30000, null, "f4244d5c-ca2f-4b6c-8a0e-b0ece229acce");
+                _txtbox_numeroInfo = new RepoItemInfo(this, "txtbox_Numero", ".//tbody[#'centerPanel-tbody']//div[@innertext='D.N.I.']/../..//div[@class='x-grid-cell-inner '][2]", 30000, null, "05b7c423-c3bb-46ea-9911-b4177fbe7f1a");
                 _copy_of_txt_numeroInfo = new RepoItemInfo(this, "Copy_of_txt_Numero", ".//tbody[#'centerPanel-tbody']//div[@innertext='D.N.I.']/../..//div[@class='x-grid-cell-inner ' and @data-tabindexsaved='True'][2]", 30000, null, "35d0c653-8290-4700-b5ce-d31c94df4895");
                 _pestana_descriptiposiniestroInfo = new RepoItemInfo(this, "pestana_DescripTipoSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Descripción del tipo de s']", 30000, null, "c4d177ac-a250-46a2-a12c-b071ffca3233");
                 _op_ambulanciaInfo = new RepoItemInfo(this, "op_ambulancia", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]//table/tbody/tr[1]/td/div/div/?/?/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']", 30000, null, "bb2b19cc-4065-4939-868b-e2d4cc04e4c2");
-                _txt_tipoaccidenteInfo = new RepoItemInfo(this, "txt_TipoAccidente", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AccidentTypeInputSura']", 30000, null, "318131d3-13ce-4243-be0e-581d65733e8b");
-                _txtmarcaInfo = new RepoItemInfo(this, "txtmarca", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']", 30000, null, "49c78570-cbc3-4845-81e1-f755e92cdada");
-                _copy_of_txtmarcaInfo = new RepoItemInfo(this, "Copy_of_txtmarca", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make' and @data-tabindexsaved='True']", 30000, null, "49e2551c-59aa-4d6e-84f4-3f565169a6a3");
-                _txtmodeloInfo = new RepoItemInfo(this, "txtModelo", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']", 30000, null, "7d32b63a-56e0-47b9-86e4-b00f55aeaed6");
+                _op_ambulancia_noInfo = new RepoItemInfo(this, "op_ambulancia_NO", ".//tbody[#'centerPanel-tbody']///span[@innertext~'ambulancia']/../../..//label[@innertext~'No']/../input[@type='button']", 30000, null, "bca12804-3b3e-4b64-8898-18d97cafafa5");
+                _txt_tipoaccidenteInfo = new RepoItemInfo(this, "txt_TipoAccidente", ".//span[@innertext~'Tipo de accidente']/../..//input", 30000, null, "318131d3-13ce-4243-be0e-581d65733e8b");
+                _txt_marcaInfo = new RepoItemInfo(this, "txt_Marca", ".//span[@innertext='Marca']/../..//input", 30000, null, "49c78570-cbc3-4845-81e1-f755e92cdada");
+                _copy_of_txtmarcaInfo = new RepoItemInfo(this, "Copy_of_txtmarca", ".//span[@innertext='Marca']/../..//input[@data-tabindexsaved='True']", 30000, null, "49e2551c-59aa-4d6e-84f4-3f565169a6a3");
+                _txt_modeloInfo = new RepoItemInfo(this, "txt_Modelo", ".//span[@innertext='Modelo']/../..//input", 30000, null, "7d32b63a-56e0-47b9-86e4-b00f55aeaed6");
+                _copy_of_txt_modeloInfo = new RepoItemInfo(this, "Copy_of_txt_Modelo", ".//span[@innertext='Modelo']/../..//input[@data-tabindexsaved='True']", 30000, null, "969d3b5c-33a3-4913-8904-1344e3c38979");
                 _txttipoInfo = new RepoItemInfo(this, "txtTipo", "body/div[@id~'loadmask']//ul/li[@innertext='AUTO']", 30000, null, "93ca185b-2e2d-4cdd-8879-05863f51782d");
                 _textmarcaInfo = new RepoItemInfo(this, "textMarca", "body/div[@id~'loadmask']//ul/li[@innertext='CHEVROLET']", 30000, null, "a01ba668-e2fd-45f1-b869-21c19800e24f");
                 _tipodocumentoInfo = new RepoItemInfo(this, "TipoDocumento", "body/div[@id~'loadmask']//ul//li[@innertext='D.N.I.']", 30000, null, "0aba3c5b-cc60-4562-8043-df9ede6f111e");
@@ -1815,6 +1859,30 @@ namespace SuraClaims
                 get
                 {
                     return _option_dniInfo;
+                }
+            }
+
+            /// <summary>
+            /// The option_Anio item.
+            /// </summary>
+            [RepositoryItem("6a78c299-e097-46a7-ac89-ca55c42b39d0")]
+            public virtual Ranorex.LiTag option_Anio
+            {
+                get
+                {
+                    return _option_anioInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The option_Anio item info.
+            /// </summary>
+            [RepositoryItemInfo("6a78c299-e097-46a7-ac89-ca55c42b39d0")]
+            public virtual RepoItemInfo option_AnioInfo
+            {
+                get
+                {
+                    return _option_anioInfo;
                 }
             }
 
@@ -1918,11 +1986,11 @@ namespace SuraClaims
             /// The btn_agregarDanoYLesionesTerceros item.
             /// </summary>
             [RepositoryItem("2cf5d0de-9252-4889-a41f-422f91f822ba")]
-            public virtual Ranorex.ATag btn_agregarDanoYLesionesTerceros
+            public virtual Ranorex.SpanTag btn_agregarDanoYLesionesTerceros
             {
                 get
                 {
-                    return _btn_agregardanoylesionestercerosInfo.CreateAdapter<Ranorex.ATag>(true);
+                    return _btn_agregardanoylesionestercerosInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
@@ -2011,10 +2079,10 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The op_policia_No item.
+            /// The op_policia_NO item.
             /// </summary>
             [RepositoryItem("9000aee2-d1c1-46a8-8401-821981602e64")]
-            public virtual Ranorex.InputTag op_policia_No
+            public virtual Ranorex.InputTag op_policia_NO
             {
                 get
                 {
@@ -2023,10 +2091,10 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The op_policia_No item info.
+            /// The op_policia_NO item info.
             /// </summary>
             [RepositoryItemInfo("9000aee2-d1c1-46a8-8401-821981602e64")]
-            public virtual RepoItemInfo op_policia_NoInfo
+            public virtual RepoItemInfo op_policia_NOInfo
             {
                 get
                 {
@@ -2035,10 +2103,10 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The btn_AGregar item.
+            /// The btn_Agregar item.
             /// </summary>
             [RepositoryItem("d18137f3-0e2e-42d0-9ab2-ef14e7f2b579")]
-            public virtual Ranorex.SpanTag btn_AGregar
+            public virtual Ranorex.SpanTag btn_Agregar
             {
                 get
                 {
@@ -2047,10 +2115,10 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The btn_AGregar item info.
+            /// The btn_Agregar item info.
             /// </summary>
             [RepositoryItemInfo("d18137f3-0e2e-42d0-9ab2-ef14e7f2b579")]
-            public virtual RepoItemInfo btn_AGregarInfo
+            public virtual RepoItemInfo btn_AgregarInfo
             {
                 get
                 {
@@ -2083,74 +2151,74 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txtApellido item.
+            /// The txtbox_Apellido item.
             /// </summary>
             [RepositoryItem("5738797d-7a5a-49c0-b03f-6fde8a500b97")]
-            public virtual Ranorex.InputTag txtApellido
+            public virtual Ranorex.InputTag txtbox_Apellido
             {
                 get
                 {
-                    return _txtapellidoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txtbox_apellidoInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtApellido item info.
+            /// The txtbox_Apellido item info.
             /// </summary>
             [RepositoryItemInfo("5738797d-7a5a-49c0-b03f-6fde8a500b97")]
-            public virtual RepoItemInfo txtApellidoInfo
+            public virtual RepoItemInfo txtbox_ApellidoInfo
             {
                 get
                 {
-                    return _txtapellidoInfo;
+                    return _txtbox_apellidoInfo;
                 }
             }
 
             /// <summary>
-            /// The txtNombre item.
+            /// The txtbox_Nombre item.
             /// </summary>
             [RepositoryItem("c99f4096-7df9-4e32-b169-2d4b4d417c1f")]
-            public virtual Ranorex.InputTag txtNombre
+            public virtual Ranorex.InputTag txtbox_Nombre
             {
                 get
                 {
-                    return _txtnombreInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txtbox_nombreInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtNombre item info.
+            /// The txtbox_Nombre item info.
             /// </summary>
             [RepositoryItemInfo("c99f4096-7df9-4e32-b169-2d4b4d417c1f")]
-            public virtual RepoItemInfo txtNombreInfo
+            public virtual RepoItemInfo txtbox_NombreInfo
             {
                 get
                 {
-                    return _txtnombreInfo;
+                    return _txtbox_nombreInfo;
                 }
             }
 
             /// <summary>
-            /// The DetalleDeLosLesionados item.
+            /// The txt_DetalleDeLosLesionados item.
             /// </summary>
             [RepositoryItem("df0df1ea-bd96-4599-80c8-ea1af8c65712")]
-            public virtual Ranorex.SpanTag DetalleDeLosLesionados
+            public virtual Ranorex.SpanTag txt_DetalleDeLosLesionados
             {
                 get
                 {
-                    return _detalledeloslesionadosInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _txt_detalledeloslesionadosInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The DetalleDeLosLesionados item info.
+            /// The txt_DetalleDeLosLesionados item info.
             /// </summary>
             [RepositoryItemInfo("df0df1ea-bd96-4599-80c8-ea1af8c65712")]
-            public virtual RepoItemInfo DetalleDeLosLesionadosInfo
+            public virtual RepoItemInfo txt_DetalleDeLosLesionadosInfo
             {
                 get
                 {
-                    return _detalledeloslesionadosInfo;
+                    return _txt_detalledeloslesionadosInfo;
                 }
             }
 
@@ -2203,26 +2271,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txt_Numero item.
+            /// The txtbox_Numero item.
             /// </summary>
             [RepositoryItem("05b7c423-c3bb-46ea-9911-b4177fbe7f1a")]
-            public virtual Ranorex.DivTag txt_Numero
+            public virtual Ranorex.DivTag txtbox_Numero
             {
                 get
                 {
-                    return _txt_numeroInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _txtbox_numeroInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txt_Numero item info.
+            /// The txtbox_Numero item info.
             /// </summary>
             [RepositoryItemInfo("05b7c423-c3bb-46ea-9911-b4177fbe7f1a")]
-            public virtual RepoItemInfo txt_NumeroInfo
+            public virtual RepoItemInfo txtbox_NumeroInfo
             {
                 get
                 {
-                    return _txt_numeroInfo;
+                    return _txtbox_numeroInfo;
                 }
             }
 
@@ -2299,6 +2367,30 @@ namespace SuraClaims
             }
 
             /// <summary>
+            /// The op_ambulancia_NO item.
+            /// </summary>
+            [RepositoryItem("bca12804-3b3e-4b64-8898-18d97cafafa5")]
+            public virtual Ranorex.InputTag op_ambulancia_NO
+            {
+                get
+                {
+                    return _op_ambulancia_noInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The op_ambulancia_NO item info.
+            /// </summary>
+            [RepositoryItemInfo("bca12804-3b3e-4b64-8898-18d97cafafa5")]
+            public virtual RepoItemInfo op_ambulancia_NOInfo
+            {
+                get
+                {
+                    return _op_ambulancia_noInfo;
+                }
+            }
+
+            /// <summary>
             /// The txt_TipoAccidente item.
             /// </summary>
             [RepositoryItem("318131d3-13ce-4243-be0e-581d65733e8b")]
@@ -2323,26 +2415,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txtmarca item.
+            /// The txt_Marca item.
             /// </summary>
             [RepositoryItem("49c78570-cbc3-4845-81e1-f755e92cdada")]
-            public virtual Ranorex.InputTag txtmarca
+            public virtual Ranorex.InputTag txt_Marca
             {
                 get
                 {
-                    return _txtmarcaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txt_marcaInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtmarca item info.
+            /// The txt_Marca item info.
             /// </summary>
             [RepositoryItemInfo("49c78570-cbc3-4845-81e1-f755e92cdada")]
-            public virtual RepoItemInfo txtmarcaInfo
+            public virtual RepoItemInfo txt_MarcaInfo
             {
                 get
                 {
-                    return _txtmarcaInfo;
+                    return _txt_marcaInfo;
                 }
             }
 
@@ -2371,26 +2463,50 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txtModelo item.
+            /// The txt_Modelo item.
             /// </summary>
             [RepositoryItem("7d32b63a-56e0-47b9-86e4-b00f55aeaed6")]
-            public virtual Ranorex.InputTag txtModelo
+            public virtual Ranorex.InputTag txt_Modelo
             {
                 get
                 {
-                    return _txtmodeloInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txt_modeloInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtModelo item info.
+            /// The txt_Modelo item info.
             /// </summary>
             [RepositoryItemInfo("7d32b63a-56e0-47b9-86e4-b00f55aeaed6")]
-            public virtual RepoItemInfo txtModeloInfo
+            public virtual RepoItemInfo txt_ModeloInfo
             {
                 get
                 {
-                    return _txtmodeloInfo;
+                    return _txt_modeloInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_Modelo item.
+            /// </summary>
+            [RepositoryItem("969d3b5c-33a3-4913-8904-1344e3c38979")]
+            public virtual Ranorex.InputTag Copy_of_txt_Modelo
+            {
+                get
+                {
+                    return _copy_of_txt_modeloInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_Modelo item info.
+            /// </summary>
+            [RepositoryItemInfo("969d3b5c-33a3-4913-8904-1344e3c38979")]
+            public virtual RepoItemInfo Copy_of_txt_ModeloInfo
+            {
+                get
+                {
+                    return _copy_of_txt_modeloInfo;
                 }
             }
 
@@ -2611,7 +2727,7 @@ namespace SuraClaims
             RepoItemInfo _copy_of_txtbox_telefonoprincipalInfo;
             RepoItemInfo _txtbox_correoelectronicoInfo;
             RepoItemInfo _copy_of_txtbox_correoelectronicoInfo;
-            RepoItemInfo _txtbox_nombreInfo;
+            RepoItemInfo _copy_of_txtbox_nombreInfo;
             RepoItemInfo _lbl_resumendesiniestroInfo;
 
             /// <summary>
@@ -2644,7 +2760,7 @@ namespace SuraClaims
                 _copy_of_txtbox_telefonoprincipalInfo = new RepoItemInfo(this, "Copy_of_txtbox_TelefonoPrincipal", ".//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input[@data-tabindexsaved='True']", 30000, null, "075de9d9-5993-4e58-8214-0baa4cd55b6b");
                 _txtbox_correoelectronicoInfo = new RepoItemInfo(this, "txtbox_CorreoElectronico", ".//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input", 30000, null, "9cf937cc-b302-4868-853e-525f8e1bb177");
                 _copy_of_txtbox_correoelectronicoInfo = new RepoItemInfo(this, "Copy_of_txtbox_CorreoElectronico", ".//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input[@data-tabindexsaved='True']", 30000, null, "928c7699-e911-48b8-bb0a-77265c91069b");
-                _txtbox_nombreInfo = new RepoItemInfo(this, "txtbox_Nombre", ".//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']", 30000, null, "4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200");
+                _copy_of_txtbox_nombreInfo = new RepoItemInfo(this, "Copy_of_txtbox_Nombre", ".//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']", 30000, null, "4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200");
                 _lbl_resumendesiniestroInfo = new RepoItemInfo(this, "lbl_ResumenDeSiniestro", ".//tbody[#'ClaimSummary-tbody']//span[@innertext='Resumen']", 30000, null, "5185a46f-3675-4d49-ba58-537bf34efa00");
             }
 
@@ -3237,26 +3353,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txtbox_Nombre item.
+            /// The Copy_of_txtbox_Nombre item.
             /// </summary>
             [RepositoryItem("4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200")]
-            public virtual Ranorex.InputTag txtbox_Nombre
+            public virtual Ranorex.InputTag Copy_of_txtbox_Nombre
             {
                 get
                 {
-                    return _txtbox_nombreInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _copy_of_txtbox_nombreInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtbox_Nombre item info.
+            /// The Copy_of_txtbox_Nombre item info.
             /// </summary>
             [RepositoryItemInfo("4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200")]
-            public virtual RepoItemInfo txtbox_NombreInfo
+            public virtual RepoItemInfo Copy_of_txtbox_NombreInfo
             {
                 get
                 {
-                    return _txtbox_nombreInfo;
+                    return _copy_of_txtbox_nombreInfo;
                 }
             }
 
@@ -3317,6 +3433,7 @@ namespace SuraClaims
             RepoItemInfo _lbl_descripciontiposiniestroInfo;
             RepoItemInfo _txt_daniosInfo;
             RepoItemInfo _cb_daniosInfo;
+            RepoItemInfo _copy_of_cb_daniosInfo;
             RepoItemInfo _cb_danios_noInfo;
             RepoItemInfo _txt_gravedadInfo;
             RepoItemInfo _txtbox_gravedadInfo;
@@ -3338,21 +3455,23 @@ namespace SuraClaims
             RepoItemInfo _bttn_propietarioInfo;
             RepoItemInfo _txt_nuevapersonaInfo;
             RepoItemInfo _txtbox_apellidoInfo;
+            RepoItemInfo _copy_of_txtbox_apellidoInfo;
             RepoItemInfo _bttn_actualizarInfo;
             RepoItemInfo _bttn_agregar2Info;
             RepoItemInfo _datosuberInfo;
-            RepoItemInfo _datosuber1Info;
+            RepoItemInfo _txt_datosuberInfo;
             RepoItemInfo _txtnivelInfo;
             RepoItemInfo _txtestadoInfo;
-            RepoItemInfo _detalledelvehiculodeterceroyregistInfo;
+            RepoItemInfo _txt_detalledelvehiculodeterceroInfo;
             RepoItemInfo _txt_nro_documento_motor_uberInfo;
             RepoItemInfo _txtanioInfo;
             RepoItemInfo _lbl_elementosbasicosdelvehiculoInfo;
             RepoItemInfo _arrow_buscaproveedorInfo;
             RepoItemInfo _lbl_metododepagoInfo;
-            RepoItemInfo _txtaniovehiculoInfo;
+            RepoItemInfo _txt_aniovehiculoInfo;
             RepoItemInfo _copy_of_txtaniovehiculoInfo;
             RepoItemInfo _copy_of_txtpropietariovehiculoInfo;
+            RepoItemInfo _txt_propietariovehiculoInfo;
             RepoItemInfo _lbl_danosInfo;
             RepoItemInfo _bttn_volverInfo;
             RepoItemInfo _xbtnarrowxbtnarrowrightxbtnwrapInfo;
@@ -3392,11 +3511,12 @@ namespace SuraClaims
                 _lbl_descripciontiposiniestroInfo = new RepoItemInfo(this, "lbl_DescripcionTipoSiniestro", ".//span[@innertext>'Descripción del tipo de s']", 30000, null, "edab80cb-6290-4fa0-8b39-ee5d6a2f2ce2");
                 _txt_daniosInfo = new RepoItemInfo(this, "txt_Danios", ".//span[@innertext='Daños']", 30000, null, "839343c3-e47d-4a4a-8e3c-dd59c155b77d");
                 _cb_daniosInfo = new RepoItemInfo(this, "cb_Danios", ".//span[@innertext='Daños']/../../..//label[@innertext=$DANIOS]/../input[@type='button']", 30000, null, "2f93994b-8078-47a8-8628-5319af1c1fc7");
-                _cb_danios_noInfo = new RepoItemInfo(this, "cb_Danios_No", ".//span[@innertext='Daños']/../../..//label[@innertext=$DANIOS]/../input[@type='button']", 30000, null, "984b6475-4b7f-4634-8d5b-f60db022575c");
+                _copy_of_cb_daniosInfo = new RepoItemInfo(this, "Copy_of_cb_Danios", ".//span[@innertext='Daños']//input[@type='button' and @data-tabindexsaved='True']", 30000, null, "b06ddf4f-55dc-48f6-ac1b-d11473954a2f");
+                _cb_danios_noInfo = new RepoItemInfo(this, "cb_Danios_No", ".//span[@innertext='Daños']/../../..//label[@innertext='No']/../input[@type='button']", 30000, null, "984b6475-4b7f-4634-8d5b-f60db022575c");
                 _txt_gravedadInfo = new RepoItemInfo(this, "txt_Gravedad", ".//span[@innertext='Gravedad']", 30000, null, "f603ff05-8b4a-4355-be5f-3fd9dbc16134");
                 _txtbox_gravedadInfo = new RepoItemInfo(this, "txtbox_Gravedad", ".//span[@innertext='Gravedad']/../..//input", 30000, null, "bdbaca66-2bfc-4d07-adcb-80bc71f7e7a5");
                 _bttn_agregarInfo = new RepoItemInfo(this, "bttn_Agregar", ".//span[@innertext~'gregar']", 30000, null, "d06f7bb5-a6b3-4b75-86ca-8b7ec86a01f3");
-                _bttn_agregarconductoruberInfo = new RepoItemInfo(this, "bttn_AgregarConductorUber", ".//span[@innertext~'gregar']", 30000, null, "c5cbc745-4d0f-4600-a3a9-4c9f09a8d57a");
+                _bttn_agregarconductoruberInfo = new RepoItemInfo(this, "bttn_AgregarConductorUber", ".//span[@innertext~'Agregar conductor']", 30000, null, "c5cbc745-4d0f-4600-a3a9-4c9f09a8d57a");
                 _tag_descripcionInfo = new RepoItemInfo(this, "tag_Descripcion", ".//div[@innertext='<ninguna>']", 30000, null, "f375a3e3-5c3e-4aae-945b-cd166c41b968");
                 _txt_tipodocumento_motoruberInfo = new RepoItemInfo(this, "txt_TipoDocumento_MotorUber", ".//tr[@safeclass='x-grid-row']//div[@innertext='<ninguna>']", 30000, null, "8ec43151-c490-482c-8793-25ad6b6a443a");
                 _txtbox_descripciondelosdaniosInfo = new RepoItemInfo(this, "txtbox_DescripcionDeLosDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea", 30000, null, "8884f03c-2876-407c-af20-b5b53e41a96e");
@@ -3413,21 +3533,23 @@ namespace SuraClaims
                 _bttn_propietarioInfo = new RepoItemInfo(this, "bttn_Propietario", ".//div[@class='g-input-suffix']//a", 30000, null, "d58e2324-fcf2-49dd-ab07-d23421712af2");
                 _txt_nuevapersonaInfo = new RepoItemInfo(this, "txt_NuevaPersona", ".//span[@innertext='Nueva persona']", 30000, null, "a31f6729-0f4d-45ea-9137-58c701f5f4da");
                 _txtbox_apellidoInfo = new RepoItemInfo(this, "txtbox_Apellido", ".//span[@innertext='Apellido']/../..//input", 30000, null, "f981e0d4-11b0-4cd9-8453-79b794456e58");
+                _copy_of_txtbox_apellidoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Apellido", ".//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']", 30000, null, "fe1d8945-ddf9-4834-b866-eeec7003b6d1");
                 _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext='Actalizar']", 30000, null, "f0a718d9-9f42-4069-b4c4-d0da4cf60957");
                 _bttn_agregar2Info = new RepoItemInfo(this, "bttn_Agregar2", ".//label[@innertext='Información fiscal']/../../..//span[@innertext='Agregar']", 30000, null, "2c48014f-7a6e-41d7-ac73-ac92c47589c8");
                 _datosuberInfo = new RepoItemInfo(this, "DatosUber", ".//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[5]/?/?/label[@innertext~'Datos Uber']", 30000, null, "92c67bf4-2e40-4e7f-8229-d89407960e39");
-                _datosuber1Info = new RepoItemInfo(this, "DatosUber1", "tr//table/tbody/tr[5]//table/tbody/tr[1]/?/?/label[@innertext='Datos Uber']", 30000, null, "06c579d3-a294-4330-9e96-142d734723c7");
+                _txt_datosuberInfo = new RepoItemInfo(this, "txt_DatosUber", ".//label[@innertext='Datos Uber']", 30000, null, "06c579d3-a294-4330-9e96-142d734723c7");
                 _txtnivelInfo = new RepoItemInfo(this, "txtNivel", "tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[8]/td/div/div/div/div[2]", 30000, null, "5552ed8e-ad3d-4b99-baeb-f69078118bd3");
                 _txtestadoInfo = new RepoItemInfo(this, "txtEstado", "tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[9]/td/div/div/div/div[2]", 30000, null, "51affa4f-4d06-47f6-8be5-f5ad95b16acb");
-                _detalledelvehiculodeterceroyregistInfo = new RepoItemInfo(this, "DetalleDelVehiculoDeTerceroYRegist", "tr/td/?/?/table/tbody/tr[1]/td/div/div/div/div/?/?/span[@innertext~'Detalle del vehículo de tercero']", 30000, null, "4302efb8-cd39-4c54-8614-0ed1fb2fed40");
+                _txt_detalledelvehiculodeterceroInfo = new RepoItemInfo(this, "txt_DetalleDelVehiculoDeTercero", ".//span[@innertext~'Detalle del vehículo de tercero']", 30000, null, "4302efb8-cd39-4c54-8614-0ed1fb2fed40");
                 _txt_nro_documento_motor_uberInfo = new RepoItemInfo(this, "txt_Nro_Documento_Motor_Uber", ".//tr[@safeclass='x-grid-row']/td[3]/div", 30000, null, "b666b12f-87e6-483c-9c93-677bad2f29ed");
                 _txtanioInfo = new RepoItemInfo(this, "txtAnio", "tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']", 30000, null, "1eab2695-fc54-43e2-9a10-be567ea5250e");
-                _lbl_elementosbasicosdelvehiculoInfo = new RepoItemInfo(this, "lbl_ElementosBasicosDelVehiculo", ".//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext>'Elementos básicos del veh']", 30000, null, "213ed408-d8a3-461c-915e-dbb03610e484");
+                _lbl_elementosbasicosdelvehiculoInfo = new RepoItemInfo(this, "lbl_ElementosBasicosDelVehiculo", ".//label[@innertext>'Elementos básicos del veh']", 30000, null, "213ed408-d8a3-461c-915e-dbb03610e484");
                 _arrow_buscaproveedorInfo = new RepoItemInfo(this, "Arrow_BuscaProveedor", ".//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", 30000, null, "401956ec-4a22-468a-9142-cc99cd25f56e");
                 _lbl_metododepagoInfo = new RepoItemInfo(this, "lbl_MetodoDePago", ".//span[@innertext='Método de pago']", 30000, null, "d917e759-918d-4fd7-9f15-4a6c094b06f4");
-                _txtaniovehiculoInfo = new RepoItemInfo(this, "txtAnioVehiculo", ".//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']", 30000, null, "2c6fa320-9f7c-4baa-8f61-f18d4e1474ca");
-                _copy_of_txtaniovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtAnioVehiculo", ".//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year' and @data-tabindexsaved='True']", 30000, null, "58fd848e-1ebf-45bf-b6f3-b719e1fc3c04");
+                _txt_aniovehiculoInfo = new RepoItemInfo(this, "txt_AnioVehiculo", ".//span[@innertext='Año']/../..//input", 30000, null, "2c6fa320-9f7c-4baa-8f61-f18d4e1474ca");
+                _copy_of_txtaniovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtAnioVehiculo", ".//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']", 30000, null, "58fd848e-1ebf-45bf-b6f3-b719e1fc3c04");
                 _copy_of_txtpropietariovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtPropietarioVehiculo", ".//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Owner_PickerSura']", 30000, null, "0266156b-37e8-415a-bf68-1c564d2fc456");
+                _txt_propietariovehiculoInfo = new RepoItemInfo(this, "txt_PropietarioVehiculo", ".//span[@innertext='Propietario']/../..//input", 30000, null, "3496f5d2-646d-4c8f-9e73-5f938645d37e");
                 _lbl_danosInfo = new RepoItemInfo(this, "lbl_Danos", ".//label[@innertext='Daños']", 30000, null, "883c3ce4-1175-4cbb-9883-d5242fe0a8e9");
                 _bttn_volverInfo = new RepoItemInfo(this, "bttn_Volver", ".//span[@innertext~'Volver']", 30000, null, "84859e2a-2379-40d7-8a2d-bdba7bf55aaf");
                 _xbtnarrowxbtnarrowrightxbtnwrapInfo = new RepoItemInfo(this, "XBtnArrowXBtnArrowRightXBtnWrap", "tr//table/tbody/tr[6]/td/div/div[1]/div/div/a[1]/span", 30000, null, "2a473827-74e9-4925-975c-15bacf481714");
@@ -4085,6 +4207,30 @@ namespace SuraClaims
             }
 
             /// <summary>
+            /// The Copy_of_cb_Danios item.
+            /// </summary>
+            [RepositoryItem("b06ddf4f-55dc-48f6-ac1b-d11473954a2f")]
+            public virtual Ranorex.InputTag Copy_of_cb_Danios
+            {
+                get
+                {
+                    return _copy_of_cb_daniosInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_cb_Danios item info.
+            /// </summary>
+            [RepositoryItemInfo("b06ddf4f-55dc-48f6-ac1b-d11473954a2f")]
+            public virtual RepoItemInfo Copy_of_cb_DaniosInfo
+            {
+                get
+                {
+                    return _copy_of_cb_daniosInfo;
+                }
+            }
+
+            /// <summary>
             /// The cb_Danios_No item.
             /// </summary>
             [RepositoryItem("984b6475-4b7f-4634-8d5b-f60db022575c")]
@@ -4589,6 +4735,30 @@ namespace SuraClaims
             }
 
             /// <summary>
+            /// The Copy_of_txtbox_Apellido item.
+            /// </summary>
+            [RepositoryItem("fe1d8945-ddf9-4834-b866-eeec7003b6d1")]
+            public virtual Ranorex.InputTag Copy_of_txtbox_Apellido
+            {
+                get
+                {
+                    return _copy_of_txtbox_apellidoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txtbox_Apellido item info.
+            /// </summary>
+            [RepositoryItemInfo("fe1d8945-ddf9-4834-b866-eeec7003b6d1")]
+            public virtual RepoItemInfo Copy_of_txtbox_ApellidoInfo
+            {
+                get
+                {
+                    return _copy_of_txtbox_apellidoInfo;
+                }
+            }
+
+            /// <summary>
             /// The bttn_Actualizar item.
             /// </summary>
             [RepositoryItem("f0a718d9-9f42-4069-b4c4-d0da4cf60957")]
@@ -4661,26 +4831,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The DatosUber1 item.
+            /// The txt_DatosUber item.
             /// </summary>
             [RepositoryItem("06c579d3-a294-4330-9e96-142d734723c7")]
-            public virtual Ranorex.LabelTag DatosUber1
+            public virtual Ranorex.LabelTag txt_DatosUber
             {
                 get
                 {
-                    return _datosuber1Info.CreateAdapter<Ranorex.LabelTag>(true);
+                    return _txt_datosuberInfo.CreateAdapter<Ranorex.LabelTag>(true);
                 }
             }
 
             /// <summary>
-            /// The DatosUber1 item info.
+            /// The txt_DatosUber item info.
             /// </summary>
             [RepositoryItemInfo("06c579d3-a294-4330-9e96-142d734723c7")]
-            public virtual RepoItemInfo DatosUber1Info
+            public virtual RepoItemInfo txt_DatosUberInfo
             {
                 get
                 {
-                    return _datosuber1Info;
+                    return _txt_datosuberInfo;
                 }
             }
 
@@ -4733,26 +4903,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The DetalleDelVehiculoDeTerceroYRegist item.
+            /// The txt_DetalleDelVehiculoDeTercero item.
             /// </summary>
             [RepositoryItem("4302efb8-cd39-4c54-8614-0ed1fb2fed40")]
-            public virtual Ranorex.SpanTag DetalleDelVehiculoDeTerceroYRegist
+            public virtual Ranorex.SpanTag txt_DetalleDelVehiculoDeTercero
             {
                 get
                 {
-                    return _detalledelvehiculodeterceroyregistInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _txt_detalledelvehiculodeterceroInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The DetalleDelVehiculoDeTerceroYRegist item info.
+            /// The txt_DetalleDelVehiculoDeTercero item info.
             /// </summary>
             [RepositoryItemInfo("4302efb8-cd39-4c54-8614-0ed1fb2fed40")]
-            public virtual RepoItemInfo DetalleDelVehiculoDeTerceroYRegistInfo
+            public virtual RepoItemInfo txt_DetalleDelVehiculoDeTerceroInfo
             {
                 get
                 {
-                    return _detalledelvehiculodeterceroyregistInfo;
+                    return _txt_detalledelvehiculodeterceroInfo;
                 }
             }
 
@@ -4877,26 +5047,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txtAnioVehiculo item.
+            /// The txt_AnioVehiculo item.
             /// </summary>
             [RepositoryItem("2c6fa320-9f7c-4baa-8f61-f18d4e1474ca")]
-            public virtual Ranorex.InputTag txtAnioVehiculo
+            public virtual Ranorex.InputTag txt_AnioVehiculo
             {
                 get
                 {
-                    return _txtaniovehiculoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txt_aniovehiculoInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtAnioVehiculo item info.
+            /// The txt_AnioVehiculo item info.
             /// </summary>
             [RepositoryItemInfo("2c6fa320-9f7c-4baa-8f61-f18d4e1474ca")]
-            public virtual RepoItemInfo txtAnioVehiculoInfo
+            public virtual RepoItemInfo txt_AnioVehiculoInfo
             {
                 get
                 {
-                    return _txtaniovehiculoInfo;
+                    return _txt_aniovehiculoInfo;
                 }
             }
 
@@ -4945,6 +5115,30 @@ namespace SuraClaims
                 get
                 {
                     return _copy_of_txtpropietariovehiculoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_PropietarioVehiculo item.
+            /// </summary>
+            [RepositoryItem("3496f5d2-646d-4c8f-9e73-5f938645d37e")]
+            public virtual Ranorex.InputTag txt_PropietarioVehiculo
+            {
+                get
+                {
+                    return _txt_propietariovehiculoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_PropietarioVehiculo item info.
+            /// </summary>
+            [RepositoryItemInfo("3496f5d2-646d-4c8f-9e73-5f938645d37e")]
+            public virtual RepoItemInfo txt_PropietarioVehiculoInfo
+            {
+                get
+                {
+                    return _txt_propietariovehiculoInfo;
                 }
             }
 
@@ -5122,7 +5316,7 @@ namespace SuraClaims
             RepoItemInfo _lbl_finalizapagoInfo;
             RepoItemInfo _nombreaseguradoInfo;
             RepoItemInfo _txt_bancoemisorsugeridoInfo;
-            RepoItemInfo _optionselecbancoemisorInfo;
+            RepoItemInfo _option_nombremayusculasInfo;
             RepoItemInfo _copy_of_optionselecbancoemisorInfo;
             RepoItemInfo _txt_seleccionarcuenta_campoobligInfo;
             RepoItemInfo _copy_of_txt_seleccionarcuenta_campoobligInfo;
@@ -5161,7 +5355,7 @@ namespace SuraClaims
                 _lbl_finalizapagoInfo = new RepoItemInfo(this, "lbl_FinalizaPago", ".//tbody[#'ClaimFinancialsChecks-tbody']//span[@innertext>'Datos financieros (Total incurrido:']", 30000, null, "605d3ed0-6204-4ca8-b0d7-169545ac4454");
                 _nombreaseguradoInfo = new RepoItemInfo(this, "NombreAsegurado", ".//a[#'Claim:ClaimInfoBar:Insured']//span[@class='infobar_elem_val']", 30000, null, "a474734b-6970-4a0f-8b32-28ad40818272");
                 _txt_bancoemisorsugeridoInfo = new RepoItemInfo(this, "txt_BancoEmisorSugerido", ".//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']", 30000, null, "f9a355e1-9c7b-4c3d-bac4-3438116ce4cd");
-                _optionselecbancoemisorInfo = new RepoItemInfo(this, "OptionSelecBancoEmisor", ".//li[@innertext~'[A-Z]+']", 30000, null, "ca3761bf-98e3-496e-9511-778773b271f2");
+                _option_nombremayusculasInfo = new RepoItemInfo(this, "option_NombreMayusculas", ".//li[@innertext~'[A-Z]+']", 30000, null, "ca3761bf-98e3-496e-9511-778773b271f2");
                 _copy_of_optionselecbancoemisorInfo = new RepoItemInfo(this, "Copy_of_OptionSelecBancoEmisor", ".//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']", 30000, null, "ee9d1cf0-ed3c-4055-83ca-b7fe21695297");
                 _txt_seleccionarcuenta_campoobligInfo = new RepoItemInfo(this, "txt_SeleccionarCuenta_CampoOblig", ".//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords']", 30000, null, "29bd6f78-50c1-4c60-aea8-d30219d36b97");
                 _copy_of_txt_seleccionarcuenta_campoobligInfo = new RepoItemInfo(this, "Copy_of_txt_SeleccionarCuenta_CampoOblig", ".//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords' and @data-tabindexsaved='True']", 30000, null, "6ba5b80b-7753-437a-a997-a5196252024a");
@@ -5749,26 +5943,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The OptionSelecBancoEmisor item.
+            /// The option_NombreMayusculas item.
             /// </summary>
             [RepositoryItem("ca3761bf-98e3-496e-9511-778773b271f2")]
-            public virtual Ranorex.LiTag OptionSelecBancoEmisor
+            public virtual Ranorex.LiTag option_NombreMayusculas
             {
                 get
                 {
-                    return _optionselecbancoemisorInfo.CreateAdapter<Ranorex.LiTag>(true);
+                    return _option_nombremayusculasInfo.CreateAdapter<Ranorex.LiTag>(true);
                 }
             }
 
             /// <summary>
-            /// The OptionSelecBancoEmisor item info.
+            /// The option_NombreMayusculas item info.
             /// </summary>
             [RepositoryItemInfo("ca3761bf-98e3-496e-9511-778773b271f2")]
-            public virtual RepoItemInfo OptionSelecBancoEmisorInfo
+            public virtual RepoItemInfo option_NombreMayusculasInfo
             {
                 get
                 {
-                    return _optionselecbancoemisorInfo;
+                    return _option_nombremayusculasInfo;
                 }
             }
 
@@ -6242,6 +6436,7 @@ namespace SuraClaims
             RepoItemInfo _txt_nombreInfo;
             RepoItemInfo _txt_numerodocInfo;
             RepoItemInfo _copy_of_txt_numerodocInfo;
+            RepoItemInfo _copy_of_copy_of_txt_numerodocInfo;
             RepoItemInfo _option_reclamoInfo;
             RepoItemInfo _option_muerteaccidentalInfo;
             RepoItemInfo _option_reembolsogastosInfo;
@@ -6251,8 +6446,8 @@ namespace SuraClaims
             RepoItemInfo _txtbox_tipoInfo;
             RepoItemInfo _copy_of_txtbox_tipoInfo;
             RepoItemInfo _txtsafeInfo;
-            RepoItemInfo _txtsafe_motoruberInfo;
-            RepoItemInfo _copy_of_txtsafeInfo;
+            RepoItemInfo _txt_safeInfo;
+            RepoItemInfo _copy_of_txt_safeInfo;
             RepoItemInfo _txtnivelInfo;
             RepoItemInfo _copy_of_txtnivelInfo;
             RepoItemInfo _txtperiodoInfo;
@@ -6277,6 +6472,7 @@ namespace SuraClaims
                 _txt_nombreInfo = new RepoItemInfo(this, "txt_Nombre", ".//input[@id='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:FirstName-inputEl']", 30000, null, "788ad31b-7f71-42bb-901b-f877bc73bd9f");
                 _txt_numerodocInfo = new RepoItemInfo(this, "txt_NumeroDoc", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div[3]/div[1]/?/?/table/tbody/tr/td[3]/div", 30000, null, "dc0a4a6a-0298-4488-a836-af6350cf4c3f");
                 _copy_of_txt_numerodocInfo = new RepoItemInfo(this, "Copy_of_txt_NumeroDoc", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div[3]/div[1]/?/?/table/tbody/tr/td[3]/div/../..//input[@data-tabindexsaved='True']", 30000, null, "89735058-c53c-4906-bcf9-4c194642f9d9");
+                _copy_of_copy_of_txt_numerodocInfo = new RepoItemInfo(this, "Copy_of_Copy_of_txt_NumeroDoc", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div[3]/div[1]/?/?/table/tbody/tr/td[3]/div/../..//input[@data-tabindexsaved='True']", 30000, null, "ec9344e8-a601-4407-bb49-8100a80ea7fc");
                 _option_reclamoInfo = new RepoItemInfo(this, "option_Reclamo", ".//span[@innertext~'Muerte Accidental|Reembolso de gastos|Incapacidad Total']", 30000, null, "301afcaa-01b4-4076-b05b-36e04bde2da0");
                 _option_muerteaccidentalInfo = new RepoItemInfo(this, "option_MuerteAccidental", ".//span[@innertext='Muerte Accidental']", 30000, null, "ef899e11-7414-4988-ae10-65409218062e");
                 _option_reembolsogastosInfo = new RepoItemInfo(this, "option_ReembolsoGastos", ".//span[@innertext>'Reembolso de gastos']", 30000, null, "d0ee884d-2da4-4ea7-8331-28d4ddab6f5d");
@@ -6286,8 +6482,8 @@ namespace SuraClaims
                 _txtbox_tipoInfo = new RepoItemInfo(this, "txtbox_Tipo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input", 30000, null, "e48589cc-1d4b-43b8-883b-d7ca088a5fd6");
                 _copy_of_txtbox_tipoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Tipo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input[@data-tabindexsaved='True']", 30000, null, "6ca32d5c-682e-4749-8da0-5f93c81c57fd");
                 _txtsafeInfo = new RepoItemInfo(this, "txtSAFE", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[6]/td/div/div//input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:SafeSura']", 30000, null, "9aaaaf6a-9808-4c0c-9610-317fc0dce3ef");
-                _txtsafe_motoruberInfo = new RepoItemInfo(this, "txtSAFE_MotorUber", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[5]//table/tbody/tr[2]/td/div/div//input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:UberFNOLInputSet:SafeSura']", 30000, null, "8e66f57f-c623-4f42-af42-d9baaff7af1d");
-                _copy_of_txtsafeInfo = new RepoItemInfo(this, "Copy_of_txtSAFE", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[6]/td/div/div//input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:SafeSura']/../..//input[@data-tabindexsaved='True']", 30000, null, "b60ed88d-be82-48c6-8dc3-4485a0bd3dc4");
+                _txt_safeInfo = new RepoItemInfo(this, "txt_SAFE", ".//span[@innertext='SAFE']/../..//input", 30000, null, "8e66f57f-c623-4f42-af42-d9baaff7af1d");
+                _copy_of_txt_safeInfo = new RepoItemInfo(this, "Copy_of_txt_SAFE", ".//span[@innertext='SAFE']/../..//input[@data-tabindexsaved='True']", 30000, null, "b60ed88d-be82-48c6-8dc3-4485a0bd3dc4");
                 _txtnivelInfo = new RepoItemInfo(this, "txtNivel", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:NivelSura']", 30000, null, "50dc11f4-dd0e-4326-bd0d-eda60a996781");
                 _copy_of_txtnivelInfo = new RepoItemInfo(this, "Copy_of_txtNivel", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:NivelSura']/../..//input[@data-tabindexsaved='True']", 30000, null, "bfa9ebb4-5c22-46db-972e-4ea34c7911d7");
                 _txtperiodoInfo = new RepoItemInfo(this, "txtPeriodo", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:PeriodoSura']", 30000, null, "501b4eb9-e7a3-4a85-9c8a-d2c8cd9efa8c");
@@ -6475,6 +6671,30 @@ namespace SuraClaims
                 get
                 {
                     return _copy_of_txt_numerodocInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_Copy_of_txt_NumeroDoc item.
+            /// </summary>
+            [RepositoryItem("ec9344e8-a601-4407-bb49-8100a80ea7fc")]
+            public virtual Ranorex.InputTag Copy_of_Copy_of_txt_NumeroDoc
+            {
+                get
+                {
+                    return _copy_of_copy_of_txt_numerodocInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_Copy_of_txt_NumeroDoc item info.
+            /// </summary>
+            [RepositoryItemInfo("ec9344e8-a601-4407-bb49-8100a80ea7fc")]
+            public virtual RepoItemInfo Copy_of_Copy_of_txt_NumeroDocInfo
+            {
+                get
+                {
+                    return _copy_of_copy_of_txt_numerodocInfo;
                 }
             }
 
@@ -6695,50 +6915,50 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txtSAFE_MotorUber item.
+            /// The txt_SAFE item.
             /// </summary>
             [RepositoryItem("8e66f57f-c623-4f42-af42-d9baaff7af1d")]
-            public virtual Ranorex.InputTag txtSAFE_MotorUber
+            public virtual Ranorex.InputTag txt_SAFE
             {
                 get
                 {
-                    return _txtsafe_motoruberInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txt_safeInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtSAFE_MotorUber item info.
+            /// The txt_SAFE item info.
             /// </summary>
             [RepositoryItemInfo("8e66f57f-c623-4f42-af42-d9baaff7af1d")]
-            public virtual RepoItemInfo txtSAFE_MotorUberInfo
+            public virtual RepoItemInfo txt_SAFEInfo
             {
                 get
                 {
-                    return _txtsafe_motoruberInfo;
+                    return _txt_safeInfo;
                 }
             }
 
             /// <summary>
-            /// The Copy_of_txtSAFE item.
+            /// The Copy_of_txt_SAFE item.
             /// </summary>
             [RepositoryItem("b60ed88d-be82-48c6-8dc3-4485a0bd3dc4")]
-            public virtual Ranorex.InputTag Copy_of_txtSAFE
+            public virtual Ranorex.InputTag Copy_of_txt_SAFE
             {
                 get
                 {
-                    return _copy_of_txtsafeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _copy_of_txt_safeInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_txtSAFE item info.
+            /// The Copy_of_txt_SAFE item info.
             /// </summary>
             [RepositoryItemInfo("b60ed88d-be82-48c6-8dc3-4485a0bd3dc4")]
-            public virtual RepoItemInfo Copy_of_txtSAFEInfo
+            public virtual RepoItemInfo Copy_of_txt_SAFEInfo
             {
                 get
                 {
-                    return _copy_of_txtsafeInfo;
+                    return _copy_of_txt_safeInfo;
                 }
             }
 
@@ -7429,21 +7649,22 @@ namespace SuraClaims
         [RepositoryFolder("c36c0fba-8731-40c7-a08c-9cea63860e64")]
         public partial class SiniestroTerceroFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _copy_of_selecttipoaccidenteInfo;
+            RepoItemInfo _select_tipoaccidenteInfo;
+            RepoItemInfo _select_tipoaccidente_colisionInfo;
             RepoItemInfo _txt_colisionconInfo;
             RepoItemInfo _selecttipocolisionInfo;
             RepoItemInfo _txt_danioaterceroInfo;
             RepoItemInfo _selectdaniotercerofrontalInfo;
             RepoItemInfo _txt_dolenciasInfo;
             RepoItemInfo _selectdolenciaInfo;
-            RepoItemInfo _txt_cantpasajInfo;
-            RepoItemInfo _selectcantpasajInfo;
+            RepoItemInfo _txt_cantpasajtercInfo;
+            RepoItemInfo _selectcantpasajtercInfo;
             RepoItemInfo _txt_cantasegInfo;
             RepoItemInfo _selectcantasegInfo;
             RepoItemInfo _txt_descripdaniosterceroInfo;
-            RepoItemInfo _textpatenteInfo;
+            RepoItemInfo _txt_patenteInfo;
             RepoItemInfo _copy_of_textpatenteInfo;
-            RepoItemInfo _txttipovehiculoInfo;
+            RepoItemInfo _txt_tipovehiculoInfo;
             RepoItemInfo _copy_of_txttipovehiculoInfo;
 
             /// <summary>
@@ -7452,22 +7673,23 @@ namespace SuraClaims
             public SiniestroTerceroFolder(RepoGenBaseFolder parentFolder) :
                     base("SiniestroTercero", "", parentFolder, 0, null, false, "c36c0fba-8731-40c7-a08c-9cea63860e64", "")
             {
-                _copy_of_selecttipoaccidenteInfo = new RepoItemInfo(this, "Copy_of_SelectTipoAccidente", ".//li[@innertext=$TipoAccidente]", 30000, null, "35e1eb27-a510-4470-bc3b-f310094a0031");
-                _txt_colisionconInfo = new RepoItemInfo(this, "txt_ColisionCon", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:CollisionTypeInputSura' and @visible='True']", 30000, null, "9600c63f-fcf1-4715-b3c8-224a3902c526");
+                _select_tipoaccidenteInfo = new RepoItemInfo(this, "select_TipoAccidente", ".//li[@innertext=$TipoAccidente]", 30000, null, "319f32a0-dfbd-4ee1-b7d4-a05c6757f488");
+                _select_tipoaccidente_colisionInfo = new RepoItemInfo(this, "select_TipoAccidente_Colision", ".//li[@innertext='Colisión']", 30000, null, "35e1eb27-a510-4470-bc3b-f310094a0031");
+                _txt_colisionconInfo = new RepoItemInfo(this, "txt_ColisionCon", ".//span[@innertext~'Colisión con']/../..//input", 30000, null, "9600c63f-fcf1-4715-b3c8-224a3902c526");
                 _selecttipocolisionInfo = new RepoItemInfo(this, "SelectTipoColision", ".//li[@innertext=$TipoColision]", 30000, null, "856c2bfe-4c61-4c8a-a3b2-e2f203f52f7d");
-                _txt_danioaterceroInfo = new RepoItemInfo(this, "txt_DanioATercero", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:VehicleDamage3rdPartyTypeSura' and @visible='True']", 30000, null, "a389f720-f8db-4d88-bf38-8e19eda2ff44");
+                _txt_danioaterceroInfo = new RepoItemInfo(this, "txt_DanioATercero", ".//span[@innertext~'Daños a vehículo de tercero']/../..//input", 30000, null, "a389f720-f8db-4d88-bf38-8e19eda2ff44");
                 _selectdaniotercerofrontalInfo = new RepoItemInfo(this, "SelectDanioTerceroFrontal", ".//li[@innertext=$DanioTercero]", 30000, null, "01389e09-bea4-4e8a-97aa-709af8c206df");
-                _txt_dolenciasInfo = new RepoItemInfo(this, "txt_Dolencias", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AilmentsInjuriesTransportedSura' and @visible='True']", 30000, null, "8d12c332-1332-4d9a-b796-24e1adcadddf");
+                _txt_dolenciasInfo = new RepoItemInfo(this, "txt_Dolencias", ".//span[@innertext>'Hay dolencias']/../..//input", 30000, null, "8d12c332-1332-4d9a-b796-24e1adcadddf");
                 _selectdolenciaInfo = new RepoItemInfo(this, "SelectDolencia", ".//li[@innertext=$Dolencia]", 30000, null, "93e65d69-5f66-4f64-af37-5a7d86c76744");
-                _txt_cantpasajInfo = new RepoItemInfo(this, "txt_CantPasaj", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:PassengerQuantity3rdPartyVehicleSura' and @visible='True']", 30000, null, "6ff8e114-7276-438a-afbd-3eae61562f1d");
-                _selectcantpasajInfo = new RepoItemInfo(this, "SelectCantPasaj", ".//li[@innertext=$CantPasaj]", 30000, null, "f576a1c5-0147-43a6-b13b-a9ec45865e29");
-                _txt_cantasegInfo = new RepoItemInfo(this, "txt_CantAseg", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:PassengerQuantity1stPartyVehicleSura' and @visible='True']", 30000, null, "38e8a31b-e25b-4c2e-bb77-55c6aef326f3");
+                _txt_cantpasajtercInfo = new RepoItemInfo(this, "txt_CantPasajTerc", ".//span[@innertext~'Cantidad de pasajeros en vehículo de tercero']/../..//input", 30000, null, "6ff8e114-7276-438a-afbd-3eae61562f1d");
+                _selectcantpasajtercInfo = new RepoItemInfo(this, "SelectCantPasajTerc", ".//li[@innertext=$CantPasaj]", 30000, null, "f576a1c5-0147-43a6-b13b-a9ec45865e29");
+                _txt_cantasegInfo = new RepoItemInfo(this, "txt_CantAseg", ".//span[@innertext~'Cantidad de pasajeros en vehículo asegurado']/../..//input", 30000, null, "38e8a31b-e25b-4c2e-bb77-55c6aef326f3");
                 _selectcantasegInfo = new RepoItemInfo(this, "SelectCantAseg", ".//li[@innertext=$CantAsegu]", 30000, null, "980efbb6-4fe2-4469-af62-f7ccc0c196f4");
-                _txt_descripdaniosterceroInfo = new RepoItemInfo(this, "txt_DescripDaniosTercero", ".//tbody[#'centerPanel-tbody']//textarea[@id='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Description-inputEl']", 30000, null, "05dd44a1-642a-4317-ad54-fa95a1a40ddc");
-                _textpatenteInfo = new RepoItemInfo(this, "textPatente", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_LicensePlate']", 30000, null, "d6fd0bb1-4b36-4a07-9f11-0afd0defffc1");
-                _copy_of_textpatenteInfo = new RepoItemInfo(this, "Copy_of_textPatente", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_LicensePlate' and @data-tabindexsaved='True']", 30000, null, "f4d10379-5e5b-41b4-95dc-1575a0d99f7e");
-                _txttipovehiculoInfo = new RepoItemInfo(this, "txtTipoVehiculo", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style']", 30000, null, "e71ae898-1d06-4e8e-90e0-2ec3fc7472d1");
-                _copy_of_txttipovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtTipoVehiculo", ".//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style' and @data-tabindexsaved='True']", 30000, null, "81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09");
+                _txt_descripdaniosterceroInfo = new RepoItemInfo(this, "txt_DescripDaniosTercero", ".//span[@innertext~'Descripción de los daños']/../..//textarea", 30000, null, "05dd44a1-642a-4317-ad54-fa95a1a40ddc");
+                _txt_patenteInfo = new RepoItemInfo(this, "txt_Patente", ".//span[@innertext='Patente']/../..//input", 30000, null, "d6fd0bb1-4b36-4a07-9f11-0afd0defffc1");
+                _copy_of_textpatenteInfo = new RepoItemInfo(this, "Copy_of_textPatente", ".//span[@innertext='Patente']/../..//input[@data-tabindexsaved='True']", 30000, null, "f4d10379-5e5b-41b4-95dc-1575a0d99f7e");
+                _txt_tipovehiculoInfo = new RepoItemInfo(this, "txt_TipoVehiculo", ".//.//span[@innertext='Tipo de Vehículo']/../..//input", 30000, null, "e71ae898-1d06-4e8e-90e0-2ec3fc7472d1");
+                _copy_of_txttipovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtTipoVehiculo", ".//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']", 30000, null, "81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09");
             }
 
             /// <summary>
@@ -7483,26 +7705,50 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The Copy_of_SelectTipoAccidente item.
+            /// The select_TipoAccidente item.
             /// </summary>
-            [RepositoryItem("35e1eb27-a510-4470-bc3b-f310094a0031")]
-            public virtual Ranorex.LiTag Copy_of_SelectTipoAccidente
+            [RepositoryItem("319f32a0-dfbd-4ee1-b7d4-a05c6757f488")]
+            public virtual Ranorex.LiTag select_TipoAccidente
             {
                 get
                 {
-                    return _copy_of_selecttipoaccidenteInfo.CreateAdapter<Ranorex.LiTag>(true);
+                    return _select_tipoaccidenteInfo.CreateAdapter<Ranorex.LiTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_SelectTipoAccidente item info.
+            /// The select_TipoAccidente item info.
             /// </summary>
-            [RepositoryItemInfo("35e1eb27-a510-4470-bc3b-f310094a0031")]
-            public virtual RepoItemInfo Copy_of_SelectTipoAccidenteInfo
+            [RepositoryItemInfo("319f32a0-dfbd-4ee1-b7d4-a05c6757f488")]
+            public virtual RepoItemInfo select_TipoAccidenteInfo
             {
                 get
                 {
-                    return _copy_of_selecttipoaccidenteInfo;
+                    return _select_tipoaccidenteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The select_TipoAccidente_Colision item.
+            /// </summary>
+            [RepositoryItem("35e1eb27-a510-4470-bc3b-f310094a0031")]
+            public virtual Ranorex.LiTag select_TipoAccidente_Colision
+            {
+                get
+                {
+                    return _select_tipoaccidente_colisionInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The select_TipoAccidente_Colision item info.
+            /// </summary>
+            [RepositoryItemInfo("35e1eb27-a510-4470-bc3b-f310094a0031")]
+            public virtual RepoItemInfo select_TipoAccidente_ColisionInfo
+            {
+                get
+                {
+                    return _select_tipoaccidente_colisionInfo;
                 }
             }
 
@@ -7651,50 +7897,50 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txt_CantPasaj item.
+            /// The txt_CantPasajTerc item.
             /// </summary>
             [RepositoryItem("6ff8e114-7276-438a-afbd-3eae61562f1d")]
-            public virtual Ranorex.InputTag txt_CantPasaj
+            public virtual Ranorex.InputTag txt_CantPasajTerc
             {
                 get
                 {
-                    return _txt_cantpasajInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txt_cantpasajtercInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txt_CantPasaj item info.
+            /// The txt_CantPasajTerc item info.
             /// </summary>
             [RepositoryItemInfo("6ff8e114-7276-438a-afbd-3eae61562f1d")]
-            public virtual RepoItemInfo txt_CantPasajInfo
+            public virtual RepoItemInfo txt_CantPasajTercInfo
             {
                 get
                 {
-                    return _txt_cantpasajInfo;
+                    return _txt_cantpasajtercInfo;
                 }
             }
 
             /// <summary>
-            /// The SelectCantPasaj item.
+            /// The SelectCantPasajTerc item.
             /// </summary>
             [RepositoryItem("f576a1c5-0147-43a6-b13b-a9ec45865e29")]
-            public virtual Ranorex.LiTag SelectCantPasaj
+            public virtual Ranorex.LiTag SelectCantPasajTerc
             {
                 get
                 {
-                    return _selectcantpasajInfo.CreateAdapter<Ranorex.LiTag>(true);
+                    return _selectcantpasajtercInfo.CreateAdapter<Ranorex.LiTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SelectCantPasaj item info.
+            /// The SelectCantPasajTerc item info.
             /// </summary>
             [RepositoryItemInfo("f576a1c5-0147-43a6-b13b-a9ec45865e29")]
-            public virtual RepoItemInfo SelectCantPasajInfo
+            public virtual RepoItemInfo SelectCantPasajTercInfo
             {
                 get
                 {
-                    return _selectcantpasajInfo;
+                    return _selectcantpasajtercInfo;
                 }
             }
 
@@ -7771,26 +8017,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The textPatente item.
+            /// The txt_Patente item.
             /// </summary>
             [RepositoryItem("d6fd0bb1-4b36-4a07-9f11-0afd0defffc1")]
-            public virtual Ranorex.InputTag textPatente
+            public virtual Ranorex.InputTag txt_Patente
             {
                 get
                 {
-                    return _textpatenteInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txt_patenteInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The textPatente item info.
+            /// The txt_Patente item info.
             /// </summary>
             [RepositoryItemInfo("d6fd0bb1-4b36-4a07-9f11-0afd0defffc1")]
-            public virtual RepoItemInfo textPatenteInfo
+            public virtual RepoItemInfo txt_PatenteInfo
             {
                 get
                 {
-                    return _textpatenteInfo;
+                    return _txt_patenteInfo;
                 }
             }
 
@@ -7819,26 +8065,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The txtTipoVehiculo item.
+            /// The txt_TipoVehiculo item.
             /// </summary>
             [RepositoryItem("e71ae898-1d06-4e8e-90e0-2ec3fc7472d1")]
-            public virtual Ranorex.InputTag txtTipoVehiculo
+            public virtual Ranorex.InputTag txt_TipoVehiculo
             {
                 get
                 {
-                    return _txttipovehiculoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txt_tipovehiculoInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The txtTipoVehiculo item info.
+            /// The txt_TipoVehiculo item info.
             /// </summary>
             [RepositoryItemInfo("e71ae898-1d06-4e8e-90e0-2ec3fc7472d1")]
-            public virtual RepoItemInfo txtTipoVehiculoInfo
+            public virtual RepoItemInfo txt_TipoVehiculoInfo
             {
                 get
                 {
-                    return _txttipovehiculoInfo;
+                    return _txt_tipovehiculoInfo;
                 }
             }
 

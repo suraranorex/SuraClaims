@@ -1436,6 +1436,15 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"

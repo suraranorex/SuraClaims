@@ -50,6 +50,48 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="70b71190-f367-42b1-a78e-6c81cb25bb1f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="095dc31d-7f40-4650-a936-f1d5cd82bbf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="a36dc824-8f46-4df1-bf81-1b6fc229d3dd"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2e7d84e4-de88-452a-a572-56dae0b4b474"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
 		loc="21;8"
 		movetime="300ms"
 		optional="False"
@@ -263,102 +305,6 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="c9bc4304-6cb3-4da6-a1ef-197741c28f4a"
-		sx="430"
-		sy="306"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="8b21c7c1-205d-43a0-8fd5-2e07b224054f"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, divtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="divtag"
-				rect="422,297,16,19"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-trigger x-form-trigger-default x-form-arrow-trigger x-form-arrow-trigger-default&#32;
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLContactPopup:FNOLContactScreen:ContactDV:ClaimContactPerson-trigger-picker
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-arrow-trigger x-form-arrow-trigger-default x-form-trigger x-form-trigger-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						div
-					</attribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Personal']/../..//div[@id~'picker']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="35;12"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="7c3211c5-0c20-4df0-89a0-ff6720931200"
-		sx="335"
-		sy="347"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="2be891e8-ca9a-4071-9cef-acb5a9a6b494"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//li[@innertext='[A-Z]+']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
@@ -372,13 +318,31 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="c5cbc745-4d0f-4600-a3a9-4c9f09a8d57a"
+			id="d06f7bb5-a6b3-4b75-86ca-8b7ec86a01f3"
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="d5b76762-cc47-41d9-819f-2687705644bf"
+		waitaction="Exists"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b34ef9ce-d512-4eed-8d23-8e68139f6995"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -387,21 +351,127 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="e36a3b9f-ac63-44f1-826f-f88ba00e242f"
-		sx="0"
-		sy="0"
+		searchpropertyid="a9ed7329-f82f-4cda-9fc6-039a5db9b0e8"
+		sx="330"
+		sy="435"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="f375a3e3-5c3e-4aae-945b-cd166c41b968"
-			sourcename="RepositoryEditor">
+			id="b34ef9ce-d512-4eed-8d23-8e68139f6995"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="256,423,118,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-grid-cell-inner&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&lt;ninguna&gt;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-grid-cell-inner
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
+					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[6]/td/div/div[3]/div[1]/div/table/tbody/tr/td[2]/div[@innertext='&lt;ninguna&gt;']
 				</path>
 			</info>
+			<helperscreenshot
+			guid="747c66c6-b78d-48e0-83dd-9f5e3bdf314b">
+				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
+496OPekooAUYz3p1NXrTqACiiigD/9k=
+			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
 		action="Click"
@@ -485,16 +555,16 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		optional="False"
 		searchpropertyid="a90c2329-e50b-4db1-9c10-3af4e99c2010"
 		waitaction="NotExists"
-		waittimeout="10000ms">
+		waittimeout="20000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="8b599ac7-9cb3-46b2-a51f-80680cc12cd3"
+			id="fe1d8945-ddf9-4834-b866-eeec7003b6d1"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//li[@innertext='D.N.I.']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -515,10 +585,10 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="dc0a4a6a-0298-4488-a836-af6350cf4c3f"
+			id="b666b12f-87e6-483c-9c93-677bad2f29ed"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div[3]/div[1]/?/?/table/tbody/tr/td[3]/div
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
 				</path>
 			</info>
 		</mouseitem>
@@ -539,10 +609,10 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="dc0a4a6a-0298-4488-a836-af6350cf4c3f"
+			id="b666b12f-87e6-483c-9c93-677bad2f29ed"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div[3]/div[1]/?/?/table/tbody/tr/td[3]/div
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
 				</path>
 			</info>
 		</mouseitem>
@@ -558,10 +628,10 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="dc0a4a6a-0298-4488-a836-af6350cf4c3f"
+			id="b666b12f-87e6-483c-9c93-677bad2f29ed"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div[3]/div[1]/?/?/table/tbody/tr/td[3]/div
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
 				</path>
 			</info>
 		</keysequenceitem>
@@ -623,16 +693,16 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		optional="False"
 		searchpropertyid="2525e97a-2aa9-4377-bcf4-6857e25648e4"
 		waitaction="NotExists"
-		waittimeout="10000ms">
+		waittimeout="20000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="89735058-c53c-4906-bcf9-4c194642f9d9"
+			id="fe1d8945-ddf9-4834-b866-eeec7003b6d1"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div[3]/div[1]/?/?/table/tbody/tr/td[3]/div/../..//input[@data-tabindexsaved='True']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -749,10 +819,10 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="5738797d-7a5a-49c0-b03f-6fde8a500b97"
+			id="f981e0d4-11b0-4cd9-8453-79b794456e58"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//input[@name='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:LastName']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input
 				</path>
 			</info>
 		</mouseitem>
@@ -768,10 +838,10 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="5738797d-7a5a-49c0-b03f-6fde8a500b97"
+			id="f981e0d4-11b0-4cd9-8453-79b794456e58"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//input[@name='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:LastName']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -828,79 +898,6 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				</path>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
-		enabled="False"
-		optional="False"
-		searchpropertyid="189feb8d-0f94-4149-9829-eaf671828ed9"
-		waitaction="Exists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c54ad6a2-c1b8-4db2-9cb1-5143ffa0114b"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, divtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="divtag"
-				rect="299,321,52,20"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-display-field x-form-display-field-default
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:DriverRelationToOwner-inputEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Asegurado
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-display-field x-form-display-field-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						div
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Relaci&#243;n con propietario']/../..//div[@innertext='Asegurado']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1122,35 +1119,11 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 		enabled="True"
 		optional="False">
 			<comment>
-				Elementos b&#225;sicos del veh&#237;culo
+				Elementos básicos del vehículo
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="4f2e363d-b665-44d7-a7e1-8043a8434961"
-		sx="407"
-		sy="229"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="173e0b5c-a7dc-4f43-adca-56a5375fdafb"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Detalle del veh&#237;culo asegurado']
-				</path>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1168,17 +1141,17 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 			<bindings>
 			</bindings>
 			<info
-			id="1eab2695-fc54-43e2-9a10-be567ea5250e"
+			id="2c6fa320-9f7c-4baa-8f61-f18d4e1474ca"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
 			</info>
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="6db85d43-f316-45d5-8167-c5e7dd565476">
@@ -1187,10 +1160,10 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 			<bindings>
 			</bindings>
 			<info
-			id="1eab2695-fc54-43e2-9a10-be567ea5250e"
+			id="2c6fa320-9f7c-4baa-8f61-f18d4e1474ca"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
@@ -1210,37 +1183,50 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				</binding>
 			</bindings>
 			<info
-			id="1eab2695-fc54-43e2-9a10-be567ea5250e"
+			id="2c6fa320-9f7c-4baa-8f61-f18d4e1474ca"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
 			</info>
 		</keysequenceitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="20ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="647e8b79-37a1-4552-9f76-f8a307f35ef5"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="20ms"
+		searchpropertyid="1ab96974-87cd-403c-9cf4-b7fc60678874">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="213ed408-d8a3-461c-915e-dbb03610e484"
+			id="2c6fa320-9f7c-4baa-8f61-f18d4e1474ca"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext&gt;'Elementos b&#225;sicos del veh']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
 			</info>
-		</mouseitem>
+		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="59c10b2f-16e4-4c2f-a8f0-f782a8854b7a"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="58fd848e-1ebf-45bf-b6f3-b719e1fc3c04"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1268,7 +1254,7 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="535c276f-cedf-47d2-9c05-48cd6d7e5abb">
@@ -1307,30 +1293,43 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				</path>
 			</info>
 		</keysequenceitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="20ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="647e8b79-37a1-4552-9f76-f8a307f35ef5"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="20ms"
+		searchpropertyid="79118368-7b48-480d-9af8-42500185db3c">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="213ed408-d8a3-461c-915e-dbb03610e484"
+			id="49c78570-cbc3-4845-81e1-f755e92cdada"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext&gt;'Elementos b&#225;sicos del veh']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
 				</path>
 			</info>
-		</mouseitem>
+		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="4e8f1c25-27d2-41f1-af3f-284f9c6d741e"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="49e2551c-59aa-4d6e-84f4-3f565169a6a3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='Marca']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1358,7 +1357,7 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="96fcc400-c436-42e3-878b-3a4c8ea76998">
@@ -1397,30 +1396,43 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				</path>
 			</info>
 		</keysequenceitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="20ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="647e8b79-37a1-4552-9f76-f8a307f35ef5"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="20ms"
+		searchpropertyid="48272d35-a5ac-4487-812e-ba6652dc54e3">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="213ed408-d8a3-461c-915e-dbb03610e484"
+			id="7d32b63a-56e0-47b9-86e4-b00f55aeaed6"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[2]/div/table/tbody/tr[1]/?/?/label[@innertext&gt;'Elementos b&#225;sicos del veh']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
 				</path>
 			</info>
-		</mouseitem>
+		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="007744a0-ca8d-4c85-9933-adb3d8bb6e61"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="969d3b5c-33a3-4913-8904-1344e3c38979"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='Modelo']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1448,7 +1460,7 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="9d313a29-f927-44fa-91c7-cf0fd1c777a5">
@@ -1487,6 +1499,63 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				</path>
 			</info>
 		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="b20490d9-99fe-4c42-a1d8-9d2f3bf6098c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e71ae898-1d06-4e8e-90e0-2ec3fc7472d1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style']
+				</path>
+			</info>
+		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c48ec2e8-a3ff-4f95-a971-35626a462a4d"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="86c1d922-4917-4c20-9108-df21c015dbba">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1652,7 +1721,7 @@ Ve2r/dH5UbV/uj8qOeXcXs4dij/Y1t/fl/Mf4UVe2r/dH5UUc8u4ezh2P//Z
 					<attribute
 					name="innertext"
 					type="System.String">
-						Paso 3 de 3: Agregar informaci&#243;n del siniestro
+						Paso 3 de 3: Agregar información del siniestro
 					</attribute>
 					<attribute
 					name="safeclass"
