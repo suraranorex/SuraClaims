@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DatosProveedor"
+	namespace="SuraClaims.Motor">
+	</codegen>
+	<variables>
+		<var
+		id="c5447b31-d851-48cb-bd1f-9354441c492a"
+		name="CodProveedor">
+			23766
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a302b7de-dbf1-47b5-b7b0-5eaa6a33bfe3"
+		sx="484"
+		sy="520"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="401956ec-4a22-468a-9142-cc99cd25f56e"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="476,514,12,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://i-preproducciongestion.segurossura.com.ar/cc/resources/themes/theme-9/resources/images/app/drop_button.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						16
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/fieldset/div/div/div/div[1]/div/div/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src='https://i-preproducciongestion.segurossura.com.ar/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="2be7a1b2-ab65-4b1a-afb5-768f4dadd396">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAwAEgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDofMX0
+f/vg/wCFHmL6P/3wf8KXzE/vr+dHmJ/fX86AE8xfR/8Avg/4UeYvo/8A3wf8KXzE/vr+dNe4gjID
+zRqSMjLAUDSb2F8xfR/++D/hR5i+j/8AfB/wpn2y1/5+Yf8AvsUqXMEjBUnjZj0AcE0rofLLsO8x
+fR/++D/hR5i+j/8AfB/wp9FMkZ5i+j/98H/Cin0UAMooprqHUqehpAOrIvUjk1iBZl3IYzkZxnlq
+04YhEuAST3JrNvdv9sQb2VV8s8scDq1TI6KF+Z27Md9jtOogTb/vN/jTIooYtbtxAmxShJGSecNS
+eVbTXsEe5JEaQlo8gj7jc1VtJxBdWk0sUscUcC7nK5HIIB4zwabiugU6s9VUb2Z0tFMhljniWWJg
+yMMgin1RzhRRRQA3afUflRtPqPypN7f88n/Mf40b2/55P+Y/xoAXafUflUE1hb3DBp497AYzkjj8
+D71Nvb/nk/5j/Gje3/PJ/wAx/jStcak4u6ZkWMSPNZ3ENmI1Ylt6SlwBtYYOehzitFbGNY1QM2FW
+NefRDkVBKz2Nw9wsTC1cZmUDlW/v4z+f5+tPfVbQJ+6k89yPlji+Zm/AU7W2CUnJ3bJbD/j3b/rt
+L/6G1WKq2Kyw2qrLGxkJLNjHBYkkdfep97f88n/Mf40CH0Uze3/PJ/zH+NFAH//Z
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5a575d31-56c2-45c4-b161-aa4705dc2795"
+		sx="518"
+		sy="541"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d6487c32-d016-448f-968c-f18320a9a686"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="59cdf649-dd93-4a17-9559-7d5dc1f84b5d"
+		sx="1029"
+		sy="308"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6818b134-7567-4bfb-8d13-8f50a705cfca"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="1018,296,16,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-trigger x-form-trigger-default x-form-arrow-trigger x-form-arrow-trigger-default  x-form-trigger-over
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:CCAddressBookSearchLocationInputSet:CCAddressInputSet:globalAddressContainer:globalAddress:GlobalAddressInputSet:State-trigger-picker
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-arrow-trigger x-form-arrow-trigger-default x-form-trigger x-form-trigger-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]
+				</path>
+			</info>
+			<helperscreenshot
+			guid="8552799e-b18d-4ca1-9b8f-244aef227c34">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABmAGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKAI/m/vt+Q/wo+b++35D/AApaKAE+b++35D/Cj5v77fkP
+8KWigBPm/vt+Q/wo+b++35D/AApaKAE+b++35D/CgbgwyxP1xUbtMJQqqCp7+lSj7y/WgB9FFFAB
+RRRQAUUUUAR59j+VGfY/lSbfdv8Avo0bfdv++jQAufY/lRn2P5Um33b/AL6NG33b/vo0ALn2P5VD
+9stf+fiL/voVLt92/wC+jWPpNlb3NqzzR7mDkZ3EcYFS272RtThFxcpdDT+2Wv8Az8Rf99ClS6t3
+kVVnjJJwBuFQ/wBl2X/PH/x5v8ap3drDbX1l5Kbd0nPJPcetJuSLjClN2TZt0UUVZzBRRRQAUUUU
+AMoo5/un9KOf7p/SgAoo5/un9KOf7p/SgArN0L/jyf8A66H+QrS5/un9KxdJvbe2tmSZyrFyehPG
+BUN2aOinFypySXb9S/dTPBIjNJiNjjhCxzjPQD2NVr91ludNkQ5V3DA+oJWpfttvc3lokT7mEhOM
+EcbGrOxeGOzfEUiwJE6qMqW3HAGefTrTeq0Jpv2c/e0/4Y6OiorWY3ECyFCjZKspOcEEg/qKlqjE
+KKKKACiiigCLYn91fyo2J/dX8qdRSAbsT+6v5UbE/ur+VOooAbsT+6v5VH9ktv8An3i/74FTUUDT
+a2MrTrZmkhkLKJIWImQxqrK20jgqOhzmtXyYgoAjUABQBj05H5VVuYZVlF1a8zKu0oTxIvXHsfQ0
+j3N66bYbMxuR9+WRdq/kSTTBtvcdZqphclQf30vb/bap9if3V/KmWsAtrZIgd20ct6nqT+JzUtAh
+uxP7q/lRsT+6v5U6ikA3Yn91fyop1FADd4/vJ/31RvH95P8AvqnUUwEGWGRtP0NLtb0H50qd/rTq
+AGbW9B+dG1vQfnT6KAGbW9B+dG1vQfnT6KAGbW9B+dG1vQfnT6KAGbW9B+dG1vQfnT6KAGbW9B+d
+FPooAZRRRSAVO/1p1FFMAooooAKKKKACiiigAooooAKKKKAP/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5cf159bb-a72b-469a-b5dc-56647ff22684"
+		sx="957"
+		sy="323"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="044f369c-13da-48a0-bed5-afb2e0703fda"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2614c25c-eb99-4683-8e08-9241a0ae095f"
+		sx="368"
+		sy="336"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2bec988b-1334-49c1-95ff-1676ca49a01d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="375,361,173,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:ProviderNumberSura-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:ProviderNumberSura
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//input[@name~'ProviderNumberSura']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="23766"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="8a6ad1e7-b121-4072-96d0-a3b60e0edbf4">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="CodProveedor">
+				</binding>
+			</bindings>
+			<info
+			id="2bec988b-1334-49c1-95ff-1676ca49a01d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="375,361,173,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:ProviderNumberSura-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:ProviderNumberSura
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//input[@name~'ProviderNumberSura']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="001bb8ee-528e-409e-8334-ccb7a8c90292"
+		sx="232"
+		sy="504"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6aa49382-283c-4b75-97ca-6899f2ca8d7e"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="200,496,51,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						bigButton
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchDV:SearchAndResetInputSet:SearchLinksInputSet:Search
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Bucar
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						bigButton
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						javascript:void(0)
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/?/?/table/tbody/tr[2]//table//div/div/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="7ade412e-2186-4264-b7ad-3b37e8db6e1c">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="02ff1f1b-edc7-4647-829f-571642f50487"
+		sx="227"
+		sy="620"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d13233d5-48a5-48c4-930f-dfc63f2b4409"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="201,614,56,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						g-actionable miniButton
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						AddressBookPickerPopup:AddressBookSearchScreen:AddressBookSearchLV:0:_Select
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Seleccionar
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						g-actionable miniButton
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="tabindex"
+					type="System.String">
+						-1
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="itemindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[6]/td/div/div[4]/div[1]/?/?/table/?/?/tr/td[1]/?/?/a[@innertext='Seleccionar']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="fa4ae847-ffc7-475b-a90a-2492ef87f128">
+				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
+UUUUAFFFFAH/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="f9a556df-e713-4735-912b-80a9f15416e8"
+		waitaction="Exists"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="173e0b5c-a7dc-4f43-adca-56a5375fdafb"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo asegurado']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="432a5e0b-ae2e-4b03-8607-119a9d3d2e89">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
+	name="SuraClaimsRepository"
+	relativepath="..\SuraClaimsRepository.rxrep">
+		<codegen
+		classname="SuraClaimsRepository"
+		namespace="SuraClaims">
+		</codegen>
+		<rootfolder
+		id="e236aa5f-717e-474a-818d-ab73ab951257"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DatosProveedor.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

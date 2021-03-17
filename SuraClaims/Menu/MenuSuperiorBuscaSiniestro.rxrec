@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="978722ac-1e26-4ea1-a445-53ce8454bf4f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="MenuSuperiorBuscaSiniestro"
+	namespace="SuraClaims.Menu">
+	</codegen>
+	<variables>
+		<var
+		id="9f24559f-e441-47fa-9643-510005fbb861"
+		name="NroSiniestro">
+			0420172007039
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="CenterRight"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="728eab0b-d441-40dd-b002-c4934e58385e"
+		sx="234"
+		sy="82"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c2f759de-013e-4187-9a0b-5d669d63f1f2"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="180,76,63,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-wrap x-btn-wrap-gw-top-menu-toolbar-small x-btn-split x-btn-split-right
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						TabBar:ClaimTab-btnWrap
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-split x-btn-split-right x-btn-wrap x-btn-wrap-gw-top-menu-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'TabBar:ClaimTab']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="385fe6ac-ebc4-45f8-8378-e822eb9f8014">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAsAGMDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDF2N6U
+bG9K6b+wLX/nrP8AmP8ACsi+tUtrx4UZiq4wTjPQGmlcTdihsb0o2N6VY8v3NHl+5pc0e5t7Cr/K
+yvsb0o2N6VY8v3NHl+5o5o9w9hV/lZX2N6UbG9KseX7mjy/c0c0e4ewq/wArK+xvSjY3pVjy/c0e
+X7mjmj3D2FX+VlfY3pRsb0qx5fua1xo9v/Z/2jzJd/lb8ZGM4z6U7aXRlJOLtJWZgbG9KKs+UPU0
+Vp7KRl7WJ2Vc1q//ACE5f+A/yFdLXNav/wAhOX/gP8hUw6+hct4+qK0So0yrI21CeT6VYNnvOEXb
+kqFLSBgc55yB7VWUlWDDGR6jNS/ap8jDgYxgBQAMZ7Y9zTjUiopXNKuGqupJ8r1bHpYu6ZRlfcQF
+KkgdcdCKDp8ozllwBno2fyxntUaXEyIqK+FU5HA9c0C4lV96+WG9RGox+lP2se5n9Uq/yMcbPAYi
+aMhQpPB7jjtTZrZolYl0ba21guflP5UjTyumxmGCAD8oycdOaJZ5ZV2uwIzk4UDJ9TjrT9rHuL6p
+V/kZE+Bz0AGf0pTGwTcylRu24PBzjPTr3FNl5Rv93+lauoWM1zqMrROg3zCMBgevlhs/pT9qnsyJ
+YecfiVmZfaulH/IF/wC3f/2WubZJECeam0ugdec5U9K6Qf8AIF/7d/8A2Ws+nzNqju1/hRztFFFd
+Z55r/b9R7Wuf+2bf41RuYbu5naZ7aUM2M4jOOmK6OP71S1xJtbHe0nucl9iuf+feb/vg0fYrn/n3
+m/74NdbRT55dyeSPY5L7Fc/8+83/AHwaPsVz/wA+83/fBrraKOeXcOSPY5L7Fc/8+83/AHwaPsVz
+/wA+83/fBrraKOeXcOSPY5eDTWuBJFI0kE55jEi4Vxjn3zXTeWm7dsXOd2cd8Yz+XFVtUjDWMkmS
+rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
+2Z8ts4xirujStcm7uJMeYZtnHTaoGB+p/OtKi7CyOU+yXX/PtN/3waK6uiq55dyfZx7H/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7c5a1c66-23bb-44b3-9041-231a1de43a35"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="55d173f7-b63d-4210-9765-adf7a359ec6a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='N.º de siniestro:']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="79a9fe50-7470-447e-b875-f5cd5cf47b18"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2f0e0337-0eee-4be9-9561-963ac57aa818"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="9ae13710-a755-4a83-8570-e8235ad3c1e7">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="NroSiniestro">
+				</binding>
+			</bindings>
+			<info
+			id="2f0e0337-0eee-4be9-9561-963ac57aa818"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="CenterRight"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5d5bde84-2a19-492d-8620-742f87aa7af0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="62ae6e5b-b948-4fcc-8600-e2e8bcb2f727"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//div[@id='TabBar:ClaimTab:ClaimTab_FindClaim_Button']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="083bf527-f953-400f-8ea6-9e2b93b7ca28"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5185a46f-3675-4d49-ba58-537bf34efa00"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'ClaimSummary-tbody']//span[@innertext='Resumen']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
+	name="SuraClaimsRepository"
+	relativepath="..\SuraClaimsRepository.rxrep">
+		<codegen
+		classname="SuraClaimsRepository"
+		namespace="SuraClaims">
+		</codegen>
+		<rootfolder
+		id="e236aa5f-717e-474a-818d-ab73ab951257"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		MenuSuperiorBuscaSiniestro.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
