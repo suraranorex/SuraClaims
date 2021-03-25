@@ -150,8 +150,8 @@ namespace SuraClaims.Generales
             repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Provincia.PressKeys(Provincia);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso3' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new RecordItemIndex(2));
-            repo.SuraClaims.Txt_Validaciones.txt_Paso3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_PasoGenerico' at Center.", repo.SuraClaims.Txt_Validaciones.txt_PasoGenericoInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Txt_Validaciones.txt_PasoGenerico.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Provincia'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_ProvinciaInfo, new ActionTimeout(30000), new RecordItemIndex(3));
@@ -166,8 +166,8 @@ namespace SuraClaims.Generales
             repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Localidad.PressKeys(Localidad);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso3' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new RecordItemIndex(6));
-            repo.SuraClaims.Txt_Validaciones.txt_Paso3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_PasoGenerico' at Center.", repo.SuraClaims.Txt_Validaciones.txt_PasoGenericoInfo, new RecordItemIndex(6));
+            repo.SuraClaims.Txt_Validaciones.txt_PasoGenerico.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Localidad'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_LocalidadInfo, new ActionTimeout(30000), new RecordItemIndex(7));
@@ -177,8 +177,8 @@ namespace SuraClaims.Generales
             repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Calle.PressKeys(Calle);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso3' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new RecordItemIndex(9));
-            repo.SuraClaims.Txt_Validaciones.txt_Paso3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_PasoGenerico' at Center.", repo.SuraClaims.Txt_Validaciones.txt_PasoGenericoInfo, new RecordItemIndex(9));
+            repo.SuraClaims.Txt_Validaciones.txt_PasoGenerico.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Calle'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_CalleInfo, new ActionTimeout(30000), new RecordItemIndex(10));
@@ -188,8 +188,8 @@ namespace SuraClaims.Generales
             repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Numero.PressKeys(NumeroCalle);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso3' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new RecordItemIndex(12));
-            repo.SuraClaims.Txt_Validaciones.txt_Paso3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_PasoGenerico' at Center.", repo.SuraClaims.Txt_Validaciones.txt_PasoGenericoInfo, new RecordItemIndex(12));
+            repo.SuraClaims.Txt_Validaciones.txt_PasoGenerico.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Numero'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_NumeroInfo, new ActionTimeout(30000), new RecordItemIndex(13));

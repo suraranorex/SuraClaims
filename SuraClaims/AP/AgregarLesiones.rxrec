@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="82160f09-1b26-4257-9faf-e5edd2c52ef5"
+id="62a6c0f1-d940-487e-9b46-b832224d904f"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,634 +19,12 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="InformacionSiniestro_AP_Uber"
+	classname="AgregarLesiones"
 	namespace="SuraClaims.AP">
 	</codegen>
 	<variables>
-		<var
-		id="b2b30f97-7dfe-4d09-90e4-cd519bdc17de"
-		name="CausaSiniestro">
-			Accidente In Itinere (AT)
-		</var>
-		<var
-		id="3fa15131-6a0e-47f3-8771-59fd6e083c60"
-		name="Provincia">
-			BUENOS AIRES
-		</var>
-		<var
-		id="2bf9ab21-80cd-4e12-b8af-19ff149945cf"
-		name="Localidad">
-			LANUS ESTE
-		</var>
-		<var
-		id="77ecfd0b-b588-4ea5-9f1d-5e825eacf5bc"
-		name="Calle">
-			Colón
-		</var>
-		<var
-		id="484205c6-f516-4301-af19-c8c4ce7d8a04"
-		name="NumeroCalle">
-			1828
-		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="True"
-		searchpropertyid="2f8d1bc6-364b-4b0b-8a20-b46b3f66c0c1"
-		sx="90"
-		sy="485"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4e4648ce-0cd1-45e7-8b3b-cee8cdbff623"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="72,479,36,12"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-btn-inner x-btn-inner-default-toolbar-small
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						NewClaimDuplicatesWorksheet:NewClaimDuplicatesScreen:NewClaimDuplicatesWorksheet_CloseButton-btnInnerEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Crrar
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-btn-inner x-btn-inner-default-toolbar-small
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewClaimDuplicatesWorksheet-tbody']//span[@innertext~'Crrar']
-				</path>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="afa5aad3-3d0d-4345-baa6-f0b61b20a8f9"
-		waitaction="NotExists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
-				</path>
-			</info>
-		</WaitForRecordItem>
-		<keyitem
-		action="Press"
-		data="A, Control"
-		duration="20ms"
-		enabled="True"
-		numLock="False"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="0b21f9f3-77e4-4469-9efa-443301ccb673"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac37c4b5-d72d-4a0d-9c1b-3a3132061d56"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, inputtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="299,305,123,19"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default  x-form-invalid-field x-form-invalid-field-default
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsPanel:FNOLWizard_NewLossDetailsPanelSet:NewLossDetailsHomeownersDV:Claim_LossCause-inputEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-field x-form-invalid-field x-form-invalid-field-default x-form-text x-form-text-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						input
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						&lt;ninguna&gt;
-					</attribute>
-					<attribute
-					name="autocomplete"
-					type="System.String">
-						off
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="checked"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="height"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="name"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsPanel:FNOLWizard_NewLossDetailsPanelSet:NewLossDetailsHomeownersDV:Claim_LossCause
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						1
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						text
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						&lt;ninguna&gt;
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="componentid"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
-				</path>
-			</info>
-		</keyitem>
-		<keysequenceitem
-		KeySequence="Rotura de Cristal"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="d63e889f-48da-40d8-8c13-20acf345c800">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="CausaSiniestro">
-				</binding>
-			</bindings>
-			<info
-			id="ac37c4b5-d72d-4a0d-9c1b-3a3132061d56"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, inputtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="281,262,116,18"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default &#32;
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsPanel:FNOLWizard_NewLossDetailsPanelSet:NewLossDetailsHomeownersDV:Claim_LossCause-inputEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						input
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						Rotura de Cristal
-					</attribute>
-					<attribute
-					name="autocomplete"
-					type="System.String">
-						off
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="checked"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="height"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="name"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsPanel:FNOLWizard_NewLossDetailsPanelSet:NewLossDetailsHomeownersDV:Claim_LossCause
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						1
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						text
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						Rotura de Cristal
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="componentid"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="481bdaf9-4a92-46f5-8d7c-2a716b274e9a">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac37c4b5-d72d-4a0d-9c1b-3a3132061d56"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, inputtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="299,274,123,19"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default &#32;
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsPanel:FNOLWizard_NewLossDetailsPanelSet:NewLossDetailsHomeownersDV:Claim_LossCause-inputEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						input
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						Actos Malintencionados o Vandálicos
-					</attribute>
-					<attribute
-					name="autocomplete"
-					type="System.String">
-						off
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="checked"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="height"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="name"
-					type="System.String">
-						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsPanel:FNOLWizard_NewLossDetailsPanelSet:NewLossDetailsHomeownersDV:Claim_LossCause
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						1
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						text
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						Actos Malintencionados o Vandálicos
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="componentid"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
-				</path>
-			</info>
-		</keysequenceitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="d9bfec00-7767-44ad-8749-05f8c9b76c0e"
-		waitaction="NotExists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<separatoritem
 		enabled="True"
 		optional="False">
@@ -660,7 +38,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -742,7 +120,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="5ebcbee8-d610-4205-9632-b2d5fb228000"
 		waitaction="Exists"
@@ -812,7 +190,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -949,7 +327,7 @@ GXOMHBFRrGRnARM88d6looA//9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -962,22 +340,31 @@ GXOMHBFRrGRnARM88d6looA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="78aa9580-7cd0-4b94-92bf-82cfe95f4da0"
+			id="5e1e470c-8efc-4249-a36f-8a56de32b0c5"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//li[@innertext=$NOMBRE]
+					/dom[@domain=$Ambiente]//li[@innertext~$NOMBRE]
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="False"
-		optional="False">
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="a0ec9c51-cad1-4e9a-bac9-1f516ced8a21"
+		waitaction="NotExists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="2c75fd99-cdfa-4e25-9ae3-57d4a7b15ba2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Persona lesionada']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1809,7 +1196,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
-		enabled="False"
+		enabled="True"
 		message=""
 		optional="False"
 		reportlevel="Info;20"
@@ -1891,7 +1278,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 			</info>
 		</loggingrecorditem>
 		<separatoritem
-		enabled="False"
+		enabled="True"
 		optional="False">
 			<comment>
 				Descripción de lesiones
@@ -1903,7 +1290,7 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2018,7 +1405,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="7661a6c4-9615-4b00-b0da-6c79aead7005"
 		waitaction="Exists"
@@ -2088,7 +1475,7 @@ wo2H++36f4U6igBuw/32/T/CjYf77fp/hTqKAG7D/fb9P8KKdRQB/9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2258,7 +1645,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="False"
+		enabled="True"
 		numLock="False"
 		optional="False"
 		presstime="20ms"
@@ -2415,9 +1802,9 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 			</info>
 		</keyitem>
 		<keysequenceitem
-		KeySequence="Peatón"
+		KeySequence="Accidentes de trabajo"
 		duration="20ms"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="ee91b8b7-9952-444f-825c-c538a1809be7">
@@ -2573,7 +1960,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="20ms"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="c5441700-752b-4823-bec8-e7d6f9e8236a">
@@ -2727,7 +2114,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="6eeb4446-a045-425d-b2ce-8a8cfb6bb700"
 		waitaction="NotExists"
@@ -2748,7 +2135,7 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2895,20 +2282,29 @@ TT/rV/3T/SnU0/61f90/0oA//9k=
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="False"
-		optional="False">
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6eeb4446-a045-425d-b2ce-8a8cfb6bb700"
+		waitaction="NotExists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="2168dc0d-ed61-4f47-a31b-b6001fbe0ae9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -3185,6 +2581,202 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6eeb4446-a045-425d-b2ce-8a8cfb6bb700"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2168dc0d-ed61-4f47-a31b-b6001fbe0ae9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="5ca175f7-3451-4740-83c5-55cfcc166cb8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1366,657"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						[Modo DEV - 9.0.3.165] Guidewire ClaimCenter
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						79.0.3945.130
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						ssurgwsoadev4.opc.oracleoutsourcing.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						ClaimCenter.do
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://ssurgwsoadev4.opc.oracleoutsourcing.com/cc/ClaimCenter.do
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/cc/ClaimCenter.do
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
+				</path>
+			</info>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="74405d3f-3b46-426a-9b31-01a40719c9d9"
+		sx="163"
+		sy="170"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="095dc31d-7f40-4650-a936-f1d5cd82bbf8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="146,165,35,10"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Update-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Aceptar
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
@@ -3201,7 +2793,7 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		InformacionSiniestro_AP_Uber.UserCode.cs
+		AgregarLesiones.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

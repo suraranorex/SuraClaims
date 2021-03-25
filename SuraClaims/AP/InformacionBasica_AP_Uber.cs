@@ -115,8 +115,8 @@ namespace SuraClaims.AP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.bttn_SelecNombre' at Center.", repo.SuraClaims.Motor.InformacionBasica.bttn_SelecNombreInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Motor.InformacionBasica.bttn_SelecNombre.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.txtbox_Nombre' at Center.", repo.SuraClaims.Motor.InformacionBasica.txtbox_NombreInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Motor.InformacionBasica.txtbox_Nombre.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_Nombre' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_NombreInfo, new RecordItemIndex(1));
@@ -126,8 +126,8 @@ namespace SuraClaims.AP
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_Nombre'", repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NombreInfo, new ActionTimeout(30000), new RecordItemIndex(2));
             repo.SuraClaims.Motor.InformacionBasica.Copy_of_txtbox_NombreInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.bttn_RelacionConAsegurado' at Center.", repo.SuraClaims.AP_Uber.bttn_RelacionConAseguradoInfo, new RecordItemIndex(3));
-            repo.SuraClaims.AP_Uber.bttn_RelacionConAsegurado.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAsegurado' at Center.", repo.SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAseguradoInfo, new RecordItemIndex(3));
+            repo.SuraClaims.Motor.InformacionBasica.txtbox_RelacionConAsegurado.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_RelacionAsegurado' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_RelacionAseguradoInfo, new RecordItemIndex(4));

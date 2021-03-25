@@ -108,10 +108,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="2e7d84e4-de88-452a-a572-56dae0b4b474"
+			id="73026996-4d36-47a0-8bbb-c3f067a16c68"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']
 				</path>
 			</info>
 		</mouseitem>
@@ -196,10 +196,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="2e7d84e4-de88-452a-a572-56dae0b4b474"
+			id="73026996-4d36-47a0-8bbb-c3f067a16c68"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']
 				</path>
 			</info>
 		</mouseitem>
@@ -261,10 +261,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="2e7d84e4-de88-452a-a572-56dae0b4b474"
+			id="73026996-4d36-47a0-8bbb-c3f067a16c68"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']
 				</path>
 			</info>
 		</mouseitem>
@@ -380,10 +380,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="2e7d84e4-de88-452a-a572-56dae0b4b474"
+			id="73026996-4d36-47a0-8bbb-c3f067a16c68"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']
 				</path>
 			</info>
 		</mouseitem>

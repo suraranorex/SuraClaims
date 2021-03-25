@@ -282,7 +282,7 @@ Z/Gre72pWXYpVJpWUn94kaCONY1+6oCj8KdSbvajd7UyBaKTd7UbvagBaKTd7UbvagD/2Q==
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="guardarNumSiniestro"
-		namespace="SuraClaims"
+		namespace="SuraClaims.Motor"
 		optional="False">
 			<comment>
 			</comment>

@@ -67,22 +67,30 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
-		<loggingrecorditem
-		category="User"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
-		message=""
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="83fbfcfa-412a-4151-be0e-baf61796d254">
+		searchpropertyid="09ddcfee-460f-44ef-9fa5-cc3b94e9e963"
+		sx="364"
+		sy="291"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="Message"
-				variable="NombreAsegurado">
-				</binding>
 			</bindings>
-		</loggingrecorditem>
+			<info
+			id="6919e5a5-b357-4a6d-85f3-20cb9193c1a6"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
+				</path>
+			</info>
+		</mouseitem>
 		<getvaluerecorditem
 		attrname="InnerText"
 		enabled="True"
@@ -117,30 +125,6 @@ mode="Global">
 				</binding>
 			</bindings>
 		</loggingrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="09ddcfee-460f-44ef-9fa5-cc3b94e9e963"
-		sx="364"
-		sy="291"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="6919e5a5-b357-4a6d-85f3-20cb9193c1a6"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
-				</path>
-			</info>
-		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"

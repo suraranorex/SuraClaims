@@ -3136,25 +3136,6 @@ Nj5mBbkE9xWhdwxR6bPGqKE2MQuOBxmjpcOtj//Z
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="7b3b9b43-6f23-49cd-98da-33da0f00de3b">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="49c78570-cbc3-4845-81e1-f755e92cdada"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
 		KeySequence="CHEVROLET"
 		duration="20ms"
 		enabled="True"
@@ -3955,25 +3936,6 @@ J7imBZMileD1JA+o/wD1U/BqEwAHdvbAJYLxjJ//AF1PQAmDRg0tFACYNGDS0UAJg0YNLRQAmDRg
 0tFACYNGDS0UAJg0YNLRQAmDRg0tFACYNGDS0UAJg0YNLRQAmDRg0tFAH//Z
 			</helperscreenshot>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="d80246d1-695a-49bd-8974-551d55520da6">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7d32b63a-56e0-47b9-86e4-b00f55aeaed6"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
-				</path>
-			</info>
-		</keysequenceitem>
 		<keysequenceitem
 		KeySequence="ONIX"
 		duration="20ms"
@@ -4819,162 +4781,6 @@ igCG7VntyEUswZTgEc4IPeql3DJcujvDME2kbB5ZIPrzkfiDmtGigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="1979ee07-1023-47b2-8f14-b8820951a693">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e71ae898-1d06-4e8e-90e0-2ec3fc7472d1"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, inputtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="956,486,151,24"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default &#32;
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style-inputEl
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						x-form-field x-form-text x-form-text-default
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						input
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						&lt;ninguna&gt;
-					</attribute>
-					<attribute
-					name="autocomplete"
-					type="System.String">
-						off
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="checked"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="height"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="name"
-					type="System.String">
-						FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						1
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						text
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						&lt;ninguna&gt;
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="componentid"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ref"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
 		KeySequence="AUTO"
 		duration="20ms"
 		enabled="True"
@@ -5685,6 +5491,26 @@ igCG7VntyEUswZTgEc4IPeql3DJcujvDME2kbB5ZIPrzkfiDmtGigD//2Q==
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="9cf6a97a-88e5-47d1-8b6d-d78f0f5d21ce">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

@@ -123,6 +123,66 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AP\AgregarLesiones.cs">
+      <BoundTo>dd9561b8-fc5f-4099-bbaa-9f1508249d89</BoundTo>
+      <DependentUpon>AgregarLesiones.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fec67ddc-c9c6-4d1b-9b2f-b0ea059adbd8</id>
+    </Compile>
+    <Compile Include="AP\AgregarLesiones.UserCode.cs">
+      <BoundTo>dd9561b8-fc5f-4099-bbaa-9f1508249d89</BoundTo>
+      <DependentUpon>AgregarLesiones.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1966e76d-10b8-4b91-802a-542be247fc96</id>
+    </Compile>
+    <Compile Include="AP\DescripcionLesiones.cs">
+      <BoundTo>2a024337-e18d-45c9-871f-d8c7ee0b518f</BoundTo>
+      <DependentUpon>DescripcionLesiones.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>98839e63-9a8d-4962-9bf6-add2dd801dda</id>
+    </Compile>
+    <Compile Include="AP\DescripcionLesiones.UserCode.cs">
+      <BoundTo>2a024337-e18d-45c9-871f-d8c7ee0b518f</BoundTo>
+      <DependentUpon>DescripcionLesiones.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b64fcc2c-e760-4b3f-8a97-2d78b307ac0c</id>
+    </Compile>
+    <Compile Include="AP\DescripcionLesiones_UBER.cs">
+      <BoundTo>a25ac172-2bfb-4e66-a716-a36b0ea64e6a</BoundTo>
+      <DependentUpon>DescripcionLesiones_UBER.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>771d43a3-acae-4732-aba3-86dd28473762</id>
+    </Compile>
+    <Compile Include="AP\DescripcionLesiones_UBER.UserCode.cs">
+      <BoundTo>a25ac172-2bfb-4e66-a716-a36b0ea64e6a</BoundTo>
+      <DependentUpon>DescripcionLesiones_UBER.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>05a8d8ea-8959-4ea4-8abd-c032267962e7</id>
+    </Compile>
+    <Compile Include="AP\Finalizar_InformacionSiniestro_AP_UBER.cs">
+      <BoundTo>d2b400e5-65e8-402a-8c49-04bc19e7a9a5</BoundTo>
+      <DependentUpon>Finalizar_InformacionSiniestro_AP_UBER.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>221d86b7-df68-4334-b422-2c5aa726cec6</id>
+    </Compile>
+    <Compile Include="AP\Finalizar_InformacionSiniestro_AP_UBER.UserCode.cs">
+      <BoundTo>d2b400e5-65e8-402a-8c49-04bc19e7a9a5</BoundTo>
+      <DependentUpon>Finalizar_InformacionSiniestro_AP_UBER.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45e7857f-a685-46ac-8140-f37a79f8add6</id>
+    </Compile>
+    <Compile Include="AP\Finalizar_Informacion_Siniestro_AP.cs">
+      <BoundTo>1b28aa18-d53f-4979-9a47-af8423df4b56</BoundTo>
+      <DependentUpon>Finalizar_Informacion_Siniestro_AP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a57ce247-c1f5-4023-9ab2-3ff4661a2053</id>
+    </Compile>
+    <Compile Include="AP\Finalizar_Informacion_Siniestro_AP.UserCode.cs">
+      <BoundTo>1b28aa18-d53f-4979-9a47-af8423df4b56</BoundTo>
+      <DependentUpon>Finalizar_Informacion_Siniestro_AP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d00dd1a7-0e86-4707-bd8a-936f6c78f883</id>
+    </Compile>
     <Compile Include="AP\InformacionBasica_AP_Uber.cs">
       <DependentUpon>InformacionBasica_AP_Uber.rxrec</DependentUpon>
       <id>0fdb9be3-8e07-4e62-8976-cb9671534885</id>
@@ -171,14 +231,26 @@
       <UserCode>true</UserCode>
       <BoundTo>3b10ff1a-7331-42de-98db-b88d7ace9595</BoundTo>
     </Compile>
-    <Compile Include="AP\Reclamos.cs">
-      <DependentUpon>Reclamos.rxrec</DependentUpon>
+    <Compile Include="AP\NuevaExposicion.cs">
+      <BoundTo>0436702e-40c3-4294-adea-4007c871c420</BoundTo>
+      <DependentUpon>NuevaExposicion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e3384cb-b1f0-4e0f-8a3d-3170fd04c6bd</id>
+    </Compile>
+    <Compile Include="AP\NuevaExposicion.UserCode.cs">
+      <BoundTo>0436702e-40c3-4294-adea-4007c871c420</BoundTo>
+      <DependentUpon>NuevaExposicion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>35d6ad98-2223-4a1e-9c43-c1795ca34c90</id>
+    </Compile>
+    <Compile Include="AP\Reclamos_APviejo.cs">
+      <DependentUpon>Reclamos_APviejo.rxrec</DependentUpon>
       <id>0269099f-4038-49d0-9d06-5d1cf7b99cb9</id>
       <RecorderCode>true</RecorderCode>
       <BoundTo>b01a1564-6c93-49ca-9d6e-2194a5841ba9</BoundTo>
     </Compile>
-    <Compile Include="AP\Reclamos.UserCode.cs">
-      <DependentUpon>Reclamos.rxrec</DependentUpon>
+    <Compile Include="AP\Reclamos_APviejo.UserCode.cs">
+      <DependentUpon>Reclamos_APviejo.rxrec</DependentUpon>
       <id>843f2031-d667-40dc-a468-09dcf2a898de</id>
       <UserCode>true</UserCode>
       <BoundTo>b01a1564-6c93-49ca-9d6e-2194a5841ba9</BoundTo>
@@ -389,6 +461,18 @@
       <id>5c4b549f-9f38-488f-a16b-e829438e5710</id>
       <UserCode>true</UserCode>
       <BoundTo>081dcd80-7ca8-46a1-828a-e667509adc59</BoundTo>
+    </Compile>
+    <Compile Include="Menu\VolverEscritorio.cs">
+      <DependentUpon>VolverEscritorio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>467f11bf-c1d5-486c-97eb-02581adc55ef</id>
+      <BoundTo>d31e6604-bc1f-4dfe-bdff-d2e2a3e0b4f4</BoundTo>
+    </Compile>
+    <Compile Include="Menu\VolverEscritorio.UserCode.cs">
+      <DependentUpon>VolverEscritorio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f06ca39-b6cc-4047-8254-c3eeb26a2f6a</id>
+      <BoundTo>d31e6604-bc1f-4dfe-bdff-d2e2a3e0b4f4</BoundTo>
     </Compile>
     <Compile Include="Motor\AgregarDaniosLesionesTerceros_Detalle.cs">
       <DependentUpon>AgregarDaniosLesionesTerceros_Detalle.rxrec</DependentUpon>
@@ -812,6 +896,31 @@
     <None Include="app.config">
       <id>328d722f-8b6c-4b33-aa45-fcb1f8ff0d7f</id>
     </None>
+    <None Include="AP\AgregarLesiones.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>dd9561b8-fc5f-4099-bbaa-9f1508249d89</id>
+      <recordtableid>62a6c0f1-d940-487e-9b46-b832224d904f</recordtableid>
+    </None>
+    <None Include="AP\DescripcionLesiones.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>2a024337-e18d-45c9-871f-d8c7ee0b518f</id>
+      <recordtableid>9d261f07-e75d-461a-a37b-f0fb864fd2b7</recordtableid>
+    </None>
+    <None Include="AP\DescripcionLesiones_UBER.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>a25ac172-2bfb-4e66-a716-a36b0ea64e6a</id>
+      <recordtableid>329a3181-ae73-4bd9-8910-0e934d3b2ffd</recordtableid>
+    </None>
+    <None Include="AP\Finalizar_InformacionSiniestro_AP_UBER.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>d2b400e5-65e8-402a-8c49-04bc19e7a9a5</id>
+      <recordtableid>3dd48fe7-1a74-42ec-8162-d2008f9af4ef</recordtableid>
+    </None>
+    <None Include="AP\Finalizar_Informacion_Siniestro_AP.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>1b28aa18-d53f-4979-9a47-af8423df4b56</id>
+      <recordtableid>ef1070d1-0a18-41c0-8838-02cd59ae9bdf</recordtableid>
+    </None>
     <None Include="AP\InformacionBasica_AP_Uber.rxrec">
       <id>6a66819c-f316-4d26-aff8-60036a2ae020</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -832,7 +941,12 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>42264dcc-5b8b-4b22-bac2-ce9f79b8439b</recordtableid>
     </None>
-    <None Include="AP\Reclamos.rxrec">
+    <None Include="AP\NuevaExposicion.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>0436702e-40c3-4294-adea-4007c871c420</id>
+      <recordtableid>5d57222f-571e-47c3-8251-f28f8945c89d</recordtableid>
+    </None>
+    <None Include="AP\Reclamos_APviejo.rxrec">
       <id>b01a1564-6c93-49ca-9d6e-2194a5841ba9</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>8cc9a36c-6f8e-40f5-93d6-755816575d0b</recordtableid>
@@ -888,6 +1002,13 @@
       <DependentUpon>SuraClaims.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>89876aff-6b8d-4ada-a445-234461df3c19</id>
+    </Content>
+    <Content Include="DataSource - Siniestros - Datos Básicos.xlsx">
+      <Link>DataSource - Siniestros - Datos Básicos.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>13f00fc4-8dde-460d-9c64-9baf682c2a81</id>
     </Content>
     <None Include="Generales\BuscarPoliza.rxrec">
       <id>435f9a7f-fdad-45c6-bf8d-a978d6f6bfa9</id>
@@ -963,6 +1084,11 @@
       <id>081dcd80-7ca8-46a1-828a-e667509adc59</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>978722ac-1e26-4ea1-a445-53ce8454bf4f</recordtableid>
+    </None>
+    <None Include="Menu\VolverEscritorio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>d31e6604-bc1f-4dfe-bdff-d2e2a3e0b4f4</id>
+      <recordtableid>fdcfb6a4-e8a3-49ff-b000-36512f6cae56</recordtableid>
     </None>
     <None Include="Motor\AgregarDaniosLesionesTerceros_Detalle.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

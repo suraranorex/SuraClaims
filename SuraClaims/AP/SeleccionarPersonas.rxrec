@@ -24,8 +24,13 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="8ddc398a-bf46-43a7-afd4-787a2ffa676e"
-		name="Nombre">
+		id="7f3b91a8-de5e-4839-ac31-b4ce5e70a5e9"
+		name="NombreLesionado">
+		</var>
+		<var
+		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
+		name="Ambiente">
+			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
 		</var>
 	</variables>
 	<recorditems>
@@ -67,7 +72,7 @@ mode="Global">
 		enabled="True"
 		optional="False"
 		searchpropertyid="9d3a2a8d-2f62-489e-9e6c-6cb422115b4b"
-		varname="Nombre">
+		varname="NombreLesionado">
 			<comment>
 			</comment>
 			<bindings>
@@ -77,24 +82,6 @@ mode="Global">
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
-				</path>
-			</info>
-		</getvaluerecorditem>
-		<getvaluerecorditem
-		attrname="InnerText"
-		enabled="False"
-		optional="False"
-		searchpropertyid="9d3a2a8d-2f62-489e-9e6c-6cb422115b4b"
-		varname="Nombre">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="788ad31b-7f71-42bb-901b-f877bc73bd9f"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[@class='x-grid-item-container']/table[1]//td[3]/div
 				</path>
 			</info>
 		</getvaluerecorditem>
@@ -110,7 +97,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="Message"
-				variable="Nombre">
+				variable="NombreLesionado">
 				</binding>
 			</bindings>
 		</loggingrecorditem>

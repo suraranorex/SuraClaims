@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.AP
 {
-    public partial class Reclamos
+    public partial class NuevaExposicion
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

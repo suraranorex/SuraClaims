@@ -24,31 +24,29 @@ namespace SuraClaims.AP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SeleccionarPersonas recording.
+    ///The Finalizar_Informacion_Siniestro_AP recording.
     /// </summary>
-    [TestModule("b9e7b7c6-39f5-41e2-b917-a08ee4a85bb7", ModuleType.Recording, 1)]
-    public partial class SeleccionarPersonas : ITestModule
+    [TestModule("ef1070d1-0a18-41c0-8838-02cd59ae9bdf", ModuleType.Recording, 1)]
+    public partial class Finalizar_Informacion_Siniestro_AP : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static SeleccionarPersonas instance = new SeleccionarPersonas();
+        static Finalizar_Informacion_Siniestro_AP instance = new Finalizar_Informacion_Siniestro_AP();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SeleccionarPersonas()
+        public Finalizar_Informacion_Siniestro_AP()
         {
-            NombreLesionado = "";
-            Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SeleccionarPersonas Instance
+        public static Finalizar_Informacion_Siniestro_AP Instance
         {
             get { return instance; }
         }
@@ -63,16 +61,6 @@ namespace SuraClaims.AP
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable NombreLesionado.
-        /// </summary>
-        [TestVariable("7f3b91a8-de5e-4839-ac31-b4ce5e70a5e9")]
-        public string NombreLesionado
-        {
-            get { return repo.NombreLesionado; }
-            set { repo.NombreLesionado = value; }
         }
 
 #endregion
@@ -101,27 +89,12 @@ namespace SuraClaims.AP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.check_PersonaImplicada' at Center.", repo.SuraClaims.AP_Uber.check_PersonaImplicadaInfo, new RecordItemIndex(0));
-            repo.SuraClaims.AP_Uber.check_PersonaImplicada.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber' and assigning its value to variable 'NombreLesionado'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_UberInfo, new RecordItemIndex(2));
-            NombreLesionado = repo.SuraClaims.Motor.InformacionSiniestro.txt_Nro_Documento_Motor_Uber.Element.GetAttributeValueText("InnerText");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "User", NombreLesionado, new RecordItemIndex(3));
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(4));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(0));
             repo.SuraClaims.Generales.bttn_Siguiente.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(6));
-            repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso4'", repo.SuraClaims.Txt_Validaciones.txt_Paso4Info, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.SuraClaims.Txt_Validaciones.txt_Paso4Info.WaitForExists(30000);
             
         }
 

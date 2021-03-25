@@ -63,16 +63,6 @@ namespace SuraClaims.Motor
             set { repo.Ambiente = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable DANIOS.
-        /// </summary>
-        [TestVariable("73b293f5-81d3-4f77-9d30-008f1b362d6d")]
-        public string DANIOS
-        {
-            get { return repo.DANIOS; }
-            set { repo.DANIOS = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -150,18 +140,14 @@ namespace SuraClaims.Motor
             repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios_No.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Danios' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_DaniosInfo, new RecordItemIndex(15));
-            //repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios.Click();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(15));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(16));
             repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(17));
             repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
             
         }

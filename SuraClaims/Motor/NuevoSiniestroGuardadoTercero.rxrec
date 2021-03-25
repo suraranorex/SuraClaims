@@ -166,7 +166,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="guardarNumSiniestro"
-		namespace="SuraClaims"
+		namespace="SuraClaims.Motor"
 		optional="False">
 			<comment>
 			</comment>

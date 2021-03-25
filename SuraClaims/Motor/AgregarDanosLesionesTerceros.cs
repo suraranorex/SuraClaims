@@ -313,77 +313,67 @@ namespace SuraClaims.Motor
             repo.SuraClaims.Motor.txt_Marca.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(29));
-            //repo.SuraClaims.Motor.txt_Marca.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Marca' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Marca' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(29));
             repo.SuraClaims.Motor.txt_Marca.PressKeys(Marca);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.txt_Marca'.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(30));
             repo.SuraClaims.Motor.txt_Marca.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_txtmarca'", repo.SuraClaims.Motor.Copy_of_txtmarcaInfo, new ActionTimeout(30000), new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_txtmarca'", repo.SuraClaims.Motor.Copy_of_txtmarcaInfo, new ActionTimeout(30000), new RecordItemIndex(31));
             repo.SuraClaims.Motor.Copy_of_txtmarcaInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_Modelo' at Center.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_Modelo' at Center.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(32));
             repo.SuraClaims.Motor.txt_Modelo.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(34));
-            //repo.SuraClaims.Motor.txt_Modelo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Modelo' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Modelo' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(33));
             repo.SuraClaims.Motor.txt_Modelo.PressKeys(Modelo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.txt_Modelo'.", repo.SuraClaims.Motor.txt_ModeloInfo, new RecordItemIndex(34));
             repo.SuraClaims.Motor.txt_Modelo.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_txt_Modelo'", repo.SuraClaims.Motor.Copy_of_txt_ModeloInfo, new ActionTimeout(30000), new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_txt_Modelo'", repo.SuraClaims.Motor.Copy_of_txt_ModeloInfo, new ActionTimeout(30000), new RecordItemIndex(35));
             repo.SuraClaims.Motor.Copy_of_txt_ModeloInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txt_TipoVehiculo' at Center.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txt_TipoVehiculo' at Center.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(36));
             repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(39));
-            //repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tipo' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tipo' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(37));
             repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys(Tipo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(38));
             repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(39));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculo'", repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculo'", repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(40));
             repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txt_Patente' at Center.", repo.SuraClaims.SiniestroTercero.txt_PatenteInfo, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txt_Patente' at Center.", repo.SuraClaims.SiniestroTercero.txt_PatenteInfo, new RecordItemIndex(41));
             repo.SuraClaims.SiniestroTercero.txt_Patente.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Patente' with focus on 'SuraClaims.SiniestroTercero.txt_Patente'.", repo.SuraClaims.SiniestroTercero.txt_PatenteInfo, new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Patente' with focus on 'SuraClaims.SiniestroTercero.txt_Patente'.", repo.SuraClaims.SiniestroTercero.txt_PatenteInfo, new RecordItemIndex(42));
             repo.SuraClaims.SiniestroTercero.txt_Patente.PressKeys(Patente);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(46));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculoInfo, new RecordItemIndex(43));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_ElementosBasicosDelVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.SiniestroTercero.Copy_of_textPatente'", repo.SuraClaims.SiniestroTercero.Copy_of_textPatenteInfo, new ActionTimeout(30000), new RecordItemIndex(47));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.SiniestroTercero.Copy_of_textPatente'", repo.SuraClaims.SiniestroTercero.Copy_of_textPatenteInfo, new ActionTimeout(30000), new RecordItemIndex(44));
             repo.SuraClaims.SiniestroTercero.Copy_of_textPatenteInfo.WaitForNotExists(30000);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(45));
             
         }
 

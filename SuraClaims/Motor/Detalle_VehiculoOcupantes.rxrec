@@ -1537,6 +1537,24 @@ AAp1FADdh/vt+n+FGw/32/T/AAp1FADdh/vt+n+FFOooA//Z
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="e2a9e873-c349-4260-9b10-a335758104f8"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5bf4b1dc-68b5-479d-a16f-d181d9ad399d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Gravedad']/../..//input
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1801,15 +1819,6 @@ Yj85zGgWQ/eNTSQpIqq6hlU5wRkUUUAJJArn7zKCNpC4wR6U9ECbsZ+Y5oooAi+zDJbzHDEg5GOv
 cbcZyrupyeRjv+FFFAAtuqyK4J+UYA46flmpaKKACiiigAooooAKKKKAP//Z
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"

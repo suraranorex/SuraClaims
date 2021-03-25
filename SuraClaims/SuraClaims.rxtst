@@ -7,6 +7,7 @@
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="03240f64-af3d-4fe5-937c-0c393dd95597"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -49,6 +50,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="06e72a35-6ca5-4ba3-9245-98c73d1d3dc7"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -153,10 +155,15 @@
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
+					<var
+					dataname="paramNombreLesionado"
+					datasourceid="86b95672-af0b-4da0-a95b-2ac941c6be90"
+					variableid="9c849daa-a7f3-445d-b9d7-1521b0728a90"
+					variablename="NombreLesionado">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="0f3989e2-8480-4f80-a63b-6db50fb7400a"
 			name="FinalizarSiniestro"
 			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
@@ -360,29 +367,40 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="1b03de91-ecfc-4c44-80d4-b7c452cc1ed7"
-			name="InformacionBasica_Hogar"
-			ref="c8c5ed1d-1384-48cf-bc1f-d3091e43bd0a"
+			id="195bbca8-581a-42b9-9456-9e15cf47d088"
+			name="Informacion_Siniestro_AP"
+			ref="42264dcc-5b8b-4b22-bac2-ce9f79b8439b"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
 					<var
-					dataname="NumTelefono"
-					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
-					variableid="42efe7c8-ae15-460e-ba5a-d694a228a260"
-					variablename="NumTelefono">
+					dataname="CausaSiniestro"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="14c9f44c-7423-4395-bf7e-9a9535e199b3"
+					variablename="CausaSiniestro">
 					</var>
 					<var
-					dataname="Correo"
-					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
-					variableid="24a91463-8178-4708-a7eb-e7d015801354"
-					variablename="Correo">
+					dataname="Provincia"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="4a6de509-edb3-4bba-a609-d2fafb677828"
+					variablename="Provincia">
+					</var>
+					<var
+					dataname="Localidad"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="aeaf5778-be0b-4726-894e-2b69a9cf8590"
+					variablename="Localidad">
+					</var>
+					<var
+					dataname="Calle"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="04149b0d-d315-4484-9a51-531e710bd418"
+					variablename="Calle">
 					</var>
 				</databinding>
 			</testmodule>
@@ -505,6 +523,35 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="2b6a3be7-1147-4c13-b39c-529473557fe2"
+			name="NuevaExposicion"
+			ref="5d57222f-571e-47c3-8251-f28f8945c89d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2b6fdbfb-4a89-4f81-b2aa-eeb806ed72cd"
+			name="Reclamos_AP"
+			ref="94d73442-04fc-4dfc-99b8-de1874570730"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="2ca1f45f-9fa4-4d8e-9794-8cadb0d06059"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -573,6 +620,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="33ab20a8-ea70-4088-a219-3312ab48a7c6"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -603,6 +651,38 @@
 			name="InformacionSiniestro_Direccion"
 			ref="715b097f-045e-4890-b458-292598031417"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Provincia"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="2c6cf73a-1829-4f40-a152-de34496bb04f"
+					variablename="Provincia">
+					</var>
+					<var
+					dataname="Localidad"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="f9dabe66-e33d-4542-936d-f32004900f08"
+					variablename="Localidad">
+					</var>
+					<var
+					dataname="Calle"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="d8b3e241-48f0-437d-a83c-b9eade9ea9e4"
+					variablename="Calle">
+					</var>
+					<var
+					dataname="NumeroCalle"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="40e1ab8b-6c71-4218-81ff-057fd2e6c09f"
+					variablename="NumeroCalle">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="426565e9-cbb5-4ad4-9808-397751c596ed"
@@ -805,6 +885,7 @@
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="4c1dd1d9-a6fc-4c42-a87f-199a1625875a"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -831,6 +912,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="5093bcd7-8ad9-4aa8-8135-e117b70d8ec9"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -883,7 +965,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
+			id="540d9dc5-d5fa-42d6-a0dc-fa97bffc4c94"
+			name="NuevaExposicion"
+			ref="5d57222f-571e-47c3-8251-f28f8945c89d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="54684678-c957-48c8-90f6-d7fb2a9472ee"
 			name="Reclamos_Hogar"
 			ref="425e1d90-507b-42f0-b118-db68031d891f"
@@ -1003,6 +1098,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5dfe9566-8721-479c-9c64-607458bfb30e"
+			name="AgregarLesiones"
+			ref="62a6c0f1-d940-487e-9b46-b832224d904f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="5e834d66-1abf-413c-9062-8bcddb15f8d4"
 			name="Login"
@@ -1086,6 +1195,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="6108ac7c-8dd4-4e30-9b96-5572ec69eff0"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1114,6 +1224,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="67733423-9d57-4ede-98be-84e06d94d695"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -1128,6 +1239,21 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6868994c-b8fd-4d94-8863-9b0a588193df"
+			name="DescripcionLesiones_UBER"
+			ref="329a3181-ae73-4bd9-8910-0e934d3b2ffd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="6999125c-39d2-49c9-9728-4d088764bd5e"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1154,6 +1280,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="72afab8c-18b2-482e-8a47-12aedd4d2fb7"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -1249,6 +1376,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="77556c0a-2b3f-48ba-8483-28fd73289643"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1277,6 +1405,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="7988446d-97b2-4656-a6ce-2c8da7f67c42"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1343,50 +1472,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="7fa4d7cd-7898-45d3-8f6a-7137ba1e30bc"
-			name="InformacionSiniestro_AP_Uber"
-			ref="82160f09-1b26-4257-9faf-e5edd2c52ef5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="CausaSiniestro"
-					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
-					variableid="b2b30f97-7dfe-4d09-90e4-cd519bdc17de"
-					variablename="CausaSiniestro">
-					</var>
-					<var
-					dataname="Provincia"
-					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
-					variableid="3fa15131-6a0e-47f3-8771-59fd6e083c60"
-					variablename="Provincia">
-					</var>
-					<var
-					dataname="Localidad"
-					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
-					variableid="2bf9ab21-80cd-4e12-b8af-19ff149945cf"
-					variablename="Localidad">
-					</var>
-					<var
-					dataname="Calle"
-					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
-					variableid="77ecfd0b-b588-4ea5-9f1d-5e825eacf5bc"
-					variablename="Calle">
-					</var>
-					<var
-					dataname="Numero"
-					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
-					variableid="484205c6-f516-4301-af19-c8c4ce7d8a04"
-					variablename="Numero">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="8015bb2d-1ccf-41a7-be54-0fcc1920aace"
 			name="FinalizaPagoSiniestro"
 			ref="1106a3eb-96c6-4af3-ab98-8542ec63048b"
@@ -1407,8 +1492,15 @@
 			maxrange="0"
 			minrange="0"
 			name="GeneracionSiniestro_AP_Uber">
+				<parameters>
+					<param
+					name="paramNombreLesionado"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="88a8a119-6a70-4edf-9b97-c773419029f6"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1459,6 +1551,91 @@
 						<rightvalue>
 							<simplevaluesource
 							value="Luneta">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Caída de Arbol">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Cristal del techo">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Granizo">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Inundación">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Tambor de arranque">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -1546,6 +1723,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="99572a56-fa8b-4cbe-bdba-66b4fc3bc7dd"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1780,32 +1958,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="add84395-1d7e-4306-bf34-fa0e37970c19"
-			name="Reclamos"
-			ref="8cc9a36c-6f8e-40f5-93d6-755816575d0b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="paramNombreAsegurado"
-					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-					variableid="40d4fbbd-ac5c-4801-a089-9b02b3349092"
-					variablename="NombreAsegurado">
-					</var>
-					<var
-					dataname="paramNombreLesionado"
-					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-					variableid="5708cec9-a319-4013-82b4-d7025ac889ce"
-					variablename="NOMBRE">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
+			enabled="False"
 			id="aeee7bdd-debc-42cf-95a4-29180009ea37"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1856,6 +2009,7 @@
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="b4de6801-8e9b-44f4-b769-8fe9fcbc912f"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1866,6 +2020,20 @@
 					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
 					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bbb073c2-7b9c-41a7-a1e9-990bda3b3884"
+			name="Finalizar_InformacionSiniestro_AP_UBER"
+			ref="3dd48fe7-1a74-42ec-8162-d2008f9af4ef"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1889,7 +2057,7 @@
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
 			maxrange="1"
-			minrange="0"
+			minrange="1"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -1911,6 +2079,21 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="c6043c8b-134c-42a5-bcb2-37b059d4b6cc"
+			name="DescripcionLesiones"
+			ref="9d261f07-e75d-461a-a37b-f0fb864fd2b7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="cbc5774f-538b-4e26-9e38-c2107e077dc0"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1929,6 +2112,7 @@
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="ceba0e73-80be-4b7e-b580-ad2e55658c89"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1990,25 +2174,27 @@
 					variableid="04149b0d-d315-4484-9a51-531e710bd418"
 					variablename="Calle">
 					</var>
+				</databinding>
+				<missingdatabinding>
 					<var
 					dataname="Numero"
 					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
 					variableid="c3159271-eaa6-4d32-8d55-10f2250793a0"
 					variablename="Numero">
 					</var>
-					<var
-					dataname="paramNombreLesionado"
-					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-					variableid="d1ee65ab-49e0-42e7-aed8-0e52c84fbf18"
-					variablename="NOMBRE">
-					</var>
-				</databinding>
+				</missingdatabinding>
 				<missingdatavariablesbinding>
 					<var
 					dataname="paramNombreAsegurado"
 					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
 					variableid="40d4fbbd-ac5c-4801-a089-9b02b3349092"
 					variablename="NombreAsegurado">
+					</var>
+					<var
+					dataname="paramNombreLesionado"
+					datasourceid="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
+					variableid="9c849daa-a7f3-445d-b9d7-1521b0728a90"
+					variablename="NombreLesionado">
 					</var>
 				</missingdatavariablesbinding>
 			</testmodule>
@@ -2141,6 +2327,20 @@
 				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
+			id="e09dcc35-c8a1-4e9b-a08a-e30181955de1"
+			name="Finalizar_Informacion_Siniestro_AP"
+			ref="ef1070d1-0a18-41c0-8838-02cd59ae9bdf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e4bf6c50-cd65-4073-abbc-aa9b44b83670"
 			name="FinalizarSiniestro"
 			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
@@ -2223,6 +2423,12 @@
 					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
+					</var>
+					<var
+					dataname="paramNombreLesionado"
+					datasourceid="86b95672-af0b-4da0-a95b-2ac941c6be90"
+					variableid="7f3b91a8-de5e-4839-ac31-b4ce5e70a5e9"
+					variablename="NombreLesionado">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2317,6 +2523,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="f0af7e13-768c-46b3-b5ec-eedb1dc67ebd"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -2385,6 +2592,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="f6c0893b-a6f9-42a9-8761-0d12788217a9"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -2399,6 +2607,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="fa3a4816-1ef9-4029-a7f9-f80cb86cb587"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -2424,15 +2633,18 @@
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="DANIOS"
 					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 					variableid="73b293f5-81d3-4f77-9d30-008f1b362d6d"
 					variablename="DANIOS">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="faf0fe18-c109-47de-b7eb-c692b4530552"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -2561,6 +2773,7 @@
 				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="fbd08e51-827e-4af7-9ac4-06e134bf5b6f"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -2575,6 +2788,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="fe83aa3e-d196-4ca4-b2ee-2fcde5c25c67"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -2856,12 +3070,28 @@
 						name="Informacion_Siniestro_AP">
 						</testmodule>
 						<testmodule
+						id="5dfe9566-8721-479c-9c64-607458bfb30e"
+						name="AgregarLesiones">
+						</testmodule>
+						<testmodule
 						id="0e65a8a3-3eec-498e-9702-685f2af16d2f"
 						name="InformacionSiniestro_Direccion">
 						</testmodule>
 						<testmodule
-						id="add84395-1d7e-4306-bf34-fa0e37970c19"
-						name="Reclamos">
+						id="e09dcc35-c8a1-4e9b-a08a-e30181955de1"
+						name="Finalizar_Informacion_Siniestro_AP">
+						</testmodule>
+						<testmodule
+						id="2b6fdbfb-4a89-4f81-b2aa-eeb806ed72cd"
+						name="Reclamos_AP">
+						</testmodule>
+						<testmodule
+						id="540d9dc5-d5fa-42d6-a0dc-fa97bffc4c94"
+						name="NuevaExposicion">
+						</testmodule>
+						<testmodule
+						id="c6043c8b-134c-42a5-bcb2-37b059d4b6cc"
+						name="DescripcionLesiones">
 						</testmodule>
 						<testmodule
 						id="96bbfc4f-fe97-490f-b88e-05af64930957"
@@ -2912,16 +3142,28 @@
 						name="InformacionBasica_AP_Uber">
 						</testmodule>
 						<testmodule
-						id="7fa4d7cd-7898-45d3-8f6a-7137ba1e30bc"
-						name="InformacionSiniestro_AP_Uber">
+						id="195bbca8-581a-42b9-9456-9e15cf47d088"
+						name="Informacion_Siniestro_AP">
 						</testmodule>
 						<testmodule
 						id="33c11d1d-d6cb-46c4-a0b1-72fbebd94da5"
 						name="InformacionSiniestro_Direccion">
 						</testmodule>
 						<testmodule
+						id="bbb073c2-7b9c-41a7-a1e9-990bda3b3884"
+						name="Finalizar_InformacionSiniestro_AP_UBER">
+						</testmodule>
+						<testmodule
 						id="0e730055-2d1d-4512-a866-47303b98857d"
 						name="Reclamos_AP">
+						</testmodule>
+						<testmodule
+						id="2b6a3be7-1147-4c13-b39c-529473557fe2"
+						name="NuevaExposicion">
+						</testmodule>
+						<testmodule
+						id="6868994c-b8fd-4d94-8863-9b0a588193df"
+						name="DescripcionLesiones_UBER">
 						</testmodule>
 						<testmodule
 						id="e4bf6c50-cd65-4073-abbc-aa9b44b83670"
@@ -2966,10 +3208,6 @@
 						<testmodule
 						id="dbac9d87-6fdc-43e0-a477-0b8ee07cf40e"
 						name="InformacionBasica">
-						</testmodule>
-						<testmodule
-						id="1b03de91-ecfc-4c44-80d4-b7c452cc1ed7"
-						name="InformacionBasica_Hogar">
 						</testmodule>
 						<testmodule
 						id="74916a32-d8bd-4df7-85dc-4c729b836c98"
@@ -3077,7 +3315,7 @@
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -3582,9 +3820,56 @@
 			<maskedcolumns>
 			</maskedcolumns>
 		</DataSource>
+		<DataSource
+		filename="DataSource - Siniestros - Datos Básicos.xlsx"
+		id="2a533380-2996-462d-af8b-524a64001e12"
+		includefile="Checked"
+		lastknownrowcount="2"
+		name="SiniestrosDatosBasicos"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					ID
+				</column>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					Usuario
+				</column>
+				<column>
+					Contrasenia
+				</column>
+				<column>
+					NroPoliza
+				</column>
+				<column>
+					TipoProducto
+				</column>
+				<column>
+					FechaSiniestro
+				</column>
+				<column>
+					Gravedad
+				</column>
+				<column>
+					EsFastTrack
+				</column>
+				<column>
+					Descripcion
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="GenerarSiniestrosHogar">
+	default="PagoSiniestro">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -3595,6 +3880,12 @@
 			</testcontainer>
 			<testcontainer
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
+			</testcontainer>
+			<testcontainer
+			id="89fa68a6-9618-4127-aaec-5d106b43550a">
+			</testcontainer>
+			<testcontainer
+			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">

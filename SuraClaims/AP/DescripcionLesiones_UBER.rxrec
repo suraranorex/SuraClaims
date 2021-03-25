@@ -1,0 +1,1635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="329a3181-ae73-4bd9-8910-0e934d3b2ffd"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DescripcionLesiones_UBER"
+	namespace="SuraClaims.AP">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Descripción de lesiones
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0303ec00-ce81-4d99-9ff7-f8172ca064ef"
+		sx="322"
+		sy="221"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c5b72252-a6be-4700-9f64-6ad89ebb4bac"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="299,214,113,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-tab-inner x-tab-inner-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:injuryTab-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Descripción de lesiones
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-tab-inner x-tab-inner-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]//span[@innertext='Descripción de lesiones']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="8f7be45a-996c-4e46-a926-fb2a669c9931">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7661a6c4-9615-4b00-b0da-6c79aead7005"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="23492e0d-36a3-4064-9a40-c73b10518e56"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="146,217,122,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:1
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Descripción de lesiones
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripción de lesiones']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="85ec837a-7ffa-45d5-9dcc-84c6ba88dcea"
+		sx="213"
+		sy="326"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c3d21fbb-0b0d-4959-9f10-a5e508224906"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="175,302,120,39"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Calidad o medio de transporte de la víctima
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-item-label-inner x-form-item-label-inner-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr[2]//table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/?/?/label/span[@innertext&gt;'Calidad o medio de transporte']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="026174fd-30a8-4874-9c7d-986e2b029e3e">
+				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
+TT/rV/3T/SnU0/61f90/0oA//9k=
+			</helperscreenshot>
+		</mouseitem>
+		<keyitem
+		action="Press"
+		data="A, Control"
+		duration="20ms"
+		enabled="False"
+		numLock="False"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="26720c97-3ca6-4072-9b04-051bfc06c73d"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c3d21fbb-0b0d-4959-9f10-a5e508224906"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="299,341,123,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:MobilityTypeSura-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						&lt;ninguna&gt;
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:MobilityTypeSura
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						&lt;ninguna&gt;
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input
+				</path>
+			</info>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="Peatón"
+		duration="20ms"
+		enabled="False"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="ee91b8b7-9952-444f-825c-c538a1809be7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c3d21fbb-0b0d-4959-9f10-a5e508224906"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="250,270,103,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:MobilityTypeSura-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						Peatón
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:MobilityTypeSura
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						Peatón
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="20ms"
+		enabled="False"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="c5441700-752b-4823-bec8-e7d6f9e8236a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c3d21fbb-0b0d-4959-9f10-a5e508224906"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="250,270,103,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:MobilityTypeSura-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						Peatón
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:MobilityTypeSura
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						Peatón
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input
+				</path>
+			</info>
+		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
+		searchpropertyid="6eeb4446-a045-425d-b2ce-8a8cfb6bb700"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2168dc0d-ed61-4f47-a31b-b6001fbe0ae9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c65ecf70-30df-41b5-b6bb-de3a8392b2ed"
+		sx="285"
+		sy="346"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ca6008b6-889b-42b4-9274-7f698ff94f41"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="280,341,10,10"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-radio x-form-radio-default x-form-cb x-form-cb-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:InjuryIncidentSuraInputSet:AmbulanceUsed_false-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-cb x-form-cb-default x-form-field x-form-radio x-form-radio-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="tabindex"
+					type="System.String">
+						-1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="hidefocus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6eeb4446-a045-425d-b2ce-8a8cfb6bb700"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2168dc0d-ed61-4f47-a31b-b6001fbe0ae9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1ce4bfe4-47d3-47af-bc53-237682b8121b"
+		sx="632"
+		sy="342"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="270aca79-1a8e-4d58-b06a-8a0897f64db5"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="623,324,22,38"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						47
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://ssurgwsoadev4.opc.oracleoutsourcing.com/cc/resources/themes/theme-9/resources/images/app/giacc/body/none/1-1.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						27
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr[2]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div[1]/?/?/table/tbody/tr/td[2]/a[@href='javascript:void(0)']/img[@src='https://ssurgwsoadev4.opc.oracleoutsourcing.com/cc/resources/themes/theme-9/resources/images/app/giacc/body/none/1-1.png']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="ded0a295-009e-4424-952b-0caf220affe4">
+				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
+OULf3mJ/Wnuu9GU9ximwf6hP90Gn0AMhYvBG56soJp9R23/HrF/uD+VSUAFFFFABRRRQA1PvP/vf
+0FOpqfef/e/oKdQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBHccIrf3WBqSk
+dQ6FT0IxTYWLxAn7w4b6jrQAkn+siH+0T+lEH3CPRm/nQebgD+6ufz//AFUR8SSL75/OgB7NtUse
+wzTYF2QovcDn60k5yFTu5x+HepKACiiigAooooAKKKKACiiigAqNuJ0PqCv9akqO4B8vcBkod35U
+ASVGOZ5PZQP51ICCAQcg9Kjh5aRvVsflxQAsH+oT2GKJziFsdSMD8aSDhWX+6xH9f60kh3TRxj/e
+P0HT9f5UASgYAA6CiiigAooooAKKKKAGp95/97+gp1NT7z/739BTqACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACo1BSduDtcZ+hqSmO5WSNR0YkH8qABQftDnBxtXn8TQAfPc44K
+rz+Jpdx84p225oViZXXsuKAGqCZmYjoNo/rUlNjYupJxwxH5GnUAFFFFABRRRQAUUUUAFFFFABRR
+RQBHCCilMHCnj6UQAqhBGPnY/wDjxpQx84pxjaCP1pY2Lbs9mIoAbGCHlJB5fj/vkURAku7AgscD
+PoKcjFmcHHytgfkD/WkhcyQo5xllB4oAfRRRQAUUUUAFFFFADU+8/wDvf0FOpqD5n9z/AEFOoAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKjPzXA/wBgHP1NSHkEA4PrUSJJEuF2
+tzkkkgn+dACvxNG3rlf6/wBKIOQzd2Y/px/SgK7SKzhQF6AHP9KAsiFtoUqTkZbH9KACP5XkT33D
+6GpKiKSOQW2oQeCuSaloAKKKKACiiigAooooAKKKKACiiigCKL52M3ZgAv055/WljOHkXvuz+lAR
+4xiMgqOit2/GlRG3l3IyRjA6CgBIed79mbI/ID+lJAdgEJGCgGPcdqVVkRQqlSBwCRSom1izHcx4
+zQA+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6eeb4446-a045-425d-b2ce-8a8cfb6bb700"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2168dc0d-ed61-4f47-a31b-b6001fbe0ae9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
+		searchpropertyid="c22e89c9-0d33-4547-9aff-03d0c43b5cf9"
+		waitaction="Exists"
+		waittimeout="40000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b0ece67-dc68-4bde-8c83-b784c446d746"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="2"
+				prefcap="divtag"
+				rect="247,543,1112,17"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-panel-body x-grid-with-col-lines x-grid-with-row-lines x-grid-body x-panel-body-default x-layout-fit x-panel-body-default x-panel-default-outer-border-rbl
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewInjuryIncidentPopup:NewInjuryIncidentScreen:Inj:PSC_BodilyInjuryPanelSet:PSC_BodyInjuryLV-body
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-grid-body x-grid-with-col-lines x-grid-with-row-lines x-layout-fit x-panel-body x-panel-body-default x-panel-body-default x-panel-default-outer-border-rbl
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr/td[2]/div/div[3]
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8526dbf4-8c64-42a5-9e0c-7ec033bc8f97"
+		sx="197"
+		sy="189"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="095dc31d-7f40-4650-a936-f1d5cd82bbf8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="176,183,42,12"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NewClaimWizard_NewExposurePopup:NewClaimWizard_ExposurePageScreen:Update-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Aceptar
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="3c6ba7db-ee57-4609-bfb2-d66f96873ebe"
+		waitaction="Exists"
+		waittimeout="15000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ca83115d-fd6b-4833-98cc-edfa58b6fedc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="20;5"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="608437d0-9ec1-4d50-967e-c497334fbfd5"
+		sx="193"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b02a0a70-76ee-442f-9c88-3d307b36ff94"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="85149852-4e4f-49dc-ba56-624ff2784241"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cec9a062-c411-4cf9-a674-74647c305021"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="175,149,337,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_AssignSaveScreen:ttlBar
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Paso 5 de 5: Guardar y asignar siniestro
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						g-title
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 5']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="7ccddcf0-002f-42bf-842d-409f47aa843f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
+				</path>
+			</info>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c36e6f9b-b435-44af-8b45-781a832e98b8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="84859e2a-2379-40d7-8a2d-bdba7bf55aaf"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Volver']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
+		searchpropertyid="a8a24ee7-adaf-4ff7-b8b6-2bdadf7ff87c"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a3dc6c0-e0c6-4fff-87b3-f743f6afc874"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
+	name="SuraClaimsRepository"
+	relativepath="..\SuraClaimsRepository.rxrep">
+		<codegen
+		classname="SuraClaimsRepository"
+		namespace="SuraClaims">
+		</codegen>
+		<rootfolder
+		id="e236aa5f-717e-474a-818d-ab73ab951257"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DescripcionLesiones_UBER.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
