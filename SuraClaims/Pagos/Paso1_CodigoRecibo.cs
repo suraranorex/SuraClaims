@@ -89,19 +89,18 @@ namespace SuraClaims.Pagos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.CodTextoRecibo' at Center.", repo.SuraClaims.InformacionPagoSiniestro.CodTextoReciboInfo, new RecordItemIndex(0));
-            repo.SuraClaims.InformacionPagoSiniestro.CodTextoRecibo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.arrow_SelectCodTextoRecibo' at CenterRight.", repo.SuraClaims.InformacionPagoSiniestro.arrow_SelectCodTextoReciboInfo, new RecordItemIndex(0));
+            repo.SuraClaims.InformacionPagoSiniestro.arrow_SelectCodTextoRecibo.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.txt_CodigoRecibo'", repo.SuraClaims.InformacionPagoSiniestro.txt_CodigoReciboInfo, new ActionTimeout(30000), new RecordItemIndex(1));
-            //repo.SuraClaims.InformacionPagoSiniestro.txt_CodigoReciboInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(3));
-            repo.SuraClaims.Generales.bttn_Siguiente.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_CodTextoRecibo' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_CodTextoReciboInfo, new RecordItemIndex(1));
+            repo.SuraClaims.InformacionPagoSiniestro.option_CodTextoRecibo.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.txt_CodigoRecibo'", repo.SuraClaims.InformacionPagoSiniestro.txt_CodigoReciboInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.SuraClaims.InformacionPagoSiniestro.txt_CodigoReciboInfo.WaitForExists(30000);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(3));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(4));
             repo.SuraClaims.Generales.bttn_Siguiente.Click();

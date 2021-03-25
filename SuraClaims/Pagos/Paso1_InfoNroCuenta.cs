@@ -54,18 +54,6 @@ namespace SuraClaims.Pagos
 
 #region Variables
 
-        string _Banco;
-
-        /// <summary>
-        /// Gets or sets the value of variable Banco.
-        /// </summary>
-        [TestVariable("639d2980-c0b5-4a42-849e-a963b3214514")]
-        public string Banco
-        {
-            get { return _Banco; }
-            set { _Banco = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
         /// </summary>
@@ -74,6 +62,16 @@ namespace SuraClaims.Pagos
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Banco.
+        /// </summary>
+        [TestVariable("639d2980-c0b5-4a42-849e-a963b3214514")]
+        public string Banco
+        {
+            get { return repo.Banco; }
+            set { repo.Banco = value; }
         }
 
 #endregion
@@ -102,71 +100,65 @@ namespace SuraClaims.Pagos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SuraClaims.InformacionPagoSiniestro.lbl_SeleccionarCuenta'.", repo.SuraClaims.InformacionPagoSiniestro.lbl_SeleccionarCuentaInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.SuraClaims.InformacionPagoSiniestro.lbl_SeleccionarCuentaInfo);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SuraClaims.InformacionPagoSiniestro.lbl_SeleccionarCuenta'.", repo.SuraClaims.InformacionPagoSiniestro.lbl_SeleccionarCuentaInfo, new RecordItemIndex(0));
+            //Validate.Exists(repo.SuraClaims.InformacionPagoSiniestro.lbl_SeleccionarCuentaInfo);
+            //Delay.Milliseconds(0);
             
             // Error: No tiene CBU cargado.
             //Report.Log(ReportLevel.Info, "User", "", new RecordItemIndex(1));
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoOblig'.", repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoObligInfo, new RecordItemIndex(2));
-            //Validate.Exists(repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoObligInfo);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuenta'.", repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuentaInfo, new RecordItemIndex(2));
+            //Validate.Exists(repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuentaInfo);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txt_BancoEmisorSugerido' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txt_BancoEmisorSugeridoInfo, new RecordItemIndex(3));
-            repo.SuraClaims.InformacionPagoSiniestro.txt_BancoEmisorSugerido.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.input_BancoEmisorSugerido' at Center.", repo.SuraClaims.InformacionPagoSiniestro.input_BancoEmisorSugeridoInfo, new RecordItemIndex(3));
+            repo.SuraClaims.InformacionPagoSiniestro.input_BancoEmisorSugerido.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculasInfo, new RecordItemIndex(4));
-            repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_tipo' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_tipoInfo, new RecordItemIndex(4));
+            repo.SuraClaims.Motor.InformacionBasica.option_tipo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisor'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisorInfo, new ActionTimeout(30000), new RecordItemIndex(5));
-            repo.SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisorInfo.WaitForNotExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePago' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePagoInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePago' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePagoInfo, new RecordItemIndex(5));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePago.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoOblig' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoObligInfo, new RecordItemIndex(7));
-            //repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoOblig.Click();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisor'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisorInfo, new ActionTimeout(30000), new RecordItemIndex(6));
+            repo.SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelecBancoEmisorInfo.WaitForNotExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuenta' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuentaInfo, new RecordItemIndex(7));
+            repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuenta.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.InformacionPagoSiniestro.lbl_Banco' and assigning the part of its value captured by '[A-Z.]+' to variable 'Banco'.", repo.SuraClaims.InformacionPagoSiniestro.lbl_BancoInfo, new RecordItemIndex(8));
             Banco = repo.SuraClaims.InformacionPagoSiniestro.lbl_Banco.Element.GetAttributeValueText("InnerText", new Regex("[A-Z.]+"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoOblig' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoObligInfo, new RecordItemIndex(9));
-            repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoOblig.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuenta' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuentaInfo, new RecordItemIndex(9));
+            repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuenta.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Banco' with focus on 'SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoOblig'.", repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoObligInfo, new RecordItemIndex(10));
-            repo.SuraClaims.InformacionPagoSiniestro.txt_SeleccionarCuenta_CampoOblig.PressKeys(Banco);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(10));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_Banco' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_BancoInfo, new RecordItemIndex(11));
+            repo.SuraClaims.Motor.InformacionBasica.option_Banco.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txt_SeleccionarCuenta_CampoOblig'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txt_SeleccionarCuenta_CampoObligInfo, new ActionTimeout(30000), new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Banco' with focus on 'SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuenta'.", repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuentaInfo, new RecordItemIndex(12));
+            //repo.SuraClaims.InformacionPagoSiniestro.txtbox_SeleccionarCuenta.PressKeys(Banco);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txt_SeleccionarCuenta_CampoOblig'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txt_SeleccionarCuenta_CampoObligInfo, new ActionTimeout(30000), new RecordItemIndex(13));
             repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txt_SeleccionarCuenta_CampoObligInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.ArrowSelectCuenta' at CenterRight.", repo.SuraClaims.InformacionPagoSiniestro.ArrowSelectCuentaInfo, new RecordItemIndex(12));
-            //repo.SuraClaims.InformacionPagoSiniestro.ArrowSelectCuenta.Click(Location.CenterRight);
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.InformacionPagoSiniestro.OptionSelectCuenta' at Center.", repo.SuraClaims.InformacionPagoSiniestro.OptionSelectCuentaInfo, new RecordItemIndex(13));
-            //repo.SuraClaims.InformacionPagoSiniestro.OptionSelectCuenta.MoveTo();
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.OptionSelectCuenta' at Center.", repo.SuraClaims.InformacionPagoSiniestro.OptionSelectCuentaInfo, new RecordItemIndex(14));
-            //repo.SuraClaims.InformacionPagoSiniestro.OptionSelectCuenta.Click();
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelectCuenta'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelectCuentaInfo, new ActionTimeout(30000), new RecordItemIndex(15));
-            //repo.SuraClaims.InformacionPagoSiniestro.Copy_of_OptionSelectCuentaInfo.WaitForNotExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePago' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePagoInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePago' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePagoInfo, new RecordItemIndex(14));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_MetodoDePago.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(17));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(15));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Siguiente' at Center.", repo.SuraClaims.Generales.bttn_SiguienteInfo, new RecordItemIndex(16));
             repo.SuraClaims.Generales.bttn_Siguiente.Click();
             Delay.Milliseconds(0);
             

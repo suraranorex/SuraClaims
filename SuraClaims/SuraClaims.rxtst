@@ -1984,26 +1984,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="b0d8c345-02ad-4bcd-8562-5c383872be86"
-			name="Paso1_MetodoDePago_Cheque"
-			ref="c0b02d8a-2161-45ef-b655-21a3ee6be00f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="MetodoPagoSiniestro"
-					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
-					variableid="f9e2b5d0-2026-42b8-a17f-34b440a3ba90"
-					variablename="MetodoPagoSiniestro">
-					</var>
-				</databinding>
-			</testmodule>
 			<setup
 			id="b2e57b6d-76e4-4b41-99a1-bf9d4816b9b1"
 			name="setup">
@@ -2355,26 +2335,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="e4cf44d0-927e-40d2-b488-3daa7b6e0bf6"
-			name="Paso1_MetodoDePago_Transferencia"
-			ref="828ee31a-a7bf-43c3-9ef1-892738b405d3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-					<var
-					dataname="MetodoPagoSiniestro"
-					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
-					variableid="f9e2b5d0-2026-42b8-a17f-34b440a3ba90"
-					variablename="MetodoPagoSiniestro">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="e601d90a-3038-40d0-8548-040cec9a8c07"
 			name="BuscarPoliza"
 			ref="f0a9b559-4a41-43d2-b8ae-bc0f08f4e071"
@@ -2504,7 +2464,7 @@
 			</testmodule>
 			<testmodule
 			id="f019d52f-2faa-4d40-8ed9-73981a50a7ce"
-			name="MenuSuperiorBuscaSiniestro"
+			name="MenuSuperior_BuscarSiniestro"
 			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
 			type="Recording">
 				<databinding>
@@ -2579,7 +2539,7 @@
 			</testmodule>
 			<testmodule
 			id="f36a71a2-e57d-43ce-976d-a3601d644ee6"
-			name="MenuLateralAcciones"
+			name="MenuLateralAcciones_OrdenDePago"
 			ref="e03b9180-4e01-4a9d-bcc7-fd2499bc0aee"
 			type="Recording">
 				<databinding>
@@ -3251,11 +3211,11 @@
 						</setup>
 						<testmodule
 						id="f019d52f-2faa-4d40-8ed9-73981a50a7ce"
-						name="MenuSuperiorBuscaSiniestro">
+						name="MenuSuperior_BuscarSiniestro">
 						</testmodule>
 						<testmodule
 						id="f36a71a2-e57d-43ce-976d-a3601d644ee6"
-						name="MenuLateralAcciones">
+						name="MenuLateralAcciones_OrdenDePago">
 						</testmodule>
 						<testmodule
 						id="a8ff0871-e1fc-4c54-bc9c-400d9e446852"
@@ -3265,10 +3225,6 @@
 						id="569181f3-2976-4be8-ac1f-332f09fab645"
 						name="Cheque">
 							<testmodule
-							id="b0d8c345-02ad-4bcd-8562-5c383872be86"
-							name="Paso1_MetodoDePago_Cheque">
-							</testmodule>
-							<testmodule
 							id="03551164-1e02-4779-82f0-b484e2ce720c"
 							name="Paso1_CodigoRecibo">
 							</testmodule>
@@ -3276,10 +3232,6 @@
 						<smartfoldernode
 						id="0838144c-6ecf-41be-ad50-c922fb2e404f"
 						name="Transferencia">
-							<testmodule
-							id="e4cf44d0-927e-40d2-b488-3daa7b6e0bf6"
-							name="Paso1_MetodoDePago_Transferencia">
-							</testmodule>
 							<testmodule
 							id="73b7ece1-5f3b-4f37-8e99-62fa72c7bf5a"
 							name="Paso1_InfoNroCuenta">
@@ -3315,7 +3267,7 @@
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"

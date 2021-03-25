@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.Menu
 {
-    public partial class MenuSuperiorBuscaSiniestro
+    public partial class MenuSuperior_BuscarSiniestro
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

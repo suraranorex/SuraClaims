@@ -30,6 +30,30 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
+		loc="CenterRight"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="eb51d271-608b-4b33-97ed-f72a16c29c67"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2ba02e26-bdc8-4b6a-9a9b-9521e92ce65d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:ReceiptTextCodeSura-trigger-picker']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -50,7 +74,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="3296c033-fe22-4e42-a2be-d6a6702adb36"
 		waitaction="Exists"
@@ -67,39 +91,26 @@ mode="Global">
 				</path>
 			</info>
 		</WaitForRecordItem>
-		<explicitdelayitem
-		duration="3000ms"
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
 		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<mouseitem
-		action="Move"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		message=""
 		optional="False"
-		searchpropertyid="a84f50dd-ce16-4d6b-9120-968753cad3ae"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		reportlevel="Info;20"
+		searchpropertyid="f7ee359a-ede9-47a0-b374-ebbe88b18679">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="c3298ed5-b4f7-43b3-ae07-971152ae3f41"
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Siguiente']
+					/dom[@domain=$Ambiente]
 				</path>
 			</info>
-		</mouseitem>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

@@ -89,8 +89,18 @@ namespace SuraClaims.Pagos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_FinalizaPago'", repo.SuraClaims.InformacionPagoSiniestro.lbl_FinalizaPagoInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Motor.InformacionSiniestro.bttn_Finalizar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_FinalizarInfo, new RecordItemIndex(0));
+            //repo.SuraClaims.Motor.InformacionSiniestro.bttn_Finalizar.MoveTo();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Finalizar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_FinalizarInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Finalizar.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_FinalizaPago'", repo.SuraClaims.InformacionPagoSiniestro.lbl_FinalizaPagoInfo, new ActionTimeout(30000), new RecordItemIndex(2));
             repo.SuraClaims.InformacionPagoSiniestro.lbl_FinalizaPagoInfo.WaitForExists(30000);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(3));
             
         }
 

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.Menu
 {
-    public partial class MenuLateralAcciones
+    public partial class MenuLateralAcciones_OrdenDePago
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

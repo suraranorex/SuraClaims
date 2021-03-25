@@ -24,22 +24,22 @@ namespace SuraClaims.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuSuperiorBuscaSiniestro recording.
+    ///The MenuSuperior_BuscarSiniestro recording.
     /// </summary>
     [TestModule("978722ac-1e26-4ea1-a445-53ce8454bf4f", ModuleType.Recording, 1)]
-    public partial class MenuSuperiorBuscaSiniestro : ITestModule
+    public partial class MenuSuperior_BuscarSiniestro : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static MenuSuperiorBuscaSiniestro instance = new MenuSuperiorBuscaSiniestro();
+        static MenuSuperior_BuscarSiniestro instance = new MenuSuperior_BuscarSiniestro();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuSuperiorBuscaSiniestro()
+        public MenuSuperior_BuscarSiniestro()
         {
             NroSiniestro = "0420172007039";
         }
@@ -47,7 +47,7 @@ namespace SuraClaims.Menu
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuSuperiorBuscaSiniestro Instance
+        public static MenuSuperior_BuscarSiniestro Instance
         {
             get { return instance; }
         }
@@ -106,23 +106,27 @@ namespace SuraClaims.Menu
             repo.SuraClaims.Generales.MenuSuperior.bttnMenu_Siniestro.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuSuperior.MenuSup_NºDeSiniestro' at Center.", repo.SuraClaims.Generales.MenuSuperior.MenuSup_NºDeSiniestroInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Generales.MenuSuperior.MenuSup_NºDeSiniestro.MoveTo();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuSuperior.MenuSup_NºDeSiniestro' at Center.", repo.SuraClaims.Generales.MenuSuperior.MenuSup_NºDeSiniestroInfo, new RecordItemIndex(1));
+            //repo.SuraClaims.Generales.MenuSuperior.MenuSup_NºDeSiniestro.MoveTo();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro' at Center.", repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestroInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro' at Center.", repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestroInfo, new RecordItemIndex(2));
+            //repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro.Click();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NroSiniestro' with focus on 'SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro'.", repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestroInfo, new RecordItemIndex(3));
             repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro.PressKeys(NroSiniestro);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuSuperior.IconLupaBuscarSiniestro' at CenterRight.", repo.SuraClaims.Generales.MenuSuperior.IconLupaBuscarSiniestroInfo, new RecordItemIndex(4));
-            repo.SuraClaims.Generales.MenuSuperior.IconLupaBuscarSiniestro.Click(Location.CenterRight);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro'.", repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestroInfo, new RecordItemIndex(4));
+            repo.SuraClaims.Generales.MenuSuperior.txt_BuscarNroSiniestro.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestro'", repo.SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuSuperior.IconLupaBuscarSiniestro' at CenterRight.", repo.SuraClaims.Generales.MenuSuperior.IconLupaBuscarSiniestroInfo, new RecordItemIndex(5));
+            //repo.SuraClaims.Generales.MenuSuperior.IconLupaBuscarSiniestro.Click(Location.CenterRight);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestro'", repo.SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(6));
             repo.SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestroInfo.WaitForExists(30000);
             
         }

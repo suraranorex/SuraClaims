@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="MenuLateralAcciones"
+	classname="MenuLateralAcciones_OrdenDePago"
 	namespace="SuraClaims.Menu">
 	</codegen>
 	<variables>
@@ -114,7 +114,7 @@ mode="Global">
 		action="Move"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -158,6 +158,53 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b66a3c7c-cc80-48ef-ad63-aa5c446fe878"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dadf6a94-24c9-49b5-8d96-e548af3ca413"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,103,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir información']
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
@@ -174,7 +221,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		MenuLateralAcciones.UserCode.cs
+		MenuLateralAcciones_OrdenDePago.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

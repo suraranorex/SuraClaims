@@ -33,6 +33,11 @@ mode="Global">
 		name="CausaPago">
 			1-INDEMNIZACION
 		</var>
+		<var
+		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
+		name="Ambiente">
+			preproducciongestion.segurossura.com.ar
+		</var>
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
@@ -70,10 +75,147 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="3dc91bca-1b05-42ca-ab04-80007792efee"
+			id="8d2ba8b4-903b-4fc1-a4b7-ef3a29c5f02f"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="375,277,151,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default &#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-inputEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-form-field x-form-text x-form-text-default
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						(1.001) 1ª parteDaños o Incendio de vehículo - DANIEL RAMIREZ; Costo de siniestro/Indemnización
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						(1.001) 1ª parteDaños o Incendio de vehículo - DANIEL RAMIREZ; Costo de siniestro/Indemnización
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="componentid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input
 				</path>
 			</info>
 		</mouseitem>
@@ -211,7 +353,7 @@ mode="Global">
 		</WaitForRecordItem>
 		<explicitdelayitem
 		duration="5000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -222,7 +364,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -243,7 +385,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="300ms"
+		duration="1000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -371,7 +513,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -393,7 +535,7 @@ mode="Global">
 		</mouseitem>
 		<explicitdelayitem
 		duration="5000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -564,24 +706,6 @@ mode="Global">
 				</path>
 			</info>
 		</keysequenceitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="c4f82fe5-8658-4d48-ab38-519568bef2e5"
-		waitaction="NotExists"
-		waittimeout="50000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="0e0777ef-a765-4c91-a3db-be9d7e084448"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td' and @data-tabindexsaved='True']/div
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -606,63 +730,53 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c4f82fe5-8658-4d48-ab38-519568bef2e5"
+		waitaction="NotExists"
+		waittimeout="50000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0e0777ef-a765-4c91-a3db-be9d7e084448"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td' and @data-tabindexsaved='True']/div
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="dbd8b72b-c8e7-4111-8e1b-5da520291f18">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
 		<explicitdelayitem
 		duration="3000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<mouseitem
-		action="Move"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="2ff5d90c-ec06-4a74-af1c-9011464673ca"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bb49d13e-2294-4dc7-9464-3ef232593876"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="c8029bc1-086c-407e-b68e-b541673c2328"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bb49d13e-2294-4dc7-9464-3ef232593876"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
-				</path>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

@@ -24,29 +24,29 @@ namespace SuraClaims.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLateralAcciones recording.
+    ///The MenuLateralAcciones_OrdenDePago recording.
     /// </summary>
     [TestModule("e03b9180-4e01-4a9d-bcc7-fd2499bc0aee", ModuleType.Recording, 1)]
-    public partial class MenuLateralAcciones : ITestModule
+    public partial class MenuLateralAcciones_OrdenDePago : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static MenuLateralAcciones instance = new MenuLateralAcciones();
+        static MenuLateralAcciones_OrdenDePago instance = new MenuLateralAcciones_OrdenDePago();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLateralAcciones()
+        public MenuLateralAcciones_OrdenDePago()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLateralAcciones Instance
+        public static MenuLateralAcciones_OrdenDePago Instance
         {
             get { return instance; }
         }
@@ -93,13 +93,16 @@ namespace SuraClaims.Menu
             repo.SuraClaims.Generales.MenuLateral.MenuLateralAcciones.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePagoInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePago.MoveTo();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePagoInfo, new RecordItemIndex(1));
+            //repo.SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePago.MoveTo();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePagoInfo, new RecordItemIndex(2));
             repo.SuraClaims.Generales.MenuLateral.SubMenuLateLiquiOrdenDePago.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestro'", repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo.WaitForExists(30000);
             
         }
 

@@ -53,26 +53,6 @@ namespace SuraClaims.Pagos
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable Ambiente.
-        /// </summary>
-        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
-        public string Ambiente
-        {
-            get { return repo.Ambiente; }
-            set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable MetodoPagoSiniestro.
-        /// </summary>
-        [TestVariable("f9e2b5d0-2026-42b8-a17f-34b440a3ba90")]
-        public string MetodoPagoSiniestro
-        {
-            get { return repo.MetodoPagoSiniestro; }
-            set { repo.MetodoPagoSiniestro = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -101,18 +81,6 @@ namespace SuraClaims.Pagos
 
             // Método Pago Cheque
             Report.Log(ReportLevel.Info, "Section", "Método Pago Cheque", new RecordItemIndex(0));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.OptionMetodoPagoSiniestro' at Center.", repo.SuraClaims.InformacionPagoSiniestro.OptionMetodoPagoSiniestroInfo, new RecordItemIndex(1));
-            repo.SuraClaims.InformacionPagoSiniestro.OptionMetodoPagoSiniestro.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.OptionMetodoPagoSiniestro' at Center.", repo.SuraClaims.InformacionPagoSiniestro.OptionMetodoPagoSiniestroInfo, new RecordItemIndex(2));
-            repo.SuraClaims.InformacionPagoSiniestro.OptionMetodoPagoSiniestro.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.ArrowSelectCodTextoRecibo' at CenterRight.", repo.SuraClaims.InformacionPagoSiniestro.ArrowSelectCodTextoReciboInfo, new RecordItemIndex(3));
-            repo.SuraClaims.InformacionPagoSiniestro.ArrowSelectCodTextoRecibo.Click(Location.CenterRight);
-            Delay.Milliseconds(0);
             
         }
 

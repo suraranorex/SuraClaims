@@ -25,6 +25,54 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2ff5d90c-ec06-4a74-af1c-9011464673ca"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bb49d13e-2294-4dc7-9464-3ef232593876"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c8029bc1-086c-407e-b68e-b541673c2328"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bb49d13e-2294-4dc7-9464-3ef232593876"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
+				</path>
+			</info>
+		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -43,6 +91,26 @@ mode="Global">
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="f14f9895-18b9-4a35-82e3-0e097b0a6064">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

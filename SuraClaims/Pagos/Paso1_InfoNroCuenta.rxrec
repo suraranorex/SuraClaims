@@ -32,7 +32,7 @@ mode="Global">
 	<recorditems>
 		<validationitem
 		action="Exists"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="9a860edf-497c-4496-8e5b-30b5ccf97234">
 			<comment>
@@ -130,10 +130,34 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="ca3761bf-98e3-496e-9511-778773b271f2"
+			id="1f9b56b2-ba34-4a15-88ea-300bc57c8425"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z][a-z]+']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ab2195ec-8b37-45d1-a48d-0e797fb7dbe0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d917e759-918d-4fd7-9f15-4a6c094b06f4"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Método de pago']
 				</path>
 			</info>
 		</mouseitem>
@@ -160,30 +184,6 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="ab2195ec-8b37-45d1-a48d-0e797fb7dbe0"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d917e759-918d-4fd7-9f15-4a6c094b06f4"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Método de pago']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -426,10 +426,43 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="06c2a329-7c4b-4258-ac4b-72cc75289ae1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7a665bc3-fc08-469a-9435-3a79f707b740"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//li[@innertext=$Banco]
+				</path>
+			</info>
+		</mouseitem>
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="f4b29072-471a-4dbf-9185-32a7f13bf6d5">
@@ -608,96 +641,6 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
-		loc="CenterRight"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="2064d7e5-dbe8-4ec2-9153-83acbd84d1d5"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="205ad05b-2c04-4317-a0ec-0d288e3ef67b"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords-trigger-picker']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Move"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="ea1448bb-5f26-4540-b965-9944d1da0427"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9bfffe42-edcf-4758-96e1-0dfc404e760a"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="67fc6617-f162-4d12-8671-067807a67664"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9bfffe42-edcf-4758-96e1-0dfc404e760a"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
-				</path>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="False"
-		optional="False"
-		searchpropertyid="f3dc426e-8f65-4d93-86c1-fa1bcc4e9096"
-		waitaction="NotExists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="cf4926e3-f653-477a-871c-838c750d18cf"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']
-				</path>
-			</info>
-		</WaitForRecordItem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
@@ -718,6 +661,26 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="f150d53d-8301-4f11-82d6-b6f76bf1d83a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="MenuSuperiorBuscaSiniestro"
+	classname="MenuSuperior_BuscarSiniestro"
 	namespace="SuraClaims.Menu">
 	</codegen>
 	<variables>
@@ -158,7 +158,7 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 		action="Move"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -182,7 +182,7 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -225,11 +225,30 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				</path>
 			</info>
 		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="9ae13710-a755-4a83-8570-e8235ad3c1e7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2f0e0337-0eee-4be9-9561-963ac57aa818"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']
+				</path>
+			</info>
+		</keysequenceitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="CenterRight"
 		movetime="300ms"
 		optional="False"
@@ -283,7 +302,7 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		MenuSuperiorBuscaSiniestro.UserCode.cs
+		MenuSuperior_BuscarSiniestro.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

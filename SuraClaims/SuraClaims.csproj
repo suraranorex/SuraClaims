@@ -426,14 +426,14 @@
       <UserCode>true</UserCode>
       <BoundTo>970ff8c2-4453-4e9e-927f-00b36437beee</BoundTo>
     </Compile>
-    <Compile Include="Menu\MenuLateralAcciones.cs">
-      <DependentUpon>MenuLateralAcciones.rxrec</DependentUpon>
+    <Compile Include="Menu\MenuLateralAcciones_OrdenDePago.cs">
+      <DependentUpon>MenuLateralAcciones_OrdenDePago.rxrec</DependentUpon>
       <id>67bc5966-aa01-43a1-a7ba-b036d6e93612</id>
       <RecorderCode>true</RecorderCode>
       <BoundTo>aca3c897-cf2d-4847-b92e-a659e4100ed6</BoundTo>
     </Compile>
-    <Compile Include="Menu\MenuLateralAcciones.UserCode.cs">
-      <DependentUpon>MenuLateralAcciones.rxrec</DependentUpon>
+    <Compile Include="Menu\MenuLateralAcciones_OrdenDePago.UserCode.cs">
+      <DependentUpon>MenuLateralAcciones_OrdenDePago.rxrec</DependentUpon>
       <id>34d6a97c-0036-4c97-99e9-ddf7967eae82</id>
       <UserCode>true</UserCode>
       <BoundTo>aca3c897-cf2d-4847-b92e-a659e4100ed6</BoundTo>
@@ -450,14 +450,14 @@
       <UserCode>true</UserCode>
       <BoundTo>fda1cd54-aece-40c9-81dc-e439057cfb3e</BoundTo>
     </Compile>
-    <Compile Include="Menu\MenuSuperiorBuscaSiniestro.cs">
-      <DependentUpon>MenuSuperiorBuscaSiniestro.rxrec</DependentUpon>
+    <Compile Include="Menu\MenuSuperior_BuscarSiniestro.cs">
+      <DependentUpon>MenuSuperior_BuscarSiniestro.rxrec</DependentUpon>
       <id>37ed9797-3db3-49b5-8b49-a28e3b69b4cc</id>
       <RecorderCode>true</RecorderCode>
       <BoundTo>081dcd80-7ca8-46a1-828a-e667509adc59</BoundTo>
     </Compile>
-    <Compile Include="Menu\MenuSuperiorBuscaSiniestro.UserCode.cs">
-      <DependentUpon>MenuSuperiorBuscaSiniestro.rxrec</DependentUpon>
+    <Compile Include="Menu\MenuSuperior_BuscarSiniestro.UserCode.cs">
+      <DependentUpon>MenuSuperior_BuscarSiniestro.rxrec</DependentUpon>
       <id>5c4b549f-9f38-488f-a16b-e829438e5710</id>
       <UserCode>true</UserCode>
       <BoundTo>081dcd80-7ca8-46a1-828a-e667509adc59</BoundTo>
@@ -1070,7 +1070,7 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>425e1d90-507b-42f0-b118-db68031d891f</recordtableid>
     </None>
-    <None Include="Menu\MenuLateralAcciones.rxrec">
+    <None Include="Menu\MenuLateralAcciones_OrdenDePago.rxrec">
       <id>aca3c897-cf2d-4847-b92e-a659e4100ed6</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>e03b9180-4e01-4a9d-bcc7-fd2499bc0aee</recordtableid>
@@ -1080,7 +1080,7 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>5370da35-fa14-4882-9be6-a1a63f8f5b51</recordtableid>
     </None>
-    <None Include="Menu\MenuSuperiorBuscaSiniestro.rxrec">
+    <None Include="Menu\MenuSuperior_BuscarSiniestro.rxrec">
       <id>081dcd80-7ca8-46a1-828a-e667509adc59</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>978722ac-1e26-4ea1-a445-53ce8454bf4f</recordtableid>

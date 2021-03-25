@@ -432,6 +432,15 @@ name="SuraClaimsRepository">
 					<item
 					addcaps="unknown,webelement,litag"
 					capname="litag"
+					id="7a665bc3-fc08-469a-9435-3a79f707b740"
+					name="option_Banco"
+					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//li[@innertext=$Banco]
+					</item>
+					<item
+					addcaps="unknown,webelement,litag"
+					capname="litag"
 					id="6919e5a5-b357-4a6d-85f3-20cb9193c1a6"
 					name="optionLI_NombreAsegurado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
@@ -1230,6 +1239,16 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Volver']
 					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="27f4d44e-cee6-4ac8-b807-5e0ba63040d2"
+					name="NormalCreateCheckWizardCheckWizardChec"
+					refimgid="89468dc1-ec64-42c0-8082-654abdb90c3c"
+					refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[5]/td/div/div[2]/div/table/tbody/tr/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']
+					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']
 					</basepath>
@@ -1595,16 +1614,16 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="2ba02e26-bdc8-4b6a-9a9b-9521e92ce65d"
-				name="ArrowSelectCodTextoRecibo"
+				name="arrow_SelectCodTextoRecibo"
 				refimgid="f30ee912-6676-4d88-8dda-d6e27a3aaf7d"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:ReceiptTextCodeSura-trigger-picker']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id~'CheckPayeesScreen:NewCheckPayeeDV:ReceiptTextCodeSura-trigger-picker']
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="825d5cee-f40d-454a-96ec-18adb9f4e353"
-				name="CodTextoRecibo"
+				name="option_CodTextoRecibo"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'[0-9]+']
@@ -1616,13 +1635,13 @@ name="SuraClaimsRepository">
 				name="txt_CodigoRecibo"
 				refimgid="3e396979-1bf2-487d-8f80-4e0e5685207d"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//textarea[@innertext~'[A-Z][a-z]+']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Texto de recibo']/../..//textarea[@innertext~'[A-Z][a-z]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="3dc91bca-1b05-42ca-ab04-80007792efee"
-				name="ArrowSelectLineaReserva"
+				name="arrow_SelectLineaReserva"
 				refimgid="348f98e7-0e17-49f7-8420-cb298dca545a"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']
@@ -1631,7 +1650,7 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="8b36f745-0981-4400-9bcc-cfd4bded5cb4"
-				name="LineaReserva_Asegurado"
+				name="option_LineaReserva_Asegurado"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'1ª']
@@ -1643,7 +1662,16 @@ name="SuraClaimsRepository">
 				name="txtTipoPagoPaso2"
 				refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@value~'&lt;ninguna&gt;']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="8d2ba8b4-903b-4fc1-a4b7-ef3a29c5f02f"
+				name="txtbox_LineaReserva"
+				refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
@@ -1676,7 +1704,7 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="b78f5e07-19e6-4952-8c99-6d6669a8bae9"
-				name="CausaPago_Indemnizacion"
+				name="option_CausaPago"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~$CausaPago]
@@ -1685,7 +1713,7 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,litag"
 				capname="litag"
 				id="bf1219c2-1942-45fe-ae64-313e17c70c7a"
-				name="Copy_of_CausaPago_Indemnizacion"
+				name="Copy_of_option_CausaPago"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~$CausaPago and @data-tabindexsaved='True']
@@ -1748,10 +1776,10 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="f9a355e1-9c7b-4c3d-bac4-3438116ce4cd"
-				name="txt_BancoEmisorSugerido"
+				name="input_BancoEmisorSugerido"
 				refimgid="6b46bb2e-d3ed-4ef1-bbc1-530af644a591"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
@@ -1764,21 +1792,30 @@ name="SuraClaimsRepository">
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="a9be11b0-11ee-4f3d-970c-1c0fd4f83e34"
+				name="option_MayusMinus"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='[A-Z][a-z]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
 				capname="inputtag"
 				id="ee9d1cf0-ed3c-4055-83ca-b7fe21695297"
 				name="Copy_of_OptionSelecBancoEmisor"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input[@data-tabindexsaved='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="29bd6f78-50c1-4c60-aea8-d30219d36b97"
-				name="txt_SeleccionarCuenta_CampoOblig"
+				name="txtbox_SeleccionarCuenta"
 				refimgid="d576bb62-edc5-4d3c-962c-abe8e913a8b2"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1787,7 +1824,7 @@ name="SuraClaimsRepository">
 				name="Copy_of_txt_SeleccionarCuenta_CampoOblig"
 				refimgid="d576bb62-edc5-4d3c-962c-abe8e913a8b2"
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords' and @data-tabindexsaved='True']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input[@data-tabindexsaved='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -2638,7 +2675,7 @@ AAAASUVORK5CYII=
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
+			preproducciongestion.segurossura.com.ar
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"
@@ -2647,7 +2684,7 @@ AAAASUVORK5CYII=
 		<var
 		id="f9e2b5d0-2026-42b8-a17f-34b440a3ba90"
 		name="MetodoPagoSiniestro">
-			Cheque
+			Transferencia electrónica de fondos
 		</var>
 		<var
 		id="a2d5eee9-fb17-4618-ba38-ada13891d3bb"
@@ -2695,6 +2732,14 @@ AAAASUVORK5CYII=
 		<var
 		id="9c849daa-a7f3-445d-b9d7-1521b0728a90"
 		name="NombreLesionado">
+		</var>
+		<var
+		id="a8b4652c-674f-409b-ac72-0f199fb9210c"
+		name="Bando">
+		</var>
+		<var
+		id="fb8ecf96-5ed0-4e36-b992-7d7b80220c17"
+		name="Banco">
 		</var>
 	</variables>
 </repository>
