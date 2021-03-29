@@ -555,24 +555,6 @@ mode="Global">
 				</path>
 			</info>
 		</keysequenceitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="d9bfec00-7767-44ad-8749-05f8c9b76c0e"
-		waitaction="NotExists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="20ms"
@@ -729,6 +711,24 @@ mode="Global">
 				</path>
 			</info>
 		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="d9bfec00-7767-44ad-8749-05f8c9b76c0e"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -843,6 +843,24 @@ mRCGB3D52xnGM4zjpxQBYooooAKKKKACiiigBk3+rNJb/wCoT6Us3+rNJb/6hPpQA5Y1V2cZ3N1J
 JNI8KO2WByRg4YjI96fRQAUUUUAFFFFAH//Z
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="d9bfec00-7767-44ad-8749-05f8c9b76c0e"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

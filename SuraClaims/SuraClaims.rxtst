@@ -3267,7 +3267,7 @@
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="11"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -3821,7 +3821,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PagoSiniestro">
+	default="GenerarSiniestrosAP">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -3869,18 +3869,6 @@
 		</testconfiguration>
 		<testconfiguration
 		name="PagoSiniestro">
-			<testcontainer
-			id="0838144c-6ecf-41be-ad50-c922fb2e404f">
-			</testcontainer>
-			<testcontainer
-			id="569181f3-2976-4be8-ac1f-332f09fab645">
-			</testcontainer>
-			<testcontainer
-			id="58368d11-e725-4331-93f0-6f443d6c9119">
-			</testcontainer>
-			<testcontainer
-			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

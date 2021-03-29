@@ -195,18 +195,6 @@
       <UserCode>true</UserCode>
       <BoundTo>6a66819c-f316-4d26-aff8-60036a2ae020</BoundTo>
     </Compile>
-    <Compile Include="AP\InformacionSiniestro_AP_Uber.cs">
-      <DependentUpon>InformacionSiniestro_AP_Uber.rxrec</DependentUpon>
-      <id>02cad7f6-6168-4a5d-b63c-211df42da6a0</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>6ed9bce4-05e1-4bf8-9b9f-c36d20348d8d</BoundTo>
-    </Compile>
-    <Compile Include="AP\InformacionSiniestro_AP_Uber.UserCode.cs">
-      <DependentUpon>InformacionSiniestro_AP_Uber.rxrec</DependentUpon>
-      <id>7dcea15f-967a-4a35-9561-ad5504d260e3</id>
-      <UserCode>true</UserCode>
-      <BoundTo>6ed9bce4-05e1-4bf8-9b9f-c36d20348d8d</BoundTo>
-    </Compile>
     <Compile Include="AP\Informacion_Basica_AP.cs">
       <DependentUpon>Informacion_Basica_AP.rxrec</DependentUpon>
       <id>cab5c0d2-c5bb-4f94-ab9a-d8caae3af941</id>
@@ -498,54 +486,6 @@
       <UserCode>true</UserCode>
       <BoundTo>726d36fa-b477-49e7-98c2-2938a0944ebc</BoundTo>
     </Compile>
-    <Compile Include="Motor\AgregarDatosLesionesTercerosUBER.cs">
-      <DependentUpon>AgregarDatosLesionesTercerosUBER.rxrec</DependentUpon>
-      <id>386f2af8-dec5-4828-88e4-b5e00ac35734</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>519cf16a-26c9-41d8-ae8a-ebd1fa00c685</BoundTo>
-    </Compile>
-    <Compile Include="Motor\AgregarDatosLesionesTercerosUBER.UserCode.cs">
-      <DependentUpon>AgregarDatosLesionesTercerosUBER.rxrec</DependentUpon>
-      <id>bb954862-0ac2-431f-beb2-b48a0fa6d733</id>
-      <UserCode>true</UserCode>
-      <BoundTo>519cf16a-26c9-41d8-ae8a-ebd1fa00c685</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Cerradura.cs">
-      <DependentUpon>Cerradura.rxrec</DependentUpon>
-      <id>1e2692d3-3be7-478e-9b14-d3bb521ae879</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>48662179-9fae-445d-9826-9961f4486718</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Cerradura.UserCode.cs">
-      <DependentUpon>Cerradura.rxrec</DependentUpon>
-      <id>5b292bab-5f40-4e6f-b87f-3a2dab065e10</id>
-      <UserCode>true</UserCode>
-      <BoundTo>48662179-9fae-445d-9826-9961f4486718</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Cristales.cs">
-      <DependentUpon>Cristales.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>8478c55e-7647-4053-9b57-01d5326bcc71</id>
-      <BoundTo>bf36a936-277c-4e55-b40f-3132887fced6</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Cristales.UserCode.cs">
-      <DependentUpon>Cristales.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>0630e4be-6e9d-47a3-b7d3-7b7dc4bc7d02</id>
-      <BoundTo>bf36a936-277c-4e55-b40f-3132887fced6</BoundTo>
-    </Compile>
-    <Compile Include="Motor\DatosFastTrack.cs">
-      <DependentUpon>DatosFastTrack.rxrec</DependentUpon>
-      <id>9231f199-c348-42d9-99c4-a4929c4e1931</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>7d318871-1626-4e06-9160-3c36cd1629a5</BoundTo>
-    </Compile>
-    <Compile Include="Motor\DatosFastTrack.UserCode.cs">
-      <DependentUpon>DatosFastTrack.rxrec</DependentUpon>
-      <id>d2e75646-9a5f-4ed1-8fa7-c28674b09c64</id>
-      <UserCode>true</UserCode>
-      <BoundTo>7d318871-1626-4e06-9160-3c36cd1629a5</BoundTo>
-    </Compile>
     <Compile Include="Motor\DatosProveedor.cs">
       <DependentUpon>DatosProveedor.rxrec</DependentUpon>
       <id>70c2e54e-cf0c-4077-ae6e-b1c4d6475509</id>
@@ -557,18 +497,6 @@
       <id>a3f274f8-a449-4e89-8086-7f6140638397</id>
       <UserCode>true</UserCode>
       <BoundTo>ed338968-8467-463e-bf6a-4115470baf81</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Datos_UBER_Motor.cs">
-      <DependentUpon>Datos_UBER_Motor.rxrec</DependentUpon>
-      <id>ada13308-ef92-47d1-a0a1-80625fa0f5b4</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>dd9cad10-fcbe-47ba-8abc-06968fd25770</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Datos_UBER_Motor.UserCode.cs">
-      <DependentUpon>Datos_UBER_Motor.rxrec</DependentUpon>
-      <id>f047eacd-a4ef-4d33-8790-8e386cc17ebd</id>
-      <UserCode>true</UserCode>
-      <BoundTo>dd9cad10-fcbe-47ba-8abc-06968fd25770</BoundTo>
     </Compile>
     <Compile Include="Motor\DescripTipoSiniestro_Tercero_Colision.cs">
       <DependentUpon>DescripTipoSiniestro_Tercero_Colision.rxrec</DependentUpon>
@@ -606,18 +534,6 @@
       <UserCode>true</UserCode>
       <BoundTo>edb8d9dc-9c25-40bd-a6db-ec060e64cb3f</BoundTo>
     </Compile>
-    <Compile Include="Motor\Detalle_VehiculoAsegurado_Ocupantes.cs">
-      <DependentUpon>Detalle_VehiculoAsegurado_Ocupantes.rxrec</DependentUpon>
-      <id>8fdf882b-0b81-4ef6-a009-8a190544dc3c</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>96368824-1b21-473f-a63d-436df1155c90</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Detalle_VehiculoAsegurado_Ocupantes.UserCode.cs">
-      <DependentUpon>Detalle_VehiculoAsegurado_Ocupantes.rxrec</DependentUpon>
-      <id>2f757164-4a9a-4424-81ff-307b9e6616d7</id>
-      <UserCode>true</UserCode>
-      <BoundTo>96368824-1b21-473f-a63d-436df1155c90</BoundTo>
-    </Compile>
     <Compile Include="Motor\Detalle_VehiculoOcupantes.cs">
       <DependentUpon>Detalle_VehiculoOcupantes.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -654,30 +570,6 @@
       <id>64037402-265a-4c73-8511-cfb1901b538b</id>
       <BoundTo>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</BoundTo>
     </Compile>
-    <Compile Include="Motor\FinalizarDaniosLesionesTerceros.cs">
-      <DependentUpon>FinalizarDaniosLesionesTerceros.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7b378b44-4dcf-435b-9899-3a65e146c532</id>
-      <BoundTo>9f128afb-b808-4f43-afb1-2fbff4e65111</BoundTo>
-    </Compile>
-    <Compile Include="Motor\FinalizarDaniosLesionesTerceros.UserCode.cs">
-      <DependentUpon>FinalizarDaniosLesionesTerceros.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>8cdc84f9-1e36-4406-890f-bf6341f44a97</id>
-      <BoundTo>9f128afb-b808-4f43-afb1-2fbff4e65111</BoundTo>
-    </Compile>
-    <Compile Include="Motor\FinalizarSiniestroUBER.cs">
-      <DependentUpon>FinalizarSiniestroUBER.rxrec</DependentUpon>
-      <id>c19e1742-345a-4d45-a58f-379fde43ca15</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>1f85c1ce-8222-4d64-8964-e5ada90f9271</BoundTo>
-    </Compile>
-    <Compile Include="Motor\FinalizarSiniestroUBER.UserCode.cs">
-      <DependentUpon>FinalizarSiniestroUBER.rxrec</DependentUpon>
-      <id>da0a8d85-dc74-458b-a0f4-d87c9d253c9d</id>
-      <UserCode>true</UserCode>
-      <BoundTo>1f85c1ce-8222-4d64-8964-e5ada90f9271</BoundTo>
-    </Compile>
     <Compile Include="Motor\InformacionSiniestro_Motor.cs">
       <DependentUpon>InformacionSiniestro_Motor.rxrec</DependentUpon>
       <id>7f2b5090-a070-4dd6-84fa-af8c3d474a8a</id>
@@ -713,66 +605,6 @@
       <UserCode>true</UserCode>
       <id>a118e2f7-1632-4758-883e-070008b96675</id>
       <BoundTo>8e399225-71ce-499a-ad3b-3643ad258926</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Informacion_Basica_Motor_UBER.cs">
-      <DependentUpon>Informacion_Basica_Motor_UBER.rxrec</DependentUpon>
-      <id>cf8c5111-2f4a-4e07-8b24-02d4c774a43a</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>e926456b-5efd-4165-9ef5-c6765e10f665</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Informacion_Basica_Motor_UBER.UserCode.cs">
-      <DependentUpon>Informacion_Basica_Motor_UBER.rxrec</DependentUpon>
-      <id>c4feb20b-7be5-4dde-ba77-19f780da1277</id>
-      <UserCode>true</UserCode>
-      <BoundTo>e926456b-5efd-4165-9ef5-c6765e10f665</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Luneta.cs">
-      <DependentUpon>Luneta.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>3bdf566f-bd70-49e1-9b65-cf6b2cf769f7</id>
-      <BoundTo>e8ccfb6a-4fa9-48ba-964c-c94071067d94</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Luneta.UserCode.cs">
-      <DependentUpon>Luneta.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>a676c754-c636-45ba-88d1-42900f08015d</id>
-      <BoundTo>e8ccfb6a-4fa9-48ba-964c-c94071067d94</BoundTo>
-    </Compile>
-    <Compile Include="Motor\NuevoSiniestroGuardadoTercero.cs">
-      <DependentUpon>NuevoSiniestroGuardadoTercero.rxrec</DependentUpon>
-      <id>9a1d943f-0cc3-44c0-acac-8752cd05ce43</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>3486e9bc-c522-43bd-8d64-45750767708b</BoundTo>
-    </Compile>
-    <Compile Include="Motor\NuevoSiniestroGuardadoTercero.UserCode.cs">
-      <DependentUpon>NuevoSiniestroGuardadoTercero.rxrec</DependentUpon>
-      <id>51c1d148-b100-40bd-b787-4a0b0b679de2</id>
-      <UserCode>true</UserCode>
-      <BoundTo>3486e9bc-c522-43bd-8d64-45750767708b</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Parabrisas.cs">
-      <DependentUpon>Parabrisas.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>9a43234c-7f7c-4809-9099-074267eeb21e</id>
-      <BoundTo>18bdb7cf-55e5-4e2d-9924-14da42bf9ccb</BoundTo>
-    </Compile>
-    <Compile Include="Motor\Parabrisas.UserCode.cs">
-      <DependentUpon>Parabrisas.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>026f4133-6ab6-401a-961f-dd15db635efc</id>
-      <BoundTo>18bdb7cf-55e5-4e2d-9924-14da42bf9ccb</BoundTo>
-    </Compile>
-    <Compile Include="Motor\RestoDatosFastTrack.cs">
-      <DependentUpon>RestoDatosFastTrack.rxrec</DependentUpon>
-      <id>8d2071c9-9452-4970-bb96-c45f69c7f6df</id>
-      <RecorderCode>true</RecorderCode>
-      <BoundTo>381cfa32-2c00-488e-84c4-db5a42c724b8</BoundTo>
-    </Compile>
-    <Compile Include="Motor\RestoDatosFastTrack.UserCode.cs">
-      <DependentUpon>RestoDatosFastTrack.rxrec</DependentUpon>
-      <id>5124c925-c20f-488c-a78c-4d6b4b0d7e22</id>
-      <UserCode>true</UserCode>
-      <BoundTo>381cfa32-2c00-488e-84c4-db5a42c724b8</BoundTo>
     </Compile>
     <Compile Include="Motor\Terminar_Detalle_VehiculoOcupantes.cs">
       <DependentUpon>Terminar_Detalle_VehiculoOcupantes.rxrec</DependentUpon>
@@ -925,11 +757,6 @@
       <id>6a66819c-f316-4d26-aff8-60036a2ae020</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>617316fc-5626-4bbd-af73-89acf98a8ab5</recordtableid>
-    </None>
-    <None Include="AP\InformacionSiniestro_AP_Uber.rxrec">
-      <id>6ed9bce4-05e1-4bf8-9b9f-c36d20348d8d</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>82160f09-1b26-4257-9faf-e5edd2c52ef5</recordtableid>
     </None>
     <None Include="AP\Informacion_Basica_AP.rxrec">
       <id>121dcbfe-22fe-4e5a-b2cd-d92b05b5cb39</id>
@@ -1100,35 +927,10 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>1d1b1070-4721-45fa-a90b-86f7b3d30f93</recordtableid>
     </None>
-    <None Include="Motor\AgregarDatosLesionesTercerosUBER.rxrec">
-      <id>519cf16a-26c9-41d8-ae8a-ebd1fa00c685</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>45a1f435-7339-4d2f-9d20-6f28177bba84</recordtableid>
-    </None>
-    <None Include="Motor\Cerradura.rxrec">
-      <id>48662179-9fae-445d-9826-9961f4486718</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>57ec232e-229d-4f59-bee9-b5093e4a518d</recordtableid>
-    </None>
-    <None Include="Motor\Cristales.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <id>bf36a936-277c-4e55-b40f-3132887fced6</id>
-      <recordtableid>a5ffb965-8f7a-439e-b0e0-d8f7eedf4bc7</recordtableid>
-    </None>
-    <None Include="Motor\DatosFastTrack.rxrec">
-      <id>7d318871-1626-4e06-9160-3c36cd1629a5</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>9228f25c-a0ec-42cb-9b29-98a2e51b62e6</recordtableid>
-    </None>
     <None Include="Motor\DatosProveedor.rxrec">
       <id>ed338968-8467-463e-bf6a-4115470baf81</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>d693d3b8-e744-4f49-a1c0-42ab7648eaf3</recordtableid>
-    </None>
-    <None Include="Motor\Datos_UBER_Motor.rxrec">
-      <id>dd9cad10-fcbe-47ba-8abc-06968fd25770</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>67d9ff32-d05f-4e59-8173-df52cddebcdf</recordtableid>
     </None>
     <None Include="Motor\DescripTipoSiniestro_Tercero_Colision.rxrec">
       <id>e383895c-2d43-46c7-abb5-63216957e00e</id>
@@ -1145,11 +947,6 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>742b93f9-8fc9-4f74-9be5-2f8ac179be88</recordtableid>
     </None>
-    <None Include="Motor\Detalle_VehiculoAsegurado_Ocupantes.rxrec">
-      <id>96368824-1b21-473f-a63d-436df1155c90</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>574c4fdb-463d-4ca4-8be9-1b9ee6fd077e</recordtableid>
-    </None>
     <None Include="Motor\Detalle_VehiculoOcupantes.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>2443cb65-6d22-4bc8-9e77-02a1651b6580</id>
@@ -1165,16 +962,6 @@
       <id>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</id>
       <recordtableid>42161acf-fda5-4099-b35c-e5468f485c5f</recordtableid>
     </None>
-    <None Include="Motor\FinalizarDaniosLesionesTerceros.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <id>9f128afb-b808-4f43-afb1-2fbff4e65111</id>
-      <recordtableid>908f8705-0345-480d-83c1-ed983b077d56</recordtableid>
-    </None>
-    <None Include="Motor\FinalizarSiniestroUBER.rxrec">
-      <id>1f85c1ce-8222-4d64-8964-e5ada90f9271</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>538b2010-b4be-4310-b80f-fd272fea7399</recordtableid>
-    </None>
     <None Include="Motor\InformacionSiniestro_Motor.rxrec">
       <id>08038346-8950-403a-8238-6be3f6ccd0e8</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1189,31 +976,6 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>8e399225-71ce-499a-ad3b-3643ad258926</id>
       <recordtableid>2ce2bf51-1f9b-49da-bd2d-b491a4967baf</recordtableid>
-    </None>
-    <None Include="Motor\Informacion_Basica_Motor_UBER.rxrec">
-      <id>e926456b-5efd-4165-9ef5-c6765e10f665</id>
-      <recordtableid>dadf012c-9d31-47cc-a6ec-42e3d3a4fdef</recordtableid>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-    </None>
-    <None Include="Motor\Luneta.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <id>e8ccfb6a-4fa9-48ba-964c-c94071067d94</id>
-      <recordtableid>7b7d29d9-9b68-4703-b95d-c997e0936b6e</recordtableid>
-    </None>
-    <None Include="Motor\NuevoSiniestroGuardadoTercero.rxrec">
-      <id>3486e9bc-c522-43bd-8d64-45750767708b</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>04886b36-81b8-41c2-9f3a-858be51bc3f9</recordtableid>
-    </None>
-    <None Include="Motor\Parabrisas.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <id>18bdb7cf-55e5-4e2d-9924-14da42bf9ccb</id>
-      <recordtableid>6d189fc2-82bb-474e-8a8e-d141eef3e5ae</recordtableid>
-    </None>
-    <None Include="Motor\RestoDatosFastTrack.rxrec">
-      <id>381cfa32-2c00-488e-84c4-db5a42c724b8</id>
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <recordtableid>e9007d36-ba80-4a4c-83f8-08d74422002c</recordtableid>
     </None>
     <None Include="Motor\Terminar_Detalle_VehiculoOcupantes.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
