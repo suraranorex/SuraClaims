@@ -7,7 +7,6 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
 			id="03240f64-af3d-4fe5-937c-0c393dd95597"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -50,7 +49,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="06e72a35-6ca5-4ba3-9245-98c73d1d3dc7"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -276,7 +274,6 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
 			id="17270bac-09b8-440d-980a-76916c341414"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -551,7 +548,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="2ca1f45f-9fa4-4d8e-9794-8cadb0d06059"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -620,7 +616,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="33ab20a8-ea70-4088-a219-3312ab48a7c6"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -885,7 +880,6 @@
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
-			enabled="False"
 			id="4c1dd1d9-a6fc-4c42-a87f-199a1625875a"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -912,7 +906,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="5093bcd7-8ad9-4aa8-8135-e117b70d8ec9"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1112,7 +1105,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="5e834d66-1abf-413c-9062-8bcddb15f8d4"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1195,7 +1187,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="6108ac7c-8dd4-4e30-9b96-5572ec69eff0"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1224,7 +1215,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="67733423-9d57-4ede-98be-84e06d94d695"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -1253,7 +1243,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="6999125c-39d2-49c9-9728-4d088764bd5e"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1280,7 +1269,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="72afab8c-18b2-482e-8a47-12aedd4d2fb7"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -1376,7 +1364,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="77556c0a-2b3f-48ba-8483-28fd73289643"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1405,7 +1392,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="7988446d-97b2-4656-a6ce-2c8da7f67c42"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1500,7 +1486,6 @@
 				</parameters>
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="88a8a119-6a70-4edf-9b97-c773419029f6"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1680,7 +1665,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="90a076af-d49a-49a7-b1e3-b97f3e935523"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1723,7 +1707,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="99572a56-fa8b-4cbe-bdba-66b4fc3bc7dd"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1923,7 +1906,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="a8c65279-90aa-4e15-900a-118f272da137"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -1958,7 +1940,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="aeee7bdd-debc-42cf-95a4-29180009ea37"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1989,7 +1970,6 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
 			id="b4de6801-8e9b-44f4-b769-8fe9fcbc912f"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -2073,7 +2053,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="cbc5774f-538b-4e26-9e38-c2107e077dc0"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -2092,7 +2071,6 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
 			id="ceba0e73-80be-4b7e-b580-ad2e55658c89"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -2483,7 +2461,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="f0af7e13-768c-46b3-b5ec-eedb1dc67ebd"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -2552,7 +2529,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="f6c0893b-a6f9-42a9-8761-0d12788217a9"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -2567,7 +2543,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="fa3a4816-1ef9-4029-a7f9-f80cb86cb587"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -2604,7 +2579,6 @@
 				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="faf0fe18-c109-47de-b7eb-c692b4530552"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -2733,7 +2707,6 @@
 				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="fbd08e51-827e-4af7-9ac4-06e134bf5b6f"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -2748,7 +2721,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="fe83aa3e-d196-4ca4-b2ee-2fcde5c25c67"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -3821,7 +3793,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="GenerarSiniestrosAP">
+	default="GenerarSiniestroMotor">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer

@@ -38,7 +38,7 @@ namespace SuraClaims.Generales
         public void guardarNumSiniestro()
         {
         	verificarDirectorio();
-			string path = @"C:\TEMP\Siniestros\siniestros.csv";
+			string path = @"R:\TEMP\Siniestros\siniestros.csv";
 			bool exist = File.Exists(path);
 			
 			string cabecera = "NumSiniestro" + System.Environment.NewLine;
@@ -70,10 +70,10 @@ namespace SuraClaims.Generales
         public void verificarDirectorio(){
         	Report.Info("Info","Verificando la existencia del directorio destino");
 			
-        	if (!Directory.Exists(@"C:\TEMP\Siniestros"))
+        	if (!Directory.Exists(@"R:\TEMP\Siniestros"))
 			{
 				Report.Info("Info","No se encontro el directorio, comienza la creacion del directorio...");
-				Directory.CreateDirectory(@"C:\TEMP\Siniestros");
+				Directory.CreateDirectory(@"R:\TEMP\Siniestros");
 				Report.Info("Info","Creacion del directorio finalizada.");
 			}
 			Report.Info("Info","Verificacion finalizada");
