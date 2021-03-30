@@ -41,7 +41,7 @@ namespace SuraClaims.Menu
         /// </summary>
         public MenuSuperior_BuscarSiniestro()
         {
-            NroSiniestro = "0420172007039";
+            NroSiniestro = "1120194100351";
         }
 
         /// <summary>

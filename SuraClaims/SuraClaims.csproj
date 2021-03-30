@@ -123,6 +123,66 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actividad\CompletarChecklistFraude.cs">
+      <BoundTo>9b6b7edb-98d0-4cef-902e-12a27b72130d</BoundTo>
+      <DependentUpon>CompletarChecklistFraude.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a945a470-4c6a-4c54-b894-074950755862</id>
+    </Compile>
+    <Compile Include="Actividad\CompletarChecklistFraude.UserCode.cs">
+      <BoundTo>9b6b7edb-98d0-4cef-902e-12a27b72130d</BoundTo>
+      <DependentUpon>CompletarChecklistFraude.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>edc37e92-e352-4e93-b421-cf98cbe05557</id>
+    </Compile>
+    <Compile Include="Actividad\EvaluarCoberturaTecnica.cs">
+      <BoundTo>3369bff0-1741-4aa3-81ee-fbcc57aa9536</BoundTo>
+      <DependentUpon>EvaluarCoberturaTecnica.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e536fa5-5c53-474d-9af1-54a30b711b4b</id>
+    </Compile>
+    <Compile Include="Actividad\EvaluarCoberturaTecnica.UserCode.cs">
+      <BoundTo>3369bff0-1741-4aa3-81ee-fbcc57aa9536</BoundTo>
+      <DependentUpon>EvaluarCoberturaTecnica.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a815cf09-f114-46cb-a87f-17338a462d1a</id>
+    </Compile>
+    <Compile Include="Actividad\PreguntasPendientes_AP.cs">
+      <BoundTo>b56ed7f3-aa4a-43a7-9c3f-9bbcb011c867</BoundTo>
+      <DependentUpon>PreguntasPendientes_AP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e8dc722d-45d3-4904-88bc-c993b38a7a89</id>
+    </Compile>
+    <Compile Include="Actividad\PreguntasPendientes_AP.UserCode.cs">
+      <BoundTo>b56ed7f3-aa4a-43a7-9c3f-9bbcb011c867</BoundTo>
+      <DependentUpon>PreguntasPendientes_AP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dcd2de1a-4d81-434e-9673-40941ec47cd8</id>
+    </Compile>
+    <Compile Include="Actividad\PreguntasPendientes_Hogar.cs">
+      <BoundTo>7a765d18-1d9c-46d7-8eee-60937b402b82</BoundTo>
+      <DependentUpon>PreguntasPendientes_Hogar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4cef4b37-b6ed-48e5-ae53-0b23254a9174</id>
+    </Compile>
+    <Compile Include="Actividad\PreguntasPendientes_Hogar.UserCode.cs">
+      <BoundTo>7a765d18-1d9c-46d7-8eee-60937b402b82</BoundTo>
+      <DependentUpon>PreguntasPendientes_Hogar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9dee7c9e-7a26-4ea7-be09-e15895f9c153</id>
+    </Compile>
+    <Compile Include="Actividad\TerminarCompletarChecklistFraude.cs">
+      <BoundTo>11222758-7152-4b94-9e24-e1103c2856ed</BoundTo>
+      <DependentUpon>TerminarCompletarChecklistFraude.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3180e639-5fb3-49a4-bae8-d5398be0ad1b</id>
+    </Compile>
+    <Compile Include="Actividad\TerminarCompletarChecklistFraude.UserCode.cs">
+      <BoundTo>11222758-7152-4b94-9e24-e1103c2856ed</BoundTo>
+      <DependentUpon>TerminarCompletarChecklistFraude.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>20c53c31-7167-4a09-a236-fb3b0fcf0135</id>
+    </Compile>
     <Compile Include="AP\AgregarLesiones.cs">
       <BoundTo>dd9561b8-fc5f-4099-bbaa-9f1508249d89</BoundTo>
       <DependentUpon>AgregarLesiones.rxrec</DependentUpon>
@@ -426,6 +486,18 @@
       <UserCode>true</UserCode>
       <BoundTo>aca3c897-cf2d-4847-b92e-a659e4100ed6</BoundTo>
     </Compile>
+    <Compile Include="Menu\MenuLateral_PlanDeTrabajo.cs">
+      <BoundTo>4949e9b2-03a3-4331-a6e5-59901b344bf3</BoundTo>
+      <DependentUpon>MenuLateral_PlanDeTrabajo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0269a09a-600e-44b4-b8a7-b4d29920c96a</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_PlanDeTrabajo.UserCode.cs">
+      <BoundTo>4949e9b2-03a3-4331-a6e5-59901b344bf3</BoundTo>
+      <DependentUpon>MenuLateral_PlanDeTrabajo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ebef2c32-e028-4d49-bced-13600d1d2412</id>
+    </Compile>
     <Compile Include="Menu\MenuSuperior.cs">
       <DependentUpon>MenuSuperior.rxrec</DependentUpon>
       <id>58183710-8d3a-4e5f-b01b-8273651aa37d</id>
@@ -725,6 +797,31 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Actividad\CompletarChecklistFraude.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>9b6b7edb-98d0-4cef-902e-12a27b72130d</id>
+      <recordtableid>f59345f5-b0ba-47eb-b90d-f1248b7250b3</recordtableid>
+    </None>
+    <None Include="Actividad\EvaluarCoberturaTecnica.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>3369bff0-1741-4aa3-81ee-fbcc57aa9536</id>
+      <recordtableid>f72d3b9e-9029-4832-a315-dd8bc1c410a7</recordtableid>
+    </None>
+    <None Include="Actividad\PreguntasPendientes_AP.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>b56ed7f3-aa4a-43a7-9c3f-9bbcb011c867</id>
+      <recordtableid>4d07bf85-5002-48fe-86dc-59b9668b3d51</recordtableid>
+    </None>
+    <None Include="Actividad\PreguntasPendientes_Hogar.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>7a765d18-1d9c-46d7-8eee-60937b402b82</id>
+      <recordtableid>3f519212-8653-495e-b635-cec9f8ae22b6</recordtableid>
+    </None>
+    <None Include="Actividad\TerminarCompletarChecklistFraude.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>11222758-7152-4b94-9e24-e1103c2856ed</id>
+      <recordtableid>7e920630-b616-4433-bae9-eca753cf4765</recordtableid>
+    </None>
     <None Include="app.config">
       <id>328d722f-8b6c-4b33-aa45-fcb1f8ff0d7f</id>
     </None>
@@ -902,6 +999,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <recordtableid>e03b9180-4e01-4a9d-bcc7-fd2499bc0aee</recordtableid>
     </None>
+    <None Include="Menu\MenuLateral_PlanDeTrabajo.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>4949e9b2-03a3-4331-a6e5-59901b344bf3</id>
+      <recordtableid>8a731ede-0fbb-430f-920b-3eb2631fe189</recordtableid>
+    </None>
     <None Include="Menu\MenuSuperior.rxrec">
       <id>fda1cd54-aece-40c9-81dc-e439057cfb3e</id>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1073,6 +1175,9 @@
     </Folder>
     <Folder Include="Generales">
       <id>72f886e4-19a8-4442-8e05-65596e0895ea</id>
+    </Folder>
+    <Folder Include="Actividad">
+      <id>ee9bb6fd-da19-4de7-b227-e694cbd8a4a3</id>
     </Folder>
     <Folder Include="Pagos">
       <id>3bff7d80-ce11-4222-a74a-f86a8b336e1b</id>

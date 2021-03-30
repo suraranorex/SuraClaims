@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Generales
+namespace SuraClaims.Actividad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout recording.
+    ///The CompletarChecklistFraude recording.
     /// </summary>
-    [TestModule("a0c0db04-d21d-4cb3-b5af-a01aede4d79f", ModuleType.Recording, 1)]
-    public partial class Logout : ITestModule
+    [TestModule("f59345f5-b0ba-47eb-b90d-f1248b7250b3", ModuleType.Recording, 1)]
+    public partial class CompletarChecklistFraude : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Logout instance = new Logout();
+        static CompletarChecklistFraude instance = new CompletarChecklistFraude();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout()
+        public CompletarChecklistFraude()
         {
+            NumeroPoliza = "";
+            TipoPoliza = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout Instance
+        public static CompletarChecklistFraude Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _NumeroPoliza;
+
+        /// <summary>
+        /// Gets or sets the value of variable NumeroPoliza.
+        /// </summary>
+        [TestVariable("04ecaeaf-c7a6-40d1-a419-0f57877e35f7")]
+        public string NumeroPoliza
+        {
+            get { return _NumeroPoliza; }
+            set { _NumeroPoliza = value; }
+        }
+
+        string _TipoPoliza;
+
+        /// <summary>
+        /// Gets or sets the value of variable TipoPoliza.
+        /// </summary>
+        [TestVariable("cc9bd00d-2f36-436d-82f5-04c5a918ae21")]
+        public string TipoPoliza
+        {
+            get { return _TipoPoliza; }
+            set { _TipoPoliza = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -89,29 +115,27 @@ namespace SuraClaims.Generales
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Configuracion' at Center.", repo.SuraClaims.Generales.bttn_ConfiguracionInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.bttn_Configuracion.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.a_CompletarChecklistFraude' at Center.", repo.SuraClaims.Actividad.a_CompletarChecklistFraudeInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Actividad.a_CompletarChecklistFraude.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_CerrarSesion' at Center.", repo.SuraClaims.Generales.bttn_CerrarSesionInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Generales.bttn_CerrarSesion.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.bttn_PreguntasPendientes' at Center.", repo.SuraClaims.Actividad.bttn_PreguntasPendientesInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Actividad.bttn_PreguntasPendientes.Click();
             Delay.Milliseconds(0);
             
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'SuraClaims_ContinueOnFail.Copy_of_bttn_Aceptar' at Center.", repo.SuraClaims_ContinueOnFail.Copy_of_bttn_AceptarInfo, new RecordItemIndex(2));
-                repo.SuraClaims_ContinueOnFail.Copy_of_bttn_Aceptar.Click();
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Actividad.ventana_PreguntasPendientes'", repo.SuraClaims.Actividad.ventana_PreguntasPendientesInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.SuraClaims.Actividad.ventana_PreguntasPendientesInfo.WaitForExists(30000);
             
-            try {
-                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'Avisos_Chrome_COF.Btn_Abandonar' at Center.", repo.Avisos_Chrome_COF.Btn_AbandonarInfo, new RecordItemIndex(3));
-                //repo.Avisos_Chrome_COF.Btn_Abandonar.Click();
-                //Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Actividad.label_NumeroPoliza' and assigning its value to variable 'NumeroPoliza'.", repo.SuraClaims.Actividad.label_NumeroPolizaInfo, new RecordItemIndex(3));
+            NumeroPoliza = repo.SuraClaims.Actividad.label_NumeroPoliza.Element.GetAttributeValueText("InnerText");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SuraClaims.Generales.Login.bttn_IniciarSesion'.", repo.SuraClaims.Generales.Login.bttn_IniciarSesionInfo, new RecordItemIndex(4));
-            Validate.Exists(repo.SuraClaims.Generales.Login.bttn_IniciarSesionInfo);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "User", NumeroPoliza, new RecordItemIndex(4));
+            
+            obtenerTipoPoliza();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", TipoPoliza, new RecordItemIndex(6));
             
         }
 

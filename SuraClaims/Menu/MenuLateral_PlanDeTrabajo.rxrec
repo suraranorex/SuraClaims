@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8a731ede-0fbb-430f-920b-3eb2631fe189"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="MenuLateral_PlanDeTrabajo"
+	namespace="SuraClaims.Menu">
+	</codegen>
+	<variables>
+		<var
+		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
+		name="Ambiente">
+			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="63;10"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="53e8c63f-3db9-423c-bc05-eb4b0ed900cd"
+		sx="93"
+		sy="437"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="046380b3-86f3-4260-9725-a8223c285a00"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="2"
+				prefcap="spantag"
+				rect="30,427,96,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-tree-node-text&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Plan de trabajo
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-tree-node-text
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//div[#'Claim:MenuLinks-body']/div[1]/div/table[6]//span[@innertext='Plan de trabajo']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="12109119-46c6-49c5-9bb6-db3ba2f7361d">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA0ALIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKo+
+Y/8Afb86PMf++351p7NmftEXqKo+Y/8Afb86hlvUhYLJMykjPek4W3Y4ycnaKualFZH9pw/892/I
+0f2nD/z3b8jU+73RpyVf5H9xr0Vkf2nD/wA92/I0f2nD/wA92/I0e73QclX+R/ca9FZH9pw/892/
+I0f2nD/z3b8jR7vdByVf5H9xr0Vkf2nD/wA92/I0f2nD/wA92/I0e73QclX+R/ca9FZH9pw/892/
+I0f2nD/z3b8jR7vdByVf5H9xr0Vkf2nD/wA92/I0f2nD/wA92/I0e73QclX+R/ca9FZ8dwZUDpIx
+U9Dk07zH/vt+dXyGTnZ2aL1FUfMf++350eY/99vzo9mw9oi9RVHzH/vt+dHmP/fb86PZsPaIvUVR
+8x/77fnRR7Nh7RDaKKK1MQqjOqvqsSsAwKdCPrV6qUv/ACFof9z/ABrOpsvVHThtHL0f5Esi2sbb
+WhXOM8RZ/kKVY7dmKrDGeAc7RjBodZDcZRgo2YJK579uaYyGLcqoWUIq8jPc9u9VZdjLnl3ZL9ng
+/wCeMf8A3yKPs8H/ADxj/wC+RVeOMlCpT5fMBACFRjHpU8CbHlVV2puG0AYHTtRZdg55dweKBAMw
+pyQPuil+zwf88Y/++RUAQblzG3miTLNt7Z9fSiJGE43cOGJJER5H+90osuwc8u5N5Nvu2+VHnGcb
+RS/Z4P8AnjH/AN8imOi/a1do85XAbbnBz+lQOjJBhEiyIWlfzEJztxx196TSXQFKb6ssmKAOq+Sm
+W6fKKX7PB/zxj/75FV1T5I/MjJUM2RsPA7cUpB8sKYhsLErujLYHbiiy7Bzy7k/kQbseSnTP3BTL
+iCEW8hESAhDghR6VGqyeWqjIfyiMdD1odVEcpijKJ5Tbht25NDStsXCcuZaj9P8A+PKP8f5mrNVt
+P/48o/x/mas0Q+FCr/xZer/MKKKKsxCiiigAooooAKKtfZk9Wo+zJ6tUc6L5GVaoXXmJfxypE0gV
+Ow+tbP2ZPVqPsyerVMmpI1pN03e1+hkfbZ/+fOT9f8KPts//AD5yfr/hWv8AZk9Wo+zJ6tU3f8xp
+eH/PtfezI+2z/wDPnJ+v+FH22f8A585P1/wrX+zJ6tR9mT1ai7/mC8P+fa+9mR9tn/585P1/wo+2
+z/8APnJ+v+Fa/wBmT1aj7Mnq1F3/ADBeH/PtfezHa+lVSzWjgAZJJPH6U2Cdr95ljj5NrKq4bOSd
+vH8q2JbKOWJ42ZwHUqcEd6gstgu3jmVftcSbS4GPMQ4wf0/A0m33C8LaQs/Vld9Hj+0ExI0AaXG6
+JtpCbP8A4oVWhvpzBGTau5KjLDvx16VuzSLDC8rnCoCSaq2VqBY24ferCJcg8YOKab72JXKt43M0
+XUocv9il3Hjkn/CiS6nkidPscg3AjPP+FbP2ZPVqPsyerUa/zFKUE7+zX3szbFWSzRWBUjPBHuas
+Va+zJ6tR9mT1arUklYxmpTk5dyrRVr7Mnq1H2ZPVqfOiORlWirX2ZPVqPsyerUc6DkZVoq19mT1a
+ijnQcjJqKKKxNwooooAKKKKACiiigAooooAKgurWO6VdxZHQ5SRDhl+hoooAibTkkYG5mmuFHISR
+htz64AGfxq5RRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="f2dd136f-2831-409a-9bb5-a63f051ac296"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bf179f07-d9fe-4560-9400-31feb7032340"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
+	name="SuraClaimsRepository"
+	relativepath="..\SuraClaimsRepository.rxrep">
+		<codegen
+		classname="SuraClaimsRepository"
+		namespace="SuraClaims">
+		</codegen>
+		<rootfolder
+		id="e236aa5f-717e-474a-818d-ab73ab951257"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		MenuLateral_PlanDeTrabajo.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

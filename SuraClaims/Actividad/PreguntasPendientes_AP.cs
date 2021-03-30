@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Generales
+namespace SuraClaims.Actividad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout recording.
+    ///The PreguntasPendientes_AP recording.
     /// </summary>
-    [TestModule("a0c0db04-d21d-4cb3-b5af-a01aede4d79f", ModuleType.Recording, 1)]
-    public partial class Logout : ITestModule
+    [TestModule("4d07bf85-5002-48fe-86dc-59b9668b3d51", ModuleType.Recording, 1)]
+    public partial class PreguntasPendientes_AP : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Logout instance = new Logout();
+        static PreguntasPendientes_AP instance = new PreguntasPendientes_AP();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout()
+        public PreguntasPendientes_AP()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout Instance
+        public static PreguntasPendientes_AP Instance
         {
             get { return instance; }
         }
@@ -89,29 +89,29 @@ namespace SuraClaims.Generales
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_Configuracion' at Center.", repo.SuraClaims.Generales.bttn_ConfiguracionInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.bttn_Configuracion.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentes' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentesInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentes.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.bttn_CerrarSesion' at Center.", repo.SuraClaims.Generales.bttn_CerrarSesionInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Generales.bttn_CerrarSesion.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_No' at Center.", repo.SuraClaims.Actividad.option_NoInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Actividad.option_No.Click();
             Delay.Milliseconds(0);
             
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'SuraClaims_ContinueOnFail.Copy_of_bttn_Aceptar' at Center.", repo.SuraClaims_ContinueOnFail.Copy_of_bttn_AceptarInfo, new RecordItemIndex(2));
-                repo.SuraClaims_ContinueOnFail.Copy_of_bttn_Aceptar.Click();
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_ActividadAlMomento' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_ActividadAlMomentoInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Actividad.Preguntas.pregunta_ActividadAlMomento.Click();
+            Delay.Milliseconds(0);
             
-            try {
-                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'Avisos_Chrome_COF.Btn_Abandonar' at Center.", repo.Avisos_Chrome_COF.Btn_AbandonarInfo, new RecordItemIndex(3));
-                //repo.Avisos_Chrome_COF.Btn_Abandonar.Click();
-                //Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_No' at Center.", repo.SuraClaims.Actividad.option_NoInfo, new RecordItemIndex(3));
+            repo.SuraClaims.Actividad.option_No.Click();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SuraClaims.Generales.Login.bttn_IniciarSesion'.", repo.SuraClaims.Generales.Login.bttn_IniciarSesionInfo, new RecordItemIndex(4));
-            Validate.Exists(repo.SuraClaims.Generales.Login.bttn_IniciarSesionInfo);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_MedidasDeSeguridad' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_MedidasDeSeguridadInfo, new RecordItemIndex(4));
+            repo.SuraClaims.Actividad.Preguntas.pregunta_MedidasDeSeguridad.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_Si' at Center.", repo.SuraClaims.Actividad.option_SiInfo, new RecordItemIndex(5));
+            repo.SuraClaims.Actividad.option_Si.Click();
+            Delay.Milliseconds(0);
             
         }
 

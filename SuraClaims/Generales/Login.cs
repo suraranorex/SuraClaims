@@ -115,20 +115,20 @@ namespace SuraClaims.Generales
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Usuario' on item 'SuraClaims.Login.txtbox_Usuario'.", repo.SuraClaims.Login.txtbox_UsuarioInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Login.txtbox_Usuario.Element.SetAttributeValue("TagValue", Usuario);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Usuario' on item 'SuraClaims.Generales.Login.txtbox_Usuario'.", repo.SuraClaims.Generales.Login.txtbox_UsuarioInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Generales.Login.txtbox_Usuario.Element.SetAttributeValue("TagValue", Usuario);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Contrasenia' on item 'SuraClaims.Login.txtbox_Contrasenia'.", repo.SuraClaims.Login.txtbox_ContraseniaInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Login.txtbox_Contrasenia.Element.SetAttributeValue("TagValue", Contrasenia);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Contrasenia' on item 'SuraClaims.Generales.Login.txtbox_Contrasenia'.", repo.SuraClaims.Generales.Login.txtbox_ContraseniaInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Generales.Login.txtbox_Contrasenia.Element.SetAttributeValue("TagValue", Contrasenia);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Login.bttn_IniciarSesion' at 26;3.", repo.SuraClaims.Login.bttn_IniciarSesionInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Login.bttn_IniciarSesion.Click("26;3");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.Login.bttn_IniciarSesion' at 26;3.", repo.SuraClaims.Generales.Login.bttn_IniciarSesionInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Generales.Login.bttn_IniciarSesion.Click("26;3");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.bttn_Configuracion'", repo.SuraClaims.bttn_ConfiguracionInfo, new ActionTimeout(20000), new RecordItemIndex(3));
-            repo.SuraClaims.bttn_ConfiguracionInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Generales.bttn_Configuracion'", repo.SuraClaims.Generales.bttn_ConfiguracionInfo, new ActionTimeout(20000), new RecordItemIndex(3));
+            repo.SuraClaims.Generales.bttn_ConfiguracionInfo.WaitForExists(20000);
             
         }
 

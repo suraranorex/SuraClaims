@@ -299,24 +299,24 @@ namespace SuraClaims.Motor
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_txt_Modelo'", repo.SuraClaims.Motor.Copy_of_txt_ModeloInfo, new ActionTimeout(30000), new RecordItemIndex(42));
             repo.SuraClaims.Motor.Copy_of_txt_ModeloInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.SiniestroTercero.txt_TipoVehiculo' at Center.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(43));
-            repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo' at Center.", repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(43));
+            repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(44));
-            //repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(44));
+            //repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TipoAutoAsegurado' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(45));
-            repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys(TipoAutoAsegurado);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TipoAutoAsegurado' with focus on 'SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(45));
+            repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo.PressKeys(TipoAutoAsegurado);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(46));
-            repo.SuraClaims.SiniestroTercero.txt_TipoVehiculo.PressKeys("{Return}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo'.", repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculoInfo, new RecordItemIndex(46));
+            repo.SuraClaims.Motor.SiniestroTercero.txt_TipoVehiculo.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculo'", repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(47));
-            repo.SuraClaims.SiniestroTercero.Copy_of_txtTipoVehiculoInfo.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.SiniestroTercero.Copy_of_txtTipoVehiculo'", repo.SuraClaims.Motor.SiniestroTercero.Copy_of_txtTipoVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(47));
+            repo.SuraClaims.Motor.SiniestroTercero.Copy_of_txtTipoVehiculoInfo.WaitForNotExists(30000);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(48));
             
