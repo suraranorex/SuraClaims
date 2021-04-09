@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Menu
+namespace SuraClaims.Pagos
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLateralAcciones_OrdenDePago recording.
+    ///The ValidarPago recording.
     /// </summary>
-    [TestModule("e03b9180-4e01-4a9d-bcc7-fd2499bc0aee", ModuleType.Recording, 1)]
-    public partial class MenuLateralAcciones_OrdenDePago : ITestModule
+    [TestModule("190d689b-a220-431f-b631-8bb5d974de2a", ModuleType.Recording, 4)]
+    public partial class ValidarPago : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static MenuLateralAcciones_OrdenDePago instance = new MenuLateralAcciones_OrdenDePago();
+        static ValidarPago instance = new ValidarPago();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLateralAcciones_OrdenDePago()
+        public ValidarPago()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLateralAcciones_OrdenDePago Instance
+        public static ValidarPago Instance
         {
             get { return instance; }
         }
@@ -89,20 +89,16 @@ namespace SuraClaims.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menuLateral_Acciones' at Center.", repo.SuraClaims.Generales.MenuLateral.menuLateral_AccionesInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.MenuLateral.menuLateral_Acciones.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F5}' with focus on 'SuraClaims'.", repo.SuraClaims.SelfInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Self.EnsureVisible();
+            Keyboard.Press("{F5}");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(1));
-            //repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.MoveTo();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(1));
+            Delay.Duration(30000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestro'", repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'SuraClaims.LiquidacionesOrdenPago.numeroEmisionLiquidacionSISE'", repo.SuraClaims.LiquidacionesOrdenPago.numeroEmisionLiquidacionSISEInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.SuraClaims.LiquidacionesOrdenPago.numeroEmisionLiquidacionSISEInfo.WaitForExists(60000);
             
         }
 

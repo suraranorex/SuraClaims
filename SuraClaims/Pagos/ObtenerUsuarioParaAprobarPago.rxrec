@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="7e920630-b616-4433-bae9-eca753cf4765"
+id="f28111a3-40ee-4213-a5d3-c2409dc5b5ca"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,10 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="TerminarCompletarChecklistFraude"
-	namespace="SuraClaims.Actividad">
+	classname="ObtenerUsuarioParaAprobarPago"
+	namespace="SuraClaims.Pagos">
 	</codegen>
 	<variables>
+		<var
+		id="b3b80e17-9472-4fa4-9ad6-9aea40ad62be"
+		name="NombreAprobadorPago">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -33,7 +37,7 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="f7e2789e-db5a-4ccd-b8db-d3192ae45231"
+		searchpropertyid="612d20ed-778b-4c6c-ba7b-c80a69d3c196"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -42,73 +46,77 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="01b8f880-dab7-4e9a-8a7f-1daa5f78997c"
+			id="046380b3-86f3-4260-9725-a8223c285a00"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//span[@innertext&gt;'Actalizar']
+					/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Plan de trabajo']
 				</path>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="d34b4a5e-576b-4444-af56-9622aaee9661"
-		waitaction="NotExists"
-		waittimeout="20000ms">
+		searchpropertyid="cbb96be3-51dd-4c39-85f7-ccb6eeb41402"
+		waitaction="Exists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="230a4dd0-fef7-4398-baaf-17d16d674221"
+			id="bf179f07-d9fe-4560-9400-31feb7032340"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//span[@innertext='Preguntas Pendientes']
+					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']
 				</path>
 			</info>
 		</WaitForRecordItem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<getvaluerecorditem
+		attrname="InnerText"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="25cadbcb-f472-46d7-b8bb-9b9c809e46f1"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="29660f1c-2543-407b-ac80-4e48e489972a"
+		varname="NombreAprobadorPago">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d781533b-b99d-4a09-a6a9-51cbf3367f4e"
+			id="94613b0d-0a08-4f83-a09b-fa6b8d924ed7"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//span[@innertext&gt;'Comletar']
+					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext~'Revisar y aprobar']/../../..//td[11]
 				</path>
 			</info>
-		</mouseitem>
-		<WaitForRecordItem
+		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
 		enabled="True"
+		message="El usuario que debe aprobar el pago es:"
 		optional="False"
-		searchpropertyid="b95f80a3-2681-4adf-84c2-9f20801ac2b1"
-		waitaction="NotExists"
-		waittimeout="20000ms">
+		reportlevel="Info;20"
+		searchpropertyid="5e8928f4-7799-40dc-be42-4fde0b1a2bbf">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="cc82babf-a711-43ab-ab65-3c909d0049a2"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext&gt;'Completar CheckList']
-				</path>
-			</info>
-		</WaitForRecordItem>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="a039a843-4531-4ec8-9194-f08fc3b71aac">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="NombreAprobadorPago">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
@@ -125,7 +133,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		TerminarCompletarChecklistFraude.UserCode.cs
+		ObtenerUsuarioParaAprobarPago.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

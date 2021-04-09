@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="EvaluarCoberturaTecnica"
-	namespace="SuraClaims.Actividad">
+	namespace="SuraClaims.PlanDeTrabajo">
 	</codegen>
 	<variables>
 	</variables>
@@ -128,6 +128,26 @@ mode="Global">
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="17f79fb9-dbb4-4666-8698-42fa8eb7e57c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -590,6 +610,26 @@ mode="Global">
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="17f79fb9-dbb4-4666-8698-42fa8eb7e57c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+			</info>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

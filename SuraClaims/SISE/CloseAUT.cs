@@ -20,47 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Actividad
+namespace SuraClaims.SISE
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The PreguntasPendientes_Hogar recording.
+    ///The CloseAUT recording.
     /// </summary>
-    [TestModule("3f519212-8653-495e-b635-cec9f8ae22b6", ModuleType.Recording, 1)]
-    public partial class PreguntasPendientes_Hogar : ITestModule
+    [TestModule("5d3efce6-19a4-42b7-8771-346c87cc360d", ModuleType.Recording, 1)]
+    public partial class CloseAUT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static PreguntasPendientes_Hogar instance = new PreguntasPendientes_Hogar();
+        static CloseAUT instance = new CloseAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public PreguntasPendientes_Hogar()
+        public CloseAUT()
         {
+            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static PreguntasPendientes_Hogar Instance
+        public static CloseAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _CloseAutProcessIDVar;
+
         /// <summary>
-        /// Gets or sets the value of variable Ambiente.
+        /// Gets or sets the value of variable CloseAutProcessIDVar.
         /// </summary>
-        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
-        public string Ambiente
+        [TestVariable("8f87a511-33f5-40e0-b3d0-25e6770fe1a1")]
+        public string CloseAutProcessIDVar
         {
-            get { return repo.Ambiente; }
-            set { repo.Ambiente = value; }
+            get { return _CloseAutProcessIDVar; }
+            set { _CloseAutProcessIDVar = value; }
         }
 
 #endregion
@@ -89,29 +92,16 @@ namespace SuraClaims.Actividad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentes' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentesInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentes.Click();
+            Report.Log(ReportLevel.Info, "Application", "Closing application with Process ID bound to variable $CloseAutProcessIDVar.", new RecordItemIndex(0));
+            Host.Current.CloseApplication(int.Parse(CloseAutProcessIDVar), 500);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_No' at Center.", repo.SuraClaims.Actividad.option_NoInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Actividad.option_No.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PuTTYExitConfirmation.Aceptar' at 50;13.", repo.PuTTYExitConfirmation.AceptarInfo, new RecordItemIndex(1));
+            repo.PuTTYExitConfirmation.Aceptar.Click("50;13");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_ModificacionesPoliza' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_ModificacionesPolizaInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Actividad.Preguntas.pregunta_ModificacionesPoliza.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_No' at Center.", repo.SuraClaims.Actividad.option_NoInfo, new RecordItemIndex(3));
-            repo.SuraClaims.Actividad.option_No.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_ModificacionRelato' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_ModificacionRelatoInfo, new RecordItemIndex(4));
-            repo.SuraClaims.Actividad.Preguntas.pregunta_ModificacionRelato.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_No' at Center.", repo.SuraClaims.Actividad.option_NoInfo, new RecordItemIndex(5));
-            repo.SuraClaims.Actividad.option_No.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Delay.Duration(5000, false);
             
         }
 

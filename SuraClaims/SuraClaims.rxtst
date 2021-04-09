@@ -49,6 +49,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="06ac34ed-5608-44d9-a55b-16deab2d047f"
+			name="ValidarPagoSiniestro_SISE_QA"
+			ref="f4bcaf05-1065-41a5-8e21-564b216b0b18"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
+					variableid="9df180b6-45a0-4369-98bf-7aca08a71ab0"
+					variablename="NroSiniestro">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="06e72a35-6ca5-4ba3-9245-98c73d1d3dc7"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -219,6 +233,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="1615a42b-f927-4a50-827b-1e064142a694"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="16465d34-f75c-47e8-8940-50a6fcb27c7e"
 			name="InformacionSiniestro_Motor"
@@ -493,6 +511,20 @@
 					</var>
 				</missingdatavariablesbinding>
 			</testmodule>
+			<testmodule
+			id="1ef0a027-2c47-4a97-958c-5358ec542a67"
+			name="MenuLateral_DatosFinancieros_Liquidaciones"
+			ref="86bc9978-cbae-46a7-998f-4beecc068775"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="SiniestroHogar"
@@ -519,6 +551,20 @@
 			id="213cf277-af80-4b37-ace4-9f0da73b8cb7"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="23e4cbbb-9e44-4df1-b80b-3e76da1436b9"
+			name="ValidarPagoSiniestro_SISE_PreProd"
+			ref="6d0621f0-9db1-496d-8795-ab0b5394a7bd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
+					variableid="21a77e08-161f-4b23-8121-363b659eb050"
+					variablename="NroSiniestro">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="2b6a3be7-1147-4c13-b39c-529473557fe2"
 			name="NuevaExposicion"
@@ -547,15 +593,28 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datasource="AprobacionesPagos"
+			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c"
+			name="ValidarPago">
+			</testcase>
 			<testmodule
 			id="2c4b3246-f075-4ff3-a6b4-eff47d0bf732"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
@@ -629,6 +688,14 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="ValidarPagoSiniestros"
+			id="3378198a-d57f-4703-b046-8f715ee27a01"
+			maxrange="0"
+			minrange="0"
+			name="ValidarPago_SISE">
+			</testcase>
 			<testmodule
 			id="33ab20a8-ea70-4088-a219-3312ab48a7c6"
 			name="Login"
@@ -694,10 +761,60 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="393f172c-efcc-45bd-81df-f378e4f5db39"
+			name="MenuSuperior_BuscarSiniestro"
+			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="3961ba65-ab13-4792-83c2-e41bad4cf11b"
 			name="EvaluarCoberturaTecnica"
 			ref="f72d3b9e-9029-4832-a315-dd8bc1c410a7"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="426565e9-cbb5-4ad4-9808-397751c596ed"
@@ -724,6 +841,22 @@
 			name="TerminarCompletarChecklistFraude"
 			ref="7e920630-b616-4433-bae9-eca753cf4765"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="44eb816b-91c0-4395-afb5-83903c573a6a"
@@ -827,16 +960,30 @@
 			name="MenuSuperior_BuscarSiniestro"
 			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
 					<var
 					dataname="NroSiniestro"
-					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="9f24559f-e441-47fa-9643-510005fbb861"
 					variablename="NroSiniestro">
 					</var>
@@ -887,8 +1034,9 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-			name="Aprobaciones_Para_Pagos">
+			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
 					<param
 					name="tipoPolizaParam"
@@ -1186,6 +1334,41 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="5f3b2a1c-3182-4153-9f26-6a6349a462c7"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="5faf3bd9-f4aa-47a3-aed1-e08f83dba9cb"
+			name="ObtenerUsuarioParaAprobarPago"
+			ref="f28111a3-40ee-4213-a5d3-c2409dc5b5ca"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			id="6063d4bd-8cb6-4b12-a2ea-c3ec60209033"
+			name="QA">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="f0248626-33eb-4fa7-8d86-54be4fdac042">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="QA">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="60d24fb3-4428-4723-a3e7-86a127adda6a"
 			name="InformacionSiniestro_Motor"
@@ -1295,22 +1478,42 @@
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Contrasenia"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
 					<var
 					dataname="Usuario"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
 					variablename="Usuario">
 					</var>
 					<var
 					dataname="Contrasenia"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
 					variablename="Contrasenia">
 					</var>
@@ -1357,10 +1560,54 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6bdce0d8-a58e-40da-a28f-f619f0d7b748"
+			name="OpenBrowser"
+			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="6be365c8-ac85-469f-9b59-a99d356a922d"
 			name="PreguntasPendientes_Hogar"
 			ref="3f519212-8653-495e-b635-cec9f8ae22b6"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6db8cd1e-4c48-4a7b-a48d-6c4ade3fdff8"
+			name="CloseBrowser"
+			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="72afab8c-18b2-482e-8a47-12aedd4d2fb7"
@@ -1500,6 +1747,56 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7c48a55f-e091-48cf-91e3-2f8bd2cc4feb"
+			name="Login"
+			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<setup
+			id="7caa21d8-9502-457b-afe6-b063e2c35fb0"
+			name="setup">
+			</setup>
+			<testmodule
 			id="7d34e85f-8af4-468f-8dd3-4b4c61bc3d65"
 			name="BuscarPoliza"
 			ref="f0a9b559-4a41-43d2-b8ae-bc0f08f4e071"
@@ -1538,6 +1835,28 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7db329bd-a17c-441b-a078-209d1a6d65dd"
+			name="CloseBrowser"
+			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="7e39214c-b934-439e-890e-f0b4550a5178"
 			name="FinalizarSiniestro"
 			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
@@ -1565,6 +1884,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="83e9f880-a922-4351-8b98-2e32238922e2"
+			name="RevisarAprobarNuevoPago"
+			ref="4be97d52-7dae-426a-9d67-132478301449"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="SiniestroAP_UBER"
@@ -1579,6 +1912,28 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="883dea5f-6b13-4423-9839-1c921c75b76c"
+			name="Logout"
+			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="88a8a119-6a70-4edf-9b97-c773419029f6"
 			name="CloseBrowser"
@@ -1720,6 +2075,24 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<setup
+			id="8a743954-f434-48cd-b5a8-78170382d00f"
+			name="setup">
+			</setup>
+			<testmodule
+			id="8d8da3d0-4906-4192-8d33-5efb84cb8a47"
+			name="CloseAUT"
+			ref="5d3efce6-19a4-42b7-8771-346c87cc360d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="9e955975-c7b8-44cb-a041-f63a40bc3880"
+					variableid="8f87a511-33f5-40e0-b3d0-25e6770fe1a1"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="8e687535-887a-49ca-80da-df55dc495861"
 			name="BuscarPoliza"
@@ -1777,6 +2150,22 @@
 			name="MenuLateral_PlanDeTrabajo"
 			ref="8a731ede-0fbb-430f-920b-3eb2631fe189"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="96bbfc4f-fe97-490f-b88e-05af64930957"
@@ -1882,10 +2271,34 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="9adc9bb8-d8b3-4eaf-beba-ae14b75d9320"
+			name="Ingresar_DetalleOrdenPago"
+			ref="e6d954c7-afd4-4f74-bcbd-359ece8b5da1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="9c301bfe-66ea-4274-9213-3a1bcdd34136"
+			name="setup">
+			</setup>
 			<testcase
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880"
 			name="SuraClaims"
 			reportlevel="Info;20">
+				<parameters>
+					<param
+					name="AppProcessID"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="a18fafab-42dc-4bfb-b1a0-de4e1b0a75f6"
@@ -2044,10 +2457,18 @@
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
@@ -2084,10 +2505,18 @@
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="URL"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
 					variablename="URL">
 					</var>
@@ -2110,6 +2539,28 @@
 					variablename="URL">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b787d6ab-b1dd-4104-be79-54adef71a8ea"
+			name="Logout"
+			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="bbb073c2-7b9c-41a7-a1e9-990bda3b3884"
@@ -2144,8 +2595,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -2162,12 +2613,50 @@
 			id="bfa62a25-2514-45df-bb14-801cbe6a02a0"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="c19338a9-9923-4ce6-8e3a-217239c13619"
+			name="MenuSuperior_BuscarSiniestro"
+			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<teardown
 			id="c269ca03-071a-44d1-b719-ae513a402521"
 			name="teardown">
 			</teardown>
 			<teardown
 			id="c42c8224-abd4-46fd-9910-771a740ce03a"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="c50c5f2e-92ea-4b3f-8b2f-a46874287fed"
 			name="teardown">
 			</teardown>
 			<testmodule
@@ -2179,6 +2668,20 @@
 					<var
 					dataname="Ambiente"
 					datasourceid="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="cb9e6a13-cdd8-4744-a768-ba5aa4242e5a"
+			name="MenuLateral_PlanDeTrabajo"
+			ref="8a731ede-0fbb-430f-920b-3eb2631fe189"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
@@ -2356,7 +2859,21 @@
 					variableid="cc9bd00d-2f36-436d-82f5-04c5a918ae21"
 					variablename="TipoPoliza">
 					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="dbac9d87-6fdc-43e0-a477-0b8ee07cf40e"
@@ -2496,6 +3013,11 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datasource="AprobacionesPagos"
+			id="e86717b1-fd17-4adc-aac7-94fc08ee7023"
+			name="Aprobar_Nuevo_Pago">
+			</testcase>
 			<testmodule
 			id="e87756d4-bbd0-4a60-a798-23e13d3cf193"
 			name="SeleccionarPersonas"
@@ -2513,6 +3035,20 @@
 					datasourceid="86b95672-af0b-4da0-a95b-2ac941c6be90"
 					variableid="7f3b91a8-de5e-4839-ac31-b4ce5e70a5e9"
 					variablename="NombreLesionado">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ea09cfe8-c23e-4025-a127-0394e3c4c52f"
+			name="ValidarPago"
+			ref="190d689b-a220-431f-b631-8bb5d974de2a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2674,10 +3210,92 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="f4068176-5638-44a5-b972-1f54c1bd554b"
+			name="StartAUT"
+			ref="fe5559b6-e1d6-43fd-bf7c-fd606e0e800d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="9e955975-c7b8-44cb-a041-f63a40bc3880"
+					variableid="42eb0de5-c84b-4c47-920b-a6d08c7f2856"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="f46d7210-5257-4b3a-9993-4f65ec0625d3"
 			name="setup">
 			</setup>
+			<testmodule
+			id="f6690f54-7cf5-4a34-bb1f-54ee996b4f05"
+			name="Login"
+			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="f68a7c4e-b9d4-4e22-b22e-768952516f97"
+			name="OpenBrowser"
+			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="f6c0893b-a6f9-42a9-8761-0d12788217a9"
 			name="Logout"
@@ -2895,6 +3513,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="fc751d39-25ee-498a-b674-4c6e6d8e497f"
+			name="PREPROD">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="f0248626-33eb-4fa7-8d86-54be4fdac042">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="PREPROD">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="fe83aa3e-d196-4ca4-b2ee-2fcde5c25c67"
 			name="CloseBrowser"
@@ -3367,72 +4010,8 @@
 						</teardown>
 					</testcase>
 					<testcase
-					id="58368d11-e725-4331-93f0-6f443d6c9119"
-					name="Pagos_Siniestros">
-						<setup
-						id="ce1ede00-886a-44e4-a5c1-30ab73e390a8"
-						name="setup">
-							<testmodule
-							id="b4de6801-8e9b-44f4-b769-8fe9fcbc912f"
-							name="OpenBrowser">
-							</testmodule>
-							<testmodule
-							id="4c1dd1d9-a6fc-4c42-a87f-199a1625875a"
-							name="Login">
-							</testmodule>
-						</setup>
-						<testmodule
-						id="f019d52f-2faa-4d40-8ed9-73981a50a7ce"
-						name="MenuSuperior_BuscarSiniestro">
-						</testmodule>
-						<testmodule
-						id="f36a71a2-e57d-43ce-976d-a3601d644ee6"
-						name="MenuLateralAcciones_OrdenDePago">
-						</testmodule>
-						<testmodule
-						id="a8ff0871-e1fc-4c54-bc9c-400d9e446852"
-						name="Paso1_InformacionBeneficiario">
-						</testmodule>
-						<smartfoldernode
-						id="569181f3-2976-4be8-ac1f-332f09fab645"
-						name="Cheque">
-							<testmodule
-							id="03551164-1e02-4779-82f0-b484e2ce720c"
-							name="Paso1_CodigoRecibo">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="0838144c-6ecf-41be-ad50-c922fb2e404f"
-						name="Transferencia">
-							<testmodule
-							id="73b7ece1-5f3b-4f37-8e99-62fa72c7bf5a"
-							name="Paso1_InfoNroCuenta">
-							</testmodule>
-						</smartfoldernode>
-						<testmodule
-						id="f1d553d7-aaa2-46bd-b031-a88e8d50fcfe"
-						name="Paso2_IntroducirInfoPagoSiniestro">
-						</testmodule>
-						<testmodule
-						id="8015bb2d-1ccf-41a7-be54-0fcc1920aace"
-						name="FinalizaPagoSiniestro">
-						</testmodule>
-						<teardown
-						id="d25182fe-792b-4912-acf9-508f7ebc4d78"
-						name="teardown">
-							<testmodule
-							id="fa3a4816-1ef9-4029-a7f9-f80cb86cb587"
-							name="Logout">
-							</testmodule>
-							<testmodule
-							id="88a8a119-6a70-4edf-9b97-c773419029f6"
-							name="CloseBrowser">
-							</testmodule>
-						</teardown>
-					</testcase>
-					<testcase
 					id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-					name="Aprobaciones_Para_Pagos">
+					name="Aprobaciones_Previas_A_Pagos">
 						<setup
 						id="f46d7210-5257-4b3a-9993-4f65ec0625d3"
 						name="setup">
@@ -3494,11 +4073,257 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="58368d11-e725-4331-93f0-6f443d6c9119"
+					name="Pagos_Siniestros">
+						<setup
+						id="ce1ede00-886a-44e4-a5c1-30ab73e390a8"
+						name="setup">
+							<testmodule
+							id="b4de6801-8e9b-44f4-b769-8fe9fcbc912f"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="4c1dd1d9-a6fc-4c42-a87f-199a1625875a"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="f019d52f-2faa-4d40-8ed9-73981a50a7ce"
+						name="MenuSuperior_BuscarSiniestro">
+						</testmodule>
+						<testmodule
+						id="f36a71a2-e57d-43ce-976d-a3601d644ee6"
+						name="MenuLateralAcciones_OrdenDePago">
+						</testmodule>
+						<testmodule
+						id="a8ff0871-e1fc-4c54-bc9c-400d9e446852"
+						name="Paso1_InformacionBeneficiario">
+						</testmodule>
+						<smartfoldernode
+						id="569181f3-2976-4be8-ac1f-332f09fab645"
+						name="Cheque">
+							<testmodule
+							id="03551164-1e02-4779-82f0-b484e2ce720c"
+							name="Paso1_CodigoRecibo">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0838144c-6ecf-41be-ad50-c922fb2e404f"
+						name="Transferencia">
+							<testmodule
+							id="73b7ece1-5f3b-4f37-8e99-62fa72c7bf5a"
+							name="Paso1_InfoNroCuenta">
+							</testmodule>
+						</smartfoldernode>
+						<testmodule
+						id="f1d553d7-aaa2-46bd-b031-a88e8d50fcfe"
+						name="Paso2_IntroducirInfoPagoSiniestro">
+						</testmodule>
+						<testmodule
+						id="8015bb2d-1ccf-41a7-be54-0fcc1920aace"
+						name="FinalizaPagoSiniestro">
+						</testmodule>
+						<testmodule
+						id="5faf3bd9-f4aa-47a3-aed1-e08f83dba9cb"
+						name="ObtenerUsuarioParaAprobarPago">
+						</testmodule>
+						<teardown
+						id="d25182fe-792b-4912-acf9-508f7ebc4d78"
+						name="teardown">
+							<testmodule
+							id="fa3a4816-1ef9-4029-a7f9-f80cb86cb587"
+							name="Logout">
+							</testmodule>
+							<testmodule
+							id="88a8a119-6a70-4edf-9b97-c773419029f6"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="e86717b1-fd17-4adc-aac7-94fc08ee7023"
+					name="Aprobar_Nuevo_Pago">
+						<setup
+						id="8a743954-f434-48cd-b5a8-78170382d00f"
+						name="setup">
+							<testmodule
+							id="6bdce0d8-a58e-40da-a28f-f619f0d7b748"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="f6690f54-7cf5-4a34-bb1f-54ee996b4f05"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="c19338a9-9923-4ce6-8e3a-217239c13619"
+						name="MenuSuperior_BuscarSiniestro">
+						</testmodule>
+						<testmodule
+						id="cb9e6a13-cdd8-4744-a768-ba5aa4242e5a"
+						name="MenuLateral_PlanDeTrabajo">
+						</testmodule>
+						<testmodule
+						id="83e9f880-a922-4351-8b98-2e32238922e2"
+						name="RevisarAprobarNuevoPago">
+						</testmodule>
+						<teardown
+						id="1615a42b-f927-4a50-827b-1e064142a694"
+						name="teardown">
+							<testmodule
+							id="883dea5f-6b13-4423-9839-1c921c75b76c"
+							name="Logout">
+							</testmodule>
+							<testmodule
+							id="7db329bd-a17c-441b-a078-209d1a6d65dd"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c"
+					name="ValidarPago">
+						<setup
+						id="7caa21d8-9502-457b-afe6-b063e2c35fb0"
+						name="setup">
+							<testmodule
+							id="f68a7c4e-b9d4-4e22-b22e-768952516f97"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="7c48a55f-e091-48cf-91e3-2f8bd2cc4feb"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="393f172c-efcc-45bd-81df-f378e4f5db39"
+						name="MenuSuperior_BuscarSiniestro">
+						</testmodule>
+						<testmodule
+						id="1ef0a027-2c47-4a97-958c-5358ec542a67"
+						name="MenuLateral_DatosFinancieros_Liquidaciones">
+						</testmodule>
+						<testmodule
+						id="9adc9bb8-d8b3-4eaf-beba-ae14b75d9320"
+						name="Ingresar_DetalleOrdenPago">
+						</testmodule>
+						<testmodule
+						id="ea09cfe8-c23e-4025-a127-0394e3c4c52f"
+						name="ValidarPago">
+						</testmodule>
+						<teardown
+						id="5f3b2a1c-3182-4153-9f26-6a6349a462c7"
+						name="teardown">
+							<testmodule
+							id="b787d6ab-b1dd-4104-be79-54adef71a8ea"
+							name="Logout">
+							</testmodule>
+							<testmodule
+							id="6db8cd1e-4c48-4a7b-a48d-6c4ade3fdff8"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="3378198a-d57f-4703-b046-8f715ee27a01"
+					name="ValidarPago_SISE">
+						<setup
+						id="9c301bfe-66ea-4274-9213-3a1bcdd34136"
+						name="setup">
+							<testmodule
+							id="f4068176-5638-44a5-b972-1f54c1bd554b"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<smartfoldernode
+						id="6063d4bd-8cb6-4b12-a2ea-c3ec60209033"
+						name="QA">
+							<testmodule
+							id="06ac34ed-5608-44d9-a55b-16deab2d047f"
+							name="ValidarPagoSiniestro_SISE_QA">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="fc751d39-25ee-498a-b674-4c6e6d8e497f"
+						name="PREPROD">
+							<testmodule
+							id="23e4cbbb-9e44-4df1-b80b-3e76da1436b9"
+							name="ValidarPagoSiniestro_SISE_PreProd">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="c50c5f2e-92ea-4b3f-8b2f-a46874287fed"
+						name="teardown">
+							<testmodule
+							id="8d8da3d0-4906-4192-8d33-5efb84cb8a47"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="AprobacionesPagos.xlsx"
+		id="3a168301-7879-4530-9708-7e12ebc5dbd0"
+		includefile="Checked"
+		lastknownrowcount="1"
+		name="AprobacionesPagos"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					Usuario
+				</column>
+				<column>
+					Contrasenia
+				</column>
+				<column>
+					NroSiniestro
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="AprobacionesPreviasAPago.xlsx"
+		id="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
+		includefile="Checked"
+		lastknownrowcount="1"
+		name="AprobacionesPreviasAPago"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					Usuario
+				</column>
+				<column>
+					Contrasenia
+				</column>
+				<column>
+					NroSiniestro
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 		<DataSource
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
@@ -4050,6 +4875,29 @@
 				</column>
 				<column>
 					Descripcion
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="ValidarPagoSiniestros_SISE.xlsx"
+		id="f0248626-33eb-4fa7-8d86-54be4fdac042"
+		includefile="Checked"
+		lastknownrowcount="2"
+		name="ValidarPagoSiniestros"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					NroSiniestro
+				</column>
+				<column>
+					Importe
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

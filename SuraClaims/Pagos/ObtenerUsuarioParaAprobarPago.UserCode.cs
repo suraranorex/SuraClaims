@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace SuraClaims.Actividad
+namespace SuraClaims.Pagos
 {
-    public partial class TerminarCompletarChecklistFraude
+    public partial class ObtenerUsuarioParaAprobarPago
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

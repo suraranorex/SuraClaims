@@ -20,47 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Menu
+namespace SuraClaims.SISE
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLateralAcciones_OrdenDePago recording.
+    ///The StartAUT recording.
     /// </summary>
-    [TestModule("e03b9180-4e01-4a9d-bcc7-fd2499bc0aee", ModuleType.Recording, 1)]
-    public partial class MenuLateralAcciones_OrdenDePago : ITestModule
+    [TestModule("fe5559b6-e1d6-43fd-bf7c-fd606e0e800d", ModuleType.Recording, 1)]
+    public partial class StartAUT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static MenuLateralAcciones_OrdenDePago instance = new MenuLateralAcciones_OrdenDePago();
+        static StartAUT instance = new StartAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLateralAcciones_OrdenDePago()
+        public StartAUT()
         {
+            StartAutProcessIDVar = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLateralAcciones_OrdenDePago Instance
+        public static StartAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _StartAutProcessIDVar;
+
         /// <summary>
-        /// Gets or sets the value of variable Ambiente.
+        /// Gets or sets the value of variable StartAutProcessIDVar.
         /// </summary>
-        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
-        public string Ambiente
+        [TestVariable("42eb0de5-c84b-4c47-920b-a6d08c7f2856")]
+        public string StartAutProcessIDVar
         {
-            get { return repo.Ambiente; }
-            set { repo.Ambiente = value; }
+            get { return _StartAutProcessIDVar; }
+            set { _StartAutProcessIDVar = value; }
         }
 
 #endregion
@@ -89,20 +92,9 @@ namespace SuraClaims.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menuLateral_Acciones' at Center.", repo.SuraClaims.Generales.MenuLateral.menuLateral_AccionesInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.MenuLateral.menuLateral_Acciones.Click();
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\SISE-RSA\\putty.exe' with arguments '-load sisepreprod' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
+            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\SISE-RSA\\putty.exe", "-load sisepreprod", "", false));
             Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(1));
-            //repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.MoveTo();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestro'", repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo.WaitForExists(30000);
             
         }
 

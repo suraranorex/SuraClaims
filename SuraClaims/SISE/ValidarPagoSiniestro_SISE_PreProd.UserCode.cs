@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace SuraClaims.Actividad
+namespace SuraClaims.SISE
 {
-    public partial class EvaluarCoberturaTecnica
+    public partial class ValidarPagoSiniestro_SISE_PreProd
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,6 +31,12 @@ namespace SuraClaims.Actividad
         private void Init()
         {
             // Your recording specific initialization code goes here.
+        }
+
+        public void ValidarLogin(string TextoValidacion, string TituloAccion)
+        {
+            // TODO: Replace the following line with your code implementation.
+            throw new NotImplementedException();
         }
 
     }

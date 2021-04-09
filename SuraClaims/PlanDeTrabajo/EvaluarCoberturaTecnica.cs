@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Actividad
+namespace SuraClaims.PlanDeTrabajo
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -89,38 +89,42 @@ namespace SuraClaims.Actividad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.a_EvaluarCoberturaTecnica' at Center.", repo.SuraClaims.Actividad.a_EvaluarCoberturaTecnicaInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Actividad.a_EvaluarCoberturaTecnica.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnica' at Center.", repo.SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnicaInfo, new RecordItemIndex(0));
+            repo.SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnica.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Actividad.ventana_Actividad'", repo.SuraClaims.Actividad.ventana_ActividadInfo, new ActionTimeout(20000), new RecordItemIndex(1));
-            repo.SuraClaims.Actividad.ventana_ActividadInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.PlanDeTrabajo.ventana_Actividad'", repo.SuraClaims.PlanDeTrabajo.ventana_ActividadInfo, new ActionTimeout(20000), new RecordItemIndex(1));
+            repo.SuraClaims.PlanDeTrabajo.ventana_ActividadInfo.WaitForExists(20000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.bttn_Editar' at Center.", repo.SuraClaims.Actividad.bttn_EditarInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Actividad.bttn_Editar.Click();
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.bttn_Editar' at Center.", repo.SuraClaims.PlanDeTrabajo.bttn_EditarInfo, new RecordItemIndex(3));
+            repo.SuraClaims.PlanDeTrabajo.bttn_Editar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.input_Resultado' at Center.", repo.SuraClaims.Actividad.input_ResultadoInfo, new RecordItemIndex(3));
-            repo.SuraClaims.Actividad.input_Resultado.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.input_Resultado' at Center.", repo.SuraClaims.PlanDeTrabajo.input_ResultadoInfo, new RecordItemIndex(4));
+            repo.SuraClaims.PlanDeTrabajo.input_Resultado.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_Aceptado' at Center.", repo.SuraClaims.Actividad.option_AceptadoInfo, new RecordItemIndex(4));
-            repo.SuraClaims.Actividad.option_Aceptado.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.option_Aceptado' at Center.", repo.SuraClaims.PlanDeTrabajo.option_AceptadoInfo, new RecordItemIndex(5));
+            repo.SuraClaims.PlanDeTrabajo.option_Aceptado.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.bttn_Actualizar' at Center.", repo.SuraClaims.Actividad.bttn_ActualizarInfo, new RecordItemIndex(5));
-            repo.SuraClaims.Actividad.bttn_Actualizar.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.bttn_Actualizar' at Center.", repo.SuraClaims.PlanDeTrabajo.bttn_ActualizarInfo, new RecordItemIndex(6));
+            repo.SuraClaims.PlanDeTrabajo.bttn_Actualizar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Actividad.bttn_Editar'", repo.SuraClaims.Actividad.bttn_EditarInfo, new ActionTimeout(20000), new RecordItemIndex(6));
-            repo.SuraClaims.Actividad.bttn_EditarInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.PlanDeTrabajo.bttn_Editar'", repo.SuraClaims.PlanDeTrabajo.bttn_EditarInfo, new ActionTimeout(20000), new RecordItemIndex(7));
+            repo.SuraClaims.PlanDeTrabajo.bttn_EditarInfo.WaitForExists(20000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.bttn_Completar' at Center.", repo.SuraClaims.Actividad.bttn_CompletarInfo, new RecordItemIndex(7));
-            repo.SuraClaims.Actividad.bttn_Completar.Click();
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(8));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.bttn_Completar' at Center.", repo.SuraClaims.PlanDeTrabajo.bttn_CompletarInfo, new RecordItemIndex(9));
+            repo.SuraClaims.PlanDeTrabajo.bttn_Completar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Actividad.a_CompletarChecklistFraude'", repo.SuraClaims.Actividad.a_CompletarChecklistFraudeInfo, new ActionTimeout(20000), new RecordItemIndex(8));
-            repo.SuraClaims.Actividad.a_CompletarChecklistFraudeInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraude'", repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraudeInfo, new ActionTimeout(20000), new RecordItemIndex(10));
+            repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraudeInfo.WaitForExists(20000);
             
         }
 

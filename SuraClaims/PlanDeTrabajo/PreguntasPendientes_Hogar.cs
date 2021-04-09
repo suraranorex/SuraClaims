@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Menu
+namespace SuraClaims.PlanDeTrabajo
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLateralAcciones_OrdenDePago recording.
+    ///The PreguntasPendientes_Hogar recording.
     /// </summary>
-    [TestModule("e03b9180-4e01-4a9d-bcc7-fd2499bc0aee", ModuleType.Recording, 1)]
-    public partial class MenuLateralAcciones_OrdenDePago : ITestModule
+    [TestModule("3f519212-8653-495e-b635-cec9f8ae22b6", ModuleType.Recording, 1)]
+    public partial class PreguntasPendientes_Hogar : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static MenuLateralAcciones_OrdenDePago instance = new MenuLateralAcciones_OrdenDePago();
+        static PreguntasPendientes_Hogar instance = new PreguntasPendientes_Hogar();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLateralAcciones_OrdenDePago()
+        public PreguntasPendientes_Hogar()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLateralAcciones_OrdenDePago Instance
+        public static PreguntasPendientes_Hogar Instance
         {
             get { return instance; }
         }
@@ -89,20 +89,29 @@ namespace SuraClaims.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menuLateral_Acciones' at Center.", repo.SuraClaims.Generales.MenuLateral.menuLateral_AccionesInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.MenuLateral.menuLateral_Acciones.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.Preguntas.pregunta_PoseeAntecedentes' at Center.", repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_PoseeAntecedentesInfo, new RecordItemIndex(0));
+            repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_PoseeAntecedentes.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(1));
-            //repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.MoveTo();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.option_No' at Center.", repo.SuraClaims.PlanDeTrabajo.option_NoInfo, new RecordItemIndex(1));
+            repo.SuraClaims.PlanDeTrabajo.option_No.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestro'", repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ModificacionesPoliza' at Center.", repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ModificacionesPolizaInfo, new RecordItemIndex(2));
+            repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ModificacionesPoliza.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.option_No' at Center.", repo.SuraClaims.PlanDeTrabajo.option_NoInfo, new RecordItemIndex(3));
+            repo.SuraClaims.PlanDeTrabajo.option_No.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ModificacionRelato' at Center.", repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ModificacionRelatoInfo, new RecordItemIndex(4));
+            repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ModificacionRelato.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.option_No' at Center.", repo.SuraClaims.PlanDeTrabajo.option_NoInfo, new RecordItemIndex(5));
+            repo.SuraClaims.PlanDeTrabajo.option_No.Click();
+            Delay.Milliseconds(0);
             
         }
 

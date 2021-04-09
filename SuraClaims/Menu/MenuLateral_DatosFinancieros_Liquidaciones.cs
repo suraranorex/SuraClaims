@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Actividad
+namespace SuraClaims.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The PreguntasPendientes_AP recording.
+    ///The MenuLateral_DatosFinancieros_Liquidaciones recording.
     /// </summary>
-    [TestModule("4d07bf85-5002-48fe-86dc-59b9668b3d51", ModuleType.Recording, 1)]
-    public partial class PreguntasPendientes_AP : ITestModule
+    [TestModule("86bc9978-cbae-46a7-998f-4beecc068775", ModuleType.Recording, 1)]
+    public partial class MenuLateral_DatosFinancieros_Liquidaciones : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static PreguntasPendientes_AP instance = new PreguntasPendientes_AP();
+        static MenuLateral_DatosFinancieros_Liquidaciones instance = new MenuLateral_DatosFinancieros_Liquidaciones();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public PreguntasPendientes_AP()
+        public MenuLateral_DatosFinancieros_Liquidaciones()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static PreguntasPendientes_AP Instance
+        public static MenuLateral_DatosFinancieros_Liquidaciones Instance
         {
             get { return instance; }
         }
@@ -89,29 +89,19 @@ namespace SuraClaims.Actividad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentes' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentesInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Actividad.Preguntas.pregunta_PoseeAntecedentes.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menu_DatosFinancieros' at Center.", repo.SuraClaims.Generales.MenuLateral.menu_DatosFinancierosInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Generales.MenuLateral.menu_DatosFinancieros.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_No' at Center.", repo.SuraClaims.Actividad.option_NoInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Actividad.option_No.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_ActividadAlMomento' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_ActividadAlMomentoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Actividad.Preguntas.pregunta_ActividadAlMomento.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_No' at Center.", repo.SuraClaims.Actividad.option_NoInfo, new RecordItemIndex(3));
-            repo.SuraClaims.Actividad.option_No.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.Preguntas.pregunta_MedidasDeSeguridad' at Center.", repo.SuraClaims.Actividad.Preguntas.pregunta_MedidasDeSeguridadInfo, new RecordItemIndex(4));
-            repo.SuraClaims.Actividad.Preguntas.pregunta_MedidasDeSeguridad.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.option_Si' at Center.", repo.SuraClaims.Actividad.option_SiInfo, new RecordItemIndex(5));
-            repo.SuraClaims.Actividad.option_Si.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPago'", repo.SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPagoInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPagoInfo.WaitForExists(30000);
             
         }
 

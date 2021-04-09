@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Menu
+namespace SuraClaims.PlanDeTrabajo
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLateralAcciones_OrdenDePago recording.
+    ///The CompletarChecklistFraude recording.
     /// </summary>
-    [TestModule("e03b9180-4e01-4a9d-bcc7-fd2499bc0aee", ModuleType.Recording, 1)]
-    public partial class MenuLateralAcciones_OrdenDePago : ITestModule
+    [TestModule("f59345f5-b0ba-47eb-b90d-f1248b7250b3", ModuleType.Recording, 1)]
+    public partial class CompletarChecklistFraude : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static MenuLateralAcciones_OrdenDePago instance = new MenuLateralAcciones_OrdenDePago();
+        static CompletarChecklistFraude instance = new CompletarChecklistFraude();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLateralAcciones_OrdenDePago()
+        public CompletarChecklistFraude()
         {
+            NumeroPoliza = "";
+            TipoPoliza = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLateralAcciones_OrdenDePago Instance
+        public static CompletarChecklistFraude Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _NumeroPoliza;
+
+        /// <summary>
+        /// Gets or sets the value of variable NumeroPoliza.
+        /// </summary>
+        [TestVariable("04ecaeaf-c7a6-40d1-a419-0f57877e35f7")]
+        public string NumeroPoliza
+        {
+            get { return _NumeroPoliza; }
+            set { _NumeroPoliza = value; }
+        }
+
+        string _TipoPoliza;
+
+        /// <summary>
+        /// Gets or sets the value of variable TipoPoliza.
+        /// </summary>
+        [TestVariable("cc9bd00d-2f36-436d-82f5-04c5a918ae21")]
+        public string TipoPoliza
+        {
+            get { return _TipoPoliza; }
+            set { _TipoPoliza = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -89,20 +115,27 @@ namespace SuraClaims.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menuLateral_Acciones' at Center.", repo.SuraClaims.Generales.MenuLateral.menuLateral_AccionesInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.MenuLateral.menuLateral_Acciones.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraude' at Center.", repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraudeInfo, new RecordItemIndex(0));
+            repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraude.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(1));
-            //repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.MoveTo();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.bttn_PreguntasPendientes' at Center.", repo.SuraClaims.PlanDeTrabajo.bttn_PreguntasPendientesInfo, new RecordItemIndex(1));
+            repo.SuraClaims.PlanDeTrabajo.bttn_PreguntasPendientes.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestro'", repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.PlanDeTrabajo.ventana_PreguntasPendientes'", repo.SuraClaims.PlanDeTrabajo.ventana_PreguntasPendientesInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.SuraClaims.PlanDeTrabajo.ventana_PreguntasPendientesInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.PlanDeTrabajo.label_NumeroPoliza' and assigning its value to variable 'NumeroPoliza'.", repo.SuraClaims.PlanDeTrabajo.label_NumeroPolizaInfo, new RecordItemIndex(3));
+            NumeroPoliza = repo.SuraClaims.PlanDeTrabajo.label_NumeroPoliza.Element.GetAttributeValueText("InnerText");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", NumeroPoliza, new RecordItemIndex(4));
+            
+            obtenerTipoPoliza();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", TipoPoliza, new RecordItemIndex(6));
             
         }
 

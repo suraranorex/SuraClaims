@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fe5559b6-e1d6-43fd-bf7c-fd606e0e800d"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="SuraClaims.SISE">
+	</codegen>
+	<variables>
+		<var
+		id="42eb0de5-c84b-4c47-920b-a6d08c7f2856"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\SISE-RSA\putty.exe
+			</filename>
+			<args>
+				-load sisepreprod
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
+	name="SuraClaimsRepository"
+	relativepath="..\SuraClaimsRepository.rxrep">
+		<codegen
+		classname="SuraClaimsRepository"
+		namespace="SuraClaims">
+		</codegen>
+		<rootfolder
+		id="e236aa5f-717e-474a-818d-ab73ab951257"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

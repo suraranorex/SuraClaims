@@ -20,64 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Actividad
+namespace SuraClaims.PlanDeTrabajo
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CompletarChecklistFraude recording.
+    ///The PreguntasPendientes_AP recording.
     /// </summary>
-    [TestModule("f59345f5-b0ba-47eb-b90d-f1248b7250b3", ModuleType.Recording, 1)]
-    public partial class CompletarChecklistFraude : ITestModule
+    [TestModule("4d07bf85-5002-48fe-86dc-59b9668b3d51", ModuleType.Recording, 1)]
+    public partial class PreguntasPendientes_AP : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static CompletarChecklistFraude instance = new CompletarChecklistFraude();
+        static PreguntasPendientes_AP instance = new PreguntasPendientes_AP();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CompletarChecklistFraude()
+        public PreguntasPendientes_AP()
         {
-            NumeroPoliza = "";
-            TipoPoliza = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CompletarChecklistFraude Instance
+        public static PreguntasPendientes_AP Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _NumeroPoliza;
-
-        /// <summary>
-        /// Gets or sets the value of variable NumeroPoliza.
-        /// </summary>
-        [TestVariable("04ecaeaf-c7a6-40d1-a419-0f57877e35f7")]
-        public string NumeroPoliza
-        {
-            get { return _NumeroPoliza; }
-            set { _NumeroPoliza = value; }
-        }
-
-        string _TipoPoliza;
-
-        /// <summary>
-        /// Gets or sets the value of variable TipoPoliza.
-        /// </summary>
-        [TestVariable("cc9bd00d-2f36-436d-82f5-04c5a918ae21")]
-        public string TipoPoliza
-        {
-            get { return _TipoPoliza; }
-            set { _TipoPoliza = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -115,27 +89,29 @@ namespace SuraClaims.Actividad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.a_CompletarChecklistFraude' at Center.", repo.SuraClaims.Actividad.a_CompletarChecklistFraudeInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Actividad.a_CompletarChecklistFraude.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.Preguntas.pregunta_PoseeAntecedentes' at Center.", repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_PoseeAntecedentesInfo, new RecordItemIndex(0));
+            repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_PoseeAntecedentes.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Actividad.bttn_PreguntasPendientes' at Center.", repo.SuraClaims.Actividad.bttn_PreguntasPendientesInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Actividad.bttn_PreguntasPendientes.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.option_No' at Center.", repo.SuraClaims.PlanDeTrabajo.option_NoInfo, new RecordItemIndex(1));
+            repo.SuraClaims.PlanDeTrabajo.option_No.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Actividad.ventana_PreguntasPendientes'", repo.SuraClaims.Actividad.ventana_PreguntasPendientesInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.SuraClaims.Actividad.ventana_PreguntasPendientesInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Actividad.label_NumeroPoliza' and assigning its value to variable 'NumeroPoliza'.", repo.SuraClaims.Actividad.label_NumeroPolizaInfo, new RecordItemIndex(3));
-            NumeroPoliza = repo.SuraClaims.Actividad.label_NumeroPoliza.Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ActividadAlMomento' at Center.", repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ActividadAlMomentoInfo, new RecordItemIndex(2));
+            repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_ActividadAlMomento.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", NumeroPoliza, new RecordItemIndex(4));
-            
-            obtenerTipoPoliza();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.option_No' at Center.", repo.SuraClaims.PlanDeTrabajo.option_NoInfo, new RecordItemIndex(3));
+            repo.SuraClaims.PlanDeTrabajo.option_No.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", TipoPoliza, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.Preguntas.pregunta_MedidasDeSeguridad' at Center.", repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_MedidasDeSeguridadInfo, new RecordItemIndex(4));
+            repo.SuraClaims.PlanDeTrabajo.Preguntas.pregunta_MedidasDeSeguridad.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.option_Si' at Center.", repo.SuraClaims.PlanDeTrabajo.option_SiInfo, new RecordItemIndex(5));
+            repo.SuraClaims.PlanDeTrabajo.option_Si.Click();
+            Delay.Milliseconds(0);
             
         }
 

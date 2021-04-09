@@ -286,30 +286,6 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<mouseitem
-		action="Move"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="b45dc70a-29d0-41a2-92ec-852878af181d"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d620f5b0-d0cf-472d-867e-76a13e3f849d"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~'Parcial']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
@@ -344,16 +320,16 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="1aca5139-1178-4e5c-8def-25670fca645e"
+			id="887f5bab-e720-4621-ba95-154067e358e6"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~'Parcial']/../..//input[@data-tabindexsaved='True']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input
 				</path>
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
-		duration="5000ms"
-		enabled="False"
+		duration="6000ms"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
@@ -384,15 +360,6 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -502,13 +469,22 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="bf1219c2-1942-45fe-ae64-313e17c70c7a"
+			id="887f5bab-e720-4621-ba95-154067e358e6"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~$CausaPago and @data-tabindexsaved='True']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="6000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -533,15 +509,6 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<getvaluerecorditem
 		attrname="InnerText"
 		captureregex="[0-9.,]+"
@@ -741,13 +708,22 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="0e0777ef-a765-4c91-a3db-be9d7e084448"
+			id="887f5bab-e720-4621-ba95-154067e358e6"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td' and @data-tabindexsaved='True']/div
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="6000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -768,15 +744,6 @@ mode="Global">
 				</path>
 			</info>
 		</loggingrecorditem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

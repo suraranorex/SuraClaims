@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="PreguntasPendientes_Hogar"
-	namespace="SuraClaims.Actividad">
+	namespace="SuraClaims.PlanDeTrabajo">
 	</codegen>
 	<variables>
 	</variables>

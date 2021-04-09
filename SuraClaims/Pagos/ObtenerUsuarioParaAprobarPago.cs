@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Menu
+namespace SuraClaims.Pagos
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MenuLateralAcciones_OrdenDePago recording.
+    ///The ObtenerUsuarioParaAprobarPago recording.
     /// </summary>
-    [TestModule("e03b9180-4e01-4a9d-bcc7-fd2499bc0aee", ModuleType.Recording, 1)]
-    public partial class MenuLateralAcciones_OrdenDePago : ITestModule
+    [TestModule("f28111a3-40ee-4213-a5d3-c2409dc5b5ca", ModuleType.Recording, 1)]
+    public partial class ObtenerUsuarioParaAprobarPago : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static MenuLateralAcciones_OrdenDePago instance = new MenuLateralAcciones_OrdenDePago();
+        static ObtenerUsuarioParaAprobarPago instance = new ObtenerUsuarioParaAprobarPago();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MenuLateralAcciones_OrdenDePago()
+        public ObtenerUsuarioParaAprobarPago()
         {
+            NombreAprobadorPago = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MenuLateralAcciones_OrdenDePago Instance
+        public static ObtenerUsuarioParaAprobarPago Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _NombreAprobadorPago;
+
+        /// <summary>
+        /// Gets or sets the value of variable NombreAprobadorPago.
+        /// </summary>
+        [TestVariable("b3b80e17-9472-4fa4-9ad6-9aea40ad62be")]
+        public string NombreAprobadorPago
+        {
+            get { return _NombreAprobadorPago; }
+            set { _NombreAprobadorPago = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -89,20 +102,20 @@ namespace SuraClaims.Menu
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menuLateral_Acciones' at Center.", repo.SuraClaims.Generales.MenuLateral.menuLateral_AccionesInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.MenuLateral.menuLateral_Acciones.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menu_PlanDeTrabajo' at Center.", repo.SuraClaims.Generales.MenuLateral.menu_PlanDeTrabajoInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Generales.MenuLateral.menu_PlanDeTrabajo.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(1));
-            //repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.MoveTo();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Generales.MenuLateral.title_PlanDeTrabajo'", repo.SuraClaims.Generales.MenuLateral.title_PlanDeTrabajoInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.SuraClaims.Generales.MenuLateral.title_PlanDeTrabajoInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.Click();
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.PlanDeTrabajo.txt_NombreAprobadorPago' and assigning its value to variable 'NombreAprobadorPago'.", repo.SuraClaims.PlanDeTrabajo.txt_NombreAprobadorPagoInfo, new RecordItemIndex(2));
+            NombreAprobadorPago = repo.SuraClaims.PlanDeTrabajo.txt_NombreAprobadorPago.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestro'", repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.SuraClaims.InformacionPagoSiniestro.lbl_Paso1_PagoSiniestroInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "User", "El usuario que debe aprobar el pago es:", new RecordItemIndex(3));
+            
+            Report.Log(ReportLevel.Info, "User", NombreAprobadorPago, new RecordItemIndex(4));
             
         }
 

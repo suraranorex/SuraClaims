@@ -1,15 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modulegroupdoc>
-  <testsuiteentryhierarchy>
-    <flatlistofchildren>
-      <modulegroups
-      name="SuraClaims"
-      id="ff673497-82d8-49c9-8c26-3dd90949004b"/>
-    </flatlistofchildren>
-    <childhierarchy>
-      <modulegroups
-      name="SuraClaims"
-      id="ff673497-82d8-49c9-8c26-3dd90949004b"/>
-    </childhierarchy>
-  </testsuiteentryhierarchy>
+<modulegroupdoc
+rxversion="9.3">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<testmodule
+			id="08c1d424-28f1-47b0-b5d3-875e6da6a46d"
+			name="ValidarPago"
+			ref="190d689b-a220-431f-b631-8bb5d974de2a"
+			type="Recording">
+			</testmodule>
+			<modulegroupdef
+			id="bc71c44a-70c4-4acd-b9d9-fb84770cec40"
+			name="ModuleGroup">
+			</modulegroupdef>
+			<modulegroups
+			id="ff673497-82d8-49c9-8c26-3dd90949004b"
+			name="SuraClaims">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="ff673497-82d8-49c9-8c26-3dd90949004b"
+			name="SuraClaims">
+				<modulegroupdef
+				id="bc71c44a-70c4-4acd-b9d9-fb84770cec40"
+				name="ModuleGroup">
+					<testmodule
+					id="08c1d424-28f1-47b0-b5d3-875e6da6a46d"
+					name="ValidarPago">
+					</testmodule>
+				</modulegroupdef>
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
 </modulegroupdoc>
