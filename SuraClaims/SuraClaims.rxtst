@@ -60,6 +60,12 @@
 					variableid="9df180b6-45a0-4369-98bf-7aca08a71ab0"
 					variablename="NroSiniestro">
 					</var>
+					<var
+					dataname="Importe"
+					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
+					variableid="395cfa08-a455-4d8c-b136-308481011839"
+					variablename="Importe">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -309,8 +315,8 @@
 			datarangeactive="True"
 			datasource="SiniestroAP"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Siniestro_AP">
 				<parameters>
 					<param
@@ -529,8 +535,8 @@
 			datarangeactive="True"
 			datasource="SiniestroHogar"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<testmodule
@@ -562,6 +568,12 @@
 					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
 					variableid="21a77e08-161f-4b23-8121-363b659eb050"
 					variablename="NroSiniestro">
+					</var>
+					<var
+					dataname="Importe"
+					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
+					variableid="4f23624d-50e5-4776-8ffa-a10d6bc5de41"
+					variablename="Importe">
 					</var>
 				</databinding>
 			</testmodule>
@@ -692,8 +704,8 @@
 			datarangeactive="True"
 			datasource="ValidarPagoSiniestros"
 			id="3378198a-d57f-4703-b046-8f715ee27a01"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="ValidarPago_SISE">
 			</testcase>
 			<testmodule
@@ -1034,8 +1046,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
+			maxrange="1"
+			minrange="1"
 			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
 					<param
@@ -1222,8 +1237,8 @@
 			datarangeactive="True"
 			datasource="PagosSiniestros"
 			id="58368d11-e725-4331-93f0-6f443d6c9119"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Pagos_Siniestros">
 			</testcase>
 			<testmodule
@@ -2595,8 +2610,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="1"
-			minrange="1"
+			maxrange="2"
+			minrange="2"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -4299,7 +4314,7 @@
 		filename="AprobacionesPreviasAPago.xlsx"
 		id="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="AprobacionesPreviasAPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -4957,13 +4972,37 @@
 			id="0838144c-6ecf-41be-ad50-c922fb2e404f">
 			</testcontainer>
 			<testcontainer
+			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c">
+			</testcontainer>
+			<testcontainer
+			id="3378198a-d57f-4703-b046-8f715ee27a01">
+			</testcontainer>
+			<testcontainer
+			id="4a707abf-3d5a-4bee-8566-19f69f31c038">
+			</testcontainer>
+			<testcontainer
 			id="569181f3-2976-4be8-ac1f-332f09fab645">
 			</testcontainer>
 			<testcontainer
 			id="58368d11-e725-4331-93f0-6f443d6c9119">
 			</testcontainer>
 			<testcontainer
+			id="6063d4bd-8cb6-4b12-a2ea-c3ec60209033">
+			</testcontainer>
+			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="e86717b1-fd17-4adc-aac7-94fc08ee7023">
+			</testcontainer>
+			<testcontainer
+			id="fac5f1c3-1006-4eec-9cb1-1d3949653c42">
+			</testcontainer>
+			<testcontainer
+			id="fc751d39-25ee-498a-b674-4c6e6d8e497f">
+			</testcontainer>
+			<testcontainer
+			id="ff81a40d-49d2-47f2-870d-bd85df0ac2a8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -89,8 +89,8 @@ namespace SuraClaims.PlanDeTrabajo
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnica' at Center.", repo.SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnicaInfo, new RecordItemIndex(0));
-            repo.SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnica.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnica' at CenterLeft.", repo.SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnicaInfo, new RecordItemIndex(0));
+            repo.SuraClaims.PlanDeTrabajo.a_EvaluarCoberturaTecnica.Click(Location.CenterLeft);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.PlanDeTrabajo.ventana_Actividad'", repo.SuraClaims.PlanDeTrabajo.ventana_ActividadInfo, new ActionTimeout(20000), new RecordItemIndex(1));

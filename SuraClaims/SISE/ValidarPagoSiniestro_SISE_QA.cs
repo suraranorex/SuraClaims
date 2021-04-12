@@ -41,7 +41,6 @@ namespace SuraClaims.SISE
         /// </summary>
         public ValidarPagoSiniestro_SISE_QA()
         {
-            PolizaConvertida = "";
             NroSiniestro = "1220194200601";
             Importe = "";
         }
@@ -55,18 +54,6 @@ namespace SuraClaims.SISE
         }
 
 #region Variables
-
-        string _PolizaConvertida;
-
-        /// <summary>
-        /// Gets or sets the value of variable PolizaConvertida.
-        /// </summary>
-        [TestVariable("68e92c0b-adbf-4acf-a367-5cb3834c5835")]
-        public string PolizaConvertida
-        {
-            get { return _PolizaConvertida; }
-            set { _PolizaConvertida = value; }
-        }
 
         string _NroSiniestro;
 

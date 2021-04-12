@@ -115,8 +115,8 @@ namespace SuraClaims.PlanDeTrabajo
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraude' at Center.", repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraudeInfo, new RecordItemIndex(0));
-            repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraude.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraude' at CenterLeft.", repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraudeInfo, new RecordItemIndex(0));
+            repo.SuraClaims.PlanDeTrabajo.a_CompletarChecklistFraude.Click(Location.CenterLeft);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.PlanDeTrabajo.bttn_PreguntasPendientes' at Center.", repo.SuraClaims.PlanDeTrabajo.bttn_PreguntasPendientesInfo, new RecordItemIndex(1));
