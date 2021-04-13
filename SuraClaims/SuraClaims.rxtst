@@ -239,6 +239,12 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="143816d0-a6cc-4d31-867a-1d1f50762a57"
+			name="MenuLateral_Supervision_ColaMensajes"
+			ref="65fd250e-8be8-47f5-95a5-e98867312e7f"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="1615a42b-f927-4a50-827b-1e064142a694"
 			name="teardown">
@@ -557,6 +563,31 @@
 			id="213cf277-af80-4b37-ace4-9f0da73b8cb7"
 			name="teardown">
 			</teardown>
+			<smartfoldernode
+			id="23333f5f-0542-48f2-a1b0-681a739e13e3"
+			name="SiHaySuspendidos">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="haySuspendidos"
+								id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="1">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="23e4cbbb-9e44-4df1-b80b-3e76da1436b9"
 			name="ValidarPagoSiniestro_SISE_PreProd"
@@ -577,6 +608,16 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="2a07542c-9c89-4c3c-9c89-ba49107eb139"
+			name="ValidarEstado_ColaDeMensajes">
+				<parameters>
+					<param
+					name="haySuspendidos"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="2b6a3be7-1147-4c13-b39c-529473557fe2"
 			name="NuevaExposicion"
@@ -771,6 +812,20 @@
 					variablename="NumeroCalle">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="388b741a-88f0-48c1-849a-d85cc3e61fc0"
+			name="OpenBrowser"
+			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="393f172c-efcc-45bd-81df-f378e4f5db39"
@@ -1059,6 +1114,20 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="4b014584-5ee3-48cd-841d-b837ead2d61c"
+			name="Logout"
+			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="4b69f60e-4516-4d24-b626-9e0d0f98a80e"
 			name="MenuSuperior"
@@ -1455,6 +1524,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="64323418-c65c-4549-a8ed-d6f3a11fadfc"
+			name="ReaunudarProcesos"
+			ref="33f90de9-2d4e-499e-b35d-49aa3c911607"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="64f0734d-c1fc-49fb-a459-c6301934a096"
 			name="MenuSuperior"
 			ref="5370da35-fa14-4882-9be6-a1a63f8f5b51"
@@ -1621,6 +1696,32 @@
 					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="710c858a-d49a-4477-a17e-36d5d13b3b3c"
+			name="Login"
+			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
 					</var>
 				</missingdatabinding>
 			</testmodule>
@@ -2542,6 +2643,12 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="b3753ea0-0ed0-49c0-bf0c-4a074e3c2d2c"
+			name="MenuSuperior_Administracion"
+			ref="34286301-52f1-4cc8-bc4c-ba086d6661a7"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b4de6801-8e9b-44f4-b769-8fe9fcbc912f"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -2662,6 +2769,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<setup
+			id="c23cf1c5-09e5-4170-9855-da1c45095f6f"
+			name="setup">
+			</setup>
 			<teardown
 			id="c269ca03-071a-44d1-b719-ae513a402521"
 			name="teardown">
@@ -2810,6 +2921,20 @@
 			id="d25182fe-792b-4912-acf9-508f7ebc4d78"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="d384afac-de07-4677-b156-7dcb52647075"
+			name="CloseBrowser"
+			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="d4e9c074-4f0d-48d2-8f0b-61c2899139c7"
 			name="Terminar_Detalle_VehiculoOcupantes"
@@ -3239,10 +3364,28 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="f42f29e8-df53-4723-9c21-16978d866b4d"
+			name="teardown">
+			</teardown>
 			<setup
 			id="f46d7210-5257-4b3a-9993-4f65ec0625d3"
 			name="setup">
 			</setup>
+			<testmodule
+			id="f4935136-d068-4796-a086-fedad1ce5a2f"
+			name="VerificarEstado_ColaMensajes"
+			ref="057bbe76-7118-471d-b26e-9ef3c771d4c6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="haySuspendidos"
+					datasourceid="2a07542c-9c89-4c3c-9c89-ba49107eb139"
+					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
+					variablename="hayProcesosSuspendidos">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="f6690f54-7cf5-4a34-bb1f-54ee996b4f05"
 			name="Login"
@@ -4276,6 +4419,54 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="2a07542c-9c89-4c3c-9c89-ba49107eb139"
+					name="ValidarEstado_ColaDeMensajes">
+						<setup
+						id="c23cf1c5-09e5-4170-9855-da1c45095f6f"
+						name="setup">
+							<testmodule
+							id="388b741a-88f0-48c1-849a-d85cc3e61fc0"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="710c858a-d49a-4477-a17e-36d5d13b3b3c"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="b3753ea0-0ed0-49c0-bf0c-4a074e3c2d2c"
+						name="MenuSuperior_Administracion">
+						</testmodule>
+						<testmodule
+						id="143816d0-a6cc-4d31-867a-1d1f50762a57"
+						name="MenuLateral_Supervision_ColaMensajes">
+						</testmodule>
+						<testmodule
+						id="f4935136-d068-4796-a086-fedad1ce5a2f"
+						name="VerificarEstado_ColaMensajes">
+						</testmodule>
+						<smartfoldernode
+						id="23333f5f-0542-48f2-a1b0-681a739e13e3"
+						name="SiHaySuspendidos">
+							<testmodule
+							id="64323418-c65c-4549-a8ed-d6f3a11fadfc"
+							name="ReaunudarProcesos">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="f42f29e8-df53-4723-9c21-16978d866b4d"
+						name="teardown">
+							<testmodule
+							id="4b014584-5ee3-48cd-841d-b837ead2d61c"
+							name="Logout">
+							</testmodule>
+							<testmodule
+							id="d384afac-de07-4677-b156-7dcb52647075"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -4920,7 +5111,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PagoSiniestro">
+	default="PruebaIri">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -5003,6 +5194,18 @@
 			</testcontainer>
 			<testcontainer
 			id="ff81a40d-49d2-47f2-870d-bd85df0ac2a8">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="PruebaIri">
+			<testcontainer
+			id="23333f5f-0542-48f2-a1b0-681a739e13e3">
+			</testcontainer>
+			<testcontainer
+			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
+			</testcontainer>
+			<testcontainer
+			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

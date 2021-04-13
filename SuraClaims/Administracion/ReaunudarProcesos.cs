@@ -20,64 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Generales
+namespace SuraClaims.Administracion
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Login recording.
+    ///The ReaunudarProcesos recording.
     /// </summary>
-    [TestModule("591e9e31-d5fd-4698-9036-0ba9aa89869c", ModuleType.Recording, 1)]
-    public partial class Login : ITestModule
+    [TestModule("33f90de9-2d4e-499e-b35d-49aa3c911607", ModuleType.Recording, 1)]
+    public partial class ReaunudarProcesos : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Login instance = new Login();
+        static ReaunudarProcesos instance = new ReaunudarProcesos();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Login()
+        public ReaunudarProcesos()
         {
-            Usuario = "su";
-            Contrasenia = "silverarrow";
-            Ambiente = "i-preproducciongestion.segurossura.com.ar";
+            servicioSuspendido = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Login Instance
+        public static ReaunudarProcesos Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Usuario;
+        string _servicioSuspendido;
 
         /// <summary>
-        /// Gets or sets the value of variable Usuario.
+        /// Gets or sets the value of variable servicioSuspendido.
         /// </summary>
-        [TestVariable("a037eb49-2745-457f-8e41-ee64f17689e9")]
-        public string Usuario
+        [TestVariable("a4ff4568-ceae-431b-92ca-d16e8b4ba517")]
+        public string servicioSuspendido
         {
-            get { return _Usuario; }
-            set { _Usuario = value; }
-        }
-
-        string _Contrasenia;
-
-        /// <summary>
-        /// Gets or sets the value of variable Contrasenia.
-        /// </summary>
-        [TestVariable("67fd67fe-82f2-43df-8120-3103542a215d")]
-        public string Contrasenia
-        {
-            get { return _Contrasenia; }
-            set { _Contrasenia = value; }
+            get { return _servicioSuspendido; }
+            set { _servicioSuspendido = value; }
         }
 
         /// <summary>
@@ -116,20 +102,35 @@ namespace SuraClaims.Generales
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Usuario' on item 'SuraClaims.Generales.Login.txtbox_Usuario'.", repo.SuraClaims.Generales.Login.txtbox_UsuarioInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.Login.txtbox_Usuario.Element.SetAttributeValue("TagValue", Usuario);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Administracion.check_ServicioSuspendido' at Center.", repo.SuraClaims.Administracion.check_ServicioSuspendidoInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Administracion.check_ServicioSuspendido.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Contrasenia' on item 'SuraClaims.Generales.Login.txtbox_Contrasenia'.", repo.SuraClaims.Generales.Login.txtbox_ContraseniaInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Generales.Login.txtbox_Contrasenia.Element.SetAttributeValue("TagValue", Contrasenia);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Administracion.nombreServicioSuspendido' and assigning its value to variable 'servicioSuspendido'.", repo.SuraClaims.Administracion.nombreServicioSuspendidoInfo, new RecordItemIndex(1));
+            servicioSuspendido = repo.SuraClaims.Administracion.nombreServicioSuspendido.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.Login.bttn_IniciarSesion' at 26;3.", repo.SuraClaims.Generales.Login.bttn_IniciarSesionInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.Login.bttn_IniciarSesion.Click("26;3");
+            Report.Log(ReportLevel.Info, "User", "Se está reanudando el servicio:", new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "User", servicioSuspendido, new RecordItemIndex(3));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Administracion.bttn_Reanudar' at Center.", repo.SuraClaims.Administracion.bttn_ReanudarInfo, new RecordItemIndex(4));
+            repo.SuraClaims.Administracion.bttn_Reanudar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Generales.bttn_Configuracion'", repo.SuraClaims.Generales.bttn_ConfiguracionInfo, new ActionTimeout(20000), new RecordItemIndex(3));
-            repo.SuraClaims.Generales.bttn_ConfiguracionInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F5}' with focus on 'SuraClaims'.", repo.SuraClaims.SelfInfo, new RecordItemIndex(6));
+            repo.SuraClaims.Self.EnsureVisible();
+            Keyboard.Press("{F5}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SuraClaims.Administracion.txt_ColasDeMensajes'", repo.SuraClaims.Administracion.txt_ColasDeMensajesInfo, new ActionTimeout(10000), new RecordItemIndex(7));
+            repo.SuraClaims.Administracion.txt_ColasDeMensajesInfo.WaitForExists(10000);
+            
+            existeOtroSuspendido();
+            Delay.Milliseconds(0);
             
         }
 

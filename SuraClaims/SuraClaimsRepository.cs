@@ -30,7 +30,6 @@ namespace SuraClaims
         SuraClaimsRepositoryFolders.SuraClaimsAppFolder _suraclaims;
         SuraClaimsRepositoryFolders.SuraClaims_ContinueOnFailAppFolder _suraclaims_continueonfail;
         SuraClaimsRepositoryFolders.Avisos_Chrome_COFAppFolder _avisos_chrome_cof;
-        SuraClaimsRepositoryFolders.WebDocumentModoDEV903165GuidewAppFolder _webdocumentmododev903165guidew;
         SuraClaimsRepositoryFolders.PuTTYExitConfirmationAppFolder _puttyexitconfirmation;
         SuraClaimsRepositoryFolders.SisePreProdAppFolder _sisepreprod;
         SuraClaimsRepositoryFolders.PuttyAppFolder _putty;
@@ -53,7 +52,6 @@ namespace SuraClaims
             _suraclaims = new SuraClaimsRepositoryFolders.SuraClaimsAppFolder(this);
             _suraclaims_continueonfail = new SuraClaimsRepositoryFolders.SuraClaims_ContinueOnFailAppFolder(this);
             _avisos_chrome_cof = new SuraClaimsRepositoryFolders.Avisos_Chrome_COFAppFolder(this);
-            _webdocumentmododev903165guidew = new SuraClaimsRepositoryFolders.WebDocumentModoDEV903165GuidewAppFolder(this);
             _puttyexitconfirmation = new SuraClaimsRepositoryFolders.PuTTYExitConfirmationAppFolder(this);
             _sisepreprod = new SuraClaimsRepositoryFolders.SisePreProdAppFolder(this);
             _putty = new SuraClaimsRepositoryFolders.PuttyAppFolder(this);
@@ -109,7 +107,7 @@ namespace SuraClaims
             set { _NOMBRE = value; }
         }
 
-        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
+        string _Ambiente = "i-preproducciongestion.segurossura.com.ar";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -331,15 +329,6 @@ namespace SuraClaims
         }
 
         /// <summary>
-        /// The WebDocumentModoDEV903165Guidew folder.
-        /// </summary>
-        [RepositoryFolder("e762b4a6-dbef-4f1f-b89c-567f2104ba73")]
-        public virtual SuraClaimsRepositoryFolders.WebDocumentModoDEV903165GuidewAppFolder WebDocumentModoDEV903165Guidew
-        {
-            get { return _webdocumentmododev903165guidew; }
-        }
-
-        /// <summary>
         /// The PuTTYExitConfirmation folder.
         /// </summary>
         [RepositoryFolder("4cc7b4d1-e136-489c-9876-9d28808e3b45")]
@@ -387,6 +376,7 @@ namespace SuraClaims
             SuraClaimsRepositoryFolders.InformacionPagoSiniestroFolder _informacionpagosiniestro;
             SuraClaimsRepositoryFolders.PlanDeTrabajoFolder _plandetrabajo;
             SuraClaimsRepositoryFolders.LiquidacionesOrdenPagoFolder _liquidacionesordenpago;
+            SuraClaimsRepositoryFolders.AdministracionFolder _administracion;
 
             /// <summary>
             /// Creates a new SuraClaims  folder.
@@ -402,6 +392,7 @@ namespace SuraClaims
                 _informacionpagosiniestro = new SuraClaimsRepositoryFolders.InformacionPagoSiniestroFolder(this);
                 _plandetrabajo = new SuraClaimsRepositoryFolders.PlanDeTrabajoFolder(this);
                 _liquidacionesordenpago = new SuraClaimsRepositoryFolders.LiquidacionesOrdenPagoFolder(this);
+                _administracion = new SuraClaimsRepositoryFolders.AdministracionFolder(this);
             }
 
             /// <summary>
@@ -498,6 +489,15 @@ namespace SuraClaims
             public virtual SuraClaimsRepositoryFolders.LiquidacionesOrdenPagoFolder LiquidacionesOrdenPago
             {
                 get { return _liquidacionesordenpago; }
+            }
+
+            /// <summary>
+            /// The Administracion folder.
+            /// </summary>
+            [RepositoryFolder("af73826a-78c7-4b15-90b2-4692ed359771")]
+            public virtual SuraClaimsRepositoryFolders.AdministracionFolder Administracion
+            {
+                get { return _administracion; }
             }
         }
 
@@ -961,6 +961,7 @@ namespace SuraClaims
             RepoItemInfo _menusup_nºdesiniestroInfo;
             RepoItemInfo _txt_buscarnrosiniestroInfo;
             RepoItemInfo _iconlupabuscarsiniestroInfo;
+            RepoItemInfo _bttn_menuadministracionInfo;
 
             /// <summary>
             /// Creates a new MenuSuperior  folder.
@@ -973,6 +974,7 @@ namespace SuraClaims
                 _menusup_nºdesiniestroInfo = new RepoItemInfo(this, "MenuSup_NºDeSiniestro", ".//span[@innertext='N.º de siniestro:']", 30000, null, "55d173f7-b63d-4210-9765-adf7a359ec6a");
                 _txt_buscarnrosiniestroInfo = new RepoItemInfo(this, "txt_BuscarNroSiniestro", ".//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']", 30000, null, "2f0e0337-0eee-4be9-9561-963ac57aa818");
                 _iconlupabuscarsiniestroInfo = new RepoItemInfo(this, "IconLupaBuscarSiniestro", ".//div[@id='TabBar:ClaimTab:ClaimTab_FindClaim_Button']", 30000, null, "62ae6e5b-b948-4fcc-8600-e2e8bcb2f727");
+                _bttn_menuadministracionInfo = new RepoItemInfo(this, "bttn_MenuAdministracion", ".//a[#'TabBar:AdminTab']//span[@innertext='Adminisración']", 30000, null, "8935aa65-463c-435f-aca8-661530eddabc");
             }
 
             /// <summary>
@@ -1106,6 +1108,30 @@ namespace SuraClaims
                     return _iconlupabuscarsiniestroInfo;
                 }
             }
+
+            /// <summary>
+            /// The bttn_MenuAdministracion item.
+            /// </summary>
+            [RepositoryItem("8935aa65-463c-435f-aca8-661530eddabc")]
+            public virtual Ranorex.SpanTag bttn_MenuAdministracion
+            {
+                get
+                {
+                    return _bttn_menuadministracionInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_MenuAdministracion item info.
+            /// </summary>
+            [RepositoryItemInfo("8935aa65-463c-435f-aca8-661530eddabc")]
+            public virtual RepoItemInfo bttn_MenuAdministracionInfo
+            {
+                get
+                {
+                    return _bttn_menuadministracionInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1186,6 +1212,8 @@ namespace SuraClaims
             RepoItemInfo _menu_plandetrabajoInfo;
             RepoItemInfo _menu_datosfinancierosInfo;
             RepoItemInfo _title_plandetrabajoInfo;
+            RepoItemInfo _menu_supervisionInfo;
+            RepoItemInfo _submenulateral_colasdemensajesInfo;
 
             /// <summary>
             /// Creates a new MenuLateral  folder.
@@ -1199,6 +1227,8 @@ namespace SuraClaims
                 _menu_plandetrabajoInfo = new RepoItemInfo(this, "menu_PlanDeTrabajo", ".//div[#'Claim:MenuLinks-body']//span[@innertext='Plan de trabajo']", 30000, null, "046380b3-86f3-4260-9725-a8223c285a00");
                 _menu_datosfinancierosInfo = new RepoItemInfo(this, "menu_DatosFinancieros", ".//div[#'Claim:MenuLinks-body']//span[@innertext='Datos financieros']", 30000, null, "d4f70601-6404-497e-9fb2-46160c6e6728");
                 _title_plandetrabajoInfo = new RepoItemInfo(this, "title_PlanDeTrabajo", ".//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']", 30000, null, "bf179f07-d9fe-4560-9400-31feb7032340");
+                _menu_supervisionInfo = new RepoItemInfo(this, "menu_Supervision", ".//div[#'Admin:MenuLinks-body']//span[@innertext='Supervisión']", 30000, null, "9dd2a238-7c9f-4a05-b410-025572350281");
+                _submenulateral_colasdemensajesInfo = new RepoItemInfo(this, "submenuLateral_ColasDeMensajes", ".//div[#'Admin:MenuLinks-body']//span[@innertext='Colas de mensajes']", 30000, null, "85006519-cd73-425a-9a5d-f7d0c7474e04");
             }
 
             /// <summary>
@@ -1356,6 +1386,54 @@ namespace SuraClaims
                     return _title_plandetrabajoInfo;
                 }
             }
+
+            /// <summary>
+            /// The menu_Supervision item.
+            /// </summary>
+            [RepositoryItem("9dd2a238-7c9f-4a05-b410-025572350281")]
+            public virtual Ranorex.SpanTag menu_Supervision
+            {
+                get
+                {
+                    return _menu_supervisionInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The menu_Supervision item info.
+            /// </summary>
+            [RepositoryItemInfo("9dd2a238-7c9f-4a05-b410-025572350281")]
+            public virtual RepoItemInfo menu_SupervisionInfo
+            {
+                get
+                {
+                    return _menu_supervisionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The submenuLateral_ColasDeMensajes item.
+            /// </summary>
+            [RepositoryItem("85006519-cd73-425a-9a5d-f7d0c7474e04")]
+            public virtual Ranorex.SpanTag submenuLateral_ColasDeMensajes
+            {
+                get
+                {
+                    return _submenulateral_colasdemensajesInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The submenuLateral_ColasDeMensajes item info.
+            /// </summary>
+            [RepositoryItemInfo("85006519-cd73-425a-9a5d-f7d0c7474e04")]
+            public virtual RepoItemInfo submenuLateral_ColasDeMensajesInfo
+            {
+                get
+                {
+                    return _submenulateral_colasdemensajesInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1494,6 +1572,7 @@ namespace SuraClaims
             RepoItemInfo _txt_verificadaInfo;
             RepoItemInfo _tagnombreaseguradoInfo;
             RepoItemInfo _txt_actividadesInfo;
+            RepoItemInfo _txt_suraInfo;
 
             /// <summary>
             /// Creates a new Txt_Validaciones  folder.
@@ -1513,6 +1592,7 @@ namespace SuraClaims
                 _txt_verificadaInfo = new RepoItemInfo(this, "txt_Verificada", ".//tbody[#'centerPanel-tbody']//div[@innertext='Verificada' or @innertext='No Disponible']", 30000, null, "08607f5b-eec7-4bcf-9f37-dd76390a50f1");
                 _tagnombreaseguradoInfo = new RepoItemInfo(this, "tagNombreAsegurado", ".//tbody[#'centerPanel-tbody']/tr//table[@class='x-grid-item']/?/?/tr/td[3]/div[@innertext~'[A-Z]+']", 30000, null, "1b8a81a2-06db-4cac-911a-5495840765df");
                 _txt_actividadesInfo = new RepoItemInfo(this, "txt_Actividades", ".//span[@innertext='Actividades']", 30000, null, "f3896037-62b3-465d-9d32-08147571edd7");
+                _txt_suraInfo = new RepoItemInfo(this, "txt_Sura", ".//tbody[#'centerPanel-tbody']//span[@innertext='Sura']", 30000, null, "71fc8611-5d5e-4897-ba0b-3f59225faa31");
             }
 
             /// <summary>
@@ -1812,6 +1892,30 @@ namespace SuraClaims
                 get
                 {
                     return _txt_actividadesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_Sura item.
+            /// </summary>
+            [RepositoryItem("71fc8611-5d5e-4897-ba0b-3f59225faa31")]
+            public virtual Ranorex.SpanTag txt_Sura
+            {
+                get
+                {
+                    return _txt_suraInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_Sura item info.
+            /// </summary>
+            [RepositoryItemInfo("71fc8611-5d5e-4897-ba0b-3f59225faa31")]
+            public virtual RepoItemInfo txt_SuraInfo
+            {
+                get
+                {
+                    return _txt_suraInfo;
                 }
             }
         }
@@ -8883,6 +8987,164 @@ namespace SuraClaims
         }
 
         /// <summary>
+        /// The AdministracionFolder folder.
+        /// </summary>
+        [RepositoryFolder("af73826a-78c7-4b15-90b2-4692ed359771")]
+        public partial class AdministracionFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _bttn_reanudarInfo;
+            RepoItemInfo _check_serviciosuspendidoInfo;
+            RepoItemInfo _serviciosuspendidoInfo;
+            RepoItemInfo _nombreserviciosuspendidoInfo;
+            RepoItemInfo _txt_colasdemensajesInfo;
+
+            /// <summary>
+            /// Creates a new Administracion  folder.
+            /// </summary>
+            public AdministracionFolder(RepoGenBaseFolder parentFolder) :
+                    base("Administracion", "", parentFolder, 0, null, false, "af73826a-78c7-4b15-90b2-4692ed359771", "")
+            {
+                _bttn_reanudarInfo = new RepoItemInfo(this, "bttn_Reanudar", ".//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Ranudar']", 30000, null, "7e7a387b-d640-4c67-a26d-ba8242e9a32f");
+                _check_serviciosuspendidoInfo = new RepoItemInfo(this, "check_ServicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//img", 30000, null, "c2b1ba40-2baa-48e4-a386-77c33800c9dc");
+                _serviciosuspendidoInfo = new RepoItemInfo(this, "servicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']", 30000, null, "5f4abf7a-4a3d-444e-a140-575dcd746971");
+                _nombreserviciosuspendidoInfo = new RepoItemInfo(this, "nombreServicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//a", 30000, null, "ef64a6ca-6c1c-4fd9-809c-f7359de279f9");
+                _txt_colasdemensajesInfo = new RepoItemInfo(this, "txt_ColasDeMensajes", ".//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Colas de mensajes']", 30000, null, "49948364-243d-443c-b1f6-50477db0e153");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("af73826a-78c7-4b15-90b2-4692ed359771")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Reanudar item.
+            /// </summary>
+            [RepositoryItem("7e7a387b-d640-4c67-a26d-ba8242e9a32f")]
+            public virtual Ranorex.SpanTag bttn_Reanudar
+            {
+                get
+                {
+                    return _bttn_reanudarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Reanudar item info.
+            /// </summary>
+            [RepositoryItemInfo("7e7a387b-d640-4c67-a26d-ba8242e9a32f")]
+            public virtual RepoItemInfo bttn_ReanudarInfo
+            {
+                get
+                {
+                    return _bttn_reanudarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The check_ServicioSuspendido item.
+            /// </summary>
+            [RepositoryItem("c2b1ba40-2baa-48e4-a386-77c33800c9dc")]
+            public virtual Ranorex.ImgTag check_ServicioSuspendido
+            {
+                get
+                {
+                    return _check_serviciosuspendidoInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The check_ServicioSuspendido item info.
+            /// </summary>
+            [RepositoryItemInfo("c2b1ba40-2baa-48e4-a386-77c33800c9dc")]
+            public virtual RepoItemInfo check_ServicioSuspendidoInfo
+            {
+                get
+                {
+                    return _check_serviciosuspendidoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The servicioSuspendido item.
+            /// </summary>
+            [RepositoryItem("5f4abf7a-4a3d-444e-a140-575dcd746971")]
+            public virtual Ranorex.DivTag servicioSuspendido
+            {
+                get
+                {
+                    return _serviciosuspendidoInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The servicioSuspendido item info.
+            /// </summary>
+            [RepositoryItemInfo("5f4abf7a-4a3d-444e-a140-575dcd746971")]
+            public virtual RepoItemInfo servicioSuspendidoInfo
+            {
+                get
+                {
+                    return _serviciosuspendidoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The nombreServicioSuspendido item.
+            /// </summary>
+            [RepositoryItem("ef64a6ca-6c1c-4fd9-809c-f7359de279f9")]
+            public virtual Ranorex.ATag nombreServicioSuspendido
+            {
+                get
+                {
+                    return _nombreserviciosuspendidoInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The nombreServicioSuspendido item info.
+            /// </summary>
+            [RepositoryItemInfo("ef64a6ca-6c1c-4fd9-809c-f7359de279f9")]
+            public virtual RepoItemInfo nombreServicioSuspendidoInfo
+            {
+                get
+                {
+                    return _nombreserviciosuspendidoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_ColasDeMensajes item.
+            /// </summary>
+            [RepositoryItem("49948364-243d-443c-b1f6-50477db0e153")]
+            public virtual Ranorex.SpanTag txt_ColasDeMensajes
+            {
+                get
+                {
+                    return _txt_colasdemensajesInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_ColasDeMensajes item info.
+            /// </summary>
+            [RepositoryItemInfo("49948364-243d-443c-b1f6-50477db0e153")]
+            public virtual RepoItemInfo txt_ColasDeMensajesInfo
+            {
+                get
+                {
+                    return _txt_colasdemensajesInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The SuraClaims_ContinueOnFailAppFolder folder.
         /// </summary>
         [RepositoryFolder("23163b00-148a-46fa-a120-b3fdeaa10fed")]
@@ -9062,72 +9324,6 @@ namespace SuraClaims
                 get
                 {
                     return _btn_abandonarInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WebDocumentModoDEV903165GuidewAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("e762b4a6-dbef-4f1f-b89c-567f2104ba73")]
-        public partial class WebDocumentModoDEV903165GuidewAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _xtablelayoutcellInfo;
-
-            /// <summary>
-            /// Creates a new WebDocumentModoDEV903165Guidew  folder.
-            /// </summary>
-            public WebDocumentModoDEV903165GuidewAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WebDocumentModoDEV903165Guidew", "/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']", parentFolder, 30000, null, false, "e762b4a6-dbef-4f1f-b89c-567f2104ba73", "")
-            {
-                _xtablelayoutcellInfo = new RepoItemInfo(this, "XTableLayoutCell", ".//tbody[#'ClaimFinancialsChecks-tbody']/tr[3]/td", 30000, null, "30738830-6cf4-44c5-b04c-f7b35d50e2c7");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("e762b4a6-dbef-4f1f-b89c-567f2104ba73")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("e762b4a6-dbef-4f1f-b89c-567f2104ba73")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The XTableLayoutCell item.
-            /// </summary>
-            [RepositoryItem("30738830-6cf4-44c5-b04c-f7b35d50e2c7")]
-            public virtual Ranorex.TdTag XTableLayoutCell
-            {
-                get
-                {
-                    return _xtablelayoutcellInfo.CreateAdapter<Ranorex.TdTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The XTableLayoutCell item info.
-            /// </summary>
-            [RepositoryItemInfo("30738830-6cf4-44c5-b04c-f7b35d50e2c7")]
-            public virtual RepoItemInfo XTableLayoutCellInfo
-            {
-                get
-                {
-                    return _xtablelayoutcellInfo;
                 }
             }
         }

@@ -20,65 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Generales
+namespace SuraClaims.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Login recording.
+    ///The MenuSuperior_Administracion recording.
     /// </summary>
-    [TestModule("591e9e31-d5fd-4698-9036-0ba9aa89869c", ModuleType.Recording, 1)]
-    public partial class Login : ITestModule
+    [TestModule("34286301-52f1-4cc8-bc4c-ba086d6661a7", ModuleType.Recording, 1)]
+    public partial class MenuSuperior_Administracion : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Login instance = new Login();
+        static MenuSuperior_Administracion instance = new MenuSuperior_Administracion();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Login()
+        public MenuSuperior_Administracion()
         {
-            Usuario = "su";
-            Contrasenia = "silverarrow";
-            Ambiente = "i-preproducciongestion.segurossura.com.ar";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Login Instance
+        public static MenuSuperior_Administracion Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Usuario;
-
-        /// <summary>
-        /// Gets or sets the value of variable Usuario.
-        /// </summary>
-        [TestVariable("a037eb49-2745-457f-8e41-ee64f17689e9")]
-        public string Usuario
-        {
-            get { return _Usuario; }
-            set { _Usuario = value; }
-        }
-
-        string _Contrasenia;
-
-        /// <summary>
-        /// Gets or sets the value of variable Contrasenia.
-        /// </summary>
-        [TestVariable("67fd67fe-82f2-43df-8120-3103542a215d")]
-        public string Contrasenia
-        {
-            get { return _Contrasenia; }
-            set { _Contrasenia = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -116,20 +89,12 @@ namespace SuraClaims.Generales
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Usuario' on item 'SuraClaims.Generales.Login.txtbox_Usuario'.", repo.SuraClaims.Generales.Login.txtbox_UsuarioInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Generales.Login.txtbox_Usuario.Element.SetAttributeValue("TagValue", Usuario);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuSuperior.bttn_MenuAdministracion' at Center.", repo.SuraClaims.Generales.MenuSuperior.bttn_MenuAdministracionInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Generales.MenuSuperior.bttn_MenuAdministracion.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$Contrasenia' on item 'SuraClaims.Generales.Login.txtbox_Contrasenia'.", repo.SuraClaims.Generales.Login.txtbox_ContraseniaInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Generales.Login.txtbox_Contrasenia.Element.SetAttributeValue("TagValue", Contrasenia);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.Login.bttn_IniciarSesion' at 26;3.", repo.SuraClaims.Generales.Login.bttn_IniciarSesionInfo, new RecordItemIndex(2));
-            repo.SuraClaims.Generales.Login.bttn_IniciarSesion.Click("26;3");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Generales.bttn_Configuracion'", repo.SuraClaims.Generales.bttn_ConfiguracionInfo, new ActionTimeout(20000), new RecordItemIndex(3));
-            repo.SuraClaims.Generales.bttn_ConfiguracionInfo.WaitForExists(20000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Sura'", repo.SuraClaims.Txt_Validaciones.txt_SuraInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.SuraClaims.Txt_Validaciones.txt_SuraInfo.WaitForExists(30000);
             
         }
 

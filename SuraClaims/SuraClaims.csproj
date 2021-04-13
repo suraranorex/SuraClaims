@@ -123,6 +123,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administracion\ReaunudarProcesos.cs">
+      <BoundTo>96425e72-3d7a-4bb3-ae56-f47fece3a405</BoundTo>
+      <DependentUpon>ReaunudarProcesos.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>487c73bb-2dec-4218-9099-d0295a51ca97</id>
+    </Compile>
+    <Compile Include="Administracion\ReaunudarProcesos.UserCode.cs">
+      <BoundTo>96425e72-3d7a-4bb3-ae56-f47fece3a405</BoundTo>
+      <DependentUpon>ReaunudarProcesos.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>929c4843-0f3f-4c4d-8fea-019a8b8489d5</id>
+    </Compile>
+    <Compile Include="Administracion\VerificarEstado_ColaMensajes.cs">
+      <BoundTo>434d4044-50c0-49d6-b0f3-56f9dabb2730</BoundTo>
+      <DependentUpon>VerificarEstado_ColaMensajes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>545c764b-2802-4f49-bb97-8b958989465a</id>
+    </Compile>
+    <Compile Include="Administracion\VerificarEstado_ColaMensajes.UserCode.cs">
+      <BoundTo>434d4044-50c0-49d6-b0f3-56f9dabb2730</BoundTo>
+      <DependentUpon>VerificarEstado_ColaMensajes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0eb9b891-b4e9-412b-856d-ce469e5d5d84</id>
+    </Compile>
     <Compile Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.cs">
       <BoundTo>f39815eb-df4c-4467-b9eb-12b0e044e9f7</BoundTo>
       <DependentUpon>MenuLateral_DatosFinancieros_Liquidaciones.rxrec</DependentUpon>
@@ -134,6 +158,30 @@
       <DependentUpon>MenuLateral_DatosFinancieros_Liquidaciones.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>64ffd19e-9510-4e63-93b2-b931ff8a5724</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Supervision_ColaMensajes.cs">
+      <BoundTo>78f4c535-a06d-425f-bb67-cf69a260de94</BoundTo>
+      <DependentUpon>MenuLateral_Supervision_ColaMensajes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>67dc3942-bd6a-4788-820f-07f6745b8c32</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Supervision_ColaMensajes.UserCode.cs">
+      <BoundTo>78f4c535-a06d-425f-bb67-cf69a260de94</BoundTo>
+      <DependentUpon>MenuLateral_Supervision_ColaMensajes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dfacd3ad-8dda-476c-b075-d6efbb7530a7</id>
+    </Compile>
+    <Compile Include="Menu\MenuSuperior_Administracion.cs">
+      <BoundTo>aa7ce910-5204-4eeb-830a-e09ba4759aa0</BoundTo>
+      <DependentUpon>MenuSuperior_Administracion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c4b24f8e-639f-4d71-81b3-2eebbd6d3a96</id>
+    </Compile>
+    <Compile Include="Menu\MenuSuperior_Administracion.UserCode.cs">
+      <BoundTo>aa7ce910-5204-4eeb-830a-e09ba4759aa0</BoundTo>
+      <DependentUpon>MenuSuperior_Administracion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>22745377-fd26-4487-be67-8d098321a00d</id>
     </Compile>
     <Compile Include="Pagos\Ingresar_DetalleOrdenPago.cs">
       <BoundTo>651f7c4a-518c-40b8-a356-840e6cfd47fd</BoundTo>
@@ -919,10 +967,30 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>9db35161-8586-45e6-bb76-2266eec61159</id>
     </Content>
+    <None Include="Administracion\ReaunudarProcesos.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>96425e72-3d7a-4bb3-ae56-f47fece3a405</id>
+      <recordtableid>33f90de9-2d4e-499e-b35d-49aa3c911607</recordtableid>
+    </None>
+    <None Include="Administracion\VerificarEstado_ColaMensajes.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>434d4044-50c0-49d6-b0f3-56f9dabb2730</id>
+      <recordtableid>057bbe76-7118-471d-b26e-9ef3c771d4c6</recordtableid>
+    </None>
     <None Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>f39815eb-df4c-4467-b9eb-12b0e044e9f7</id>
       <recordtableid>86bc9978-cbae-46a7-998f-4beecc068775</recordtableid>
+    </None>
+    <None Include="Menu\MenuLateral_Supervision_ColaMensajes.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>78f4c535-a06d-425f-bb67-cf69a260de94</id>
+      <recordtableid>65fd250e-8be8-47f5-95a5-e98867312e7f</recordtableid>
+    </None>
+    <None Include="Menu\MenuSuperior_Administracion.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>aa7ce910-5204-4eeb-830a-e09ba4759aa0</id>
+      <recordtableid>34286301-52f1-4cc8-bc4c-ba086d6661a7</recordtableid>
     </None>
     <None Include="Pagos\Ingresar_DetalleOrdenPago.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1349,6 +1417,9 @@
     </Folder>
     <Folder Include="Generales">
       <id>72f886e4-19a8-4442-8e05-65596e0895ea</id>
+    </Folder>
+    <Folder Include="Administracion">
+      <id>3825f170-2739-4b58-a1f9-e6e4aa6b9877</id>
     </Folder>
     <Folder Include="SISE">
       <id>86b31819-898d-4c1a-817d-69c8dc215b17</id>

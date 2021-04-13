@@ -184,6 +184,15 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[@id='TabBar:ClaimTab:ClaimTab_FindClaim_Button']
 					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="8935aa65-463c-435f-aca8-661530eddabc"
+					name="bttn_MenuAdministracion"
+					refimgid="883dbce5-e8e2-4d3d-8b0e-3f71fee7a7a7"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//a[#'TabBar:AdminTab']//span[@innertext='Adminisración']
+					</item>
 				</folder>
 				<folder
 				addcaps="unknown,webelement,tabletag"
@@ -266,6 +275,24 @@ name="SuraClaimsRepository">
 					refimgid="b7236de6-ee95-4d3a-92b6-4c05ab5427b6"
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="9dd2a238-7c9f-4a05-b410-025572350281"
+					name="menu_Supervision"
+					refimgid="4daea98a-abfd-44b5-b50d-16fed041ce08"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'Admin:MenuLinks-body']//span[@innertext='Supervisión']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="85006519-cd73-425a-9a5d-f7d0c7474e04"
+					name="submenuLateral_ColasDeMensajes"
+					refimgid="f5a766b9-ac15-41e5-a5d1-be00f0091f6e"
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'Admin:MenuLinks-body']//span[@innertext='Colas de mensajes']
 					</item>
 				</folder>
 				<item
@@ -438,6 +465,15 @@ name="SuraClaimsRepository">
 				refimgid="c3255885-8b8e-4e76-a16f-b5edc690faab"
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Actividades']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="71fc8611-5d5e-4897-ba0b-3f59225faa31"
+				name="txt_Sura"
+				refimgid="21ee44ae-9c5a-45aa-93e2-4f8ceba4ae21"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Sura']
 				</item>
 			</folder>
 			<folder
@@ -2835,6 +2871,58 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext&gt;'Fecha de emisi&#243;n de Liquidaci&#243;n']/../..//div[@innertext~'[0-9]+' and @innertext!~'/']
 				</item>
 			</folder>
+			<folder
+			capname="unknown"
+			id="af73826a-78c7-4b15-90b2-4692ed359771"
+			isrooted="False"
+			name="Administracion"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="7e7a387b-d640-4c67-a26d-ba8242e9a32f"
+				name="bttn_Reanudar"
+				refimgid="10213b6e-946f-491c-ba63-909ec7c9a471"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Ranudar']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="c2b1ba40-2baa-48e4-a386-77c33800c9dc"
+				name="check_ServicioSuspendido"
+				refimgid="ac2f303c-d3dd-4161-8747-158cd6748a9b"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//img
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="5f4abf7a-4a3d-444e-a140-575dcd746971"
+				name="servicioSuspendido"
+				refimgid="3591ccd1-a403-44f4-b906-61874054ebc4"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="atag"
+				id="ef64a6ca-6c1c-4fd9-809c-f7359de279f9"
+				name="nombreServicioSuspendido"
+				refimgid="3591ccd1-a403-44f4-b906-61874054ebc4"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//a
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="49948364-243d-443c-b1f6-50477db0e153"
+				name="txt_ColasDeMensajes"
+				refimgid="f9ce7faf-2e16-4d4f-abd6-fe6acae84c10"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Colas de mensajes']
+				</item>
+			</folder>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -2928,44 +3016,6 @@ sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
 MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
 RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
 AAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
-		id="e762b4a6-dbef-4f1f-b89c-567f2104ba73"
-		isrooted="True"
-		name="WebDocumentModoDEV903165Guidew"
-		refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,tdtag"
-			capname="tdtag"
-			id="30738830-6cf4-44c5-b04c-f7b35d50e2c7"
-			name="XTableLayoutCell"
-			refimgid="0bcfacd4-d263-4921-b621-d1bcce1c7491"
-			refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'ClaimFinancialsChecks-tbody']/tr[3]/td"
-			searchtimeout="30000ms">
-				/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'ClaimFinancialsChecks-tbody']/tr[3]/td
-			</item>
-			<basepath>
-				/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
@@ -3130,7 +3180,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
+			i-preproducciongestion.segurossura.com.ar
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"
