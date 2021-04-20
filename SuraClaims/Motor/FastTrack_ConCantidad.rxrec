@@ -97,6 +97,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b01e16e2-0466-4a83-90f0-542314320c2c">
@@ -260,6 +262,8 @@ FFFABRRRQAUUUUAf/9k=
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'[0-9]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="0953d35e-0cea-44a7-99b3-8e28b46ac433">
@@ -424,6 +428,8 @@ oAKKKKACiiigAooooA//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="760ab360-114e-4010-81eb-26f3175a1ca3">
@@ -494,6 +500,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'[a-zA-Z]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -518,6 +526,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -536,6 +546,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[@innertext~'Reposicion de']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -682,6 +694,8 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="a91ad6f0-c8ae-48e4-b155-65df8bb338e3">

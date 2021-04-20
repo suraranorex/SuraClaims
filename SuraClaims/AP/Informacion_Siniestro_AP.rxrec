@@ -138,6 +138,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewClaimDuplicatesWorksheet-tbody']//span[@innertext~'Crrar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -156,6 +158,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
@@ -325,6 +329,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keyitem>
 		<keysequenceitem
@@ -485,6 +491,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -641,6 +649,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -659,6 +669,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

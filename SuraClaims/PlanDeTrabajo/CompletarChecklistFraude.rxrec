@@ -55,6 +55,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext&gt;'Completar CheckList']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -140,6 +142,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'reguntas pendientes']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -219,6 +223,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Preguntas Pendientes']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<getvaluerecorditem
@@ -281,6 +287,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//div[#'infoBar-targetEl']//span[@innertext='Póliza:']/..//span[@innertext~'[0-9]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem

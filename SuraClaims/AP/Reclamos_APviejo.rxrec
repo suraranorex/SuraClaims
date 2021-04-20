@@ -108,6 +108,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nuvo Reclamo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="35c3edcb-7b3d-4a17-aebd-d8fae12eb2f8">
@@ -179,6 +181,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//li[@innertext~$NOMBRE]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -203,6 +207,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain=$Ambiente]//a[@class='x-menu-item-link']//span
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -221,6 +227,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<separatoritem
@@ -304,6 +312,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[4]//table/?/?/tr//table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/div/div/div/?/?/label/span[@innertext='Reclamante']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="743aa9c5-8a15-46e3-ab27-4744141cfae5">
@@ -575,6 +585,8 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'UBER']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -599,6 +611,8 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext~$NOMBRE]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -623,6 +637,8 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~$NOMBRE]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -641,6 +657,8 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Reclamante']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -715,6 +733,8 @@ AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[4]//table/?/?/tr/td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[9]//label/span[@innertext='Tipo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="37a4fec9-0c3a-472f-b40b-fa49b28a5121">
@@ -1135,6 +1155,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1208,6 +1230,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1226,6 +1250,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -1310,6 +1336,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<separatoritem
@@ -1343,6 +1371,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']/table/tbody/tr[4]//table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[15]/td/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src='https://ssurgwsoadev4.opc.oracleoutsourcing.com/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -1367,6 +1397,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain=$Ambiente]/body/div[15]/div/div[2]//span[@innertext='Nuevo incidente...']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1434,6 +1466,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1508,6 +1542,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/?/?/label/span[@innertext='Persona lesionada']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="cc94c792-7b8e-48af-8f7d-5fa6c95173bd">
@@ -1595,6 +1631,8 @@ GXOMHBFRrGRnARM88d6looA//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//li[@innertext=$NOMBRE]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -1619,6 +1657,8 @@ GXOMHBFRrGRnARM88d6looA//9k=
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -1643,6 +1683,8 @@ GXOMHBFRrGRnARM88d6looA//9k=
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~$NOMBRE]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -1803,6 +1845,8 @@ GXOMHBFRrGRnARM88d6looA//9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table/tbody/tr[4]/td/div/div[2]/div/table//div/table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[3]/td/div/div[1]/?/?/table/?/?/tr/td[1]/div/div[1]/?/?/input[@type='button']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="14c47aaf-a04c-4be4-b42c-503421d667fd">
@@ -1982,6 +2026,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Fecha del reporte']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -2055,6 +2101,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -2073,6 +2121,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Fecha del reporte']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<keyitem
@@ -2233,6 +2283,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext&gt;'Via de ingreso de reclamo']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keyitem>
 		<keysequenceitem
@@ -2389,6 +2441,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext&gt;'Via de ingreso de reclamo']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -2462,6 +2516,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -2480,6 +2536,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext&gt;'Via de ingreso de reclamo']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -2564,6 +2622,8 @@ LA32gHejbQ5QpvGB82COOv5irVV9PZn062Z2LM0SEknJJwKsUAFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

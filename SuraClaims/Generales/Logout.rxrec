@@ -119,6 +119,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[#':TabLinkMenuButton-btnEl']/span[1]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="d340402f-6b89-4fe0-86ed-d23feba0a15d">
@@ -228,6 +230,8 @@ Y2iMGW1gVlOQRGAQanoooA//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext&gt;'Cerrar sesi&#243;n LUIS MATTIO']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="7d1bfa57-16f6-4494-aef4-095c497863f9">
@@ -323,6 +327,8 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -395,6 +401,8 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/form[@title&gt;'&#191;Deseas abandonar el siti']/container[@accessiblename='']//button[@accessiblename='Abandonar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<validationitem
@@ -476,6 +484,8 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'Login-tbody']/tr[3]//table/tbody/tr[3]/td/div/div[1]/?/?/table/?/?/tr/td/a//span[@innertext='Iniciar sesión']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="331476e6-b06d-41fd-94d5-0164b1939974">

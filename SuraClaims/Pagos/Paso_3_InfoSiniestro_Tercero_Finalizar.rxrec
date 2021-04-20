@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 	</recorditems>

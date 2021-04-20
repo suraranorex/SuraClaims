@@ -108,6 +108,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nuvo Reclamo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="35c3edcb-7b3d-4a17-aebd-d8fae12eb2f8">
@@ -170,6 +172,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//li[@innertext~$NOMBRE]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -194,6 +198,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain=$Ambiente]//a[@class='x-menu-item-link']//span
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -218,6 +224,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Incapacidad Total']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -236,6 +244,8 @@ QghiWOIqqL0G6nM0TqVZlIPvRRRYLkXlW3+z/wB9UeVbf7P/AH1UtFFguReVbf7P/fVFS0UWC5//
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

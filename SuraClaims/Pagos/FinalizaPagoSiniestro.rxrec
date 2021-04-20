@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -71,6 +73,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -89,6 +93,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecks-tbody']//span[@innertext&gt;'Datos financieros (Total incurrido:']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -109,6 +115,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

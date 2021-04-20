@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Posee antecedentes siniestrales']/../..//div[@innertext~'ninguna']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -100,6 +102,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='No']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -124,6 +128,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'El asegurado ha realizado modificaciones']/../..//div[@innertext~'ninguna']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -237,6 +243,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='No']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -261,6 +269,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'El asegurado modifica el relato previo']/../..//div[@innertext~'ninguna']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -369,6 +379,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='No']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 	</recorditems>

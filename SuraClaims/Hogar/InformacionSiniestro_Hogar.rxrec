@@ -113,6 +113,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewClaimDuplicatesWorksheet-tbody']//span[@innertext~'Crrar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -131,6 +133,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -233,6 +237,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keyitem
@@ -393,6 +399,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keyitem>
 		<keysequenceitem
@@ -553,6 +561,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -709,6 +719,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -727,6 +739,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -801,6 +815,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/?/?/div/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]/td/?/?/label/span[@innertext='¿Solo incidente?']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="0f80ea8e-25d0-4b7a-8f55-d969c28ec654">
@@ -859,6 +875,8 @@ JNI8KO2WByRg4YjI96fRQAUUUUAFFFFAH//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -943,6 +961,8 @@ JNI8KO2WByRg4YjI96fRQAUUUUAFFFFAH//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[6]/td/div/div[1]/div/table/tbody/tr[1]/td/div/div[1]/?/?/label[@innertext='Agua']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="c231b260-b011-465e-8b16-e9f24a262a09">
@@ -992,6 +1012,8 @@ vkGQeAevNXaKAKyzt5wTKdcbP4sY69elFWaKAP/Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Preguntas']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -1076,6 +1098,8 @@ vkGQeAevNXaKAKyzt5wTKdcbP4sY69elFWaKAP/Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -1100,6 +1124,8 @@ vkGQeAevNXaKAKyzt5wTKdcbP4sY69elFWaKAP/Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Siguiente']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1167,6 +1193,8 @@ vkGQeAevNXaKAKyzt5wTKdcbP4sY69elFWaKAP/Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

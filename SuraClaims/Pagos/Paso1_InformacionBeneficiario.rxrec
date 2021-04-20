@@ -65,6 +65,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/div/div/div/div[2]/div/div[2]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<getvaluerecorditem
@@ -84,6 +86,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//a[#'Claim:ClaimInfoBar:Insured']/span/span/span[2]/span[@innertext='DANIEL RAMIREZ']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem
@@ -125,6 +129,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -285,6 +291,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:PrimaryPayee_Name']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -309,6 +317,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir información']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -327,6 +337,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -351,6 +363,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<separatoritem
@@ -438,6 +452,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div//label[@innertext=$MetodoPagoSiniestro]/..//*[@type='button']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -456,6 +472,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

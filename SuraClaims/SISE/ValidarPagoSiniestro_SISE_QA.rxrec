@@ -198,6 +198,8 @@ EN5iQQMAAAAASUVORK5CYII=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="5538d1cb-3169-4d3f-9bcb-4bdd08dc714c">
@@ -537,6 +539,8 @@ EN5iQQMAAAAASUVORK5CYII=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="2e2055ac-c03c-4f00-b89a-3d0481459de5">
@@ -893,6 +897,8 @@ EN5iQQMAAAAASUVORK5CYII=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="fcb3f0cd-114b-4264-84a0-c7c7101bf6d9">
@@ -1312,6 +1318,8 @@ EN5iQQMAAAAASUVORK5CYII=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="8da114e7-ba43-4e0f-aea1-d5581f38794d">
@@ -1606,6 +1614,8 @@ g+U/XvRRW0UuS5D3LVpfRXcCMCquwOY92SKni/1Kf7oooqJpJ2RUXdD6KKKgYUUUUAFFFFAH/9k=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<explicitdelayitem
@@ -1634,6 +1644,8 @@ g+U/XvRRW0UuS5D3LVpfRXcCMCquwOY92SKni/1Kf7oooqJpJ2RUXdD6KKKgYUUUUAFFFFAH/9k=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<explicitdelayitem
@@ -1800,6 +1812,8 @@ EN5iQQMAAAAASUVORK5CYII=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="f48a7797-1081-4a97-bf66-67d33e52e9ee">
@@ -2112,6 +2126,8 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -2135,6 +2151,8 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -2154,6 +2172,8 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<explicitdelayitem
@@ -2329,6 +2349,8 @@ EN5iQQMAAAAASUVORK5CYII=
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="f48a7797-1081-4a97-bf66-67d33e52e9ee">
@@ -2680,6 +2702,8 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 				<path>
 					/form[@title='Sise Pre Prod']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -2753,6 +2777,8 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 				<path>
 					/form[@title='Sise Pre Prod']/?/?/menuitem[@accessiblename='Sistema']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="d1c606e9-576c-4df1-9225-718ecfbeac62">
@@ -2883,6 +2909,8 @@ mTRTJ1O3liSaMpIu5evpj/CkhhSEHZu56lmLE/iaKKRRJRRRQAU00UUAZ+r/APIOn/3DXP3ljFBp
 				<path>
 					/contextmenu[@processname='putty']/?/?/menuitem[@accessiblename='Copy All to Clipboard']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="a77f8ab1-ad60-4ab3-b0b8-f39aab932830">

@@ -108,6 +108,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Escritorio']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -175,6 +177,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Actividades']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -260,6 +264,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Cance']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -345,6 +351,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Cance']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 	</recorditems>

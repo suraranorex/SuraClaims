@@ -67,6 +67,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -85,6 +87,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -170,6 +174,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[8]//table/tbody/tr[2]//table/?/?/tr/td[1]/?/?/table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]/td/div/div[1]/div/div[2]/div[@innertext='2019 CHEVROLET ASTRA']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="c9b78422-d8d4-4bc4-879a-e77e6fcd5d49">
@@ -248,6 +254,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Detalle del veh&#237;culo asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<separatoritem
@@ -281,6 +289,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -299,6 +309,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -323,6 +335,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -341,6 +355,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -415,6 +431,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[6]/td/div/div[3]/div[1]/div/table/tbody/tr/td[2]/div[@innertext='&lt;ninguna&gt;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="747c66c6-b78d-48e0-83dd-9f5e3bdf314b">
@@ -495,6 +513,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='D.N.I.']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -548,6 +568,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -566,6 +588,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -590,6 +614,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -614,6 +640,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -633,6 +661,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -686,6 +716,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -704,6 +736,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -728,6 +762,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//div[@class='x-grid-item-container']/table[1]//td[3]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -747,6 +783,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//div[@class='x-grid-item-container']/table[1]//td[3]/div
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -800,6 +838,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -824,6 +864,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -843,6 +885,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -896,6 +940,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -981,6 +1027,8 @@ AOPejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF496OPekooAXj3o496SigBePejj3pKKAF
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="33e58afa-4a5b-4355-8856-eca9673fc9a4">
@@ -1029,6 +1077,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Detalle del veh&#237;culo asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -1113,6 +1163,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<separatoritem
@@ -1146,6 +1198,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -1165,6 +1219,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1188,6 +1244,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1207,6 +1265,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -1225,6 +1285,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1249,6 +1311,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -1268,6 +1332,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1291,6 +1357,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1310,6 +1378,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Make']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -1328,6 +1398,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Marca']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1352,6 +1424,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -1371,6 +1445,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1394,6 +1470,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1413,6 +1491,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Model']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -1431,6 +1511,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Modelo']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -1455,6 +1537,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -1474,6 +1558,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1497,6 +1583,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -1516,6 +1604,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[7]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Style']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -1534,6 +1624,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -1554,6 +1646,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -1639,6 +1733,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="dd7ef163-e212-4993-900b-f7c8baddbfcd">
@@ -1737,6 +1833,8 @@ Ve2r/dH5UbV/uj8qOeXcXs4dij/Y1t/fl/Mf4UVe2r/dH5UUc8u4ezh2P//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

@@ -112,6 +112,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[3]//span[@innertext='inalizar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="045b22e2-2ad9-41aa-93ee-9dab9e8c793b">
@@ -161,6 +163,8 @@ Z/Gre72pWXYpVJpWUn94kaCONY1+6oCj8KdSbvajd7UyBaKTd7UbvagBaKTd7UbvagD/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewClaimSaved-tbody']/tr[3]//table/tbody/tr[1]/?/?/label[@innertext&gt;'el siniestro 0420174403491']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -181,6 +185,8 @@ Z/Gre72pWXYpVJpWUn94kaCONY1+6oCj8KdSbvajd7UyBaKTd7UbvagBaKTd7UbvagD/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<getvaluerecorditem
@@ -259,6 +265,8 @@ Z/Gre72pWXYpVJpWUn94kaCONY1+6oCj8KdSbvajd7UyBaKTd7UbvagBaKTd7UbvagD/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'NewClaimSaved-tbody']/tr[3]//table/tbody/tr[1]/?/?/label[@innertext&gt;'el siniestro 0420174403491']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem

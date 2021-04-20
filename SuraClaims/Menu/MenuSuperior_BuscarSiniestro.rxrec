@@ -124,6 +124,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'TabBar:ClaimTab']/span
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="385fe6ac-ebc4-45f8-8378-e822eb9f8014">
@@ -176,6 +178,8 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='N.º de siniestro:']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -200,6 +204,8 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				<path>
 					/dom[@domain=$Ambiente]//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -223,6 +229,8 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				<path>
 					/dom[@domain=$Ambiente]//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -242,6 +250,8 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				<path>
 					/dom[@domain=$Ambiente]//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -266,6 +276,8 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				<path>
 					/dom[@domain=$Ambiente]//div[@id='TabBar:ClaimTab:ClaimTab_FindClaim_Button']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -284,6 +296,8 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimSummary-tbody']//span[@innertext='Resumen']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

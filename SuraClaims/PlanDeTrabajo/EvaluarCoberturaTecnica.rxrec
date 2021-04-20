@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'ClaimWorkplan-tbody']//a[@innertext&gt;'Evaluar Cobertura T&#233;cnica']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -126,6 +128,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Actividad']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -146,6 +150,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -231,6 +237,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Editar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -392,6 +400,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Resultado']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -505,6 +515,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='Aceptado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -529,6 +541,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Editar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -608,6 +622,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Editar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -628,6 +644,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -652,6 +670,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Completar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -724,6 +744,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext&gt;'Completar CheckList']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

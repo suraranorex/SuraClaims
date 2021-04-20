@@ -244,6 +244,14 @@
 			name="MenuLateral_Supervision_ColaMensajes"
 			ref="65fd250e-8be8-47f5-95a5-e98867312e7f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="1615a42b-f927-4a50-827b-1e064142a694"
@@ -609,6 +617,7 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datasource="DataSource_Ambiente_Usuario"
 			id="2a07542c-9c89-4c3c-9c89-ba49107eb139"
 			name="ValidarEstado_ColaDeMensajes">
 				<parameters>
@@ -818,6 +827,14 @@
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="URL"
@@ -971,16 +988,21 @@
 			VideoFps="15"
 			VideoRecordingMode="KeepAllTests"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="4618015f-8fdb-4e91-8f75-539f4e6d9720"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="SuraClaims"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="47435bef-68d0-4e0c-9a8b-4be3e7e6b1a4"
@@ -1119,6 +1141,14 @@
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -1704,6 +1734,26 @@
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -2647,6 +2697,14 @@
 			name="MenuSuperior_Administracion"
 			ref="34286301-52f1-4cc8-bc4c-ba086d6661a7"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="b4de6801-8e9b-44f4-b769-8fe9fcbc912f"
@@ -2926,6 +2984,14 @@
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -3383,6 +3449,12 @@
 					datasourceid="2a07542c-9c89-4c3c-9c89-ba49107eb139"
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
+					</var>
+					<var
+					dataname="Ambiente"
+					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4531,6 +4603,32 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
+		filename="DataSource - Ambiente y Usuario.xlsx"
+		id="b35e2924-f74b-4727-b4aa-c922e3cbd979"
+		includefile="Checked"
+		lastknownrowcount="1"
+		name="DataSource_Ambiente_Usuario"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					Usuario
+				</column>
+				<column>
+					Contrasenia
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
@@ -5199,10 +5297,7 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
-			id="23333f5f-0542-48f2-a1b0-681a739e13e3">
-			</testcontainer>
-			<testcontainer
-			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
+			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">

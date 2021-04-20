@@ -56,6 +56,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='SAFE']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -75,6 +77,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='SAFE']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<keysequenceitem
@@ -94,6 +98,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='SAFE']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -118,6 +124,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[5]/?/?/label[@innertext='Datos Uber']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -136,6 +144,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody//span[@innertext~'SAFE']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -179,6 +189,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:NivelSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -198,6 +210,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:NivelSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -222,6 +236,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[5]/?/?/label[@innertext='Datos Uber']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -240,6 +256,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext='Nivel']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -283,6 +301,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:PeriodoSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -302,6 +322,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:PeriodoSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -326,6 +348,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]//table//div/table/?/?/tr/td[1]/div/table/tbody/tr[5]/?/?/label[@innertext='Datos Uber']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -344,6 +368,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:PeriodoSura']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -428,6 +454,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -452,6 +480,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Siguiente']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -499,6 +529,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 5']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

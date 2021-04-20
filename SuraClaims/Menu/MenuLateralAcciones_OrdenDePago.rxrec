@@ -108,6 +108,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[#'Claim:ClaimMenuActions-btnEl']/span[@innertext='cciones']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -132,6 +134,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext~'Liquidaciones / Orden de']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -156,6 +160,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext~'Liquidaciones / Orden de']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -203,6 +209,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir información']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

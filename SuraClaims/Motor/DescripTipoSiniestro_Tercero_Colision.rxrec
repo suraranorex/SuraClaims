@@ -87,6 +87,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -248,6 +250,8 @@ mode="Global">
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AccidentTypeInputSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="e9250cad-961b-42a9-9914-d56ca3e942aa">
@@ -412,6 +416,8 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext~'Tipo de accidente']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -436,6 +442,8 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='Colisión']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -596,6 +604,8 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[3]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AccidentTypeInputSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -620,6 +630,8 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext=$TipoAccidente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -644,6 +656,8 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -805,6 +819,8 @@ gexHtnvQBZoqATyHaPKwxbHJIHTOen9KBO55EYO4ErhuTj144oAnopkT+Ym4gA+gzx+YFIsjGUrt
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:CollisionTypeInputSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b8015bad-b903-4a0d-8225-bcea323b8a29">
@@ -1103,6 +1119,8 @@ AUUUUAf/2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:CollisionTypeInputSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="bba7618a-ffb6-4dd1-b0c2-16d300391423">
@@ -1353,6 +1371,8 @@ UAf/2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[13]/?/?/ul/li[@innertext='Vehículo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="730edafe-164f-40b8-8850-763757876b26">
@@ -1462,6 +1482,8 @@ KAP/2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -1623,6 +1645,8 @@ KAP/2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[5]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:VehicleDamage3rdPartyTypeSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b1376ac4-ef2e-4b00-a5fb-5b205df349ab">
@@ -1683,6 +1707,8 @@ QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:VehicleDamage3rdPartyTypeSura' and @visible='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1791,6 +1817,8 @@ QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[14]/?/?/ul/li[@innertext='Frontal']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="fbfcd412-9007-43ae-b8de-e29028e3210f">
@@ -1932,6 +1960,8 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -2093,6 +2123,8 @@ FFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[6]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AilmentsInjuriesTransportedSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b52e0d88-843c-48e8-be53-2eaca67e4ddb">
@@ -2148,6 +2180,8 @@ FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1oyfWgB9FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1pQTmgD//Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:AilmentsInjuriesTransportedSura' and @visible='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -2256,6 +2290,8 @@ FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1oyfWgB9FMyfWjJ9aAH0UzJ9aMn1oAfRTMn1pQTmgD//Z
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[15]/?/?/ul/li[@innertext='No']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="c8521bd7-9007-4092-aee0-126ed369340e">
@@ -2368,6 +2404,8 @@ UUUUAFFFFADfLX0o8tfSiigA8tfSjy19KKKADy19KPLX0oooAPLX0o8tfSiigA8tfSjy19KKKADy
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -2529,6 +2567,8 @@ UUUUAFFFFADfLX0o8tfSiigA8tfSjy19KKKADy19KPLX0oooAPLX0o8tfSiigA8tfSjy19KKKADy
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[7]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:PassengerQuantity3rdPartyVehicleSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="24b47a3c-5b84-47ae-8b41-3308c668dec1">
@@ -2592,6 +2632,8 @@ RQAUDrRRQA+iiimAUUUUAFFFFABRRRQB/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:PassengerQuantity3rdPartyVehicleSura' and @visible='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -2700,6 +2742,8 @@ RQAUDrRRQA+iiimAUUUUAFFFFABRRRQB/9k=
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[16]/?/?/ul/li[@innertext='1']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="f77ad55d-5d90-40a2-8257-4a149b73b6c6">
@@ -2959,6 +3003,8 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:PassengerQuantity1stPartyVehicleSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="549daa0e-6a83-4e9f-8477-fff7c9ea3c3b">
@@ -3024,6 +3070,8 @@ gAooooAKKKKACiiigAooooAB1p9FFMAooooAKKKKAP/Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:AdditionalFields3rdPartyVehicleIncidentInputSet:PassengerQuantity1stPartyVehicleSura' and @visible='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -3132,6 +3180,8 @@ gAooooAKKKKACiiigAooooAB1p9FFMAooooAKKKKAP/Z
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']/body/div[17]/?/?/ul/li[@innertext='1']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="059667c5-450a-48e2-b0e6-a36a346876f0">
@@ -3238,6 +3288,8 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -3262,6 +3314,8 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//textarea[@id='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Description-inputEl']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -3285,6 +3339,8 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//textarea[@id='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Description-inputEl']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -3309,6 +3365,8 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<loggingrecorditem
@@ -3329,6 +3387,8 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -3414,6 +3474,8 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b0299061-ff18-49f4-b270-32e087fe7582">
@@ -3513,6 +3575,8 @@ FP0Jbb1buVYtKgufMmd5AzTSZ2kY++R6VoWlrHZxGOIsQTuJY802zt/ItkSQhn5Ln1YnJ/DJqbav
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -3533,6 +3597,8 @@ FP0Jbb1buVYtKgufMmd5AzTSZ2kY++R6VoWlrHZxGOIsQTuJY802zt/ItkSQhn5Ln1YnJ/DJqbav
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -3557,6 +3623,8 @@ FP0Jbb1buVYtKgufMmd5AzTSZ2kY++R6VoWlrHZxGOIsQTuJY802zt/ItkSQhn5Ln1YnJ/DJqbav
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 	</recorditems>

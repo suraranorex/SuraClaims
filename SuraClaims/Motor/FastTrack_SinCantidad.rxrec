@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -65,6 +67,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[@innertext~'Reposicion de']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -211,6 +215,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="a91ad6f0-c8ae-48e4-b155-65df8bb338e3">

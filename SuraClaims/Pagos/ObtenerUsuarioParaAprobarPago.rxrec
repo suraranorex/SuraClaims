@@ -51,6 +51,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Plan de trabajo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -69,6 +71,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<getvaluerecorditem
@@ -87,6 +91,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext~'Revisar y aprobar']/../../..//td[11]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem

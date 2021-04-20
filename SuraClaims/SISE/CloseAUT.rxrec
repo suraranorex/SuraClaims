@@ -196,6 +196,8 @@ mode="Global">
 				<path>
 					/form[@title='PuTTY Exit Confirmation']/button[@text='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="60db9179-f791-4e27-97dd-75e5e5f7f8c0">

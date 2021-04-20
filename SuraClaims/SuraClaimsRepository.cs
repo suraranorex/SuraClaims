@@ -527,9 +527,9 @@ namespace SuraClaims
                 _siniestrogenerado = new SuraClaimsRepositoryFolders.SiniestroGeneradoFolder(this);
                 _menulateral = new SuraClaimsRepositoryFolders.MenuLateralFolder(this);
                 _login = new SuraClaimsRepositoryFolders.LoginFolder(this);
-                _bttn_siguienteInfo = new RepoItemInfo(this, "bttn_Siguiente", ".//tbody[#'centerPanel-tbody']//*[@innertext~'Siguiente']", 30000, null, "c3298ed5-b4f7-43b3-ae07-971152ae3f41");
-                _bttn_cerrarsesionInfo = new RepoItemInfo(this, "bttn_CerrarSesion", ".//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext~'Cerrar sesión']", 30000, null, "3207f4a1-f68b-4634-920a-5fcc9f25056a");
-                _bttn_configuracionInfo = new RepoItemInfo(this, "bttn_Configuracion", ".//span[#':TabLinkMenuButton-btnEl']/span[@enabled='True']", 30000, null, "6fab9c41-d337-42fb-a1ea-ecc3468f2ed8");
+                _bttn_siguienteInfo = new RepoItemInfo(this, "bttn_Siguiente", ".//tbody[#'centerPanel-tbody']//*[@innertext~'Siguiente']", "", 30000, null, "c3298ed5-b4f7-43b3-ae07-971152ae3f41");
+                _bttn_cerrarsesionInfo = new RepoItemInfo(this, "bttn_CerrarSesion", ".//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext~'Cerrar sesión']", "", 30000, null, "3207f4a1-f68b-4634-920a-5fcc9f25056a");
+                _bttn_configuracionInfo = new RepoItemInfo(this, "bttn_Configuracion", ".//span[#':TabLinkMenuButton-btnEl']/span[@enabled='True']", "", 30000, null, "6fab9c41-d337-42fb-a1ea-ecc3468f2ed8");
             }
 
             /// <summary>
@@ -685,16 +685,16 @@ namespace SuraClaims
             public BuscarPolizaFolder(RepoGenBaseFolder parentFolder) :
                     base("BuscarPoliza", "", parentFolder, 0, null, false, "694ce536-b724-4032-89e5-039e0ab97857", "")
             {
-                _bttn_nuevosiniestroInfo = new RepoItemInfo(this, "bttn_NuevoSiniestro", ".//span[@innertext~'Nuevo siniestro']", 30000, null, "76d139fe-c643-427d-9a33-6761376b1c93");
-                _txtbox_numerodepolizaInfo = new RepoItemInfo(this, "txtbox_NumeroDePoliza", ".//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input", 30000, null, "78f89f2c-9374-4308-a878-7cc2417b5120");
-                _copy_of_txtbox_numerodepolizaInfo = new RepoItemInfo(this, "Copy_of_txtbox_NumeroDePoliza", ".//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input[@data-tabindexsaved='True']", 30000, null, "985e8fcd-e01a-41a8-843c-47f4e1775984");
-                _bttn_buscarInfo = new RepoItemInfo(this, "bttn_Buscar", ".//tbody[#'centerPanel-tbody']//a[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Search']", 30000, null, "fcf4cc11-38bb-4cf7-bc43-2c0c9abdf3d8");
-                _txtbox_fechasiniestroInfo = new RepoItemInfo(this, "txtbox_FechaSiniestro", ".//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input", 30000, null, "3a1a7413-4d19-4667-b7d8-cea409bdb6b8");
-                _copy_of_txtbox_fechasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_FechaSiniestro", ".//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input[@data-tabindexsaved='True']", 30000, null, "dc50a89e-5557-4a2a-88a7-4e1fcf3026d3");
-                _txtbox_horasiniestroInfo = new RepoItemInfo(this, "txtbox_HoraSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Hora']/../..//input[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Claim_lossTime_Sura-inputEl']", 30000, null, "d6b84e1f-02e9-4f4b-a1fe-8d9006aca8de");
-                _copy_of_txtbox_horasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_HoraSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Hora' and @data-tabindexsaved='True']", 30000, null, "ee0ebe74-dabb-40c1-9acf-961e00d5e13a");
-                _copy_of_txtbox_tipodeproductoInfo = new RepoItemInfo(this, "Copy_of_txtbox_TipoDeProducto", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input[@data-tabindexsaved='True']", 30000, null, "f33ad239-e420-4f40-9904-b2c4e4eed94f");
-                _txtbox_tipodeproductoInfo = new RepoItemInfo(this, "txtbox_TipoDeProducto", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input", 30000, null, "153fc053-e58c-4a46-afdd-7c8cb6e28250");
+                _bttn_nuevosiniestroInfo = new RepoItemInfo(this, "bttn_NuevoSiniestro", ".//span[@innertext~'Nuevo siniestro']", "", 30000, null, "76d139fe-c643-427d-9a33-6761376b1c93");
+                _txtbox_numerodepolizaInfo = new RepoItemInfo(this, "txtbox_NumeroDePoliza", ".//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input", "", 30000, null, "78f89f2c-9374-4308-a878-7cc2417b5120");
+                _copy_of_txtbox_numerodepolizaInfo = new RepoItemInfo(this, "Copy_of_txtbox_NumeroDePoliza", ".//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "985e8fcd-e01a-41a8-843c-47f4e1775984");
+                _bttn_buscarInfo = new RepoItemInfo(this, "bttn_Buscar", ".//tbody[#'centerPanel-tbody']//a[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Search']", "", 30000, null, "fcf4cc11-38bb-4cf7-bc43-2c0c9abdf3d8");
+                _txtbox_fechasiniestroInfo = new RepoItemInfo(this, "txtbox_FechaSiniestro", ".//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input", "", 30000, null, "3a1a7413-4d19-4667-b7d8-cea409bdb6b8");
+                _copy_of_txtbox_fechasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_FechaSiniestro", ".//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "dc50a89e-5557-4a2a-88a7-4e1fcf3026d3");
+                _txtbox_horasiniestroInfo = new RepoItemInfo(this, "txtbox_HoraSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Hora']/../..//input[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Claim_lossTime_Sura-inputEl']", "", 30000, null, "d6b84e1f-02e9-4f4b-a1fe-8d9006aca8de");
+                _copy_of_txtbox_horasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_HoraSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Hora' and @data-tabindexsaved='True']", "", 30000, null, "ee0ebe74-dabb-40c1-9acf-961e00d5e13a");
+                _copy_of_txtbox_tipodeproductoInfo = new RepoItemInfo(this, "Copy_of_txtbox_TipoDeProducto", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "f33ad239-e420-4f40-9904-b2c4e4eed94f");
+                _txtbox_tipodeproductoInfo = new RepoItemInfo(this, "txtbox_TipoDeProducto", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input", "", 30000, null, "153fc053-e58c-4a46-afdd-7c8cb6e28250");
             }
 
             /// <summary>
@@ -969,12 +969,12 @@ namespace SuraClaims
             public MenuSuperiorFolder(RepoGenBaseFolder parentFolder) :
                     base("MenuSuperior", "", parentFolder, 0, null, false, "bf6f80c8-1836-4e4b-86f1-26170d0d669c", "")
             {
-                _bttnmenu_siniestroInfo = new RepoItemInfo(this, "bttnMenu_Siniestro", ".//a[#'TabBar:ClaimTab']/span[@id='TabBar:ClaimTab-btnWrap']", 30000, null, "c2f759de-013e-4187-9a0b-5d669d63f1f2");
-                _bttnescritorioInfo = new RepoItemInfo(this, "bttnEscritorio", ".//span[@innertext='Escritorio']", 30000, null, "38eacd45-5aca-4853-94e2-326cf091c072");
-                _menusup_nºdesiniestroInfo = new RepoItemInfo(this, "MenuSup_NºDeSiniestro", ".//span[@innertext='N.º de siniestro:']", 30000, null, "55d173f7-b63d-4210-9765-adf7a359ec6a");
-                _txt_buscarnrosiniestroInfo = new RepoItemInfo(this, "txt_BuscarNroSiniestro", ".//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']", 30000, null, "2f0e0337-0eee-4be9-9561-963ac57aa818");
-                _iconlupabuscarsiniestroInfo = new RepoItemInfo(this, "IconLupaBuscarSiniestro", ".//div[@id='TabBar:ClaimTab:ClaimTab_FindClaim_Button']", 30000, null, "62ae6e5b-b948-4fcc-8600-e2e8bcb2f727");
-                _bttn_menuadministracionInfo = new RepoItemInfo(this, "bttn_MenuAdministracion", ".//a[#'TabBar:AdminTab']//span[@innertext='Adminisración']", 30000, null, "8935aa65-463c-435f-aca8-661530eddabc");
+                _bttnmenu_siniestroInfo = new RepoItemInfo(this, "bttnMenu_Siniestro", ".//a[#'TabBar:ClaimTab']/span[@id='TabBar:ClaimTab-btnWrap']", "", 30000, null, "c2f759de-013e-4187-9a0b-5d669d63f1f2");
+                _bttnescritorioInfo = new RepoItemInfo(this, "bttnEscritorio", ".//span[@innertext='Escritorio']", "", 30000, null, "38eacd45-5aca-4853-94e2-326cf091c072");
+                _menusup_nºdesiniestroInfo = new RepoItemInfo(this, "MenuSup_NºDeSiniestro", ".//span[@innertext='N.º de siniestro:']", "", 30000, null, "55d173f7-b63d-4210-9765-adf7a359ec6a");
+                _txt_buscarnrosiniestroInfo = new RepoItemInfo(this, "txt_BuscarNroSiniestro", ".//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']", "", 30000, null, "2f0e0337-0eee-4be9-9561-963ac57aa818");
+                _iconlupabuscarsiniestroInfo = new RepoItemInfo(this, "IconLupaBuscarSiniestro", ".//div[@id='TabBar:ClaimTab:ClaimTab_FindClaim_Button']", "", 30000, null, "62ae6e5b-b948-4fcc-8600-e2e8bcb2f727");
+                _bttn_menuadministracionInfo = new RepoItemInfo(this, "bttn_MenuAdministracion", ".//a[#'TabBar:AdminTab']//span[@innertext='Adminisración']", "", 30000, null, "8935aa65-463c-435f-aca8-661530eddabc");
             }
 
             /// <summary>
@@ -1148,7 +1148,7 @@ namespace SuraClaims
             public SiniestroGeneradoFolder(RepoGenBaseFolder parentFolder) :
                     base("SiniestroGenerado", ".//tbody[#'NewClaimSaved-tbody']//", parentFolder, 30000, null, false, "01ccb786-89e5-46c9-b98e-8087ab91582f", "")
             {
-                _txt_numerosiniestroInfo = new RepoItemInfo(this, "txt_NumeroSiniestro", "label[@innertext>'el siniestro']", 30000, null, "21a7821b-1e55-425e-b3dc-2008f565e7c9");
+                _txt_numerosiniestroInfo = new RepoItemInfo(this, "txt_NumeroSiniestro", "label[@innertext>'el siniestro']", "", 30000, null, "21a7821b-1e55-425e-b3dc-2008f565e7c9");
             }
 
             /// <summary>
@@ -1221,14 +1221,14 @@ namespace SuraClaims
             public MenuLateralFolder(RepoGenBaseFolder parentFolder) :
                     base("MenuLateral", "", parentFolder, 0, null, false, "c73a8096-8c3c-411a-b7a3-bd313e31ed75", "")
             {
-                _menulateral_accionesInfo = new RepoItemInfo(this, "menuLateral_Acciones", ".//span[#'Claim:ClaimMenuActions-btnEl']/span[@innertext='cciones']", 30000, null, "34cb2845-9228-46c7-a149-fef7a2905518");
-                _submenulateral_liquiordendepagoInfo = new RepoItemInfo(this, "submenuLateral_LiquiOrdenDePago", ".//span[@innertext~'Liquidaciones / Orden de']", 30000, null, "adab1433-da8f-48f7-b04d-9eb3eab7083c");
-                _input_proveedorInfo = new RepoItemInfo(this, "input_Proveedor", ".//input[@name~'ProviderNumberSura']", 30000, null, "2bec988b-1334-49c1-95ff-1676ca49a01d");
-                _menu_plandetrabajoInfo = new RepoItemInfo(this, "menu_PlanDeTrabajo", ".//div[#'Claim:MenuLinks-body']//span[@innertext='Plan de trabajo']", 30000, null, "046380b3-86f3-4260-9725-a8223c285a00");
-                _menu_datosfinancierosInfo = new RepoItemInfo(this, "menu_DatosFinancieros", ".//div[#'Claim:MenuLinks-body']//span[@innertext='Datos financieros']", 30000, null, "d4f70601-6404-497e-9fb2-46160c6e6728");
-                _title_plandetrabajoInfo = new RepoItemInfo(this, "title_PlanDeTrabajo", ".//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']", 30000, null, "bf179f07-d9fe-4560-9400-31feb7032340");
-                _menu_supervisionInfo = new RepoItemInfo(this, "menu_Supervision", ".//div[#'Admin:MenuLinks-body']//span[@innertext='Supervisión']", 30000, null, "9dd2a238-7c9f-4a05-b410-025572350281");
-                _submenulateral_colasdemensajesInfo = new RepoItemInfo(this, "submenuLateral_ColasDeMensajes", ".//div[#'Admin:MenuLinks-body']//span[@innertext='Colas de mensajes']", 30000, null, "85006519-cd73-425a-9a5d-f7d0c7474e04");
+                _menulateral_accionesInfo = new RepoItemInfo(this, "menuLateral_Acciones", ".//span[#'Claim:ClaimMenuActions-btnEl']/span[@innertext='cciones']", "", 30000, null, "34cb2845-9228-46c7-a149-fef7a2905518");
+                _submenulateral_liquiordendepagoInfo = new RepoItemInfo(this, "submenuLateral_LiquiOrdenDePago", ".//span[@innertext~'Liquidaciones / Orden de']", "", 30000, null, "adab1433-da8f-48f7-b04d-9eb3eab7083c");
+                _input_proveedorInfo = new RepoItemInfo(this, "input_Proveedor", ".//input[@name~'ProviderNumberSura']", "", 30000, null, "2bec988b-1334-49c1-95ff-1676ca49a01d");
+                _menu_plandetrabajoInfo = new RepoItemInfo(this, "menu_PlanDeTrabajo", ".//div[#'Claim:MenuLinks-body']//span[@innertext='Plan de trabajo']", "", 30000, null, "046380b3-86f3-4260-9725-a8223c285a00");
+                _menu_datosfinancierosInfo = new RepoItemInfo(this, "menu_DatosFinancieros", ".//div[#'Claim:MenuLinks-body']//span[@innertext='Datos financieros']", "", 30000, null, "d4f70601-6404-497e-9fb2-46160c6e6728");
+                _title_plandetrabajoInfo = new RepoItemInfo(this, "title_PlanDeTrabajo", ".//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']", "", 30000, null, "bf179f07-d9fe-4560-9400-31feb7032340");
+                _menu_supervisionInfo = new RepoItemInfo(this, "menu_Supervision", ".//div[#'Admin:MenuLinks-body']//span[@innertext='Supervisión']", "", 30000, null, "9dd2a238-7c9f-4a05-b410-025572350281");
+                _submenulateral_colasdemensajesInfo = new RepoItemInfo(this, "submenuLateral_ColasDeMensajes", ".//div[#'Admin:MenuLinks-body']//span[@innertext='Colas de mensajes']", "", 30000, null, "85006519-cd73-425a-9a5d-f7d0c7474e04");
             }
 
             /// <summary>
@@ -1452,9 +1452,9 @@ namespace SuraClaims
             public LoginFolder(RepoGenBaseFolder parentFolder) :
                     base("Login", ".//tbody[#'Login-tbody']/tr", parentFolder, 30000, null, false, "b40ca8d3-a8a3-4e70-b60b-e09e0dba42fb", "")
             {
-                _txtbox_usuarioInfo = new RepoItemInfo(this, "txtbox_Usuario", "td/?/?/table/tbody/tr/td//input[@name~'username']", 30000, null, "ecb65b3c-31cd-4364-abfb-4bcb9fe19e7c");
-                _txtbox_contraseniaInfo = new RepoItemInfo(this, "txtbox_Contrasenia", "td/?/?/table/tbody/tr/td//input[@name~'password']", 30000, null, "22679ef2-7f1d-405d-b284-3cafb48d2a10");
-                _bttn_iniciarsesionInfo = new RepoItemInfo(this, "bttn_IniciarSesion", ".//table/tbody/tr/td//table/?/?/tr/td/a//span[@innertext='Iniciar sesión' or @innertext='Log In']", 30000, null, "05617fc4-5393-4a4a-b811-d75312155e34");
+                _txtbox_usuarioInfo = new RepoItemInfo(this, "txtbox_Usuario", "td/?/?/table/tbody/tr/td//input[@name~'username']", "", 30000, null, "ecb65b3c-31cd-4364-abfb-4bcb9fe19e7c");
+                _txtbox_contraseniaInfo = new RepoItemInfo(this, "txtbox_Contrasenia", "td/?/?/table/tbody/tr/td//input[@name~'password']", "", 30000, null, "22679ef2-7f1d-405d-b284-3cafb48d2a10");
+                _bttn_iniciarsesionInfo = new RepoItemInfo(this, "bttn_IniciarSesion", ".//table/tbody/tr/td//table/?/?/tr/td/a//span[@innertext='Iniciar sesión' or @innertext='Log In']", "", 30000, null, "05617fc4-5393-4a4a-b811-d75312155e34");
             }
 
             /// <summary>
@@ -1580,19 +1580,19 @@ namespace SuraClaims
             public Txt_ValidacionesFolder(RepoGenBaseFolder parentFolder) :
                     base("Txt_Validaciones", "", parentFolder, 0, null, false, "76e775da-30f2-493f-83b2-a987e3a39832", "")
             {
-                _txt_buscarocrearpolizaInfo = new RepoItemInfo(this, "txt_BuscarOCrearPoliza", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Buscar o crear']", 30000, null, "01d4d052-881c-410c-8cc4-fb5de403027e");
-                _txt_liquidacionesordenpagoInfo = new RepoItemInfo(this, "txt_LiquidacionesOrdenPago", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Liquidaciones']", 30000, null, "9c48260c-c5c0-4e8c-8513-8be1165fcf02");
-                _txt_detalleordenpagoInfo = new RepoItemInfo(this, "txt_DetalleOrdenPago", ".//tbody[#'centerPanel-tbody']//span[@innertext='Detalles de la Orden de pago']", 30000, null, "8504d5d5-d9a1-4d3f-a130-6b26034cdebf");
-                _txt_paso2Info = new RepoItemInfo(this, "txt_Paso2", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']", 30000, null, "2988d8b7-7581-4b52-a848-8daadefc9568");
-                _txt_pasogenericoInfo = new RepoItemInfo(this, "txt_PasoGenerico", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']", 30000, null, "73026996-4d36-47a0-8bbb-c3f067a16c68");
-                _txt_paso3Info = new RepoItemInfo(this, "txt_Paso3", ".//tbody[#'centerPanel-tbody']//*[@innertext~'Paso 3']", 30000, null, "2e7d84e4-de88-452a-a572-56dae0b4b474");
-                _txt_paso4Info = new RepoItemInfo(this, "txt_Paso4", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']", 30000, null, "1a3dc6c0-e0c6-4fff-87b3-f743f6afc874");
-                _txt_paso5Info = new RepoItemInfo(this, "txt_Paso5", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 5']", 30000, null, "cec9a062-c411-4cf9-a674-74647c305021");
-                _tagpolizabuscadaInfo = new RepoItemInfo(this, "tagPolizaBuscada", ".//tbody[#'centerPanel-tbody']//a[@innertext~'[0-9]+']", 30000, null, "b048d005-8754-459b-bf40-df304392da0c");
-                _txt_verificadaInfo = new RepoItemInfo(this, "txt_Verificada", ".//tbody[#'centerPanel-tbody']//div[@innertext='Verificada' or @innertext='No Disponible']", 30000, null, "08607f5b-eec7-4bcf-9f37-dd76390a50f1");
-                _tagnombreaseguradoInfo = new RepoItemInfo(this, "tagNombreAsegurado", ".//tbody[#'centerPanel-tbody']/tr//table[@class='x-grid-item']/?/?/tr/td[3]/div[@innertext~'[A-Z]+']", 30000, null, "1b8a81a2-06db-4cac-911a-5495840765df");
-                _txt_actividadesInfo = new RepoItemInfo(this, "txt_Actividades", ".//span[@innertext='Actividades']", 30000, null, "f3896037-62b3-465d-9d32-08147571edd7");
-                _txt_suraInfo = new RepoItemInfo(this, "txt_Sura", ".//tbody[#'centerPanel-tbody']//span[@innertext='Sura']", 30000, null, "71fc8611-5d5e-4897-ba0b-3f59225faa31");
+                _txt_buscarocrearpolizaInfo = new RepoItemInfo(this, "txt_BuscarOCrearPoliza", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Buscar o crear']", "", 30000, null, "01d4d052-881c-410c-8cc4-fb5de403027e");
+                _txt_liquidacionesordenpagoInfo = new RepoItemInfo(this, "txt_LiquidacionesOrdenPago", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Liquidaciones']", "", 30000, null, "9c48260c-c5c0-4e8c-8513-8be1165fcf02");
+                _txt_detalleordenpagoInfo = new RepoItemInfo(this, "txt_DetalleOrdenPago", ".//tbody[#'centerPanel-tbody']//span[@innertext='Detalles de la Orden de pago']", "", 30000, null, "8504d5d5-d9a1-4d3f-a130-6b26034cdebf");
+                _txt_paso2Info = new RepoItemInfo(this, "txt_Paso2", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']", "", 30000, null, "2988d8b7-7581-4b52-a848-8daadefc9568");
+                _txt_pasogenericoInfo = new RepoItemInfo(this, "txt_PasoGenerico", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']", "", 30000, null, "73026996-4d36-47a0-8bbb-c3f067a16c68");
+                _txt_paso3Info = new RepoItemInfo(this, "txt_Paso3", ".//tbody[#'centerPanel-tbody']//*[@innertext~'Paso 3']", "", 30000, null, "2e7d84e4-de88-452a-a572-56dae0b4b474");
+                _txt_paso4Info = new RepoItemInfo(this, "txt_Paso4", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']", "", 30000, null, "1a3dc6c0-e0c6-4fff-87b3-f743f6afc874");
+                _txt_paso5Info = new RepoItemInfo(this, "txt_Paso5", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 5']", "", 30000, null, "cec9a062-c411-4cf9-a674-74647c305021");
+                _tagpolizabuscadaInfo = new RepoItemInfo(this, "tagPolizaBuscada", ".//tbody[#'centerPanel-tbody']//a[@innertext~'[0-9]+']", "", 30000, null, "b048d005-8754-459b-bf40-df304392da0c");
+                _txt_verificadaInfo = new RepoItemInfo(this, "txt_Verificada", ".//tbody[#'centerPanel-tbody']//div[@innertext='Verificada' or @innertext='No Disponible']", "", 30000, null, "08607f5b-eec7-4bcf-9f37-dd76390a50f1");
+                _tagnombreaseguradoInfo = new RepoItemInfo(this, "tagNombreAsegurado", ".//tbody[#'centerPanel-tbody']/tr//table[@class='x-grid-item']/?/?/tr/td[3]/div[@innertext~'[A-Z]+']", "", 30000, null, "1b8a81a2-06db-4cac-911a-5495840765df");
+                _txt_actividadesInfo = new RepoItemInfo(this, "txt_Actividades", ".//span[@innertext='Actividades']", "", 30000, null, "f3896037-62b3-465d-9d32-08147571edd7");
+                _txt_suraInfo = new RepoItemInfo(this, "txt_Sura", ".//tbody[#'centerPanel-tbody']//span[@innertext='Sura']", "", 30000, null, "71fc8611-5d5e-4897-ba0b-3f59225faa31");
             }
 
             /// <summary>
@@ -1976,43 +1976,43 @@ namespace SuraClaims
                 _informacionbasica = new SuraClaimsRepositoryFolders.InformacionBasicaFolder(this);
                 _informacionsiniestro = new SuraClaimsRepositoryFolders.InformacionSiniestroFolder(this);
                 _siniestrotercero = new SuraClaimsRepositoryFolders.SiniestroTerceroFolder(this);
-                _option_verificaladireccionInfo = new RepoItemInfo(this, "option_VerificaLaDireccion", ".//span[@innertext~'Verifica la dirección']", 30000, null, "653b6cc4-9e97-4041-81c3-71c29545ce5c");
-                _option_nombre2Info = new RepoItemInfo(this, "option_Nombre2", ".//li[2]", 30000, null, "2be891e8-ca9a-4071-9cef-acb5a9a6b494");
-                _option_dniInfo = new RepoItemInfo(this, "option_DNI", ".//li[@innertext='D.N.I.']", 30000, null, "85070965-398c-4c95-af61-96c4b744fcc2");
-                _copy_of_option_dniInfo = new RepoItemInfo(this, "Copy_of_option_DNI", ".//li[@innertext='D.N.I.']/../..//input[@data-tabindexsaved='True']", 30000, null, "8b599ac7-9cb3-46b2-a51f-80680cc12cd3");
-                _celda_nrodniInfo = new RepoItemInfo(this, "celda_NroDNI", ".//div[@id~'PersonNameInputSet']/div[3]//td[3]", 30000, null, "2b775f00-f068-49f9-bfdc-3e4c0896d2d3");
-                _celda_tipodocumentoInfo = new RepoItemInfo(this, "celda_TipoDocumento", ".//div[@id~'PersonNameInputSet']/div[3]//td[2]", 30000, null, "97a5bdbc-6932-432e-b884-e1450dbca4bc");
-                _option_nuevapersonaInfo = new RepoItemInfo(this, "option_NuevaPersona", ".//span[@innertext='Nueva persona']", 30000, null, "53347b97-7d13-49d8-a9c0-857d303e7499");
-                _btn_agregardanoylesionestercerosInfo = new RepoItemInfo(this, "btn_agregarDanoYLesionesTerceros", ".//tbody[#'centerPanel-tbody']//span[@innertext>'Agregar daños y lesiones']", 30000, null, "2cf5d0de-9252-4889-a41f-422f91f822ba");
-                _btn_agregarconductorInfo = new RepoItemInfo(this, "btn_AgregarConductor", ".//tbody[#'centerPanel-tbody']//span[@innertext='Agregar conductor']", 30000, null, "4b475e31-cd9a-4ad7-85ac-b729748573dc");
-                _aceptarInfo = new RepoItemInfo(this, "Aceptar", ".//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']", 30000, null, "b20d9984-c975-4f56-99d5-b6d92962081b");
-                _btn_danios_noInfo = new RepoItemInfo(this, "btn_Danios_No", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']", 30000, null, "4197e2f3-0ae7-46be-94a7-54f8a6de5088");
-                _op_policia_noInfo = new RepoItemInfo(this, "op_policia_NO", ".//tbody[#'centerPanel-tbody']//span[@innertext~'policía']/../../..//label[@innertext~'No']/../input[@type='button']", 30000, null, "9000aee2-d1c1-46a8-8401-821981602e64");
-                _btn_agregarInfo = new RepoItemInfo(this, "btn_Agregar", ".//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']", 30000, null, "d18137f3-0e2e-42d0-9ab2-ef14e7f2b579");
-                _txt_tipodocInfo = new RepoItemInfo(this, "txt_TipoDoc", ".//tbody[#'centerPanel-tbody']//div[@innertext='<ninguna>']", 30000, null, "b34ef9ce-d512-4eed-8d23-8e68139f6995");
-                _txtbox_apellidoInfo = new RepoItemInfo(this, "txtbox_Apellido", ".//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input", 30000, null, "5738797d-7a5a-49c0-b03f-6fde8a500b97");
-                _txtbox_nombreInfo = new RepoItemInfo(this, "txtbox_Nombre", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input", 30000, null, "c99f4096-7df9-4e32-b169-2d4b4d417c1f");
-                _txt_detalledeloslesionadosInfo = new RepoItemInfo(this, "txt_DetalleDeLosLesionados", ".//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']", 30000, null, "df0df1ea-bd96-4599-80c8-ea1af8c65712");
-                _op_responsabilidadInfo = new RepoItemInfo(this, "op_responsabilidad", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Responsabilidad del Asegurado']/../../..//label[@innertext~$Responsabilidad]/../input[@type='button']", 30000, null, "d31c7a75-5c81-40ea-99db-23136bde2876");
-                _btn_aceptarInfo = new RepoItemInfo(this, "btn_Aceptar", ".//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']", 30000, null, "f4244d5c-ca2f-4b6c-8a0e-b0ece229acce");
-                _txtbox_numeroInfo = new RepoItemInfo(this, "txtbox_Numero", ".//tbody[#'centerPanel-tbody']//div[@innertext='D.N.I.']/../..//div[@class='x-grid-cell-inner '][2]", 30000, null, "05b7c423-c3bb-46ea-9911-b4177fbe7f1a");
-                _pestana_descriptiposiniestroInfo = new RepoItemInfo(this, "pestana_DescripTipoSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Descripción del tipo de s']", 30000, null, "c4d177ac-a250-46a2-a12c-b071ffca3233");
-                _op_ambulanciaInfo = new RepoItemInfo(this, "op_ambulancia", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]//table/tbody/tr[1]/td/div/div/?/?/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']", 30000, null, "bb2b19cc-4065-4939-868b-e2d4cc04e4c2");
-                _op_ambulancia_noInfo = new RepoItemInfo(this, "op_ambulancia_NO", ".//tbody[#'centerPanel-tbody']///span[@innertext~'ambulancia']/../../..//label[@innertext~'No']/../input[@type='button']", 30000, null, "bca12804-3b3e-4b64-8898-18d97cafafa5");
-                _txt_tipoaccidenteInfo = new RepoItemInfo(this, "txt_TipoAccidente", ".//span[@innertext~'Tipo de accidente']/../..//input", 30000, null, "318131d3-13ce-4243-be0e-581d65733e8b");
-                _txt_marcaInfo = new RepoItemInfo(this, "txt_Marca", ".//span[@innertext='Marca']/../..//input", 30000, null, "49c78570-cbc3-4845-81e1-f755e92cdada");
-                _copy_of_txtmarcaInfo = new RepoItemInfo(this, "Copy_of_txtmarca", ".//span[@innertext='Marca']/../..//input[@data-tabindexsaved='True']", 30000, null, "49e2551c-59aa-4d6e-84f4-3f565169a6a3");
-                _txt_modeloInfo = new RepoItemInfo(this, "txt_Modelo", ".//span[@innertext='Modelo']/../..//input", 30000, null, "7d32b63a-56e0-47b9-86e4-b00f55aeaed6");
-                _copy_of_txt_modeloInfo = new RepoItemInfo(this, "Copy_of_txt_Modelo", ".//span[@innertext='Modelo']/../..//input[@data-tabindexsaved='True']", 30000, null, "969d3b5c-33a3-4913-8904-1344e3c38979");
-                _txttipoInfo = new RepoItemInfo(this, "txtTipo", "body/div[@id~'loadmask']//ul/li[@innertext='AUTO']", 30000, null, "93ca185b-2e2d-4cdd-8879-05863f51782d");
-                _textmarcaInfo = new RepoItemInfo(this, "textMarca", "body/div[@id~'loadmask']//ul/li[@innertext='CHEVROLET']", 30000, null, "a01ba668-e2fd-45f1-b869-21c19800e24f");
-                _txtmodelo1Info = new RepoItemInfo(this, "txtModelo1", "body/div[@id~'loadmask']//ul/li[@innertext='ONIX']", 30000, null, "503fdd01-7a8a-41ca-a6f7-f3b5eea07301");
-                _lbl_reposiciondeInfo = new RepoItemInfo(this, "lbl_ReposicionDe", ".//tbody[#'centerPanel-tbody']//div[@innertext~'Reposicion de']", 0, null, "eb265845-011a-476a-a441-b090618dd359");
-                _buttonInfo = new RepoItemInfo(this, "Button", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']", 0, null, "aa33d05a-402e-4df2-a9b6-9118ee098b0b");
-                _buscarproveedorInfo = new RepoItemInfo(this, "BuscarProveedor", ".//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']", 30000, null, "d6487c32-d016-448f-968c-f18320a9a686");
-                _btn_buscarproveedorInfo = new RepoItemInfo(this, "Btn_BuscarProveedor", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/?/?/table/tbody/tr[2]//table//div/div/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']", 30000, null, "6aa49382-283c-4b75-97ca-6899f2ca8d7e");
-                _selectprovincianingunaInfo = new RepoItemInfo(this, "SelectProvinciaNinguna", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]", 30000, null, "6818b134-7567-4bfb-8d13-8f50a705cfca");
-                _seleccionarInfo = new RepoItemInfo(this, "Seleccionar", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[6]/td/div/div[4]/div[1]/?/?/table/?/?/tr/td[1]/?/?/a[@innertext='Seleccionar']", 30000, null, "d13233d5-48a5-48c4-930f-dfc63f2b4409");
+                _option_verificaladireccionInfo = new RepoItemInfo(this, "option_VerificaLaDireccion", ".//span[@innertext~'Verifica la dirección']", "", 30000, null, "653b6cc4-9e97-4041-81c3-71c29545ce5c");
+                _option_nombre2Info = new RepoItemInfo(this, "option_Nombre2", ".//li[2]", "", 30000, null, "2be891e8-ca9a-4071-9cef-acb5a9a6b494");
+                _option_dniInfo = new RepoItemInfo(this, "option_DNI", ".//li[@innertext='D.N.I.']", "", 30000, null, "85070965-398c-4c95-af61-96c4b744fcc2");
+                _copy_of_option_dniInfo = new RepoItemInfo(this, "Copy_of_option_DNI", ".//li[@innertext='D.N.I.']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "8b599ac7-9cb3-46b2-a51f-80680cc12cd3");
+                _celda_nrodniInfo = new RepoItemInfo(this, "celda_NroDNI", ".//div[@id~'PersonNameInputSet']/div[3]//td[3]", "", 30000, null, "2b775f00-f068-49f9-bfdc-3e4c0896d2d3");
+                _celda_tipodocumentoInfo = new RepoItemInfo(this, "celda_TipoDocumento", ".//div[@id~'PersonNameInputSet']/div[3]//td[2]", "", 30000, null, "97a5bdbc-6932-432e-b884-e1450dbca4bc");
+                _option_nuevapersonaInfo = new RepoItemInfo(this, "option_NuevaPersona", ".//span[@innertext='Nueva persona']", "", 30000, null, "53347b97-7d13-49d8-a9c0-857d303e7499");
+                _btn_agregardanoylesionestercerosInfo = new RepoItemInfo(this, "btn_agregarDanoYLesionesTerceros", ".//tbody[#'centerPanel-tbody']//span[@innertext>'Agregar daños y lesiones']", "", 30000, null, "2cf5d0de-9252-4889-a41f-422f91f822ba");
+                _btn_agregarconductorInfo = new RepoItemInfo(this, "btn_AgregarConductor", ".//tbody[#'centerPanel-tbody']//span[@innertext='Agregar conductor']", "", 30000, null, "4b475e31-cd9a-4ad7-85ac-b729748573dc");
+                _aceptarInfo = new RepoItemInfo(this, "Aceptar", ".//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']", "", 30000, null, "b20d9984-c975-4f56-99d5-b6d92962081b");
+                _btn_danios_noInfo = new RepoItemInfo(this, "btn_Danios_No", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']", "", 30000, null, "4197e2f3-0ae7-46be-94a7-54f8a6de5088");
+                _op_policia_noInfo = new RepoItemInfo(this, "op_policia_NO", ".//tbody[#'centerPanel-tbody']//span[@innertext~'policía']/../../..//label[@innertext~'No']/../input[@type='button']", "", 30000, null, "9000aee2-d1c1-46a8-8401-821981602e64");
+                _btn_agregarInfo = new RepoItemInfo(this, "btn_Agregar", ".//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']", "", 30000, null, "d18137f3-0e2e-42d0-9ab2-ef14e7f2b579");
+                _txt_tipodocInfo = new RepoItemInfo(this, "txt_TipoDoc", ".//tbody[#'centerPanel-tbody']//div[@innertext='<ninguna>']", "", 30000, null, "b34ef9ce-d512-4eed-8d23-8e68139f6995");
+                _txtbox_apellidoInfo = new RepoItemInfo(this, "txtbox_Apellido", ".//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input", "", 30000, null, "5738797d-7a5a-49c0-b03f-6fde8a500b97");
+                _txtbox_nombreInfo = new RepoItemInfo(this, "txtbox_Nombre", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input", "", 30000, null, "c99f4096-7df9-4e32-b169-2d4b4d417c1f");
+                _txt_detalledeloslesionadosInfo = new RepoItemInfo(this, "txt_DetalleDeLosLesionados", ".//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']", "", 30000, null, "df0df1ea-bd96-4599-80c8-ea1af8c65712");
+                _op_responsabilidadInfo = new RepoItemInfo(this, "op_responsabilidad", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Responsabilidad del Asegurado']/../../..//label[@innertext~$Responsabilidad]/../input[@type='button']", "", 30000, null, "d31c7a75-5c81-40ea-99db-23136bde2876");
+                _btn_aceptarInfo = new RepoItemInfo(this, "btn_Aceptar", ".//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']", "", 30000, null, "f4244d5c-ca2f-4b6c-8a0e-b0ece229acce");
+                _txtbox_numeroInfo = new RepoItemInfo(this, "txtbox_Numero", ".//tbody[#'centerPanel-tbody']//div[@innertext='D.N.I.']/../..//div[@class='x-grid-cell-inner '][2]", "", 30000, null, "05b7c423-c3bb-46ea-9911-b4177fbe7f1a");
+                _pestana_descriptiposiniestroInfo = new RepoItemInfo(this, "pestana_DescripTipoSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Descripción del tipo de s']", "", 30000, null, "c4d177ac-a250-46a2-a12c-b071ffca3233");
+                _op_ambulanciaInfo = new RepoItemInfo(this, "op_ambulancia", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]//table/tbody/tr[1]/td/div/div/?/?/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']", "", 30000, null, "bb2b19cc-4065-4939-868b-e2d4cc04e4c2");
+                _op_ambulancia_noInfo = new RepoItemInfo(this, "op_ambulancia_NO", ".//tbody[#'centerPanel-tbody']///span[@innertext~'ambulancia']/../../..//label[@innertext~'No']/../input[@type='button']", "", 30000, null, "bca12804-3b3e-4b64-8898-18d97cafafa5");
+                _txt_tipoaccidenteInfo = new RepoItemInfo(this, "txt_TipoAccidente", ".//span[@innertext~'Tipo de accidente']/../..//input", "", 30000, null, "318131d3-13ce-4243-be0e-581d65733e8b");
+                _txt_marcaInfo = new RepoItemInfo(this, "txt_Marca", ".//span[@innertext='Marca']/../..//input", "", 30000, null, "49c78570-cbc3-4845-81e1-f755e92cdada");
+                _copy_of_txtmarcaInfo = new RepoItemInfo(this, "Copy_of_txtmarca", ".//span[@innertext='Marca']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "49e2551c-59aa-4d6e-84f4-3f565169a6a3");
+                _txt_modeloInfo = new RepoItemInfo(this, "txt_Modelo", ".//span[@innertext='Modelo']/../..//input", "", 30000, null, "7d32b63a-56e0-47b9-86e4-b00f55aeaed6");
+                _copy_of_txt_modeloInfo = new RepoItemInfo(this, "Copy_of_txt_Modelo", ".//span[@innertext='Modelo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "969d3b5c-33a3-4913-8904-1344e3c38979");
+                _txttipoInfo = new RepoItemInfo(this, "txtTipo", "body/div[@id~'loadmask']//ul/li[@innertext='AUTO']", "", 30000, null, "93ca185b-2e2d-4cdd-8879-05863f51782d");
+                _textmarcaInfo = new RepoItemInfo(this, "textMarca", "body/div[@id~'loadmask']//ul/li[@innertext='CHEVROLET']", "", 30000, null, "a01ba668-e2fd-45f1-b869-21c19800e24f");
+                _txtmodelo1Info = new RepoItemInfo(this, "txtModelo1", "body/div[@id~'loadmask']//ul/li[@innertext='ONIX']", "", 30000, null, "503fdd01-7a8a-41ca-a6f7-f3b5eea07301");
+                _lbl_reposiciondeInfo = new RepoItemInfo(this, "lbl_ReposicionDe", ".//tbody[#'centerPanel-tbody']//div[@innertext~'Reposicion de']", "", 0, null, "eb265845-011a-476a-a441-b090618dd359");
+                _buttonInfo = new RepoItemInfo(this, "Button", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']", "", 0, null, "aa33d05a-402e-4df2-a9b6-9118ee098b0b");
+                _buscarproveedorInfo = new RepoItemInfo(this, "BuscarProveedor", ".//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']", "", 30000, null, "d6487c32-d016-448f-968c-f18320a9a686");
+                _btn_buscarproveedorInfo = new RepoItemInfo(this, "Btn_BuscarProveedor", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/?/?/table/tbody/tr[2]//table//div/div/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']", "", 30000, null, "6aa49382-283c-4b75-97ca-6899f2ca8d7e");
+                _selectprovincianingunaInfo = new RepoItemInfo(this, "SelectProvinciaNinguna", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]", "", 30000, null, "6818b134-7567-4bfb-8d13-8f50a705cfca");
+                _seleccionarInfo = new RepoItemInfo(this, "Seleccionar", ".//tbody[#'AddressBookPickerPopup-tbody']/tr[6]/td/div/div[4]/div[1]/?/?/table/?/?/tr/td[1]/?/?/a[@innertext='Seleccionar']", "", 30000, null, "d13233d5-48a5-48c4-930f-dfc63f2b4409");
             }
 
             /// <summary>
@@ -2983,33 +2983,33 @@ namespace SuraClaims
             public InformacionBasicaFolder(RepoGenBaseFolder parentFolder) :
                     base("InformacionBasica", "", parentFolder, 0, null, false, "9128c7b0-d92f-4b6f-815b-2e72c48201ef", "")
             {
-                _bttn_selecnombreInfo = new RepoItemInfo(this, "bttn_SelecNombre", ".//tbody[#'centerPanel-tbody']//div[@id~'ReportedBy_Name-trigger-picker']", 30000, null, "3fc3c9b4-4b30-498a-8dbf-9b62d15d0f67");
-                _option_nombreInfo = new RepoItemInfo(this, "option_Nombre", ".//li[@innertext~'[A-Z]+' and @innertext!='[a-z]+']", 30000, null, "5d394bc0-6aa5-4a98-9f0e-1bc24005d87b");
-                _select_nombreaseguradoInfo = new RepoItemInfo(this, "Select_NombreAsegurado", ".//li[@innertext~$NombreAsegurado]", 30000, null, "ea20de49-d908-46e0-99ce-f059b2f30916");
-                _option_tipoInfo = new RepoItemInfo(this, "option_tipo", ".//li[@innertext~'[A-Z][a-z]+']", 30000, null, "1f9b56b2-ba34-4a15-88ea-300bc57c8425");
-                _option_bancoInfo = new RepoItemInfo(this, "option_Banco", ".//li[@innertext=$Banco]", 30000, null, "7a665bc3-fc08-469a-9435-3a79f707b740");
-                _optionli_nombreaseguradoInfo = new RepoItemInfo(this, "optionLI_NombreAsegurado", ".//li[@innertext~$NombreAsegurado]", 30000, null, "6919e5a5-b357-4a6d-85f3-20cb9193c1a6");
-                _option_relacionaseguradoInfo = new RepoItemInfo(this, "option_RelacionAsegurado", ".//li[@innertext='Empleado']", 30000, null, "edb49e09-de29-41cc-8548-bf4c0b63651b");
-                _optionli_nombrenoaseguradoInfo = new RepoItemInfo(this, "optionLI_NombreNOasegurado", ".//li[@innertext!=$NombreAsegurado]", 30000, null, "78aa9580-7cd0-4b94-92bf-82cfe95f4da0");
-                _option_nombrelesionado3Info = new RepoItemInfo(this, "option_NombreLesionado3", ".//span[@innertext~$NombreLesionado]", 30000, null, "4fd71e6e-b10b-4348-a35d-f02ee94ebbc5");
-                _option_nombrelesionado4Info = new RepoItemInfo(this, "option_NombreLesionado4", ".//li[@innertext~$NombreLesionado]", 30000, null, "5e1e470c-8efc-4249-a36f-8a56de32b0c5");
-                _option_reclamanteuberInfo = new RepoItemInfo(this, "option_ReclamanteUber", ".//li[@innertext~'UBER']", 30000, null, "d9755b7d-005f-478c-b7b7-49964393e711");
-                _option_reclamanteInfo = new RepoItemInfo(this, "option_Reclamante", ".//li[@innertext~$NombreAsegurado]", 30000, null, "02c82e08-e3e4-483d-8c60-21f2c00cb760");
-                _cantidadInfo = new RepoItemInfo(this, "Cantidad", ".//li[@innertext~'[0-9]+']", 30000, null, "656a0a1f-e952-4baa-a237-270d71364d0f");
-                _selectprovincianingunaInfo = new RepoItemInfo(this, "SelectProvinciaNinguna", ".//li[@innertext~'ninguna']", 30000, null, "044f369c-13da-48a0-bed5-afb2e0703fda");
-                _txtbox_relacionconaseguradoInfo = new RepoItemInfo(this, "txtbox_RelacionConAsegurado", ".//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input", 30000, null, "d27a1200-75d1-4131-99ad-e02798c57322");
-                _copy_of_txtbox_relacionconaseguradoInfo = new RepoItemInfo(this, "Copy_of_txtbox_RelacionConAsegurado", ".//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']", 30000, null, "db98b2a7-6fc7-4ffa-9fe8-a9e62b9942d9");
-                _txtbox_codigodeareaInfo = new RepoItemInfo(this, "txtbox_CodigoDeArea", ".//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input", 30000, null, "a99b776e-d1aa-4846-b3d6-19df6bdd41fd");
-                _copy_of_txtbox_codigodeareaInfo = new RepoItemInfo(this, "Copy_of_txtbox_CodigoDeArea", ".//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input[@data-tabindexsaved='True']", 30000, null, "d03996c3-d6b3-40bb-b3af-79436133b54d");
-                _txtbox_numeroInfo = new RepoItemInfo(this, "txtbox_Numero", ".//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input", 30000, null, "a4ab78a7-c8af-4bc6-a395-dc794088b05d");
-                _copy_of_txtbox_numeroInfo = new RepoItemInfo(this, "Copy_of_txtbox_Numero", ".//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input[@data-tabindexsaved='True']", 30000, null, "080c75be-4c3d-46b3-a259-5f7439a28544");
-                _txtbox_telefonoprincipalInfo = new RepoItemInfo(this, "txtbox_TelefonoPrincipal", ".//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input", 30000, null, "d989b65f-a7ac-4cec-be1c-4d14ea5188f5");
-                _txtbox_nombreInfo = new RepoItemInfo(this, "txtbox_Nombre", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input", 30000, null, "a1d06a7f-9012-483e-b35c-503506f24f48");
-                _copy_of_txtbox_telefonoprincipalInfo = new RepoItemInfo(this, "Copy_of_txtbox_TelefonoPrincipal", ".//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input[@data-tabindexsaved='True']", 30000, null, "075de9d9-5993-4e58-8214-0baa4cd55b6b");
-                _txtbox_correoelectronicoInfo = new RepoItemInfo(this, "txtbox_CorreoElectronico", ".//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input", 30000, null, "9cf937cc-b302-4868-853e-525f8e1bb177");
-                _copy_of_txtbox_correoelectronicoInfo = new RepoItemInfo(this, "Copy_of_txtbox_CorreoElectronico", ".//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input[@data-tabindexsaved='True']", 30000, null, "928c7699-e911-48b8-bb0a-77265c91069b");
-                _copy_of_txtbox_nombreInfo = new RepoItemInfo(this, "Copy_of_txtbox_Nombre", ".//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']", 30000, null, "4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200");
-                _lbl_resumendesiniestroInfo = new RepoItemInfo(this, "lbl_ResumenDeSiniestro", ".//tbody[#'ClaimSummary-tbody']//span[@innertext='Resumen']", 30000, null, "5185a46f-3675-4d49-ba58-537bf34efa00");
+                _bttn_selecnombreInfo = new RepoItemInfo(this, "bttn_SelecNombre", ".//tbody[#'centerPanel-tbody']//div[@id~'ReportedBy_Name-trigger-picker']", "", 30000, null, "3fc3c9b4-4b30-498a-8dbf-9b62d15d0f67");
+                _option_nombreInfo = new RepoItemInfo(this, "option_Nombre", ".//li[@innertext~'[A-Z]+' and @innertext!='[a-z]+']", "", 30000, null, "5d394bc0-6aa5-4a98-9f0e-1bc24005d87b");
+                _select_nombreaseguradoInfo = new RepoItemInfo(this, "Select_NombreAsegurado", ".//li[@innertext~$NombreAsegurado]", "", 30000, null, "ea20de49-d908-46e0-99ce-f059b2f30916");
+                _option_tipoInfo = new RepoItemInfo(this, "option_tipo", ".//li[@innertext~'[A-Z][a-z]+']", "", 30000, null, "1f9b56b2-ba34-4a15-88ea-300bc57c8425");
+                _option_bancoInfo = new RepoItemInfo(this, "option_Banco", ".//li[@innertext=$Banco]", "", 30000, null, "7a665bc3-fc08-469a-9435-3a79f707b740");
+                _optionli_nombreaseguradoInfo = new RepoItemInfo(this, "optionLI_NombreAsegurado", ".//li[@innertext~$NombreAsegurado]", "", 30000, null, "6919e5a5-b357-4a6d-85f3-20cb9193c1a6");
+                _option_relacionaseguradoInfo = new RepoItemInfo(this, "option_RelacionAsegurado", ".//li[@innertext='Empleado']", "", 30000, null, "edb49e09-de29-41cc-8548-bf4c0b63651b");
+                _optionli_nombrenoaseguradoInfo = new RepoItemInfo(this, "optionLI_NombreNOasegurado", ".//li[@innertext!=$NombreAsegurado]", "", 30000, null, "78aa9580-7cd0-4b94-92bf-82cfe95f4da0");
+                _option_nombrelesionado3Info = new RepoItemInfo(this, "option_NombreLesionado3", ".//span[@innertext~$NombreLesionado]", "", 30000, null, "4fd71e6e-b10b-4348-a35d-f02ee94ebbc5");
+                _option_nombrelesionado4Info = new RepoItemInfo(this, "option_NombreLesionado4", ".//li[@innertext~$NombreLesionado]", "", 30000, null, "5e1e470c-8efc-4249-a36f-8a56de32b0c5");
+                _option_reclamanteuberInfo = new RepoItemInfo(this, "option_ReclamanteUber", ".//li[@innertext~'UBER']", "", 30000, null, "d9755b7d-005f-478c-b7b7-49964393e711");
+                _option_reclamanteInfo = new RepoItemInfo(this, "option_Reclamante", ".//li[@innertext~$NombreAsegurado]", "", 30000, null, "02c82e08-e3e4-483d-8c60-21f2c00cb760");
+                _cantidadInfo = new RepoItemInfo(this, "Cantidad", ".//li[@innertext~'[0-9]+']", "", 30000, null, "656a0a1f-e952-4baa-a237-270d71364d0f");
+                _selectprovincianingunaInfo = new RepoItemInfo(this, "SelectProvinciaNinguna", ".//li[@innertext~'ninguna']", "", 30000, null, "044f369c-13da-48a0-bed5-afb2e0703fda");
+                _txtbox_relacionconaseguradoInfo = new RepoItemInfo(this, "txtbox_RelacionConAsegurado", ".//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input", "", 30000, null, "d27a1200-75d1-4131-99ad-e02798c57322");
+                _copy_of_txtbox_relacionconaseguradoInfo = new RepoItemInfo(this, "Copy_of_txtbox_RelacionConAsegurado", ".//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "db98b2a7-6fc7-4ffa-9fe8-a9e62b9942d9");
+                _txtbox_codigodeareaInfo = new RepoItemInfo(this, "txtbox_CodigoDeArea", ".//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input", "", 30000, null, "a99b776e-d1aa-4846-b3d6-19df6bdd41fd");
+                _copy_of_txtbox_codigodeareaInfo = new RepoItemInfo(this, "Copy_of_txtbox_CodigoDeArea", ".//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "d03996c3-d6b3-40bb-b3af-79436133b54d");
+                _txtbox_numeroInfo = new RepoItemInfo(this, "txtbox_Numero", ".//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input", "", 30000, null, "a4ab78a7-c8af-4bc6-a395-dc794088b05d");
+                _copy_of_txtbox_numeroInfo = new RepoItemInfo(this, "Copy_of_txtbox_Numero", ".//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "080c75be-4c3d-46b3-a259-5f7439a28544");
+                _txtbox_telefonoprincipalInfo = new RepoItemInfo(this, "txtbox_TelefonoPrincipal", ".//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input", "", 30000, null, "d989b65f-a7ac-4cec-be1c-4d14ea5188f5");
+                _txtbox_nombreInfo = new RepoItemInfo(this, "txtbox_Nombre", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input", "", 30000, null, "a1d06a7f-9012-483e-b35c-503506f24f48");
+                _copy_of_txtbox_telefonoprincipalInfo = new RepoItemInfo(this, "Copy_of_txtbox_TelefonoPrincipal", ".//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "075de9d9-5993-4e58-8214-0baa4cd55b6b");
+                _txtbox_correoelectronicoInfo = new RepoItemInfo(this, "txtbox_CorreoElectronico", ".//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input", "", 30000, null, "9cf937cc-b302-4868-853e-525f8e1bb177");
+                _copy_of_txtbox_correoelectronicoInfo = new RepoItemInfo(this, "Copy_of_txtbox_CorreoElectronico", ".//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "928c7699-e911-48b8-bb0a-77265c91069b");
+                _copy_of_txtbox_nombreInfo = new RepoItemInfo(this, "Copy_of_txtbox_Nombre", ".//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200");
+                _lbl_resumendesiniestroInfo = new RepoItemInfo(this, "lbl_ResumenDeSiniestro", ".//tbody[#'ClaimSummary-tbody']//span[@innertext='Resumen']", "", 30000, null, "5185a46f-3675-4d49-ba58-537bf34efa00");
             }
 
             /// <summary>
@@ -3753,73 +3753,73 @@ namespace SuraClaims
             public InformacionSiniestroFolder(RepoGenBaseFolder parentFolder) :
                     base("InformacionSiniestro", ".//tbody[#'centerPanel-tbody']", parentFolder, 30000, null, false, "b2b74fe8-700f-4e40-a87e-5c64d8ca5a9b", "")
             {
-                _txtbox_detallesiniestroInfo = new RepoItemInfo(this, "txtbox_DetalleSiniestro", ".//span[@innertext~'Detalle del siniestro']/../..//textarea", 30000, null, "4c8adb8d-c1d8-4274-a6bb-a84fc8e175d1");
-                _copy_of_txtbox_detallesiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_DetalleSiniestro", ".//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']", 30000, null, "df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b");
-                _txtbox_causasiniestroInfo = new RepoItemInfo(this, "txtbox_CausaSiniestro", ".//span[@innertext~'Causa del siniestro']/../..//input", 30000, null, "4fcb4162-75be-4435-b0b6-4ee8832e102b");
-                _copy_of_txtbox_causasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_CausaSiniestro", ".//span[@innertext~'Causa del siniestro']/../..//input[@data-tabindexsaved='True']", 30000, null, "1dc5f4d0-af4e-4f83-9e15-aac00b8f4375");
-                _txtbox_subrogacionInfo = new RepoItemInfo(this, "txtbox_Subrogacion", ".//span[@innertext~'Subrogación']/../..//input", 30000, null, "b29c07b8-bd0f-4f25-8d63-5177237e9123");
-                _copy_of_txtbox_subrogacionInfo = new RepoItemInfo(this, "Copy_of_txtbox_Subrogacion", ".//span[@innertext~'Subrogación']/../..//input[@data-tabindexsaved='True']", 30000, null, "4d834871-fcf9-4260-af42-270cad12e9a5");
-                _txtbox_tipocalleInfo = new RepoItemInfo(this, "txtbox_TipoCalle", ".//span[@innertext~'Tipo de calle']/../..//input", 30000, null, "bed1e90d-e954-4301-92a4-457cff0a519e");
-                _copy_of_txtbox_tipocalleInfo = new RepoItemInfo(this, "Copy_of_txtbox_TipoCalle", ".//span[@innertext~'Tipo de calle']/../..//input[@data-tabindexsaved='True']", 30000, null, "7fb057aa-2e20-4ad6-9f2b-926ff2cfe39d");
-                _bttn_validardireccionInfo = new RepoItemInfo(this, "bttn_ValidarDireccion", ".//span[@innertext~'Validar Dirección']", 30000, null, "1a3a742a-7520-4175-8f1a-7e0d6847f282");
-                _txtbox_provinciaInfo = new RepoItemInfo(this, "txtbox_Provincia", ".//span[@innertext~'Provincia']/../..//input", 30000, null, "ab5d2ac5-06be-405d-bc1a-ca9ae6a2133f");
-                _copy_of_txtbox_provinciaInfo = new RepoItemInfo(this, "Copy_of_txtbox_Provincia", ".//span[@innertext~'Provincia']/../..//input[@data-tabindexsaved='True']", 30000, null, "16c8ce15-265a-4525-b8a8-7005f5f8b728");
-                _txtbox_localidadInfo = new RepoItemInfo(this, "txtbox_Localidad", ".//span[@innertext~'Localidad']/../..//input", 30000, null, "7c7d13ef-b90b-4e40-b00f-1ea4989e5b6a");
-                _copy_of_txtbox_localidadInfo = new RepoItemInfo(this, "Copy_of_txtbox_Localidad", ".//span[@innertext~'Localidad']/../..//input[@data-tabindexsaved='True']", 30000, null, "38473868-8976-46c2-9c53-4f74c148ee1e");
-                _txtbox_calleInfo = new RepoItemInfo(this, "txtbox_Calle", ".//span[@innertext~'Calle']/../..//input", 30000, null, "9dfb09a0-3c08-4e15-b88a-bf4705c9b229");
-                _copy_of_txtbox_calleInfo = new RepoItemInfo(this, "Copy_of_txtbox_Calle", ".//span[@innertext~'Calle']/../..//input[@data-tabindexsaved='True']", 30000, null, "2abf30ee-801e-4f79-b94f-700e15f25f1e");
-                _txtbox_numeroInfo = new RepoItemInfo(this, "txtbox_Numero", ".//span[@innertext~'Número']/../..//input", 30000, null, "1d895c55-f833-4304-9521-c258dd206f7d");
-                _copy_of_txtbox_numeroInfo = new RepoItemInfo(this, "Copy_of_txtbox_Numero", ".//span[@innertext~'Número']/../..//input[@data-tabindexsaved='True']", 30000, null, "fac0d96f-b615-4181-a05d-dcefe34122a9");
-                _tag_vehiculoInfo = new RepoItemInfo(this, "tag_Vehiculo", ".//div[@id~'FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:VehicleIncidentIterator:0:VehicleIncidentDV:VehicleName-inputEl']", 30000, null, "19dabf6a-9982-4107-97a1-03e952b8f20b");
-                _bttn_agregarconductorInfo = new RepoItemInfo(this, "bttn_AgregarConductor", ".//span[@innertext='Agregar conductor']", 30000, null, "0e4d650f-31f8-44ba-b340-2006bc69d5ec");
-                _txt_relacionconpropietario_aseguradoInfo = new RepoItemInfo(this, "txt_RelacionConPropietario_Asegurado", ".//span[@innertext='Relación con propietario']/../..//div[@innertext='Asegurado']", 30000, null, "c54ad6a2-c1b8-4db2-9cb1-5143ffa0114b");
-                _txt_detalledeloslesionadosInfo = new RepoItemInfo(this, "txt_DetalleDeLosLesionados", ".//span[@innertext='Detalle de los lesionados']", 30000, null, "7636f409-94e8-4277-a37f-64392d64bb35");
-                _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", ".//span[@innertext='Aceptar']", 30000, null, "095dc31d-7f40-4650-a936-f1d5cd82bbf8");
-                _txt_detalledelvehiculoaseguradoInfo = new RepoItemInfo(this, "txt_DetalleDelVehiculoAsegurado", ".//*[@innertext~'Detalle del vehículo asegurado']", 30000, null, "173e0b5c-a7dc-4f43-adca-56a5375fdafb");
-                _lbl_descripciontiposiniestroInfo = new RepoItemInfo(this, "lbl_DescripcionTipoSiniestro", ".//span[@innertext>'Descripción del tipo de s']", 30000, null, "edab80cb-6290-4fa0-8b39-ee5d6a2f2ce2");
-                _txt_daniosInfo = new RepoItemInfo(this, "txt_Danios", ".//span[@innertext='Daños']", 30000, null, "839343c3-e47d-4a4a-8e3c-dd59c155b77d");
-                _cb_daniosInfo = new RepoItemInfo(this, "cb_Danios", ".//span[@innertext='Daños']/../../..//label[@innertext=$DANIOS]/../input[@type='button']", 30000, null, "2f93994b-8078-47a8-8628-5319af1c1fc7");
-                _cb_danios_noInfo = new RepoItemInfo(this, "cb_Danios_No", ".//span[@innertext='Daños']/../../..//label[@innertext='No']/../input[@type='button']", 30000, null, "984b6475-4b7f-4634-8d5b-f60db022575c");
-                _txt_gravedadInfo = new RepoItemInfo(this, "txt_Gravedad", ".//span[@innertext='Gravedad']", 30000, null, "f603ff05-8b4a-4355-be5f-3fd9dbc16134");
-                _txtbox_gravedadInfo = new RepoItemInfo(this, "txtbox_Gravedad", ".//span[@innertext='Gravedad']/../..//input", 30000, null, "bdbaca66-2bfc-4d07-adcb-80bc71f7e7a5");
-                _copy_of_txtbox_gravedadInfo = new RepoItemInfo(this, "Copy_of_txtbox_Gravedad", ".//span[@innertext='Gravedad']/../..//input[@data-tabindexsaved='True']", 30000, null, "5bf4b1dc-68b5-479d-a16f-d181d9ad399d");
-                _bttn_agregarInfo = new RepoItemInfo(this, "bttn_Agregar", ".//span[@innertext~'gregar']", 30000, null, "d06f7bb5-a6b3-4b75-86ca-8b7ec86a01f3");
-                _bttn_agregarconductoruberInfo = new RepoItemInfo(this, "bttn_AgregarConductorUber", ".//span[@innertext~'Agregar conductor']", 30000, null, "c5cbc745-4d0f-4600-a3a9-4c9f09a8d57a");
-                _tag_descripcionInfo = new RepoItemInfo(this, "tag_Descripcion", ".//div[@innertext='<ninguna>']", 30000, null, "f375a3e3-5c3e-4aae-945b-cd166c41b968");
-                _txt_tipodocumento_motoruberInfo = new RepoItemInfo(this, "txt_TipoDocumento_MotorUber", ".//tr[@safeclass='x-grid-row']//div[@innertext='<ninguna>']", 30000, null, "8ec43151-c490-482c-8793-25ad6b6a443a");
-                _txtbox_descripciondelosdaniosInfo = new RepoItemInfo(this, "txtbox_DescripcionDeLosDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea", 30000, null, "8884f03c-2876-407c-af20-b5b53e41a96e");
-                _copy_of_txtbox_descripciondelosdaniosInfo = new RepoItemInfo(this, "Copy_of_txtbox_DescripcionDeLosDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']", 30000, null, "c028090d-0e1e-49e8-a261-afba87f1fe2c");
-                _cb_incendioInfo = new RepoItemInfo(this, "cb_Incendio", ".//span[@innertext='Incendio']/../../..//label[@innertext=$INCENDIO]/../input[@type='button']", 30000, null, "3f9168fc-a430-4ff2-9365-6bd9222cbe33");
-                _picker_personalInfo = new RepoItemInfo(this, "picker_Personal", ".//span[@innertext='Personal']/../..//div[@id~'picker']", 30000, null, "8b21c7c1-205d-43a0-8fd5-2e07b224054f");
-                _bttn_finalizarInfo = new RepoItemInfo(this, "bttn_Finalizar", ".//span[@innertext~'inalizar']", 30000, null, "bb49d13e-2294-4dc7-9464-3ef232593876");
-                _bttn_otrosdaniosInfo = new RepoItemInfo(this, "bttn_OtrosDanios", ".//span[@innertext='Otros Daños']", 30000, null, "803c4f13-7cb0-4147-8aa1-03663510319a");
-                _txt_nuevoincidentedepropiedadInfo = new RepoItemInfo(this, "txt_NuevoIncidenteDePropiedad", ".//span[@innertext>'Nuevo incidente de propie']", 30000, null, "f05b9bda-fa7f-458f-8ee0-60c8adf79b22");
-                _txtbox_propiedadInfo = new RepoItemInfo(this, "txtbox_Propiedad", ".//span[@innertext='Propiedad']/../..//input", 30000, null, "1a5db2d2-9989-413f-8bd9-6f51bc1406f9");
-                _copy_of_txtbox_propiedadInfo = new RepoItemInfo(this, "Copy_of_txtbox_Propiedad", ".//span[@innertext='Propiedad']/../..//input[@data-tabindexsaved='True']", 30000, null, "fbb8f754-36ad-42d8-8b01-9f4917d328cd");
-                _txtbox_descripciondaniosInfo = new RepoItemInfo(this, "txtbox_DescripcionDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea", 30000, null, "d10b660e-0f9e-4f5a-a06b-3a4f6fba83f5");
-                _copy_of_txtbox_descripciondaniosInfo = new RepoItemInfo(this, "Copy_of_txtbox_DescripcionDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']", 30000, null, "353c6dd5-2901-4015-b700-9bad7dbf19b8");
-                _bttn_propietarioInfo = new RepoItemInfo(this, "bttn_Propietario", ".//div[@class='g-input-suffix']//a", 30000, null, "d58e2324-fcf2-49dd-ab07-d23421712af2");
-                _txt_nuevapersonaInfo = new RepoItemInfo(this, "txt_NuevaPersona", ".//span[@innertext='Nueva persona']", 30000, null, "a31f6729-0f4d-45ea-9137-58c701f5f4da");
-                _txtbox_apellidoInfo = new RepoItemInfo(this, "txtbox_Apellido", ".//span[@innertext='Apellido']/../..//input", 30000, null, "f981e0d4-11b0-4cd9-8453-79b794456e58");
-                _copy_of_txtbox_apellidoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Apellido", ".//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']", 30000, null, "fe1d8945-ddf9-4834-b866-eeec7003b6d1");
-                _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext='Actalizar']", 30000, null, "f0a718d9-9f42-4069-b4c4-d0da4cf60957");
-                _bttn_agregar2Info = new RepoItemInfo(this, "bttn_Agregar2", ".//label[@innertext='Información fiscal']/../../..//span[@innertext='Agregar']", 30000, null, "2c48014f-7a6e-41d7-ac73-ac92c47589c8");
-                _datosuberInfo = new RepoItemInfo(this, "DatosUber", ".//label[@innertext~'Datos Uber']", 30000, null, "92c67bf4-2e40-4e7f-8229-d89407960e39");
-                _txt_datosuberInfo = new RepoItemInfo(this, "txt_DatosUber", ".//label[@innertext='Datos Uber']", 30000, null, "06c579d3-a294-4330-9e96-142d734723c7");
-                _txtnivelInfo = new RepoItemInfo(this, "txtNivel", "tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[8]/td/div/div/div/div[2]", 30000, null, "5552ed8e-ad3d-4b99-baeb-f69078118bd3");
-                _txtestadoInfo = new RepoItemInfo(this, "txtEstado", "tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[9]/td/div/div/div/div[2]", 30000, null, "51affa4f-4d06-47f6-8be5-f5ad95b16acb");
-                _txt_detalledelvehiculodeterceroInfo = new RepoItemInfo(this, "txt_DetalleDelVehiculoDeTercero", ".//span[@innertext~'Detalle del vehículo de tercero']", 30000, null, "4302efb8-cd39-4c54-8614-0ed1fb2fed40");
-                _txt_nro_documento_motor_uberInfo = new RepoItemInfo(this, "txt_Nro_Documento_Motor_Uber", ".//tr[@safeclass='x-grid-row']/td[3]/div", 30000, null, "b666b12f-87e6-483c-9c93-677bad2f29ed");
-                _txtanioInfo = new RepoItemInfo(this, "txtAnio", "tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']", 30000, null, "1eab2695-fc54-43e2-9a10-be567ea5250e");
-                _lbl_elementosbasicosdelvehiculoInfo = new RepoItemInfo(this, "lbl_ElementosBasicosDelVehiculo", ".//label[@innertext>'Elementos básicos del veh']", 30000, null, "213ed408-d8a3-461c-915e-dbb03610e484");
-                _arrow_buscaproveedorInfo = new RepoItemInfo(this, "Arrow_BuscaProveedor", ".//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", 30000, null, "401956ec-4a22-468a-9142-cc99cd25f56e");
-                _lbl_metododepagoInfo = new RepoItemInfo(this, "lbl_MetodoDePago", ".//span[@innertext='Método de pago']", 30000, null, "d917e759-918d-4fd7-9f15-4a6c094b06f4");
-                _txt_aniovehiculoInfo = new RepoItemInfo(this, "txt_AnioVehiculo", ".//span[@innertext='Año']/../..//input", 30000, null, "2c6fa320-9f7c-4baa-8f61-f18d4e1474ca");
-                _copy_of_txtaniovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtAnioVehiculo", ".//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']", 30000, null, "58fd848e-1ebf-45bf-b6f3-b719e1fc3c04");
-                _txt_propietariovehiculoInfo = new RepoItemInfo(this, "txt_PropietarioVehiculo", ".//span[@innertext='Propietario']/../..//input", 30000, null, "3496f5d2-646d-4c8f-9e73-5f938645d37e");
-                _lbl_danosInfo = new RepoItemInfo(this, "lbl_Danos", ".//label[@innertext='Daños']", 30000, null, "883c3ce4-1175-4cbb-9883-d5242fe0a8e9");
-                _bttn_volverInfo = new RepoItemInfo(this, "bttn_Volver", ".//span[@innertext~'Volver']", 30000, null, "84859e2a-2379-40d7-8a2d-bdba7bf55aaf");
-                _normalcreatecheckwizardcheckwizardchecInfo = new RepoItemInfo(this, "NormalCreateCheckWizardCheckWizardChec", "tr//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']", 30000, null, "27f4d44e-cee6-4ac8-b807-5e0ba63040d2");
+                _txtbox_detallesiniestroInfo = new RepoItemInfo(this, "txtbox_DetalleSiniestro", ".//span[@innertext~'Detalle del siniestro']/../..//textarea", "", 30000, null, "4c8adb8d-c1d8-4274-a6bb-a84fc8e175d1");
+                _copy_of_txtbox_detallesiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_DetalleSiniestro", ".//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']", "", 30000, null, "df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b");
+                _txtbox_causasiniestroInfo = new RepoItemInfo(this, "txtbox_CausaSiniestro", ".//span[@innertext~'Causa del siniestro']/../..//input", "", 30000, null, "4fcb4162-75be-4435-b0b6-4ee8832e102b");
+                _copy_of_txtbox_causasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_CausaSiniestro", ".//span[@innertext~'Causa del siniestro']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "1dc5f4d0-af4e-4f83-9e15-aac00b8f4375");
+                _txtbox_subrogacionInfo = new RepoItemInfo(this, "txtbox_Subrogacion", ".//span[@innertext~'Subrogación']/../..//input", "", 30000, null, "b29c07b8-bd0f-4f25-8d63-5177237e9123");
+                _copy_of_txtbox_subrogacionInfo = new RepoItemInfo(this, "Copy_of_txtbox_Subrogacion", ".//span[@innertext~'Subrogación']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "4d834871-fcf9-4260-af42-270cad12e9a5");
+                _txtbox_tipocalleInfo = new RepoItemInfo(this, "txtbox_TipoCalle", ".//span[@innertext~'Tipo de calle']/../..//input", "", 30000, null, "bed1e90d-e954-4301-92a4-457cff0a519e");
+                _copy_of_txtbox_tipocalleInfo = new RepoItemInfo(this, "Copy_of_txtbox_TipoCalle", ".//span[@innertext~'Tipo de calle']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "7fb057aa-2e20-4ad6-9f2b-926ff2cfe39d");
+                _bttn_validardireccionInfo = new RepoItemInfo(this, "bttn_ValidarDireccion", ".//span[@innertext~'Validar Dirección']", "", 30000, null, "1a3a742a-7520-4175-8f1a-7e0d6847f282");
+                _txtbox_provinciaInfo = new RepoItemInfo(this, "txtbox_Provincia", ".//span[@innertext~'Provincia']/../..//input", "", 30000, null, "ab5d2ac5-06be-405d-bc1a-ca9ae6a2133f");
+                _copy_of_txtbox_provinciaInfo = new RepoItemInfo(this, "Copy_of_txtbox_Provincia", ".//span[@innertext~'Provincia']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "16c8ce15-265a-4525-b8a8-7005f5f8b728");
+                _txtbox_localidadInfo = new RepoItemInfo(this, "txtbox_Localidad", ".//span[@innertext~'Localidad']/../..//input", "", 30000, null, "7c7d13ef-b90b-4e40-b00f-1ea4989e5b6a");
+                _copy_of_txtbox_localidadInfo = new RepoItemInfo(this, "Copy_of_txtbox_Localidad", ".//span[@innertext~'Localidad']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "38473868-8976-46c2-9c53-4f74c148ee1e");
+                _txtbox_calleInfo = new RepoItemInfo(this, "txtbox_Calle", ".//span[@innertext~'Calle']/../..//input", "", 30000, null, "9dfb09a0-3c08-4e15-b88a-bf4705c9b229");
+                _copy_of_txtbox_calleInfo = new RepoItemInfo(this, "Copy_of_txtbox_Calle", ".//span[@innertext~'Calle']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "2abf30ee-801e-4f79-b94f-700e15f25f1e");
+                _txtbox_numeroInfo = new RepoItemInfo(this, "txtbox_Numero", ".//span[@innertext~'Número']/../..//input", "", 30000, null, "1d895c55-f833-4304-9521-c258dd206f7d");
+                _copy_of_txtbox_numeroInfo = new RepoItemInfo(this, "Copy_of_txtbox_Numero", ".//span[@innertext~'Número']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "fac0d96f-b615-4181-a05d-dcefe34122a9");
+                _tag_vehiculoInfo = new RepoItemInfo(this, "tag_Vehiculo", ".//div[@id~'FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:VehicleIncidentIterator:0:VehicleIncidentDV:VehicleName-inputEl']", "", 30000, null, "19dabf6a-9982-4107-97a1-03e952b8f20b");
+                _bttn_agregarconductorInfo = new RepoItemInfo(this, "bttn_AgregarConductor", ".//span[@innertext='Agregar conductor']", "", 30000, null, "0e4d650f-31f8-44ba-b340-2006bc69d5ec");
+                _txt_relacionconpropietario_aseguradoInfo = new RepoItemInfo(this, "txt_RelacionConPropietario_Asegurado", ".//span[@innertext='Relación con propietario']/../..//div[@innertext='Asegurado']", "", 30000, null, "c54ad6a2-c1b8-4db2-9cb1-5143ffa0114b");
+                _txt_detalledeloslesionadosInfo = new RepoItemInfo(this, "txt_DetalleDeLosLesionados", ".//span[@innertext='Detalle de los lesionados']", "", 30000, null, "7636f409-94e8-4277-a37f-64392d64bb35");
+                _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", ".//span[@innertext='Aceptar']", "", 30000, null, "095dc31d-7f40-4650-a936-f1d5cd82bbf8");
+                _txt_detalledelvehiculoaseguradoInfo = new RepoItemInfo(this, "txt_DetalleDelVehiculoAsegurado", ".//*[@innertext~'Detalle del vehículo asegurado']", "", 30000, null, "173e0b5c-a7dc-4f43-adca-56a5375fdafb");
+                _lbl_descripciontiposiniestroInfo = new RepoItemInfo(this, "lbl_DescripcionTipoSiniestro", ".//span[@innertext>'Descripción del tipo de s']", "", 30000, null, "edab80cb-6290-4fa0-8b39-ee5d6a2f2ce2");
+                _txt_daniosInfo = new RepoItemInfo(this, "txt_Danios", ".//span[@innertext='Daños']", "", 30000, null, "839343c3-e47d-4a4a-8e3c-dd59c155b77d");
+                _cb_daniosInfo = new RepoItemInfo(this, "cb_Danios", ".//span[@innertext='Daños']/../../..//label[@innertext=$DANIOS]/../input[@type='button']", "", 30000, null, "2f93994b-8078-47a8-8628-5319af1c1fc7");
+                _cb_danios_noInfo = new RepoItemInfo(this, "cb_Danios_No", ".//span[@innertext='Daños']/../../..//label[@innertext='No']/../input[@type='button']", "", 30000, null, "984b6475-4b7f-4634-8d5b-f60db022575c");
+                _txt_gravedadInfo = new RepoItemInfo(this, "txt_Gravedad", ".//span[@innertext='Gravedad']", "", 30000, null, "f603ff05-8b4a-4355-be5f-3fd9dbc16134");
+                _txtbox_gravedadInfo = new RepoItemInfo(this, "txtbox_Gravedad", ".//span[@innertext='Gravedad']/../..//input", "", 30000, null, "bdbaca66-2bfc-4d07-adcb-80bc71f7e7a5");
+                _copy_of_txtbox_gravedadInfo = new RepoItemInfo(this, "Copy_of_txtbox_Gravedad", ".//span[@innertext='Gravedad']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "5bf4b1dc-68b5-479d-a16f-d181d9ad399d");
+                _bttn_agregarInfo = new RepoItemInfo(this, "bttn_Agregar", ".//span[@innertext~'gregar']", "", 30000, null, "d06f7bb5-a6b3-4b75-86ca-8b7ec86a01f3");
+                _bttn_agregarconductoruberInfo = new RepoItemInfo(this, "bttn_AgregarConductorUber", ".//span[@innertext~'Agregar conductor']", "", 30000, null, "c5cbc745-4d0f-4600-a3a9-4c9f09a8d57a");
+                _tag_descripcionInfo = new RepoItemInfo(this, "tag_Descripcion", ".//div[@innertext='<ninguna>']", "", 30000, null, "f375a3e3-5c3e-4aae-945b-cd166c41b968");
+                _txt_tipodocumento_motoruberInfo = new RepoItemInfo(this, "txt_TipoDocumento_MotorUber", ".//tr[@safeclass='x-grid-row']//div[@innertext='<ninguna>']", "", 30000, null, "8ec43151-c490-482c-8793-25ad6b6a443a");
+                _txtbox_descripciondelosdaniosInfo = new RepoItemInfo(this, "txtbox_DescripcionDeLosDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea", "", 30000, null, "8884f03c-2876-407c-af20-b5b53e41a96e");
+                _copy_of_txtbox_descripciondelosdaniosInfo = new RepoItemInfo(this, "Copy_of_txtbox_DescripcionDeLosDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']", "", 30000, null, "c028090d-0e1e-49e8-a261-afba87f1fe2c");
+                _cb_incendioInfo = new RepoItemInfo(this, "cb_Incendio", ".//span[@innertext='Incendio']/../../..//label[@innertext=$INCENDIO]/../input[@type='button']", "", 30000, null, "3f9168fc-a430-4ff2-9365-6bd9222cbe33");
+                _picker_personalInfo = new RepoItemInfo(this, "picker_Personal", ".//span[@innertext='Personal']/../..//div[@id~'picker']", "", 30000, null, "8b21c7c1-205d-43a0-8fd5-2e07b224054f");
+                _bttn_finalizarInfo = new RepoItemInfo(this, "bttn_Finalizar", ".//span[@innertext~'inalizar']", "", 30000, null, "bb49d13e-2294-4dc7-9464-3ef232593876");
+                _bttn_otrosdaniosInfo = new RepoItemInfo(this, "bttn_OtrosDanios", ".//span[@innertext='Otros Daños']", "", 30000, null, "803c4f13-7cb0-4147-8aa1-03663510319a");
+                _txt_nuevoincidentedepropiedadInfo = new RepoItemInfo(this, "txt_NuevoIncidenteDePropiedad", ".//span[@innertext>'Nuevo incidente de propie']", "", 30000, null, "f05b9bda-fa7f-458f-8ee0-60c8adf79b22");
+                _txtbox_propiedadInfo = new RepoItemInfo(this, "txtbox_Propiedad", ".//span[@innertext='Propiedad']/../..//input", "", 30000, null, "1a5db2d2-9989-413f-8bd9-6f51bc1406f9");
+                _copy_of_txtbox_propiedadInfo = new RepoItemInfo(this, "Copy_of_txtbox_Propiedad", ".//span[@innertext='Propiedad']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "fbb8f754-36ad-42d8-8b01-9f4917d328cd");
+                _txtbox_descripciondaniosInfo = new RepoItemInfo(this, "txtbox_DescripcionDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea", "", 30000, null, "d10b660e-0f9e-4f5a-a06b-3a4f6fba83f5");
+                _copy_of_txtbox_descripciondaniosInfo = new RepoItemInfo(this, "Copy_of_txtbox_DescripcionDanios", ".//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']", "", 30000, null, "353c6dd5-2901-4015-b700-9bad7dbf19b8");
+                _bttn_propietarioInfo = new RepoItemInfo(this, "bttn_Propietario", ".//div[@class='g-input-suffix']//a", "", 30000, null, "d58e2324-fcf2-49dd-ab07-d23421712af2");
+                _txt_nuevapersonaInfo = new RepoItemInfo(this, "txt_NuevaPersona", ".//span[@innertext='Nueva persona']", "", 30000, null, "a31f6729-0f4d-45ea-9137-58c701f5f4da");
+                _txtbox_apellidoInfo = new RepoItemInfo(this, "txtbox_Apellido", ".//span[@innertext='Apellido']/../..//input", "", 30000, null, "f981e0d4-11b0-4cd9-8453-79b794456e58");
+                _copy_of_txtbox_apellidoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Apellido", ".//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "fe1d8945-ddf9-4834-b866-eeec7003b6d1");
+                _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext='Actalizar']", "", 30000, null, "f0a718d9-9f42-4069-b4c4-d0da4cf60957");
+                _bttn_agregar2Info = new RepoItemInfo(this, "bttn_Agregar2", ".//label[@innertext='Información fiscal']/../../..//span[@innertext='Agregar']", "", 30000, null, "2c48014f-7a6e-41d7-ac73-ac92c47589c8");
+                _datosuberInfo = new RepoItemInfo(this, "DatosUber", ".//label[@innertext~'Datos Uber']", "", 30000, null, "92c67bf4-2e40-4e7f-8229-d89407960e39");
+                _txt_datosuberInfo = new RepoItemInfo(this, "txt_DatosUber", ".//label[@innertext='Datos Uber']", "", 30000, null, "06c579d3-a294-4330-9e96-142d734723c7");
+                _txtnivelInfo = new RepoItemInfo(this, "txtNivel", "tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[8]/td/div/div/div/div[2]", "", 30000, null, "5552ed8e-ad3d-4b99-baeb-f69078118bd3");
+                _txtestadoInfo = new RepoItemInfo(this, "txtEstado", "tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[9]/td/div/div/div/div[2]", "", 30000, null, "51affa4f-4d06-47f6-8be5-f5ad95b16acb");
+                _txt_detalledelvehiculodeterceroInfo = new RepoItemInfo(this, "txt_DetalleDelVehiculoDeTercero", ".//span[@innertext~'Detalle del vehículo de tercero']", "", 30000, null, "4302efb8-cd39-4c54-8614-0ed1fb2fed40");
+                _txt_nro_documento_motor_uberInfo = new RepoItemInfo(this, "txt_Nro_Documento_Motor_Uber", ".//tr[@safeclass='x-grid-row']/td[3]/div", "", 30000, null, "b666b12f-87e6-483c-9c93-677bad2f29ed");
+                _txtanioInfo = new RepoItemInfo(this, "txtAnio", "tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']", "", 30000, null, "1eab2695-fc54-43e2-9a10-be567ea5250e");
+                _lbl_elementosbasicosdelvehiculoInfo = new RepoItemInfo(this, "lbl_ElementosBasicosDelVehiculo", ".//label[@innertext>'Elementos básicos del veh']", "", 30000, null, "213ed408-d8a3-461c-915e-dbb03610e484");
+                _arrow_buscaproveedorInfo = new RepoItemInfo(this, "Arrow_BuscaProveedor", ".//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", "", 30000, null, "401956ec-4a22-468a-9142-cc99cd25f56e");
+                _lbl_metododepagoInfo = new RepoItemInfo(this, "lbl_MetodoDePago", ".//span[@innertext='Método de pago']", "", 30000, null, "d917e759-918d-4fd7-9f15-4a6c094b06f4");
+                _txt_aniovehiculoInfo = new RepoItemInfo(this, "txt_AnioVehiculo", ".//span[@innertext='Año']/../..//input", "", 30000, null, "2c6fa320-9f7c-4baa-8f61-f18d4e1474ca");
+                _copy_of_txtaniovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtAnioVehiculo", ".//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "58fd848e-1ebf-45bf-b6f3-b719e1fc3c04");
+                _txt_propietariovehiculoInfo = new RepoItemInfo(this, "txt_PropietarioVehiculo", ".//span[@innertext='Propietario']/../..//input", "", 30000, null, "3496f5d2-646d-4c8f-9e73-5f938645d37e");
+                _lbl_danosInfo = new RepoItemInfo(this, "lbl_Danos", ".//label[@innertext='Daños']", "", 30000, null, "883c3ce4-1175-4cbb-9883-d5242fe0a8e9");
+                _bttn_volverInfo = new RepoItemInfo(this, "bttn_Volver", ".//span[@innertext~'Volver']", "", 30000, null, "84859e2a-2379-40d7-8a2d-bdba7bf55aaf");
+                _normalcreatecheckwizardcheckwizardchecInfo = new RepoItemInfo(this, "NormalCreateCheckWizardCheckWizardChec", "tr//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']", "", 30000, null, "27f4d44e-cee6-4ac8-b807-5e0ba63040d2");
             }
 
             /// <summary>
@@ -5485,23 +5485,23 @@ namespace SuraClaims
             public SiniestroTerceroFolder(RepoGenBaseFolder parentFolder) :
                     base("SiniestroTercero", "", parentFolder, 0, null, false, "c36c0fba-8731-40c7-a08c-9cea63860e64", "")
             {
-                _select_tipoaccidenteInfo = new RepoItemInfo(this, "select_TipoAccidente", ".//li[@innertext=$TipoAccidente]", 30000, null, "319f32a0-dfbd-4ee1-b7d4-a05c6757f488");
-                _select_tipoaccidente_colisionInfo = new RepoItemInfo(this, "select_TipoAccidente_Colision", ".//li[@innertext='Colisión']", 30000, null, "35e1eb27-a510-4470-bc3b-f310094a0031");
-                _txt_colisionconInfo = new RepoItemInfo(this, "txt_ColisionCon", ".//span[@innertext~'Colisión con']/../..//input", 30000, null, "9600c63f-fcf1-4715-b3c8-224a3902c526");
-                _selecttipocolisionInfo = new RepoItemInfo(this, "SelectTipoColision", ".//li[@innertext=$TipoColision]", 30000, null, "856c2bfe-4c61-4c8a-a3b2-e2f203f52f7d");
-                _txt_danioaterceroInfo = new RepoItemInfo(this, "txt_DanioATercero", ".//span[@innertext~'Daños a vehículo de tercero']/../..//input", 30000, null, "a389f720-f8db-4d88-bf38-8e19eda2ff44");
-                _selectdaniotercerofrontalInfo = new RepoItemInfo(this, "SelectDanioTerceroFrontal", ".//li[@innertext=$DanioTercero]", 30000, null, "01389e09-bea4-4e8a-97aa-709af8c206df");
-                _txt_dolenciasInfo = new RepoItemInfo(this, "txt_Dolencias", ".//span[@innertext>'Hay dolencias']/../..//input", 30000, null, "8d12c332-1332-4d9a-b796-24e1adcadddf");
-                _selectdolenciaInfo = new RepoItemInfo(this, "SelectDolencia", ".//li[@innertext=$Dolencia]", 30000, null, "93e65d69-5f66-4f64-af37-5a7d86c76744");
-                _txt_cantpasajtercInfo = new RepoItemInfo(this, "txt_CantPasajTerc", ".//span[@innertext~'Cantidad de pasajeros en vehículo de tercero']/../..//input", 30000, null, "6ff8e114-7276-438a-afbd-3eae61562f1d");
-                _selectcantpasajtercInfo = new RepoItemInfo(this, "SelectCantPasajTerc", ".//li[@innertext=$CantPasaj]", 30000, null, "f576a1c5-0147-43a6-b13b-a9ec45865e29");
-                _txt_cantasegInfo = new RepoItemInfo(this, "txt_CantAseg", ".//span[@innertext~'Cantidad de pasajeros en vehículo asegurado']/../..//input", 30000, null, "38e8a31b-e25b-4c2e-bb77-55c6aef326f3");
-                _selectcantasegInfo = new RepoItemInfo(this, "SelectCantAseg", ".//li[@innertext=$CantAsegu]", 30000, null, "980efbb6-4fe2-4469-af62-f7ccc0c196f4");
-                _txt_descripdaniosterceroInfo = new RepoItemInfo(this, "txt_DescripDaniosTercero", ".//span[@innertext~'Descripción de los daños']/../..//textarea", 30000, null, "05dd44a1-642a-4317-ad54-fa95a1a40ddc");
-                _txt_patenteInfo = new RepoItemInfo(this, "txt_Patente", ".//span[@innertext='Patente']/../..//input", 30000, null, "d6fd0bb1-4b36-4a07-9f11-0afd0defffc1");
-                _copy_of_textpatenteInfo = new RepoItemInfo(this, "Copy_of_textPatente", ".//span[@innertext='Patente']/../..//input[@data-tabindexsaved='True']", 30000, null, "f4d10379-5e5b-41b4-95dc-1575a0d99f7e");
-                _txt_tipovehiculoInfo = new RepoItemInfo(this, "txt_TipoVehiculo", ".//.//span[@innertext='Tipo de Vehículo']/../..//input", 30000, null, "e71ae898-1d06-4e8e-90e0-2ec3fc7472d1");
-                _copy_of_txttipovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtTipoVehiculo", ".//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']", 30000, null, "81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09");
+                _select_tipoaccidenteInfo = new RepoItemInfo(this, "select_TipoAccidente", ".//li[@innertext=$TipoAccidente]", "", 30000, null, "319f32a0-dfbd-4ee1-b7d4-a05c6757f488");
+                _select_tipoaccidente_colisionInfo = new RepoItemInfo(this, "select_TipoAccidente_Colision", ".//li[@innertext='Colisión']", "", 30000, null, "35e1eb27-a510-4470-bc3b-f310094a0031");
+                _txt_colisionconInfo = new RepoItemInfo(this, "txt_ColisionCon", ".//span[@innertext~'Colisión con']/../..//input", "", 30000, null, "9600c63f-fcf1-4715-b3c8-224a3902c526");
+                _selecttipocolisionInfo = new RepoItemInfo(this, "SelectTipoColision", ".//li[@innertext=$TipoColision]", "", 30000, null, "856c2bfe-4c61-4c8a-a3b2-e2f203f52f7d");
+                _txt_danioaterceroInfo = new RepoItemInfo(this, "txt_DanioATercero", ".//span[@innertext~'Daños a vehículo de tercero']/../..//input", "", 30000, null, "a389f720-f8db-4d88-bf38-8e19eda2ff44");
+                _selectdaniotercerofrontalInfo = new RepoItemInfo(this, "SelectDanioTerceroFrontal", ".//li[@innertext=$DanioTercero]", "", 30000, null, "01389e09-bea4-4e8a-97aa-709af8c206df");
+                _txt_dolenciasInfo = new RepoItemInfo(this, "txt_Dolencias", ".//span[@innertext>'Hay dolencias']/../..//input", "", 30000, null, "8d12c332-1332-4d9a-b796-24e1adcadddf");
+                _selectdolenciaInfo = new RepoItemInfo(this, "SelectDolencia", ".//li[@innertext=$Dolencia]", "", 30000, null, "93e65d69-5f66-4f64-af37-5a7d86c76744");
+                _txt_cantpasajtercInfo = new RepoItemInfo(this, "txt_CantPasajTerc", ".//span[@innertext~'Cantidad de pasajeros en vehículo de tercero']/../..//input", "", 30000, null, "6ff8e114-7276-438a-afbd-3eae61562f1d");
+                _selectcantpasajtercInfo = new RepoItemInfo(this, "SelectCantPasajTerc", ".//li[@innertext=$CantPasaj]", "", 30000, null, "f576a1c5-0147-43a6-b13b-a9ec45865e29");
+                _txt_cantasegInfo = new RepoItemInfo(this, "txt_CantAseg", ".//span[@innertext~'Cantidad de pasajeros en vehículo asegurado']/../..//input", "", 30000, null, "38e8a31b-e25b-4c2e-bb77-55c6aef326f3");
+                _selectcantasegInfo = new RepoItemInfo(this, "SelectCantAseg", ".//li[@innertext=$CantAsegu]", "", 30000, null, "980efbb6-4fe2-4469-af62-f7ccc0c196f4");
+                _txt_descripdaniosterceroInfo = new RepoItemInfo(this, "txt_DescripDaniosTercero", ".//span[@innertext~'Descripción de los daños']/../..//textarea", "", 30000, null, "05dd44a1-642a-4317-ad54-fa95a1a40ddc");
+                _txt_patenteInfo = new RepoItemInfo(this, "txt_Patente", ".//span[@innertext='Patente']/../..//input", "", 30000, null, "d6fd0bb1-4b36-4a07-9f11-0afd0defffc1");
+                _copy_of_textpatenteInfo = new RepoItemInfo(this, "Copy_of_textPatente", ".//span[@innertext='Patente']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "f4d10379-5e5b-41b4-95dc-1575a0d99f7e");
+                _txt_tipovehiculoInfo = new RepoItemInfo(this, "txt_TipoVehiculo", ".//.//span[@innertext='Tipo de Vehículo']/../..//input", "", 30000, null, "e71ae898-1d06-4e8e-90e0-2ec3fc7472d1");
+                _copy_of_txttipovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtTipoVehiculo", ".//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09");
             }
 
             /// <summary>
@@ -5947,15 +5947,15 @@ namespace SuraClaims
             public HogarFolder(RepoGenBaseFolder parentFolder) :
                     base("Hogar", "", parentFolder, 0, null, false, "21189820-8883-4ff3-8ae4-f15fa5aff870", "")
             {
-                _txtbox_causasiniestroInfo = new RepoItemInfo(this, "txtbox_CausaSiniestro", ".//span[@innertext='Causa del siniestro']/../..//input", 30000, null, "ac37c4b5-d72d-4a0d-9c1b-3a3132061d56");
-                _copy_of_txtbox_causasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_CausaSiniestro", ".//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']", 30000, null, "02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9");
-                _bttn_soloincidenteInfo = new RepoItemInfo(this, "bttn_SoloIncidente", ".//span[@innertext='¿Solo incidente?']/../..//label[@innertext='No']/../input[@type='button']", 30000, null, "969989b2-b983-43b8-b9ed-76ea8a680abf");
-                _check_tipodaniosInfo = new RepoItemInfo(this, "check_TipoDanios", ".//tbody[#'centerPanel-tbody']//label[@innertext=$TIPO_DANIOS]/..//input[@type='button']", 30000, null, "d514b3da-26d0-415f-ba57-a7de7eacb924");
-                _bttn_nuevoreclamoInfo = new RepoItemInfo(this, "bttn_NuevoReclamo", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nuvo Reclamo']", 30000, null, "d4079a5d-2084-4cec-8c9a-916292239c9b");
-                _txt_nuevaexposicionInfo = new RepoItemInfo(this, "txt_NuevaExposicion", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']", 30000, null, "ca83115d-fd6b-4833-98cc-edfa58b6fedc");
-                _tag_ubicacionInfo = new RepoItemInfo(this, "tag_Ubicacion", ".//span[@innertext>'1:']", 30000, null, "74378110-de87-40c9-ae53-df083792cb00");
-                _option_incendioedificioaprorrataInfo = new RepoItemInfo(this, "option_IncendioEdificioAProrrata", ".//span[@innertext~'Incendio']", 30000, null, "4bd9862d-c511-44b0-a140-07bed1b2b674");
-                _txt_preguntasInfo = new RepoItemInfo(this, "txt_Preguntas", ".//span[@innertext~'Preguntas']", 30000, null, "120fd1e5-bb8d-4840-b194-05873d77d8f8");
+                _txtbox_causasiniestroInfo = new RepoItemInfo(this, "txtbox_CausaSiniestro", ".//span[@innertext='Causa del siniestro']/../..//input", "", 30000, null, "ac37c4b5-d72d-4a0d-9c1b-3a3132061d56");
+                _copy_of_txtbox_causasiniestroInfo = new RepoItemInfo(this, "Copy_of_txtbox_CausaSiniestro", ".//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9");
+                _bttn_soloincidenteInfo = new RepoItemInfo(this, "bttn_SoloIncidente", ".//span[@innertext='¿Solo incidente?']/../..//label[@innertext='No']/../input[@type='button']", "", 30000, null, "969989b2-b983-43b8-b9ed-76ea8a680abf");
+                _check_tipodaniosInfo = new RepoItemInfo(this, "check_TipoDanios", ".//tbody[#'centerPanel-tbody']//label[@innertext=$TIPO_DANIOS]/..//input[@type='button']", "", 30000, null, "d514b3da-26d0-415f-ba57-a7de7eacb924");
+                _bttn_nuevoreclamoInfo = new RepoItemInfo(this, "bttn_NuevoReclamo", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nuvo Reclamo']", "", 30000, null, "d4079a5d-2084-4cec-8c9a-916292239c9b");
+                _txt_nuevaexposicionInfo = new RepoItemInfo(this, "txt_NuevaExposicion", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']", "", 30000, null, "ca83115d-fd6b-4833-98cc-edfa58b6fedc");
+                _tag_ubicacionInfo = new RepoItemInfo(this, "tag_Ubicacion", ".//span[@innertext>'1:']", "", 30000, null, "74378110-de87-40c9-ae53-df083792cb00");
+                _option_incendioedificioaprorrataInfo = new RepoItemInfo(this, "option_IncendioEdificioAProrrata", ".//span[@innertext~'Incendio']", "", 30000, null, "4bd9862d-c511-44b0-a140-07bed1b2b674");
+                _txt_preguntasInfo = new RepoItemInfo(this, "txt_Preguntas", ".//span[@innertext~'Preguntas']", "", 30000, null, "120fd1e5-bb8d-4840-b194-05873d77d8f8");
             }
 
             /// <summary>
@@ -6228,30 +6228,30 @@ namespace SuraClaims
             {
                 _lesiones_infobasica = new SuraClaimsRepositoryFolders.Lesiones_InfoBasicaFolder(this);
                 _descripcionlesiones = new SuraClaimsRepositoryFolders.DescripcionLesionesFolder(this);
-                _copy_of_txtbox_relacionconaseguradoInfo = new RepoItemInfo(this, "Copy_of_txtbox_RelacionConAsegurado", ".//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']", 30000, null, "3307446c-ec5b-4ae2-bed4-8903eed8e4ff");
-                _check_personaimplicadaInfo = new RepoItemInfo(this, "check_PersonaImplicada", ".//tbody[#'centerPanel-tbody']//td[1]/div[@class='x-grid-cell-inner x-grid-cell-inner-checkcolumn']/img", 30000, null, "d97bc0df-3847-4fa6-be15-9c5d9929327a");
-                _bttn_relacionconaseguradoInfo = new RepoItemInfo(this, "bttn_RelacionConAsegurado", ".//tbody[#'centerPanel-tbody']//div[@id='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_BasicInfoScreen:PanelRow:BasicInfoDetailViewPanelDV:Claim_ReportedByType-trigger-picker']", 30000, null, "9eb320ca-296d-4ebe-bb62-13af7a7a98cc");
-                _bttn_agregarlesionInfo = new RepoItemInfo(this, "bttn_AgregarLesion", ".//tbody[#'centerPanel-tbody']//span[@innertext='Agregar lesón']", 30000, null, "0240420b-4cbe-483a-a018-2b1cc9ef4439");
-                _txt_nombreInfo = new RepoItemInfo(this, "txt_Nombre", ".//input[@id='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:FirstName-inputEl']", 30000, null, "788ad31b-7f71-42bb-901b-f877bc73bd9f");
-                _option_reclamoInfo = new RepoItemInfo(this, "option_Reclamo", ".//span[@innertext~'Muerte Accidental|Reembolso de gastos|Incapacidad Total']", 30000, null, "301afcaa-01b4-4076-b05b-36e04bde2da0");
-                _option_reembolsogastosInfo = new RepoItemInfo(this, "option_ReembolsoGastos", ".//span[@innertext>'Reembolso de gastos']", 30000, null, "d0ee884d-2da4-4ea7-8331-28d4ddab6f5d");
-                _option_incapacidadtotalInfo = new RepoItemInfo(this, "option_IncapacidadTotal", ".//span[@innertext>'Incapacidad Total']", 30000, null, "9a963e65-76fb-4d99-ace1-481be373851d");
-                _txtbox_reclamanteInfo = new RepoItemInfo(this, "txtbox_Reclamante", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Reclamante']/../..//input", 30000, null, "7f42272a-1839-4988-830f-9f1d2fc865a5");
-                _copy_of_txtbox_reclamanteInfo = new RepoItemInfo(this, "Copy_of_txtbox_Reclamante", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Reclamante']/../..//input[@data-tabindexsaved='True']", 30000, null, "64aa935e-b472-4e6a-b1c7-2f87aa7d6d45");
-                _txtbox_tipoInfo = new RepoItemInfo(this, "txtbox_Tipo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input", 30000, null, "e48589cc-1d4b-43b8-883b-d7ca088a5fd6");
-                _copy_of_txtbox_tipoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Tipo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input[@data-tabindexsaved='True']", 30000, null, "6ca32d5c-682e-4749-8da0-5f93c81c57fd");
-                _txtsafeInfo = new RepoItemInfo(this, "txtSAFE", ".//tbody[#'centerPanel-tbody']/tbody/tr[6]/td/div/div//input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:SafeSura']", 30000, null, "9aaaaf6a-9808-4c0c-9610-317fc0dce3ef");
-                _txt_safeInfo = new RepoItemInfo(this, "txt_SAFE", ".//span[@innertext='SAFE']/../..//input", 30000, null, "8e66f57f-c623-4f42-af42-d9baaff7af1d");
-                _copy_of_txt_safeInfo = new RepoItemInfo(this, "Copy_of_txt_SAFE", ".//span[@innertext='SAFE']/../..//input[@data-tabindexsaved='True']", 30000, null, "b60ed88d-be82-48c6-8dc3-4485a0bd3dc4");
-                _txt_nivelInfo = new RepoItemInfo(this, "txt_Nivel", ".//span[@innertext='Nivel']/../..//input", 30000, null, "50dc11f4-dd0e-4326-bd0d-eda60a996781");
-                _copy_of_txt_nivelInfo = new RepoItemInfo(this, "Copy_of_txt_Nivel", ".//span[@innertext='Nivel']/../..//input[@data-tabindexsaved='True']", 30000, null, "be94b8f5-e138-42d7-92a4-cc64895cd191");
-                _copy_of_txtnivelInfo = new RepoItemInfo(this, "Copy_of_txtNivel", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:NivelSura']/../..//input[@data-tabindexsaved='True']", 30000, null, "bfa9ebb4-5c22-46db-972e-4ea34c7911d7");
-                _txt_periodoInfo = new RepoItemInfo(this, "txt_Periodo", ".//span[@innertext='Periodo']/../..//input", 30000, null, "501b4eb9-e7a3-4a85-9c8a-d2c8cd9efa8c");
-                _copy_of_txt_periodoInfo = new RepoItemInfo(this, "Copy_of_txt_Periodo", ".//span[@innertext='Periodo']/../..//input[@data-tabindexsaved='True']", 30000, null, "c8a61a4c-3a1f-4106-9ad6-1e920453ea17");
-                _btn_addincidenteInfo = new RepoItemInfo(this, "btn_AddIncidente", ".//div[#'NewClaimWizard_NewExposurePopup']//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", 30000, null, "a482eaa8-0e65-4d49-aa06-b58746bef91b");
-                _btn_addincidente2Info = new RepoItemInfo(this, "btn_AddIncidente2", ".//div[#'NewClaimWizard_NewExposurePopup']//label[@innertext>'Descripción general de incidente']/../../..//img", 30000, null, "3bfd2295-78d4-4ee4-8307-b758bda61322");
-                _selectnuevoincidenteInfo = new RepoItemInfo(this, "SelectNuevoIncidente", ".//span[@innertext='Nuevo incidente...']", 30000, null, "d5185403-e774-4fba-88e9-3866ac209180");
-                _btn_aceptarexpoInfo = new RepoItemInfo(this, "btn_AceptarExpo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Aceptar']", 30000, null, "b02a0a70-76ee-442f-9c88-3d307b36ff94");
+                _copy_of_txtbox_relacionconaseguradoInfo = new RepoItemInfo(this, "Copy_of_txtbox_RelacionConAsegurado", ".//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "3307446c-ec5b-4ae2-bed4-8903eed8e4ff");
+                _check_personaimplicadaInfo = new RepoItemInfo(this, "check_PersonaImplicada", ".//tbody[#'centerPanel-tbody']//td[1]/div[@class='x-grid-cell-inner x-grid-cell-inner-checkcolumn']/img", "", 30000, null, "d97bc0df-3847-4fa6-be15-9c5d9929327a");
+                _bttn_relacionconaseguradoInfo = new RepoItemInfo(this, "bttn_RelacionConAsegurado", ".//tbody[#'centerPanel-tbody']//div[@id='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_BasicInfoScreen:PanelRow:BasicInfoDetailViewPanelDV:Claim_ReportedByType-trigger-picker']", "", 30000, null, "9eb320ca-296d-4ebe-bb62-13af7a7a98cc");
+                _bttn_agregarlesionInfo = new RepoItemInfo(this, "bttn_AgregarLesion", ".//tbody[#'centerPanel-tbody']//span[@innertext='Agregar lesón']", "", 30000, null, "0240420b-4cbe-483a-a018-2b1cc9ef4439");
+                _txt_nombreInfo = new RepoItemInfo(this, "txt_Nombre", ".//input[@id='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:FirstName-inputEl']", "", 30000, null, "788ad31b-7f71-42bb-901b-f877bc73bd9f");
+                _option_reclamoInfo = new RepoItemInfo(this, "option_Reclamo", ".//span[@innertext~'Muerte Accidental|Reembolso de gastos|Incapacidad Total']", "", 30000, null, "301afcaa-01b4-4076-b05b-36e04bde2da0");
+                _option_reembolsogastosInfo = new RepoItemInfo(this, "option_ReembolsoGastos", ".//span[@innertext>'Reembolso de gastos']", "", 30000, null, "d0ee884d-2da4-4ea7-8331-28d4ddab6f5d");
+                _option_incapacidadtotalInfo = new RepoItemInfo(this, "option_IncapacidadTotal", ".//span[@innertext>'Incapacidad Total']", "", 30000, null, "9a963e65-76fb-4d99-ace1-481be373851d");
+                _txtbox_reclamanteInfo = new RepoItemInfo(this, "txtbox_Reclamante", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Reclamante']/../..//input", "", 30000, null, "7f42272a-1839-4988-830f-9f1d2fc865a5");
+                _copy_of_txtbox_reclamanteInfo = new RepoItemInfo(this, "Copy_of_txtbox_Reclamante", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Reclamante']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "64aa935e-b472-4e6a-b1c7-2f87aa7d6d45");
+                _txtbox_tipoInfo = new RepoItemInfo(this, "txtbox_Tipo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input", "", 30000, null, "e48589cc-1d4b-43b8-883b-d7ca088a5fd6");
+                _copy_of_txtbox_tipoInfo = new RepoItemInfo(this, "Copy_of_txtbox_Tipo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "6ca32d5c-682e-4749-8da0-5f93c81c57fd");
+                _txtsafeInfo = new RepoItemInfo(this, "txtSAFE", ".//tbody[#'centerPanel-tbody']/tbody/tr[6]/td/div/div//input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:SafeSura']", "", 30000, null, "9aaaaf6a-9808-4c0c-9610-317fc0dce3ef");
+                _txt_safeInfo = new RepoItemInfo(this, "txt_SAFE", ".//span[@innertext='SAFE']/../..//input", "", 30000, null, "8e66f57f-c623-4f42-af42-d9baaff7af1d");
+                _copy_of_txt_safeInfo = new RepoItemInfo(this, "Copy_of_txt_SAFE", ".//span[@innertext='SAFE']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "b60ed88d-be82-48c6-8dc3-4485a0bd3dc4");
+                _txt_nivelInfo = new RepoItemInfo(this, "txt_Nivel", ".//span[@innertext='Nivel']/../..//input", "", 30000, null, "50dc11f4-dd0e-4326-bd0d-eda60a996781");
+                _copy_of_txt_nivelInfo = new RepoItemInfo(this, "Copy_of_txt_Nivel", ".//span[@innertext='Nivel']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "be94b8f5-e138-42d7-92a4-cc64895cd191");
+                _copy_of_txtnivelInfo = new RepoItemInfo(this, "Copy_of_txtNivel", ".//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:NivelSura']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "bfa9ebb4-5c22-46db-972e-4ea34c7911d7");
+                _txt_periodoInfo = new RepoItemInfo(this, "txt_Periodo", ".//span[@innertext='Periodo']/../..//input", "", 30000, null, "501b4eb9-e7a3-4a85-9c8a-d2c8cd9efa8c");
+                _copy_of_txt_periodoInfo = new RepoItemInfo(this, "Copy_of_txt_Periodo", ".//span[@innertext='Periodo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "c8a61a4c-3a1f-4106-9ad6-1e920453ea17");
+                _btn_addincidenteInfo = new RepoItemInfo(this, "btn_AddIncidente", ".//div[#'NewClaimWizard_NewExposurePopup']//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", "", 30000, null, "a482eaa8-0e65-4d49-aa06-b58746bef91b");
+                _btn_addincidente2Info = new RepoItemInfo(this, "btn_AddIncidente2", ".//div[#'NewClaimWizard_NewExposurePopup']//label[@innertext>'Descripción general de incidente']/../../..//img", "", 30000, null, "3bfd2295-78d4-4ee4-8307-b758bda61322");
+                _selectnuevoincidenteInfo = new RepoItemInfo(this, "SelectNuevoIncidente", ".//span[@innertext='Nuevo incidente...']", "", 30000, null, "d5185403-e774-4fba-88e9-3866ac209180");
+                _btn_aceptarexpoInfo = new RepoItemInfo(this, "btn_AceptarExpo", ".//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Aceptar']", "", 30000, null, "b02a0a70-76ee-442f-9c88-3d307b36ff94");
             }
 
             /// <summary>
@@ -6883,15 +6883,15 @@ namespace SuraClaims
             public Lesiones_InfoBasicaFolder(RepoGenBaseFolder parentFolder) :
                     base("Lesiones_InfoBasica", ".//div[#'NewInjuryIncidentPopup/basic']/table", parentFolder, 30000, null, false, "a673811f-2b3a-432d-be2a-a7423c22f6c6", "")
             {
-                _txt_incidentelesionInfo = new RepoItemInfo(this, "txt_IncidenteLesion", ".//span[@innertext='Incidente de lesión']", 30000, null, "779cc3a5-5483-4c9a-a6db-f0f4d9e0bb07");
-                _txtbox_personalesionadaInfo = new RepoItemInfo(this, "txtbox_PersonaLesionada", ".//span[@innertext='Persona lesionada']/../..//input", 30000, null, "6db2f0b0-f029-427c-8958-1e285e42574e");
-                _copy_of_txtbox_personalesionadaInfo = new RepoItemInfo(this, "Copy_of_txtbox_PersonaLesionada", ".//span[@innertext='Persona lesionada']/../..//input[@data-tabindexsaved='True']", 30000, null, "2c75fd99-cdfa-4e25-9ae3-57d4a7b15ba2");
-                _txtbox_fechareporteInfo = new RepoItemInfo(this, "txtbox_FechaReporte", ".//span[@innertext='Fecha del reporte']/../..//input", 30000, null, "bbd4954d-d681-46a9-8c2a-610c355d9723");
-                _copy_of_txtbox_fechareporteInfo = new RepoItemInfo(this, "Copy_of_txtbox_FechaReporte", ".//span[@innertext='Fecha del reporte']/../..//input[@data-tabindexsaved='True']", 30000, null, "11aac845-1b9f-4a60-845c-338dc62c9a57");
-                _txtbox_viaingresoreclamoInfo = new RepoItemInfo(this, "txtbox_ViaIngresoReclamo", ".//span[@innertext>'Via de ingreso de reclamo']/../..//input", 30000, null, "6abed1e4-70c8-4f70-bec2-9e98df08ef42");
-                _copy_of_txtbox_viangresoreclamoInfo = new RepoItemInfo(this, "Copy_of_txtbox_ViangresoReclamo", ".//span[@innertext>'Via de ingreso de reclamo']/../..//input[@data-tabindexsaved='True']", 30000, null, "9aea30d8-4f5d-42f0-b585-930075fbe55e");
-                _bttn_reclamopresentado_siInfo = new RepoItemInfo(this, "bttn_ReclamoPresentado_SI", ".//span[@innertext='Reclamo presentado']/../..//label[@innertext='Sí']/../input[@type='button']", 30000, null, "e91da66e-1bcd-48a7-bfce-014be56b6c47");
-                _bttn_descripcionlesionesInfo = new RepoItemInfo(this, "bttn_DescripcionLesiones", ".//span[@innertext='Descripción de lesiones']", 30000, null, "c5b72252-a6be-4700-9f64-6ad89ebb4bac");
+                _txt_incidentelesionInfo = new RepoItemInfo(this, "txt_IncidenteLesion", ".//span[@innertext='Incidente de lesión']", "", 30000, null, "779cc3a5-5483-4c9a-a6db-f0f4d9e0bb07");
+                _txtbox_personalesionadaInfo = new RepoItemInfo(this, "txtbox_PersonaLesionada", ".//span[@innertext='Persona lesionada']/../..//input", "", 30000, null, "6db2f0b0-f029-427c-8958-1e285e42574e");
+                _copy_of_txtbox_personalesionadaInfo = new RepoItemInfo(this, "Copy_of_txtbox_PersonaLesionada", ".//span[@innertext='Persona lesionada']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "2c75fd99-cdfa-4e25-9ae3-57d4a7b15ba2");
+                _txtbox_fechareporteInfo = new RepoItemInfo(this, "txtbox_FechaReporte", ".//span[@innertext='Fecha del reporte']/../..//input", "", 30000, null, "bbd4954d-d681-46a9-8c2a-610c355d9723");
+                _copy_of_txtbox_fechareporteInfo = new RepoItemInfo(this, "Copy_of_txtbox_FechaReporte", ".//span[@innertext='Fecha del reporte']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "11aac845-1b9f-4a60-845c-338dc62c9a57");
+                _txtbox_viaingresoreclamoInfo = new RepoItemInfo(this, "txtbox_ViaIngresoReclamo", ".//span[@innertext>'Via de ingreso de reclamo']/../..//input", "", 30000, null, "6abed1e4-70c8-4f70-bec2-9e98df08ef42");
+                _copy_of_txtbox_viangresoreclamoInfo = new RepoItemInfo(this, "Copy_of_txtbox_ViangresoReclamo", ".//span[@innertext>'Via de ingreso de reclamo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "9aea30d8-4f5d-42f0-b585-930075fbe55e");
+                _bttn_reclamopresentado_siInfo = new RepoItemInfo(this, "bttn_ReclamoPresentado_SI", ".//span[@innertext='Reclamo presentado']/../..//label[@innertext='Sí']/../input[@type='button']", "", 30000, null, "e91da66e-1bcd-48a7-bfce-014be56b6c47");
+                _bttn_descripcionlesionesInfo = new RepoItemInfo(this, "bttn_DescripcionLesiones", ".//span[@innertext='Descripción de lesiones']", "", 30000, null, "c5b72252-a6be-4700-9f64-6ad89ebb4bac");
             }
 
             /// <summary>
@@ -7154,12 +7154,12 @@ namespace SuraClaims
             public DescripcionLesionesFolder(RepoGenBaseFolder parentFolder) :
                     base("DescripcionLesiones", ".//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table", parentFolder, 30000, null, false, "6888cf47-12b0-4097-ad11-3a9f30b7115c", "")
             {
-                _txt_descripcionlesionesInfo = new RepoItemInfo(this, "txt_DescripcionLesiones", "tbody/tr//div//span[@innertext='Descripción de lesiones']", 30000, null, "23492e0d-36a3-4064-9a40-c73b10518e56");
-                _txtbox_calidadvictimaInfo = new RepoItemInfo(this, "txtbox_CalidadVictima", ".//span[@innertext>'Calidad o medio de transporte']/../..//input", 30000, null, "c3d21fbb-0b0d-4959-9f10-a5e508224906");
-                _copy_of_txtbox_calidadvictimaInfo = new RepoItemInfo(this, "Copy_of_txtbox_CalidadVictima", ".//span[@innertext>'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']", 30000, null, "2168dc0d-ed61-4f47-a31b-b6001fbe0ae9");
-                _bttn_ambulancia_noInfo = new RepoItemInfo(this, "bttn_Ambulancia_No", ".//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']", 30000, null, "ca6008b6-889b-42b4-9274-7f698ff94f41");
-                _img_lesionvictimaInfo = new RepoItemInfo(this, "img_LesionVictima", "tbody/tr[2]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div[1]/?/?/table/tbody/tr/td[2]/a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/giacc/body/none/1-1.png']", 30000, null, "270aca79-1a8e-4d58-b06a-8a0897f64db5");
-                _fila_lesionInfo = new RepoItemInfo(this, "fila_Lesion", "tbody/tr/td[2]/div/div[3]", 30000, null, "1b0ece67-dc68-4bde-8c83-b784c446d746");
+                _txt_descripcionlesionesInfo = new RepoItemInfo(this, "txt_DescripcionLesiones", "tbody/tr//div//span[@innertext='Descripción de lesiones']", "", 30000, null, "23492e0d-36a3-4064-9a40-c73b10518e56");
+                _txtbox_calidadvictimaInfo = new RepoItemInfo(this, "txtbox_CalidadVictima", ".//span[@innertext>'Calidad o medio de transporte']/../..//input", "", 30000, null, "c3d21fbb-0b0d-4959-9f10-a5e508224906");
+                _copy_of_txtbox_calidadvictimaInfo = new RepoItemInfo(this, "Copy_of_txtbox_CalidadVictima", ".//span[@innertext>'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "2168dc0d-ed61-4f47-a31b-b6001fbe0ae9");
+                _bttn_ambulancia_noInfo = new RepoItemInfo(this, "bttn_Ambulancia_No", ".//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']", "", 30000, null, "ca6008b6-889b-42b4-9274-7f698ff94f41");
+                _img_lesionvictimaInfo = new RepoItemInfo(this, "img_LesionVictima", "tbody/tr[2]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div[1]/?/?/table/tbody/tr/td[2]/a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/giacc/body/none/1-1.png']", "", 30000, null, "270aca79-1a8e-4d58-b06a-8a0897f64db5");
+                _fila_lesionInfo = new RepoItemInfo(this, "fila_Lesion", "tbody/tr/td[2]/div/div[3]", "", 30000, null, "1b0ece67-dc68-4bde-8c83-b784c446d746");
             }
 
             /// <summary>
@@ -7378,40 +7378,40 @@ namespace SuraClaims
             public InformacionPagoSiniestroFolder(RepoGenBaseFolder parentFolder) :
                     base("InformacionPagoSiniestro", "", parentFolder, 30000, null, false, "fb3300f0-5302-4b3b-88d5-bd9a6c4e3973", "")
             {
-                _lbl_paso1_pagosiniestroInfo = new RepoItemInfo(this, "lbl_Paso1_PagoSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir información']", 30000, null, "dadf6a94-24c9-49b5-8d96-e548af3ca413");
-                _txt_nombreInfo = new RepoItemInfo(this, "txt_Nombre", ".//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:PrimaryPayee_Name']", 30000, null, "9039d4b3-3a2c-4032-8e41-270058ba8962");
-                _copy_of_txt_nombreInfo = new RepoItemInfo(this, "Copy_of_txt_Nombre", ".//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:PrimaryPayee_Name']/../..//input[@data-tabindexsaved='True']", 30000, null, "ace9b6b7-f730-4f0f-983c-8059da72fb33");
-                _arrownombreInfo = new RepoItemInfo(this, "ArrowNombre", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/div/div/div/div[2]/div/div[2]", 30000, null, "c023e1cb-b323-4f85-98f3-8b9d9c32109c");
-                _optionmetodopagosiniestroInfo = new RepoItemInfo(this, "OptionMetodoPagoSiniestro", ".//tbody[#'centerPanel-tbody']//div//label[@innertext=$MetodoPagoSiniestro]/..//*[@type='button']", 30000, null, "b7869aa3-6dd9-43fa-b628-ba4643fb1582");
-                _arrow_selectcodtextoreciboInfo = new RepoItemInfo(this, "arrow_SelectCodTextoRecibo", ".//tbody[#'centerPanel-tbody']//div[@id~'CheckPayeesScreen:NewCheckPayeeDV:ReceiptTextCodeSura-trigger-picker']", 30000, null, "2ba02e26-bdc8-4b6a-9a9b-9521e92ce65d");
-                _option_codtextoreciboInfo = new RepoItemInfo(this, "option_CodTextoRecibo", ".//li[@innertext~'[0-9]+']", 30000, null, "825d5cee-f40d-454a-96ec-18adb9f4e353");
-                _txt_codigoreciboInfo = new RepoItemInfo(this, "txt_CodigoRecibo", ".//tbody[#'centerPanel-tbody']//span[@innertext='Texto de recibo']/../..//textarea[@innertext~'[A-Z]+']", 30000, null, "3a48f820-7e6e-4030-8776-cceeeae52db6");
-                _arrow_selectlineareservaInfo = new RepoItemInfo(this, "arrow_SelectLineaReserva", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']", 30000, null, "3dc91bca-1b05-42ca-ab04-80007792efee");
-                _option_lineareserva_aseguradoInfo = new RepoItemInfo(this, "option_LineaReserva_Asegurado", ".//li[@innertext~'1ª']", 30000, null, "8b36f745-0981-4400-9bcc-cfd4bded5cb4");
-                _txttipopagopaso2Info = new RepoItemInfo(this, "txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input", 30000, null, "4b15420f-5a87-41de-a98e-11831cf57486");
-                _copy_of_txttipopagopaso2Info = new RepoItemInfo(this, "Copy_of_txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input", 30000, null, "887f5bab-e720-4621-ba95-154067e358e6");
-                _txtbox_lineareservaInfo = new RepoItemInfo(this, "txtbox_LineaReserva", ".//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input", 30000, null, "8d2ba8b4-903b-4fc1-a4b7-ef3a29c5f02f");
-                _tipopagopaso2Info = new RepoItemInfo(this, "TipoPagoPaso2", ".//li[@innertext~'Parcial']", 30000, null, "d620f5b0-d0cf-472d-867e-76a13e3f849d");
-                _txt_causadepagopaso2Info = new RepoItemInfo(this, "txt_CausaDePagoPaso2", ".//tbody[#'centerPanel-tbody']//div[@innertext='<ninguna>']", 30000, null, "3485d91d-51c2-4db4-a30e-4ab9f0a400c0");
-                _option_causapagoInfo = new RepoItemInfo(this, "option_CausaPago", ".//li[@innertext~$CausaPago]", 30000, null, "b78f5e07-19e6-4952-8c99-6d6669a8bae9");
-                _copy_of_option_causapagoInfo = new RepoItemInfo(this, "Copy_of_option_CausaPago", ".//li[@innertext~$CausaPago and @data-tabindexsaved='True']", 30000, null, "bf1219c2-1942-45fe-ae64-313e17c70c7a");
-                _valor_importeapagarInfo = new RepoItemInfo(this, "Valor_ImporteAPagar", ".//tbody[#'centerPanel-tbody']//div[@innertext~'[0-9]']", 30000, null, "fd7fdef6-ed8d-406b-a780-3c5ac0e626c2");
-                _txt_importeapagarconexprregInfo = new RepoItemInfo(this, "txt_ImporteAPagarConExprReg", ".//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td']/div", 30000, null, "b4063bbd-8f2f-48c5-a6a4-ff3edf38a071");
-                _copy_of_txt_importeapagarconexprregInfo = new RepoItemInfo(this, "Copy_of_txt_ImporteAPagarConExprReg", ".//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td' and @data-tabindexsaved='True']/div", 30000, null, "0e0777ef-a765-4c91-a3db-be9d7e084448");
-                _lbl_coberturasiniestroInfo = new RepoItemInfo(this, "lbl_CoberturaSiniestro", ".//tbody[#'centerPanel-tbody']//div[@innertext~'[A-Z.][a-z.]+']", 30000, null, "ef1d0c8b-ef12-4e9b-aca6-0d907c59f040");
-                _lbl_finalizapagoInfo = new RepoItemInfo(this, "lbl_FinalizaPago", ".//tbody[#'ClaimFinancialsChecks-tbody']//span[@innertext>'Datos financieros (Total incurrido:']", 30000, null, "605d3ed0-6204-4ca8-b0d7-169545ac4454");
-                _nombreaseguradoInfo = new RepoItemInfo(this, "NombreAsegurado", ".//a[#'Claim:ClaimInfoBar:Insured']//span[@class='infobar_elem_val']", 30000, null, "a474734b-6970-4a0f-8b32-28ad40818272");
-                _input_bancoemisorsugeridoInfo = new RepoItemInfo(this, "input_BancoEmisorSugerido", ".//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input", 30000, null, "f9a355e1-9c7b-4c3d-bac4-3438116ce4cd");
-                _option_nombremayusculasInfo = new RepoItemInfo(this, "option_NombreMayusculas", ".//li[@innertext~'[A-Z]+']", 30000, null, "ca3761bf-98e3-496e-9511-778773b271f2");
-                _option_mayusminusInfo = new RepoItemInfo(this, "option_MayusMinus", ".//span[@innertext='[A-Z][a-z]+']", 30000, null, "a9be11b0-11ee-4f3d-970c-1c0fd4f83e34");
-                _copy_of_optionselecbancoemisorInfo = new RepoItemInfo(this, "Copy_of_OptionSelecBancoEmisor", ".//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input[@data-tabindexsaved='True']", 30000, null, "ee9d1cf0-ed3c-4055-83ca-b7fe21695297");
-                _txtbox_seleccionarcuentaInfo = new RepoItemInfo(this, "txtbox_SeleccionarCuenta", ".//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input", 30000, null, "29bd6f78-50c1-4c60-aea8-d30219d36b97");
-                _copy_of_txt_seleccionarcuenta_campoobligInfo = new RepoItemInfo(this, "Copy_of_txt_SeleccionarCuenta_CampoOblig", ".//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input[@data-tabindexsaved='True']", 30000, null, "6ba5b80b-7753-437a-a997-a5196252024a");
-                _lbl_seleccionarcuentaInfo = new RepoItemInfo(this, "lbl_SeleccionarCuenta", ".//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']", 30000, null, "bab28b8c-24fb-481c-943a-dbe4e413d91d");
-                _arrowselectcuentaInfo = new RepoItemInfo(this, "ArrowSelectCuenta", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords-trigger-picker']", 30000, null, "205ad05b-2c04-4317-a0ec-0d288e3ef67b");
-                _optionselectcuentaInfo = new RepoItemInfo(this, "OptionSelectCuenta", "body/div[13]//ul/li[@id~'ext-element-' and @innertext~'[A-Z]+']", 30000, null, "9bfffe42-edcf-4758-96e1-0dfc404e760a");
-                _copy_of_optionselectcuentaInfo = new RepoItemInfo(this, "Copy_of_OptionSelectCuenta", ".//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']", 30000, null, "cf4926e3-f653-477a-871c-838c750d18cf");
-                _lbl_bancoInfo = new RepoItemInfo(this, "lbl_Banco", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:BankName-inputEl']", 30000, null, "21d88ffd-2e6a-4016-9412-67085a4134ba");
+                _lbl_paso1_pagosiniestroInfo = new RepoItemInfo(this, "lbl_Paso1_PagoSiniestro", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir información']", "", 30000, null, "dadf6a94-24c9-49b5-8d96-e548af3ca413");
+                _txt_nombreInfo = new RepoItemInfo(this, "txt_Nombre", ".//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:PrimaryPayee_Name']", "", 30000, null, "9039d4b3-3a2c-4032-8e41-270058ba8962");
+                _copy_of_txt_nombreInfo = new RepoItemInfo(this, "Copy_of_txt_Nombre", ".//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:PrimaryPayee_Name']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "ace9b6b7-f730-4f0f-983c-8059da72fb33");
+                _arrownombreInfo = new RepoItemInfo(this, "ArrowNombre", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/div/div/div/div[2]/div/div[2]", "", 30000, null, "c023e1cb-b323-4f85-98f3-8b9d9c32109c");
+                _optionmetodopagosiniestroInfo = new RepoItemInfo(this, "OptionMetodoPagoSiniestro", ".//tbody[#'centerPanel-tbody']//div//label[@innertext=$MetodoPagoSiniestro]/..//*[@type='button']", "", 30000, null, "b7869aa3-6dd9-43fa-b628-ba4643fb1582");
+                _arrow_selectcodtextoreciboInfo = new RepoItemInfo(this, "arrow_SelectCodTextoRecibo", ".//tbody[#'centerPanel-tbody']//div[@id~'CheckPayeesScreen:NewCheckPayeeDV:ReceiptTextCodeSura-trigger-picker']", "", 30000, null, "2ba02e26-bdc8-4b6a-9a9b-9521e92ce65d");
+                _option_codtextoreciboInfo = new RepoItemInfo(this, "option_CodTextoRecibo", ".//li[@innertext~'[0-9]+']", "", 30000, null, "825d5cee-f40d-454a-96ec-18adb9f4e353");
+                _txt_codigoreciboInfo = new RepoItemInfo(this, "txt_CodigoRecibo", ".//tbody[#'centerPanel-tbody']//span[@innertext='Texto de recibo']/../..//textarea[@innertext~'[A-Z]+']", "", 30000, null, "3a48f820-7e6e-4030-8776-cceeeae52db6");
+                _arrow_selectlineareservaInfo = new RepoItemInfo(this, "arrow_SelectLineaReserva", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']", "", 30000, null, "3dc91bca-1b05-42ca-ab04-80007792efee");
+                _option_lineareserva_aseguradoInfo = new RepoItemInfo(this, "option_LineaReserva_Asegurado", ".//li[@innertext~'1ª']", "", 30000, null, "8b36f745-0981-4400-9bcc-cfd4bded5cb4");
+                _txttipopagopaso2Info = new RepoItemInfo(this, "txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input", "", 30000, null, "4b15420f-5a87-41de-a98e-11831cf57486");
+                _copy_of_txttipopagopaso2Info = new RepoItemInfo(this, "Copy_of_txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input", "", 30000, null, "887f5bab-e720-4621-ba95-154067e358e6");
+                _txtbox_lineareservaInfo = new RepoItemInfo(this, "txtbox_LineaReserva", ".//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input", "", 30000, null, "8d2ba8b4-903b-4fc1-a4b7-ef3a29c5f02f");
+                _tipopagopaso2Info = new RepoItemInfo(this, "TipoPagoPaso2", ".//li[@innertext~'Parcial']", "", 30000, null, "d620f5b0-d0cf-472d-867e-76a13e3f849d");
+                _txt_causadepagopaso2Info = new RepoItemInfo(this, "txt_CausaDePagoPaso2", ".//tbody[#'centerPanel-tbody']//div[@innertext='<ninguna>']", "", 30000, null, "3485d91d-51c2-4db4-a30e-4ab9f0a400c0");
+                _option_causapagoInfo = new RepoItemInfo(this, "option_CausaPago", ".//li[@innertext~$CausaPago]", "", 30000, null, "b78f5e07-19e6-4952-8c99-6d6669a8bae9");
+                _copy_of_option_causapagoInfo = new RepoItemInfo(this, "Copy_of_option_CausaPago", ".//li[@innertext~$CausaPago and @data-tabindexsaved='True']", "", 30000, null, "bf1219c2-1942-45fe-ae64-313e17c70c7a");
+                _valor_importeapagarInfo = new RepoItemInfo(this, "Valor_ImporteAPagar", ".//tbody[#'centerPanel-tbody']//div[@innertext~'[0-9]']", "", 30000, null, "fd7fdef6-ed8d-406b-a780-3c5ac0e626c2");
+                _txt_importeapagarconexprregInfo = new RepoItemInfo(this, "txt_ImporteAPagarConExprReg", ".//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td']/div", "", 30000, null, "b4063bbd-8f2f-48c5-a6a4-ff3edf38a071");
+                _copy_of_txt_importeapagarconexprregInfo = new RepoItemInfo(this, "Copy_of_txt_ImporteAPagarConExprReg", ".//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td' and @data-tabindexsaved='True']/div", "", 30000, null, "0e0777ef-a765-4c91-a3db-be9d7e084448");
+                _lbl_coberturasiniestroInfo = new RepoItemInfo(this, "lbl_CoberturaSiniestro", ".//tbody[#'centerPanel-tbody']//div[@innertext~'[A-Z.][a-z.]+']", "", 30000, null, "ef1d0c8b-ef12-4e9b-aca6-0d907c59f040");
+                _lbl_finalizapagoInfo = new RepoItemInfo(this, "lbl_FinalizaPago", ".//tbody[#'ClaimFinancialsChecks-tbody']//span[@innertext>'Datos financieros (Total incurrido:']", "", 30000, null, "605d3ed0-6204-4ca8-b0d7-169545ac4454");
+                _nombreaseguradoInfo = new RepoItemInfo(this, "NombreAsegurado", ".//a[#'Claim:ClaimInfoBar:Insured']//span[@class='infobar_elem_val']", "", 30000, null, "a474734b-6970-4a0f-8b32-28ad40818272");
+                _input_bancoemisorsugeridoInfo = new RepoItemInfo(this, "input_BancoEmisorSugerido", ".//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input", "", 30000, null, "f9a355e1-9c7b-4c3d-bac4-3438116ce4cd");
+                _option_nombremayusculasInfo = new RepoItemInfo(this, "option_NombreMayusculas", ".//li[@innertext~'[A-Z]+']", "", 30000, null, "ca3761bf-98e3-496e-9511-778773b271f2");
+                _option_mayusminusInfo = new RepoItemInfo(this, "option_MayusMinus", ".//span[@innertext='[A-Z][a-z]+']", "", 30000, null, "a9be11b0-11ee-4f3d-970c-1c0fd4f83e34");
+                _copy_of_optionselecbancoemisorInfo = new RepoItemInfo(this, "Copy_of_OptionSelecBancoEmisor", ".//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "ee9d1cf0-ed3c-4055-83ca-b7fe21695297");
+                _txtbox_seleccionarcuentaInfo = new RepoItemInfo(this, "txtbox_SeleccionarCuenta", ".//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input", "", 30000, null, "29bd6f78-50c1-4c60-aea8-d30219d36b97");
+                _copy_of_txt_seleccionarcuenta_campoobligInfo = new RepoItemInfo(this, "Copy_of_txt_SeleccionarCuenta_CampoOblig", ".//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "6ba5b80b-7753-437a-a997-a5196252024a");
+                _lbl_seleccionarcuentaInfo = new RepoItemInfo(this, "lbl_SeleccionarCuenta", ".//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']", "", 30000, null, "bab28b8c-24fb-481c-943a-dbe4e413d91d");
+                _arrowselectcuentaInfo = new RepoItemInfo(this, "ArrowSelectCuenta", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords-trigger-picker']", "", 30000, null, "205ad05b-2c04-4317-a0ec-0d288e3ef67b");
+                _optionselectcuentaInfo = new RepoItemInfo(this, "OptionSelectCuenta", "body/div[13]//ul/li[@id~'ext-element-' and @innertext~'[A-Z]+']", "", 30000, null, "9bfffe42-edcf-4758-96e1-0dfc404e760a");
+                _copy_of_optionselectcuentaInfo = new RepoItemInfo(this, "Copy_of_OptionSelectCuenta", ".//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "cf4926e3-f653-477a-871c-838c750d18cf");
+                _lbl_bancoInfo = new RepoItemInfo(this, "lbl_Banco", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:BankName-inputEl']", "", 30000, null, "21d88ffd-2e6a-4016-9412-67085a4134ba");
             }
 
             /// <summary>
@@ -8287,23 +8287,23 @@ namespace SuraClaims
                     base("PlanDeTrabajo", "", parentFolder, 0, null, false, "017be996-f97e-484b-a52e-1f59f829023e", "")
             {
                 _preguntas = new SuraClaimsRepositoryFolders.PreguntasFolder(this);
-                _a_evaluarcoberturatecnicaInfo = new RepoItemInfo(this, "a_EvaluarCoberturaTecnica", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext>'Evaluar Cobertura Técnica']", 30000, null, "0ebf5f68-5817-48fa-a9f9-1abe0cb8f491");
-                _a_completarchecklistfraudeInfo = new RepoItemInfo(this, "a_CompletarChecklistFraude", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext>'Completar CheckList']", 30000, null, "cc82babf-a711-43ab-ab65-3c909d0049a2");
-                _a_revisaraprobarnuevopagoInfo = new RepoItemInfo(this, "a_RevisarAprobarNuevoPago", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext>'Revisar y aprobar nuevo pago']", 30000, null, "fe131c2f-282a-4b2d-b2fb-a3331a21f5e6");
-                _ventana_actividadInfo = new RepoItemInfo(this, "ventana_Actividad", ".//span[@innertext='Actividad']", 30000, null, "6ab2f27c-3052-4e5a-906e-d01740b7a259");
-                _ventana_aprobacionInfo = new RepoItemInfo(this, "ventana_Aprobacion", ".//span[@innertext='Aprobación']", 30000, null, "ebc68aa1-fe2e-4165-b4c3-949fcbe22164");
-                _ventana_preguntaspendientesInfo = new RepoItemInfo(this, "ventana_PreguntasPendientes", ".//span[@innertext='Preguntas Pendientes']", 30000, null, "230a4dd0-fef7-4398-baaf-17d16d674221");
-                _bttn_editarInfo = new RepoItemInfo(this, "bttn_Editar", ".//span[@innertext='Editar']", 30000, null, "b6ecc7c9-daca-4343-a8d1-1f7387b6cda6");
-                _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext>'Actalizar']", 30000, null, "01b8f880-dab7-4e9a-8a7f-1daa5f78997c");
-                _bttn_completarInfo = new RepoItemInfo(this, "bttn_Completar", ".//span[@innertext>'Comletar']", 30000, null, "d781533b-b99d-4a09-a6a9-51cbf3367f4e");
-                _bttn_preguntaspendientesInfo = new RepoItemInfo(this, "bttn_PreguntasPendientes", ".//span[@innertext>'reguntas pendientes']", 30000, null, "ed3edc4f-d4c3-4177-b135-c1eac80f18ca");
-                _bttn_aprobarInfo = new RepoItemInfo(this, "bttn_Aprobar", ".//span[@innertext='Aprobar']", 30000, null, "f6a28019-2fa8-496b-91da-1817e9233412");
-                _input_resultadoInfo = new RepoItemInfo(this, "input_Resultado", ".//span[@innertext='Resultado']/../..//input", 30000, null, "4a58d41b-ab36-4da8-9e74-7f6cd8b4cab6");
-                _option_aceptadoInfo = new RepoItemInfo(this, "option_Aceptado", ".//li[@innertext='Aceptado']", 30000, null, "2f680c12-b289-4cb9-b276-75af1af2c5fe");
-                _option_noInfo = new RepoItemInfo(this, "option_No", ".//li[@innertext='No']", 30000, null, "311f93bf-17d6-48a8-8b93-1fa9b07311b5");
-                _option_siInfo = new RepoItemInfo(this, "option_Si", ".//li[@innertext='Sí']", 30000, null, "96b1dd97-1327-4013-b37d-5c9510d0bd97");
-                _label_numeropolizaInfo = new RepoItemInfo(this, "label_NumeroPoliza", ".//div[#'infoBar-targetEl']//span[@innertext='Póliza:']/..//span[@innertext~'[0-9]+']", 30000, null, "c51f5283-5da0-45be-bc49-a62f2dcf040f");
-                _txt_nombreaprobadorpagoInfo = new RepoItemInfo(this, "txt_NombreAprobadorPago", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext~'Revisar y aprobar']/../../..//td[11]/div", 30000, null, "94613b0d-0a08-4f83-a09b-fa6b8d924ed7");
+                _a_evaluarcoberturatecnicaInfo = new RepoItemInfo(this, "a_EvaluarCoberturaTecnica", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext>'Evaluar Cobertura Técnica']", "", 30000, null, "0ebf5f68-5817-48fa-a9f9-1abe0cb8f491");
+                _a_completarchecklistfraudeInfo = new RepoItemInfo(this, "a_CompletarChecklistFraude", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext>'Completar CheckList']", "", 30000, null, "cc82babf-a711-43ab-ab65-3c909d0049a2");
+                _a_revisaraprobarnuevopagoInfo = new RepoItemInfo(this, "a_RevisarAprobarNuevoPago", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext>'Revisar y aprobar nuevo pago']", "", 30000, null, "fe131c2f-282a-4b2d-b2fb-a3331a21f5e6");
+                _ventana_actividadInfo = new RepoItemInfo(this, "ventana_Actividad", ".//span[@innertext='Actividad']", "", 30000, null, "6ab2f27c-3052-4e5a-906e-d01740b7a259");
+                _ventana_aprobacionInfo = new RepoItemInfo(this, "ventana_Aprobacion", ".//span[@innertext='Aprobación']", "", 30000, null, "ebc68aa1-fe2e-4165-b4c3-949fcbe22164");
+                _ventana_preguntaspendientesInfo = new RepoItemInfo(this, "ventana_PreguntasPendientes", ".//span[@innertext='Preguntas Pendientes']", "", 30000, null, "230a4dd0-fef7-4398-baaf-17d16d674221");
+                _bttn_editarInfo = new RepoItemInfo(this, "bttn_Editar", ".//span[@innertext='Editar']", "", 30000, null, "b6ecc7c9-daca-4343-a8d1-1f7387b6cda6");
+                _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext>'Actalizar']", "", 30000, null, "01b8f880-dab7-4e9a-8a7f-1daa5f78997c");
+                _bttn_completarInfo = new RepoItemInfo(this, "bttn_Completar", ".//span[@innertext>'Comletar']", "", 30000, null, "d781533b-b99d-4a09-a6a9-51cbf3367f4e");
+                _bttn_preguntaspendientesInfo = new RepoItemInfo(this, "bttn_PreguntasPendientes", ".//span[@innertext>'reguntas pendientes']", "", 30000, null, "ed3edc4f-d4c3-4177-b135-c1eac80f18ca");
+                _bttn_aprobarInfo = new RepoItemInfo(this, "bttn_Aprobar", ".//span[@innertext='Aprobar']", "", 30000, null, "f6a28019-2fa8-496b-91da-1817e9233412");
+                _input_resultadoInfo = new RepoItemInfo(this, "input_Resultado", ".//span[@innertext='Resultado']/../..//input", "", 30000, null, "4a58d41b-ab36-4da8-9e74-7f6cd8b4cab6");
+                _option_aceptadoInfo = new RepoItemInfo(this, "option_Aceptado", ".//li[@innertext='Aceptado']", "", 30000, null, "2f680c12-b289-4cb9-b276-75af1af2c5fe");
+                _option_noInfo = new RepoItemInfo(this, "option_No", ".//li[@innertext='No']", "", 30000, null, "311f93bf-17d6-48a8-8b93-1fa9b07311b5");
+                _option_siInfo = new RepoItemInfo(this, "option_Si", ".//li[@innertext='Sí']", "", 30000, null, "96b1dd97-1327-4013-b37d-5c9510d0bd97");
+                _label_numeropolizaInfo = new RepoItemInfo(this, "label_NumeroPoliza", ".//div[#'infoBar-targetEl']//span[@innertext='Póliza:']/..//span[@innertext~'[0-9]+']", "", 30000, null, "c51f5283-5da0-45be-bc49-a62f2dcf040f");
+                _txt_nombreaprobadorpagoInfo = new RepoItemInfo(this, "txt_NombreAprobadorPago", ".//tbody[#'ClaimWorkplan-tbody']//a[@innertext~'Revisar y aprobar']/../../..//td[11]/div", "", 30000, null, "94613b0d-0a08-4f83-a09b-fa6b8d924ed7");
             }
 
             /// <summary>
@@ -8754,11 +8754,11 @@ namespace SuraClaims
             public PreguntasFolder(RepoGenBaseFolder parentFolder) :
                     base("Preguntas", ".//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']", parentFolder, 30000, null, false, "c6d2b01a-9f8c-450e-9e5f-56b6773b8799", "")
             {
-                _pregunta_poseeantecedentesInfo = new RepoItemInfo(this, "pregunta_PoseeAntecedentes", ".//div[@innertext>'Posee antecedentes siniestrales']/../..//div[@innertext~'ninguna']", 30000, null, "c504a4a8-d5a8-40e9-891f-f1b8920f343a");
-                _pregunta_modificacionespolizaInfo = new RepoItemInfo(this, "pregunta_ModificacionesPoliza", ".//div[@innertext>'El asegurado ha realizado modificaciones']/../..//div[@innertext~'ninguna']", 30000, null, "944716b0-23b3-460d-89bb-2af4b075f8b3");
-                _pregunta_modificacionrelatoInfo = new RepoItemInfo(this, "pregunta_ModificacionRelato", ".//div[@innertext>'El asegurado modifica el relato previo']/../..//div[@innertext~'ninguna']", 30000, null, "4d6a0bf0-f8ff-4ead-a2e2-50fd46ace5fb");
-                _pregunta_actividadalmomentoInfo = new RepoItemInfo(this, "pregunta_ActividadAlMomento", ".//div[@innertext>'La actividad al momento']/../..//div[@innertext~'ninguna']", 30000, null, "2ee4eab4-1354-4ba3-9fab-6172f8244122");
-                _pregunta_medidasdeseguridadInfo = new RepoItemInfo(this, "pregunta_MedidasDeSeguridad", ".//div[@innertext>'Contaba con medidas de seguridad']/../..//div[@innertext~'ninguna']", 30000, null, "29ec3c10-d4df-485f-abff-38c2acca4c9b");
+                _pregunta_poseeantecedentesInfo = new RepoItemInfo(this, "pregunta_PoseeAntecedentes", ".//div[@innertext>'Posee antecedentes siniestrales']/../..//div[@innertext~'ninguna']", "", 30000, null, "c504a4a8-d5a8-40e9-891f-f1b8920f343a");
+                _pregunta_modificacionespolizaInfo = new RepoItemInfo(this, "pregunta_ModificacionesPoliza", ".//div[@innertext>'El asegurado ha realizado modificaciones']/../..//div[@innertext~'ninguna']", "", 30000, null, "944716b0-23b3-460d-89bb-2af4b075f8b3");
+                _pregunta_modificacionrelatoInfo = new RepoItemInfo(this, "pregunta_ModificacionRelato", ".//div[@innertext>'El asegurado modifica el relato previo']/../..//div[@innertext~'ninguna']", "", 30000, null, "4d6a0bf0-f8ff-4ead-a2e2-50fd46ace5fb");
+                _pregunta_actividadalmomentoInfo = new RepoItemInfo(this, "pregunta_ActividadAlMomento", ".//div[@innertext>'La actividad al momento']/../..//div[@innertext~'ninguna']", "", 30000, null, "2ee4eab4-1354-4ba3-9fab-6172f8244122");
+                _pregunta_medidasdeseguridadInfo = new RepoItemInfo(this, "pregunta_MedidasDeSeguridad", ".//div[@innertext>'Contaba con medidas de seguridad']/../..//div[@innertext~'ninguna']", "", 30000, null, "29ec3c10-d4df-485f-abff-38c2acca4c9b");
             }
 
             /// <summary>
@@ -8921,8 +8921,8 @@ namespace SuraClaims
             public LiquidacionesOrdenPagoFolder(RepoGenBaseFolder parentFolder) :
                     base("LiquidacionesOrdenPago", "", parentFolder, 0, null, false, "966d0580-e37c-4609-b0fd-746f9d58e015", "")
             {
-                _a_montoInfo = new RepoItemInfo(this, "a_Monto", ".//tbody[#'ClaimFinancialsChecks-tbody']//a[@innertext~'$' and @innertext~'[0-9]+']", 30000, null, "6df562b2-72ba-4224-94ca-72a04f4543c7");
-                _numeroemisionliquidacionsiseInfo = new RepoItemInfo(this, "numeroEmisionLiquidacionSISE", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext>'Fecha de emisión de Liquidación']/../..//div[@innertext~'[0-9]+' and @innertext!~'/']", 30000, null, "242433b3-be02-4416-bfe7-d888a83a1545");
+                _a_montoInfo = new RepoItemInfo(this, "a_Monto", ".//tbody[#'ClaimFinancialsChecks-tbody']//a[@innertext~'$' and @innertext~'[0-9]+']", "", 30000, null, "6df562b2-72ba-4224-94ca-72a04f4543c7");
+                _numeroemisionliquidacionsiseInfo = new RepoItemInfo(this, "numeroEmisionLiquidacionSISE", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext>'Fecha de emisión de Liquidación']/../..//div[@innertext~'[0-9]+' and @innertext!~'/']", "", 30000, null, "242433b3-be02-4416-bfe7-d888a83a1545");
             }
 
             /// <summary>
@@ -9004,11 +9004,11 @@ namespace SuraClaims
             public AdministracionFolder(RepoGenBaseFolder parentFolder) :
                     base("Administracion", "", parentFolder, 0, null, false, "af73826a-78c7-4b15-90b2-4692ed359771", "")
             {
-                _bttn_reanudarInfo = new RepoItemInfo(this, "bttn_Reanudar", ".//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Ranudar']", 30000, null, "7e7a387b-d640-4c67-a26d-ba8242e9a32f");
-                _check_serviciosuspendidoInfo = new RepoItemInfo(this, "check_ServicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//img", 30000, null, "c2b1ba40-2baa-48e4-a386-77c33800c9dc");
-                _serviciosuspendidoInfo = new RepoItemInfo(this, "servicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']", 30000, null, "5f4abf7a-4a3d-444e-a140-575dcd746971");
-                _nombreserviciosuspendidoInfo = new RepoItemInfo(this, "nombreServicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//a", 30000, null, "ef64a6ca-6c1c-4fd9-809c-f7359de279f9");
-                _txt_colasdemensajesInfo = new RepoItemInfo(this, "txt_ColasDeMensajes", ".//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Colas de mensajes']", 30000, null, "49948364-243d-443c-b1f6-50477db0e153");
+                _bttn_reanudarInfo = new RepoItemInfo(this, "bttn_Reanudar", ".//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Ranudar']", "", 30000, null, "7e7a387b-d640-4c67-a26d-ba8242e9a32f");
+                _check_serviciosuspendidoInfo = new RepoItemInfo(this, "check_ServicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//img", "", 30000, null, "c2b1ba40-2baa-48e4-a386-77c33800c9dc");
+                _serviciosuspendidoInfo = new RepoItemInfo(this, "servicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']", "", 30000, null, "5f4abf7a-4a3d-444e-a140-575dcd746971");
+                _nombreserviciosuspendidoInfo = new RepoItemInfo(this, "nombreServicioSuspendido", ".//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//a", "", 30000, null, "ef64a6ca-6c1c-4fd9-809c-f7359de279f9");
+                _txt_colasdemensajesInfo = new RepoItemInfo(this, "txt_ColasDeMensajes", ".//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Colas de mensajes']", "", 30000, null, "49948364-243d-443c-b1f6-50477db0e153");
             }
 
             /// <summary>
@@ -9160,9 +9160,9 @@ namespace SuraClaims
             public SuraClaims_ContinueOnFailAppFolder(RepoGenBaseFolder parentFolder) :
                     base("SuraClaims_ContinueOnFail", "/dom[@domain=$Ambiente]", parentFolder, 5000, null, false, "23163b00-148a-46fa-a120-b3fdeaa10fed", "")
             {
-                _bttn_cerrarcontinueonfailInfo = new RepoItemInfo(this, "bttn_CerrarContinueOnFail", ".//tbody[#'NewClaimDuplicatesWorksheet-tbody']//span[@innertext~'Crrar']", 0, null, "4e4648ce-0cd1-45e7-8b3b-cee8cdbff623");
-                _copy_of_bttn_aceptarInfo = new RepoItemInfo(this, "Copy_of_bttn_Aceptar", "body//span[@innertext~'Aceptar']", 0, null, "2ecb5eda-794d-4225-b425-fadfac103b1a");
-                _bttn_cancelarInfo = new RepoItemInfo(this, "bttn_Cancelar", ".//span[@innertext>'Cance']", 30000, null, "4786339d-e3f8-4897-b5a6-0d235e6aab40");
+                _bttn_cerrarcontinueonfailInfo = new RepoItemInfo(this, "bttn_CerrarContinueOnFail", ".//tbody[#'NewClaimDuplicatesWorksheet-tbody']//span[@innertext~'Crrar']", "", 0, null, "4e4648ce-0cd1-45e7-8b3b-cee8cdbff623");
+                _copy_of_bttn_aceptarInfo = new RepoItemInfo(this, "Copy_of_bttn_Aceptar", "body//span[@innertext~'Aceptar']", "", 0, null, "2ecb5eda-794d-4225-b425-fadfac103b1a");
+                _bttn_cancelarInfo = new RepoItemInfo(this, "bttn_Cancelar", ".//span[@innertext>'Cance']", "", 30000, null, "4786339d-e3f8-4897-b5a6-0d235e6aab40");
             }
 
             /// <summary>
@@ -9276,7 +9276,7 @@ namespace SuraClaims
             public Avisos_Chrome_COFAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Avisos_Chrome_COF", "/form[@title>'¿Deseas abandonar el siti']", parentFolder, 3000, null, true, "700e31ce-0c06-406b-807e-8baeacefee54", "")
             {
-                _btn_abandonarInfo = new RepoItemInfo(this, "Btn_Abandonar", "container[@accessiblename='']//button[@accessiblename='Abandonar']", 0, null, "3437f27a-60a0-4130-a465-cd6c7cfa9514");
+                _btn_abandonarInfo = new RepoItemInfo(this, "Btn_Abandonar", "container[@accessiblename='']//button[@accessiblename='Abandonar']", "", 0, null, "3437f27a-60a0-4130-a465-cd6c7cfa9514");
             }
 
             /// <summary>
@@ -9342,7 +9342,7 @@ namespace SuraClaims
             public PuTTYExitConfirmationAppFolder(RepoGenBaseFolder parentFolder) :
                     base("PuTTYExitConfirmation", "/form[@title='PuTTY Exit Confirmation']", parentFolder, 30000, null, true, "4cc7b4d1-e136-489c-9876-9d28808e3b45", "")
             {
-                _aceptarInfo = new RepoItemInfo(this, "Aceptar", "button[@text='Aceptar']", 30000, null, "88c70df4-d153-4302-a6e8-ee1a289f4d53");
+                _aceptarInfo = new RepoItemInfo(this, "Aceptar", "button[@text='Aceptar']", "", 30000, null, "88c70df4-d153-4302-a6e8-ee1a289f4d53");
             }
 
             /// <summary>
@@ -9408,7 +9408,7 @@ namespace SuraClaims
             public SisePreProdAppFolder(RepoGenBaseFolder parentFolder) :
                     base("SisePreProd", "/form[@title='Sise Pre Prod']", parentFolder, 30000, null, true, "8311fb01-c798-440f-84a7-f3ff0b765dd8", "")
             {
-                _sistemaInfo = new RepoItemInfo(this, "Sistema", "?/?/menuitem[@accessiblename='Sistema']", 30000, null, "d0fe4a90-12d6-4bf8-8b70-75f8f0a5053f");
+                _sistemaInfo = new RepoItemInfo(this, "Sistema", "?/?/menuitem[@accessiblename='Sistema']", "", 30000, null, "d0fe4a90-12d6-4bf8-8b70-75f8f0a5053f");
             }
 
             /// <summary>
@@ -9474,7 +9474,7 @@ namespace SuraClaims
             public PuttyAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Putty", "/contextmenu[@processname='putty']", parentFolder, 30000, null, false, "a968646e-936b-4ea2-88ff-304cc3c20d91", "")
             {
-                _copyalltoclipboardInfo = new RepoItemInfo(this, "CopyAllToClipboard", "?/?/menuitem[@accessiblename='Copy All to Clipboard']", 30000, null, "68ad3dcc-a05e-445a-b62f-32cba2290087");
+                _copyalltoclipboardInfo = new RepoItemInfo(this, "CopyAllToClipboard", "?/?/menuitem[@accessiblename='Copy All to Clipboard']", "", 30000, null, "68ad3dcc-a05e-445a-b62f-32cba2290087");
             }
 
             /// <summary>

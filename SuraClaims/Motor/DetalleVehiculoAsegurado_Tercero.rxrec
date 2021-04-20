@@ -108,6 +108,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[8]//table/tbody/tr[2]//table/?/?/tr/td[1]/?/?/table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[1]/td/div/div[1]/div/div[2]/div[@innertext='2019 CHEVROLET ASTRA']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="c9b78422-d8d4-4bc4-879a-e77e6fcd5d49">
@@ -186,6 +188,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Detalle del veh&#237;culo asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<separatoritem
@@ -280,6 +284,8 @@ KQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[1]/?/?/div/table/tbody/tr/td/?/?/table/tbody/tr[2]/td/div/div[1]/div/div/a[1]//span[@innertext='Agregar conductor']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="3f704dc9-3cb1-4ed5-875d-7b18590a38cd">
@@ -342,6 +348,8 @@ oo55dw9lDsZ/9lWf/PZ/++h/hRV9Pun6n+dFHPLuHsodj//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -414,6 +422,8 @@ oo55dw9lDsZ/9lWf/PZ/++h/hRV9Pun6n+dFHPLuHsodj//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Personal']/../..//div[@id~'picker']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -438,6 +448,8 @@ oo55dw9lDsZ/9lWf/PZ/++h/hRV9Pun6n+dFHPLuHsodj//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//li[@innertext='[A-Z]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -511,6 +523,8 @@ oo55dw9lDsZ/9lWf/PZ/++h/hRV9Pun6n+dFHPLuHsodj//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Relación con propietario']/../..//div[@innertext='Asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -596,6 +610,8 @@ oo55dw9lDsZ/9lWf/PZ/++h/hRV9Pun6n+dFHPLuHsodj//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="33e58afa-4a5b-4355-8856-eca9673fc9a4">
@@ -644,6 +660,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Detalle del veh&#237;culo asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -728,6 +746,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<separatoritem
@@ -822,6 +842,8 @@ yG5zejbfzKkulW8srSFpAWJJwR/hTf7Gt/78v5j/AAq75Q/yBR5Q/wAgVfMzL2cOxS/sa3/vy/mP
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[1]/div[1]/div[2]/div/a[2]//span[@innertext&gt;'Descripci&#243;n del tipo de s']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="a654f749-7be7-429b-961d-df2c8eefaca1">
@@ -928,6 +950,8 @@ AAp1FADdh/vt+n+FGw/32/T/AAp1FADdh/vt+n+FFOooA//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/?/?/label/span[@innertext='Daños']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -952,6 +976,8 @@ AAp1FADdh/vt+n+FGw/32/T/AAp1FADdh/vt+n+FFOooA//Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']/../../..//label[@innertext='No']/../input[@type='button']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -985,6 +1011,8 @@ AAp1FADdh/vt+n+FGw/32/T/AAp1FADdh/vt+n+FFOooA//Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1052,6 +1080,8 @@ AAp1FADdh/vt+n+FGw/32/T/AAp1FADdh/vt+n+FFOooA//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 3']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

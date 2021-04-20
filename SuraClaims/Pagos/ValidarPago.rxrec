@@ -46,6 +46,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<explicitdelayitem
@@ -73,6 +75,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext&gt;'Fecha de emisi&#243;n de Liquidaci&#243;n']/../..//div[@innertext~'[0-9]+' and @innertext!~'/']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

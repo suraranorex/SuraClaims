@@ -202,6 +202,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -275,6 +277,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Paso 1: Buscar o crear p&#243;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -293,6 +297,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<keyitem
@@ -453,6 +459,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keyitem>
 		<keysequenceitem
@@ -613,6 +621,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -686,6 +696,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Paso 1: Buscar o crear p&#243;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -704,6 +716,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -782,6 +796,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//table/tbody/tr[5]/td/?/?/table/tbody/tr[2]//table//div/div[1]/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="109be3ef-40ff-4bc8-828b-51c3e4349b00">
@@ -912,6 +928,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//table/tbody/tr[6]/td/div/div[3]/div[1]//table/tbody/tr/td[2]/?/?/a[@innertext='04440024093']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -936,6 +954,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[6]/td/div/div[3]/div[1]/?/?/table/?/?/tr/td[3]/div[@innertext='AGUSTINA AGOSTO']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<getvaluerecorditem
@@ -954,6 +974,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[6]/td/div/div[3]/div[1]/?/?/table/?/?/tr/td[3]/div[@innertext='AGUSTINA AGOSTO']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem
@@ -1131,6 +1153,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1184,6 +1208,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Paso 1: Buscar o crear p&#243;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1202,6 +1228,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<keysequenceitem
@@ -1363,6 +1391,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Hora']/../..//input
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -1416,6 +1446,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Paso 1: Buscar o crear p&#243;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1434,6 +1466,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Hora']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
@@ -1497,6 +1531,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -1582,6 +1618,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Siguiente']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -1649,6 +1687,8 @@ Jvuj60+mTfdH1oAZH96pqhj+9U1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

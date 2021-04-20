@@ -45,6 +45,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				(Choose)
@@ -81,6 +83,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				(Choose)
@@ -111,6 +115,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -135,6 +141,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z][a-z]+']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -159,6 +167,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Método de pago']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -177,6 +187,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -244,6 +256,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<getvaluerecorditem
@@ -263,6 +277,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='GALICIA']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<mouseitem
@@ -424,6 +440,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -457,6 +475,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext=$Banco]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -617,6 +637,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -635,6 +657,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords' and @data-tabindexsaved='True']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<mouseitem
@@ -659,6 +683,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Método de pago']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<loggingrecorditem
@@ -679,6 +705,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -703,6 +731,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Siguiente']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 	</recorditems>

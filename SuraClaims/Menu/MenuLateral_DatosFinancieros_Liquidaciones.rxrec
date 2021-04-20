@@ -102,6 +102,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Datos financieros']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -135,6 +137,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//span[@innertext~'Liquidaciones / Orden de']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -202,6 +206,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Liquidaciones']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Posee antecedentes siniestrales']/../..//div[@innertext~'ninguna']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -100,6 +102,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='No']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -124,6 +128,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'La actividad al momento']/../..//div[@innertext~'ninguna']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -177,6 +183,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='No']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -201,6 +209,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Contaba con medidas de seguridad']/../..//div[@innertext~'ninguna']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -225,6 +235,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext='Sí']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 	</recorditems>

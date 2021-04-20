@@ -977,6 +977,13 @@
       <id>434d4044-50c0-49d6-b0f3-56f9dabb2730</id>
       <recordtableid>057bbe76-7118-471d-b26e-9ef3c771d4c6</recordtableid>
     </None>
+    <Content Include="DataSource - Ambiente y Usuario.xlsx">
+      <Link>DataSource - Ambiente y Usuario.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>212867f1-80fe-442c-ab5e-44a2e337de82</id>
+    </Content>
     <None Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>f39815eb-df4c-4467-b9eb-12b0e044e9f7</id>

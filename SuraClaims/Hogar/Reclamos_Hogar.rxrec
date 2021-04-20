@@ -108,6 +108,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[6]/td/div/div[1]/div/div/a[1]//span[@innertext='Nuvo Reclamo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="e4aad69d-eb31-41ec-9711-d90622e009ad">
@@ -229,6 +231,8 @@ lj7ozABvrgA0yRllHBNb+a9qrGR3cMyDJBYkHn2xVj7Pbf8APnH/AN8LUqqqKFUBVAwABgAUtKyK
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[14]/div/div[2]//span[@innertext='1:GRAL CORNELIO SAAVEDRA']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="02320c80-0d68-4934-8cc8-c4cb0135198c">
@@ -435,6 +439,8 @@ RQAUUUUAFFFFABRRRQAUUUUAf//Z
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[16]/div/div[2]/div/div[2]/?/?/span[@innertext&gt;'Incendio Edificio a Prorr']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="f47e6b9b-40ba-409b-9d49-7b997bd79944">
@@ -502,6 +508,8 @@ yFHlt6j8hUtFAEXlt6j8hR5beo/IVLRQAwR88n9KfRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -586,6 +594,8 @@ yFHlt6j8hUtFAEXlt6j8hR5beo/IVLRQAwR88n9KfRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 		<mouseitem
@@ -671,6 +681,8 @@ yFHlt6j8hUtFAEXlt6j8hR5beo/IVLRQAwR88n9KfRRQAUUUUAf/2Q==
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="b8b54a94-baa9-4056-ab30-adb429830920">
@@ -718,6 +730,8 @@ A229wooooEFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -802,6 +816,8 @@ A229wooooEFFFFAH/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

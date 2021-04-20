@@ -119,6 +119,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//a[#'TabBar:ClaimTab']/span
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="385fe6ac-ebc4-45f8-8378-e822eb9f8014">
@@ -232,6 +234,8 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']/body/div[11]/div/div[2]//span[@innertext='Nuevo siniestro']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="0778242a-792f-4f06-8311-51c9cc57ebd2">
@@ -345,6 +349,8 @@ cbkTapY8d8ng9KsUUAVo7dlzlI/ukHn759Tx/j1qzRRQAUUUUAFFFFABTKfTKACiiikB/9k=
 				<path>
 					/dom[@domain='ssurgwsoadev4.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Paso 1: Buscar o crear p&#243;']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

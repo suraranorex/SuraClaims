@@ -96,6 +96,8 @@ mode="Global">
 				<path>
 					/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//div[#'Claim:MenuLinks-body']/div[1]/div/table[6]//span[@innertext='Plan de trabajo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="12109119-46c6-49c5-9bb6-db3ba2f7361d">
@@ -150,6 +152,8 @@ htz64AGfxq5RRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

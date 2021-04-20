@@ -47,6 +47,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//div[#'Admin:MenuLinks-body']//span[@innertext='Supervisión']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -71,6 +73,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//div[#'Admin:MenuLinks-body']//span[@innertext='Colas de mensajes']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
@@ -89,6 +93,8 @@ mode="Global">
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Colas de mensajes']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -109,6 +115,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>

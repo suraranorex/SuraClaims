@@ -110,6 +110,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[8]/td/fieldset/div/div/div/div[1]/div/div/div/div/div/div[3]/a[@href='javascript:void(0)']/img[@src='https://i-preproducciongestion.segurossura.com.ar/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="2be7a1b2-ab65-4b1a-afb5-768f4dadd396">
@@ -157,6 +159,8 @@ L/6G1WKq2Kyw2qrLGxkJLNjHBYkkdfep97f88n/Mf40CH0Uze3/PJ/zH+NFAH//Z
 				<path>
 					/dom[@domain=$Ambiente]//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -229,6 +233,8 @@ L/6G1WKq2Kyw2qrLGxkJLNjHBYkkdfep97f88n/Mf40CH0Uze3/PJ/zH+NFAH//Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="8552799e-b18d-4ca1-9b8f-244aef227c34">
@@ -281,6 +287,8 @@ FPooAZRRRSAVO/1p1FFMAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
@@ -432,6 +440,8 @@ FPooAZRRRSAVO/1p1FFMAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/dom[@domain=$Ambiente]//input[@name~'ProviderNumberSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<keysequenceitem
@@ -582,6 +592,8 @@ FPooAZRRRSAVO/1p1FFMAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/dom[@domain=$Ambiente]//input[@name~'ProviderNumberSura']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<mouseitem
@@ -660,6 +672,8 @@ FPooAZRRRSAVO/1p1FFMAooooAKKKKACiiigAooooAKKKKAP/9k=
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/?/?/table/tbody/tr[2]//table//div/div/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="7ade412e-2186-4264-b7ad-3b37e8db6e1c">
@@ -815,6 +829,8 @@ FABRRRQAUkf+rX6CiigBaKKKACiiigAooooAKKKKAP/Z
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[6]/td/div/div[4]/div[1]/?/?/table/?/?/tr/td[1]/?/?/a[@innertext='Seleccionar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="fa4ae847-ffc7-475b-a90a-2492ef87f128">
@@ -876,6 +892,8 @@ UUUUAFFFFAH/2Q==
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo asegurado']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<loggingrecorditem
@@ -896,6 +914,8 @@ UUUUAFFFFAH/2Q==
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</loggingrecorditem>
 	</recorditems>
