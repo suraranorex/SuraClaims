@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="6d0621f0-9db1-496d-8795-ab0b5394a7bd"
+id="038192c1-5f9d-45df-bfd0-64200322b5e9"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,18 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ValidarPagoSiniestro_SISE_PreProd"
+	classname="ValidarGeneracionSiniestro_SISE_QA"
 	namespace="SuraClaims.SISE">
 	</codegen>
 	<variables>
 		<var
-		id="21a77e08-161f-4b23-8121-363b659eb050"
+		id="f60a39dc-7084-4bc4-b742-9b0fc6d64384"
 		name="NroSiniestro">
 			1220194200601
-		</var>
-		<var
-		id="4f23624d-50e5-4776-8ffa-a10d6bc5de41"
-		name="Importe">
 		</var>
 	</variables>
 	<recorditems>
@@ -1119,7 +1115,7 @@ ip4v9Sn+6KKKiaSdkVF3Q+iiioGFFFFABRRRQB//2Q==
 		</explicitdelayitem>
 		<userrecorditem
 		autogenmethod="True"
-		classname="ValidarPagoSiniestro_SISE_PreProd"
+		classname="ValidarGeneracionSiniestro_SISE_QA"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ValidarLogin"
@@ -1164,7 +1160,7 @@ ip4v9Sn+6KKKiaSdkVF3Q+iiioGFFFFABRRRQB//2Q==
 			</bindings>
 		</separatoritem>
 		<keysequenceitem
-		KeySequence="1{Return}"
+		KeySequence="2{Return}"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -1628,7 +1624,7 @@ g+U/XvRRW0UuS5D3LVpfRXcCMCquwOY92SKni/1Kf7oooqJpJ2RUXdD6KKKgYUUUUAFFFFAH/9k=
 			</bindings>
 		</explicitdelayitem>
 		<keysequenceitem
-		KeySequence="2{Return}"
+		KeySequence="4{Return}"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -1658,7 +1654,7 @@ g+U/XvRRW0UuS5D3LVpfRXcCMCquwOY92SKni/1Kf7oooqJpJ2RUXdD6KKKgYUUUUAFFFFAH/9k=
 			</bindings>
 		</explicitdelayitem>
 		<keysequenceitem
-		KeySequence="3{Return}"
+		KeySequence="4{Return}"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -2189,11 +2185,48 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 		enabled="True"
 		optional="False">
 			<comment>
-				Número del pago
+				Validación del siniestro
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<userrecorditem
+		autogenmethod="True"
+		classname="ValidarGeneracionSiniestro_SISE_QA"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidarLogin"
+		namespace="SISE"
+		optional="False">
+			<comment>
+				Validación de Pago
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="df9780cd-11f5-4f18-8f9e-0a562f0abc19">
+				<argument
+				argname="TextoValidacion"
+				id="904a4d90-d4c8-4362-bc03-2fc23abce5ba">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Cobertura
+					</argvalue>
+				</argument>
+				<argument
+				argname="TituloAccion"
+				id="ced9fea3-572a-4d45-9dba-7da7cdc41247">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Validación de Generación del Siniestro
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<keysequenceitem
 		KeySequence="1{Return}"
 		duration="20ms"
@@ -2647,12 +2680,11 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 			</bindings>
 		</explicitdelayitem>
 		<userrecorditem
-		autogenmethod="True"
-		classname="ValidarPagoSiniestro_SISE_PreProd"
+		classname="ValidarGeneracionSiniestro_SISE_QA"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ValidarLogin"
-		namespace="SISE"
+		namespace="SuraClaims.SISE"
 		optional="False">
 			<comment>
 				Validación de Pago
@@ -2668,7 +2700,7 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 						System.String
 					</argvaluetype>
 					<argvalue>
-						$
+						Estimaciones en $
 					</argvalue>
 				</argument>
 				<argument
@@ -2678,45 +2710,7 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Validación de Pago
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		autogenmethod="True"
-		classname="ValidarPagoSiniestro_SISE_PreProd"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="ValidarLogin"
-		namespace="SISE"
-		optional="False">
-			<comment>
-				Validación de Pago
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="df9780cd-11f5-4f18-8f9e-0a562f0abc19">
-				<argument
-				argname="TextoValidacion"
-				id="904a4d90-d4c8-4362-bc03-2fc23abce5ba"
-				variable="Importe">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Autorizaciones Imputadas
-					</argvalue>
-				</argument>
-				<argument
-				argname="TituloAccion"
-				id="ced9fea3-572a-4d45-9dba-7da7cdc41247">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Validación de Pago
+						Validación de Cobertura Existente
 					</argvalue>
 				</argument>
 			</arguments>
@@ -3348,7 +3342,7 @@ AooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ValidarPagoSiniestro_SISE_PreProd.UserCode.cs
+		ValidarGeneracionSiniestro_SISE_QA.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

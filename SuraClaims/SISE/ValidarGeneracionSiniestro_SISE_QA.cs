@@ -24,31 +24,30 @@ namespace SuraClaims.SISE
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ValidarPagoSiniestro_SISE_QA recording.
+    ///The ValidarGeneracionSiniestro_SISE_QA recording.
     /// </summary>
-    [TestModule("f4bcaf05-1065-41a5-8e21-564b216b0b18", ModuleType.Recording, 1)]
-    public partial class ValidarPagoSiniestro_SISE_QA : ITestModule
+    [TestModule("038192c1-5f9d-45df-bfd0-64200322b5e9", ModuleType.Recording, 1)]
+    public partial class ValidarGeneracionSiniestro_SISE_QA : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static ValidarPagoSiniestro_SISE_QA instance = new ValidarPagoSiniestro_SISE_QA();
+        static ValidarGeneracionSiniestro_SISE_QA instance = new ValidarGeneracionSiniestro_SISE_QA();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ValidarPagoSiniestro_SISE_QA()
+        public ValidarGeneracionSiniestro_SISE_QA()
         {
             NroSiniestro = "1220194200601";
-            Importe = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ValidarPagoSiniestro_SISE_QA Instance
+        public static ValidarGeneracionSiniestro_SISE_QA Instance
         {
             get { return instance; }
         }
@@ -60,23 +59,11 @@ namespace SuraClaims.SISE
         /// <summary>
         /// Gets or sets the value of variable NroSiniestro.
         /// </summary>
-        [TestVariable("9df180b6-45a0-4369-98bf-7aca08a71ab0")]
+        [TestVariable("f60a39dc-7084-4bc4-b742-9b0fc6d64384")]
         public string NroSiniestro
         {
             get { return _NroSiniestro; }
             set { _NroSiniestro = value; }
-        }
-
-        string _Importe;
-
-        /// <summary>
-        /// Gets or sets the value of variable Importe.
-        /// </summary>
-        [TestVariable("395cfa08-a455-4d8c-b136-308481011839")]
-        public string Importe
-        {
-            get { return _Importe; }
-            set { _Importe = value; }
         }
 
 #endregion
@@ -157,8 +144,8 @@ namespace SuraClaims.SISE
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(14));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(15));
-            repo.SisePreProd.Self.PressKeys("3{Return}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(15));
+            repo.SisePreProd.Self.PressKeys("4{Return}");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(16));
@@ -179,23 +166,23 @@ namespace SuraClaims.SISE
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(20));
             Delay.Duration(2000, false);
             
-            // Número del pago
-            Report.Log(ReportLevel.Info, "Section", "Número del pago", new RecordItemIndex(21));
+            // Validación del siniestro
+            Report.Log(ReportLevel.Info, "Section", "Validación del siniestro", new RecordItemIndex(21));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(22));
+            // Validación de Pago
+            ValidarLogin("Cobertura", "Validación de Generación del Siniestro");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(23));
             repo.SisePreProd.Self.PressKeys("1{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(24));
             Delay.Duration(2000, false);
             
             // Validación de Pago
-            ValidarLogin("$", "Validación de Pago");
+            ValidarLogin("Estimaciones en $", "Validación de Cobertura Existente");
             Delay.Milliseconds(0);
-            
-            // Validación de Pago
-            //ValidarLogin(Importe, "Validación de Pago");
-            //Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(26));
             

@@ -190,16 +190,20 @@ namespace SuraClaims.SISE
             Delay.Duration(2000, false);
             
             // Validación de Pago
+            ValidarLogin("$", "Validación de Pago");
+            Delay.Milliseconds(0);
+            
+            // Validación de Pago
             ValidarLogin(Importe, "Validación de Pago");
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(25));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(26));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SisePreProd.Sistema' at 18;6.", repo.SisePreProd.SistemaInfo, new RecordItemIndex(26));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SisePreProd.Sistema' at 18;6.", repo.SisePreProd.SistemaInfo, new RecordItemIndex(27));
             //repo.SisePreProd.Sistema.Click("18;6");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Putty.CopyAllToClipboard' at 122;9.", repo.Putty.CopyAllToClipboardInfo, new RecordItemIndex(27));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Putty.CopyAllToClipboard' at 122;9.", repo.Putty.CopyAllToClipboardInfo, new RecordItemIndex(28));
             //repo.Putty.CopyAllToClipboard.Click("122;9");
             //Delay.Milliseconds(0);
             

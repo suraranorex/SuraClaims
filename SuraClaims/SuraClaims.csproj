@@ -921,6 +921,30 @@
       <UserCode>true</UserCode>
       <id>a0933c39-d888-4f64-9495-3ab8b70e2282</id>
     </Compile>
+    <Compile Include="SISE\ValidarGeneracionSiniestro_SISE_PreProd.cs">
+      <BoundTo>1da7ffc1-15d0-4efc-a7be-bf5164068c3c</BoundTo>
+      <DependentUpon>ValidarGeneracionSiniestro_SISE_PreProd.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e1cba91-015a-43ce-bcbf-0bda9bdf3cf7</id>
+    </Compile>
+    <Compile Include="SISE\ValidarGeneracionSiniestro_SISE_PreProd.UserCode.cs">
+      <BoundTo>1da7ffc1-15d0-4efc-a7be-bf5164068c3c</BoundTo>
+      <DependentUpon>ValidarGeneracionSiniestro_SISE_PreProd.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>96a72b30-5ca0-4bb8-ba74-1490e1ae6aaf</id>
+    </Compile>
+    <Compile Include="SISE\ValidarGeneracionSiniestro_SISE_QA.cs">
+      <BoundTo>f6890ccc-5c56-4426-8e4b-55266f849173</BoundTo>
+      <DependentUpon>ValidarGeneracionSiniestro_SISE_QA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3a4243ee-9f85-4693-8328-f0768cbf0cb2</id>
+    </Compile>
+    <Compile Include="SISE\ValidarGeneracionSiniestro_SISE_QA.UserCode.cs">
+      <BoundTo>f6890ccc-5c56-4426-8e4b-55266f849173</BoundTo>
+      <DependentUpon>ValidarGeneracionSiniestro_SISE_QA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2d394870-8c79-4b2f-aed3-5c36e665e51f</id>
+    </Compile>
     <Compile Include="SISE\ValidarPagoSiniestro_SISE_PreProd.cs">
       <BoundTo>91f4d994-8d9c-4f41-b7d4-a63735f75881</BoundTo>
       <DependentUpon>ValidarPagoSiniestro_SISE_PreProd.rxrec</DependentUpon>
@@ -1363,15 +1387,25 @@
       <id>a23db6e4-e2ec-486c-9c5e-b332360b83f2</id>
       <recordtableid>fe5559b6-e1d6-43fd-bf7c-fd606e0e800d</recordtableid>
     </None>
+    <None Include="SISE\ValidarGeneracionSiniestro_SISE_PreProd.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>1da7ffc1-15d0-4efc-a7be-bf5164068c3c</id>
+      <recordtableid>1f80ea6d-6d97-4a47-87ad-9d8e3f98bcd9</recordtableid>
+    </None>
+    <None Include="SISE\ValidarGeneracionSiniestro_SISE_QA.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>f6890ccc-5c56-4426-8e4b-55266f849173</id>
+      <recordtableid>038192c1-5f9d-45df-bfd0-64200322b5e9</recordtableid>
+    </None>
     <None Include="SISE\ValidarPagoSiniestro_SISE_PreProd.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>91f4d994-8d9c-4f41-b7d4-a63735f75881</id>
       <recordtableid>6d0621f0-9db1-496d-8795-ab0b5394a7bd</recordtableid>
     </None>
     <None Include="SISE\ValidarPagoSiniestro_SISE_QA.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>5fdd3d12-6ac0-4593-b4f3-0f7febb1db5a</id>
       <recordtableid>f4bcaf05-1065-41a5-8e21-564b216b0b18</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="StartVPN.bat">
       <id>0fe300ad-d5c2-4438-b282-a8a8323e63aa</id>
@@ -1397,6 +1431,13 @@
       <DependentUpon>SuraClaims.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>c4152549-1d62-4ec1-aa5e-7245cd5fa993</id>
+    </Content>
+    <Content Include="Validacion_GeneracionSiniestro_SISE.xlsx">
+      <Link>Validacion_GeneracionSiniestro_SISE.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>4d2163b2-79ba-4790-a6cb-6a014998f186</id>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -35,6 +35,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="037a2e60-4423-4d97-8e47-af7ae687302c"
+			name="ValidarGeneracionSiniestro_SISE_PreProd"
+			ref="1f80ea6d-6d97-4a47-87ad-9d8e3f98bcd9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="83d78466-8533-4d57-9847-9d4f076d3f3a"
+					variableid="2b426858-3933-4096-a6f0-def4113aea8a"
+					variablename="NroSiniestro">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="04c3462c-c235-4ebd-8893-97987056d7a1"
 			name="FastTrack_ConCantidad"
 			ref="54e678cf-a9c9-4446-bced-2b43202e21ed"
@@ -329,8 +343,8 @@
 			datarangeactive="True"
 			datasource="SiniestroAP"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Siniestro_AP">
 				<parameters>
 					<param
@@ -439,6 +453,56 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c"
+			name="QA">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="83d78466-8533-4d57-9847-9d4f076d3f3a">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="QA">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<smartfoldernode
+			id="1ae1f931-8357-4441-9040-d0db20595df1"
+			name="PREPROD">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="83d78466-8533-4d57-9847-9d4f076d3f3a">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="PREPROD">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			datarangeactive="True"
 			datasource="SiniestroMotorUBER"
@@ -549,8 +613,8 @@
 			datarangeactive="True"
 			datasource="SiniestroHogar"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<testmodule
@@ -656,8 +720,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="AprobacionesPagos"
 			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c"
+			maxrange="0"
+			minrange="0"
 			name="ValidarPago">
 			</testcase>
 			<testmodule
@@ -754,8 +821,8 @@
 			datarangeactive="True"
 			datasource="ValidarPagoSiniestros"
 			id="3378198a-d57f-4703-b046-8f715ee27a01"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="ValidarPago_SISE">
 			</testcase>
 			<testmodule
@@ -1126,8 +1193,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
 					<param
@@ -1336,8 +1403,8 @@
 			datarangeactive="True"
 			datasource="PagosSiniestros"
 			id="58368d11-e725-4331-93f0-6f443d6c9119"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Pagos_Siniestros">
 			</testcase>
 			<testmodule
@@ -1831,6 +1898,20 @@
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
+			id="748469c9-29b3-4b20-94f6-18a087e7f335"
+			name="ValidarGeneracionSiniestro_SISE_QA"
+			ref="038192c1-5f9d-45df-bfd0-64200322b5e9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="83d78466-8533-4d57-9847-9d4f076d3f3a"
+					variableid="f60a39dc-7084-4bc4-b742-9b0fc6d64384"
+					variablename="NroSiniestro">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="74916a32-d8bd-4df7-85dc-4c729b836c98"
 			name="InformacionSiniestro_Hogar"
 			ref="7660e446-401e-4c60-a588-5248f8fa3529"
@@ -1884,6 +1965,19 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="77bb850e-9d39-4828-88b7-4a06f8c99997"
+			name="setup">
+			</setup>
+			<testcase
+			datarangeactive="True"
+			datasource="ValidacionGeneracionSiniestro_SISE"
+			errorbehavior="ContinueNextIteration"
+			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
+			maxrange="2"
+			minrange="2"
+			name="ValidarGeneracion_SISE">
+			</testcase>
 			<testmodule
 			id="79608b62-c919-4b7b-89ba-e8f4c6efb1ac"
 			name="MenuSuperior"
@@ -2348,6 +2442,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="981a5021-55e9-4ecb-94f7-f6fdad326996"
 			name="MenuSuperior"
 			ref="5370da35-fa14-4882-9be6-a1a63f8f5b51"
@@ -2667,6 +2762,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="b1bfe9e3-1fdb-46a5-ac3c-dc24795f1adf"
+			name="StartAUT"
+			ref="fe5559b6-e1d6-43fd-bf7c-fd606e0e800d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="9e955975-c7b8-44cb-a041-f63a40bc3880"
+					variableid="42eb0de5-c84b-4c47-920b-a6d08c7f2856"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b27d7320-07bb-463b-bbee-a46631df8c84"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -2775,8 +2884,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="2"
-			minrange="2"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -2890,6 +2999,7 @@
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="ceba0e73-80be-4b7e-b580-ad2e55658c89"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -3082,6 +3192,20 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="da851c1e-339e-4a77-af9b-fa3e3f0d2d71"
+			name="CloseAUT"
+			ref="5d3efce6-19a4-42b7-8771-346c87cc360d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="9e955975-c7b8-44cb-a041-f63a40bc3880"
+					variableid="8f87a511-33f5-40e0-b3d0-25e6770fe1a1"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="dbac9d87-6fdc-43e0-a477-0b8ee07cf40e"
 			name="InformacionBasica"
 			ref="4afd7ade-4bd3-436e-85a2-aa47e7e56042"
@@ -3181,6 +3305,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="e5113914-22d3-41b3-91f1-b1c13f6b99db"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="e601d90a-3038-40d0-8548-040cec9a8c07"
 			name="BuscarPoliza"
@@ -3220,8 +3348,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="AprobacionesPagos"
 			id="e86717b1-fd17-4adc-aac7-94fc08ee7023"
+			maxrange="0"
+			minrange="0"
 			name="Aprobar_Nuevo_Pago">
 			</testcase>
 			<testmodule
@@ -3602,6 +3733,7 @@
 				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="faf0fe18-c109-47de-b7eb-c692b4530552"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -3819,6 +3951,54 @@
 				<testcase
 				id="9e955975-c7b8-44cb-a041-f63a40bc3880"
 				name="SuraClaims">
+					<testcase
+					id="2a07542c-9c89-4c3c-9c89-ba49107eb139"
+					name="ValidarEstado_ColaDeMensajes">
+						<setup
+						id="c23cf1c5-09e5-4170-9855-da1c45095f6f"
+						name="setup">
+							<testmodule
+							id="388b741a-88f0-48c1-849a-d85cc3e61fc0"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="710c858a-d49a-4477-a17e-36d5d13b3b3c"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="b3753ea0-0ed0-49c0-bf0c-4a074e3c2d2c"
+						name="MenuSuperior_Administracion">
+						</testmodule>
+						<testmodule
+						id="143816d0-a6cc-4d31-867a-1d1f50762a57"
+						name="MenuLateral_Supervision_ColaMensajes">
+						</testmodule>
+						<testmodule
+						id="f4935136-d068-4796-a086-fedad1ce5a2f"
+						name="VerificarEstado_ColaMensajes">
+						</testmodule>
+						<smartfoldernode
+						id="23333f5f-0542-48f2-a1b0-681a739e13e3"
+						name="SiHaySuspendidos">
+							<testmodule
+							id="64323418-c65c-4549-a8ed-d6f3a11fadfc"
+							name="ReaunudarProcesos">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="f42f29e8-df53-4723-9c21-16978d866b4d"
+						name="teardown">
+							<testmodule
+							id="4b014584-5ee3-48cd-841d-b837ead2d61c"
+							name="Logout">
+							</testmodule>
+							<testmodule
+							id="d384afac-de07-4677-b156-7dcb52647075"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
 					<testcase
 					id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
 					name="GeneracionSiniestro_Motor">
@@ -4240,6 +4420,42 @@
 						</teardown>
 					</testcase>
 					<testcase
+					id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
+					name="ValidarGeneracion_SISE">
+						<setup
+						id="77bb850e-9d39-4828-88b7-4a06f8c99997"
+						name="setup">
+							<testmodule
+							id="b1bfe9e3-1fdb-46a5-ac3c-dc24795f1adf"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<smartfoldernode
+						id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c"
+						name="QA">
+							<testmodule
+							id="748469c9-29b3-4b20-94f6-18a087e7f335"
+							name="ValidarGeneracionSiniestro_SISE_QA">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="1ae1f931-8357-4441-9040-d0db20595df1"
+						name="PREPROD">
+							<testmodule
+							id="037a2e60-4423-4d97-8e47-af7ae687302c"
+							name="ValidarGeneracionSiniestro_SISE_PreProd">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="e5113914-22d3-41b3-91f1-b1c13f6b99db"
+						name="teardown">
+							<testmodule
+							id="da851c1e-339e-4a77-af9b-fa3e3f0d2d71"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
 					id="4a707abf-3d5a-4bee-8566-19f69f31c038"
 					name="Aprobaciones_Previas_A_Pagos">
 						<setup
@@ -4491,54 +4707,6 @@
 							</testmodule>
 						</teardown>
 					</testcase>
-					<testcase
-					id="2a07542c-9c89-4c3c-9c89-ba49107eb139"
-					name="ValidarEstado_ColaDeMensajes">
-						<setup
-						id="c23cf1c5-09e5-4170-9855-da1c45095f6f"
-						name="setup">
-							<testmodule
-							id="388b741a-88f0-48c1-849a-d85cc3e61fc0"
-							name="OpenBrowser">
-							</testmodule>
-							<testmodule
-							id="710c858a-d49a-4477-a17e-36d5d13b3b3c"
-							name="Login">
-							</testmodule>
-						</setup>
-						<testmodule
-						id="b3753ea0-0ed0-49c0-bf0c-4a074e3c2d2c"
-						name="MenuSuperior_Administracion">
-						</testmodule>
-						<testmodule
-						id="143816d0-a6cc-4d31-867a-1d1f50762a57"
-						name="MenuLateral_Supervision_ColaMensajes">
-						</testmodule>
-						<testmodule
-						id="f4935136-d068-4796-a086-fedad1ce5a2f"
-						name="VerificarEstado_ColaMensajes">
-						</testmodule>
-						<smartfoldernode
-						id="23333f5f-0542-48f2-a1b0-681a739e13e3"
-						name="SiHaySuspendidos">
-							<testmodule
-							id="64323418-c65c-4549-a8ed-d6f3a11fadfc"
-							name="ReaunudarProcesos">
-							</testmodule>
-						</smartfoldernode>
-						<teardown
-						id="f42f29e8-df53-4723-9c21-16978d866b4d"
-						name="teardown">
-							<testmodule
-							id="4b014584-5ee3-48cd-841d-b837ead2d61c"
-							name="Logout">
-							</testmodule>
-							<testmodule
-							id="d384afac-de07-4677-b156-7dcb52647075"
-							name="CloseBrowser">
-							</testmodule>
-						</teardown>
-					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -4548,7 +4716,7 @@
 		filename="AprobacionesPagos.xlsx"
 		id="3a168301-7879-4530-9708-7e12ebc5dbd0"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="AprobacionesPagos"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -5185,6 +5353,26 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
+		filename="Validacion_GeneracionSiniestro_SISE.xlsx"
+		id="83d78466-8533-4d57-9847-9d4f076d3f3a"
+		includefile="Checked"
+		lastknownrowcount="3"
+		name="ValidacionGeneracionSiniestro_SISE"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					NroSiniestro
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
 		filename="ValidarPagoSiniestros_SISE.xlsx"
 		id="f0248626-33eb-4fa7-8d86-54be4fdac042"
 		includefile="Checked"
@@ -5297,7 +5485,13 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
-			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c">
+			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
+			</testcontainer>
+			<testcontainer
+			id="1ae1f931-8357-4441-9040-d0db20595df1">
+			</testcontainer>
+			<testcontainer
+			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
