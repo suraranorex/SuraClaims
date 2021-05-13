@@ -743,7 +743,7 @@ VAwooooAKKKKAP/Z
 			</bindings>
 		</explicitdelayitem>
 		<keysequenceitem
-		KeySequence="Sura2039{Return}"
+		KeySequence="Sura2040{Return}"
 		duration="20ms"
 		enabled="True"
 		optional="False"

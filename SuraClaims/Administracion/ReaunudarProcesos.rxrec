@@ -51,6 +51,8 @@ mode="Global">
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//img
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<getvaluerecorditem
@@ -69,6 +71,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//a
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</getvaluerecorditem>
 		<loggingrecorditem
@@ -121,6 +125,8 @@ mode="Global">
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Ranudar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
@@ -150,6 +156,8 @@ mode="Global">
 				<path>
 					/dom[@domain=$Ambiente]
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keysequenceitem>
 		<WaitForRecordItem
@@ -168,6 +176,8 @@ mode="Global">
 				<path>
 					/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Colas de mensajes']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<userrecorditem

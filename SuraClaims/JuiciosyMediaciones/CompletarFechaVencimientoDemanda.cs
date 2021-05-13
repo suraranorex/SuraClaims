@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.AP
+namespace SuraClaims.JuiciosyMediaciones
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Reclamos_AP recording.
+    ///The CompletarFechaVencimientoDemanda recording.
     /// </summary>
-    [TestModule("94d73442-04fc-4dfc-99b8-de1874570730", ModuleType.Recording, 1)]
-    public partial class Reclamos_AP : ITestModule
+    [TestModule("6d5f8bc9-6ecd-483b-92c2-cf956d608bdb", ModuleType.Recording, 1)]
+    public partial class CompletarFechaVencimientoDemanda : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Reclamos_AP instance = new Reclamos_AP();
+        static CompletarFechaVencimientoDemanda instance = new CompletarFechaVencimientoDemanda();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Reclamos_AP()
+        public CompletarFechaVencimientoDemanda()
         {
+            FechaSiniestro = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Reclamos_AP Instance
+        public static CompletarFechaVencimientoDemanda Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _FechaSiniestro;
+
+        /// <summary>
+        /// Gets or sets the value of variable FechaSiniestro.
+        /// </summary>
+        [TestVariable("3de5ced6-7a7a-448b-9aeb-eecde99678fd")]
+        public string FechaSiniestro
+        {
+            get { return _FechaSiniestro; }
+            set { _FechaSiniestro = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -61,16 +74,6 @@ namespace SuraClaims.AP
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable NombreLesionado.
-        /// </summary>
-        [TestVariable("9c849daa-a7f3-445d-b9d7-1521b0728a90")]
-        public string NombreLesionado
-        {
-            get { return repo.NombreLesionado; }
-            set { repo.NombreLesionado = value; }
         }
 
 #endregion
@@ -99,24 +102,17 @@ namespace SuraClaims.AP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Hogar.bttn_NuevoReclamo' at Center.", repo.SuraClaims.Hogar.bttn_NuevoReclamoInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Hogar.bttn_NuevoReclamo.Click();
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.JuiciosYMediaciones.txt_FechaSiniestro' and assigning its value to variable 'FechaSiniestro'.", repo.SuraClaims.JuiciosYMediaciones.txt_FechaSiniestroInfo, new RecordItemIndex(0));
+            FechaSiniestro = repo.SuraClaims.JuiciosYMediaciones.txt_FechaSiniestro.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'option_NombreLesionado3' at Center.", repo.option_NombreLesionado3Info, new RecordItemIndex(1));
-            repo.option_NombreLesionado3.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FechaSiniestro' with focus on 'SuraClaims.JuiciosYMediaciones.input_FechaVencimientoDemanda'.", repo.SuraClaims.JuiciosYMediaciones.input_FechaVencimientoDemandaInfo, new RecordItemIndex(1));
+            repo.SuraClaims.JuiciosYMediaciones.input_FechaVencimientoDemanda.PressKeys(FechaSiniestro);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.option_Reclamo' at Center.", repo.SuraClaims.AP_Uber.option_ReclamoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.AP_Uber.option_Reclamo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.txt_NuevoRegistro' at Center.", repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistroInfo, new RecordItemIndex(2));
+            repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistro.Click();
             Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.option_IncapacidadTotal' at Center.", repo.SuraClaims.AP_Uber.option_IncapacidadTotalInfo, new RecordItemIndex(3));
-            //repo.SuraClaims.AP_Uber.option_IncapacidadTotal.Click();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Hogar.txt_NuevaExposicion'", repo.SuraClaims.Hogar.txt_NuevaExposicionInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.SuraClaims.Hogar.txt_NuevaExposicionInfo.WaitForExists(30000);
             
         }
 

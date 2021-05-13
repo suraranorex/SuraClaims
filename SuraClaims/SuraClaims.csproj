@@ -147,6 +147,90 @@
       <UserCode>true</UserCode>
       <id>0eb9b891-b4e9-412b-856d-ce469e5d5d84</id>
     </Compile>
+    <Compile Include="JuiciosyMediaciones\Agregar_ReclamosyPartes.cs">
+      <BoundTo>8ca9b618-8ff0-45f9-b7b8-145cbbdc9ccd</BoundTo>
+      <DependentUpon>Agregar_ReclamosyPartes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba0caaf6-9d28-4da4-ae99-461893ca597a</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\Agregar_ReclamosyPartes.UserCode.cs">
+      <BoundTo>8ca9b618-8ff0-45f9-b7b8-145cbbdc9ccd</BoundTo>
+      <DependentUpon>Agregar_ReclamosyPartes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc197554-af6c-438e-bd35-2ecb1ddc292a</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\Asignar_Estudio.cs">
+      <BoundTo>20ff09be-9c60-409c-bf28-285152a8c169</BoundTo>
+      <DependentUpon>Asignar_Estudio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a2feb17-4ab3-4003-a6ce-39ef355a983d</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\Asignar_Estudio.UserCode.cs">
+      <BoundTo>20ff09be-9c60-409c-bf28-285152a8c169</BoundTo>
+      <DependentUpon>Asignar_Estudio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a1cabdd-42cb-4366-ae08-33b96e702672</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\Asignar_Tramitador.cs">
+      <BoundTo>7cb4af78-026b-48e1-8772-aed67be71d37</BoundTo>
+      <DependentUpon>Asignar_Tramitador.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2b349371-ec4f-47b4-b010-534dc0ead6c2</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\Asignar_Tramitador.UserCode.cs">
+      <BoundTo>7cb4af78-026b-48e1-8772-aed67be71d37</BoundTo>
+      <DependentUpon>Asignar_Tramitador.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0de2fdbb-3bc5-4337-8a26-942197ed0d1c</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\CompletarFechaVencimientoDemanda.cs">
+      <BoundTo>fe3af283-5a10-40fc-abe2-f1cdf7ec9725</BoundTo>
+      <DependentUpon>CompletarFechaVencimientoDemanda.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d471cea-0f0d-4230-836d-016d5d635a3e</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\CompletarFechaVencimientoDemanda.UserCode.cs">
+      <BoundTo>fe3af283-5a10-40fc-abe2-f1cdf7ec9725</BoundTo>
+      <DependentUpon>CompletarFechaVencimientoDemanda.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1edd13dd-533a-46e7-9b3d-34f55110d57e</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\FInalizar_Litigio.cs">
+      <BoundTo>07c2e1f4-6999-4493-a2c2-d17d8f6591d7</BoundTo>
+      <DependentUpon>FInalizar_Litigio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79379bf6-c680-48bb-8af1-6b6ba757aec9</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\FInalizar_Litigio.UserCode.cs">
+      <BoundTo>07c2e1f4-6999-4493-a2c2-d17d8f6591d7</BoundTo>
+      <DependentUpon>FInalizar_Litigio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a88d128f-cc53-41b4-8d71-f31e31110f9a</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\NuevoLitigio.cs">
+      <BoundTo>05a90476-a09a-4cfe-821f-b3838cd7b1b1</BoundTo>
+      <DependentUpon>NuevoLitigio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c21bd0fb-9a08-4b30-8920-142cb03f20c6</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\NuevoLitigio.UserCode.cs">
+      <BoundTo>05a90476-a09a-4cfe-821f-b3838cd7b1b1</BoundTo>
+      <DependentUpon>NuevoLitigio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55243016-c4bd-4631-8964-7c1811ded024</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\ValidarLitigio_SISE_PREPROD.cs">
+      <BoundTo>2b78e37c-cd8b-4771-8490-581b27f2a046</BoundTo>
+      <DependentUpon>ValidarLitigio_SISE_PREPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>237e386a-9512-4a20-a778-0680b7fe2295</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\ValidarLitigio_SISE_PREPROD.UserCode.cs">
+      <BoundTo>2b78e37c-cd8b-4771-8490-581b27f2a046</BoundTo>
+      <DependentUpon>ValidarLitigio_SISE_PREPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee74a765-ba45-4266-acf6-ef415c8c57ac</id>
+    </Compile>
     <Compile Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.cs">
       <BoundTo>f39815eb-df4c-4467-b9eb-12b0e044e9f7</BoundTo>
       <DependentUpon>MenuLateral_DatosFinancieros_Liquidaciones.rxrec</DependentUpon>
@@ -158,6 +242,18 @@
       <DependentUpon>MenuLateral_DatosFinancieros_Liquidaciones.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>64ffd19e-9510-4e63-93b2-b931ff8a5724</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_JuiciosyMediaciones.cs">
+      <BoundTo>db82a624-d45f-439b-8cee-18d15d8f5c6d</BoundTo>
+      <DependentUpon>MenuLateral_JuiciosyMediaciones.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96b088d9-ecc9-4a53-9daf-21819b8f973e</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_JuiciosyMediaciones.UserCode.cs">
+      <BoundTo>db82a624-d45f-439b-8cee-18d15d8f5c6d</BoundTo>
+      <DependentUpon>MenuLateral_JuiciosyMediaciones.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d0653f7-bb9a-44aa-83da-2df100072cb9</id>
     </Compile>
     <Compile Include="Menu\MenuLateral_Supervision_ColaMensajes.cs">
       <BoundTo>78f4c535-a06d-425f-bb67-cf69a260de94</BoundTo>
@@ -1008,10 +1104,57 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>212867f1-80fe-442c-ab5e-44a2e337de82</id>
     </Content>
+    <Content Include="DataSource - Generación Mediaciones y Juicios.xlsx">
+      <Link>DataSource - Generación Mediaciones y Juicios.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>d2115bc8-c867-4f60-b5e2-a8ccd05e625f</id>
+    </Content>
+    <None Include="JuiciosyMediaciones\Agregar_ReclamosyPartes.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>8ca9b618-8ff0-45f9-b7b8-145cbbdc9ccd</id>
+      <recordtableid>024bc0ee-b7bc-44e9-874e-8ee6fc5bba42</recordtableid>
+    </None>
+    <None Include="JuiciosyMediaciones\Asignar_Estudio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>20ff09be-9c60-409c-bf28-285152a8c169</id>
+      <recordtableid>41d1bfba-dcaa-458a-a917-3365f720bdb8</recordtableid>
+    </None>
+    <None Include="JuiciosyMediaciones\Asignar_Tramitador.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>7cb4af78-026b-48e1-8772-aed67be71d37</id>
+      <recordtableid>8cfe90ab-a7b7-45f4-95f2-44f0e6c9965d</recordtableid>
+    </None>
+    <None Include="JuiciosyMediaciones\CompletarFechaVencimientoDemanda.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>fe3af283-5a10-40fc-abe2-f1cdf7ec9725</id>
+      <recordtableid>6d5f8bc9-6ecd-483b-92c2-cf956d608bdb</recordtableid>
+    </None>
+    <None Include="JuiciosyMediaciones\FInalizar_Litigio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>07c2e1f4-6999-4493-a2c2-d17d8f6591d7</id>
+      <recordtableid>9059d729-8a92-4902-9a8e-fa8d215b7d43</recordtableid>
+    </None>
+    <None Include="JuiciosyMediaciones\NuevoLitigio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>05a90476-a09a-4cfe-821f-b3838cd7b1b1</id>
+      <recordtableid>a19f4e8c-aea5-4960-b548-5a21f3380e8c</recordtableid>
+    </None>
+    <None Include="JuiciosyMediaciones\ValidarLitigio_SISE_PREPROD.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>2b78e37c-cd8b-4771-8490-581b27f2a046</id>
+      <recordtableid>3548766d-0c1e-4f3b-9bc0-86878fcbe073</recordtableid>
+    </None>
     <None Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>f39815eb-df4c-4467-b9eb-12b0e044e9f7</id>
       <recordtableid>86bc9978-cbae-46a7-998f-4beecc068775</recordtableid>
+    </None>
+    <None Include="Menu\MenuLateral_JuiciosyMediaciones.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>db82a624-d45f-439b-8cee-18d15d8f5c6d</id>
+      <recordtableid>f00b5f5d-3efc-4768-8bc0-5ced6ff2d76d</recordtableid>
     </None>
     <None Include="Menu\MenuLateral_Supervision_ColaMensajes.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1468,6 +1611,9 @@
     </Folder>
     <Folder Include="Administracion">
       <id>3825f170-2739-4b58-a1f9-e6e4aa6b9877</id>
+    </Folder>
+    <Folder Include="JuiciosyMediaciones">
+      <id>1814e95f-a017-4986-b02c-089d70e9f2ee</id>
     </Folder>
     <Folder Include="SISE">
       <id>86b31819-898d-4c1a-817d-69c8dc215b17</id>

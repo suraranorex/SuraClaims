@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.AP
+namespace SuraClaims.JuiciosyMediaciones
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Reclamos_AP recording.
+    ///The Asignar_Estudio recording.
     /// </summary>
-    [TestModule("94d73442-04fc-4dfc-99b8-de1874570730", ModuleType.Recording, 1)]
-    public partial class Reclamos_AP : ITestModule
+    [TestModule("41d1bfba-dcaa-458a-a917-3365f720bdb8", ModuleType.Recording, 1)]
+    public partial class Asignar_Estudio : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Reclamos_AP instance = new Reclamos_AP();
+        static Asignar_Estudio instance = new Asignar_Estudio();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Reclamos_AP()
+        public Asignar_Estudio()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Reclamos_AP Instance
+        public static Asignar_Estudio Instance
         {
             get { return instance; }
         }
@@ -61,16 +61,6 @@ namespace SuraClaims.AP
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable NombreLesionado.
-        /// </summary>
-        [TestVariable("9c849daa-a7f3-445d-b9d7-1521b0728a90")]
-        public string NombreLesionado
-        {
-            get { return repo.NombreLesionado; }
-            set { repo.NombreLesionado = value; }
         }
 
 #endregion
@@ -99,24 +89,30 @@ namespace SuraClaims.AP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Hogar.bttn_NuevoReclamo' at Center.", repo.SuraClaims.Hogar.bttn_NuevoReclamoInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Hogar.bttn_NuevoReclamo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.arrow_AsignarEstudio' at Center.", repo.SuraClaims.JuiciosYMediaciones.arrow_AsignarEstudioInfo, new RecordItemIndex(0));
+            repo.SuraClaims.JuiciosYMediaciones.arrow_AsignarEstudio.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'option_NombreLesionado3' at Center.", repo.option_NombreLesionado3Info, new RecordItemIndex(1));
-            repo.option_NombreLesionado3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.option_BuscarUsuario' at Center.", repo.SuraClaims.JuiciosYMediaciones.option_BuscarUsuarioInfo, new RecordItemIndex(1));
+            repo.SuraClaims.JuiciosYMediaciones.option_BuscarUsuario.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.option_Reclamo' at Center.", repo.SuraClaims.AP_Uber.option_ReclamoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.AP_Uber.option_Reclamo.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.txt_BuscarAsignacion'", repo.SuraClaims.JuiciosYMediaciones.txt_BuscarAsignacionInfo, new ActionTimeout(20000), new RecordItemIndex(2));
+            repo.SuraClaims.JuiciosYMediaciones.txt_BuscarAsignacionInfo.WaitForExists(20000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Buscar' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_BuscarInfo, new RecordItemIndex(3));
+            repo.SuraClaims.JuiciosYMediaciones.bttn_Buscar.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.option_IncapacidadTotal' at Center.", repo.SuraClaims.AP_Uber.option_IncapacidadTotalInfo, new RecordItemIndex(3));
-            //repo.SuraClaims.AP_Uber.option_IncapacidadTotal.Click();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
+            Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Hogar.txt_NuevaExposicion'", repo.SuraClaims.Hogar.txt_NuevaExposicionInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.SuraClaims.Hogar.txt_NuevaExposicionInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Seleccionar' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_SeleccionarInfo, new RecordItemIndex(5));
+            repo.SuraClaims.JuiciosYMediaciones.bttn_Seleccionar.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.txt_NuevoRegistro'", repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistroInfo, new ActionTimeout(20000), new RecordItemIndex(6));
+            repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistroInfo.WaitForExists(20000);
             
         }
 

@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.AP
+namespace SuraClaims.JuiciosyMediaciones
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Reclamos_AP recording.
+    ///The FInalizar_Litigio recording.
     /// </summary>
-    [TestModule("94d73442-04fc-4dfc-99b8-de1874570730", ModuleType.Recording, 1)]
-    public partial class Reclamos_AP : ITestModule
+    [TestModule("9059d729-8a92-4902-9a8e-fa8d215b7d43", ModuleType.Recording, 1)]
+    public partial class FInalizar_Litigio : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Reclamos_AP instance = new Reclamos_AP();
+        static FInalizar_Litigio instance = new FInalizar_Litigio();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Reclamos_AP()
+        public FInalizar_Litigio()
         {
+            RAJ = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Reclamos_AP Instance
+        public static FInalizar_Litigio Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _RAJ;
+
+        /// <summary>
+        /// Gets or sets the value of variable RAJ.
+        /// </summary>
+        [TestVariable("877abcbc-8703-4c4f-bdf8-60ec704b2de4")]
+        public string RAJ
+        {
+            get { return _RAJ; }
+            set { _RAJ = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -61,16 +74,6 @@ namespace SuraClaims.AP
         {
             get { return repo.Ambiente; }
             set { repo.Ambiente = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable NombreLesionado.
-        /// </summary>
-        [TestVariable("9c849daa-a7f3-445d-b9d7-1521b0728a90")]
-        public string NombreLesionado
-        {
-            get { return repo.NombreLesionado; }
-            set { repo.NombreLesionado = value; }
         }
 
 #endregion
@@ -99,24 +102,22 @@ namespace SuraClaims.AP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Hogar.bttn_NuevoReclamo' at Center.", repo.SuraClaims.Hogar.bttn_NuevoReclamoInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Hogar.bttn_NuevoReclamo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Actualizar' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_ActualizarInfo, new RecordItemIndex(0));
+            repo.SuraClaims.JuiciosYMediaciones.bttn_Actualizar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'option_NombreLesionado3' at Center.", repo.option_NombreLesionado3Info, new RecordItemIndex(1));
-            repo.option_NombreLesionado3.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacion'", repo.SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacionInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacionInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.JuiciosYMediaciones.txt_NumeroRAJ' and assigning its value to variable 'RAJ'.", repo.SuraClaims.JuiciosYMediaciones.txt_NumeroRAJInfo, new RecordItemIndex(2));
+            RAJ = repo.SuraClaims.JuiciosYMediaciones.txt_NumeroRAJ.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.option_Reclamo' at Center.", repo.SuraClaims.AP_Uber.option_ReclamoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.AP_Uber.option_Reclamo.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "User", "El número de RAJ emitido es", new RecordItemIndex(3));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.option_IncapacidadTotal' at Center.", repo.SuraClaims.AP_Uber.option_IncapacidadTotalInfo, new RecordItemIndex(3));
-            //repo.SuraClaims.AP_Uber.option_IncapacidadTotal.Click();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "User", RAJ, new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Hogar.txt_NuevaExposicion'", repo.SuraClaims.Hogar.txt_NuevaExposicionInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.SuraClaims.Hogar.txt_NuevaExposicionInfo.WaitForExists(30000);
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(5));
             
         }
 

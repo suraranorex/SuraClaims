@@ -116,8 +116,8 @@ namespace SuraClaims.AP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_NombreLesionado3' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_NombreLesionado3Info, new RecordItemIndex(2));
-            repo.SuraClaims.Motor.InformacionBasica.option_NombreLesionado3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'option_NombreLesionado3' at Center.", repo.option_NombreLesionado3Info, new RecordItemIndex(2));
+            repo.option_NombreLesionado3.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AP_Uber.option_Reclamo' at Center.", repo.SuraClaims.AP_Uber.option_ReclamoInfo, new RecordItemIndex(3));
@@ -138,8 +138,8 @@ namespace SuraClaims.AP
             //repo.SuraClaims.Motor.InformacionBasica.option_Reclamante.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_NombreLesionado3' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_NombreLesionado3Info, new RecordItemIndex(8));
-            //repo.SuraClaims.Motor.InformacionBasica.option_NombreLesionado3.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'option_NombreLesionado3' at Center.", repo.option_NombreLesionado3Info, new RecordItemIndex(8));
+            //repo.option_NombreLesionado3.Click();
             //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_NombreLesionado4' at Center.", repo.SuraClaims.Motor.InformacionBasica.option_NombreLesionado4Info, new RecordItemIndex(9));

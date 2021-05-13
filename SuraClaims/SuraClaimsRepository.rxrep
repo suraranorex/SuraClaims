@@ -33,6 +33,7 @@ name="SuraClaimsRepository">
 				id="c3298ed5-b4f7-43b3-ae07-971152ae3f41"
 				name="bttn_Siguiente"
 				refimgid="c36bb20c-9b09-4d7d-b9d6-445ea3594c2e"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext~'Siguiente']
 				</item>
@@ -48,6 +49,7 @@ name="SuraClaimsRepository">
 					id="76d139fe-c643-427d-9a33-6761376b1c93"
 					name="bttn_NuevoSiniestro"
 					refimgid="e9688196-f0d5-4c10-a9f4-fe2f4c2d2778"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Nuevo siniestro']
 					</item>
@@ -57,6 +59,7 @@ name="SuraClaimsRepository">
 					id="78f89f2c-9374-4308-a878-7cc2417b5120"
 					name="txtbox_NumeroDePoliza"
 					refimgid="dbff71f1-3d82-40e9-b165-2dd1448fdbd1"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input
 					</item>
@@ -66,6 +69,7 @@ name="SuraClaimsRepository">
 					id="985e8fcd-e01a-41a8-843c-47f4e1775984"
 					name="Copy_of_txtbox_NumeroDePoliza"
 					refimgid="dbff71f1-3d82-40e9-b165-2dd1448fdbd1"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'N° de póliza']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -75,6 +79,7 @@ name="SuraClaimsRepository">
 					id="fcf4cc11-38bb-4cf7-bc43-2c0c9abdf3d8"
 					name="bttn_Buscar"
 					refimgid="1c8d6e0f-7cdf-42b9-a26c-3e84dc1da7eb"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Search']
 					</item>
@@ -84,6 +89,7 @@ name="SuraClaimsRepository">
 					id="3a1a7413-4d19-4667-b7d8-cea409bdb6b8"
 					name="txtbox_FechaSiniestro"
 					refimgid="308e8809-d919-452c-b9bf-dd48e82d9988"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input
 					</item>
@@ -93,6 +99,7 @@ name="SuraClaimsRepository">
 					id="dc50a89e-5557-4a2a-88a7-4e1fcf3026d3"
 					name="Copy_of_txtbox_FechaSiniestro"
 					refimgid="308e8809-d919-452c-b9bf-dd48e82d9988"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id~'Claim_LossDate']//span[@innertext~'Fecha del siniestro']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -102,6 +109,7 @@ name="SuraClaimsRepository">
 					id="d6b84e1f-02e9-4f4b-a1fe-8d9006aca8de"
 					name="txtbox_HoraSiniestro"
 					refimgid="0adcd3dc-8ee5-4427-9c72-56459fb7aa97"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Hora']/../..//input[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Claim_lossTime_Sura-inputEl']
 					</item>
@@ -111,6 +119,7 @@ name="SuraClaimsRepository">
 					id="ee0ebe74-dabb-40c1-9acf-961e00d5e13a"
 					name="Copy_of_txtbox_HoraSiniestro"
 					refimgid="0adcd3dc-8ee5-4427-9c72-56459fb7aa97"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Hora' and @data-tabindexsaved='True']
 					</item>
@@ -120,6 +129,7 @@ name="SuraClaimsRepository">
 					id="f33ad239-e420-4f40-9904-b2c4e4eed94f"
 					name="Copy_of_txtbox_TipoDeProducto"
 					refimgid="281adcb9-d255-477a-8601-b58b1a4d14ee"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -129,6 +139,7 @@ name="SuraClaimsRepository">
 					id="153fc053-e58c-4a46-afdd-7c8cb6e28250"
 					name="txtbox_TipoDeProducto"
 					refimgid="281adcb9-d255-477a-8601-b58b1a4d14ee"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de Producto']/../..//input
 					</item>
@@ -145,6 +156,7 @@ name="SuraClaimsRepository">
 					id="c2f759de-013e-4187-9a0b-5d669d63f1f2"
 					name="bttnMenu_Siniestro"
 					refimgid="22ab466c-72d0-4d63-a189-4d5025a41264"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//a[#'TabBar:ClaimTab']/span[@id='TabBar:ClaimTab-btnWrap']
 					</item>
@@ -154,6 +166,7 @@ name="SuraClaimsRepository">
 					id="38eacd45-5aca-4853-94e2-326cf091c072"
 					name="bttnEscritorio"
 					refimgid="22ab466c-72d0-4d63-a189-4d5025a41264"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext='Escritorio']
 					</item>
@@ -163,6 +176,7 @@ name="SuraClaimsRepository">
 					id="55d173f7-b63d-4210-9765-adf7a359ec6a"
 					name="MenuSup_NºDeSiniestro"
 					refimgid="4623c041-0538-42af-9e1f-995936f75566"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext='N.º de siniestro:']
 					</item>
@@ -172,6 +186,7 @@ name="SuraClaimsRepository">
 					id="2f0e0337-0eee-4be9-9561-963ac57aa818"
 					name="txt_BuscarNroSiniestro"
 					refimgid="f5f351fc-7d8a-417a-a36a-ba5660b87ce0"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//input[@name='TabBar:ClaimTab:ClaimTab_FindClaim']
 					</item>
@@ -181,6 +196,7 @@ name="SuraClaimsRepository">
 					id="62ae6e5b-b948-4fcc-8600-e2e8bcb2f727"
 					name="IconLupaBuscarSiniestro"
 					refimgid="0279bde5-75c5-4164-8a52-de211b69cfa3"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[@id='TabBar:ClaimTab:ClaimTab_FindClaim_Button']
 					</item>
@@ -190,6 +206,7 @@ name="SuraClaimsRepository">
 					id="8935aa65-463c-435f-aca8-661530eddabc"
 					name="bttn_MenuAdministracion"
 					refimgid="883dbce5-e8e2-4d3d-8b0e-3f71fee7a7a7"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//a[#'TabBar:AdminTab']//span[@innertext='Adminisración']
 					</item>
@@ -208,6 +225,7 @@ name="SuraClaimsRepository">
 					id="21a7821b-1e55-425e-b3dc-2008f565e7c9"
 					name="txt_NumeroSiniestro"
 					refimgid="ccb8510e-f0a6-4deb-b94c-65caa58c6d9b"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'NewClaimSaved-tbody']//label[@innertext&gt;'el siniestro']
 					</item>
@@ -228,6 +246,7 @@ name="SuraClaimsRepository">
 					name="menuLateral_Acciones"
 					refimgid="82a6a6f7-0acf-4a6d-aa94-0fbb1d97b037"
 					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//span[#'Claim:ClaimMenuActions-btnEl']/span[@innertext='cciones']"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[#'Claim:ClaimMenuActions-btnEl']/span[@innertext='cciones']
 					</item>
@@ -237,6 +256,7 @@ name="SuraClaimsRepository">
 					id="adab1433-da8f-48f7-b04d-9eb3eab7083c"
 					name="submenuLateral_LiquiOrdenDePago"
 					refimgid="64e75718-e336-425c-8454-ec95c0b7dada"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Liquidaciones / Orden de']
 					</item>
@@ -246,6 +266,7 @@ name="SuraClaimsRepository">
 					id="2bec988b-1334-49c1-95ff-1676ca49a01d"
 					name="input_Proveedor"
 					refimgid="e11f1e58-377f-4c66-a531-050128536d96"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//input[@name~'ProviderNumberSura']
 					</item>
@@ -255,6 +276,7 @@ name="SuraClaimsRepository">
 					id="046380b3-86f3-4260-9725-a8223c285a00"
 					name="menu_PlanDeTrabajo"
 					refimgid="a54d336c-040f-43b2-a2a0-8bf9c9d606ca"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Plan de trabajo']
 					</item>
@@ -264,8 +286,19 @@ name="SuraClaimsRepository">
 					id="d4f70601-6404-497e-9fb2-46160c6e6728"
 					name="menu_DatosFinancieros"
 					refimgid="a54d336c-040f-43b2-a2a0-8bf9c9d606ca"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Datos financieros']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="43058c42-13d7-40df-b005-b39fe517bc9a"
+					name="menu_JuiciosyMediaciones"
+					refimgid="a54d336c-040f-43b2-a2a0-8bf9c9d606ca"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Juicios y Mediaciones']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -273,6 +306,7 @@ name="SuraClaimsRepository">
 					id="bf179f07-d9fe-4560-9400-31feb7032340"
 					name="title_PlanDeTrabajo"
 					refimgid="b7236de6-ee95-4d3a-92b6-4c05ab5427b6"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//span[@innertext='Plan de trabajo']
 					</item>
@@ -282,6 +316,7 @@ name="SuraClaimsRepository">
 					id="9dd2a238-7c9f-4a05-b410-025572350281"
 					name="menu_Supervision"
 					refimgid="4daea98a-abfd-44b5-b50d-16fed041ce08"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'Admin:MenuLinks-body']//span[@innertext='Supervisión']
 					</item>
@@ -291,6 +326,7 @@ name="SuraClaimsRepository">
 					id="85006519-cd73-425a-9a5d-f7d0c7474e04"
 					name="submenuLateral_ColasDeMensajes"
 					refimgid="f5a766b9-ac15-41e5-a5d1-be00f0091f6e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'Admin:MenuLinks-body']//span[@innertext='Colas de mensajes']
 					</item>
@@ -301,6 +337,7 @@ name="SuraClaimsRepository">
 				id="3207f4a1-f68b-4634-920a-5fcc9f25056a"
 				name="bttn_CerrarSesion"
 				refimgid="c3255885-8b8e-4e76-a16f-b5edc690faab"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'TabBar:LogoutTabBarLink']/?/?/span[@innertext~'Cerrar sesión']
 				</item>
@@ -310,6 +347,7 @@ name="SuraClaimsRepository">
 				id="6fab9c41-d337-42fb-a1ea-ecc3468f2ed8"
 				name="bttn_Configuracion"
 				refimgid="a5b91d82-3053-4605-88ee-8b322bd658e4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[#':TabLinkMenuButton-btnEl']/span[@enabled='True']
 				</item>
@@ -326,6 +364,7 @@ name="SuraClaimsRepository">
 					id="ecb65b3c-31cd-4364-abfb-4bcb9fe19e7c"
 					name="txtbox_Usuario"
 					refimgid="5369a43d-a214-4c24-8428-3f3a26519957"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'Login-tbody']/tr/td/?/?/table/tbody/tr/td//input[@name~'username']
 					</item>
@@ -335,6 +374,7 @@ name="SuraClaimsRepository">
 					id="22679ef2-7f1d-405d-b284-3cafb48d2a10"
 					name="txtbox_Contrasenia"
 					refimgid="69ae4632-a120-401f-ba07-0acd7d99c754"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'Login-tbody']/tr/td/?/?/table/tbody/tr/td//input[@name~'password']
 					</item>
@@ -344,6 +384,7 @@ name="SuraClaimsRepository">
 					id="05617fc4-5393-4a4a-b811-d75312155e34"
 					name="bttn_IniciarSesion"
 					refimgid="1ae985ab-2488-4371-9444-14fec6be8b1c"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'Login-tbody']/tr//table/tbody/tr/td//table/?/?/tr/td/a//span[@innertext='Iniciar sesión' or @innertext='Log In']
 					</item>
@@ -364,6 +405,7 @@ name="SuraClaimsRepository">
 				id="01d4d052-881c-410c-8cc4-fb5de403027e"
 				name="txt_BuscarOCrearPoliza"
 				refimgid="fe5dde37-2a89-448c-8fb5-df3989ba92e3"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Buscar o crear']
 				</item>
@@ -373,6 +415,7 @@ name="SuraClaimsRepository">
 				id="9c48260c-c5c0-4e8c-8513-8be1165fcf02"
 				name="txt_LiquidacionesOrdenPago"
 				refimgid="fe5dde37-2a89-448c-8fb5-df3989ba92e3"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Liquidaciones']
 				</item>
@@ -382,6 +425,7 @@ name="SuraClaimsRepository">
 				id="8504d5d5-d9a1-4d3f-a130-6b26034cdebf"
 				name="txt_DetalleOrdenPago"
 				refimgid="fe5dde37-2a89-448c-8fb5-df3989ba92e3"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalles de la Orden de pago']
 				</item>
@@ -391,6 +435,7 @@ name="SuraClaimsRepository">
 				id="2988d8b7-7581-4b52-a848-8daadefc9568"
 				name="txt_Paso2"
 				refimgid="dde84747-4cdb-489e-b975-cf31c8d67bdc"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']
 				</item>
@@ -400,6 +445,7 @@ name="SuraClaimsRepository">
 				id="73026996-4d36-47a0-8bbb-c3f067a16c68"
 				name="txt_PasoGenerico"
 				refimgid="dde84747-4cdb-489e-b975-cf31c8d67bdc"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']
 				</item>
@@ -409,6 +455,7 @@ name="SuraClaimsRepository">
 				id="2e7d84e4-de88-452a-a572-56dae0b4b474"
 				name="txt_Paso3"
 				refimgid="c7d580fb-164c-42d0-998c-470d3070c936"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext~'Paso 3']
 				</item>
@@ -418,6 +465,7 @@ name="SuraClaimsRepository">
 				id="1a3dc6c0-e0c6-4fff-87b3-f743f6afc874"
 				name="txt_Paso4"
 				refimgid="c7d580fb-164c-42d0-998c-470d3070c936"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']
 				</item>
@@ -427,6 +475,7 @@ name="SuraClaimsRepository">
 				id="cec9a062-c411-4cf9-a674-74647c305021"
 				name="txt_Paso5"
 				refimgid="c7d580fb-164c-42d0-998c-470d3070c936"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 5']
 				</item>
@@ -436,6 +485,7 @@ name="SuraClaimsRepository">
 				id="b048d005-8754-459b-bf40-df304392da0c"
 				name="tagPolizaBuscada"
 				refimgid="9d777ca5-2740-46a9-9961-ba5fd3617732"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@innertext~'[0-9]+']
 				</item>
@@ -445,6 +495,7 @@ name="SuraClaimsRepository">
 				id="08607f5b-eec7-4bcf-9f37-dd76390a50f1"
 				name="txt_Verificada"
 				refimgid="4e99a558-82ef-40ad-a67d-c7325a2bee6c"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='Verificada' or @innertext='No Disponible']
 				</item>
@@ -454,6 +505,7 @@ name="SuraClaimsRepository">
 				id="1b8a81a2-06db-4cac-911a-5495840765df"
 				name="tagNombreAsegurado"
 				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table[@class='x-grid-item']/?/?/tr/td[3]/div[@innertext~'[A-Z]+']
 				</item>
@@ -463,6 +515,7 @@ name="SuraClaimsRepository">
 				id="f3896037-62b3-465d-9d32-08147571edd7"
 				name="txt_Actividades"
 				refimgid="c3255885-8b8e-4e76-a16f-b5edc690faab"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Actividades']
 				</item>
@@ -472,6 +525,7 @@ name="SuraClaimsRepository">
 				id="71fc8611-5d5e-4897-ba0b-3f59225faa31"
 				name="txt_Sura"
 				refimgid="21ee44ae-9c5a-45aa-93e2-4f8ceba4ae21"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Sura']
 				</item>
@@ -494,6 +548,7 @@ name="SuraClaimsRepository">
 					id="3fc3c9b4-4b30-498a-8dbf-9b62d15d0f67"
 					name="bttn_SelecNombre"
 					refimgid="9025ab19-3d88-47da-85c3-0526b14a735b"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id~'ReportedBy_Name-trigger-picker']
 					</item>
@@ -503,6 +558,7 @@ name="SuraClaimsRepository">
 					id="5d394bc0-6aa5-4a98-9f0e-1bc24005d87b"
 					name="option_Nombre"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+' and @innertext!='[a-z]+']
 					</item>
@@ -512,6 +568,7 @@ name="SuraClaimsRepository">
 					id="ea20de49-d908-46e0-99ce-f059b2f30916"
 					name="Select_NombreAsegurado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
 					</item>
@@ -521,6 +578,7 @@ name="SuraClaimsRepository">
 					id="1f9b56b2-ba34-4a15-88ea-300bc57c8425"
 					name="option_tipo"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~'[A-Z][a-z]+']
 					</item>
@@ -530,6 +588,7 @@ name="SuraClaimsRepository">
 					id="7a665bc3-fc08-469a-9435-3a79f707b740"
 					name="option_Banco"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext=$Banco]
 					</item>
@@ -539,6 +598,7 @@ name="SuraClaimsRepository">
 					id="6919e5a5-b357-4a6d-85f3-20cb9193c1a6"
 					name="optionLI_NombreAsegurado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
 					</item>
@@ -548,6 +608,7 @@ name="SuraClaimsRepository">
 					id="edb49e09-de29-41cc-8548-bf4c0b63651b"
 					name="option_RelacionAsegurado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext='Empleado']
 					</item>
@@ -557,17 +618,9 @@ name="SuraClaimsRepository">
 					id="78aa9580-7cd0-4b94-92bf-82cfe95f4da0"
 					name="optionLI_NombreNOasegurado"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext!=$NombreAsegurado]
-					</item>
-					<item
-					addcaps="unknown,webelement,litag"
-					capname="spantag"
-					id="4fd71e6e-b10b-4348-a35d-f02ee94ebbc5"
-					name="option_NombreLesionado3"
-					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//span[@innertext~$NombreLesionado]
 					</item>
 					<item
 					addcaps="unknown,webelement,litag"
@@ -575,6 +628,7 @@ name="SuraClaimsRepository">
 					id="5e1e470c-8efc-4249-a36f-8a56de32b0c5"
 					name="option_NombreLesionado4"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~$NombreLesionado]
 					</item>
@@ -584,6 +638,7 @@ name="SuraClaimsRepository">
 					id="d9755b7d-005f-478c-b7b7-49964393e711"
 					name="option_ReclamanteUber"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~'UBER']
 					</item>
@@ -593,6 +648,7 @@ name="SuraClaimsRepository">
 					id="02c82e08-e3e4-483d-8c60-21f2c00cb760"
 					name="option_Reclamante"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~$NombreAsegurado]
 					</item>
@@ -602,6 +658,7 @@ name="SuraClaimsRepository">
 					id="656a0a1f-e952-4baa-a237-270d71364d0f"
 					name="Cantidad"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~'[0-9]+']
 					</item>
@@ -611,6 +668,7 @@ name="SuraClaimsRepository">
 					id="044f369c-13da-48a0-bed5-afb2e0703fda"
 					name="SelectProvinciaNinguna"
 					refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext~'ninguna']
 					</item>
@@ -620,6 +678,7 @@ name="SuraClaimsRepository">
 					id="d27a1200-75d1-4131-99ad-e02798c57322"
 					name="txtbox_RelacionConAsegurado"
 					refimgid="d3468e2a-5ca8-4d37-a054-50517aae83f9"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input
 					</item>
@@ -629,6 +688,7 @@ name="SuraClaimsRepository">
 					id="db98b2a7-6fc7-4ffa-9fe8-a9e62b9942d9"
 					name="Copy_of_txtbox_RelacionConAsegurado"
 					refimgid="d3468e2a-5ca8-4d37-a054-50517aae83f9"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -638,6 +698,7 @@ name="SuraClaimsRepository">
 					id="a99b776e-d1aa-4846-b3d6-19df6bdd41fd"
 					name="txtbox_CodigoDeArea"
 					refimgid="31a867e7-ee9f-4f6a-8906-1d969685244c"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input
 					</item>
@@ -647,6 +708,7 @@ name="SuraClaimsRepository">
 					id="d03996c3-d6b3-40bb-b3af-79436133b54d"
 					name="Copy_of_txtbox_CodigoDeArea"
 					refimgid="31a867e7-ee9f-4f6a-8906-1d969685244c"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Código de Area']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -656,6 +718,7 @@ name="SuraClaimsRepository">
 					id="a4ab78a7-c8af-4bc6-a395-dc794088b05d"
 					name="txtbox_Numero"
 					refimgid="ed8251a8-869d-42fe-a64d-795ddb901189"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input
 					</item>
@@ -665,6 +728,7 @@ name="SuraClaimsRepository">
 					id="080c75be-4c3d-46b3-a259-5f7439a28544"
 					name="Copy_of_txtbox_Numero"
 					refimgid="ed8251a8-869d-42fe-a64d-795ddb901189"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Número']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -674,6 +738,7 @@ name="SuraClaimsRepository">
 					id="d989b65f-a7ac-4cec-be1c-4d14ea5188f5"
 					name="txtbox_TelefonoPrincipal"
 					refimgid="6463bc6f-6d64-4efa-8ecd-1015b9f6104c"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input
 					</item>
@@ -683,6 +748,7 @@ name="SuraClaimsRepository">
 					id="a1d06a7f-9012-483e-b35c-503506f24f48"
 					name="txtbox_Nombre"
 					refimgid="6463bc6f-6d64-4efa-8ecd-1015b9f6104c"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input
 					</item>
@@ -692,6 +758,7 @@ name="SuraClaimsRepository">
 					id="075de9d9-5993-4e58-8214-0baa4cd55b6b"
 					name="Copy_of_txtbox_TelefonoPrincipal"
 					refimgid="6463bc6f-6d64-4efa-8ecd-1015b9f6104c"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Teléfono principal']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -701,6 +768,7 @@ name="SuraClaimsRepository">
 					id="9cf937cc-b302-4868-853e-525f8e1bb177"
 					name="txtbox_CorreoElectronico"
 					refimgid="03f77c16-be55-41ea-9d30-1ff7e6df1965"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input
 					</item>
@@ -710,6 +778,7 @@ name="SuraClaimsRepository">
 					id="928c7699-e911-48b8-bb0a-77265c91069b"
 					name="Copy_of_txtbox_CorreoElectronico"
 					refimgid="03f77c16-be55-41ea-9d30-1ff7e6df1965"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Correo electrónico']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -717,6 +786,7 @@ name="SuraClaimsRepository">
 					capname="inputtag"
 					id="4a1fc9dd-e8a7-4952-ad3b-7d3b060c3200"
 					name="Copy_of_txtbox_Nombre"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext='Nombre']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -726,6 +796,7 @@ name="SuraClaimsRepository">
 					id="5185a46f-3675-4d49-ba58-537bf34efa00"
 					name="lbl_ResumenDeSiniestro"
 					refimgid="e4d84bfa-141a-448b-8621-8adb4d34035a"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'ClaimSummary-tbody']//span[@innertext='Resumen']
 					</item>
@@ -743,6 +814,7 @@ name="SuraClaimsRepository">
 					id="4c8adb8d-c1d8-4274-a6bb-a84fc8e175d1"
 					name="txtbox_DetalleSiniestro"
 					refimgid="c9915539-dbd0-4c01-a8c7-261fa135f6aa"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea
 					</item>
@@ -752,6 +824,7 @@ name="SuraClaimsRepository">
 					id="df3ae0bc-2366-43ab-bdf6-37eb0c7bf65b"
 					name="Copy_of_txtbox_DetalleSiniestro"
 					refimgid="c9915539-dbd0-4c01-a8c7-261fa135f6aa"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del siniestro']/../..//textarea[@data-tabindexsaved='True']
 					</item>
@@ -761,6 +834,7 @@ name="SuraClaimsRepository">
 					id="4fcb4162-75be-4435-b0b6-4ee8832e102b"
 					name="txtbox_CausaSiniestro"
 					refimgid="4ca23430-a1e9-4d3f-a93a-66bf20e531c0"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Causa del siniestro']/../..//input
 					</item>
@@ -770,6 +844,7 @@ name="SuraClaimsRepository">
 					id="1dc5f4d0-af4e-4f83-9e15-aac00b8f4375"
 					name="Copy_of_txtbox_CausaSiniestro"
 					refimgid="4ca23430-a1e9-4d3f-a93a-66bf20e531c0"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Causa del siniestro']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -779,6 +854,7 @@ name="SuraClaimsRepository">
 					id="b29c07b8-bd0f-4f25-8d63-5177237e9123"
 					name="txtbox_Subrogacion"
 					refimgid="f862d454-7830-48ac-a761-a52cb66401b6"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input
 					</item>
@@ -788,6 +864,7 @@ name="SuraClaimsRepository">
 					id="4d834871-fcf9-4260-af42-270cad12e9a5"
 					name="Copy_of_txtbox_Subrogacion"
 					refimgid="f862d454-7830-48ac-a761-a52cb66401b6"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Subrogación']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -797,6 +874,7 @@ name="SuraClaimsRepository">
 					id="bed1e90d-e954-4301-92a4-457cff0a519e"
 					name="txtbox_TipoCalle"
 					refimgid="e31f0596-4e36-4362-8898-9905f5f14206"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Tipo de calle']/../..//input
 					</item>
@@ -806,6 +884,7 @@ name="SuraClaimsRepository">
 					id="7fb057aa-2e20-4ad6-9f2b-926ff2cfe39d"
 					name="Copy_of_txtbox_TipoCalle"
 					refimgid="e31f0596-4e36-4362-8898-9905f5f14206"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Tipo de calle']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -815,6 +894,7 @@ name="SuraClaimsRepository">
 					id="1a3a742a-7520-4175-8f1a-7e0d6847f282"
 					name="bttn_ValidarDireccion"
 					refimgid="a0f8a37d-018a-46cb-8459-e4e570411cf6"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Validar Dirección']
 					</item>
@@ -824,6 +904,7 @@ name="SuraClaimsRepository">
 					id="ab5d2ac5-06be-405d-bc1a-ca9ae6a2133f"
 					name="txtbox_Provincia"
 					refimgid="39908d53-02e7-4a0e-819c-b7c3a3d3d497"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Provincia']/../..//input
 					</item>
@@ -833,6 +914,7 @@ name="SuraClaimsRepository">
 					id="16c8ce15-265a-4525-b8a8-7005f5f8b728"
 					name="Copy_of_txtbox_Provincia"
 					refimgid="39908d53-02e7-4a0e-819c-b7c3a3d3d497"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Provincia']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -842,6 +924,7 @@ name="SuraClaimsRepository">
 					id="7c7d13ef-b90b-4e40-b00f-1ea4989e5b6a"
 					name="txtbox_Localidad"
 					refimgid="c591b079-5c6e-4f12-b223-c11aeab9c105"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Localidad']/../..//input
 					</item>
@@ -851,6 +934,7 @@ name="SuraClaimsRepository">
 					id="38473868-8976-46c2-9c53-4f74c148ee1e"
 					name="Copy_of_txtbox_Localidad"
 					refimgid="c591b079-5c6e-4f12-b223-c11aeab9c105"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Localidad']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -860,6 +944,7 @@ name="SuraClaimsRepository">
 					id="9dfb09a0-3c08-4e15-b88a-bf4705c9b229"
 					name="txtbox_Calle"
 					refimgid="17b01647-2a4d-41bd-9f30-4db6f2438938"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Calle']/../..//input
 					</item>
@@ -869,6 +954,7 @@ name="SuraClaimsRepository">
 					id="2abf30ee-801e-4f79-b94f-700e15f25f1e"
 					name="Copy_of_txtbox_Calle"
 					refimgid="17b01647-2a4d-41bd-9f30-4db6f2438938"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Calle']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -878,6 +964,7 @@ name="SuraClaimsRepository">
 					id="1d895c55-f833-4304-9521-c258dd206f7d"
 					name="txtbox_Numero"
 					refimgid="2c002f64-4a92-49ce-a093-56873ba78373"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input
 					</item>
@@ -887,6 +974,7 @@ name="SuraClaimsRepository">
 					id="fac0d96f-b615-4181-a05d-dcefe34122a9"
 					name="Copy_of_txtbox_Numero"
 					refimgid="2c002f64-4a92-49ce-a093-56873ba78373"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Número']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -896,6 +984,7 @@ name="SuraClaimsRepository">
 					id="19dabf6a-9982-4107-97a1-03e952b8f20b"
 					name="tag_Vehiculo"
 					refimgid="5d3f6979-4b0a-47cb-88cf-cbf2c85d19d9"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id~'FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:VehicleIncidentIterator:0:VehicleIncidentDV:VehicleName-inputEl']
 					</item>
@@ -905,6 +994,7 @@ name="SuraClaimsRepository">
 					id="0e4d650f-31f8-44ba-b340-2006bc69d5ec"
 					name="bttn_AgregarConductor"
 					refimgid="cba84826-2d26-4546-9ed5-2da565050775"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Agregar conductor']
 					</item>
@@ -914,17 +1004,19 @@ name="SuraClaimsRepository">
 					id="c54ad6a2-c1b8-4db2-9cb1-5143ffa0114b"
 					name="txt_RelacionConPropietario_Asegurado"
 					refimgid="3b50a4ba-e70c-4787-91aa-5a219c0f6349"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Relación con propietario']/../..//div[@innertext='Asegurado']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
-					capname="spantag"
+					capname="unknown"
 					id="7636f409-94e8-4277-a37f-64392d64bb35"
 					name="txt_DetalleDeLosLesionados"
 					refimgid="1151f289-da3c-4ed3-8124-7fae6788ad9e"
+					robustPath=""
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext='Detalle de los lesionados']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -932,6 +1024,7 @@ name="SuraClaimsRepository">
 					id="095dc31d-7f40-4650-a936-f1d5cd82bbf8"
 					name="bttn_Aceptar"
 					refimgid="d4eefe8a-d067-49c5-a278-f7175e216971"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
 					</item>
@@ -941,6 +1034,7 @@ name="SuraClaimsRepository">
 					id="173e0b5c-a7dc-4f43-adca-56a5375fdafb"
 					name="txt_DetalleDelVehiculoAsegurado"
 					refimgid="ca86c8e6-8f5d-4f49-ad6f-9567fd6aa086"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext~'Detalle del vehículo asegurado']
 					</item>
@@ -950,6 +1044,7 @@ name="SuraClaimsRepository">
 					id="edab80cb-6290-4fa0-8b39-ee5d6a2f2ce2"
 					name="lbl_DescripcionTipoSiniestro"
 					refimgid="113f6b58-96cf-42d5-ab31-2e5f78a607f8"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Descripci&#243;n del tipo de s']
 					</item>
@@ -959,6 +1054,7 @@ name="SuraClaimsRepository">
 					id="839343c3-e47d-4a4a-8e3c-dd59c155b77d"
 					name="txt_Danios"
 					refimgid="ad86ed70-66e3-4a0b-8c4f-c34330c982ad"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']
 					</item>
@@ -968,6 +1064,7 @@ name="SuraClaimsRepository">
 					id="2f93994b-8078-47a8-8628-5319af1c1fc7"
 					name="cb_Danios"
 					refimgid="1bcacb2e-7e25-4fcc-8abf-3854ae147759"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']/../../..//label[@innertext=$DANIOS]/../input[@type='button']
 					</item>
@@ -977,6 +1074,7 @@ name="SuraClaimsRepository">
 					id="984b6475-4b7f-4634-8d5b-f60db022575c"
 					name="cb_Danios_No"
 					refimgid="1bcacb2e-7e25-4fcc-8abf-3854ae147759"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']/../../..//label[@innertext='No']/../input[@type='button']
 					</item>
@@ -986,6 +1084,7 @@ name="SuraClaimsRepository">
 					id="f603ff05-8b4a-4355-be5f-3fd9dbc16134"
 					name="txt_Gravedad"
 					refimgid="9450c473-1da7-4fd8-badd-10d1928445ae"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Gravedad']
 					</item>
@@ -995,6 +1094,7 @@ name="SuraClaimsRepository">
 					id="bdbaca66-2bfc-4d07-adcb-80bc71f7e7a5"
 					name="txtbox_Gravedad"
 					refimgid="9450c473-1da7-4fd8-badd-10d1928445ae"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Gravedad']/../..//input
 					</item>
@@ -1004,6 +1104,7 @@ name="SuraClaimsRepository">
 					id="5bf4b1dc-68b5-479d-a16f-d181d9ad399d"
 					name="Copy_of_txtbox_Gravedad"
 					refimgid="9450c473-1da7-4fd8-badd-10d1928445ae"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Gravedad']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -1013,6 +1114,7 @@ name="SuraClaimsRepository">
 					id="d06f7bb5-a6b3-4b75-86ca-8b7ec86a01f3"
 					name="bttn_Agregar"
 					refimgid="6ce4ec98-2590-4965-9f24-d4302fb43fc3"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']
 					</item>
@@ -1022,6 +1124,7 @@ name="SuraClaimsRepository">
 					id="c5cbc745-4d0f-4600-a3a9-4c9f09a8d57a"
 					name="bttn_AgregarConductorUber"
 					refimgid="6ce4ec98-2590-4965-9f24-d4302fb43fc3"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Agregar conductor']
 					</item>
@@ -1031,6 +1134,7 @@ name="SuraClaimsRepository">
 					id="f375a3e3-5c3e-4aae-945b-cd166c41b968"
 					name="tag_Descripcion"
 					refimgid="802f65ce-7ccc-4ef1-b7c8-7413951c33b7"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
 					</item>
@@ -1040,6 +1144,7 @@ name="SuraClaimsRepository">
 					id="8ec43151-c490-482c-8793-25ad6b6a443a"
 					name="txt_TipoDocumento_MotorUber"
 					refimgid="802f65ce-7ccc-4ef1-b7c8-7413951c33b7"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']//div[@innertext='&lt;ninguna&gt;']
 					</item>
@@ -1049,6 +1154,7 @@ name="SuraClaimsRepository">
 					id="8884f03c-2876-407c-af20-b5b53e41a96e"
 					name="txtbox_DescripcionDeLosDanios"
 					refimgid="b7161891-ced3-4a01-847d-fbc67b742adf"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea
 					</item>
@@ -1058,6 +1164,7 @@ name="SuraClaimsRepository">
 					id="c028090d-0e1e-49e8-a261-afba87f1fe2c"
 					name="Copy_of_txtbox_DescripcionDeLosDanios"
 					refimgid="b7161891-ced3-4a01-847d-fbc67b742adf"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']
 					</item>
@@ -1067,6 +1174,7 @@ name="SuraClaimsRepository">
 					id="3f9168fc-a430-4ff2-9365-6bd9222cbe33"
 					name="cb_Incendio"
 					refimgid="83332561-e141-443d-8481-dae3008b962d"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Incendio']/../../..//label[@innertext=$INCENDIO]/../input[@type='button']
 					</item>
@@ -1076,6 +1184,7 @@ name="SuraClaimsRepository">
 					id="8b21c7c1-205d-43a0-8fd5-2e07b224054f"
 					name="picker_Personal"
 					refimgid="5e3752f6-67cb-4434-85f3-dcf2f9cf8c80"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Personal']/../..//div[@id~'picker']
 					</item>
@@ -1085,6 +1194,7 @@ name="SuraClaimsRepository">
 					id="bb49d13e-2294-4dc7-9464-3ef232593876"
 					name="bttn_Finalizar"
 					refimgid="a5bb8909-03ef-4f0a-b7dd-27ddf3476ec1"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'inalizar']
 					</item>
@@ -1094,6 +1204,7 @@ name="SuraClaimsRepository">
 					id="803c4f13-7cb0-4147-8aa1-03663510319a"
 					name="bttn_OtrosDanios"
 					refimgid="15be4b6f-ec87-41f8-bd25-dbad17e613db"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Otros Daños']
 					</item>
@@ -1103,6 +1214,7 @@ name="SuraClaimsRepository">
 					id="f05b9bda-fa7f-458f-8ee0-60c8adf79b22"
 					name="txt_NuevoIncidenteDePropiedad"
 					refimgid="b1b4523c-3c5c-46c4-8b7b-0ff502ee7618"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Nuevo incidente de propie']
 					</item>
@@ -1112,6 +1224,7 @@ name="SuraClaimsRepository">
 					id="1a5db2d2-9989-413f-8bd9-6f51bc1406f9"
 					name="txtbox_Propiedad"
 					refimgid="7b8085fb-8b8f-441e-b486-8e008c5e171d"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Propiedad']/../..//input
 					</item>
@@ -1121,6 +1234,7 @@ name="SuraClaimsRepository">
 					id="fbb8f754-36ad-42d8-8b01-9f4917d328cd"
 					name="Copy_of_txtbox_Propiedad"
 					refimgid="7b8085fb-8b8f-441e-b486-8e008c5e171d"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Propiedad']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -1130,6 +1244,7 @@ name="SuraClaimsRepository">
 					id="d10b660e-0f9e-4f5a-a06b-3a4f6fba83f5"
 					name="txtbox_DescripcionDanios"
 					refimgid="c58ff78a-33ba-4f1c-8038-ae3d7698e66e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea
 					</item>
@@ -1139,6 +1254,7 @@ name="SuraClaimsRepository">
 					id="353c6dd5-2901-4015-b700-9bad7dbf19b8"
 					name="Copy_of_txtbox_DescripcionDanios"
 					refimgid="c58ff78a-33ba-4f1c-8038-ae3d7698e66e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Descripción de los daños']/../..//textarea[@data-tabindexsaved='True']
 					</item>
@@ -1148,6 +1264,7 @@ name="SuraClaimsRepository">
 					id="d58e2324-fcf2-49dd-ab07-d23421712af2"
 					name="bttn_Propietario"
 					refimgid="d03b1952-aceb-485b-9000-62e46bc5f406"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@class='g-input-suffix']//a
 					</item>
@@ -1157,6 +1274,7 @@ name="SuraClaimsRepository">
 					id="a31f6729-0f4d-45ea-9137-58c701f5f4da"
 					name="txt_NuevaPersona"
 					refimgid="f76a9594-4d0a-44f0-b582-bb4c1a328c7e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nueva persona']
 					</item>
@@ -1166,6 +1284,7 @@ name="SuraClaimsRepository">
 					id="f981e0d4-11b0-4cd9-8453-79b794456e58"
 					name="txtbox_Apellido"
 					refimgid="ceabe95b-fd07-434b-b6da-c51f7394b6a1"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input
 					</item>
@@ -1175,6 +1294,7 @@ name="SuraClaimsRepository">
 					id="fe1d8945-ddf9-4834-b866-eeec7003b6d1"
 					name="Copy_of_txtbox_Apellido"
 					refimgid="ceabe95b-fd07-434b-b6da-c51f7394b6a1"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -1184,6 +1304,7 @@ name="SuraClaimsRepository">
 					id="f0a718d9-9f42-4069-b4c4-d0da4cf60957"
 					name="bttn_Actualizar"
 					refimgid="0b706620-613d-4c00-858f-851cac92c070"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Actalizar']
 					</item>
@@ -1193,6 +1314,7 @@ name="SuraClaimsRepository">
 					id="2c48014f-7a6e-41d7-ac73-ac92c47589c8"
 					name="bttn_Agregar2"
 					refimgid="ed420ed8-581c-414d-84a9-1271607bbc4e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Información fiscal']/../../..//span[@innertext='Agregar']
 					</item>
@@ -1202,6 +1324,7 @@ name="SuraClaimsRepository">
 					id="92c67bf4-2e40-4e7f-8229-d89407960e39"
 					name="DatosUber"
 					refimgid="27e3b787-fa1d-4a21-8e52-2663066e7380"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext~'Datos Uber']
 					</item>
@@ -1211,6 +1334,7 @@ name="SuraClaimsRepository">
 					id="06c579d3-a294-4330-9e96-142d734723c7"
 					name="txt_DatosUber"
 					refimgid="36eada37-d633-4b88-8a21-56336c4cf42a"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Datos Uber']
 					</item>
@@ -1221,6 +1345,7 @@ name="SuraClaimsRepository">
 					name="txtNivel"
 					refimgid="213ab50e-59a3-46e8-94e0-94ad094a08f1"
 					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[5]/td/div/table/tbody/tr[8]/td/div/div/div/div[2]"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[8]/td/div/div/div/div[2]
 					</item>
@@ -1231,6 +1356,7 @@ name="SuraClaimsRepository">
 					name="txtEstado"
 					refimgid="5e29e060-5ca4-4c84-a03a-176337ca324e"
 					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[5]/td/div/table/tbody/tr[9]/td/div/div/div/div[2]"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/?/?/table/tbody/tr[5]//table/tbody/tr[9]/td/div/div/div/div[2]
 					</item>
@@ -1240,6 +1366,7 @@ name="SuraClaimsRepository">
 					id="4302efb8-cd39-4c54-8614-0ed1fb2fed40"
 					name="txt_DetalleDelVehiculoDeTercero"
 					refimgid="7c423d33-46f3-4fdc-a35a-8b54f4875ed6"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Detalle del vehículo de tercero']
 					</item>
@@ -1249,6 +1376,7 @@ name="SuraClaimsRepository">
 					id="b666b12f-87e6-483c-9c93-677bad2f29ed"
 					name="txt_Nro_Documento_Motor_Uber"
 					refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//tr[@safeclass='x-grid-row']/td[3]/div
 					</item>
@@ -1259,6 +1387,7 @@ name="SuraClaimsRepository">
 					name="txtAnio"
 					refimgid="98f69cee-84e4-4f34-8166-0bb4837a09f4"
 					refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr/td/div/table/tbody/tr/td[2]/div/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']
 					</item>
@@ -1268,6 +1397,7 @@ name="SuraClaimsRepository">
 					id="213ed408-d8a3-461c-915e-dbb03610e484"
 					name="lbl_ElementosBasicosDelVehiculo"
 					refimgid="1cfb7cec-42b0-498b-bdf6-0e8dff2ccc3d"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext&gt;'Elementos b&#225;sicos del veh']
 					</item>
@@ -1277,6 +1407,7 @@ name="SuraClaimsRepository">
 					id="401956ec-4a22-468a-9142-cc99cd25f56e"
 					name="Arrow_BuscaProveedor"
 					refimgid="01231b4c-aba0-46d0-9ecb-a9c297fc3e36"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
 					</item>
@@ -1286,6 +1417,7 @@ name="SuraClaimsRepository">
 					id="d917e759-918d-4fd7-9f15-4a6c094b06f4"
 					name="lbl_MetodoDePago"
 					refimgid="5c94310b-8adb-4fdf-9b94-377185f9db86"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Método de pago']
 					</item>
@@ -1295,6 +1427,7 @@ name="SuraClaimsRepository">
 					id="2c6fa320-9f7c-4baa-8f61-f18d4e1474ca"
 					name="txt_AnioVehiculo"
 					refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input
 					</item>
@@ -1304,6 +1437,7 @@ name="SuraClaimsRepository">
 					id="58fd848e-1ebf-45bf-b6f3-b719e1fc3c04"
 					name="Copy_of_txtAnioVehiculo"
 					refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -1313,6 +1447,7 @@ name="SuraClaimsRepository">
 					id="3496f5d2-646d-4c8f-9e73-5f938645d37e"
 					name="txt_PropietarioVehiculo"
 					refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Propietario']/../..//input
 					</item>
@@ -1322,6 +1457,7 @@ name="SuraClaimsRepository">
 					id="883c3ce4-1175-4cbb-9883-d5242fe0a8e9"
 					name="lbl_Danos"
 					refimgid="110810f5-de23-49ab-a1f6-b0f6489abd27"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Daños']
 					</item>
@@ -1331,6 +1467,7 @@ name="SuraClaimsRepository">
 					id="84859e2a-2379-40d7-8a2d-bdba7bf55aaf"
 					name="bttn_Volver"
 					refimgid="e98332e6-0242-41a7-a213-69c326806f26"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Volver']
 					</item>
@@ -1341,6 +1478,7 @@ name="SuraClaimsRepository">
 					name="NormalCreateCheckWizardCheckWizardChec"
 					refimgid="89468dc1-ec64-42c0-8082-654abdb90c3c"
 					refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[5]/td/div/div[2]/div/table/tbody/tr/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']
 					</item>
@@ -1354,6 +1492,7 @@ name="SuraClaimsRepository">
 				id="653b6cc4-9e97-4041-81c3-71c29545ce5c"
 				name="option_VerificaLaDireccion"
 				refimgid="634b6cdb-beb0-4b13-a6ee-2204a477df51"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext~'Verifica la dirección']
 				</item>
@@ -1363,6 +1502,7 @@ name="SuraClaimsRepository">
 				id="2be891e8-ca9a-4071-9cef-acb5a9a6b494"
 				name="option_Nombre2"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[2]
 				</item>
@@ -1372,6 +1512,7 @@ name="SuraClaimsRepository">
 				id="85070965-398c-4c95-af61-96c4b744fcc2"
 				name="option_DNI"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext='D.N.I.']
 				</item>
@@ -1381,6 +1522,7 @@ name="SuraClaimsRepository">
 				id="8b599ac7-9cb3-46b2-a51f-80680cc12cd3"
 				name="Copy_of_option_DNI"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext='D.N.I.']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -1388,6 +1530,7 @@ name="SuraClaimsRepository">
 				capname="tdtag"
 				id="2b775f00-f068-49f9-bfdc-3e4c0896d2d3"
 				name="celda_NroDNI"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[@id~'PersonNameInputSet']/div[3]//td[3]
 				</item>
@@ -1395,6 +1538,7 @@ name="SuraClaimsRepository">
 				capname="tdtag"
 				id="97a5bdbc-6932-432e-b884-e1450dbca4bc"
 				name="celda_TipoDocumento"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[@id~'PersonNameInputSet']/div[3]//td[2]
 				</item>
@@ -1404,6 +1548,7 @@ name="SuraClaimsRepository">
 				id="53347b97-7d13-49d8-a9c0-857d303e7499"
 				name="option_NuevaPersona"
 				refimgid="b9d73f2c-bc5f-4985-be1c-8f030a2a6d62"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Nueva persona']
 				</item>
@@ -1413,6 +1558,7 @@ name="SuraClaimsRepository">
 				id="2cf5d0de-9252-4889-a41f-422f91f822ba"
 				name="btn_agregarDanoYLesionesTerceros"
 				refimgid="d976894e-3813-441d-886f-e9a27c86de9d"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext&gt;'Agregar da&#241;os y lesiones']
 				</item>
@@ -1422,6 +1568,7 @@ name="SuraClaimsRepository">
 				id="4b475e31-cd9a-4ad7-85ac-b729748573dc"
 				name="btn_AgregarConductor"
 				refimgid="0510f8c4-3a64-4497-82e5-04c6668fe1a7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Agregar conductor']
 				</item>
@@ -1431,6 +1578,7 @@ name="SuraClaimsRepository">
 				id="b20d9984-c975-4f56-99d5-b6d92962081b"
 				name="Aceptar"
 				refimgid="0bdc81de-1f6f-4296-8f7d-ba9eb90cd786"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[2]/td/div/div/div/a[1]//span[@innertext='Aceptar']
 				</item>
@@ -1440,6 +1588,7 @@ name="SuraClaimsRepository">
 				id="4197e2f3-0ae7-46be-94a7-54f8a6de5088"
 				name="btn_Danios_No"
 				refimgid="6e54dd22-0e01-4df0-a2e6-210070b6d33c"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
 				</item>
@@ -1449,6 +1598,7 @@ name="SuraClaimsRepository">
 				id="9000aee2-d1c1-46a8-8401-821981602e64"
 				name="op_policia_NO"
 				refimgid="6e54dd22-0e01-4df0-a2e6-210070b6d33c"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'policía']/../../..//label[@innertext~'No']/../input[@type='button']
 				</item>
@@ -1458,6 +1608,7 @@ name="SuraClaimsRepository">
 				id="d18137f3-0e2e-42d0-9ab2-ef14e7f2b579"
 				name="btn_Agregar"
 				refimgid="1e1f46b2-a7fe-4fba-bcc6-e37cbaf0ff1a"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']
 				</item>
@@ -1467,6 +1618,7 @@ name="SuraClaimsRepository">
 				id="b34ef9ce-d512-4eed-8d23-8e68139f6995"
 				name="txt_TipoDoc"
 				refimgid="b2cf3330-9f1e-4cc5-819a-53c7c2fe90c7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
 				</item>
@@ -1476,6 +1628,7 @@ name="SuraClaimsRepository">
 				id="5738797d-7a5a-49c0-b03f-6fde8a500b97"
 				name="txtbox_Apellido"
 				refimgid="4ebdc8d7-5a5b-4ff5-9184-ff6054b5a2c7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input
 				</item>
@@ -1485,17 +1638,19 @@ name="SuraClaimsRepository">
 				id="c99f4096-7df9-4e32-b169-2d4b4d417c1f"
 				name="txtbox_Nombre"
 				refimgid="582c074a-3083-49a6-8e3a-a15d914cdaf2"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
-				capname="spantag"
+				capname="unknown"
 				id="df0df1ea-bd96-4599-80c8-ea1af8c65712"
 				name="txt_DetalleDeLosLesionados"
 				refimgid="1b6f890c-081c-4e78-9cf9-6e56b865bc37"
+				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalle de los lesionados']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//?[@innertext='Detalle de los lesionados']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1503,6 +1658,7 @@ name="SuraClaimsRepository">
 				id="d31c7a75-5c81-40ea-99db-23136bde2876"
 				name="op_responsabilidad"
 				refimgid="63560f75-915c-4090-a4e3-ac4447dd9f1b"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Responsabilidad del Asegurado']/../../..//label[@innertext~$Responsabilidad]/../input[@type='button']
 				</item>
@@ -1512,6 +1668,7 @@ name="SuraClaimsRepository">
 				id="f4244d5c-ca2f-4b6c-8a0e-b0ece229acce"
 				name="btn_Aceptar"
 				refimgid="f561d0ab-1520-497a-b40e-b6e0576e3681"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Aceptar']
 				</item>
@@ -1521,6 +1678,7 @@ name="SuraClaimsRepository">
 				id="05b7c423-c3bb-46ea-9911-b4177fbe7f1a"
 				name="txtbox_Numero"
 				refimgid="4a0e66ec-161a-4357-9a05-f8c13f9b808a"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='D.N.I.']/../..//div[@class='x-grid-cell-inner '][2]
 				</item>
@@ -1530,6 +1688,7 @@ name="SuraClaimsRepository">
 				id="c4d177ac-a250-46a2-a12c-b071ffca3233"
 				name="pestana_DescripTipoSiniestro"
 				refimgid="f60a5fc5-19bc-4e91-addb-e9cda63d2e51"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Descripción del tipo de s']
 				</item>
@@ -1539,6 +1698,7 @@ name="SuraClaimsRepository">
 				id="bb2b19cc-4065-4939-868b-e2d4cc04e4c2"
 				name="op_ambulancia"
 				refimgid="4bcc785d-4163-4303-aff5-97a1cc6da383"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table//td/?/?/table/?/?/tr/td[1]/?/?/table/tbody/tr[4]//table/tbody/tr[1]/td/div/div/?/?/table/tbody/tr/td[2]/div/div/?/?/input[@type='button']
 				</item>
@@ -1548,6 +1708,7 @@ name="SuraClaimsRepository">
 				id="bca12804-3b3e-4b64-8898-18d97cafafa5"
 				name="op_ambulancia_NO"
 				refimgid="4bcc785d-4163-4303-aff5-97a1cc6da383"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']///span[@innertext~'ambulancia']/../../..//label[@innertext~'No']/../input[@type='button']
 				</item>
@@ -1557,6 +1718,7 @@ name="SuraClaimsRepository">
 				id="318131d3-13ce-4243-be0e-581d65733e8b"
 				name="txt_TipoAccidente"
 				refimgid="f5fa8952-495a-400a-a775-9cf6aa318299"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext~'Tipo de accidente']/../..//input
 				</item>
@@ -1566,6 +1728,7 @@ name="SuraClaimsRepository">
 				id="49c78570-cbc3-4845-81e1-f755e92cdada"
 				name="txt_Marca"
 				refimgid="9a00bdb9-0f7b-44e3-aadc-653502b0aa94"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Marca']/../..//input
 				</item>
@@ -1575,6 +1738,7 @@ name="SuraClaimsRepository">
 				id="49e2551c-59aa-4d6e-84f4-3f565169a6a3"
 				name="Copy_of_txtmarca"
 				refimgid="9a00bdb9-0f7b-44e3-aadc-653502b0aa94"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Marca']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -1584,6 +1748,7 @@ name="SuraClaimsRepository">
 				id="7d32b63a-56e0-47b9-86e4-b00f55aeaed6"
 				name="txt_Modelo"
 				refimgid="241c208a-d873-47e3-a61f-e170b8b2b2e0"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Modelo']/../..//input
 				</item>
@@ -1593,6 +1758,7 @@ name="SuraClaimsRepository">
 				id="969d3b5c-33a3-4913-8904-1344e3c38979"
 				name="Copy_of_txt_Modelo"
 				refimgid="241c208a-d873-47e3-a61f-e170b8b2b2e0"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Modelo']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -1602,6 +1768,7 @@ name="SuraClaimsRepository">
 				id="93ca185b-2e2d-4cdd-8879-05863f51782d"
 				name="txtTipo"
 				refimgid="b9d75503-3bff-4557-baf8-9a55e074abdb"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='AUTO']
 				</item>
@@ -1611,6 +1778,7 @@ name="SuraClaimsRepository">
 				id="a01ba668-e2fd-45f1-b869-21c19800e24f"
 				name="textMarca"
 				refimgid="9d98448e-cdc9-4422-853d-2bef7ff88f7c"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='CHEVROLET']
 				</item>
@@ -1620,6 +1788,7 @@ name="SuraClaimsRepository">
 				id="503fdd01-7a8a-41ca-a6f7-f3b5eea07301"
 				name="txtModelo1"
 				refimgid="6e5ffe59-e8c6-4655-976f-a2ff0bdde3b7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]/body/div[@id~'loadmask']//ul/li[@innertext='ONIX']
 				</item>
@@ -1629,6 +1798,7 @@ name="SuraClaimsRepository">
 				id="eb265845-011a-476a-a441-b090618dd359"
 				name="lbl_ReposicionDe"
 				refimgid="ae6d4e1b-d7d7-4b31-88c5-18707a421c84"
+				robustPath=""
 				searchtimeout="0ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'Reposicion de']
 				</item>
@@ -1639,6 +1809,7 @@ name="SuraClaimsRepository">
 				name="Button"
 				refimgid="9f0fa402-aa14-4ad4-98ee-051a7fa23d7b"
 				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[8]/td/fieldset/legend/div[1]/div/div/input[@type='button']"
+				robustPath=""
 				searchtimeout="0ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
 				</item>
@@ -1648,6 +1819,7 @@ name="SuraClaimsRepository">
 				id="d6487c32-d016-448f-968c-f18320a9a686"
 				name="BuscarProveedor"
 				refimgid="d8376117-bfce-4379-83be-7bf03d414acf"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']
 				</item>
@@ -1658,6 +1830,7 @@ name="SuraClaimsRepository">
 				name="Btn_BuscarProveedor"
 				refimgid="3a82e9e9-2582-4efa-95ed-3e9568ee7d53"
 				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/div/table/tbody/tr[2]/td/div/table/tbody/tr/td/div/div/div/table/tbody/tr/td[1]/a[@innertext='Bucar']"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/?/?/table/tbody/tr[2]//table//div/div/?/?/table/?/?/tr/td[1]/a[@innertext='Bucar']
 				</item>
@@ -1668,6 +1841,7 @@ name="SuraClaimsRepository">
 				name="SelectProvinciaNinguna"
 				refimgid="66ae1986-9883-4f7f-a4fc-3fb607db70ff"
 				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/div/table/tbody/tr[1]/td/div/table/tbody/tr/td[2]/div/table/tbody/tr[3]/td/div/div/div/div[2]"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]
 				</item>
@@ -1678,6 +1852,7 @@ name="SuraClaimsRepository">
 				name="Seleccionar"
 				refimgid="aec8be53-719b-41be-8a08-e0f52ba8ec3b"
 				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'AddressBookPickerPopup-tbody']/tr[6]/td/div/div[4]/div[1]/div/table/tbody/tr/td[1]/div/a[@innertext='Seleccionar']"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[6]/td/div/div[4]/div[1]/?/?/table/?/?/tr/td[1]/?/?/a[@innertext='Seleccionar']
 				</item>
@@ -1693,6 +1868,7 @@ name="SuraClaimsRepository">
 					id="319f32a0-dfbd-4ee1-b7d4-a05c6757f488"
 					name="select_TipoAccidente"
 					refimgid="bd9a22de-904f-4dca-b6b8-3271993a5513"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext=$TipoAccidente]
 					</item>
@@ -1702,6 +1878,7 @@ name="SuraClaimsRepository">
 					id="35e1eb27-a510-4470-bc3b-f310094a0031"
 					name="select_TipoAccidente_Colision"
 					refimgid="bd9a22de-904f-4dca-b6b8-3271993a5513"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext='Colisión']
 					</item>
@@ -1711,6 +1888,7 @@ name="SuraClaimsRepository">
 					id="9600c63f-fcf1-4715-b3c8-224a3902c526"
 					name="txt_ColisionCon"
 					refimgid="8bdeb6ad-bdd2-4156-828f-6450d40fc1f4"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Colisión con']/../..//input
 					</item>
@@ -1720,6 +1898,7 @@ name="SuraClaimsRepository">
 					id="856c2bfe-4c61-4c8a-a3b2-e2f203f52f7d"
 					name="SelectTipoColision"
 					refimgid="41d7364a-828a-436f-9f22-118390a89b57"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext=$TipoColision]
 					</item>
@@ -1729,6 +1908,7 @@ name="SuraClaimsRepository">
 					id="a389f720-f8db-4d88-bf38-8e19eda2ff44"
 					name="txt_DanioATercero"
 					refimgid="1eab5ed8-f225-42bc-bd8e-9dc6348d8341"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Daños a vehículo de tercero']/../..//input
 					</item>
@@ -1738,6 +1918,7 @@ name="SuraClaimsRepository">
 					id="01389e09-bea4-4e8a-97aa-709af8c206df"
 					name="SelectDanioTerceroFrontal"
 					refimgid="23e2fc05-7124-4d29-bb96-f951599ceb8f"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext=$DanioTercero]
 					</item>
@@ -1747,6 +1928,7 @@ name="SuraClaimsRepository">
 					id="8d12c332-1332-4d9a-b796-24e1adcadddf"
 					name="txt_Dolencias"
 					refimgid="3ef56223-b903-4303-9941-72c2b92a13dc"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext&gt;'Hay dolencias']/../..//input
 					</item>
@@ -1756,6 +1938,7 @@ name="SuraClaimsRepository">
 					id="93e65d69-5f66-4f64-af37-5a7d86c76744"
 					name="SelectDolencia"
 					refimgid="cef31e98-04ee-4e6b-82fc-ca7fb96efa31"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext=$Dolencia]
 					</item>
@@ -1765,6 +1948,7 @@ name="SuraClaimsRepository">
 					id="6ff8e114-7276-438a-afbd-3eae61562f1d"
 					name="txt_CantPasajTerc"
 					refimgid="e0dcaf40-f7c7-4c13-80f0-b0a243fdda16"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Cantidad de pasajeros en vehículo de tercero']/../..//input
 					</item>
@@ -1774,6 +1958,7 @@ name="SuraClaimsRepository">
 					id="f576a1c5-0147-43a6-b13b-a9ec45865e29"
 					name="SelectCantPasajTerc"
 					refimgid="3fff5797-b1da-41cd-baa0-411ead84645f"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext=$CantPasaj]
 					</item>
@@ -1783,6 +1968,7 @@ name="SuraClaimsRepository">
 					id="38e8a31b-e25b-4c2e-bb77-55c6aef326f3"
 					name="txt_CantAseg"
 					refimgid="c5890f41-6946-4bb2-b83f-54ae2a21dc99"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Cantidad de pasajeros en vehículo asegurado']/../..//input
 					</item>
@@ -1792,6 +1978,7 @@ name="SuraClaimsRepository">
 					id="980efbb6-4fe2-4469-af62-f7ccc0c196f4"
 					name="SelectCantAseg"
 					refimgid="2b299093-1e9c-43a8-8973-c5dc3b72fce2"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//li[@innertext=$CantAsegu]
 					</item>
@@ -1801,6 +1988,7 @@ name="SuraClaimsRepository">
 					id="05dd44a1-642a-4317-ad54-fa95a1a40ddc"
 					name="txt_DescripDaniosTercero"
 					refimgid="a22c3163-26df-4d78-b445-0ed45b5858fb"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext~'Descripción de los daños']/../..//textarea
 					</item>
@@ -1810,6 +1998,7 @@ name="SuraClaimsRepository">
 					id="d6fd0bb1-4b36-4a07-9f11-0afd0defffc1"
 					name="txt_Patente"
 					refimgid="87706aea-2280-48ed-92b7-7b6ada7bcad3"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext='Patente']/../..//input
 					</item>
@@ -1819,6 +2008,7 @@ name="SuraClaimsRepository">
 					id="f4d10379-5e5b-41b4-95dc-1575a0d99f7e"
 					name="Copy_of_textPatente"
 					refimgid="87706aea-2280-48ed-92b7-7b6ada7bcad3"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext='Patente']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -1828,6 +2018,7 @@ name="SuraClaimsRepository">
 					id="e71ae898-1d06-4e8e-90e0-2ec3fc7472d1"
 					name="txt_TipoVehiculo"
 					refimgid="d9ad89dd-6276-43c4-8fb9-2cefe5e50938"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//.//span[@innertext='Tipo de Vehículo']/../..//input
 					</item>
@@ -1837,6 +2028,7 @@ name="SuraClaimsRepository">
 					id="81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09"
 					name="Copy_of_txtTipoVehiculo"
 					refimgid="d9ad89dd-6276-43c4-8fb9-2cefe5e50938"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -1854,6 +2046,7 @@ name="SuraClaimsRepository">
 				id="ac37c4b5-d72d-4a0d-9c1b-3a3132061d56"
 				name="txtbox_CausaSiniestro"
 				refimgid="f46c174b-87eb-43fc-8e0a-1bccd3d2563f"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Causa del siniestro']/../..//input
 				</item>
@@ -1863,6 +2056,7 @@ name="SuraClaimsRepository">
 				id="02ddae2c-fbb0-4109-bdb3-8b2ef4e37ff9"
 				name="Copy_of_txtbox_CausaSiniestro"
 				refimgid="f46c174b-87eb-43fc-8e0a-1bccd3d2563f"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Causa del siniestro']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -1872,6 +2066,7 @@ name="SuraClaimsRepository">
 				id="969989b2-b983-43b8-b9ed-76ea8a680abf"
 				name="bttn_SoloIncidente"
 				refimgid="1680e8a0-d0a5-4c37-9e13-94824505d5eb"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='¿Solo incidente?']/../..//label[@innertext='No']/../input[@type='button']
 				</item>
@@ -1881,6 +2076,7 @@ name="SuraClaimsRepository">
 				id="d514b3da-26d0-415f-ba57-a7de7eacb924"
 				name="check_TipoDanios"
 				refimgid="cfd0c141-9aba-468f-935e-25ac8911639e"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext=$TIPO_DANIOS]/..//input[@type='button']
 				</item>
@@ -1890,6 +2086,7 @@ name="SuraClaimsRepository">
 				id="d4079a5d-2084-4cec-8c9a-916292239c9b"
 				name="bttn_NuevoReclamo"
 				refimgid="b06f3321-eabf-4ea1-944a-0581c038d792"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nuvo Reclamo']
 				</item>
@@ -1899,6 +2096,7 @@ name="SuraClaimsRepository">
 				id="ca83115d-fd6b-4833-98cc-edfa58b6fedc"
 				name="txt_NuevaExposicion"
 				refimgid="0331482b-8200-41ab-9a37-d25fd5a5abd6"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Nueva exposición']
 				</item>
@@ -1908,6 +2106,7 @@ name="SuraClaimsRepository">
 				id="74378110-de87-40c9-ae53-df083792cb00"
 				name="tag_Ubicacion"
 				refimgid="8e18d474-5e5b-494b-9bd3-1d9c33c6767b"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'1:']
 				</item>
@@ -1917,6 +2116,7 @@ name="SuraClaimsRepository">
 				id="4bd9862d-c511-44b0-a140-07bed1b2b674"
 				name="option_IncendioEdificioAProrrata"
 				refimgid="ed410b87-87f4-4ccf-bcf5-6bf6d0e1660f"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext~'Incendio']
 				</item>
@@ -1926,6 +2126,7 @@ name="SuraClaimsRepository">
 				id="120fd1e5-bb8d-4840-b194-05873d77d8f8"
 				name="txt_Preguntas"
 				refimgid="5ff4ce65-0407-486c-af21-39dbe33e2e5c"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext~'Preguntas']
 				</item>
@@ -1942,6 +2143,7 @@ name="SuraClaimsRepository">
 				id="3307446c-ec5b-4ae2-bed4-8903eed8e4ff"
 				name="Copy_of_txtbox_RelacionConAsegurado"
 				refimgid="3cdfb592-9899-464d-b4c4-fd094845431d"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Relación con el asegurado']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -1951,6 +2153,7 @@ name="SuraClaimsRepository">
 				id="d97bc0df-3847-4fa6-be15-9c5d9929327a"
 				name="check_PersonaImplicada"
 				refimgid="32869c35-b420-4760-8271-368aef8190e5"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td[1]/div[@class='x-grid-cell-inner x-grid-cell-inner-checkcolumn']/img
 				</item>
@@ -1968,6 +2171,7 @@ name="SuraClaimsRepository">
 					id="779cc3a5-5483-4c9a-a6db-f0f4d9e0bb07"
 					name="txt_IncidenteLesion"
 					refimgid="5437f5f4-d095-41aa-a535-d530aa245d16"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Incidente de lesión']
 					</item>
@@ -1977,6 +2181,7 @@ name="SuraClaimsRepository">
 					id="6db2f0b0-f029-427c-8958-1e285e42574e"
 					name="txtbox_PersonaLesionada"
 					refimgid="e1c26cea-3d92-45ae-a81b-f7ad9dbe188b"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Persona lesionada']/../..//input
 					</item>
@@ -1986,6 +2191,7 @@ name="SuraClaimsRepository">
 					id="2c75fd99-cdfa-4e25-9ae3-57d4a7b15ba2"
 					name="Copy_of_txtbox_PersonaLesionada"
 					refimgid="e1c26cea-3d92-45ae-a81b-f7ad9dbe188b"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Persona lesionada']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -1995,6 +2201,7 @@ name="SuraClaimsRepository">
 					id="bbd4954d-d681-46a9-8c2a-610c355d9723"
 					name="txtbox_FechaReporte"
 					refimgid="2e2676f0-a626-4828-be1d-e5b9c4730aad"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Fecha del reporte']/../..//input
 					</item>
@@ -2004,6 +2211,7 @@ name="SuraClaimsRepository">
 					id="11aac845-1b9f-4a60-845c-338dc62c9a57"
 					name="Copy_of_txtbox_FechaReporte"
 					refimgid="2e2676f0-a626-4828-be1d-e5b9c4730aad"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Fecha del reporte']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -2013,6 +2221,7 @@ name="SuraClaimsRepository">
 					id="6abed1e4-70c8-4f70-bec2-9e98df08ef42"
 					name="txtbox_ViaIngresoReclamo"
 					refimgid="9377b299-5ef1-42f4-85af-b7c15b0ee079"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext&gt;'Via de ingreso de reclamo']/../..//input
 					</item>
@@ -2022,6 +2231,7 @@ name="SuraClaimsRepository">
 					id="9aea30d8-4f5d-42f0-b585-930075fbe55e"
 					name="Copy_of_txtbox_ViangresoReclamo"
 					refimgid="9377b299-5ef1-42f4-85af-b7c15b0ee079"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext&gt;'Via de ingreso de reclamo']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -2031,6 +2241,7 @@ name="SuraClaimsRepository">
 					id="e91da66e-1bcd-48a7-bfce-014be56b6c47"
 					name="bttn_ReclamoPresentado_SI"
 					refimgid="5c3a6ec3-aed1-4ea8-a430-2f4398871979"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Reclamo presentado']/../..//label[@innertext='Sí']/../input[@type='button']
 					</item>
@@ -2040,6 +2251,7 @@ name="SuraClaimsRepository">
 					id="c5b72252-a6be-4700-9f64-6ad89ebb4bac"
 					name="bttn_DescripcionLesiones"
 					refimgid="94be042d-507b-4487-9281-c6cf8e03b172"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/basic']/table//span[@innertext='Descripción de lesiones']
 					</item>
@@ -2061,6 +2273,7 @@ name="SuraClaimsRepository">
 					id="23492e0d-36a3-4064-9a40-c73b10518e56"
 					name="txt_DescripcionLesiones"
 					refimgid="cda47839-40e6-499b-8faf-91c4441cab7c"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr//div//span[@innertext='Descripción de lesiones']
 					</item>
@@ -2070,6 +2283,7 @@ name="SuraClaimsRepository">
 					id="c3d21fbb-0b0d-4959-9f10-a5e508224906"
 					name="txtbox_CalidadVictima"
 					refimgid="2fd7a77f-f62a-4c34-bd5d-6095a86c46b7"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input
 					</item>
@@ -2079,6 +2293,7 @@ name="SuraClaimsRepository">
 					id="2168dc0d-ed61-4f47-a31b-b6001fbe0ae9"
 					name="Copy_of_txtbox_CalidadVictima"
 					refimgid="2fd7a77f-f62a-4c34-bd5d-6095a86c46b7"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext&gt;'Calidad o medio de transporte']/../..//input[@data-tabindexsaved='True']
 					</item>
@@ -2088,6 +2303,7 @@ name="SuraClaimsRepository">
 					id="ca6008b6-889b-42b4-9274-7f698ff94f41"
 					name="bttn_Ambulancia_No"
 					refimgid="526c94e7-867e-4898-a2b3-2a5908e4dd24"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table//span[@innertext='¿Se utilizó ambulancia?']/../..//label[@innertext='No']/../input[@type='button']
 					</item>
@@ -2097,6 +2313,7 @@ name="SuraClaimsRepository">
 					id="270aca79-1a8e-4d58-b06a-8a0897f64db5"
 					name="img_LesionVictima"
 					refimgid="3c1ca940-6afa-45c4-b08a-e919ce067fe7"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr[2]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div[1]/?/?/table/tbody/tr/td[2]/a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/giacc/body/none/1-1.png']
 					</item>
@@ -2106,6 +2323,7 @@ name="SuraClaimsRepository">
 					id="1b0ece67-dc68-4bde-8c83-b784c446d746"
 					name="fila_Lesion"
 					refimgid="b3698544-d34b-4012-be91-039d505566d7"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//div[#'NewInjuryIncidentPopup/injury']/table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[1]//table/tbody/tr/td[2]/div/div[3]
 					</item>
@@ -2119,6 +2337,7 @@ name="SuraClaimsRepository">
 				id="9eb320ca-296d-4ebe-bb62-13af7a7a98cc"
 				name="bttn_RelacionConAsegurado"
 				refimgid="1a48ea5d-ba28-47b1-b033-7007d7f3fdb7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_BasicInfoScreen:PanelRow:BasicInfoDetailViewPanelDV:Claim_ReportedByType-trigger-picker']
 				</item>
@@ -2128,6 +2347,7 @@ name="SuraClaimsRepository">
 				id="0240420b-4cbe-483a-a018-2b1cc9ef4439"
 				name="bttn_AgregarLesion"
 				refimgid="d35c4c0d-a995-4f60-a0b5-18d23d14a258"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Agregar lesón']
 				</item>
@@ -2137,6 +2357,7 @@ name="SuraClaimsRepository">
 				id="788ad31b-7f71-42bb-901b-f877bc73bd9f"
 				name="txt_Nombre"
 				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//input[@id='FNOLContactPopup:FNOLContactScreen:ContactDV:FNOLContactInputSet:GlobalPersonNameInputSet:FirstName-inputEl']
 				</item>
@@ -2146,6 +2367,7 @@ name="SuraClaimsRepository">
 				id="301afcaa-01b4-4076-b05b-36e04bde2da0"
 				name="option_Reclamo"
 				refimgid="dcc452b0-e889-4b23-9d54-c282a5b61e61"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext~'Muerte Accidental|Reembolso de gastos|Incapacidad Total']
 				</item>
@@ -2155,6 +2377,7 @@ name="SuraClaimsRepository">
 				id="d0ee884d-2da4-4ea7-8331-28d4ddab6f5d"
 				name="option_ReembolsoGastos"
 				refimgid="e70c2cf6-f5bf-46e0-9443-d92d10ddfea4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Reembolso de gastos']
 				</item>
@@ -2164,6 +2387,7 @@ name="SuraClaimsRepository">
 				id="9a963e65-76fb-4d99-ace1-481be373851d"
 				name="option_IncapacidadTotal"
 				refimgid="e70c2cf6-f5bf-46e0-9443-d92d10ddfea4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Incapacidad Total']
 				</item>
@@ -2173,6 +2397,7 @@ name="SuraClaimsRepository">
 				id="7f42272a-1839-4988-830f-9f1d2fc865a5"
 				name="txtbox_Reclamante"
 				refimgid="4a950d6e-126e-42ae-8c97-310c681db320"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Reclamante']/../..//input
 				</item>
@@ -2182,6 +2407,7 @@ name="SuraClaimsRepository">
 				id="64aa935e-b472-4e6a-b1c7-2f87aa7d6d45"
 				name="Copy_of_txtbox_Reclamante"
 				refimgid="4a950d6e-126e-42ae-8c97-310c681db320"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Reclamante']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2191,6 +2417,7 @@ name="SuraClaimsRepository">
 				id="e48589cc-1d4b-43b8-883b-d7ca088a5fd6"
 				name="txtbox_Tipo"
 				refimgid="46cbcd8a-9158-4bb9-8d4f-003a34877796"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input
 				</item>
@@ -2200,6 +2427,7 @@ name="SuraClaimsRepository">
 				id="6ca32d5c-682e-4749-8da0-5f93c81c57fd"
 				name="Copy_of_txtbox_Tipo"
 				refimgid="46cbcd8a-9158-4bb9-8d4f-003a34877796"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Tipo']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2209,6 +2437,7 @@ name="SuraClaimsRepository">
 				id="9aaaaf6a-9808-4c0c-9610-317fc0dce3ef"
 				name="txtSAFE"
 				refimgid="7982382e-cf84-4d1a-b66a-d063fd0be6a4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tbody/tr[6]/td/div/div//input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:SafeSura']
 				</item>
@@ -2218,6 +2447,7 @@ name="SuraClaimsRepository">
 				id="8e66f57f-c623-4f42-af42-d9baaff7af1d"
 				name="txt_SAFE"
 				refimgid="b62a2d2c-527b-418d-b8bc-e12e1c93733b"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='SAFE']/../..//input
 				</item>
@@ -2227,6 +2457,7 @@ name="SuraClaimsRepository">
 				id="b60ed88d-be82-48c6-8dc3-4485a0bd3dc4"
 				name="Copy_of_txt_SAFE"
 				refimgid="7982382e-cf84-4d1a-b66a-d063fd0be6a4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='SAFE']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2236,6 +2467,7 @@ name="SuraClaimsRepository">
 				id="50dc11f4-dd0e-4326-bd0d-eda60a996781"
 				name="txt_Nivel"
 				refimgid="82d2e182-2796-489c-bd63-34e850e556ea"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Nivel']/../..//input
 				</item>
@@ -2245,6 +2477,7 @@ name="SuraClaimsRepository">
 				id="be94b8f5-e138-42d7-92a4-cc64895cd191"
 				name="Copy_of_txt_Nivel"
 				refimgid="82d2e182-2796-489c-bd63-34e850e556ea"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Nivel']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2254,6 +2487,7 @@ name="SuraClaimsRepository">
 				id="bfa9ebb4-5c22-46db-972e-4ea34c7911d7"
 				name="Copy_of_txtNivel"
 				refimgid="82d2e182-2796-489c-bd63-34e850e556ea"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]//table/tbody//table/?/?/tr/td[1]/?/?/table/tbody/tr[9]/td/div/div/div/div[1]/input[@name='FNOLWizard:AutoWorkersCompWizardStepSet:FNOLWizard_NewLossDetailsScreen:LossDetailsAddressDV:UberFNOLInputSet:NivelSura']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2263,6 +2497,7 @@ name="SuraClaimsRepository">
 				id="501b4eb9-e7a3-4a85-9c8a-d2c8cd9efa8c"
 				name="txt_Periodo"
 				refimgid="ad71a169-b058-471a-95ae-774424d04cc7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Periodo']/../..//input
 				</item>
@@ -2272,6 +2507,7 @@ name="SuraClaimsRepository">
 				id="c8a61a4c-3a1f-4106-9ad6-1e920453ea17"
 				name="Copy_of_txt_Periodo"
 				refimgid="ad71a169-b058-471a-95ae-774424d04cc7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Periodo']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2281,6 +2517,7 @@ name="SuraClaimsRepository">
 				id="a482eaa8-0e65-4d49-aa06-b58746bef91b"
 				name="btn_AddIncidente"
 				refimgid="abb542e5-2ff0-4d78-a0c6-bbabc8de887c"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
 				</item>
@@ -2290,6 +2527,7 @@ name="SuraClaimsRepository">
 				id="3bfd2295-78d4-4ee4-8307-b758bda61322"
 				name="btn_AddIncidente2"
 				refimgid="04ce7e62-1089-4805-9d5e-d112449a38a8"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//label[@innertext&gt;'Descripci&#243;n general de incidente']/../../..//img
 				</item>
@@ -2299,6 +2537,7 @@ name="SuraClaimsRepository">
 				id="d5185403-e774-4fba-88e9-3866ac209180"
 				name="SelectNuevoIncidente"
 				refimgid="268fe92c-1a4c-49e7-b060-21439f221c78"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Nuevo incidente...']
 				</item>
@@ -2308,6 +2547,7 @@ name="SuraClaimsRepository">
 				id="b02a0a70-76ee-442f-9c88-3d307b36ff94"
 				name="btn_AceptarExpo"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'NewClaimWizard_NewExposurePopup']//span[@innertext='Aceptar']
 				</item>
@@ -2325,6 +2565,7 @@ name="SuraClaimsRepository">
 				id="dadf6a94-24c9-49b5-8d96-e548af3ca413"
 				name="lbl_Paso1_PagoSiniestro"
 				refimgid="6c395af5-6a84-4227-ac37-0e866e903173"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 1 de 3: Introducir información']
 				</item>
@@ -2334,6 +2575,7 @@ name="SuraClaimsRepository">
 				id="9039d4b3-3a2c-4032-8e41-270058ba8962"
 				name="txt_Nombre"
 				refimgid="150bc02b-955f-4430-8b18-f7de282a08e3"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:PrimaryPayee_Name']
 				</item>
@@ -2343,6 +2585,7 @@ name="SuraClaimsRepository">
 				id="ace9b6b7-f730-4f0f-983c-8059da72fb33"
 				name="Copy_of_txt_Nombre"
 				refimgid="150bc02b-955f-4430-8b18-f7de282a08e3"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:PrimaryPayee_Name']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2353,6 +2596,7 @@ name="SuraClaimsRepository">
 				name="ArrowNombre"
 				refimgid="59626a5b-366c-4572-958f-ba9a0cc5bda2"
 				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[5]/td/div/div[2]/div/table/tbody/tr/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[2]/td/div/div/div/div/div/div/div[2]/div/div[2]"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[2]/td/div/div/div/div/div/div/div[2]/div/div[2]
 				</item>
@@ -2362,6 +2606,7 @@ name="SuraClaimsRepository">
 				id="b7869aa3-6dd9-43fa-b628-ba4643fb1582"
 				name="OptionMetodoPagoSiniestro"
 				refimgid="6bc8ab65-1936-4d11-93f3-417c902094c4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div//label[@innertext=$MetodoPagoSiniestro]/..//*[@type='button']
 				</item>
@@ -2371,6 +2616,7 @@ name="SuraClaimsRepository">
 				id="2ba02e26-bdc8-4b6a-9a9b-9521e92ce65d"
 				name="arrow_SelectCodTextoRecibo"
 				refimgid="f30ee912-6676-4d88-8dda-d6e27a3aaf7d"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id~'CheckPayeesScreen:NewCheckPayeeDV:ReceiptTextCodeSura-trigger-picker']
 				</item>
@@ -2380,6 +2626,7 @@ name="SuraClaimsRepository">
 				id="825d5cee-f40d-454a-96ec-18adb9f4e353"
 				name="option_CodTextoRecibo"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'[0-9]+']
 				</item>
@@ -2389,6 +2636,7 @@ name="SuraClaimsRepository">
 				id="3a48f820-7e6e-4030-8776-cceeeae52db6"
 				name="txt_CodigoRecibo"
 				refimgid="3e396979-1bf2-487d-8f80-4e0e5685207d"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Texto de recibo']/../..//textarea[@innertext~'[A-Z]+']
 				</item>
@@ -2398,6 +2646,7 @@ name="SuraClaimsRepository">
 				id="3dc91bca-1b05-42ca-ab04-80007792efee"
 				name="arrow_SelectLineaReserva"
 				refimgid="348f98e7-0e17-49f7-8420-cb298dca545a"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']
 				</item>
@@ -2407,6 +2656,7 @@ name="SuraClaimsRepository">
 				id="8b36f745-0981-4400-9bcc-cfd4bded5cb4"
 				name="option_LineaReserva_Asegurado"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'1ª']
 				</item>
@@ -2416,6 +2666,7 @@ name="SuraClaimsRepository">
 				id="4b15420f-5a87-41de-a98e-11831cf57486"
 				name="txtTipoPagoPaso2"
 				refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input
 				</item>
@@ -2425,6 +2676,7 @@ name="SuraClaimsRepository">
 				id="887f5bab-e720-4621-ba95-154067e358e6"
 				name="Copy_of_txtTipoPagoPaso2"
 				refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input
 				</item>
@@ -2434,6 +2686,7 @@ name="SuraClaimsRepository">
 				id="8d2ba8b4-903b-4fc1-a4b7-ef3a29c5f02f"
 				name="txtbox_LineaReserva"
 				refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input
 				</item>
@@ -2443,6 +2696,7 @@ name="SuraClaimsRepository">
 				id="d620f5b0-d0cf-472d-867e-76a13e3f849d"
 				name="TipoPagoPaso2"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'Parcial']
 				</item>
@@ -2452,6 +2706,7 @@ name="SuraClaimsRepository">
 				id="3485d91d-51c2-4db4-a30e-4ab9f0a400c0"
 				name="txt_CausaDePagoPaso2"
 				refimgid="802f65ce-7ccc-4ef1-b7c8-7413951c33b7"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
 				</item>
@@ -2461,6 +2716,7 @@ name="SuraClaimsRepository">
 				id="b78f5e07-19e6-4952-8c99-6d6669a8bae9"
 				name="option_CausaPago"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~$CausaPago]
 				</item>
@@ -2470,6 +2726,7 @@ name="SuraClaimsRepository">
 				id="bf1219c2-1942-45fe-ae64-313e17c70c7a"
 				name="Copy_of_option_CausaPago"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~$CausaPago and @data-tabindexsaved='True']
 				</item>
@@ -2479,6 +2736,7 @@ name="SuraClaimsRepository">
 				id="fd7fdef6-ed8d-406b-a780-3c5ac0e626c2"
 				name="Valor_ImporteAPagar"
 				refimgid="44eb26c9-ff99-4534-ae36-730ea0f96590"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'[0-9]']
 				</item>
@@ -2488,6 +2746,7 @@ name="SuraClaimsRepository">
 				id="b4063bbd-8f2f-48c5-a6a4-ff3edf38a071"
 				name="txt_ImporteAPagarConExprReg"
 				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td']/div
 				</item>
@@ -2497,6 +2756,7 @@ name="SuraClaimsRepository">
 				id="0e0777ef-a765-4c91-a3db-be9d7e084448"
 				name="Copy_of_txt_ImporteAPagarConExprReg"
 				refimgid="46a7c93b-a71f-4fbd-9693-f47ca3c521c4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td' and @data-tabindexsaved='True']/div
 				</item>
@@ -2506,6 +2766,7 @@ name="SuraClaimsRepository">
 				id="ef1d0c8b-ef12-4e9b-aca6-0d907c59f040"
 				name="lbl_CoberturaSiniestro"
 				refimgid="b62dc1b9-5869-47a7-a991-ef0f221ae5ab"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'[A-Z.][a-z.]+']
 				</item>
@@ -2515,6 +2776,7 @@ name="SuraClaimsRepository">
 				id="605d3ed0-6204-4ca8-b0d7-169545ac4454"
 				name="lbl_FinalizaPago"
 				refimgid="64e75718-e336-425c-8454-ec95c0b7dada"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecks-tbody']//span[@innertext&gt;'Datos financieros (Total incurrido:']
 				</item>
@@ -2524,6 +2786,7 @@ name="SuraClaimsRepository">
 				id="a474734b-6970-4a0f-8b32-28ad40818272"
 				name="NombreAsegurado"
 				refimgid="cdb08dcf-695d-4c2c-ab8e-e49d8aa82d91"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//a[#'Claim:ClaimInfoBar:Insured']//span[@class='infobar_elem_val']
 				</item>
@@ -2533,6 +2796,7 @@ name="SuraClaimsRepository">
 				id="f9a355e1-9c7b-4c3d-bac4-3438116ce4cd"
 				name="input_BancoEmisorSugerido"
 				refimgid="6b46bb2e-d3ed-4ef1-bbc1-530af644a591"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input
 				</item>
@@ -2542,6 +2806,7 @@ name="SuraClaimsRepository">
 				id="ca3761bf-98e3-496e-9511-778773b271f2"
 				name="option_NombreMayusculas"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
 				</item>
@@ -2551,6 +2816,7 @@ name="SuraClaimsRepository">
 				id="a9be11b0-11ee-4f3d-970c-1c0fd4f83e34"
 				name="option_MayusMinus"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='[A-Z][a-z]+']
 				</item>
@@ -2560,6 +2826,7 @@ name="SuraClaimsRepository">
 				id="ee9d1cf0-ed3c-4055-83ca-b7fe21695297"
 				name="Copy_of_OptionSelecBancoEmisor"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2569,6 +2836,7 @@ name="SuraClaimsRepository">
 				id="29bd6f78-50c1-4c60-aea8-d30219d36b97"
 				name="txtbox_SeleccionarCuenta"
 				refimgid="d576bb62-edc5-4d3c-962c-abe8e913a8b2"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input
 				</item>
@@ -2578,6 +2846,7 @@ name="SuraClaimsRepository">
 				id="6ba5b80b-7753-437a-a997-a5196252024a"
 				name="Copy_of_txt_SeleccionarCuenta_CampoOblig"
 				refimgid="d576bb62-edc5-4d3c-962c-abe8e913a8b2"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2587,6 +2856,7 @@ name="SuraClaimsRepository">
 				id="bab28b8c-24fb-481c-943a-dbe4e413d91d"
 				name="lbl_SeleccionarCuenta"
 				refimgid="fbde4c9d-4487-4aa1-848d-b6f7f56444e8"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']
 				</item>
@@ -2596,17 +2866,9 @@ name="SuraClaimsRepository">
 				id="205ad05b-2c04-4317-a0ec-0d288e3ef67b"
 				name="ArrowSelectCuenta"
 				refimgid="4f2e5971-d5e9-4636-aa9f-c9ff14d90797"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:EFTRecords-trigger-picker']
-				</item>
-				<item
-				addcaps="unknown,webelement,litag"
-				capname="litag"
-				id="9bfffe42-edcf-4758-96e1-0dfc404e760a"
-				name="OptionSelectCuenta"
-				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
-				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]/body/div[13]//ul/li[@id~'ext-element-' and @innertext~'[A-Z]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
@@ -2614,6 +2876,7 @@ name="SuraClaimsRepository">
 				id="cf4926e3-f653-477a-871c-838c750d18cf"
 				name="Copy_of_OptionSelectCuenta"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']/../..//input[@data-tabindexsaved='True']
 				</item>
@@ -2623,8 +2886,73 @@ name="SuraClaimsRepository">
 				id="21d88ffd-2e6a-4016-9412-67085a4134ba"
 				name="lbl_Banco"
 				refimgid="e94bbbdb-c087-4f3e-afc8-4d966e96b4a2"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:EFTDataInputSet:BankName-inputEl']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="364c91a6-b1de-41e7-ad1d-21080f523246"
+				name="XTitleItemXTitleTextXTitleTextD"
+				refimgid="4174f515-0207-4cc4-8a60-f805cd04fcb5"
+				refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'UserSearchPopup-tbody']/tr[4]/td/div/div[1]/div/div/div/div"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'UserSearchPopup-tbody']/tr[4]/td/div/div[1]/div/div/div/div
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="a1eadb13-3ad8-43a7-aa0d-8a1308fb4c38"
+				name="XTableLayoutCell"
+				refimgid="fecd74ea-1750-42f2-b9c2-eed7f9a38745"
+				refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'AssigneePickerPopup-tbody']/tr[3]/td/div/table/tbody/tr[2]/td/div/table/tbody/tr/td"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'AssigneePickerPopup-tbody']/tr[3]/td/?/?/table/tbody/tr[2]//table//td
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="e0f32c42-de38-4017-a3f2-9216481b786e"
+				name="XTableLayoutCell1"
+				refimgid="0003105b-71de-4ba2-9caf-d66064167cef"
+				refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'AssigneePickerPopup-tbody']/tr[4]/td"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'AssigneePickerPopup-tbody']/tr[4]/td
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="72edf777-75d6-47b4-8048-bc10089a3973"
+				name="XBoxLayoutCtXDockedXDockedTopX"
+				refimgid="59b0250f-0487-42cf-8689-b6ed321e1ad6"
+				refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'UserSearchPopup-tbody']/tr[4]/td/div/div[2]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'UserSearchPopup-tbody']/tr[4]/td/div/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="trtag"
+				id="21caabbd-6e1c-4571-b1ac-af9be2aff91c"
+				name="GHelperCellText"
+				refimgid="249b2824-38c5-4e2c-8de1-92c2dd26f195"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']/tr[3]//table/tbody/tr[2]//table/tbody/tr[14]//table/tbody/tr[2]/td/div/div[3]/div[1]/div/table/?/?/tr
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="6f48e0d0-6a28-4d1d-8f85-5e90125987c9"
+				name="cell_Contacto"
+				refimgid="249b2824-38c5-4e2c-8de1-92c2dd26f195"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//div[@class='g-helper-cell-text']
 				</item>
 				<basepath>
 					/dom[@domain=$Ambiente]
@@ -2642,6 +2970,7 @@ name="SuraClaimsRepository">
 				id="0ebf5f68-5817-48fa-a9f9-1abe0cb8f491"
 				name="a_EvaluarCoberturaTecnica"
 				refimgid="827e4c15-f61b-45ed-9005-3f61caa689b0"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext&gt;'Evaluar Cobertura T&#233;cnica']
 				</item>
@@ -2651,6 +2980,7 @@ name="SuraClaimsRepository">
 				id="cc82babf-a711-43ab-ab65-3c909d0049a2"
 				name="a_CompletarChecklistFraude"
 				refimgid="827e4c15-f61b-45ed-9005-3f61caa689b0"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext&gt;'Completar CheckList']
 				</item>
@@ -2660,6 +2990,7 @@ name="SuraClaimsRepository">
 				id="fe131c2f-282a-4b2d-b2fb-a3331a21f5e6"
 				name="a_RevisarAprobarNuevoPago"
 				refimgid="827e4c15-f61b-45ed-9005-3f61caa689b0"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext&gt;'Revisar y aprobar nuevo pago']
 				</item>
@@ -2669,6 +3000,7 @@ name="SuraClaimsRepository">
 				id="6ab2f27c-3052-4e5a-906e-d01740b7a259"
 				name="ventana_Actividad"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Actividad']
 				</item>
@@ -2678,6 +3010,7 @@ name="SuraClaimsRepository">
 				id="ebc68aa1-fe2e-4165-b4c3-949fcbe22164"
 				name="ventana_Aprobacion"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Aprobación']
 				</item>
@@ -2687,6 +3020,7 @@ name="SuraClaimsRepository">
 				id="230a4dd0-fef7-4398-baaf-17d16d674221"
 				name="ventana_PreguntasPendientes"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Preguntas Pendientes']
 				</item>
@@ -2696,6 +3030,7 @@ name="SuraClaimsRepository">
 				id="b6ecc7c9-daca-4343-a8d1-1f7387b6cda6"
 				name="bttn_Editar"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Editar']
 				</item>
@@ -2705,6 +3040,7 @@ name="SuraClaimsRepository">
 				id="01b8f880-dab7-4e9a-8a7f-1daa5f78997c"
 				name="bttn_Actualizar"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Actalizar']
 				</item>
@@ -2714,6 +3050,7 @@ name="SuraClaimsRepository">
 				id="d781533b-b99d-4a09-a6a9-51cbf3367f4e"
 				name="bttn_Completar"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'Comletar']
 				</item>
@@ -2723,6 +3060,7 @@ name="SuraClaimsRepository">
 				id="ed3edc4f-d4c3-4177-b135-c1eac80f18ca"
 				name="bttn_PreguntasPendientes"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext&gt;'reguntas pendientes']
 				</item>
@@ -2732,6 +3070,7 @@ name="SuraClaimsRepository">
 				id="f6a28019-2fa8-496b-91da-1817e9233412"
 				name="bttn_Aprobar"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Aprobar']
 				</item>
@@ -2741,6 +3080,7 @@ name="SuraClaimsRepository">
 				id="4a58d41b-ab36-4da8-9e74-7f6cd8b4cab6"
 				name="input_Resultado"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext='Resultado']/../..//input
 				</item>
@@ -2750,6 +3090,7 @@ name="SuraClaimsRepository">
 				id="2f680c12-b289-4cb9-b276-75af1af2c5fe"
 				name="option_Aceptado"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext='Aceptado']
 				</item>
@@ -2759,6 +3100,7 @@ name="SuraClaimsRepository">
 				id="311f93bf-17d6-48a8-8b93-1fa9b07311b5"
 				name="option_No"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext='No']
 				</item>
@@ -2768,6 +3110,7 @@ name="SuraClaimsRepository">
 				id="96b1dd97-1327-4013-b37d-5c9510d0bd97"
 				name="option_Si"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext='Sí']
 				</item>
@@ -2777,6 +3120,7 @@ name="SuraClaimsRepository">
 				id="c51f5283-5da0-45be-bc49-a62f2dcf040f"
 				name="label_NumeroPoliza"
 				refimgid="ac7af8a5-c15f-4198-9f00-91bd99c65a46"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//div[#'infoBar-targetEl']//span[@innertext='Póliza:']/..//span[@innertext~'[0-9]+']
 				</item>
@@ -2793,6 +3137,7 @@ name="SuraClaimsRepository">
 					id="c504a4a8-d5a8-40e9-891f-f1b8920f343a"
 					name="pregunta_PoseeAntecedentes"
 					refimgid="905db7d1-ad17-4ea4-8f47-0c908e251a4e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Posee antecedentes siniestrales']/../..//div[@innertext~'ninguna']
 					</item>
@@ -2802,6 +3147,7 @@ name="SuraClaimsRepository">
 					id="944716b0-23b3-460d-89bb-2af4b075f8b3"
 					name="pregunta_ModificacionesPoliza"
 					refimgid="905db7d1-ad17-4ea4-8f47-0c908e251a4e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'El asegurado ha realizado modificaciones']/../..//div[@innertext~'ninguna']
 					</item>
@@ -2811,6 +3157,7 @@ name="SuraClaimsRepository">
 					id="4d6a0bf0-f8ff-4ead-a2e2-50fd46ace5fb"
 					name="pregunta_ModificacionRelato"
 					refimgid="905db7d1-ad17-4ea4-8f47-0c908e251a4e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'El asegurado modifica el relato previo']/../..//div[@innertext~'ninguna']
 					</item>
@@ -2820,6 +3167,7 @@ name="SuraClaimsRepository">
 					id="2ee4eab4-1354-4ba3-9fab-6172f8244122"
 					name="pregunta_ActividadAlMomento"
 					refimgid="905db7d1-ad17-4ea4-8f47-0c908e251a4e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'La actividad al momento']/../..//div[@innertext~'ninguna']
 					</item>
@@ -2829,6 +3177,7 @@ name="SuraClaimsRepository">
 					id="29ec3c10-d4df-485f-abff-38c2acca4c9b"
 					name="pregunta_MedidasDeSeguridad"
 					refimgid="905db7d1-ad17-4ea4-8f47-0c908e251a4e"
+					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Contaba con medidas de seguridad']/../..//div[@innertext~'ninguna']
 					</item>
@@ -2842,6 +3191,7 @@ name="SuraClaimsRepository">
 				id="94613b0d-0a08-4f83-a09b-fa6b8d924ed7"
 				name="txt_NombreAprobadorPago"
 				refimgid="80def7ab-7026-4600-a883-f4d8fbd79c54"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimWorkplan-tbody']//a[@innertext~'Revisar y aprobar']/../../..//td[11]/div
 				</item>
@@ -2858,6 +3208,7 @@ name="SuraClaimsRepository">
 				id="6df562b2-72ba-4224-94ca-72a04f4543c7"
 				name="a_Monto"
 				refimgid="9d777ca5-2740-46a9-9961-ba5fd3617732"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecks-tbody']//a[@innertext~'$' and @innertext~'[0-9]+']
 				</item>
@@ -2867,6 +3218,7 @@ name="SuraClaimsRepository">
 				id="242433b3-be02-4416-bfe7-d888a83a1545"
 				name="numeroEmisionLiquidacionSISE"
 				refimgid="c5f964be-2e45-47bd-9935-9ae420ca3d50"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext&gt;'Fecha de emisi&#243;n de Liquidaci&#243;n']/../..//div[@innertext~'[0-9]+' and @innertext!~'/']
 				</item>
@@ -2883,6 +3235,7 @@ name="SuraClaimsRepository">
 				id="7e7a387b-d640-4c67-a26d-ba8242e9a32f"
 				name="bttn_Reanudar"
 				refimgid="10213b6e-946f-491c-ba63-909ec7c9a471"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Ranudar']
 				</item>
@@ -2892,6 +3245,7 @@ name="SuraClaimsRepository">
 				id="c2b1ba40-2baa-48e4-a386-77c33800c9dc"
 				name="check_ServicioSuspendido"
 				refimgid="ac2f303c-d3dd-4161-8747-158cd6748a9b"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//img
 				</item>
@@ -2901,6 +3255,7 @@ name="SuraClaimsRepository">
 				id="5f4abf7a-4a3d-444e-a140-575dcd746971"
 				name="servicioSuspendido"
 				refimgid="3591ccd1-a403-44f4-b906-61874054ebc4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']
 				</item>
@@ -2910,6 +3265,7 @@ name="SuraClaimsRepository">
 				id="ef64a6ca-6c1c-4fd9-809c-f7359de279f9"
 				name="nombreServicioSuspendido"
 				refimgid="3591ccd1-a403-44f4-b906-61874054ebc4"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//div[@innertext='Suspendido']/../..//a
 				</item>
@@ -2919,8 +3275,350 @@ name="SuraClaimsRepository">
 				id="49948364-243d-443c-b1f6-50477db0e153"
 				name="txt_ColasDeMensajes"
 				refimgid="f9ce7faf-2e16-4d4f-abd6-fe6acae84c10"
+				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'MessagingDestinationControlList-tbody']//span[@innertext='Colas de mensajes']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="2ca76a57-c8ba-41a2-98b2-1f92506e4704"
+			isrooted="False"
+			name="JuiciosYMediaciones"
+			searchtimeout="0ms">
+				<item
+				capname="spantag"
+				id="36b083ec-8bf7-4571-8c69-a71ab912ffb4"
+				name="bttn_NuevoLitigio"
+				robustPath="/dom[@domain=$Ambiente]/element"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Nuevo litigio']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="24481707-475e-4d69-999c-c70cc4bffb13"
+				name="txt_JuiciosyMediaciones"
+				refimgid="fe5dde37-2a89-448c-8fb5-df3989ba92e3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Juicios y Mediaciones']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="fbef26a5-7033-4010-bf7e-b701b72455d7"
+				name="txt_NuevoRegistro"
+				refimgid="fe5dde37-2a89-448c-8fb5-df3989ba92e3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Nuevo registro']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="2c7dd497-c1d5-43b7-9ba4-eb6a74f1f390"
+				name="input_TipoLitigio"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//input[@name~'NewMatterDV:MatterType']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="4ea14b8d-36cd-4ace-84b5-fd57aeb97abd"
+				name="Copy_of_input_TipoLitigio"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//input[@name~'NewMatterDV:MatterType' and @data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="31625d95-acc4-4a68-b52d-d6da0d4a0134"
+				name="option_Litigio"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext=$TipoLitigio]
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="textareatag"
+				id="e70e443e-014b-4381-b4c1-7df98839d6dd"
+				name="input_Caratula"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//span[@innertext~'Carátula']/../..//textarea
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="textareatag"
+				id="3c070a27-87c6-4d4a-bf41-16382a6a3f33"
+				name="Copy_of_input_Caratula"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//span[@innertext~'Carátula']/../..//textarea[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="spantag"
+				id="3ac83a82-47bb-4d3a-875d-5ad75f3daa06"
+				name="txt_FechaSiniestro"
+				refimgid="6a5ed39e-72fd-4092-9f0d-6e68ef2430e4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[#'infoBar-innerCt']//span[@innertext&gt;'Fecha del siniestro']/..//span[@innertext~'[0-9]']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="941a9e84-d7e7-413f-a496-4a504b41c085"
+				name="input_FechaNotificacionDemanda"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//span[@innertext~'Fecha de notificación de demanda']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="d6969de5-b1e9-4088-8931-7383b1ccd081"
+				name="rdbutton_NotificacionSura"
+				refimgid="bca9864f-c93a-4f27-ad2f-e82035ba14e3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//label[@innertext='Notificación a Sura']/../..//input[@type='button']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="959ed9de-0c23-48cf-8403-854c33ce2d97"
+				name="arrow_AsignarTramitador"
+				refimgid="01231b4c-aba0-46d0-9ecb-a9c297fc3e36"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Asignar Tramitador']/../..//img
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="37e60742-633c-400a-a096-f35d39cbb92a"
+				name="arrow_AsignarEstudio"
+				refimgid="01231b4c-aba0-46d0-9ecb-a9c297fc3e36"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Asignar Estudio']/../..//img
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="e5756acf-e93a-453b-832f-5d65fe5568ee"
+				name="bttn_Asignar"
+				refimgid="b3e02155-767f-4c50-97bc-9006d3452308"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'AssigneePickerPopup-tbody']//a[@innertext~'Asignar']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="5f706837-6ac3-425b-9706-b1bff88acb1a"
+				name="bttn_Seleccionar"
+				refimgid="b3e02155-767f-4c50-97bc-9006d3452308"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'UserSearchPopup-tbody']//a[@innertext='Seleccionar'][1]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="38b480fa-cfba-40b9-9f4b-3d8ce084b0f4"
+				name="bttn_Buscar"
+				refimgid="961626a8-05de-4725-bd03-4cb716f1b0ac"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//a[@innertext='Bucar']
+				</item>
+				<item
+				capname="spantag"
+				id="f7a32ea5-2002-4bf7-8467-a75610f91e67"
+				name="option_BuscarUsuario"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Buscar un usuario']
+				</item>
+				<item
+				capname="spantag"
+				id="708546d8-b4c8-48a0-b55e-0661c0964dde"
+				name="txt_BuscarAsignacion"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Buscar']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="f4b4d1e0-3a7b-44e2-b7a6-66fd6c157feb"
+				name="input_Reserva"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//span[@innertext~'Reserva']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="9c897d92-5597-48bc-ae9d-c9449bafa0ab"
+				name="input_FechaVencimientoDemanda"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//span[@innertext~'Fecha de vencimiento contestación de demanda']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="01a6a163-b7fc-48d8-ab45-11e9d6120b06"
+				name="bttn_AgregarReclamo"
+				refimgid="961626a8-05de-4725-bd03-4cb716f1b0ac"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'gregar'][1]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="064c4c14-3443-44b0-8864-53c5e7738b08"
+				name="bttn_AgregarPartes"
+				refimgid="961626a8-05de-4725-bd03-4cb716f1b0ac"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'gregar'][2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="c6b569d6-9c9b-42db-85d1-de9d3a190aa6"
+				name="input_Ninguna"
+				refimgid="802f65ce-7ccc-4ef1-b7c8-7413951c33b7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//div[@innertext='&lt;ninguna&gt;']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="9bfffe42-edcf-4758-96e1-0dfc404e760a"
+				name="option_Contacto"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="divtag"
+				id="76d164f5-57d5-4508-983c-922174f578bb"
+				name="Copy_of_option_Contacto"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[@innertext~'[A-Z]+' and @data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="efe673f9-8818-4ff3-a2e4-282e4cc9a9dd"
+				name="option_Reclamo"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z][a-z]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="d1b1386b-b3fe-4133-8f31-963bc1cec686"
+				name="option_Actor"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Actor']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="c5b450aa-0eab-49e9-89bc-f7ff82e40e7f"
+				name="option_Contraria"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Contraria']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="divtag"
+				id="aa0371c6-2cd3-4995-9784-558d7e10949d"
+				name="Copy_of_option_Actor"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[@innertext~'Actor' and @data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="divtag"
+				id="5eae5bd3-07d7-418a-8e45-b9847a9f0fe4"
+				name="Copy_of_option_Contraria"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[@innertext~'Contraria' and @data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="74c4032e-acd9-429f-9125-1bad217be0d7"
+				name="tag_Reclamo"
+				refimgid="9d777ca5-2740-46a9-9961-ba5fd3617732"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@innertext~'[0-9]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="9ab9b21e-64aa-4333-bbcf-ac61ef13887d"
+				name="bttn_Actualizar"
+				refimgid="b3e02155-767f-4c50-97bc-9006d3452308"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'lizar']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="637f23f8-c6ab-4ec4-95e8-b14da06fb8be"
+				name="bttn_VolverALitigacion"
+				refimgid="85b4df9e-1bee-4ca0-bef0-f6c0cf5efb6a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@innertext='Volver a Litigación']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="divtag"
+				id="b1d35e83-e9ab-4263-927f-49f99ccfb502"
+				name="txt_NumeroRAJ"
+				refimgid="85b4df9e-1bee-4ca0-bef0-f6c0cf5efb6a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Número de RAJ']/../..//div[@innertext~'[0-9+]']
 				</item>
 			</folder>
 			<basepath>
@@ -2955,6 +3653,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="4e4648ce-0cd1-45e7-8b3b-cee8cdbff623"
 			name="bttn_CerrarContinueOnFail"
 			refimgid="719d9f8d-9810-41b5-a6a1-7378e11831f3"
+			robustPath=""
 			searchtimeout="0ms">
 				/dom[@domain=$Ambiente]//tbody[#'NewClaimDuplicatesWorksheet-tbody']//span[@innertext~'Crrar']
 			</item>
@@ -2964,6 +3663,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="2ecb5eda-794d-4225-b425-fadfac103b1a"
 			name="Copy_of_bttn_Aceptar"
 			refimgid="5d07ac44-187c-4f79-aa5d-dfea2507edf4"
+			robustPath=""
 			searchtimeout="0ms">
 				/dom[@domain=$Ambiente]/body//span[@innertext~'Aceptar']
 			</item>
@@ -2973,6 +3673,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="4786339d-e3f8-4897-b5a6-0d235e6aab40"
 			name="bttn_Cancelar"
 			refimgid="c3255885-8b8e-4e76-a16f-b5edc690faab"
+			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//span[@innertext&gt;'Cance']
 			</item>
@@ -2996,6 +3697,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="Btn_Abandonar"
 			refimgid="00f01a8f-a919-4b70-9b2e-1afee1535e65"
 			refpath="/form[@title='¿Deseas abandonar el sitio?']/container[@accessiblename='']/container[2]/container[@accessiblerole='Pane']/button[@accessiblename='Abandonar']"
+			robustPath=""
 			searchtimeout="0ms">
 				/form[@title&gt;'&#191;Deseas abandonar el siti']/container[@accessiblename='']//button[@accessiblename='Abandonar']
 			</item>
@@ -3033,6 +3735,7 @@ AAAASUVORK5CYII=
 			name="Aceptar"
 			refimgid="fe0b3e85-56a9-4c84-8ec0-8ce9a3eb385c"
 			refpath="/form[@title='PuTTY Exit Confirmation']/button[@text='Aceptar']"
+			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title='PuTTY Exit Confirmation']/button[@text='Aceptar']
 			</item>
@@ -3063,6 +3766,7 @@ rkJggg==
 			name="Sistema"
 			refimgid="458eb1a9-ba7b-42d1-823e-7c18c0d3b6c8"
 			refpath="/form[@title='Sise Pre Prod']/menubar/menuitem[@accessiblename='Sistema']"
+			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title='Sise Pre Prod']/?/?/menuitem[@accessiblename='Sistema']
 			</item>
@@ -3092,6 +3796,7 @@ rkJggg==
 			name="CopyAllToClipboard"
 			refimgid="5b89d225-7488-409c-a8af-639de0a56d8b"
 			refpath="/contextmenu[@processname='putty']/contextmenu/menuitem[@accessiblename='Copy All to Clipboard']"
+			robustPath=""
 			searchtimeout="30000ms">
 				/contextmenu[@processname='putty']/?/?/menuitem[@accessiblename='Copy All to Clipboard']
 			</item>
@@ -3153,6 +3858,16 @@ DSAAos+dOwfG6ACnATANyIY0dE4iLgy6OqpBgmCA7gp0gNUAqCAYbD8IcQVJLkA2AARg3iHJBaRg
 DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			</icon>
 		</appfolder>
+		<item
+		addcaps="unknown,webelement,litag"
+		capname="spantag"
+		id="4fd71e6e-b10b-4348-a35d-f02ee94ebbc5"
+		name="option_NombreLesionado3"
+		refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+		robustPath=""
+		searchtimeout="30000ms">
+			/dom[@domain=$Ambiente]//span[@innertext~$NombreLesionado]
+		</item>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -3180,7 +3895,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			i-preproducciongestion.segurossura.com.ar
+			preproducciongestion.segurossura.com.ar
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"
@@ -3239,12 +3954,18 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		name="NombreLesionado">
 		</var>
 		<var
-		id="a8b4652c-674f-409b-ac72-0f199fb9210c"
-		name="Bando">
-		</var>
-		<var
 		id="fb8ecf96-5ed0-4e36-b992-7d7b80220c17"
 		name="Banco">
+		</var>
+		<var
+		id="e783f84c-b0da-4951-8be6-9f474f4f3f92"
+		name="TipoLitigio">
+			Juicio
+		</var>
+		<var
+		id="5cef5c8f-7fd7-4fee-8a08-21cffb0cc584"
+		name="Asignar">
+			Asignar Tramitador
 		</var>
 	</variables>
 </repository>
