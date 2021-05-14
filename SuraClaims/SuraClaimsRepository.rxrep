@@ -2020,7 +2020,17 @@ name="SuraClaimsRepository">
 					refimgid="d9ad89dd-6276-43c4-8fb9-2cefe5e50938"
 					robustPath=""
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//.//span[@innertext='Tipo de Vehículo']/../..//input
+						/dom[@domain=$Ambiente]//span[@innertext='Tipo de Vehículo']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="litag"
+					id="4a069812-3751-4549-9e01-7aaa6dfecaf5"
+					name="option_TipoVehiculo"
+					refimgid="d9ad89dd-6276-43c4-8fb9-2cefe5e50938"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//li[@innertext='Tipo de Vehículo']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -3619,6 +3629,16 @@ name="SuraClaimsRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Número de RAJ']/../..//div[@innertext~'[0-9+]']
+				</item>
+				<item
+				addcaps="unknown,webelement,tabletag"
+				capname="atag"
+				id="78e0fc9f-11e6-4db3-acfa-5ba05d84d58d"
+				name="bttn_Seleccionar_JuanPablo"
+				refimgid="17eb323d-5495-418a-bc87-29979b580d66"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'UserSearchPopup-tbody']//div[@innertext='Estudio Juan Pablo Ramon']/../..//a[@innertext='Seleccionar']
 				</item>
 			</folder>
 			<basepath>

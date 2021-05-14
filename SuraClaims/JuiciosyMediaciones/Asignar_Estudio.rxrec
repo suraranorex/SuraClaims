@@ -275,7 +275,7 @@ L+lFFch2Ei/eH1qcUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -292,6 +292,32 @@ L+lFFch2Ei/eH1qcUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'UserSearchPopup-tbody']//a[@innertext~'Asignar|Seleccionar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f9421086-dbb6-45ee-a828-369a94dc027e"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78e0fc9f-11e6-4db3-acfa-5ba05d84d58d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'UserSearchPopup-tbody']//div[@innertext='Estudio Juan Pablo Ramon']/../..//a[@innertext='Seleccionar']
 				</path>
 				<robustPath>
 				</robustPath>

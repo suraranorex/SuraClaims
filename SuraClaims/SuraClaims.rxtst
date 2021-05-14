@@ -140,7 +140,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
+			datasource="ValidarLitigios_SISE"
 			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9"
+			maxrange="0"
+			minrange="0"
 			name="ValidarLitigio_SISE">
 			</testcase>
 			<testmodule
@@ -797,6 +801,14 @@
 			name="FInalizar_Litigio"
 			ref="9059d729-8a92-4902-9a8e-fa8d215b7d43"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="f1296ba1-f8ac-4c96-a800-36b2c831b92a"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="303b4326-3b0f-4b8a-a43e-1b139dd9bf2c"
@@ -1369,6 +1381,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="5180fe8f-6894-45ed-b658-a0191278ff53"
+			name="PREPROD">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="9b676ac0-8ee0-430a-be0d-116bebd0be1b">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="PREPROD">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="5233ef01-d2f8-4ce3-8943-f56aa7bd0cea"
 			name="DetalleVehiculoAsegurado_Tercero_UBER"
@@ -1692,7 +1729,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="648d7ce2-3417-4f9b-a453-5e557bdde8f6"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -1944,6 +1980,31 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<smartfoldernode
+			id="7112eb20-9985-4964-8f8a-199e6b184430"
+			name="QA">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="9b676ac0-8ee0-430a-be0d-116bebd0be1b">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="QA">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="72afab8c-18b2-482e-8a47-12aedd4d2fb7"
 			name="Logout"
@@ -2090,7 +2151,7 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="2"
+			maxrange="5"
 			minrange="2"
 			name="ValidarGeneracion_SISE">
 			</testcase>
@@ -2456,8 +2517,11 @@
 			name="setup">
 			</setup>
 			<testcase
+			datarangeactive="True"
 			datasource="Mediaciones_Juicios"
 			id="8d86ce00-19d6-4545-b4f6-2b02fffe0c3f"
+			maxrange="1"
+			minrange="1"
 			name="Generar_Litigio">
 			</testcase>
 			<testmodule
@@ -2591,7 +2655,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="9a531ba7-f4aa-49c1-8b5f-1bebab94db8c"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -3133,8 +3196,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="4"
-			minrange="4"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -3646,6 +3709,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e998fe57-9a5e-42d9-9af8-2e36ed805aeb"
+			name="ValidarLitigio_SISE_QA"
+			ref="3a339b99-6e3d-4243-a752-b70ed661250c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="ea09cfe8-c23e-4025-a127-0394e3c4c52f"
 			name="ValidarPago"
 			ref="190d689b-a220-431f-b631-8bb5d974de2a"
@@ -3804,7 +3873,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="f36241d6-7b94-4497-86b8-70a17fe40c92"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -3990,7 +4058,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="f866df40-1bc6-4a62-8abc-6c39b68b2415"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -4092,6 +4159,20 @@
 			name="ValidarLitigio_SISE_PREPROD"
 			ref="3548766d-0c1e-4f3b-9bc0-86878fcbe073"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="9b676ac0-8ee0-430a-be0d-116bebd0be1b"
+					variableid="2b3abd45-28fd-46dd-9a0b-a260f98d418a"
+					variablename="NroSiniestro">
+					</var>
+					<var
+					dataname="RAJ"
+					datasourceid="9b676ac0-8ee0-430a-be0d-116bebd0be1b"
+					variableid="a005cb24-7541-4976-bf7f-04b666b52001"
+					variablename="RAJ">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="fbaf707b-605c-4e7f-956a-3d27e1e10d9b"
@@ -5128,10 +5209,22 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="fb1df5c3-e1a0-4aa2-bff1-13bee32e4787"
-						name="ValidarLitigio_SISE_PREPROD">
-						</testmodule>
+						<smartfoldernode
+						id="7112eb20-9985-4964-8f8a-199e6b184430"
+						name="QA">
+							<testmodule
+							id="e998fe57-9a5e-42d9-9af8-2e36ed805aeb"
+							name="ValidarLitigio_SISE_QA">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="5180fe8f-6894-45ed-b658-a0191278ff53"
+						name="PREPROD">
+							<testmodule
+							id="fb1df5c3-e1a0-4aa2-bff1-13bee32e4787"
+							name="ValidarLitigio_SISE_PREPROD">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="3c3f97d9-00d7-4114-af14-312170047322"
 						name="teardown">
@@ -5234,7 +5327,7 @@
 		filename="DataSource - Generación Mediaciones y Juicios.xlsx"
 		id="f1296ba1-f8ac-4c96-a800-36b2c831b92a"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="Mediaciones_Juicios"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -5855,7 +5948,7 @@
 		filename="Validacion_GeneracionSiniestro_SISE.xlsx"
 		id="83d78466-8533-4d57-9847-9d4f076d3f3a"
 		includefile="Checked"
-		lastknownrowcount="7"
+		lastknownrowcount="6"
 		name="ValidacionGeneracionSiniestro_SISE"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -5866,6 +5959,29 @@
 				</column>
 				<column>
 					NroSiniestro
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="ValidarLitigios_SISE.xlsx"
+		id="9b676ac0-8ee0-430a-be0d-116bebd0be1b"
+		includefile="Checked"
+		lastknownrowcount="2"
+		name="ValidarLitigios_SISE"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					NroSiniestro
+				</column>
+				<column>
+					RAJ
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -5987,19 +6103,28 @@
 			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9">
 			</testcontainer>
 			<testcontainer
-			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
+			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
-			id="1ae1f931-8357-4441-9040-d0db20595df1">
+			id="5180fe8f-6894-45ed-b658-a0191278ff53">
 			</testcontainer>
 			<testcontainer
-			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
+			id="7112eb20-9985-4964-8f8a-199e6b184430">
+			</testcontainer>
+			<testcontainer
+			id="89fa68a6-9618-4127-aaec-5d106b43550a">
 			</testcontainer>
 			<testcontainer
 			id="8d86ce00-19d6-4545-b4f6-2b02fffe0c3f">
 			</testcontainer>
 			<testcontainer
+			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
+			</testcontainer>
+			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
 			</testcontainer>
 			<testcontainer
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc">

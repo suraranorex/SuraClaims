@@ -231,6 +231,18 @@
       <UserCode>true</UserCode>
       <id>ee74a765-ba45-4266-acf6-ef415c8c57ac</id>
     </Compile>
+    <Compile Include="JuiciosyMediaciones\ValidarLitigio_SISE_QA.cs">
+      <BoundTo>0175adf6-ad5c-405f-ba44-dfabfa197807</BoundTo>
+      <DependentUpon>ValidarLitigio_SISE_QA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6a5ba94f-d5a3-4c2d-aefd-e81e89fc4b1d</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\ValidarLitigio_SISE_QA.UserCode.cs">
+      <BoundTo>0175adf6-ad5c-405f-ba44-dfabfa197807</BoundTo>
+      <DependentUpon>ValidarLitigio_SISE_QA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd9b065f-dcd3-4aaf-971b-35294a07d91f</id>
+    </Compile>
     <Compile Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.cs">
       <BoundTo>f39815eb-df4c-4467-b9eb-12b0e044e9f7</BoundTo>
       <DependentUpon>MenuLateral_DatosFinancieros_Liquidaciones.rxrec</DependentUpon>
@@ -1146,6 +1158,11 @@
       <id>2b78e37c-cd8b-4771-8490-581b27f2a046</id>
       <recordtableid>3548766d-0c1e-4f3b-9bc0-86878fcbe073</recordtableid>
     </None>
+    <None Include="JuiciosyMediaciones\ValidarLitigio_SISE_QA.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>0175adf6-ad5c-405f-ba44-dfabfa197807</id>
+      <recordtableid>3a339b99-6e3d-4243-a752-b70ed661250c</recordtableid>
+    </None>
     <None Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>f39815eb-df4c-4467-b9eb-12b0e044e9f7</id>
@@ -1581,6 +1598,13 @@
       <DependentUpon>SuraClaims.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>4d2163b2-79ba-4790-a6cb-6a014998f186</id>
+    </Content>
+    <Content Include="ValidarLitigios_SISE.xlsx">
+      <Link>ValidarLitigios_SISE.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>3119e067-3d36-4d40-9a5c-813b8c1b046c</id>
     </Content>
   </ItemGroup>
   <ItemGroup>

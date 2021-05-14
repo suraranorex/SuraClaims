@@ -5526,6 +5526,7 @@ namespace SuraClaims
             RepoItemInfo _txt_patenteInfo;
             RepoItemInfo _copy_of_textpatenteInfo;
             RepoItemInfo _txt_tipovehiculoInfo;
+            RepoItemInfo _option_tipovehiculoInfo;
             RepoItemInfo _copy_of_txttipovehiculoInfo;
 
             /// <summary>
@@ -5549,7 +5550,8 @@ namespace SuraClaims
                 _txt_descripdaniosterceroInfo = new RepoItemInfo(this, "txt_DescripDaniosTercero", ".//span[@innertext~'Descripción de los daños']/../..//textarea", "", 30000, null, "05dd44a1-642a-4317-ad54-fa95a1a40ddc");
                 _txt_patenteInfo = new RepoItemInfo(this, "txt_Patente", ".//span[@innertext='Patente']/../..//input", "", 30000, null, "d6fd0bb1-4b36-4a07-9f11-0afd0defffc1");
                 _copy_of_textpatenteInfo = new RepoItemInfo(this, "Copy_of_textPatente", ".//span[@innertext='Patente']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "f4d10379-5e5b-41b4-95dc-1575a0d99f7e");
-                _txt_tipovehiculoInfo = new RepoItemInfo(this, "txt_TipoVehiculo", ".//.//span[@innertext='Tipo de Vehículo']/../..//input", "", 30000, null, "e71ae898-1d06-4e8e-90e0-2ec3fc7472d1");
+                _txt_tipovehiculoInfo = new RepoItemInfo(this, "txt_TipoVehiculo", ".//span[@innertext='Tipo de Vehículo']/../..//input", "", 30000, null, "e71ae898-1d06-4e8e-90e0-2ec3fc7472d1");
+                _option_tipovehiculoInfo = new RepoItemInfo(this, "option_TipoVehiculo", ".//li[@innertext='Tipo de Vehículo']", "", 30000, null, "4a069812-3751-4549-9e01-7aaa6dfecaf5");
                 _copy_of_txttipovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtTipoVehiculo", ".//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09");
             }
 
@@ -5946,6 +5948,30 @@ namespace SuraClaims
                 get
                 {
                     return _txt_tipovehiculoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The option_TipoVehiculo item.
+            /// </summary>
+            [RepositoryItem("4a069812-3751-4549-9e01-7aaa6dfecaf5")]
+            public virtual Ranorex.LiTag option_TipoVehiculo
+            {
+                get
+                {
+                    return _option_tipovehiculoInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The option_TipoVehiculo item info.
+            /// </summary>
+            [RepositoryItemInfo("4a069812-3751-4549-9e01-7aaa6dfecaf5")]
+            public virtual RepoItemInfo option_TipoVehiculoInfo
+            {
+                get
+                {
+                    return _option_tipovehiculoInfo;
                 }
             }
 
@@ -9363,6 +9389,7 @@ namespace SuraClaims
             RepoItemInfo _bttn_actualizarInfo;
             RepoItemInfo _bttn_volveralitigacionInfo;
             RepoItemInfo _txt_numerorajInfo;
+            RepoItemInfo _bttn_seleccionar_juanpabloInfo;
 
             /// <summary>
             /// Creates a new JuiciosYMediaciones  folder.
@@ -9404,6 +9431,7 @@ namespace SuraClaims
                 _bttn_actualizarInfo = new RepoItemInfo(this, "bttn_Actualizar", ".//span[@innertext~'lizar']", "", 30000, null, "9ab9b21e-64aa-4333-bbcf-ac61ef13887d");
                 _bttn_volveralitigacionInfo = new RepoItemInfo(this, "bttn_VolverALitigacion", ".//tbody[#'centerPanel-tbody']//a[@innertext='Volver a Litigación']", "", 30000, null, "637f23f8-c6ab-4ec4-95e8-b14da06fb8be");
                 _txt_numerorajInfo = new RepoItemInfo(this, "txt_NumeroRAJ", ".//tbody[#'centerPanel-tbody']//span[@innertext='Número de RAJ']/../..//div[@innertext~'[0-9+]']", "", 30000, null, "b1d35e83-e9ab-4263-927f-49f99ccfb502");
+                _bttn_seleccionar_juanpabloInfo = new RepoItemInfo(this, "bttn_Seleccionar_JuanPablo", ".//tbody[#'UserSearchPopup-tbody']//div[@innertext='Estudio Juan Pablo Ramon']/../..//a[@innertext='Seleccionar']", "", 30000, null, "78e0fc9f-11e6-4db3-acfa-5ba05d84d58d");
             }
 
             /// <summary>
@@ -10231,6 +10259,30 @@ namespace SuraClaims
                 get
                 {
                     return _txt_numerorajInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Seleccionar_JuanPablo item.
+            /// </summary>
+            [RepositoryItem("78e0fc9f-11e6-4db3-acfa-5ba05d84d58d")]
+            public virtual Ranorex.ATag bttn_Seleccionar_JuanPablo
+            {
+                get
+                {
+                    return _bttn_seleccionar_juanpabloInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Seleccionar_JuanPablo item info.
+            /// </summary>
+            [RepositoryItemInfo("78e0fc9f-11e6-4db3-acfa-5ba05d84d58d")]
+            public virtual RepoItemInfo bttn_Seleccionar_JuanPabloInfo
+            {
+                get
+                {
+                    return _bttn_seleccionar_juanpabloInfo;
                 }
             }
         }

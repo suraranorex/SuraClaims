@@ -107,11 +107,15 @@ namespace SuraClaims.JuiciosyMediaciones
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Seleccionar' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_SeleccionarInfo, new RecordItemIndex(5));
-            repo.SuraClaims.JuiciosYMediaciones.bttn_Seleccionar.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Seleccionar' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_SeleccionarInfo, new RecordItemIndex(5));
+            //repo.SuraClaims.JuiciosYMediaciones.bttn_Seleccionar.Click();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Seleccionar_JuanPablo' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_Seleccionar_JuanPabloInfo, new RecordItemIndex(6));
+            repo.SuraClaims.JuiciosYMediaciones.bttn_Seleccionar_JuanPablo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.txt_NuevoRegistro'", repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistroInfo, new ActionTimeout(20000), new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.txt_NuevoRegistro'", repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistroInfo, new ActionTimeout(20000), new RecordItemIndex(7));
             repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistroInfo.WaitForExists(20000);
             
         }

@@ -23,19 +23,19 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.JuiciosyMediaciones
 {
-    public partial class ValidarLitigio_SISE_PREPROD
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
-        private void Init()
-        {
-            // Your recording specific initialization code goes here.
-        }
+	public partial class ValidarLitigio_SISE_QA
+	{
+		/// <summary>
+		/// This method gets called right after the recording has been started.
+		/// It can be used to execute recording specific initialization code.
+		/// </summary>
+		private void Init()
+		{
+			// Your recording specific initialization code goes here.
+		}
 
-        public void ValidarLogin(string TextoValidacion, string TituloAccion)
-        {
+		public void ValidarLogin(string TextoValidacion, string TituloAccion)
+		{
 			// TODO: Replace the following line with your code implementation.
 			//throw new NotImplementedException();
 			
@@ -78,8 +78,9 @@ namespace SuraClaims.JuiciosyMediaciones
 			}else{
 				Validate.IsTrue(Chk,"Validación de Texto Exitosa - " + TituloAccion);
 			}
-        }
+		}
 
 
-    }
+
+	}
 }

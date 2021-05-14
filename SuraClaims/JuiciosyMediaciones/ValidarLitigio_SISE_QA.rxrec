@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="3548766d-0c1e-4f3b-9bc0-86878fcbe073"
+id="3a339b99-6e3d-4243-a752-b70ed661250c"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,17 +19,17 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ValidarLitigio_SISE_PREPROD"
+	classname="ValidarLitigio_SISE_QA"
 	namespace="SuraClaims.JuiciosyMediaciones">
 	</codegen>
 	<variables>
 		<var
-		id="2b3abd45-28fd-46dd-9a0b-a260f98d418a"
+		id="cd0aac23-9b4d-47c3-a213-0e2c847236f3"
 		name="NroSiniestro">
 			1220194200601
 		</var>
 		<var
-		id="a005cb24-7541-4976-bf7f-04b666b52001"
+		id="7600ffca-258e-48b6-a835-8e507f6eed2a"
 		name="RAJ">
 		</var>
 	</variables>
@@ -1119,7 +1119,7 @@ ip4v9Sn+6KKKiaSdkVF3Q+iiioGFFFFABRRRQB//2Q==
 		</explicitdelayitem>
 		<userrecorditem
 		autogenmethod="True"
-		classname="ValidarLitigio_SISE_PREPROD"
+		classname="ValidarLitigio_SISE_QA"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ValidarLogin"
@@ -1164,7 +1164,7 @@ ip4v9Sn+6KKKiaSdkVF3Q+iiioGFFFFABRRRQB//2Q==
 			</bindings>
 		</separatoritem>
 		<keysequenceitem
-		KeySequence="1{Return}"
+		KeySequence="2{Return}"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -1628,7 +1628,7 @@ g+U/XvRRW0UuS5D3LVpfRXcCMCquwOY92SKni/1Kf7oooqJpJ2RUXdD6KKKgYUUUUAFFFFAH/9k=
 			</bindings>
 		</explicitdelayitem>
 		<keysequenceitem
-		KeySequence="2{Return}"
+		KeySequence="4{Return}"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -2175,7 +2175,7 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 		</separatoritem>
 		<userrecorditem
 		autogenmethod="True"
-		classname="ValidarLitigio_SISE_PREPROD"
+		classname="ValidarLitigio_SISE_QA"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ValidarLogin"
@@ -2664,7 +2664,7 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 		</explicitdelayitem>
 		<userrecorditem
 		autogenmethod="True"
-		classname="ValidarLitigio_SISE_PREPROD"
+		classname="ValidarLitigio_SISE_QA"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ValidarLogin"
@@ -3327,7 +3327,7 @@ AooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ValidarLitigio_SISE_PREPROD.UserCode.cs
+		ValidarLitigio_SISE_QA.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

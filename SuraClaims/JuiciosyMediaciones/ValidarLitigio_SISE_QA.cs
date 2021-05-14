@@ -24,22 +24,22 @@ namespace SuraClaims.JuiciosyMediaciones
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ValidarLitigio_SISE_PREPROD recording.
+    ///The ValidarLitigio_SISE_QA recording.
     /// </summary>
-    [TestModule("3548766d-0c1e-4f3b-9bc0-86878fcbe073", ModuleType.Recording, 1)]
-    public partial class ValidarLitigio_SISE_PREPROD : ITestModule
+    [TestModule("3a339b99-6e3d-4243-a752-b70ed661250c", ModuleType.Recording, 1)]
+    public partial class ValidarLitigio_SISE_QA : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static ValidarLitigio_SISE_PREPROD instance = new ValidarLitigio_SISE_PREPROD();
+        static ValidarLitigio_SISE_QA instance = new ValidarLitigio_SISE_QA();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ValidarLitigio_SISE_PREPROD()
+        public ValidarLitigio_SISE_QA()
         {
             NroSiniestro = "1220194200601";
             RAJ = "";
@@ -48,7 +48,7 @@ namespace SuraClaims.JuiciosyMediaciones
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ValidarLitigio_SISE_PREPROD Instance
+        public static ValidarLitigio_SISE_QA Instance
         {
             get { return instance; }
         }
@@ -60,7 +60,7 @@ namespace SuraClaims.JuiciosyMediaciones
         /// <summary>
         /// Gets or sets the value of variable NroSiniestro.
         /// </summary>
-        [TestVariable("2b3abd45-28fd-46dd-9a0b-a260f98d418a")]
+        [TestVariable("cd0aac23-9b4d-47c3-a213-0e2c847236f3")]
         public string NroSiniestro
         {
             get { return _NroSiniestro; }
@@ -72,7 +72,7 @@ namespace SuraClaims.JuiciosyMediaciones
         /// <summary>
         /// Gets or sets the value of variable RAJ.
         /// </summary>
-        [TestVariable("a005cb24-7541-4976-bf7f-04b666b52001")]
+        [TestVariable("7600ffca-258e-48b6-a835-8e507f6eed2a")]
         public string RAJ
         {
             get { return _RAJ; }
@@ -136,8 +136,8 @@ namespace SuraClaims.JuiciosyMediaciones
             // Ambiente
             Report.Log(ReportLevel.Info, "Section", "Ambiente", new RecordItemIndex(8));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(9));
-            repo.SisePreProd.Self.PressKeys("1{Return}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(9));
+            repo.SisePreProd.Self.PressKeys("2{Return}");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(10));
@@ -150,8 +150,8 @@ namespace SuraClaims.JuiciosyMediaciones
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(12));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(13));
-            repo.SisePreProd.Self.PressKeys("2{Return}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(13));
+            repo.SisePreProd.Self.PressKeys("4{Return}");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(14));
