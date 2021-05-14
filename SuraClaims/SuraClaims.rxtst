@@ -2780,6 +2780,31 @@
 			id="9c301bfe-66ea-4274-9213-3a1bcdd34136"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="9dce1b14-f6ec-4887-bee0-f3cdfb3314c7"
+			name="CompletarFecha_PrimerAudiencia">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="TipoLitigio"
+								id="f1296ba1-f8ac-4c96-a800-36b2c831b92a">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Mediación">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="9e5b5800-2f32-4a29-bc24-827de14b9692"
 			name="MenuLateral_JuiciosyMediaciones"
@@ -3625,6 +3650,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e1e1325d-1edb-4976-8928-8d28b0adba53"
+			name="CompletarFechaPrimerAudiencia"
+			ref="788e920d-0c0e-44cc-8774-137b7aede9fe"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e4bf6c50-cd65-4073-abbc-aa9b44b83670"
 			name="FinalizarSiniestro"
 			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
@@ -3952,7 +3983,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
-			name="CompletarFechaVencimientoDemanda">
+			name="CompletarFecha_VencimientoDemanda">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
@@ -5171,10 +5202,18 @@
 						</testmodule>
 						<smartfoldernode
 						id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
-						name="CompletarFechaVencimientoDemanda">
+						name="CompletarFecha_VencimientoDemanda">
 							<testmodule
 							id="d0972e65-8973-4d5d-b123-20e469169daa"
 							name="CompletarFechaVencimientoDemanda">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="9dce1b14-f6ec-4887-bee0-f3cdfb3314c7"
+						name="CompletarFecha_PrimerAudiencia">
+							<testmodule
+							id="e1e1325d-1edb-4976-8928-8d28b0adba53"
+							name="CompletarFechaPrimerAudiencia">
 							</testmodule>
 						</smartfoldernode>
 						<testmodule
@@ -6119,6 +6158,9 @@
 			</testcontainer>
 			<testcontainer
 			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
+			</testcontainer>
+			<testcontainer
+			id="9dce1b14-f6ec-4887-bee0-f3cdfb3314c7">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">

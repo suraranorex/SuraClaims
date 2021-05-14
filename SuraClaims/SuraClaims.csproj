@@ -183,6 +183,18 @@
       <UserCode>true</UserCode>
       <id>0de2fdbb-3bc5-4337-8a26-942197ed0d1c</id>
     </Compile>
+    <Compile Include="JuiciosyMediaciones\CompletarFechaPrimerAudiencia.cs">
+      <BoundTo>a69ab43c-f7c6-499b-8a24-0d565d5d277f</BoundTo>
+      <DependentUpon>CompletarFechaPrimerAudiencia.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba5aecad-ae88-405a-a32e-31ea07ad1cbe</id>
+    </Compile>
+    <Compile Include="JuiciosyMediaciones\CompletarFechaPrimerAudiencia.UserCode.cs">
+      <BoundTo>a69ab43c-f7c6-499b-8a24-0d565d5d277f</BoundTo>
+      <DependentUpon>CompletarFechaPrimerAudiencia.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>16b80d72-5a28-49bc-8874-6866115c7e3c</id>
+    </Compile>
     <Compile Include="JuiciosyMediaciones\CompletarFechaVencimientoDemanda.cs">
       <BoundTo>fe3af283-5a10-40fc-abe2-f1cdf7ec9725</BoundTo>
       <DependentUpon>CompletarFechaVencimientoDemanda.rxrec</DependentUpon>
@@ -1137,6 +1149,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>7cb4af78-026b-48e1-8772-aed67be71d37</id>
       <recordtableid>8cfe90ab-a7b7-45f4-95f2-44f0e6c9965d</recordtableid>
+    </None>
+    <None Include="JuiciosyMediaciones\CompletarFechaPrimerAudiencia.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>a69ab43c-f7c6-499b-8a24-0d565d5d277f</id>
+      <recordtableid>788e920d-0c0e-44cc-8774-137b7aede9fe</recordtableid>
     </None>
     <None Include="JuiciosyMediaciones\CompletarFechaVencimientoDemanda.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

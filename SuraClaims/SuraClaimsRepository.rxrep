@@ -3491,6 +3491,16 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//span[@innertext~'Fecha de vencimiento contestación de demanda']/../..//input
 				</item>
 				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="b9b461f7-9bac-48e4-8659-f3f285eba151"
+				name="input_FechaPrimerAudiencia"
+				refimgid="2427bd44-ea5e-4331-afdd-a4e6d536ed58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//span[@innertext~'Fecha de 1era Audiencia']/../..//input
+				</item>
+				<item
 				addcaps="unknown,webelement,atag"
 				capname="spantag"
 				id="01a6a163-b7fc-48d8-ab45-11e9d6120b06"
@@ -3915,7 +3925,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			preproducciongestion.segurossura.com.ar
+			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"

@@ -109,7 +109,7 @@ namespace SuraClaims
             set { _NOMBRE = value; }
         }
 
-        string _Ambiente = "preproducciongestion.segurossura.com.ar";
+        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -9375,6 +9375,7 @@ namespace SuraClaims
             RepoItemInfo _txt_buscarasignacionInfo;
             RepoItemInfo _input_reservaInfo;
             RepoItemInfo _input_fechavencimientodemandaInfo;
+            RepoItemInfo _input_fechaprimeraudienciaInfo;
             RepoItemInfo _bttn_agregarreclamoInfo;
             RepoItemInfo _bttn_agregarpartesInfo;
             RepoItemInfo _input_ningunaInfo;
@@ -9417,6 +9418,7 @@ namespace SuraClaims
                 _txt_buscarasignacionInfo = new RepoItemInfo(this, "txt_BuscarAsignacion", ".//span[@innertext~'Buscar']", "", 30000, null, "708546d8-b4c8-48a0-b55e-0661c0964dde");
                 _input_reservaInfo = new RepoItemInfo(this, "input_Reserva", ".//tbody[#'NewMatter-tbody']//span[@innertext~'Reserva']/../..//input", "", 30000, null, "f4b4d1e0-3a7b-44e2-b7a6-66fd6c157feb");
                 _input_fechavencimientodemandaInfo = new RepoItemInfo(this, "input_FechaVencimientoDemanda", ".//tbody[#'NewMatter-tbody']//span[@innertext~'Fecha de vencimiento contestación de demanda']/../..//input", "", 30000, null, "9c897d92-5597-48bc-ae9d-c9449bafa0ab");
+                _input_fechaprimeraudienciaInfo = new RepoItemInfo(this, "input_FechaPrimerAudiencia", ".//tbody[#'NewMatter-tbody']//span[@innertext~'Fecha de 1era Audiencia']/../..//input", "", 30000, null, "b9b461f7-9bac-48e4-8659-f3f285eba151");
                 _bttn_agregarreclamoInfo = new RepoItemInfo(this, "bttn_AgregarReclamo", ".//span[@innertext~'gregar'][1]", "", 30000, null, "01a6a163-b7fc-48d8-ab45-11e9d6120b06");
                 _bttn_agregarpartesInfo = new RepoItemInfo(this, "bttn_AgregarPartes", ".//span[@innertext~'gregar'][2]", "", 30000, null, "064c4c14-3443-44b0-8864-53c5e7738b08");
                 _input_ningunaInfo = new RepoItemInfo(this, "input_Ninguna", ".//tbody[#'NewMatter-tbody']//div[@innertext='<ninguna>']", "", 30000, null, "c6b569d6-9c9b-42db-85d1-de9d3a190aa6");
@@ -9923,6 +9925,30 @@ namespace SuraClaims
                 get
                 {
                     return _input_fechavencimientodemandaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The input_FechaPrimerAudiencia item.
+            /// </summary>
+            [RepositoryItem("b9b461f7-9bac-48e4-8659-f3f285eba151")]
+            public virtual Ranorex.InputTag input_FechaPrimerAudiencia
+            {
+                get
+                {
+                    return _input_fechaprimeraudienciaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_FechaPrimerAudiencia item info.
+            /// </summary>
+            [RepositoryItemInfo("b9b461f7-9bac-48e4-8659-f3f285eba151")]
+            public virtual RepoItemInfo input_FechaPrimerAudienciaInfo
+            {
+                get
+                {
+                    return _input_fechaprimeraudienciaInfo;
                 }
             }
 
