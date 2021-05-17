@@ -170,29 +170,21 @@ namespace SuraClaims.SISE
             Report.Log(ReportLevel.Info, "Section", "Número del pago", new RecordItemIndex(21));
             
             // Validación de Pago
-            ValidarLogin("Cobertura", "Validación de Generación del Siniestro");
+            ValidarTexto("001", "Validación de Items del Siniestro");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(23));
-            repo.SisePreProd.Self.PressKeys("1{Return}");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(23));
+            //repo.SisePreProd.Self.PressKeys("1{Return}");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(24));
-            Delay.Duration(2000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(24));
+            //Delay.Duration(2000, false);
             
             // Validación de Pago
-            ValidarLogin("Estimaciones en $", "Validación de Cobertura Existente");
-            Delay.Milliseconds(0);
+            //ValidarLogin("Estimaciones en $", "Validación de Cobertura Existente");
+            //Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(26));
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SisePreProd.Sistema' at 18;6.", repo.SisePreProd.SistemaInfo, new RecordItemIndex(27));
-            //repo.SisePreProd.Sistema.Click("18;6");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Putty.CopyAllToClipboard' at 122;9.", repo.Putty.CopyAllToClipboardInfo, new RecordItemIndex(28));
-            //repo.Putty.CopyAllToClipboard.Click("122;9");
-            //Delay.Milliseconds(0);
             
         }
 

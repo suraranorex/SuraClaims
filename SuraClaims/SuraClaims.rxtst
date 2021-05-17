@@ -2151,8 +2151,8 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="5"
-			minrange="2"
+			maxrange="1"
+			minrange="0"
 			name="ValidarGeneracion_SISE">
 			</testcase>
 			<testmodule
@@ -6142,6 +6142,12 @@
 			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9">
 			</testcontainer>
 			<testcontainer
+			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
+			</testcontainer>
+			<testcontainer
+			id="1ae1f931-8357-4441-9040-d0db20595df1">
+			</testcontainer>
+			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
@@ -6149,6 +6155,9 @@
 			</testcontainer>
 			<testcontainer
 			id="7112eb20-9985-4964-8f8a-199e6b184430">
+			</testcontainer>
+			<testcontainer
+			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
 			</testcontainer>
 			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">
