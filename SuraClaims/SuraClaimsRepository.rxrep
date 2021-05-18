@@ -3925,7 +3925,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			refimgid="d4261fb8-089b-4966-9f18-a73f7fdde212"
 			robustPath=""
 			searchtimeout="30000ms">
-				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']//span[@innertext='Anular Orden de pago']
+				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']//span[@class~'button']//span[@innertext='Anular Orden de pago']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -3946,6 +3946,17 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext='Fecha de anulación']/../../..//div[@innertext~'[0-9]+' and @innertext!~'/']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="1744a345-952c-4c03-a625-daf84485fff2"
+			name="XBoxLayoutCtXToolbarXToolbarDefa"
+			refimgid="cf985779-a34a-4e24-9911-4e34cd215fe2"
+			refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']/tr[2]/td/div"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']/tr[2]/td/div
 			</item>
 			<basepath>
 				/dom[@domain='preproducciongestion.segurossura.com.ar']

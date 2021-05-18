@@ -10716,6 +10716,7 @@ namespace SuraClaims
             RepoItemInfo _bttn_anularordendepagoInfo;
             RepoItemInfo _bttn_aceptarInfo;
             RepoItemInfo _txt_numeroanulacionInfo;
+            RepoItemInfo _xboxlayoutctxtoolbarxtoolbardefaInfo;
 
             /// <summary>
             /// Creates a new GuidewireClaimCenter  folder.
@@ -10724,9 +10725,10 @@ namespace SuraClaims
                     base("GuidewireClaimCenter", "/dom[@domain='preproducciongestion.segurossura.com.ar']", parentFolder, 30000, null, false, "02ea3943-cd6a-4b46-a2ff-a6ae872b57f3", "")
             {
                 _bttn_anularInfo = new RepoItemInfo(this, "bttn_Anular", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//span[@innertext='Anular']", "", 30000, null, "3f1ccdc7-2617-46e3-9d7b-1e9891e83276");
-                _bttn_anularordendepagoInfo = new RepoItemInfo(this, "bttn_AnularOrdenDePago", ".//tbody[#'VoidStopCheck-tbody']//span[@innertext='Anular Orden de pago']", "", 30000, null, "8d82be05-2f12-45e8-bc52-9d7365196fb0");
+                _bttn_anularordendepagoInfo = new RepoItemInfo(this, "bttn_AnularOrdenDePago", ".//tbody[#'VoidStopCheck-tbody']//span[@class~'button']//span[@innertext='Anular Orden de pago']", "", 30000, null, "8d82be05-2f12-45e8-bc52-9d7365196fb0");
                 _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", ".//span[@innertext='Aceptar']", "", 30000, null, "e33e8989-d246-4351-b21f-f9048b37b01b");
                 _txt_numeroanulacionInfo = new RepoItemInfo(this, "txt_NumeroAnulacion", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext='Fecha de anulación']/../../..//div[@innertext~'[0-9]+' and @innertext!~'/']", "", 30000, null, "140edd47-848b-4019-88a2-79a8e4d8de34");
+                _xboxlayoutctxtoolbarxtoolbardefaInfo = new RepoItemInfo(this, "XBoxLayoutCtXToolbarXToolbarDefa", ".//tbody[#'VoidStopCheck-tbody']/tr[2]/td/div", "", 30000, null, "1744a345-952c-4c03-a625-daf84485fff2");
             }
 
             /// <summary>
@@ -10846,6 +10848,30 @@ namespace SuraClaims
                 get
                 {
                     return _txt_numeroanulacionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The XBoxLayoutCtXToolbarXToolbarDefa item.
+            /// </summary>
+            [RepositoryItem("1744a345-952c-4c03-a625-daf84485fff2")]
+            public virtual Ranorex.DivTag XBoxLayoutCtXToolbarXToolbarDefa
+            {
+                get
+                {
+                    return _xboxlayoutctxtoolbarxtoolbardefaInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The XBoxLayoutCtXToolbarXToolbarDefa item info.
+            /// </summary>
+            [RepositoryItemInfo("1744a345-952c-4c03-a625-daf84485fff2")]
+            public virtual RepoItemInfo XBoxLayoutCtXToolbarXToolbarDefaInfo
+            {
+                get
+                {
+                    return _xboxlayoutctxtoolbarxtoolbardefaInfo;
                 }
             }
         }

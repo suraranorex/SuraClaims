@@ -144,6 +144,14 @@
 			name="Ingresar_DetalleOrdenPago"
 			ref="e6d954c7-afd4-4f74-bcbd-359ece8b5da1"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -676,6 +684,7 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			enabled="False"
 			id="22426f8d-1365-4f78-8797-9c692f1cc192"
 			name="Obtener_NumeroAnulacion"
 			ref="4e02bff7-a18b-488d-871b-2025c36a43a6"
@@ -1620,6 +1629,14 @@
 			name="AnularPago"
 			ref="df5a4720-643d-42ac-aa11-b8b4bdd4b6b6"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="5e834d66-1abf-413c-9062-8bcddb15f8d4"
@@ -1969,6 +1986,20 @@
 			name="MenuSuperior_BuscarSiniestro"
 			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -2197,6 +2228,14 @@
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="URL"
@@ -2376,6 +2415,14 @@
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -2418,6 +2465,14 @@
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -2971,7 +3026,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
+			datasource="AnularPago"
 			id="a379fb7f-16eb-45de-a8bf-0f2bba366191"
+			maxrange="1"
+			minrange="1"
 			name="AnularPago">
 			</testcase>
 			<testmodule
@@ -3760,6 +3819,26 @@
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -3922,6 +4001,14 @@
 			name="MenuLateral_DatosFinancieros_Liquidaciones"
 			ref="86bc9978-cbae-46a7-998f-4beecc068775"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 				<missingdatabinding>
 					<var
 					dataname="Ambiente"
@@ -5466,6 +5553,38 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="Anular Pago Siniestro.xlsx"
+		id="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+		includefile="Checked"
+		lastknownrowcount="2"
+		name="AnularPago"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					ID
+				</column>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					URL
+				</column>
+				<column>
+					Usuario
+				</column>
+				<column>
+					Contrasenia
+				</column>
+				<column>
+					NroSiniestro
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 		<DataSource
 		filename="AprobacionesPagos.xlsx"
 		id="3a168301-7879-4530-9708-7e12ebc5dbd0"
