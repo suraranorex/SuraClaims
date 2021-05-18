@@ -139,6 +139,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="0c77e152-7670-451a-b506-45a0b2d7306e"
+			name="Ingresar_DetalleOrdenPago"
+			ref="e6d954c7-afd4-4f74-bcbd-359ece8b5da1"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="ValidarLitigios_SISE"
@@ -661,6 +675,12 @@
 			id="213cf277-af80-4b37-ace4-9f0da73b8cb7"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="22426f8d-1365-4f78-8797-9c692f1cc192"
+			name="Obtener_NumeroAnulacion"
+			ref="4e02bff7-a18b-488d-871b-2025c36a43a6"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			id="23333f5f-0542-48f2-a1b0-681a739e13e3"
 			name="SiHaySuspendidos">
@@ -1018,6 +1038,10 @@
 			id="3c3f97d9-00d7-4114-af14-312170047322"
 			name="teardown">
 			</teardown>
+			<setup
+			id="3e866a76-65b7-47fb-8069-296f52dc3165"
+			name="setup">
+			</setup>
 			<setup
 			id="41df9a82-aae3-4dd4-a47d-bca3e41cfe6f"
 			name="setup">
@@ -1592,6 +1616,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5e6623d6-c26b-42b5-bd74-e3de2a4ee13b"
+			name="AnularPago"
+			ref="df5a4720-643d-42ac-aa11-b8b4bdd4b6b6"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5e834d66-1abf-413c-9062-8bcddb15f8d4"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1935,6 +1965,26 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="7076d1a7-b935-4966-bc48-0d23b4b519cf"
+			name="MenuSuperior_BuscarSiniestro"
+			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="710c858a-d49a-4477-a17e-36d5d13b3b3c"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -2142,6 +2192,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="7788fc71-c25f-47aa-9c33-0d5844e354d7"
+			name="OpenBrowser"
+			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<setup
 			id="77bb850e-9d39-4828-88b7-4a06f8c99997"
 			name="setup">
@@ -2308,6 +2372,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7fbcb0b0-2de8-4e2b-992f-70547f676e39"
+			name="Logout"
+			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="8015bb2d-1ccf-41a7-be54-0fcc1920aace"
 			name="FinalizaPagoSiniestro"
 			ref="1106a3eb-96c6-4af3-ab98-8542ec63048b"
@@ -2334,6 +2412,20 @@
 					variablename="Ambiente">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="869a40f1-b26c-4b3b-b138-74f59421d12d"
+			name="CloseBrowser"
+			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testcase
 			datarangeactive="True"
@@ -2878,6 +2970,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="a379fb7f-16eb-45de-a8bf-0f2bba366191"
+			name="AnularPago">
+			</testcase>
 			<testmodule
 			id="a5791425-7658-4176-8e6d-a1cc7340cbe5"
 			name="InformacionSiniestro_Motor"
@@ -3303,6 +3399,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="c8ceee2c-2889-4390-8793-fa71959fa8fb"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="cb9e6a13-cdd8-4744-a768-ba5aa4242e5a"
 			name="MenuLateral_PlanDeTrabajo"
@@ -3656,6 +3756,32 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="e306601a-132f-44c7-bbd9-5d9b5379ad66"
+			name="Login"
+			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="e4bf6c50-cd65-4073-abbc-aa9b44b83670"
 			name="FinalizarSiniestro"
 			ref="bcaf800d-7a1f-401d-ba42-1c50008ec8af"
@@ -3790,6 +3916,20 @@
 					variablename="NombreAsegurado">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="ec28f438-445e-47ab-8687-00fda75bb221"
+			name="MenuLateral_DatosFinancieros_Liquidaciones"
+			ref="86bc9978-cbae-46a7-998f-4beecc068775"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="3a168301-7879-4530-9708-7e12ebc5dbd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="ec29ffe7-2bbc-420e-8239-2615435aa740"
@@ -5273,6 +5413,54 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="a379fb7f-16eb-45de-a8bf-0f2bba366191"
+					name="AnularPago">
+						<setup
+						id="3e866a76-65b7-47fb-8069-296f52dc3165"
+						name="setup">
+							<testmodule
+							id="7788fc71-c25f-47aa-9c33-0d5844e354d7"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="e306601a-132f-44c7-bbd9-5d9b5379ad66"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="7076d1a7-b935-4966-bc48-0d23b4b519cf"
+						name="MenuSuperior_BuscarSiniestro">
+						</testmodule>
+						<testmodule
+						id="ec28f438-445e-47ab-8687-00fda75bb221"
+						name="MenuLateral_DatosFinancieros_Liquidaciones">
+						</testmodule>
+						<testmodule
+						id="0c77e152-7670-451a-b506-45a0b2d7306e"
+						name="Ingresar_DetalleOrdenPago">
+						</testmodule>
+						<testmodule
+						id="5e6623d6-c26b-42b5-bd74-e3de2a4ee13b"
+						name="AnularPago">
+						</testmodule>
+						<testmodule
+						id="22426f8d-1365-4f78-8797-9c692f1cc192"
+						name="Obtener_NumeroAnulacion">
+						</testmodule>
+						<teardown
+						id="c8ceee2c-2889-4390-8793-fa71959fa8fb"
+						name="teardown">
+							<testmodule
+							id="7fbcb0b0-2de8-4e2b-992f-70547f676e39"
+							name="Logout">
+							</testmodule>
+							<testmodule
+							id="869a40f1-b26c-4b3b-b138-74f59421d12d"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -6173,6 +6361,9 @@
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="a379fb7f-16eb-45de-a8bf-0f2bba366191">
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">

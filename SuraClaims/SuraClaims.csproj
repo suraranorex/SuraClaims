@@ -303,6 +303,18 @@
       <UserCode>true</UserCode>
       <id>22745377-fd26-4487-be67-8d098321a00d</id>
     </Compile>
+    <Compile Include="Pagos\AnularPago.cs">
+      <BoundTo>b515bb92-9e7f-4424-a259-7c9cea3a7cac</BoundTo>
+      <DependentUpon>AnularPago.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e7d74d7-e19e-4006-8de0-e4868cb12908</id>
+    </Compile>
+    <Compile Include="Pagos\AnularPago.UserCode.cs">
+      <BoundTo>b515bb92-9e7f-4424-a259-7c9cea3a7cac</BoundTo>
+      <DependentUpon>AnularPago.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de69a4a0-fc08-4bf3-9838-d5789cc72509</id>
+    </Compile>
     <Compile Include="Pagos\Ingresar_DetalleOrdenPago.cs">
       <BoundTo>651f7c4a-518c-40b8-a356-840e6cfd47fd</BoundTo>
       <DependentUpon>Ingresar_DetalleOrdenPago.rxrec</DependentUpon>
@@ -326,6 +338,18 @@
       <DependentUpon>ObtenerUsuarioParaAprobarPago.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8edff6ef-ddcd-459a-b2f1-d02ebeb2eab6</id>
+    </Compile>
+    <Compile Include="Pagos\Obtener_NumeroAnulacion.cs">
+      <BoundTo>c866925a-1f08-40d8-ae24-8f1e10250431</BoundTo>
+      <DependentUpon>Obtener_NumeroAnulacion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0126d24-1411-4bae-b35b-55c1ed23ec8d</id>
+    </Compile>
+    <Compile Include="Pagos\Obtener_NumeroAnulacion.UserCode.cs">
+      <BoundTo>c866925a-1f08-40d8-ae24-8f1e10250431</BoundTo>
+      <DependentUpon>Obtener_NumeroAnulacion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b6123a13-0024-446b-853e-e607599ac8ee</id>
     </Compile>
     <Compile Include="Pagos\ValidarPago.cs">
       <DependentUpon>ValidarPago.rxrec</DependentUpon>
@@ -1200,6 +1224,11 @@
       <id>aa7ce910-5204-4eeb-830a-e09ba4759aa0</id>
       <recordtableid>34286301-52f1-4cc8-bc4c-ba086d6661a7</recordtableid>
     </None>
+    <None Include="Pagos\AnularPago.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>b515bb92-9e7f-4424-a259-7c9cea3a7cac</id>
+      <recordtableid>df5a4720-643d-42ac-aa11-b8b4bdd4b6b6</recordtableid>
+    </None>
     <None Include="Pagos\Ingresar_DetalleOrdenPago.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>651f7c4a-518c-40b8-a356-840e6cfd47fd</id>
@@ -1209,6 +1238,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>c41edc84-8c21-4fb0-ba0e-09c239a8be11</id>
       <recordtableid>f28111a3-40ee-4213-a5d3-c2409dc5b5ca</recordtableid>
+    </None>
+    <None Include="Pagos\Obtener_NumeroAnulacion.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>c866925a-1f08-40d8-ae24-8f1e10250431</id>
+      <recordtableid>4e02bff7-a18b-488d-871b-2025c36a43a6</recordtableid>
     </None>
     <None Include="Pagos\ValidarPago.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="df5a4720-643d-42ac-aa11-b8b4bdd4b6b6"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AnularPago"
+	namespace="SuraClaims.Pagos">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d9e0f958-d3ec-4be0-8b6f-76f20a1a6319"
+		sx="379"
+		sy="255"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3f1ccdc7-2617-46e3-9d7b-1e9891e83276"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="357,244,47,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						ClaimFinancialsChecksDetail:ClaimFinancialsChecksDetailScreen:ClaimFinancialsChecksDetail_VoidStopButton-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Anular
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'ClaimFinancialsChecksDetail-tbody']/tr[2]/td/div/div/div/a[3]//span[@innertext='Anular']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="404b2f32-57e9-43ca-9e4b-ff3269c4a778">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0ed138bf-4656-4045-a1d1-9243f8fd6fa0"
+		sx="327"
+		sy="246"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8d82be05-2f12-45e8-bc52-9d7365196fb0"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="220,244,134,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						VoidStopCheck:VoidStopCheckScreen:VoidStopCheck_VoidButton-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Anular Orden de pago
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-toolbar-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']/tr[2]/td/div/div/div/a[1]//span[@innertext='Anular Orden de pago']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="dcd64d3e-0a82-4423-a847-b0c2a13795ce">
+				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
+KKKAP//Z
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fedc0c00-ca4f-4b59-b4b6-f49732be710f"
+		sx="644"
+		sy="448"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e33e8989-d246-4351-b21f-f9048b37b01b"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="615,440,53,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						button-1005-btnInnerEl
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Aceptar
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-btn-inner x-btn-inner-default-small
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ref"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="unselectable"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='preproducciongestion.segurossura.com.ar']/body/div[11]/div[3]/?/?/div/a[1]//span[@innertext='Aceptar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="c0881349-77e8-4ee1-8019-cd91a1808411">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA4AK4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC3Z/8A
+IUH+838jWzWLbHGpZH95v61q729a1qLVGVN6MloqLe3rRvb1rOxpcloqLe3rRvb1osFyWiot7etG
+9vWiwXJaKi3t60b29aLBcloqLe3rRvb1osFyWiot7etG9vWiwXJaKi3t60b29aLBcloqLe3rRvb1
+osFyWiot7etG9vWiwXJaKi3t60b29aLBcybf/kI/8Cb+talZdv8A8hH/AIE39a1K1n0ModQoooqC
+wooooAytXYo5YBSQEA3KDjO7PX6CslmLsWOMn0AA/StXWep/4B/7PWTRJXSXmVRk4ubXRfqhVRnJ
+CKWIGeBnikq/YulrB58hIMjbRhc8Dr3p81oIoyYoPPJY5PPyjt0NHJEn6zWtuvuX+Rm0VqPa2y7F
+EMjKSmJADg5Izzn+lNSKJbqMPbRqjSMEO8ndtbaQQfzo5YD9vW7r7l/kZtFa0Fkjtma327mIwFb5
+cepzx+tU7lIo7eALEN7puLEnP+FPkgJ4msle6+5f5FZWKMGGMj1AI/WtHS5C86khQQ4HyqF42t6f
+QVm1oaR/rh/10H/oL0oqyfqOvJylBvqv1Za1knEIzxz/AErLrT1n/lj/AMC/pWZW0Njiq/GyRIZZ
+BmON2A7qpNM6Vcljllt7cwKzIq4IXnDd81KLSMW53J8wVTvAODk+uefyo5hcjexm0VomC3aaVPLE
+axuo3Bj0J75p0FrE87rPD5KjO3kjdz15P+c0cyD2bEt/+Qj/AMCb+talZUTrHflnOAGbJ/Or3223
+/wCen/jpqZpux0waVyeioPttv/z0/wDHTR9tt/8Anp/46ajlfYvmXcnoqD7bb/8APT/x00fbbf8A
+56f+OmjlfYOZdyjq6l3KgqCQhG5gM43Z6/UVkspRipxkehBH6V0n223/AOen/jpo+22//PT/AMdN
+EoyaViqU4Qbctbq25zVFdL9tt/8Anp/46aPttv8A89P/AB00rVP6Q74f+X8f+Ac5GxjkVxjKkEZr
+R+zm+0+J2RiRHcOuzP394wP58VNfzWzvFM4SaOMMHRlP3TjJHuMVqWkccdsqwuXjOWDE5zk56/jS
+fMviH+7a9xW+dznb7T/sZZ1kYxiURqrjkjZuzn65FVK6bUZkiltN7Y/ek/8Ajjf4ik+22/8Az0/8
+dNNc72F+5Xxx19bHNqpdgoxk+pAH61o6WhSdQSpJcH5WDcbW9PqK0/ttv/z0/wDHTR9tt/8Anp/4
+6acYySdxVZwm046WViprIOITjjn+lZdb/wBtt/8Anp/46aPttv8A89P/AB01abStY55QUne5gUVv
+/bbf/np/46aPttv/AM9P/HTVcz7EeyX8xgUVv/bbf/np/wCOmj7bb/8APT/x00cz7B7JfzBNp8cj
+l+QT1xUf9mJ/eaiisOeXc6+SPYP7MX+81H9mL/eaiinzy7i5I9g/sxf7zUf2Yv8Aeaiijnl3Dkj2
+D+zF/vNR/Zi/3mooo55dw5I9g/sxf7zUf2Yv95qKKOeXcOSPYP7MX+81ENnc2uVtbkLEeiOm4Kfb
+kY+lFFJyb3GopbDTpryy+bczvLJjGQAFA9hTv7MX+81FFCk1sDinuH9mL/eaj+zF/vNRRT55dxck
+ewf2Yv8Aeaj+zF/vNRRRzy7hyR7B/Zi/3mo/sxf7zUUUc8u4ckewf2Yv95qP7MX+81FFHPLuHJHs
+f//Z
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="0e2e549d-d094-4ddf-ade3-410674713b93"
+		waitaction="Exists"
+		waittimeout="40000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8504d5d5-d9a1-4d3f-a130-6b26034cdebf"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Detalles de la Orden de pago']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"
+	name="SuraClaimsRepository"
+	relativepath="..\SuraClaimsRepository.rxrep">
+		<codegen
+		classname="SuraClaimsRepository"
+		namespace="SuraClaims">
+		</codegen>
+		<rootfolder
+		id="e236aa5f-717e-474a-818d-ab73ab951257"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AnularPago.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
