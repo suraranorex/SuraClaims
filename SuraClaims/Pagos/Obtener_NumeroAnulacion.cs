@@ -66,6 +66,16 @@ namespace SuraClaims.Pagos
             set { _NumeroAnulacion = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable Ambiente.
+        /// </summary>
+        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
+        public string Ambiente
+        {
+            get { return repo.Ambiente; }
+            set { repo.Ambiente = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -92,8 +102,8 @@ namespace SuraClaims.Pagos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'GuidewireClaimCenter.txt_NumeroAnulacion' and assigning its value to variable 'NumeroAnulacion'.", repo.GuidewireClaimCenter.txt_NumeroAnulacionInfo, new RecordItemIndex(0));
-            NumeroAnulacion = repo.GuidewireClaimCenter.txt_NumeroAnulacion.Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.AnulacionPago.txt_NumeroAnulacion' and assigning its value to variable 'NumeroAnulacion'.", repo.SuraClaims.AnulacionPago.txt_NumeroAnulacionInfo, new RecordItemIndex(0));
+            NumeroAnulacion = repo.SuraClaims.AnulacionPago.txt_NumeroAnulacion.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "User", "El número de anulación es", new RecordItemIndex(1));

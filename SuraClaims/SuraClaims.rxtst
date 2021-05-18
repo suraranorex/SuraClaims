@@ -839,6 +839,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="2de0db2e-56e3-4c2f-9a69-5a7bf744697a"
+			name="QA">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="9f19de01-4505-4d1d-b214-102c7f03f8a5">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="QA">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<teardown
 			id="303b4326-3b0f-4b8a-a43e-1b139dd9bf2c"
 			name="teardown">
@@ -1255,6 +1280,31 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<smartfoldernode
+			id="4a401cbb-e90c-4f99-8a3f-de77a7c54954"
+			name="PREPROD">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Ambiente"
+								id="9f19de01-4505-4d1d-b214-102c7f03f8a5">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="PREPROD">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="4a66146a-b680-4f52-89d7-eda3b0f57bdf"
 			name="BuscarPoliza"
@@ -1568,10 +1618,44 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="5bff7294-0e66-4174-85a0-de41ef6c95f8"
+			name="ValidarAnulacionPago_SISE_QA"
+			ref="36045f4b-62d5-4991-84eb-363cd6119349"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="9f19de01-4505-4d1d-b214-102c7f03f8a5"
+					variableid="d781ef3c-96d0-4d2f-8cc2-1194293eee8b"
+					variablename="NroSiniestro">
+					</var>
+					<var
+					dataname="NroAnulacion"
+					datasourceid="9f19de01-4505-4d1d-b214-102c7f03f8a5"
+					variableid="7a3f0160-ccb6-4483-a9db-758416709a63"
+					variablename="NroAnulacion">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="5c66a796-1f5d-412a-a866-dfb25ebd5a02"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="5cf19890-af02-4aaa-a8ef-19f97410cccd"
+			name="CloseAUT"
+			ref="5d3efce6-19a4-42b7-8771-346c87cc360d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="9e955975-c7b8-44cb-a041-f63a40bc3880"
+					variableid="8f87a511-33f5-40e0-b3d0-25e6770fe1a1"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="5d56849d-b18c-4580-b214-27a20670b93d"
 			name="BuscarPoliza"
@@ -1769,6 +1853,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="62798470-9ae7-4300-9206-38b2c93d95cc"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="64323418-c65c-4549-a8ed-d6f3a11fadfc"
 			name="ReaunudarProcesos"
@@ -2663,6 +2751,26 @@
 			id="8a743954-f434-48cd-b5a8-78170382d00f"
 			name="setup">
 			</setup>
+			<testmodule
+			id="8c1bcf91-0e1e-486f-8f2d-464676c04bc4"
+			name="ValidarAnulacionPago_SISE_PREPROD"
+			ref="4c798974-2396-4458-80c5-94f0c4dffeb1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="9f19de01-4505-4d1d-b214-102c7f03f8a5"
+					variableid="269971db-c435-4424-bc2e-67c8aace266c"
+					variablename="NroSiniestro">
+					</var>
+					<var
+					dataname="NroAnulacion"
+					datasourceid="9f19de01-4505-4d1d-b214-102c7f03f8a5"
+					variableid="96bcb178-80c1-49d3-8ea4-17e5ec0a2bed"
+					variablename="NroAnulacion">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="Mediaciones_Juicios"
@@ -3290,6 +3398,20 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="b9cc90a2-8d40-4ae6-92cc-54d1669a410b"
+			name="StartAUT"
+			ref="fe5559b6-e1d6-43fd-bf7c-fd606e0e800d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="9e955975-c7b8-44cb-a041-f63a40bc3880"
+					variableid="42eb0de5-c84b-4c47-920b-a6d08c7f2856"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ba02b650-9582-4d8a-a493-3182d1486ccc"
 			name="NuevoLitigio"
 			ref="a19f4e8c-aea5-4960-b548-5a21f3380e8c"
@@ -3462,6 +3584,14 @@
 			id="c8ceee2c-2889-4390-8793-fa71959fa8fb"
 			name="teardown">
 			</teardown>
+			<testcase
+			datarangeactive="True"
+			datasource="ValidarAnulacionPago_SISE"
+			id="cb432aa2-813f-4ab6-9105-609d274a1598"
+			maxrange="2"
+			minrange="2"
+			name="ValidarAnulaciónPago_SISE">
+			</testcase>
 			<testmodule
 			id="cb9e6a13-cdd8-4744-a768-ba5aa4242e5a"
 			name="MenuLateral_PlanDeTrabajo"
@@ -3944,6 +4074,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="e9156b63-9ae3-427d-bd25-3609f2c278ad"
+			name="setup">
+			</setup>
 			<testmodule
 			id="e998fe57-9a5e-42d9-9af8-2e36ed805aeb"
 			name="ValidarLitigio_SISE_QA"
@@ -5548,6 +5682,42 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="cb432aa2-813f-4ab6-9105-609d274a1598"
+					name="ValidarAnulaciónPago_SISE">
+						<setup
+						id="e9156b63-9ae3-427d-bd25-3609f2c278ad"
+						name="setup">
+							<testmodule
+							id="b9cc90a2-8d40-4ae6-92cc-54d1669a410b"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<smartfoldernode
+						id="2de0db2e-56e3-4c2f-9a69-5a7bf744697a"
+						name="QA">
+							<testmodule
+							id="5bff7294-0e66-4174-85a0-de41ef6c95f8"
+							name="ValidarAnulacionPago_SISE_QA">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="4a401cbb-e90c-4f99-8a3f-de77a7c54954"
+						name="PREPROD">
+							<testmodule
+							id="8c1bcf91-0e1e-486f-8f2d-464676c04bc4"
+							name="ValidarAnulacionPago_SISE_PREPROD">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="62798470-9ae7-4300-9206-38b2c93d95cc"
+						name="teardown">
+							<testmodule
+							id="5cf19890-af02-4aaa-a8ef-19f97410cccd"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -6311,6 +6481,29 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
+		filename="Validacion_AnulaciónPago_SISE.xlsx"
+		id="9f19de01-4505-4d1d-b214-102c7f03f8a5"
+		includefile="Checked"
+		lastknownrowcount="3"
+		name="ValidarAnulacionPago_SISE"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Ambiente
+				</column>
+				<column>
+					NroSiniestro
+				</column>
+				<column>
+					NroAnulacion
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
 		filename="ValidarLitigios_SISE.xlsx"
 		id="9b676ac0-8ee0-430a-be0d-116bebd0be1b"
 		includefile="Checked"
@@ -6455,6 +6648,12 @@
 			id="1ae1f931-8357-4441-9040-d0db20595df1">
 			</testcontainer>
 			<testcontainer
+			id="2de0db2e-56e3-4c2f-9a69-5a7bf744697a">
+			</testcontainer>
+			<testcontainer
+			id="4a401cbb-e90c-4f99-8a3f-de77a7c54954">
+			</testcontainer>
+			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
@@ -6486,6 +6685,9 @@
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
+			</testcontainer>
+			<testcontainer
+			id="cb432aa2-813f-4ab6-9105-609d274a1598">
 			</testcontainer>
 			<testcontainer
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc">

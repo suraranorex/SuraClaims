@@ -33,7 +33,6 @@ namespace SuraClaims
         SuraClaimsRepositoryFolders.PuTTYExitConfirmationAppFolder _puttyexitconfirmation;
         SuraClaimsRepositoryFolders.SisePreProdAppFolder _sisepreprod;
         SuraClaimsRepositoryFolders.PuttyAppFolder _putty;
-        SuraClaimsRepositoryFolders.GuidewireClaimCenterAppFolder _guidewireclaimcenter;
         RepoItemInfo _option_nombrelesionado3Info;
 
         /// <summary>
@@ -57,7 +56,6 @@ namespace SuraClaims
             _puttyexitconfirmation = new SuraClaimsRepositoryFolders.PuTTYExitConfirmationAppFolder(this);
             _sisepreprod = new SuraClaimsRepositoryFolders.SisePreProdAppFolder(this);
             _putty = new SuraClaimsRepositoryFolders.PuttyAppFolder(this);
-            _guidewireclaimcenter = new SuraClaimsRepositoryFolders.GuidewireClaimCenterAppFolder(this);
             _option_nombrelesionado3Info = new RepoItemInfo(this, "option_NombreLesionado3", "/dom[@domain=$Ambiente]//span[@innertext~$NombreLesionado]", 30000, null, "4fd71e6e-b10b-4348-a35d-f02ee94ebbc5");
         }
 
@@ -394,15 +392,6 @@ namespace SuraClaims
         {
             get { return _putty; }
         }
-
-        /// <summary>
-        /// The GuidewireClaimCenter folder.
-        /// </summary>
-        [RepositoryFolder("02ea3943-cd6a-4b46-a2ff-a6ae872b57f3")]
-        public virtual SuraClaimsRepositoryFolders.GuidewireClaimCenterAppFolder GuidewireClaimCenter
-        {
-            get { return _guidewireclaimcenter; }
-        }
     }
 
     /// <summary>
@@ -427,6 +416,7 @@ namespace SuraClaims
             SuraClaimsRepositoryFolders.LiquidacionesOrdenPagoFolder _liquidacionesordenpago;
             SuraClaimsRepositoryFolders.AdministracionFolder _administracion;
             SuraClaimsRepositoryFolders.JuiciosYMediacionesFolder _juiciosymediaciones;
+            SuraClaimsRepositoryFolders.AnulacionPagoFolder _anulacionpago;
 
             /// <summary>
             /// Creates a new SuraClaims  folder.
@@ -444,6 +434,7 @@ namespace SuraClaims
                 _liquidacionesordenpago = new SuraClaimsRepositoryFolders.LiquidacionesOrdenPagoFolder(this);
                 _administracion = new SuraClaimsRepositoryFolders.AdministracionFolder(this);
                 _juiciosymediaciones = new SuraClaimsRepositoryFolders.JuiciosYMediacionesFolder(this);
+                _anulacionpago = new SuraClaimsRepositoryFolders.AnulacionPagoFolder(this);
             }
 
             /// <summary>
@@ -558,6 +549,15 @@ namespace SuraClaims
             public virtual SuraClaimsRepositoryFolders.JuiciosYMediacionesFolder JuiciosYMediaciones
             {
                 get { return _juiciosymediaciones; }
+            }
+
+            /// <summary>
+            /// The AnulacionPago folder.
+            /// </summary>
+            [RepositoryFolder("0d55e973-2dca-4495-b1f3-d6254f37d1d8")]
+            public virtual SuraClaimsRepositoryFolders.AnulacionPagoFolder AnulacionPago
+            {
+                get { return _anulacionpago; }
             }
         }
 
@@ -10325,6 +10325,138 @@ namespace SuraClaims
         }
 
         /// <summary>
+        /// The AnulacionPagoFolder folder.
+        /// </summary>
+        [RepositoryFolder("0d55e973-2dca-4495-b1f3-d6254f37d1d8")]
+        public partial class AnulacionPagoFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _bttn_anularInfo;
+            RepoItemInfo _bttn_anularordendepagoInfo;
+            RepoItemInfo _txt_numeroanulacionInfo;
+            RepoItemInfo _bttn_aceptarInfo;
+
+            /// <summary>
+            /// Creates a new AnulacionPago  folder.
+            /// </summary>
+            public AnulacionPagoFolder(RepoGenBaseFolder parentFolder) :
+                    base("AnulacionPago", "", parentFolder, 0, null, false, "0d55e973-2dca-4495-b1f3-d6254f37d1d8", "")
+            {
+                _bttn_anularInfo = new RepoItemInfo(this, "bttn_Anular", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//span[@innertext='Anular']", "", 30000, null, "3f1ccdc7-2617-46e3-9d7b-1e9891e83276");
+                _bttn_anularordendepagoInfo = new RepoItemInfo(this, "bttn_AnularOrdenDePago", ".//tbody[#'VoidStopCheck-tbody']//span[@class~'button']//span[@innertext='Anular Orden de pago']", "", 30000, null, "8d82be05-2f12-45e8-bc52-9d7365196fb0");
+                _txt_numeroanulacionInfo = new RepoItemInfo(this, "txt_NumeroAnulacion", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext='Fecha de anulación']/../../..//div[@innertext~'[0-9]+' and @innertext!~'/']", "", 30000, null, "140edd47-848b-4019-88a2-79a8e4d8de34");
+                _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", ".//span[@innertext='Aceptar']", "", 30000, null, "e33e8989-d246-4351-b21f-f9048b37b01b");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0d55e973-2dca-4495-b1f3-d6254f37d1d8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Anular item.
+            /// </summary>
+            [RepositoryItem("3f1ccdc7-2617-46e3-9d7b-1e9891e83276")]
+            public virtual Ranorex.SpanTag bttn_Anular
+            {
+                get
+                {
+                    return _bttn_anularInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Anular item info.
+            /// </summary>
+            [RepositoryItemInfo("3f1ccdc7-2617-46e3-9d7b-1e9891e83276")]
+            public virtual RepoItemInfo bttn_AnularInfo
+            {
+                get
+                {
+                    return _bttn_anularInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_AnularOrdenDePago item.
+            /// </summary>
+            [RepositoryItem("8d82be05-2f12-45e8-bc52-9d7365196fb0")]
+            public virtual Ranorex.SpanTag bttn_AnularOrdenDePago
+            {
+                get
+                {
+                    return _bttn_anularordendepagoInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_AnularOrdenDePago item info.
+            /// </summary>
+            [RepositoryItemInfo("8d82be05-2f12-45e8-bc52-9d7365196fb0")]
+            public virtual RepoItemInfo bttn_AnularOrdenDePagoInfo
+            {
+                get
+                {
+                    return _bttn_anularordendepagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_NumeroAnulacion item.
+            /// </summary>
+            [RepositoryItem("140edd47-848b-4019-88a2-79a8e4d8de34")]
+            public virtual Ranorex.DivTag txt_NumeroAnulacion
+            {
+                get
+                {
+                    return _txt_numeroanulacionInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_NumeroAnulacion item info.
+            /// </summary>
+            [RepositoryItemInfo("140edd47-848b-4019-88a2-79a8e4d8de34")]
+            public virtual RepoItemInfo txt_NumeroAnulacionInfo
+            {
+                get
+                {
+                    return _txt_numeroanulacionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Aceptar item.
+            /// </summary>
+            [RepositoryItem("e33e8989-d246-4351-b21f-f9048b37b01b")]
+            public virtual Ranorex.SpanTag bttn_Aceptar
+            {
+                get
+                {
+                    return _bttn_aceptarInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bttn_Aceptar item info.
+            /// </summary>
+            [RepositoryItemInfo("e33e8989-d246-4351-b21f-f9048b37b01b")]
+            public virtual RepoItemInfo bttn_AceptarInfo
+            {
+                get
+                {
+                    return _bttn_aceptarInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The SuraClaims_ContinueOnFailAppFolder folder.
         /// </summary>
         [RepositoryFolder("23163b00-148a-46fa-a120-b3fdeaa10fed")]
@@ -10702,176 +10834,6 @@ namespace SuraClaims
                 get
                 {
                     return _copyalltoclipboardInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The GuidewireClaimCenterAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("02ea3943-cd6a-4b46-a2ff-a6ae872b57f3")]
-        public partial class GuidewireClaimCenterAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _bttn_anularInfo;
-            RepoItemInfo _bttn_anularordendepagoInfo;
-            RepoItemInfo _bttn_aceptarInfo;
-            RepoItemInfo _txt_numeroanulacionInfo;
-            RepoItemInfo _xboxlayoutctxtoolbarxtoolbardefaInfo;
-
-            /// <summary>
-            /// Creates a new GuidewireClaimCenter  folder.
-            /// </summary>
-            public GuidewireClaimCenterAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("GuidewireClaimCenter", "/dom[@domain='preproducciongestion.segurossura.com.ar']", parentFolder, 30000, null, false, "02ea3943-cd6a-4b46-a2ff-a6ae872b57f3", "")
-            {
-                _bttn_anularInfo = new RepoItemInfo(this, "bttn_Anular", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//span[@innertext='Anular']", "", 30000, null, "3f1ccdc7-2617-46e3-9d7b-1e9891e83276");
-                _bttn_anularordendepagoInfo = new RepoItemInfo(this, "bttn_AnularOrdenDePago", ".//tbody[#'VoidStopCheck-tbody']//span[@class~'button']//span[@innertext='Anular Orden de pago']", "", 30000, null, "8d82be05-2f12-45e8-bc52-9d7365196fb0");
-                _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", ".//span[@innertext='Aceptar']", "", 30000, null, "e33e8989-d246-4351-b21f-f9048b37b01b");
-                _txt_numeroanulacionInfo = new RepoItemInfo(this, "txt_NumeroAnulacion", ".//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext='Fecha de anulación']/../../..//div[@innertext~'[0-9]+' and @innertext!~'/']", "", 30000, null, "140edd47-848b-4019-88a2-79a8e4d8de34");
-                _xboxlayoutctxtoolbarxtoolbardefaInfo = new RepoItemInfo(this, "XBoxLayoutCtXToolbarXToolbarDefa", ".//tbody[#'VoidStopCheck-tbody']/tr[2]/td/div", "", 30000, null, "1744a345-952c-4c03-a625-daf84485fff2");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("02ea3943-cd6a-4b46-a2ff-a6ae872b57f3")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("02ea3943-cd6a-4b46-a2ff-a6ae872b57f3")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The bttn_Anular item.
-            /// </summary>
-            [RepositoryItem("3f1ccdc7-2617-46e3-9d7b-1e9891e83276")]
-            public virtual Ranorex.SpanTag bttn_Anular
-            {
-                get
-                {
-                    return _bttn_anularInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The bttn_Anular item info.
-            /// </summary>
-            [RepositoryItemInfo("3f1ccdc7-2617-46e3-9d7b-1e9891e83276")]
-            public virtual RepoItemInfo bttn_AnularInfo
-            {
-                get
-                {
-                    return _bttn_anularInfo;
-                }
-            }
-
-            /// <summary>
-            /// The bttn_AnularOrdenDePago item.
-            /// </summary>
-            [RepositoryItem("8d82be05-2f12-45e8-bc52-9d7365196fb0")]
-            public virtual Ranorex.SpanTag bttn_AnularOrdenDePago
-            {
-                get
-                {
-                    return _bttn_anularordendepagoInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The bttn_AnularOrdenDePago item info.
-            /// </summary>
-            [RepositoryItemInfo("8d82be05-2f12-45e8-bc52-9d7365196fb0")]
-            public virtual RepoItemInfo bttn_AnularOrdenDePagoInfo
-            {
-                get
-                {
-                    return _bttn_anularordendepagoInfo;
-                }
-            }
-
-            /// <summary>
-            /// The bttn_Aceptar item.
-            /// </summary>
-            [RepositoryItem("e33e8989-d246-4351-b21f-f9048b37b01b")]
-            public virtual Ranorex.SpanTag bttn_Aceptar
-            {
-                get
-                {
-                    return _bttn_aceptarInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The bttn_Aceptar item info.
-            /// </summary>
-            [RepositoryItemInfo("e33e8989-d246-4351-b21f-f9048b37b01b")]
-            public virtual RepoItemInfo bttn_AceptarInfo
-            {
-                get
-                {
-                    return _bttn_aceptarInfo;
-                }
-            }
-
-            /// <summary>
-            /// The txt_NumeroAnulacion item.
-            /// </summary>
-            [RepositoryItem("140edd47-848b-4019-88a2-79a8e4d8de34")]
-            public virtual Ranorex.DivTag txt_NumeroAnulacion
-            {
-                get
-                {
-                    return _txt_numeroanulacionInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The txt_NumeroAnulacion item info.
-            /// </summary>
-            [RepositoryItemInfo("140edd47-848b-4019-88a2-79a8e4d8de34")]
-            public virtual RepoItemInfo txt_NumeroAnulacionInfo
-            {
-                get
-                {
-                    return _txt_numeroanulacionInfo;
-                }
-            }
-
-            /// <summary>
-            /// The XBoxLayoutCtXToolbarXToolbarDefa item.
-            /// </summary>
-            [RepositoryItem("1744a345-952c-4c03-a625-daf84485fff2")]
-            public virtual Ranorex.DivTag XBoxLayoutCtXToolbarXToolbarDefa
-            {
-                get
-                {
-                    return _xboxlayoutctxtoolbarxtoolbardefaInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The XBoxLayoutCtXToolbarXToolbarDefa item info.
-            /// </summary>
-            [RepositoryItemInfo("1744a345-952c-4c03-a625-daf84485fff2")]
-            public virtual RepoItemInfo XBoxLayoutCtXToolbarXToolbarDefaInfo
-            {
-                get
-                {
-                    return _xboxlayoutctxtoolbarxtoolbardefaInfo;
                 }
             }
         }

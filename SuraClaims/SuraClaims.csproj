@@ -1065,6 +1065,33 @@
       <UserCode>true</UserCode>
       <id>a0933c39-d888-4f64-9495-3ab8b70e2282</id>
     </Compile>
+    <Compile Include="SISE\ValidacionesSISE.cs">
+      <id>a4100d40-bbdd-49d6-b458-d4945e9b0042</id>
+    </Compile>
+    <Compile Include="SISE\ValidarAnulacionPago_SISE_QA.cs">
+      <BoundTo>1356f568-0133-4eee-83fa-fee400f83de6</BoundTo>
+      <DependentUpon>ValidarAnulacionPago_SISE_QA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9808edb4-3c24-4e56-b81b-c38fe0faa3bb</id>
+    </Compile>
+    <Compile Include="SISE\ValidarAnulacionPago_SISE_QA.UserCode.cs">
+      <BoundTo>1356f568-0133-4eee-83fa-fee400f83de6</BoundTo>
+      <DependentUpon>ValidarAnulacionPago_SISE_QA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5c7671c0-eabd-4b27-8461-bbea383b4572</id>
+    </Compile>
+    <Compile Include="SISE\ValidarAnulacionPago_SISE_PREPROD.cs">
+      <BoundTo>a7af60d3-e35b-41e8-bb2c-3cece729feac</BoundTo>
+      <DependentUpon>ValidarAnulacionPago_SISE_PREPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d304625e-14d1-473f-a4c7-61cf00e67204</id>
+    </Compile>
+    <Compile Include="SISE\ValidarAnulacionPago_SISE_PREPROD.UserCode.cs">
+      <BoundTo>a7af60d3-e35b-41e8-bb2c-3cece729feac</BoundTo>
+      <DependentUpon>ValidarAnulacionPago_SISE_PREPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7d38f24e-7c6c-4381-b020-a3a033ef0d55</id>
+    </Compile>
     <Compile Include="SISE\ValidarGeneracionSiniestro_SISE_PreProd.cs">
       <BoundTo>1da7ffc1-15d0-4efc-a7be-bf5164068c3c</BoundTo>
       <DependentUpon>ValidarGeneracionSiniestro_SISE_PreProd.rxrec</DependentUpon>
@@ -1605,6 +1632,16 @@
       <id>a23db6e4-e2ec-486c-9c5e-b332360b83f2</id>
       <recordtableid>fe5559b6-e1d6-43fd-bf7c-fd606e0e800d</recordtableid>
     </None>
+    <None Include="SISE\ValidarAnulacionPago_SISE_QA.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>1356f568-0133-4eee-83fa-fee400f83de6</id>
+      <recordtableid>36045f4b-62d5-4991-84eb-363cd6119349</recordtableid>
+    </None>
+    <None Include="SISE\ValidarAnulacionPago_SISE_PREPROD.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>a7af60d3-e35b-41e8-bb2c-3cece729feac</id>
+      <recordtableid>4c798974-2396-4458-80c5-94f0c4dffeb1</recordtableid>
+    </None>
     <None Include="SISE\ValidarGeneracionSiniestro_SISE_PreProd.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>1da7ffc1-15d0-4efc-a7be-bf5164068c3c</id>
@@ -1663,6 +1700,13 @@
       <DependentUpon>SuraClaims.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>3119e067-3d36-4d40-9a5c-813b8c1b046c</id>
+    </Content>
+    <Content Include="Validacion_AnulaciónPago_SISE.xlsx">
+      <Link>Validacion_AnulaciónPago_SISE.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>e91143ea-3f4d-4e58-bb9b-1250fea4bbf9</id>
     </Content>
   </ItemGroup>
   <ItemGroup>

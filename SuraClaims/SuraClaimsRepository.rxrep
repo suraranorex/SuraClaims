@@ -3651,6 +3651,53 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//tbody[#'UserSearchPopup-tbody']//div[@innertext='Estudio Juan Pablo Ramon']/../..//a[@innertext='Seleccionar']
 				</item>
 			</folder>
+			<folder
+			capname="unknown"
+			id="0d55e973-2dca-4495-b1f3-d6254f37d1d8"
+			isrooted="False"
+			name="AnulacionPago"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="3f1ccdc7-2617-46e3-9d7b-1e9891e83276"
+				name="bttn_Anular"
+				refimgid="675bca5c-07ed-4b26-ade6-b18db074ee1d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecksDetail-tbody']//span[@innertext='Anular']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="8d82be05-2f12-45e8-bc52-9d7365196fb0"
+				name="bttn_AnularOrdenDePago"
+				refimgid="d4261fb8-089b-4966-9f18-a73f7fdde212"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'VoidStopCheck-tbody']//span[@class~'button']//span[@innertext='Anular Orden de pago']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="140edd47-848b-4019-88a2-79a8e4d8de34"
+				name="txt_NumeroAnulacion"
+				refimgid="d9c243f4-bda9-43d8-8d7c-df52705c7e25"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext='Fecha de anulación']/../../..//div[@innertext~'[0-9]+' and @innertext!~'/']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="e33e8989-d246-4351-b21f-f9048b37b01b"
+				name="bttn_Aceptar"
+				refimgid="3d55b5f4-7633-4fba-a2b0-a485fa38469e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Aceptar']
+				</item>
+			</folder>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -3898,85 +3945,6 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		searchtimeout="30000ms">
 			/dom[@domain=$Ambiente]//span[@innertext~$NombreLesionado]
 		</item>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
-		id="02ea3943-cd6a-4b46-a2ff-a6ae872b57f3"
-		isrooted="True"
-		name="GuidewireClaimCenter"
-		refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="3f1ccdc7-2617-46e3-9d7b-1e9891e83276"
-			name="bttn_Anular"
-			refimgid="675bca5c-07ed-4b26-ade6-b18db074ee1d"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'ClaimFinancialsChecksDetail-tbody']//span[@innertext='Anular']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="8d82be05-2f12-45e8-bc52-9d7365196fb0"
-			name="bttn_AnularOrdenDePago"
-			refimgid="d4261fb8-089b-4966-9f18-a73f7fdde212"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']//span[@class~'button']//span[@innertext='Anular Orden de pago']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="e33e8989-d246-4351-b21f-f9048b37b01b"
-			name="bttn_Aceptar"
-			refimgid="3d55b5f4-7633-4fba-a2b0-a485fa38469e"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='preproducciongestion.segurossura.com.ar']//span[@innertext='Aceptar']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="140edd47-848b-4019-88a2-79a8e4d8de34"
-			name="txt_NumeroAnulacion"
-			refimgid="d9c243f4-bda9-43d8-8d7c-df52705c7e25"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'ClaimFinancialsChecksDetail-tbody']//div[@innertext='Fecha de anulación']/../../..//div[@innertext~'[0-9]+' and @innertext!~'/']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="1744a345-952c-4c03-a625-daf84485fff2"
-			name="XBoxLayoutCtXToolbarXToolbarDefa"
-			refimgid="cf985779-a34a-4e24-9911-4e34cd215fe2"
-			refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']/tr[2]/td/div"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'VoidStopCheck-tbody']/tr[2]/td/div
-			</item>
-			<basepath>
-				/dom[@domain='preproducciongestion.segurossura.com.ar']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

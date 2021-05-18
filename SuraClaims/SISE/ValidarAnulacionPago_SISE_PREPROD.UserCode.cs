@@ -23,26 +23,24 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.SISE
 {
-	public partial class ValidarPagoSiniestro_SISE_QA
-	{
-		/// <summary>
-		/// This method gets called right after the recording has been started.
-		/// It can be used to execute recording specific initialization code.
-		/// </summary>
-		private void Init()
-		{
-			// Your recording specific initialization code goes here.
-		}
+    public partial class ValidarAnulacionPago_SISE_PREPROD
+    {
+        /// <summary>
+        /// This method gets called right after the recording has been started.
+        /// It can be used to execute recording specific initialization code.
+        /// </summary>
+        private void Init()
+        {
+            // Your recording specific initialization code goes here.
+        }
 
-
-
-		public static void ValidarLogin(string TextoValidacion, string TituloAccion)
+        public static void ValidarTexto(string TextoValidacion, string TituloAccion)
 		{
 			
 			Report.Log(ReportLevel.Info, "Info: ", "Acción: "+ TituloAccion);
 			string line;
 			bool Chk = false;
-			
+		
 			repo.SisePreProd.Sistema.Click("18;6");
 			
 			repo.Putty.CopyAllToClipboard.Click("122;9");
@@ -64,7 +62,7 @@ namespace SuraClaims.SISE
 				}
 
 			}
-			
+						
 			if(Chk == false){
 				Validate.IsTrue(Chk,"Validación de Texto Fallida - " + TituloAccion);
 			}else{
@@ -72,7 +70,5 @@ namespace SuraClaims.SISE
 			}
 		}
 
-		
-
-	}
+    }
 }

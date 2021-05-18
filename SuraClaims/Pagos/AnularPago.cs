@@ -89,16 +89,16 @@ namespace SuraClaims.Pagos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.bttn_Anular' at Center.", repo.GuidewireClaimCenter.bttn_AnularInfo, new RecordItemIndex(0));
-            repo.GuidewireClaimCenter.bttn_Anular.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AnulacionPago.bttn_Anular' at Center.", repo.SuraClaims.AnulacionPago.bttn_AnularInfo, new RecordItemIndex(0));
+            repo.SuraClaims.AnulacionPago.bttn_Anular.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.bttn_AnularOrdenDePago' at Center.", repo.GuidewireClaimCenter.bttn_AnularOrdenDePagoInfo, new RecordItemIndex(1));
-            repo.GuidewireClaimCenter.bttn_AnularOrdenDePago.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AnulacionPago.bttn_AnularOrdenDePago' at Center.", repo.SuraClaims.AnulacionPago.bttn_AnularOrdenDePagoInfo, new RecordItemIndex(1));
+            repo.SuraClaims.AnulacionPago.bttn_AnularOrdenDePago.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GuidewireClaimCenter.bttn_Aceptar' at Center.", repo.GuidewireClaimCenter.bttn_AceptarInfo, new RecordItemIndex(2));
-            repo.GuidewireClaimCenter.bttn_Aceptar.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.AnulacionPago.bttn_Aceptar' at Center.", repo.SuraClaims.AnulacionPago.bttn_AceptarInfo, new RecordItemIndex(2));
+            repo.SuraClaims.AnulacionPago.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_DetalleOrdenPago'", repo.SuraClaims.Txt_Validaciones.txt_DetalleOrdenPagoInfo, new ActionTimeout(40000), new RecordItemIndex(3));
