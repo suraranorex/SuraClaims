@@ -8,7 +8,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 using System;
-using System.IO;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -21,18 +20,18 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace SuraClaims.SISE
+namespace SuraClaims.Menu
 {
-	public partial class ValidarAnulacionPago_SISE_QA
-	{
-		/// <summary>
-		/// This method gets called right after the recording has been started.
-		/// It can be used to execute recording specific initialization code.
-		/// </summary>
-		private void Init()
-		{
-			// Your recording specific initialization code goes here.
-		}
+    public partial class MenuLateral_Acciones_Servicio
+    {
+        /// <summary>
+        /// This method gets called right after the recording has been started.
+        /// It can be used to execute recording specific initialization code.
+        /// </summary>
+        private void Init()
+        {
+            // Your recording specific initialization code goes here.
+        }
 
-	}
+    }
 }

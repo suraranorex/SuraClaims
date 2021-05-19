@@ -143,7 +143,7 @@ namespace SuraClaims.SISE
             Delay.Duration(2000, false);
             
             // Validación del Login (Texto: MENU PRINICPAL)
-            ValidarLogin("M E N U    P R I N C I P A L", "Validación del Login");
+            ValidacionesSISE.ValidarTexto("M E N U    P R I N C I P A L", "Validación del Login");
             Delay.Milliseconds(0);
             
             // Ambiente
@@ -203,7 +203,7 @@ namespace SuraClaims.SISE
             Delay.Duration(2000, false);
             
             // Validación de Pago
-            ValidarLogin(NroAnulacion, "Validación de Anulación");
+            ValidacionesSISE.ValidarTexto(NroAnulacion, "Validación de Anulación");
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(25));

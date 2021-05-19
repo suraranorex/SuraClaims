@@ -27,6 +27,8 @@ namespace SuraClaims.SISE
 	[UserCodeCollection]
 	public class ValidacionesSISE
 	{
+		private static SuraClaims.SuraClaimsRepository repo = SuraClaims.SuraClaimsRepository.Instance;
+
 		// You can use the "Insert New User Code Method" functionality from the context menu,
 		// to add a new method with the attribute [UserCodeMethod].
 		
@@ -36,7 +38,7 @@ namespace SuraClaims.SISE
 		/// user code method here. The method is published to the user code library
 		/// within a user code collection.
 		/// </summary>
-		/*[UserCodeMethod]
+		[UserCodeMethod]
 		public static void ValidarTexto(string TextoValidacion, string TituloAccion)
 		{
 			
@@ -71,7 +73,7 @@ namespace SuraClaims.SISE
 			}else{
 				Validate.IsTrue(Chk,"Validación de Texto Exitosa - " + TituloAccion);
 			}
-		}*/
+		}
 
 	}
 }

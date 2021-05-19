@@ -261,6 +261,16 @@ name="SuraClaimsRepository">
 						/dom[@domain=$Ambiente]//span[@innertext~'Liquidaciones / Orden de']
 					</item>
 					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="9f84a8da-11ff-4f06-96c1-07acc3a6277b"
+					name="submenuLateral_Servicio"
+					refimgid="64e75718-e336-425c-8454-ec95c0b7dada"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//span[@innertext='Servicio']
+					</item>
+					<item
 					addcaps="unknown,webelement,inputtag"
 					capname="inputtag"
 					id="2bec988b-1334-49c1-95ff-1676ca49a01d"
@@ -3698,6 +3708,183 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//span[@innertext='Aceptar']
 				</item>
 			</folder>
+			<folder
+			capname="unknown"
+			id="d9164d41-eb69-4074-ab70-66ea387f3db9"
+			isrooted="False"
+			name="Inspeccion"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="14e1fa82-b1e3-4fb7-b9f9-dd1ae2fb1096"
+				name="txt_CrearServicio"
+				refimgid="32754b35-3ebc-406a-a05f-2167af5a9c57"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[#'NewServiceRequest:ttlBar']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="inputtag"
+				id="1042eb90-2e04-4d7c-90d9-e10f2e261a80"
+				name="input_EnRelacionCon"
+				refimgid="5b7d4ce1-1a44-485b-90dc-59a1b32ff5b5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='En relación con']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="97f16bb0-dc1f-4557-a552-98b45680c455"
+				name="option_Reclamo"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'1ª|3ª' and @innertext~'Daños o Incendio de vehículo']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="e7452cc9-ee74-4e4b-a872-d9a6f3c530ff"
+				name="bttn_Agregar"
+				refimgid="c1a2ca7c-11f4-44d6-b522-80f92ce3cfd3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//a//span[@innertext='Agregar']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="b1955d6c-702f-4fd7-ae0f-53ba9728f3ff"
+				name="bttn_Agregar2"
+				refimgid="c1a2ca7c-11f4-44d6-b522-80f92ce3cfd3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//a//span[@innertext='Agregar']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="b2465aea-f8e4-42d3-ac26-6d31fa4e292e"
+				name="bttn_Guardar"
+				refimgid="c1a2ca7c-11f4-44d6-b522-80f92ce3cfd3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//a//span[@innertext~'ardar']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="inputtag"
+				id="5fdcdac1-d387-47ba-a9a1-5bfb59752920"
+				name="check_Servicio"
+				refimgid="22f1a84e-53d8-4ac4-9365-e8e2da6511f6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[#'SelectServicesPopup:SpecialistServiceTreeLV']//span[@innertext=$TipoServicio][3]/..//input[@type='button']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="37de59d1-d35c-4cc2-81e0-3d0012a9d87b"
+				name="txt_SeleccionarServicios"
+				refimgid="32754b35-3ebc-406a-a05f-2167af5a9c57"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext&gt;'Seleccionar los servicios']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="e8980f2b-4302-4c40-a7f1-4a62604bee54"
+				name="input_TipoInspeccion"
+				refimgid="d0ab86f7-5941-4889-b033-8e2dc5bd8890"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='Tipo de Inspección']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="a8ea7020-3416-4b43-89df-22af0bdf6a7c"
+				name="Copy_of_input_TipoInspeccion"
+				refimgid="d0ab86f7-5941-4889-b033-8e2dc5bd8890"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='Tipo de Inspección']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="6dfa95f5-db98-45ee-a68e-e333e6a27921"
+				name="option_Original"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext='Original']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="divtag"
+				id="c78d0284-265b-4bb4-9ac1-d8db5934d312"
+				name="txt_FechaFinalizacionServicio"
+				refimgid="231fc51f-e745-4c83-9ca7-fe8bc5f8679f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='Fecha de finalización del servicio solicitado']/../..//div[@innertext~'[0-9]+' and @innertext~'/']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="c16879c8-a0f5-4225-87c6-8e8e3a2f5558"
+				name="txt_InstruccionesparaProveedor"
+				refimgid="231fc51f-e745-4c83-9ca7-fe8bc5f8679f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//label[@innertext='Instrucciones para el proveedor']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="4593a5ee-0569-4c03-aa50-42bb6448525a"
+				name="input_FechaInspeccionOrion"
+				refimgid="b14748de-bb15-42ee-8519-9dce6a0604bd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='Fecha de Inspección ORION']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="ef593ecd-60fe-4ebe-840a-7e38f80ae675"
+				name="Copy_of_input_FechaInspeccionOrion"
+				refimgid="b14748de-bb15-42ee-8519-9dce6a0604bd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='Fecha de Inspección ORION']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="0f04d857-e5d6-45d7-ac59-24a99e4b3aaf"
+				name="input_NombreProveedor"
+				refimgid="b14748de-bb15-42ee-8519-9dce6a0604bd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='Nombre']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="0b0187f3-270d-4e7e-b448-ebd22089490b"
+				name="option_Proveedor"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
+				</item>
+			</folder>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -3972,7 +4159,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
+			preproducciongestion.segurossura.com.ar
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"
@@ -4043,6 +4230,11 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		id="5cef5c8f-7fd7-4fee-8a08-21cffb0cc584"
 		name="Asignar">
 			Asignar Tramitador
+		</var>
+		<var
+		id="c85ecfbd-0b40-4012-9f59-860d7ad852b4"
+		name="TipoServicio">
+			Por foto
 		</var>
 	</variables>
 </repository>

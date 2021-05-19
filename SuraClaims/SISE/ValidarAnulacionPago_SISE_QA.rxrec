@@ -1122,10 +1122,10 @@ ip4v9Sn+6KKKiaSdkVF3Q+iiioGFFFFABRRRQB//2Q==
 			</bindings>
 		</explicitdelayitem>
 		<userrecorditem
-		classname="ValidarAnulacionPago_SISE_QA"
+		classname="ValidacionesSISE"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="ValidarLogin"
+		isexternaltestmethod="True"
+		methodname="ValidarTexto"
 		namespace="SuraClaims.SISE"
 		optional="False">
 			<comment>
@@ -2650,10 +2650,10 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 			</bindings>
 		</explicitdelayitem>
 		<userrecorditem
-		classname="ValidarAnulacionPago_SISE_QA"
+		classname="ValidacionesSISE"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="ValidarLogin"
+		isexternaltestmethod="True"
+		methodname="ValidarTexto"
 		namespace="SuraClaims.SISE"
 		optional="False">
 			<comment>

@@ -147,6 +147,18 @@
       <UserCode>true</UserCode>
       <id>0eb9b891-b4e9-412b-856d-ce469e5d5d84</id>
     </Compile>
+    <Compile Include="Inspecciones\CrearServicio.cs">
+      <BoundTo>4439cca3-a8ca-43df-a530-a86315f88877</BoundTo>
+      <DependentUpon>CrearServicio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>701c079d-53e4-4897-bfd7-1442be68f599</id>
+    </Compile>
+    <Compile Include="Inspecciones\CrearServicio.UserCode.cs">
+      <BoundTo>4439cca3-a8ca-43df-a530-a86315f88877</BoundTo>
+      <DependentUpon>CrearServicio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c003f99d-b97a-4a94-9f32-692316772969</id>
+    </Compile>
     <Compile Include="JuiciosyMediaciones\Agregar_ReclamosyPartes.cs">
       <BoundTo>8ca9b618-8ff0-45f9-b7b8-145cbbdc9ccd</BoundTo>
       <DependentUpon>Agregar_ReclamosyPartes.rxrec</DependentUpon>
@@ -254,6 +266,18 @@
       <DependentUpon>ValidarLitigio_SISE_QA.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>dd9b065f-dcd3-4aaf-971b-35294a07d91f</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Acciones_Servicio.cs">
+      <BoundTo>32c082b5-ffce-46ae-b0ba-1e6ad0599987</BoundTo>
+      <DependentUpon>MenuLateral_Acciones_Servicio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>960d67b4-b1cc-4f86-a6f8-930340840c4e</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Acciones_Servicio.UserCode.cs">
+      <BoundTo>32c082b5-ffce-46ae-b0ba-1e6ad0599987</BoundTo>
+      <DependentUpon>MenuLateral_Acciones_Servicio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e4cbe41-2cfe-4292-891d-2815d06dcffe</id>
     </Compile>
     <Compile Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.cs">
       <BoundTo>f39815eb-df4c-4467-b9eb-12b0e044e9f7</BoundTo>
@@ -1193,6 +1217,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>f04f0bef-f715-49c4-99d4-be8e52db6af3</id>
     </Content>
+    <Content Include="Generación Inspección Siniestro.xlsx">
+      <Link>Generación Inspección Siniestro.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>2572aa24-97f7-46fa-9c63-876eeed2707f</id>
+    </Content>
+    <None Include="Inspecciones\CrearServicio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>4439cca3-a8ca-43df-a530-a86315f88877</id>
+      <recordtableid>03c658a7-0fff-45a2-88ba-9145107b3b1e</recordtableid>
+    </None>
     <None Include="JuiciosyMediaciones\Agregar_ReclamosyPartes.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>8ca9b618-8ff0-45f9-b7b8-145cbbdc9ccd</id>
@@ -1237,6 +1273,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>0175adf6-ad5c-405f-ba44-dfabfa197807</id>
       <recordtableid>3a339b99-6e3d-4243-a752-b70ed661250c</recordtableid>
+    </None>
+    <None Include="Menu\MenuLateral_Acciones_Servicio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>32c082b5-ffce-46ae-b0ba-1e6ad0599987</id>
+      <recordtableid>ab4d70db-7edb-4bcf-a10a-a4b7effd8f73</recordtableid>
     </None>
     <None Include="Menu\MenuLateral_DatosFinancieros_Liquidaciones.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1740,6 +1781,9 @@
     </Folder>
     <Folder Include="JuiciosyMediaciones">
       <id>1814e95f-a017-4986-b02c-089d70e9f2ee</id>
+    </Folder>
+    <Folder Include="Inspecciones">
+      <id>8f645226-8ed9-4166-b792-40332fd07894</id>
     </Folder>
     <Folder Include="SISE">
       <id>86b31819-898d-4c1a-817d-69c8dc215b17</id>
