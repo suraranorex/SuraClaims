@@ -293,6 +293,16 @@ name="SuraClaimsRepository">
 					<item
 					addcaps="unknown,webelement,spantag"
 					capname="spantag"
+					id="870fe699-c1cc-46ec-9345-43de81026494"
+					name="menu_Servicios"
+					refimgid="a54d336c-040f-43b2-a2a0-8bf9c9d606ca"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Servicios']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
 					id="d4f70601-6404-497e-9fb2-46160c6e6728"
 					name="menu_DatosFinancieros"
 					refimgid="a54d336c-040f-43b2-a2a0-8bf9c9d606ca"
@@ -2974,6 +2984,17 @@ name="SuraClaimsRepository">
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'NewMatter-tbody']//div[@class='g-helper-cell-text']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="f5df43c3-dcdc-48ce-a1ab-8c24b533a37a"
+				name="GDvColumnXContainerXContainerDefa"
+				refimgid="ec269ad9-4a15-421f-981e-4338e17e786c"
+				refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//tbody[#'NewServiceRequest-tbody']/tr[3]/td/div/table/tbody/tr[2]/td/div"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']/tr[3]//table/tbody/tr[2]/?/?/div
+				</item>
 				<basepath>
 					/dom[@domain=$Ambiente]
 				</basepath>
@@ -3725,6 +3746,16 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//span[#'NewServiceRequest:ttlBar']
 				</item>
 				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="1c569bb4-cae9-4d11-a493-9cd2b3d1523d"
+				name="txt_Servicios"
+				refimgid="32754b35-3ebc-406a-a05f-2167af5a9c57"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Servicios']
+				</item>
+				<item
 				addcaps="unknown,webelement,labeltag"
 				capname="inputtag"
 				id="1042eb90-2e04-4d7c-90d9-e10f2e261a80"
@@ -3882,7 +3913,78 @@ name="SuraClaimsRepository">
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+']
+					/dom[@domain=$Ambiente]//ul/li[@innertext~'[A-Z]+' and @innertext!~'[a-z]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="b799dbb2-bae4-4c5a-a047-2416f9836cfd"
+				name="input_TareaaRealizar"
+				refimgid="b14748de-bb15-42ee-8519-9dce6a0604bd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']//span[@innertext='Tarea a Realizar']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="72fb9260-a83d-4ce5-a804-2d9635e13301"
+				name="option_DistintaNinguna"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//ul/li[@innertext~'Autorizar|Convenir|Justipreciar']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="ddb5ea51-92c1-4df1-a491-9de71896ba2c"
+				name="lbl_EnviarSolicitud"
+				refimgid="f81831f2-0e0d-4fcc-9852-b20903f440ce"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[#'ClaimServiceRequests/Details']//a[@innertext='Enviar solicitud']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="86056ebe-28cb-42ca-af76-d3b503827f9e"
+				name="bttn_AceptarVentanaEmergente"
+				refimgid="828a9291-0454-4beb-8edf-f526b2633cc3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//a//span[@innertext='Aceptar']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="0f8fa4e3-7dfa-47b9-ae89-c48fbe28424f"
+				name="lbl_Historial"
+				refimgid="5f5030b2-2c6b-4167-ae38-630e580a0d6d"
+				refpath="/dom[@domain='preproducciongestion.segurossura.com.ar']//a[#'ClaimServiceRequests:HistoryTab']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//a[#'ClaimServiceRequests:HistoryTab']
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="divtag"
+				id="10d38345-f3f7-4b9a-a6da-6eabee572693"
+				name="txt_InspeccionRecibida"
+				refimgid="0e8f0de3-a281-4035-953c-430e18082035"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[#'ClaimServiceRequests:ServiceRequestHistoryLV']//div[@innertext&gt;'Inspecci&#243;n recibida por Orion']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="spantag"
+				id="d3cd81ad-7e7c-42ed-958b-77cb0c201bb4"
+				name="txt_Descripcion"
+				refimgid="5f5030b2-2c6b-4167-ae38-630e580a0d6d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Descripción']
 				</item>
 			</folder>
 			<basepath>

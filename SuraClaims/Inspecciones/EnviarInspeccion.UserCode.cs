@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.Inspecciones
 {
-    public partial class CrearServicio
+    public partial class EnviarInspeccion
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

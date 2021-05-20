@@ -24,22 +24,22 @@ namespace SuraClaims.Inspecciones
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CrearServicio recording.
+    ///The CrearServicio_DatosBasicos recording.
     /// </summary>
     [TestModule("03c658a7-0fff-45a2-88ba-9145107b3b1e", ModuleType.Recording, 1)]
-    public partial class CrearServicio : ITestModule
+    public partial class CrearServicio_DatosBasicos : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static CrearServicio instance = new CrearServicio();
+        static CrearServicio_DatosBasicos instance = new CrearServicio_DatosBasicos();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CrearServicio()
+        public CrearServicio_DatosBasicos()
         {
             FechaFinalizacionServicio = "";
             TipoServicio = "Por foto";
@@ -48,7 +48,7 @@ namespace SuraClaims.Inspecciones
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CrearServicio Instance
+        public static CrearServicio_DatosBasicos Instance
         {
             get { return instance; }
         }
@@ -155,42 +155,6 @@ namespace SuraClaims.Inspecciones
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Inspeccion.Copy_of_input_TipoInspeccion'", repo.SuraClaims.Inspeccion.Copy_of_input_TipoInspeccionInfo, new ActionTimeout(30000), new RecordItemIndex(11));
             repo.SuraClaims.Inspeccion.Copy_of_input_TipoInspeccionInfo.WaitForNotExists(30000);
-            
-            // Proveedor
-            Report.Log(ReportLevel.Info, "Section", "Proveedor", new RecordItemIndex(12));
-            
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.Inspeccion.txt_FechaFinalizacionServicio' and assigning its value to variable 'FechaFinalizacionServicio'.", repo.SuraClaims.Inspeccion.txt_FechaFinalizacionServicioInfo, new RecordItemIndex(13));
-            FechaFinalizacionServicio = repo.SuraClaims.Inspeccion.txt_FechaFinalizacionServicio.Element.GetAttributeValueText("InnerText");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FechaFinalizacionServicio' with focus on 'SuraClaims.Inspeccion.input_FechaInspeccionOrion'.", repo.SuraClaims.Inspeccion.input_FechaInspeccionOrionInfo, new RecordItemIndex(14));
-            repo.SuraClaims.Inspeccion.input_FechaInspeccionOrion.PressKeys(FechaFinalizacionServicio);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Inspeccion.txt_InstruccionesparaProveedor' at Center.", repo.SuraClaims.Inspeccion.txt_InstruccionesparaProveedorInfo, new RecordItemIndex(15));
-            repo.SuraClaims.Inspeccion.txt_InstruccionesparaProveedor.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 15s to not exist. Associated repository item: 'SuraClaims.Inspeccion.Copy_of_input_FechaInspeccionOrion'", repo.SuraClaims.Inspeccion.Copy_of_input_FechaInspeccionOrionInfo, new ActionTimeout(15000), new RecordItemIndex(16));
-            repo.SuraClaims.Inspeccion.Copy_of_input_FechaInspeccionOrionInfo.WaitForNotExists(15000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Inspeccion.input_NombreProveedor' at Center.", repo.SuraClaims.Inspeccion.input_NombreProveedorInfo, new RecordItemIndex(17));
-            repo.SuraClaims.Inspeccion.input_NombreProveedor.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(18));
-            Delay.Duration(300, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Inspeccion.option_Proveedor' at Center.", repo.SuraClaims.Inspeccion.option_ProveedorInfo, new RecordItemIndex(19));
-            repo.SuraClaims.Inspeccion.option_Proveedor.Click();
-            Delay.Milliseconds(0);
-            
-            // -----
-            Report.Log(ReportLevel.Info, "Section", "-----", new RecordItemIndex(20));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Inspeccion.bttn_Guardar' at Center.", repo.SuraClaims.Inspeccion.bttn_GuardarInfo, new RecordItemIndex(21));
-            repo.SuraClaims.Inspeccion.bttn_Guardar.Click();
-            Delay.Milliseconds(0);
             
         }
 

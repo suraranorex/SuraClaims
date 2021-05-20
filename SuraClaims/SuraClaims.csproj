@@ -147,17 +147,65 @@
       <UserCode>true</UserCode>
       <id>0eb9b891-b4e9-412b-856d-ce469e5d5d84</id>
     </Compile>
-    <Compile Include="Inspecciones\CrearServicio.cs">
+    <Compile Include="Inspecciones\Completar_Tareaarealizar.cs">
+      <BoundTo>abcee673-e9c6-4e6c-a63c-5414a8f50316</BoundTo>
+      <DependentUpon>Completar_Tareaarealizar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fca54f53-d8ae-4bed-9e8b-934eaf2e1341</id>
+    </Compile>
+    <Compile Include="Inspecciones\Completar_Tareaarealizar.UserCode.cs">
+      <BoundTo>abcee673-e9c6-4e6c-a63c-5414a8f50316</BoundTo>
+      <DependentUpon>Completar_Tareaarealizar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d038f57-2e71-4109-ada4-5f07cc5e5556</id>
+    </Compile>
+    <Compile Include="Inspecciones\CrearServicio_DatosBasicos.cs">
       <BoundTo>4439cca3-a8ca-43df-a530-a86315f88877</BoundTo>
-      <DependentUpon>CrearServicio.rxrec</DependentUpon>
+      <DependentUpon>CrearServicio_DatosBasicos.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>701c079d-53e4-4897-bfd7-1442be68f599</id>
     </Compile>
-    <Compile Include="Inspecciones\CrearServicio.UserCode.cs">
+    <Compile Include="Inspecciones\CrearServicio_DatosBasicos.UserCode.cs">
       <BoundTo>4439cca3-a8ca-43df-a530-a86315f88877</BoundTo>
-      <DependentUpon>CrearServicio.rxrec</DependentUpon>
+      <DependentUpon>CrearServicio_DatosBasicos.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c003f99d-b97a-4a94-9f32-692316772969</id>
+    </Compile>
+    <Compile Include="Inspecciones\CrearServicio_DatosProveedor.cs">
+      <BoundTo>5a33f891-cf86-4f05-a161-df5148b68db6</BoundTo>
+      <DependentUpon>CrearServicio_DatosProveedor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f66b4843-84ff-4774-8969-a623150e3d85</id>
+    </Compile>
+    <Compile Include="Inspecciones\CrearServicio_DatosProveedor.UserCode.cs">
+      <BoundTo>5a33f891-cf86-4f05-a161-df5148b68db6</BoundTo>
+      <DependentUpon>CrearServicio_DatosProveedor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f49bf75f-ff8e-4cac-993d-81b599f6d93b</id>
+    </Compile>
+    <Compile Include="Inspecciones\EnviarInspeccion.cs">
+      <BoundTo>23fe97b9-f35d-40f1-b390-180dd6ff2bde</BoundTo>
+      <DependentUpon>EnviarInspeccion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c465666-76b0-4202-a562-9487a8dc4e8e</id>
+    </Compile>
+    <Compile Include="Inspecciones\EnviarInspeccion.UserCode.cs">
+      <BoundTo>23fe97b9-f35d-40f1-b390-180dd6ff2bde</BoundTo>
+      <DependentUpon>EnviarInspeccion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>07626f88-dcc6-4f27-86d0-f1d0eb501218</id>
+    </Compile>
+    <Compile Include="Inspecciones\Obtener_IdOrion.cs">
+      <BoundTo>d2e0692c-d1e9-4b03-9709-34e7e1284e82</BoundTo>
+      <DependentUpon>Obtener_IdOrion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6273db2-8c90-4523-8979-da618ca45367</id>
+    </Compile>
+    <Compile Include="Inspecciones\Obtener_IdOrion.UserCode.cs">
+      <BoundTo>d2e0692c-d1e9-4b03-9709-34e7e1284e82</BoundTo>
+      <DependentUpon>Obtener_IdOrion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>07f13e79-4c61-4073-88d2-809be88803e3</id>
     </Compile>
     <Compile Include="JuiciosyMediaciones\Agregar_ReclamosyPartes.cs">
       <BoundTo>8ca9b618-8ff0-45f9-b7b8-145cbbdc9ccd</BoundTo>
@@ -302,6 +350,18 @@
       <DependentUpon>MenuLateral_JuiciosyMediaciones.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9d0653f7-bb9a-44aa-83da-2df100072cb9</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Servicio.cs">
+      <BoundTo>3e92dcbe-cf32-496f-8efa-2ca171473366</BoundTo>
+      <DependentUpon>MenuLateral_Servicio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb013d11-f3f5-4deb-9383-dd57dc8876d1</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Servicio.UserCode.cs">
+      <BoundTo>3e92dcbe-cf32-496f-8efa-2ca171473366</BoundTo>
+      <DependentUpon>MenuLateral_Servicio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a5df987d-8834-439c-ad7b-0cdbdc71efa9</id>
     </Compile>
     <Compile Include="Menu\MenuLateral_Supervision_ColaMensajes.cs">
       <BoundTo>78f4c535-a06d-425f-bb67-cf69a260de94</BoundTo>
@@ -1224,10 +1284,37 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>2572aa24-97f7-46fa-9c63-876eeed2707f</id>
     </Content>
-    <None Include="Inspecciones\CrearServicio.rxrec">
+    <Content Include="EnviarValidar_Inspeccion.xlsx">
+      <Link>EnviarValidar_Inspeccion.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>5940df33-0065-4e02-82bb-e30eea6e9cae</id>
+    </Content>
+    <None Include="Inspecciones\Completar_Tareaarealizar.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>abcee673-e9c6-4e6c-a63c-5414a8f50316</id>
+      <recordtableid>8410fe9f-bbb7-4037-86ac-a2df77301333</recordtableid>
+    </None>
+    <None Include="Inspecciones\CrearServicio_DatosBasicos.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>4439cca3-a8ca-43df-a530-a86315f88877</id>
       <recordtableid>03c658a7-0fff-45a2-88ba-9145107b3b1e</recordtableid>
+    </None>
+    <None Include="Inspecciones\CrearServicio_DatosProveedor.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>5a33f891-cf86-4f05-a161-df5148b68db6</id>
+      <recordtableid>ff0ac553-73c8-480b-8b2e-29eb6fe4b36f</recordtableid>
+    </None>
+    <None Include="Inspecciones\EnviarInspeccion.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>23fe97b9-f35d-40f1-b390-180dd6ff2bde</id>
+      <recordtableid>5b636393-0656-4beb-a750-af8629dd8109</recordtableid>
+    </None>
+    <None Include="Inspecciones\Obtener_IdOrion.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>d2e0692c-d1e9-4b03-9709-34e7e1284e82</id>
+      <recordtableid>7eae2ad5-a6e1-4cc0-b81f-3d2941b81096</recordtableid>
     </None>
     <None Include="JuiciosyMediaciones\Agregar_ReclamosyPartes.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1288,6 +1375,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>db82a624-d45f-439b-8cee-18d15d8f5c6d</id>
       <recordtableid>f00b5f5d-3efc-4768-8bc0-5ced6ff2d76d</recordtableid>
+    </None>
+    <None Include="Menu\MenuLateral_Servicio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>3e92dcbe-cf32-496f-8efa-2ca171473366</id>
+      <recordtableid>1554c606-6ce3-4a8e-b777-7bffa9fb43db</recordtableid>
     </None>
     <None Include="Menu\MenuLateral_Supervision_ColaMensajes.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
