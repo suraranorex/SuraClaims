@@ -391,8 +391,8 @@
 			datarangeactive="True"
 			datasource="SiniestroAP"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_AP">
 				<parameters>
 					<param
@@ -559,8 +559,8 @@
 			datarangeactive="True"
 			datasource="SiniestroMotorUBER"
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c"
-			maxrange="1"
-			minrange="1"
+			maxrange="2"
+			minrange="2"
 			name="GeneracionSiniestro_Motor_UBER">
 			</testcase>
 			<testmodule
@@ -665,8 +665,8 @@
 			datarangeactive="True"
 			datasource="SiniestroHogar"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<testmodule
@@ -803,8 +803,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPagos"
 			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="ValidarPago">
 			</testcase>
 			<testmodule
@@ -2405,8 +2405,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -2554,8 +2554,8 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="2"
-			minrange="0"
+			maxrange="6"
+			minrange="3"
 			name="ValidarGeneracion_SISE">
 			</testcase>
 			<testmodule
@@ -3778,8 +3778,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="0"
-			minrange="0"
+			maxrange="4"
+			minrange="4"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -6506,7 +6506,7 @@
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="11"
+		lastknownrowcount="4"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7236,18 +7236,6 @@
 		</testconfiguration>
 		<testconfiguration
 		name="PruebaIri">
-			<testcontainer
-			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946">
-			</testcontainer>
-			<testcontainer
-			id="79bc1e16-5510-4b54-82af-f6e18939b1f2">
-			</testcontainer>
-			<testcontainer
-			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
-			</testcontainer>
-			<testcontainer
-			id="b3f630b5-9820-49aa-b8d5-af31bce661e3">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
