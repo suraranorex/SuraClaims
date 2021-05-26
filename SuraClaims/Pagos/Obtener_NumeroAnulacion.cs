@@ -102,13 +102,15 @@ namespace SuraClaims.Pagos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.AnulacionPago.txt_NumeroAnulacion' and assigning its value to variable 'NumeroAnulacion'.", repo.SuraClaims.AnulacionPago.txt_NumeroAnulacionInfo, new RecordItemIndex(0));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(0));
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.AnulacionPago.txt_NumeroAnulacion' and assigning its value to variable 'NumeroAnulacion'.", repo.SuraClaims.AnulacionPago.txt_NumeroAnulacionInfo, new RecordItemIndex(1));
             NumeroAnulacion = repo.SuraClaims.AnulacionPago.txt_NumeroAnulacion.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", "El número de anulación es", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "User", "El número de anulación es", new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "User", NumeroAnulacion, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "User", NumeroAnulacion, new RecordItemIndex(3));
             
         }
 

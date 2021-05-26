@@ -414,6 +414,28 @@ f//Z
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="0611bc9a-e59d-4048-9dd3-35444b48cb97">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="437ec3c8-33a0-4091-9307-8b88b67c886b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

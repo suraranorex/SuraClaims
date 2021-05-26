@@ -3783,7 +3783,7 @@ name="SuraClaimsRepository">
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//li[@innertext~'1ª|3ª' and @innertext~'Daños o Incendio de vehículo']
+					/dom[@domain=$Ambiente]//li[@innertext~'1ª|3ª|801' and @innertext~'Daños']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"

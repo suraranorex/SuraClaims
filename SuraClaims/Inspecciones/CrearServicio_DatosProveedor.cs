@@ -128,11 +128,13 @@ namespace SuraClaims.Inspecciones
             repo.SuraClaims.Inspeccion.option_Proveedor.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Inspeccion.bttn_Guardar' at Center.", repo.SuraClaims.Inspeccion.bttn_GuardarInfo, new RecordItemIndex(7));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(7));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Inspeccion.bttn_Guardar' at Center.", repo.SuraClaims.Inspeccion.bttn_GuardarInfo, new RecordItemIndex(8));
             repo.SuraClaims.Inspeccion.bttn_Guardar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Inspeccion.txt_Servicios'", repo.SuraClaims.Inspeccion.txt_ServiciosInfo, new ActionTimeout(30000), new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Inspeccion.txt_Servicios'", repo.SuraClaims.Inspeccion.txt_ServiciosInfo, new ActionTimeout(30000), new RecordItemIndex(9));
             repo.SuraClaims.Inspeccion.txt_ServiciosInfo.WaitForExists(30000);
             
         }

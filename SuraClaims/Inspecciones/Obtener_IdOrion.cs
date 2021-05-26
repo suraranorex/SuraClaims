@@ -115,6 +115,8 @@ namespace SuraClaims.Inspecciones
             
             Report.Log(ReportLevel.Info, "User", IdOrion, new RecordItemIndex(3));
             
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(4));
+            
         }
 
 #region Image Feature Data

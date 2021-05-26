@@ -104,6 +104,8 @@ namespace SuraClaims.Pagos
             Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_DetalleOrdenPago'", repo.SuraClaims.Txt_Validaciones.txt_DetalleOrdenPagoInfo, new ActionTimeout(40000), new RecordItemIndex(3));
             repo.SuraClaims.Txt_Validaciones.txt_DetalleOrdenPagoInfo.WaitForExists(40000);
             
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(4));
+            
         }
 
 #region Image Feature Data

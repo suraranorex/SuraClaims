@@ -10624,7 +10624,7 @@ namespace SuraClaims
                 _txt_crearservicioInfo = new RepoItemInfo(this, "txt_CrearServicio", ".//span[#'NewServiceRequest:ttlBar']", "", 30000, null, "14e1fa82-b1e3-4fb7-b9f9-dd1ae2fb1096");
                 _txt_serviciosInfo = new RepoItemInfo(this, "txt_Servicios", ".//span[@innertext='Servicios']", "", 30000, null, "1c569bb4-cae9-4d11-a493-9cd2b3d1523d");
                 _input_enrelacionconInfo = new RepoItemInfo(this, "input_EnRelacionCon", ".//tbody[#'NewServiceRequest-tbody']//span[@innertext='En relación con']/../..//input", "", 30000, null, "1042eb90-2e04-4d7c-90d9-e10f2e261a80");
-                _option_reclamoInfo = new RepoItemInfo(this, "option_Reclamo", ".//li[@innertext~'1ª|3ª' and @innertext~'Daños o Incendio de vehículo']", "", 30000, null, "97f16bb0-dc1f-4557-a552-98b45680c455");
+                _option_reclamoInfo = new RepoItemInfo(this, "option_Reclamo", ".//li[@innertext~'1ª|3ª|801' and @innertext~'Daños']", "", 30000, null, "97f16bb0-dc1f-4557-a552-98b45680c455");
                 _bttn_agregarInfo = new RepoItemInfo(this, "bttn_Agregar", ".//tbody[#'NewServiceRequest-tbody']//a//span[@innertext='Agregar']", "", 30000, null, "e7452cc9-ee74-4e4b-a872-d9a6f3c530ff");
                 _bttn_agregar2Info = new RepoItemInfo(this, "bttn_Agregar2", ".//a//span[@innertext='Agregar']", "", 30000, null, "b1955d6c-702f-4fd7-ae0f-53ba9728f3ff");
                 _bttn_guardarInfo = new RepoItemInfo(this, "bttn_Guardar", ".//tbody[#'NewServiceRequest-tbody']//a//span[@innertext~'ardar']", "", 30000, null, "b2465aea-f8e4-42d3-ac26-6d31fa4e292e");
