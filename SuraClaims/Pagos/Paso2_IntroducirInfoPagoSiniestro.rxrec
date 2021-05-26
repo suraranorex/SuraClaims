@@ -240,10 +240,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="8b36f745-0981-4400-9bcc-cfd4bded5cb4"
+			id="a1ff42a3-2202-4107-a670-0ba41520778d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//li[@innertext~'1ª']
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+' and @innertext='[a-z]+']
 				</path>
 				<robustPath>
 				</robustPath>

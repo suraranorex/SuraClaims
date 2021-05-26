@@ -102,22 +102,24 @@ namespace SuraClaims.JuiciosyMediaciones
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Actualizar' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_ActualizarInfo, new RecordItemIndex(0));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(0));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.bttn_Actualizar' at Center.", repo.SuraClaims.JuiciosYMediaciones.bttn_ActualizarInfo, new RecordItemIndex(1));
             repo.SuraClaims.JuiciosYMediaciones.bttn_Actualizar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacion'", repo.SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacionInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacion'", repo.SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacionInfo, new ActionTimeout(30000), new RecordItemIndex(2));
             repo.SuraClaims.JuiciosYMediaciones.bttn_VolverALitigacionInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.JuiciosYMediaciones.txt_NumeroRAJ' and assigning its value to variable 'RAJ'.", repo.SuraClaims.JuiciosYMediaciones.txt_NumeroRAJInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.JuiciosYMediaciones.txt_NumeroRAJ' and assigning its value to variable 'RAJ'.", repo.SuraClaims.JuiciosYMediaciones.txt_NumeroRAJInfo, new RecordItemIndex(3));
             RAJ = repo.SuraClaims.JuiciosYMediaciones.txt_NumeroRAJ.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", "El número de RAJ emitido es", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "User", "El número de RAJ emitido es", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "User", RAJ, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "User", RAJ, new RecordItemIndex(5));
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(5));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(6));
             
         }
 

@@ -391,8 +391,8 @@
 			datarangeactive="True"
 			datasource="SiniestroAP"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_AP">
 				<parameters>
 					<param
@@ -665,8 +665,8 @@
 			datarangeactive="True"
 			datasource="SiniestroHogar"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<testmodule
@@ -761,8 +761,8 @@
 			datarangeactive="True"
 			datasource="DataSource_Ambiente_Usuario"
 			id="2a07542c-9c89-4c3c-9c89-ba49107eb139"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="ValidarEstado_ColaDeMensajes">
 				<parameters>
 					<param
@@ -940,8 +940,8 @@
 			datarangeactive="True"
 			datasource="ValidarPagoSiniestros"
 			id="3378198a-d57f-4703-b046-8f715ee27a01"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="ValidarPago_SISE">
 			</testcase>
 			<testmodule
@@ -1405,8 +1405,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
 					<param
@@ -1505,7 +1505,7 @@
 			<testcase
 			datasource="Generacion_Inspeccion"
 			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946"
-			name="GenerarInspección">
+			name="GenerarInspeccion">
 			</testcase>
 			<testmodule
 			id="5093bcd7-8ad9-4aa8-8135-e117b70d8ec9"
@@ -1682,8 +1682,8 @@
 			datarangeactive="True"
 			datasource="PagosSiniestros"
 			id="58368d11-e725-4331-93f0-6f443d6c9119"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Pagos_Siniestros">
 			</testcase>
 			<testmodule
@@ -2554,8 +2554,8 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="6"
-			minrange="3"
+			maxrange="2"
+			minrange="0"
 			name="ValidarGeneracion_SISE">
 			</testcase>
 			<testmodule
@@ -2589,7 +2589,7 @@
 			<testcase
 			datasource="Enviar_Validar_Inspeccion"
 			id="79bc1e16-5510-4b54-82af-f6e18939b1f2"
-			name="Enviar_Validar_Inspección">
+			name="Enviar_Validar_Inspeccion">
 			</testcase>
 			<testmodule
 			id="7c48a55f-e091-48cf-91e3-2f8bd2cc4feb"
@@ -3378,8 +3378,8 @@
 			datarangeactive="True"
 			datasource="AnularPago"
 			id="a379fb7f-16eb-45de-a8bf-0f2bba366191"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="AnularPago">
 			</testcase>
 			<testmodule
@@ -3590,7 +3590,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="b3f630b5-9820-49aa-b8d5-af31bce661e3"
-			name="InspecciónCoordinada">
+			name="InspeccionCoordinada">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
@@ -3778,8 +3778,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="4"
-			minrange="4"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -3914,9 +3914,9 @@
 			datarangeactive="True"
 			datasource="ValidarAnulacionPago_SISE"
 			id="cb432aa2-813f-4ab6-9105-609d274a1598"
-			maxrange="2"
-			minrange="2"
-			name="ValidarAnulaciónPago_SISE">
+			maxrange="0"
+			minrange="0"
+			name="ValidarAnulacionPago_SISE">
 			</testcase>
 			<testmodule
 			id="cb9e6a13-cdd8-4744-a768-ba5aa4242e5a"
@@ -4436,8 +4436,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPagos"
 			id="e86717b1-fd17-4adc-aac7-94fc08ee7023"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Aprobar_Nuevo_Pago">
 			</testcase>
 			<testmodule
@@ -6119,7 +6119,7 @@
 					</testcase>
 					<testcase
 					id="cb432aa2-813f-4ab6-9105-609d274a1598"
-					name="ValidarAnulaciónPago_SISE">
+					name="ValidarAnulacionPago_SISE">
 						<setup
 						id="e9156b63-9ae3-427d-bd25-3609f2c278ad"
 						name="setup">
@@ -6155,7 +6155,7 @@
 					</testcase>
 					<testcase
 					id="4c888c52-c1e6-428b-9c3b-7c7cfb130946"
-					name="GenerarInspección">
+					name="GenerarInspeccion">
 						<setup
 						id="82ba695f-8b97-4928-8392-26df5578a1b2"
 						name="setup">
@@ -6182,7 +6182,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="b3f630b5-9820-49aa-b8d5-af31bce661e3"
-						name="InspecciónCoordinada">
+						name="InspeccionCoordinada">
 							<testmodule
 							id="69d7a54d-30a2-44ee-8716-80f54f0bd2cb"
 							name="Completar_Tareaarealizar">
@@ -6207,7 +6207,7 @@
 					</testcase>
 					<testcase
 					id="79bc1e16-5510-4b54-82af-f6e18939b1f2"
-					name="Enviar_Validar_Inspección">
+					name="Enviar_Validar_Inspeccion">
 						<setup
 						id="f6aee2d9-5d4a-4930-9eaa-41297fae2602"
 						name="setup">
@@ -6319,7 +6319,7 @@
 		filename="AprobacionesPreviasAPago.xlsx"
 		id="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="AprobacionesPreviasAPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6406,7 +6406,7 @@
 		filename="Generación Inspección Siniestro.xlsx"
 		id="4f9dcba6-c875-44c9-99de-3393f3c07aab"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="Generacion_Inspeccion"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6506,7 +6506,7 @@
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="14"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7236,6 +7236,24 @@
 		</testconfiguration>
 		<testconfiguration
 		name="PruebaIri">
+			<testcontainer
+			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9">
+			</testcontainer>
+			<testcontainer
+			id="7112eb20-9985-4964-8f8a-199e6b184430">
+			</testcontainer>
+			<testcontainer
+			id="8d86ce00-19d6-4545-b4f6-2b02fffe0c3f">
+			</testcontainer>
+			<testcontainer
+			id="9dce1b14-f6ec-4887-bee0-f3cdfb3314c7">
+			</testcontainer>
+			<testcontainer
+			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -121,8 +121,8 @@ namespace SuraClaims.Pagos
             repo.SuraClaims.InformacionPagoSiniestro.txtbox_LineaReserva.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_LineaReserva_Asegurado' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_LineaReserva_AseguradoInfo, new RecordItemIndex(2));
-            repo.SuraClaims.InformacionPagoSiniestro.option_LineaReserva_Asegurado.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.Copy_of_option_LineaReserva_Asegurado' at Center.", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_option_LineaReserva_AseguradoInfo, new RecordItemIndex(2));
+            repo.SuraClaims.InformacionPagoSiniestro.Copy_of_option_LineaReserva_Asegurado.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.lbl_CoberturaSiniestro'", repo.SuraClaims.InformacionPagoSiniestro.lbl_CoberturaSiniestroInfo, new ActionTimeout(40000), new RecordItemIndex(3));

@@ -2691,6 +2691,16 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//li[@innertext~'1ª']
 				</item>
 				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="a1ff42a3-2202-4107-a670-0ba41520778d"
+				name="Copy_of_option_LineaReserva_Asegurado"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+' and @innertext!~'ninguna']
+				</item>
+				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="4b15420f-5a87-41de-a98e-11831cf57486"

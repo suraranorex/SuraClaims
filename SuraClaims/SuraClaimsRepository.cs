@@ -7508,6 +7508,7 @@ namespace SuraClaims
             RepoItemInfo _txt_codigoreciboInfo;
             RepoItemInfo _arrow_selectlineareservaInfo;
             RepoItemInfo _option_lineareserva_aseguradoInfo;
+            RepoItemInfo _copy_of_option_lineareserva_aseguradoInfo;
             RepoItemInfo _txttipopagopaso2Info;
             RepoItemInfo _copy_of_txttipopagopaso2Info;
             RepoItemInfo _txtbox_lineareservaInfo;
@@ -7555,6 +7556,7 @@ namespace SuraClaims
                 _txt_codigoreciboInfo = new RepoItemInfo(this, "txt_CodigoRecibo", ".//tbody[#'centerPanel-tbody']//span[@innertext='Texto de recibo']/../..//textarea[@innertext~'[A-Z]+']", "", 30000, null, "3a48f820-7e6e-4030-8776-cceeeae52db6");
                 _arrow_selectlineareservaInfo = new RepoItemInfo(this, "arrow_SelectLineaReserva", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']", "", 30000, null, "3dc91bca-1b05-42ca-ab04-80007792efee");
                 _option_lineareserva_aseguradoInfo = new RepoItemInfo(this, "option_LineaReserva_Asegurado", ".//li[@innertext~'1ª']", "", 30000, null, "8b36f745-0981-4400-9bcc-cfd4bded5cb4");
+                _copy_of_option_lineareserva_aseguradoInfo = new RepoItemInfo(this, "Copy_of_option_LineaReserva_Asegurado", ".//li[@innertext~'[A-Z]+' and @innertext!~'ninguna']", "", 30000, null, "a1ff42a3-2202-4107-a670-0ba41520778d");
                 _txttipopagopaso2Info = new RepoItemInfo(this, "txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input", "", 30000, null, "4b15420f-5a87-41de-a98e-11831cf57486");
                 _copy_of_txttipopagopaso2Info = new RepoItemInfo(this, "Copy_of_txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input", "", 30000, null, "887f5bab-e720-4621-ba95-154067e358e6");
                 _txtbox_lineareservaInfo = new RepoItemInfo(this, "txtbox_LineaReserva", ".//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input", "", 30000, null, "8d2ba8b4-903b-4fc1-a4b7-ef3a29c5f02f");
@@ -7848,6 +7850,30 @@ namespace SuraClaims
                 get
                 {
                     return _option_lineareserva_aseguradoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_option_LineaReserva_Asegurado item.
+            /// </summary>
+            [RepositoryItem("a1ff42a3-2202-4107-a670-0ba41520778d")]
+            public virtual Ranorex.LiTag Copy_of_option_LineaReserva_Asegurado
+            {
+                get
+                {
+                    return _copy_of_option_lineareserva_aseguradoInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_option_LineaReserva_Asegurado item info.
+            /// </summary>
+            [RepositoryItemInfo("a1ff42a3-2202-4107-a670-0ba41520778d")]
+            public virtual RepoItemInfo Copy_of_option_LineaReserva_AseguradoInfo
+            {
+                get
+                {
+                    return _copy_of_option_lineareserva_aseguradoInfo;
                 }
             }
 
