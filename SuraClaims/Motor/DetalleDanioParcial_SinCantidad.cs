@@ -24,29 +24,29 @@ namespace SuraClaims.Motor
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The FastTrack_SinCantidad recording.
+    ///The DetalleDanioParcial_SinCantidad recording.
     /// </summary>
     [TestModule("42161acf-fda5-4099-b35c-e5468f485c5f", ModuleType.Recording, 1)]
-    public partial class FastTrack_SinCantidad : ITestModule
+    public partial class DetalleDanioParcial_SinCantidad : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static FastTrack_SinCantidad instance = new FastTrack_SinCantidad();
+        static DetalleDanioParcial_SinCantidad instance = new DetalleDanioParcial_SinCantidad();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public FastTrack_SinCantidad()
+        public DetalleDanioParcial_SinCantidad()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static FastTrack_SinCantidad Instance
+        public static DetalleDanioParcial_SinCantidad Instance
         {
             get { return instance; }
         }

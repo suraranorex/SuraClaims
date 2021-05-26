@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="FastTrack_SinCantidad"
+	classname="DetalleDanioParcial_SinCantidad"
 	namespace="SuraClaims.Motor">
 	</codegen>
 	<variables>
@@ -265,7 +265,7 @@ k4GB+tKIUBOAeTnG44B+naiigAEEYBAU4IxyTwPQelFFFNNoTSe5/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		FastTrack_SinCantidad.UserCode.cs
+		DetalleDanioParcial_SinCantidad.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

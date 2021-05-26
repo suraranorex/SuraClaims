@@ -48,20 +48,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="04c3462c-c235-4ebd-8893-97987056d7a1"
-			name="FastTrack_ConCantidad"
-			ref="54e678cf-a9c9-4446-bced-2b43202e21ed"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="05e9ee8b-7213-4768-97fe-043a13f9e0f5"
 			name="teardown">
@@ -559,8 +545,8 @@
 			datarangeactive="True"
 			datasource="SiniestroMotorUBER"
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c"
-			maxrange="2"
-			minrange="2"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Motor_UBER">
 			</testcase>
 			<testmodule
@@ -736,6 +722,20 @@
 					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
 					variableid="4f23624d-50e5-4776-8ffa-a10d6bc5de41"
 					variablename="Importe">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="27023f26-f762-4abb-9238-3a3f1f621bdb"
+			name="DetalleDanioParcial_SinCantidad_NoFT"
+			ref="2b40313c-221a-4eb4-84d5-6fac3300b1c6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1453,7 +1453,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="4b785685-d9a4-422f-bf84-c41d099771f3"
-			name="Si_Es_FastTrack">
+			name="FT">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
@@ -1503,8 +1503,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="Generacion_Inspeccion"
 			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946"
+			maxrange="0"
+			minrange="0"
 			name="GenerarInspeccion">
 			</testcase>
 			<testmodule
@@ -2235,6 +2238,31 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<smartfoldernode
+			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
+			name="NoFT_ConDetalleDanio">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="EsFastTrack"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="No">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="7076d1a7-b935-4966-bc48-0d23b4b519cf"
 			name="MenuSuperior_BuscarSiniestro"
@@ -2451,7 +2479,7 @@
 			</testmodule>
 			<testmodule
 			id="7587d8f5-1989-46db-b487-678e3ac16994"
-			name="FastTrack_SinCantidad"
+			name="DetalleDanioParcial_SinCantidad"
 			ref="42161acf-fda5-4099-b35c-e5468f485c5f"
 			type="Recording">
 				<databinding>
@@ -2878,91 +2906,6 @@
 						<rightvalue>
 							<simplevaluesource
 							value="Luneta">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Caída de Arbol">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Cristal del techo">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Granizo">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Inundación">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Tambor de arranque">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -3487,6 +3430,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="ac92f432-187e-4136-9e7d-e6d9dfd133eb"
+			name="DetalleDanioParcial_ConCant"
+			ref="e8f563cb-d93a-41f5-8b5b-2a44ef617ff6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ae862184-bd6b-4fdc-8eb8-1110f829f5be"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -3778,8 +3735,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="1"
-			minrange="1"
+			maxrange="3"
+			minrange="3"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -4644,6 +4601,99 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315"
+			name="SinCantidadTipo">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Caída de Arbol">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Cristal del techo">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Granizo">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Inundación">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Tambor de arranque">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="f1d553d7-aaa2-46bd-b031-a88e8d50fcfe"
 			name="Paso2_IntroducirInfoPagoSiniestro"
@@ -4742,13 +4792,15 @@
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="Ambiente"
 					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
@@ -5298,13 +5350,13 @@
 						</testmodule>
 						<smartfoldernode
 						id="4b785685-d9a4-422f-bf84-c41d099771f3"
-						name="Si_Es_FastTrack">
+						name="FT">
 							<smartfoldernode
 							id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
 							name="ConCantidadTipo">
 								<testmodule
-								id="04c3462c-c235-4ebd-8893-97987056d7a1"
-								name="FastTrack_ConCantidad">
+								id="ac92f432-187e-4136-9e7d-e6d9dfd133eb"
+								name="DetalleDanioParcial_ConCant">
 								</testmodule>
 							</smartfoldernode>
 							<smartfoldernode
@@ -5312,13 +5364,25 @@
 							name="SinCantidadTipo">
 								<testmodule
 								id="7587d8f5-1989-46db-b487-678e3ac16994"
-								name="FastTrack_SinCantidad">
+								name="DetalleDanioParcial_SinCantidad">
 								</testmodule>
 							</smartfoldernode>
 							<testmodule
 							id="426565e9-cbb5-4ad4-9808-397751c596ed"
 							name="DatosProveedor">
 							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
+						name="NoFT_ConDetalleDanio">
+							<smartfoldernode
+							id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315"
+							name="SinCantidadTipo">
+								<testmodule
+								id="27023f26-f762-4abb-9238-3a3f1f621bdb"
+								name="DetalleDanioParcial_SinCantidad_NoFT">
+								</testmodule>
+							</smartfoldernode>
 						</smartfoldernode>
 						<testmodule
 						id="d4e9c074-4f0d-48d2-8f0b-61c2899139c7"
@@ -6374,7 +6438,7 @@
 		filename="EnviarValidar_Inspeccion.xlsx"
 		id="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="Enviar_Validar_Inspeccion"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6709,7 +6773,7 @@
 		filename="GeneracionSiniestroMotor.xlsx"
 		id="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 		includefile="Checked"
-		lastknownrowcount="13"
+		lastknownrowcount="16"
 		name="SiniestroMotor"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7237,16 +7301,16 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
-			id="2de0db2e-56e3-4c2f-9a69-5a7bf744697a">
-			</testcontainer>
-			<testcontainer
-			id="4a401cbb-e90c-4f99-8a3f-de77a7c54954">
-			</testcontainer>
-			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
 			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946">
+			</testcontainer>
+			<testcontainer
+			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb">
+			</testcontainer>
+			<testcontainer
+			id="79bc1e16-5510-4b54-82af-f6e18939b1f2">
 			</testcontainer>
 			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">
@@ -7258,16 +7322,13 @@
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
-			id="a379fb7f-16eb-45de-a8bf-0f2bba366191">
-			</testcontainer>
-			<testcontainer
 			id="b3f630b5-9820-49aa-b8d5-af31bce661e3">
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
 			</testcontainer>
 			<testcontainer
-			id="cb432aa2-813f-4ab6-9105-609d274a1598">
+			id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

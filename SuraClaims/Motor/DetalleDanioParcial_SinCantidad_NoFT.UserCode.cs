@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.Motor
 {
-    public partial class FastTrack_SinCantidad
+    public partial class DetalleDanioParcial_SinCantidad_NoFT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

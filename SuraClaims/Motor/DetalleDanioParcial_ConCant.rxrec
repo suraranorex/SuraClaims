@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="54e678cf-a9c9-4446-bced-2b43202e21ed"
+id="e8f563cb-d93a-41f5-8b5b-2a44ef617ff6"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="FastTrack_ConCantidad"
+	classname="DetalleDanioParcial_ConCant"
 	namespace="SuraClaims.Motor">
 	</codegen>
 	<variables>
@@ -744,7 +744,7 @@ k4GB+tKIUBOAeTnG44B+naiigAEEYBAU4IxyTwPQelFFFNNoTSe5/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		FastTrack_ConCantidad.UserCode.cs
+		DetalleDanioParcial_ConCant.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

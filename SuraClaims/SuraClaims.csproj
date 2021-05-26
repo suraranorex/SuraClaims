@@ -387,6 +387,30 @@
       <UserCode>true</UserCode>
       <id>22745377-fd26-4487-be67-8d098321a00d</id>
     </Compile>
+    <Compile Include="Motor\DetalleDanioParcial_ConCant.cs">
+      <BoundTo>9977d8a8-f095-4fd8-97d0-147560ae21c3</BoundTo>
+      <DependentUpon>DetalleDanioParcial_ConCant.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>189c36a6-8c23-4a21-a79b-8a5ef1222f01</id>
+    </Compile>
+    <Compile Include="Motor\DetalleDanioParcial_ConCant.UserCode.cs">
+      <BoundTo>9977d8a8-f095-4fd8-97d0-147560ae21c3</BoundTo>
+      <DependentUpon>DetalleDanioParcial_ConCant.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>267b0de6-53e4-445f-a592-f973704879ee</id>
+    </Compile>
+    <Compile Include="Motor\DetalleDanioParcial_SinCantidad_NoFT.cs">
+      <BoundTo>6eadadc5-3c30-4ed0-b2db-f6c76321938f</BoundTo>
+      <DependentUpon>DetalleDanioParcial_SinCantidad_NoFT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1179fb99-9193-4a30-b13f-3b5adfd23ec5</id>
+    </Compile>
+    <Compile Include="Motor\DetalleDanioParcial_SinCantidad_NoFT.UserCode.cs">
+      <BoundTo>6eadadc5-3c30-4ed0-b2db-f6c76321938f</BoundTo>
+      <DependentUpon>DetalleDanioParcial_SinCantidad_NoFT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3c53223c-48d2-4799-bfca-892c5e972970</id>
+    </Compile>
     <Compile Include="Pagos\AnularPago.cs">
       <BoundTo>b515bb92-9e7f-4424-a259-7c9cea3a7cac</BoundTo>
       <DependentUpon>AnularPago.rxrec</DependentUpon>
@@ -954,26 +978,14 @@
       <id>c8a50bb1-6ac5-4fa2-afe2-9b0a26266b60</id>
       <BoundTo>2443cb65-6d22-4bc8-9e77-02a1651b6580</BoundTo>
     </Compile>
-    <Compile Include="Motor\FastTrack_ConCantidad.cs">
-      <DependentUpon>FastTrack_ConCantidad.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>33c6028b-9138-4202-980e-1a5a27b7d995</id>
-      <BoundTo>82cf71e0-5104-45b9-8f9b-2593b6038114</BoundTo>
-    </Compile>
-    <Compile Include="Motor\FastTrack_ConCantidad.UserCode.cs">
-      <DependentUpon>FastTrack_ConCantidad.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>5b68c698-e9d6-4023-9739-676255bc3015</id>
-      <BoundTo>82cf71e0-5104-45b9-8f9b-2593b6038114</BoundTo>
-    </Compile>
-    <Compile Include="Motor\FastTrack_SinCantidad.cs">
-      <DependentUpon>FastTrack_SinCantidad.rxrec</DependentUpon>
+    <Compile Include="Motor\DetalleDanioParcial_SinCantidad.cs">
+      <DependentUpon>DetalleDanioParcial_SinCantidad.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>006e7e8c-8968-4573-bf32-af5b022a95b6</id>
       <BoundTo>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</BoundTo>
     </Compile>
-    <Compile Include="Motor\FastTrack_SinCantidad.UserCode.cs">
-      <DependentUpon>FastTrack_SinCantidad.rxrec</DependentUpon>
+    <Compile Include="Motor\DetalleDanioParcial_SinCantidad.UserCode.cs">
+      <DependentUpon>DetalleDanioParcial_SinCantidad.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>64037402-265a-4c73-8511-cfb1901b538b</id>
       <BoundTo>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</BoundTo>
@@ -1391,6 +1403,16 @@
       <id>aa7ce910-5204-4eeb-830a-e09ba4759aa0</id>
       <recordtableid>34286301-52f1-4cc8-bc4c-ba086d6661a7</recordtableid>
     </None>
+    <None Include="Motor\DetalleDanioParcial_ConCant.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>9977d8a8-f095-4fd8-97d0-147560ae21c3</id>
+      <recordtableid>e8f563cb-d93a-41f5-8b5b-2a44ef617ff6</recordtableid>
+    </None>
+    <None Include="Motor\DetalleDanioParcial_SinCantidad_NoFT.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>6eadadc5-3c30-4ed0-b2db-f6c76321938f</id>
+      <recordtableid>2b40313c-221a-4eb4-84d5-6fac3300b1c6</recordtableid>
+    </None>
     <None Include="Pagos\AnularPago.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>b515bb92-9e7f-4424-a259-7c9cea3a7cac</id>
@@ -1678,12 +1700,7 @@
       <id>2443cb65-6d22-4bc8-9e77-02a1651b6580</id>
       <recordtableid>84c0b7f4-586d-4c4a-822a-a4cd67c96893</recordtableid>
     </None>
-    <None Include="Motor\FastTrack_ConCantidad.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
-      <id>82cf71e0-5104-45b9-8f9b-2593b6038114</id>
-      <recordtableid>54e678cf-a9c9-4446-bced-2b43202e21ed</recordtableid>
-    </None>
-    <None Include="Motor\FastTrack_SinCantidad.rxrec">
+    <None Include="Motor\DetalleDanioParcial_SinCantidad.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>0ded68bb-0fcf-463c-84a5-8b5a2f02fd7d</id>
       <recordtableid>42161acf-fda5-4099-b35c-e5468f485c5f</recordtableid>
