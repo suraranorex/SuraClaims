@@ -549,6 +549,16 @@ name="SuraClaimsRepository">
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Sura']
 				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="f3726028-ebea-4f45-afac-5ca0342f5b3f"
+				name="txt_DatosFinancierosTotal"
+				refimgid="b0a2a732-e62d-424f-9899-18bb1f75b811"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsSummary-tbody']//span[@innertext&gt;'Datos financieros (Total incurrido:']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"

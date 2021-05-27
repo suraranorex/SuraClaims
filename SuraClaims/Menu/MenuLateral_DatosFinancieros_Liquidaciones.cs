@@ -93,14 +93,17 @@ namespace SuraClaims.Menu
             repo.SuraClaims.Generales.MenuLateral.menu_DatosFinancieros.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
-            Delay.Duration(3000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_DatosFinancierosTotal'", repo.SuraClaims.Txt_Validaciones.txt_DatosFinancierosTotalInfo, new ActionTimeout(20000), new RecordItemIndex(1));
+            repo.SuraClaims.Txt_Validaciones.txt_DatosFinancierosTotalInfo.WaitForExists(20000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(2));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
+            //Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago' at Center.", repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePagoInfo, new RecordItemIndex(3));
             repo.SuraClaims.Generales.MenuLateral.submenuLateral_LiquiOrdenDePago.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPago'", repo.SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPagoInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPago'", repo.SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPagoInfo, new ActionTimeout(30000), new RecordItemIndex(4));
             repo.SuraClaims.Txt_Validaciones.txt_LiquidacionesOrdenPagoInfo.WaitForExists(30000);
             
         }

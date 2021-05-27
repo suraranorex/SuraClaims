@@ -940,7 +940,7 @@
 			datarangeactive="True"
 			datasource="ValidarPagoSiniestros"
 			id="3378198a-d57f-4703-b046-8f715ee27a01"
-			maxrange="0"
+			maxrange="2"
 			minrange="0"
 			name="ValidarPago_SISE">
 			</testcase>
@@ -1405,7 +1405,7 @@
 			datarangeactive="True"
 			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-			maxrange="0"
+			maxrange="1"
 			minrange="0"
 			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
@@ -1588,7 +1588,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="530fa540-9628-480a-8454-c1f4a36b5277"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -1685,7 +1684,7 @@
 			datarangeactive="True"
 			datasource="PagosSiniestros"
 			id="58368d11-e725-4331-93f0-6f443d6c9119"
-			maxrange="0"
+			maxrange="1"
 			minrange="0"
 			name="Pagos_Siniestros">
 			</testcase>
@@ -1876,6 +1875,14 @@
 			name="ObtenerUsuarioParaAprobarPago"
 			ref="f28111a3-40ee-4213-a5d3-c2409dc5b5ca"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="6063d4bd-8cb6-4b12-a2ea-c3ec60209033"
@@ -2240,7 +2247,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
-			name="NoFT_ConDetalleDanio">
+			name="NoFT">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
@@ -2582,7 +2589,7 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="2"
+			maxrange="0"
 			minrange="0"
 			name="ValidarGeneracion_SISE">
 			</testcase>
@@ -2615,8 +2622,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="Enviar_Validar_Inspeccion"
 			id="79bc1e16-5510-4b54-82af-f6e18939b1f2"
+			maxrange="0"
+			minrange="0"
 			name="Enviar_Validar_Inspeccion">
 			</testcase>
 			<testmodule
@@ -2823,8 +2833,8 @@
 			datarangeactive="True"
 			datasource="SiniestroAP_UBER"
 			id="86b95672-af0b-4da0-a95b-2ac941c6be90"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_AP_Uber">
 				<parameters>
 					<param
@@ -2939,8 +2949,8 @@
 			datarangeactive="True"
 			datasource="Mediaciones_Juicios"
 			id="8d86ce00-19d6-4545-b4f6-2b02fffe0c3f"
-			maxrange="1"
-			minrange="1"
+			maxrange="2"
+			minrange="2"
 			name="Generar_Litigio">
 			</testcase>
 			<testmodule
@@ -3321,7 +3331,7 @@
 			datarangeactive="True"
 			datasource="AnularPago"
 			id="a379fb7f-16eb-45de-a8bf-0f2bba366191"
-			maxrange="0"
+			maxrange="2"
 			minrange="0"
 			name="AnularPago">
 			</testcase>
@@ -3735,8 +3745,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="3"
-			minrange="3"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -3871,7 +3881,7 @@
 			datarangeactive="True"
 			datasource="ValidarAnulacionPago_SISE"
 			id="cb432aa2-813f-4ab6-9105-609d274a1598"
-			maxrange="0"
+			maxrange="2"
 			minrange="0"
 			name="ValidarAnulacionPago_SISE">
 			</testcase>
@@ -4393,7 +4403,7 @@
 			datarangeactive="True"
 			datasource="AprobacionesPagos"
 			id="e86717b1-fd17-4adc-aac7-94fc08ee7023"
-			maxrange="0"
+			maxrange="1"
 			minrange="0"
 			name="Aprobar_Nuevo_Pago">
 			</testcase>
@@ -4792,15 +4802,13 @@
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
 					</var>
-				</databinding>
-				<missingdatavariablesbinding>
 					<var
 					dataname="Ambiente"
 					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
-				</missingdatavariablesbinding>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
@@ -4950,7 +4958,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="fa9a38f5-c4d8-40f1-ac1d-6749040fc9d9"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -5374,7 +5381,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
-						name="NoFT_ConDetalleDanio">
+						name="NoFT">
 							<smartfoldernode
 							id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315"
 							name="SinCantidadTipo">
@@ -6322,7 +6329,7 @@
 		filename="Anular Pago Siniestro.xlsx"
 		id="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="4"
 		name="AnularPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6354,7 +6361,7 @@
 		filename="AprobacionesPagos.xlsx"
 		id="3a168301-7879-4530-9708-7e12ebc5dbd0"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="AprobacionesPagos"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6505,7 +6512,7 @@
 		filename="DataSource - Generación Mediaciones y Juicios.xlsx"
 		id="f1296ba1-f8ac-4c96-a800-36b2c831b92a"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="Mediaciones_Juicios"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6570,7 +6577,7 @@
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="14"
+		lastknownrowcount="7"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7192,7 +7199,7 @@
 		filename="ValidarPagoSiniestros_SISE.xlsx"
 		id="f0248626-33eb-4fa7-8d86-54be4fdac042"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="4"
 		name="ValidarPagoSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -7301,34 +7308,31 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
-			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9">
 			</testcontainer>
 			<testcontainer
-			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946">
+			id="2de0db2e-56e3-4c2f-9a69-5a7bf744697a">
 			</testcontainer>
 			<testcontainer
-			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb">
+			id="4a401cbb-e90c-4f99-8a3f-de77a7c54954">
 			</testcontainer>
 			<testcontainer
-			id="79bc1e16-5510-4b54-82af-f6e18939b1f2">
+			id="5180fe8f-6894-45ed-b658-a0191278ff53">
 			</testcontainer>
 			<testcontainer
-			id="89fa68a6-9618-4127-aaec-5d106b43550a">
+			id="7112eb20-9985-4964-8f8a-199e6b184430">
 			</testcontainer>
 			<testcontainer
-			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
+			id="86b95672-af0b-4da0-a95b-2ac941c6be90">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
-			id="b3f630b5-9820-49aa-b8d5-af31bce661e3">
+			id="cb432aa2-813f-4ab6-9105-609d274a1598">
 			</testcontainer>
 			<testcontainer
-			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
-			</testcontainer>
-			<testcontainer
-			id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315">
+			id="e86717b1-fd17-4adc-aac7-94fc08ee7023">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

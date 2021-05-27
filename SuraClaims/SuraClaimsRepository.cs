@@ -1734,6 +1734,7 @@ namespace SuraClaims
             RepoItemInfo _tagnombreaseguradoInfo;
             RepoItemInfo _txt_actividadesInfo;
             RepoItemInfo _txt_suraInfo;
+            RepoItemInfo _txt_datosfinancierostotalInfo;
 
             /// <summary>
             /// Creates a new Txt_Validaciones  folder.
@@ -1754,6 +1755,7 @@ namespace SuraClaims
                 _tagnombreaseguradoInfo = new RepoItemInfo(this, "tagNombreAsegurado", ".//tbody[#'centerPanel-tbody']/tr//table[@class='x-grid-item']/?/?/tr/td[3]/div[@innertext~'[A-Z]+']", "", 30000, null, "1b8a81a2-06db-4cac-911a-5495840765df");
                 _txt_actividadesInfo = new RepoItemInfo(this, "txt_Actividades", ".//span[@innertext='Actividades']", "", 30000, null, "f3896037-62b3-465d-9d32-08147571edd7");
                 _txt_suraInfo = new RepoItemInfo(this, "txt_Sura", ".//tbody[#'centerPanel-tbody']//span[@innertext='Sura']", "", 30000, null, "71fc8611-5d5e-4897-ba0b-3f59225faa31");
+                _txt_datosfinancierostotalInfo = new RepoItemInfo(this, "txt_DatosFinancierosTotal", ".//tbody[#'ClaimFinancialsSummary-tbody']//span[@innertext>'Datos financieros (Total incurrido:']", "", 30000, null, "f3726028-ebea-4f45-afac-5ca0342f5b3f");
             }
 
             /// <summary>
@@ -2077,6 +2079,30 @@ namespace SuraClaims
                 get
                 {
                     return _txt_suraInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_DatosFinancierosTotal item.
+            /// </summary>
+            [RepositoryItem("f3726028-ebea-4f45-afac-5ca0342f5b3f")]
+            public virtual Ranorex.SpanTag txt_DatosFinancierosTotal
+            {
+                get
+                {
+                    return _txt_datosfinancierostotalInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_DatosFinancierosTotal item info.
+            /// </summary>
+            [RepositoryItemInfo("f3726028-ebea-4f45-afac-5ca0342f5b3f")]
+            public virtual RepoItemInfo txt_DatosFinancierosTotalInfo
+            {
+                get
+                {
+                    return _txt_datosfinancierostotalInfo;
                 }
             }
         }

@@ -106,9 +106,29 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="931ff112-d257-4e35-9559-d1f9f5946dde"
+		waitaction="Exists"
+		waittimeout="20000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f3726028-ebea-4f45-afac-5ca0342f5b3f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'ClaimFinancialsSummary-tbody']//span[@innertext&gt;'Datos financieros (Total incurrido:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<explicitdelayitem
 		duration="3000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
