@@ -411,6 +411,30 @@
       <UserCode>true</UserCode>
       <id>3c53223c-48d2-4799-bfca-892c5e972970</id>
     </Compile>
+    <Compile Include="Motor\Detalle_Robo.cs">
+      <BoundTo>6461c097-8a44-4530-a5d3-7ae39a2b2915</BoundTo>
+      <DependentUpon>Detalle_Robo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39263249-f149-431d-9ff6-b24f3859b9f7</id>
+    </Compile>
+    <Compile Include="Motor\Detalle_Robo.UserCode.cs">
+      <BoundTo>6461c097-8a44-4530-a5d3-7ae39a2b2915</BoundTo>
+      <DependentUpon>Detalle_Robo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>920d3a80-49e1-4bf3-818c-b2b125ecfb83</id>
+    </Compile>
+    <Compile Include="Motor\Robo_FT.cs">
+      <BoundTo>f7c97ed3-6fd4-48ee-847a-22372b9fbd3c</BoundTo>
+      <DependentUpon>Robo_FT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>64e7fe1f-58c7-40e3-ba61-ed76d4ec13dd</id>
+    </Compile>
+    <Compile Include="Motor\Robo_FT.UserCode.cs">
+      <BoundTo>f7c97ed3-6fd4-48ee-847a-22372b9fbd3c</BoundTo>
+      <DependentUpon>Robo_FT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>766bfc1e-ad9e-45ea-a101-a2062250a3c3</id>
+    </Compile>
     <Compile Include="Pagos\AnularPago.cs">
       <BoundTo>b515bb92-9e7f-4424-a259-7c9cea3a7cac</BoundTo>
       <DependentUpon>AnularPago.rxrec</DependentUpon>
@@ -1413,6 +1437,16 @@
       <id>6eadadc5-3c30-4ed0-b2db-f6c76321938f</id>
       <recordtableid>2b40313c-221a-4eb4-84d5-6fac3300b1c6</recordtableid>
     </None>
+    <None Include="Motor\Detalle_Robo.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>6461c097-8a44-4530-a5d3-7ae39a2b2915</id>
+      <recordtableid>6e1ada51-7337-472f-b239-030f9dfb73d8</recordtableid>
+    </None>
+    <None Include="Motor\Robo_FT.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>f7c97ed3-6fd4-48ee-847a-22372b9fbd3c</id>
+      <recordtableid>63ded8d1-fc2e-4084-b147-a5d72df8115d</recordtableid>
+    </None>
     <None Include="Pagos\AnularPago.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>b515bb92-9e7f-4424-a259-7c9cea3a7cac</id>
@@ -1696,9 +1730,9 @@
       <recordtableid>742b93f9-8fc9-4f74-9be5-2f8ac179be88</recordtableid>
     </None>
     <None Include="Motor\Detalle_VehiculoOcupantes.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>2443cb65-6d22-4bc8-9e77-02a1651b6580</id>
       <recordtableid>84c0b7f4-586d-4c4a-822a-a4cd67c96893</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="Motor\DetalleDanioParcial_SinCantidad.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

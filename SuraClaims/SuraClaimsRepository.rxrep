@@ -1109,6 +1109,46 @@ name="SuraClaimsRepository">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Daños']/../../..//label[@innertext='No']/../input[@type='button']
 					</item>
 					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="3a06253f-233a-4870-be4c-898bb9c33680"
+					name="cb_Robo"
+					refimgid="1bcacb2e-7e25-4fcc-8abf-3854ae147759"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Robo']/../../..//label[@innertext=$ROBO]/../input[@type='button']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="640639e1-1918-4ba1-bad4-e642ea80e841"
+					name="cb_RoboParcial"
+					refimgid="1bcacb2e-7e25-4fcc-8abf-3854ae147759"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Robo Parcial']/../input[@type='button']
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="eb7f08e9-8b26-4189-88f2-d3954c34cf1f"
+					name="txt_Ninguna_Robo"
+					refimgid="802f65ce-7ccc-4ef1-b7c8-7413951c33b7"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="labeltag"
+					id="d20e7bcd-f051-43e7-adeb-eaa9af0229e0"
+					name="txt_DetallesRobo"
+					refimgid="9450c473-1da7-4fd8-badd-10d1928445ae"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Detalles del robo']
+					</item>
+					<item
 					addcaps="unknown,webelement,spantag"
 					capname="spantag"
 					id="f603ff05-8b4a-4355-be5f-3fd9dbc16134"
@@ -1147,6 +1187,16 @@ name="SuraClaimsRepository">
 					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="a7910430-3ec4-4f55-a4f3-e86e4611819b"
+					name="bttn_Agregar_Robo"
+					refimgid="6ce4ec98-2590-4965-9f24-d4302fb43fc3"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'gregar' and @id~'VehicleIncidentStolenI']
 					</item>
 					<item
 					addcaps="unknown,webelement,spantag"
@@ -1512,6 +1562,27 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']
 					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="6345f8fc-50b4-49ca-8f5e-805eff9facb0"
+					name="Button"
+					refimgid="798a1577-53aa-4bcd-88c4-89f0606dd170"
+					refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[21]/td/fieldset/legend/div[1]/div/div/input[@type='button']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[21]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="0c657605-b1be-4bad-83fd-f3dcc3269c8c"
+					name="check_ReposicionRueda"
+					refimgid="8dfab2b1-f30d-4c6b-ae54-39f913bc3913"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@type='button' and @id='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:StolenSura:FNOLVehicleIncidentStolenInputSet:TireShopReplacementServiceInputSet:TireShopReplacementServiceInputSet:TireShopReplacementServiceInputGroup:_checkbox']
+					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']
 					</basepath>
@@ -1836,12 +1907,22 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="aa33d05a-402e-4df2-a9b6-9118ee098b0b"
-				name="Button"
+				name="check_Reposicion"
 				refimgid="9f0fa402-aa14-4ad4-98ee-051a7fa23d7b"
 				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[8]/td/fieldset/legend/div[1]/div/div/input[@type='button']"
 				robustPath=""
 				searchtimeout="0ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="daeb7427-070c-4789-bab7-0db67edd7881"
+				name="Copy_of_check_Reposicion"
+				refimgid="9f0fa402-aa14-4ad4-98ee-051a7fa23d7b"
+				robustPath=""
+				searchtimeout="0ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext~'Reposicion de']/..//input[@type='button']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -1852,6 +1933,16 @@ name="SuraClaimsRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="2e0e8ec1-6e46-4015-a380-722d14ece62e"
+				name="txt_BuscarProveedor"
+				refimgid="d8376117-bfce-4379-83be-7bf03d414acf"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext&gt;'Buscar proveedores en libreta']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -1868,12 +1959,22 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="6818b134-7567-4bfb-8d13-8f50a705cfca"
-				name="SelectProvinciaNinguna"
+				name="picker_Provincia"
 				refimgid="66ae1986-9883-4f7f-a4fc-3fb607db70ff"
 				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'AddressBookPickerPopup-tbody']/tr[4]/td/div/table/tbody/tr[1]/td/div/table/tbody/tr/td[2]/div/table/tbody/tr[3]/td/div/div/div/div[2]"
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']/tr[4]//table/tbody/tr[1]//table/?/?/tr/td[2]/?/?/table/tbody/tr[3]/td/div/div/div/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="0ca47079-0810-4def-abb1-e6585fa4a4d4"
+				name="Copy_of_input_Provincia"
+				refimgid="b681e7fe-32eb-49aa-90af-57e4ae46da6b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'AddressBookPickerPopup-tbody']//input[@name~'globalAddress:GlobalAddressInputSet:State' and @data-tabindexsaved='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -3517,6 +3618,7 @@ name="SuraClaimsRepository">
 				capname="spantag"
 				id="708546d8-b4c8-48a0-b55e-0661c0964dde"
 				name="txt_BuscarAsignacion"
+				refimgid="71e812c0-214c-4923-aff5-97f503a7a007"
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//span[@innertext~'Buscar']
@@ -4281,7 +4383,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			preproducciongestion.segurossura.com.ar
+			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"
@@ -4357,6 +4459,11 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		id="c85ecfbd-0b40-4012-9f59-860d7ad852b4"
 		name="TipoServicio">
 			Por foto
+		</var>
+		<var
+		id="9c47e05c-6176-49ef-b13e-9cc94424d9b9"
+		name="ROBO">
+			Sí
 		</var>
 	</variables>
 </repository>

@@ -287,6 +287,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="131f83e6-807b-424a-a3a0-7487f32f7c50"
+			name="Robo">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="ROBO"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Sí">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="143816d0-a6cc-4d31-867a-1d1f50762a57"
 			name="MenuLateral_Supervision_ColaMensajes"
@@ -887,6 +912,20 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="313bb389-6b66-494c-9d10-512ec8dd6384"
+			name="Robo_FT"
+			ref="63ded8d1-fc2e-4084-b147-a5d72df8115d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="31a8ca85-11ad-4e24-96cd-4190aed8e88e"
 			name="DescripTipoSiniestro_Tercero_Colision"
 			ref="61e4dcef-1aae-4a13-840b-3898125ec2e1"
@@ -1111,7 +1150,7 @@
 					variablename="Ambiente">
 					</var>
 					<var
-					dataname="CodProveedor"
+					dataname="CodProveedorRobo"
 					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
 					variablename="CodProveedor">
@@ -1453,7 +1492,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="4b785685-d9a4-422f-bf84-c41d099771f3"
-			name="FT">
+			name="FT_Danios">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
@@ -1734,6 +1773,26 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="5c3787a9-8bcf-4c10-a781-139c39b9caba"
+			name="DatosProveedor"
+			ref="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="CodProveedor"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
+					variablename="CodProveedor">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="5c66a796-1f5d-412a-a866-dfb25ebd5a02"
 			name="teardown">
@@ -1787,6 +1846,32 @@
 					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 					variableid="9250ab9e-671d-487e-bc79-52b006cac70c"
 					variablename="HoraSiniestro">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5d6ae40f-f3b2-426e-b2ea-a3330c7d80af"
+			name="Detalle_Robo"
+			ref="6e1ada51-7337-472f-b239-030f9dfb73d8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="ROBO"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="9c47e05c-6176-49ef-b13e-9cc94424d9b9"
+					variablename="ROBO">
+					</var>
+					<var
+					dataname="DescripcionRobo"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="95c5488e-bf8e-4973-bcfd-d37fe65942e6"
+					variablename="DescripcionRobo">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2247,7 +2332,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
-			name="NoFT">
+			name="NoFT_Danios">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
@@ -2265,6 +2350,31 @@
 						<rightvalue>
 							<simplevaluesource
 							value="No">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<smartfoldernode
+			id="701180cf-ebf5-4f10-b762-42f1121178f3"
+			name="FT_Robo">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="DescripcionRobo"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Rueda">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -3745,8 +3855,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="0"
-			minrange="0"
+			maxrange="3"
+			minrange="3"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -4802,13 +4912,15 @@
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="Ambiente"
 					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
@@ -5357,7 +5469,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="4b785685-d9a4-422f-bf84-c41d099771f3"
-						name="FT">
+						name="FT_Danios">
 							<smartfoldernode
 							id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
 							name="ConCantidadTipo">
@@ -5375,19 +5487,39 @@
 								</testmodule>
 							</smartfoldernode>
 							<testmodule
-							id="426565e9-cbb5-4ad4-9808-397751c596ed"
+							id="5c3787a9-8bcf-4c10-a781-139c39b9caba"
 							name="DatosProveedor">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
-						name="NoFT">
+						name="NoFT_Danios">
 							<smartfoldernode
 							id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315"
 							name="SinCantidadTipo">
 								<testmodule
 								id="27023f26-f762-4abb-9238-3a3f1f621bdb"
 								name="DetalleDanioParcial_SinCantidad_NoFT">
+								</testmodule>
+							</smartfoldernode>
+						</smartfoldernode>
+						<smartfoldernode
+						id="131f83e6-807b-424a-a3a0-7487f32f7c50"
+						name="Robo">
+							<testmodule
+							id="5d6ae40f-f3b2-426e-b2ea-a3330c7d80af"
+							name="Detalle_Robo">
+							</testmodule>
+							<smartfoldernode
+							id="701180cf-ebf5-4f10-b762-42f1121178f3"
+							name="FT_Robo">
+								<testmodule
+								id="313bb389-6b66-494c-9d10-512ec8dd6384"
+								name="Robo_FT">
+								</testmodule>
+								<testmodule
+								id="426565e9-cbb5-4ad4-9808-397751c596ed"
+								name="DatosProveedor">
 								</testmodule>
 							</smartfoldernode>
 						</smartfoldernode>
@@ -6361,7 +6493,7 @@
 		filename="AprobacionesPagos.xlsx"
 		id="3a168301-7879-4530-9708-7e12ebc5dbd0"
 		includefile="Checked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="AprobacionesPagos"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6544,40 +6676,10 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
-		id="174d243b-3066-4dc0-aed6-2e4a170fa870"
-		lastknownrowcount="2"
-		name="NewConnector"
-		type="Ranorex.Core.Data.SimpleDataConnector">
-			<lastknowncolumns>
-				<column>
-					Asignar
-				</column>
-			</lastknowncolumns>
-			<maskedcolumns>
-			</maskedcolumns>
-			<table>
-				<tr>
-					<th>
-						Asignar
-					</th>
-				</tr>
-				<tr>
-					<td>
-						Asignar Tramitador
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Asignar Estudio
-					</td>
-				</tr>
-			</table>
-		</DataSource>
-		<DataSource
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="7"
+		lastknownrowcount="14"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -6857,6 +6959,15 @@
 				</column>
 				<column>
 					INCENDIO
+				</column>
+				<column>
+					ROBO
+				</column>
+				<column>
+					DescripcionRobo
+				</column>
+				<column>
+					CodProveedorRobo
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -7308,31 +7419,31 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
-			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9">
+			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
 			</testcontainer>
 			<testcontainer
-			id="2de0db2e-56e3-4c2f-9a69-5a7bf744697a">
+			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
-			id="4a401cbb-e90c-4f99-8a3f-de77a7c54954">
+			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb">
 			</testcontainer>
 			<testcontainer
-			id="5180fe8f-6894-45ed-b658-a0191278ff53">
+			id="701180cf-ebf5-4f10-b762-42f1121178f3">
 			</testcontainer>
 			<testcontainer
-			id="7112eb20-9985-4964-8f8a-199e6b184430">
+			id="89fa68a6-9618-4127-aaec-5d106b43550a">
 			</testcontainer>
 			<testcontainer
-			id="86b95672-af0b-4da0-a95b-2ac941c6be90">
+			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
-			id="cb432aa2-813f-4ab6-9105-609d274a1598">
+			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
 			</testcontainer>
 			<testcontainer
-			id="e86717b1-fd17-4adc-aac7-94fc08ee7023">
+			id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
