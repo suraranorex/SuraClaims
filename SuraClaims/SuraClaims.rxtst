@@ -751,20 +751,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="27023f26-f762-4abb-9238-3a3f1f621bdb"
-			name="DetalleDanioParcial_SinCantidad_NoFT"
-			ref="2b40313c-221a-4eb4-84d5-6fac3300b1c6"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ambiente"
-					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
-					variablename="Ambiente">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="271d51aa-e377-420e-97c8-b964ba8309b9"
 			name="MenuLateral_Servicio"
 			ref="1554c606-6ce3-4a8e-b777-7bffa9fb43db"
@@ -2330,31 +2316,6 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
-			<smartfoldernode
-			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
-			name="NoFT_Danios">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="EsFastTrack"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="No">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<smartfoldernode
 			id="701180cf-ebf5-4f10-b762-42f1121178f3"
 			name="FT_Robo">
@@ -4721,99 +4682,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315"
-			name="SinCantidadTipo">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Caída de Arbol">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Cristal del techo">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Granizo">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Inundación">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="Descripcion"
-								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="Tambor de arranque">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="f1d553d7-aaa2-46bd-b031-a88e8d50fcfe"
 			name="Paso2_IntroducirInfoPagoSiniestro"
@@ -5490,18 +5358,6 @@
 							id="5c3787a9-8bcf-4c10-a781-139c39b9caba"
 							name="DatosProveedor">
 							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb"
-						name="NoFT_Danios">
-							<smartfoldernode
-							id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315"
-							name="SinCantidadTipo">
-								<testmodule
-								id="27023f26-f762-4abb-9238-3a3f1f621bdb"
-								name="DetalleDanioParcial_SinCantidad_NoFT">
-								</testmodule>
-							</smartfoldernode>
 						</smartfoldernode>
 						<smartfoldernode
 						id="131f83e6-807b-424a-a3a0-7487f32f7c50"
@@ -7437,9 +7293,6 @@
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
-			id="6e0c53e6-971b-4a04-a7c7-376e65fe8beb">
-			</testcontainer>
-			<testcontainer
 			id="701180cf-ebf5-4f10-b762-42f1121178f3">
 			</testcontainer>
 			<testcontainer
@@ -7456,9 +7309,6 @@
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
-			</testcontainer>
-			<testcontainer
-			id="f1bdfb25-1d85-4c8c-9f2d-11ba25301315">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
