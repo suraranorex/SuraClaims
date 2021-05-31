@@ -34,7 +34,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -136,6 +136,32 @@ D71Nvb/nk/5j/Gje3/PJ/wAx/jStcak4u6ZkWMSPNZ3ENmI1Ylt6SlwBtYYOehzitFbGNY1QM2FW
 NefRDkVBKz2Nw9wsTC1cZmUDlW/v4z+f5+tPfVbQJ+6k89yPlji+Zm/AU7W2CUnJ3bJbD/j3b/rt
 L/6G1WKq2Kyw2qrLGxkJLNjHBYkkdfep97f88n/Mf40CH0Uze3/PJ/zH+NFAH//Z
 			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="68d5c8cf-3f6d-4d8d-9b30-2e0ae74094e1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ace00115-6c3b-47cb-8ef6-b86a70bdae8f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@tagvalue~'ninguna']/../../../../..//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</mouseitem>
 		<mouseitem
 		action="Click"

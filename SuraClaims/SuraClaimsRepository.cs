@@ -2160,7 +2160,7 @@ namespace SuraClaims
             RepoItemInfo _textmarcaInfo;
             RepoItemInfo _txtmodelo1Info;
             RepoItemInfo _lbl_reposiciondeInfo;
-            RepoItemInfo _check_reposicionInfo;
+            RepoItemInfo _check_reposiciondanioInfo;
             RepoItemInfo _copy_of_check_reposicionInfo;
             RepoItemInfo _buscarproveedorInfo;
             RepoItemInfo _txt_buscarproveedorInfo;
@@ -2210,7 +2210,7 @@ namespace SuraClaims
                 _textmarcaInfo = new RepoItemInfo(this, "textMarca", "body/div[@id~'loadmask']//ul/li[@innertext='CHEVROLET']", "", 30000, null, "a01ba668-e2fd-45f1-b869-21c19800e24f");
                 _txtmodelo1Info = new RepoItemInfo(this, "txtModelo1", "body/div[@id~'loadmask']//ul/li[@innertext='ONIX']", "", 30000, null, "503fdd01-7a8a-41ca-a6f7-f3b5eea07301");
                 _lbl_reposiciondeInfo = new RepoItemInfo(this, "lbl_ReposicionDe", ".//tbody[#'centerPanel-tbody']//div[@innertext~'Reposicion de']", "", 0, null, "eb265845-011a-476a-a441-b090618dd359");
-                _check_reposicionInfo = new RepoItemInfo(this, "check_Reposicion", ".//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']", "", 0, null, "aa33d05a-402e-4df2-a9b6-9118ee098b0b");
+                _check_reposiciondanioInfo = new RepoItemInfo(this, "check_ReposicionDanio", ".//tbody[#'centerPanel-tbody']//input[@type='button' and @id!~'TireShopReplacementService' and @id~'checkbox']", "", 0, null, "aa33d05a-402e-4df2-a9b6-9118ee098b0b");
                 _copy_of_check_reposicionInfo = new RepoItemInfo(this, "Copy_of_check_Reposicion", ".//tbody[#'centerPanel-tbody']//*[@innertext~'Reposicion de']/..//input[@type='button']", "", 0, null, "daeb7427-070c-4789-bab7-0db67edd7881");
                 _buscarproveedorInfo = new RepoItemInfo(this, "BuscarProveedor", ".//span[@class='x-menu-item-text x-menu-item-text-default x-menu-item-indent-no-separator' and @innertext='Buscar']", "", 30000, null, "d6487c32-d016-448f-968c-f18320a9a686");
                 _txt_buscarproveedorInfo = new RepoItemInfo(this, "txt_BuscarProveedor", ".//span[@innertext>'Buscar proveedores en libreta']", "", 30000, null, "2e0e8ec1-6e46-4015-a380-722d14ece62e");
@@ -3001,26 +3001,26 @@ namespace SuraClaims
             }
 
             /// <summary>
-            /// The check_Reposicion item.
+            /// The check_ReposicionDanio item.
             /// </summary>
             [RepositoryItem("aa33d05a-402e-4df2-a9b6-9118ee098b0b")]
-            public virtual Ranorex.InputTag check_Reposicion
+            public virtual Ranorex.InputTag check_ReposicionDanio
             {
                 get
                 {
-                    return _check_reposicionInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _check_reposiciondanioInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The check_Reposicion item info.
+            /// The check_ReposicionDanio item info.
             /// </summary>
             [RepositoryItemInfo("aa33d05a-402e-4df2-a9b6-9118ee098b0b")]
-            public virtual RepoItemInfo check_ReposicionInfo
+            public virtual RepoItemInfo check_ReposicionDanioInfo
             {
                 get
                 {
-                    return _check_reposicionInfo;
+                    return _check_reposiciondanioInfo;
                 }
             }
 
@@ -3995,6 +3995,7 @@ namespace SuraClaims
             RepoItemInfo _txtanioInfo;
             RepoItemInfo _lbl_elementosbasicosdelvehiculoInfo;
             RepoItemInfo _arrow_buscaproveedorInfo;
+            RepoItemInfo _arrow_buscaproveedor_v2Info;
             RepoItemInfo _lbl_metododepagoInfo;
             RepoItemInfo _txt_aniovehiculoInfo;
             RepoItemInfo _copy_of_txtaniovehiculoInfo;
@@ -4076,6 +4077,7 @@ namespace SuraClaims
                 _txtanioInfo = new RepoItemInfo(this, "txtAnio", "tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']", "", 30000, null, "1eab2695-fc54-43e2-9a10-be567ea5250e");
                 _lbl_elementosbasicosdelvehiculoInfo = new RepoItemInfo(this, "lbl_ElementosBasicosDelVehiculo", ".//label[@innertext>'Elementos básicos del veh']", "", 30000, null, "213ed408-d8a3-461c-915e-dbb03610e484");
                 _arrow_buscaproveedorInfo = new RepoItemInfo(this, "Arrow_BuscaProveedor", ".//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", "", 30000, null, "401956ec-4a22-468a-9142-cc99cd25f56e");
+                _arrow_buscaproveedor_v2Info = new RepoItemInfo(this, "Arrow_BuscaProveedor_v2", ".//input[@tagvalue~'ninguna']/../../../../..//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", "", 30000, null, "ace00115-6c3b-47cb-8ef6-b86a70bdae8f");
                 _lbl_metododepagoInfo = new RepoItemInfo(this, "lbl_MetodoDePago", ".//span[@innertext='Método de pago']", "", 30000, null, "d917e759-918d-4fd7-9f15-4a6c094b06f4");
                 _txt_aniovehiculoInfo = new RepoItemInfo(this, "txt_AnioVehiculo", ".//span[@innertext='Año']/../..//input", "", 30000, null, "2c6fa320-9f7c-4baa-8f61-f18d4e1474ca");
                 _copy_of_txtaniovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtAnioVehiculo", ".//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "58fd848e-1ebf-45bf-b6f3-b719e1fc3c04");
@@ -4084,7 +4086,7 @@ namespace SuraClaims
                 _bttn_volverInfo = new RepoItemInfo(this, "bttn_Volver", ".//span[@innertext~'Volver']", "", 30000, null, "84859e2a-2379-40d7-8a2d-bdba7bf55aaf");
                 _normalcreatecheckwizardcheckwizardchecInfo = new RepoItemInfo(this, "NormalCreateCheckWizardCheckWizardChec", "tr//table/tbody/tr[5]/td/div/div[2]/?/?/table//div/table//div/table/?/?/tr/td[1]/div/table/tbody/tr[10]/td/div/div/div/div[1]/input[@name='NormalCreateCheckWizard:CheckWizard_CheckPayeesScreen:NewCheckPayeeDV:BancoEmisorSura']", "", 30000, null, "27f4d44e-cee6-4ac8-b807-5e0ba63040d2");
                 _buttonInfo = new RepoItemInfo(this, "Button", ".//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[21]/td/?/?/legend/div[1]/div/?/?/input[@type='button']", "", 30000, null, "6345f8fc-50b4-49ca-8f5e-805eff9facb0");
-                _check_reposicionruedaInfo = new RepoItemInfo(this, "check_ReposicionRueda", ".//input[@type='button' and @id='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:StolenSura:FNOLVehicleIncidentStolenInputSet:TireShopReplacementServiceInputSet:TireShopReplacementServiceInputSet:TireShopReplacementServiceInputGroup:_checkbox']", "", 30000, null, "0c657605-b1be-4bad-83fd-f3dcc3269c8c");
+                _check_reposicionruedaInfo = new RepoItemInfo(this, "check_ReposicionRueda", ".//input[@type='button' and @id~'TireShopReplacementServiceInputGroup:_checkbox']", "", 30000, null, "0c657605-b1be-4bad-83fd-f3dcc3269c8c");
             }
 
             /// <summary>
@@ -5668,6 +5670,30 @@ namespace SuraClaims
                 get
                 {
                     return _arrow_buscaproveedorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Arrow_BuscaProveedor_v2 item.
+            /// </summary>
+            [RepositoryItem("ace00115-6c3b-47cb-8ef6-b86a70bdae8f")]
+            public virtual Ranorex.ImgTag Arrow_BuscaProveedor_v2
+            {
+                get
+                {
+                    return _arrow_buscaproveedor_v2Info.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Arrow_BuscaProveedor_v2 item info.
+            /// </summary>
+            [RepositoryItemInfo("ace00115-6c3b-47cb-8ef6-b86a70bdae8f")]
+            public virtual RepoItemInfo Arrow_BuscaProveedor_v2Info
+            {
+                get
+                {
+                    return _arrow_buscaproveedor_v2Info;
                 }
             }
 

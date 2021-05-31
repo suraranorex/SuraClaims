@@ -115,8 +115,8 @@ namespace SuraClaims.Motor
             Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SuraClaims.Motor.lbl_ReposicionDe'", repo.SuraClaims.Motor.lbl_ReposicionDeInfo, new ActionTimeout(10000), new RecordItemIndex(6));
             repo.SuraClaims.Motor.lbl_ReposicionDeInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.check_Reposicion' at Center.", repo.SuraClaims.Motor.check_ReposicionInfo, new RecordItemIndex(7));
-            repo.SuraClaims.Motor.check_Reposicion.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.check_ReposicionDanio' at Center.", repo.SuraClaims.Motor.check_ReposicionDanioInfo, new RecordItemIndex(7));
+            repo.SuraClaims.Motor.check_ReposicionDanio.Click();
             Delay.Milliseconds(0);
             
         }

@@ -402,8 +402,8 @@
 			datarangeactive="True"
 			datasource="SiniestroAP"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_AP">
 				<parameters>
 					<param
@@ -676,8 +676,8 @@
 			datarangeactive="True"
 			datasource="SiniestroHogar"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<testmodule
@@ -786,8 +786,8 @@
 			datarangeactive="True"
 			datasource="DataSource_Ambiente_Usuario"
 			id="2a07542c-9c89-4c3c-9c89-ba49107eb139"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="ValidarEstado_ColaDeMensajes">
 				<parameters>
 					<param
@@ -2699,8 +2699,8 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="0"
-			minrange="0"
+			maxrange="4"
+			minrange="3"
 			name="ValidarGeneracion_SISE">
 			</testcase>
 			<testmodule
@@ -3855,8 +3855,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="3"
-			minrange="3"
+			maxrange="4"
+			minrange="4"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -7422,6 +7422,18 @@
 			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
 			</testcontainer>
 			<testcontainer
+			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
+			</testcontainer>
+			<testcontainer
+			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
+			</testcontainer>
+			<testcontainer
+			id="1ae1f931-8357-4441-9040-d0db20595df1">
+			</testcontainer>
+			<testcontainer
+			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f">
+			</testcontainer>
+			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
@@ -7429,6 +7441,9 @@
 			</testcontainer>
 			<testcontainer
 			id="701180cf-ebf5-4f10-b762-42f1121178f3">
+			</testcontainer>
+			<testcontainer
+			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
 			</testcontainer>
 			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">

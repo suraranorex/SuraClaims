@@ -1492,6 +1492,16 @@ name="SuraClaimsRepository">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
 					</item>
 					<item
+					addcaps="unknown,webelement,imgtag"
+					capname="imgtag"
+					id="ace00115-6c3b-47cb-8ef6-b86a70bdae8f"
+					name="Arrow_BuscaProveedor_v2"
+					refimgid="01231b4c-aba0-46d0-9ecb-a9c297fc3e36"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@tagvalue~'ninguna']/../../../../..//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']
+					</item>
+					<item
 					addcaps="unknown,webelement,spantag"
 					capname="spantag"
 					id="d917e759-918d-4fd7-9f15-4a6c094b06f4"
@@ -1581,7 +1591,7 @@ name="SuraClaimsRepository">
 					refimgid="8dfab2b1-f30d-4c6b-ae54-39f913bc3913"
 					robustPath=""
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@type='button' and @id='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:StolenSura:FNOLVehicleIncidentStolenInputSet:TireShopReplacementServiceInputSet:TireShopReplacementServiceInputSet:TireShopReplacementServiceInputGroup:_checkbox']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@type='button' and @id~'TireShopReplacementServiceInputGroup:_checkbox']
 					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']
@@ -1907,12 +1917,11 @@ name="SuraClaimsRepository">
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="aa33d05a-402e-4df2-a9b6-9118ee098b0b"
-				name="check_Reposicion"
+				name="check_ReposicionDanio"
 				refimgid="9f0fa402-aa14-4ad4-98ee-051a7fa23d7b"
-				refpath="/dom[@domain='i-preproducciongestion.segurossura.com.ar']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[8]/td/fieldset/legend/div[1]/div/div/input[@type='button']"
 				robustPath=""
 				searchtimeout="0ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/tbody/tr/td[1]/?/?/table/tbody/tr[8]/td/?/?/legend/div[1]/div/?/?/input[@type='button']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@type='button' and @id!~'TireShopReplacementService' and @id~'checkbox']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"

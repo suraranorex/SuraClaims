@@ -102,55 +102,59 @@ namespace SuraClaims.Motor
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedorInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedorInfo, new RecordItemIndex(0));
+            //repo.SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor.Click();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor_v2' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor_v2Info, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.InformacionSiniestro.Arrow_BuscaProveedor_v2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.BuscarProveedor' at Center.", repo.SuraClaims.Motor.BuscarProveedorInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.BuscarProveedor' at Center.", repo.SuraClaims.Motor.BuscarProveedorInfo, new RecordItemIndex(2));
             repo.SuraClaims.Motor.BuscarProveedor.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Motor.txt_BuscarProveedor'", repo.SuraClaims.Motor.txt_BuscarProveedorInfo, new ActionTimeout(20000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to exist. Associated repository item: 'SuraClaims.Motor.txt_BuscarProveedor'", repo.SuraClaims.Motor.txt_BuscarProveedorInfo, new ActionTimeout(20000), new RecordItemIndex(3));
             repo.SuraClaims.Motor.txt_BuscarProveedorInfo.WaitForExists(20000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.picker_Provincia' at Center.", repo.SuraClaims.Motor.picker_ProvinciaInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.picker_Provincia' at Center.", repo.SuraClaims.Motor.picker_ProvinciaInfo, new RecordItemIndex(4));
             repo.SuraClaims.Motor.picker_Provincia.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.SelectProvinciaNinguna' at Center.", repo.SuraClaims.Motor.InformacionBasica.SelectProvinciaNingunaInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.SelectProvinciaNinguna' at Center.", repo.SuraClaims.Motor.InformacionBasica.SelectProvinciaNingunaInfo, new RecordItemIndex(5));
             repo.SuraClaims.Motor.InformacionBasica.SelectProvinciaNinguna.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_BuscarProveedor' at Center.", repo.SuraClaims.Motor.txt_BuscarProveedorInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_BuscarProveedor' at Center.", repo.SuraClaims.Motor.txt_BuscarProveedorInfo, new RecordItemIndex(6));
             repo.SuraClaims.Motor.txt_BuscarProveedor.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_input_Provincia'", repo.SuraClaims.Motor.Copy_of_input_ProvinciaInfo, new ActionTimeout(20000), new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_input_Provincia'", repo.SuraClaims.Motor.Copy_of_input_ProvinciaInfo, new ActionTimeout(20000), new RecordItemIndex(7));
             repo.SuraClaims.Motor.Copy_of_input_ProvinciaInfo.WaitForNotExists(20000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.input_Proveedor' at Center.", repo.SuraClaims.Generales.MenuLateral.input_ProveedorInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.input_Proveedor' at Center.", repo.SuraClaims.Generales.MenuLateral.input_ProveedorInfo, new RecordItemIndex(8));
             repo.SuraClaims.Generales.MenuLateral.input_Proveedor.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CodProveedor' with focus on 'SuraClaims.Generales.MenuLateral.input_Proveedor'.", repo.SuraClaims.Generales.MenuLateral.input_ProveedorInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CodProveedor' with focus on 'SuraClaims.Generales.MenuLateral.input_Proveedor'.", repo.SuraClaims.Generales.MenuLateral.input_ProveedorInfo, new RecordItemIndex(9));
             repo.SuraClaims.Generales.MenuLateral.input_Proveedor.PressKeys(CodProveedor);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Btn_BuscarProveedor' at Center.", repo.SuraClaims.Motor.Btn_BuscarProveedorInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Btn_BuscarProveedor' at Center.", repo.SuraClaims.Motor.Btn_BuscarProveedorInfo, new RecordItemIndex(10));
             repo.SuraClaims.Motor.Btn_BuscarProveedor.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(11));
             Delay.Duration(300, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Seleccionar' at Center.", repo.SuraClaims.Motor.SeleccionarInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.Seleccionar' at Center.", repo.SuraClaims.Motor.SeleccionarInfo, new RecordItemIndex(12));
             repo.SuraClaims.Motor.Seleccionar.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new ActionTimeout(10000), new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new ActionTimeout(10000), new RecordItemIndex(13));
             repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo.WaitForExists(10000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(13));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(14));
             
         }
 
