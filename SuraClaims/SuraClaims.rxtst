@@ -2660,7 +2660,7 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="4"
+			maxrange="5"
 			minrange="3"
 			name="ValidarGeneracion_SISE">
 			</testcase>
@@ -3816,8 +3816,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="4"
-			minrange="4"
+			maxrange="9"
+			minrange="9"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -4780,15 +4780,13 @@
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
 					</var>
-				</databinding>
-				<missingdatavariablesbinding>
 					<var
 					dataname="Ambiente"
 					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
-				</missingdatavariablesbinding>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
@@ -6738,7 +6736,7 @@
 		filename="GeneracionSiniestroMotor.xlsx"
 		id="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 		includefile="Checked"
-		lastknownrowcount="16"
+		lastknownrowcount="17"
 		name="SiniestroMotor"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7281,22 +7279,10 @@
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
 			</testcontainer>
 			<testcontainer
-			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
-			</testcontainer>
-			<testcontainer
-			id="1ae1f931-8357-4441-9040-d0db20595df1">
-			</testcontainer>
-			<testcontainer
-			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f">
-			</testcontainer>
-			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
 			</testcontainer>
 			<testcontainer
 			id="701180cf-ebf5-4f10-b762-42f1121178f3">
-			</testcontainer>
-			<testcontainer
-			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
 			</testcontainer>
 			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">

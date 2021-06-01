@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.Generales
 {
-    public partial class InformacionBasica
+    public partial class InformacionBasica_CompletarTelMail
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,20 +31,6 @@ namespace SuraClaims.Generales
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void verificarSiTieneDatosCargados()
-        {
-            // TODO: Replace the following line with your code implementation.
-            //throw new NotImplementedException();
-            
-            if(repo.SuraClaims.Motor.InformacionBasica.input_TelefonoNingunaInfo.Exists()){
-            	Report.Log(ReportLevel.Info, "Info", "No está cargado el teléfono del asegurado");
-            	InformacionBasica_CompletarTelMail.Instance.Ambiente=Ambiente;
-            	InformacionBasica_CompletarTelMail.Instance.Correo=Correo;
-            	InformacionBasica_CompletarTelMail.Instance.NumTelefono=NumTelefono;
-            	InformacionBasica_CompletarTelMail.Start();
-            }
         }
 
     }

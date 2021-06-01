@@ -147,6 +147,18 @@
       <UserCode>true</UserCode>
       <id>0eb9b891-b4e9-412b-856d-ce469e5d5d84</id>
     </Compile>
+    <Compile Include="Generales\InformacionBasica_CompletarTelMail.cs">
+      <BoundTo>32d7b54a-ae39-4b01-a30b-3660f00d464c</BoundTo>
+      <DependentUpon>InformacionBasica_CompletarTelMail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e65c07f-dde5-4d17-858e-2c0ce9e94900</id>
+    </Compile>
+    <Compile Include="Generales\InformacionBasica_CompletarTelMail.UserCode.cs">
+      <BoundTo>32d7b54a-ae39-4b01-a30b-3660f00d464c</BoundTo>
+      <DependentUpon>InformacionBasica_CompletarTelMail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ae905d63-5c4b-4607-bc4f-1475f8c174f1</id>
+    </Compile>
     <Compile Include="Inspecciones\Completar_Tareaarealizar.cs">
       <BoundTo>abcee673-e9c6-4e6c-a63c-5414a8f50316</BoundTo>
       <DependentUpon>Completar_Tareaarealizar.rxrec</DependentUpon>
@@ -1327,6 +1339,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>5940df33-0065-4e02-82bb-e30eea6e9cae</id>
     </Content>
+    <None Include="Generales\InformacionBasica_CompletarTelMail.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>32d7b54a-ae39-4b01-a30b-3660f00d464c</id>
+      <recordtableid>2c023744-04a7-478f-998d-a34c8715eb08</recordtableid>
+    </None>
     <None Include="Inspecciones\Completar_Tareaarealizar.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>abcee673-e9c6-4e6c-a63c-5414a8f50316</id>
