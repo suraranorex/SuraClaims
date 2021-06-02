@@ -32,6 +32,10 @@ mode="Global">
 		id="395cfa08-a455-4d8c-b136-308481011839"
 		name="Importe">
 		</var>
+		<var
+		id="0cbfe098-7bb7-41ab-97f2-bb430ac57af0"
+		name="NumOrden">
+		</var>
 	</variables>
 	<recorditems>
 		<explicitdelayitem
@@ -2664,6 +2668,44 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 				<argument
 				argname="TextoValidacion"
 				id="904a4d90-d4c8-4362-bc03-2fc23abce5ba">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						$
+					</argvalue>
+				</argument>
+				<argument
+				argname="TituloAccion"
+				id="ced9fea3-572a-4d45-9dba-7da7cdc41247">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Validación de Pago
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		autogenmethod="True"
+		classname="ValidarPagoSiniestro_SISE_QA"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidarLogin"
+		namespace="SISE"
+		optional="False">
+			<comment>
+				Validación de Pago
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="df9780cd-11f5-4f18-8f9e-0a562f0abc19">
+				<argument
+				argname="TextoValidacion"
+				id="904a4d90-d4c8-4362-bc03-2fc23abce5ba"
+				variable="NumOrden">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

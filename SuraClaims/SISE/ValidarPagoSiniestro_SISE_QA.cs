@@ -43,6 +43,7 @@ namespace SuraClaims.SISE
         {
             NroSiniestro = "1220194200601";
             Importe = "";
+            NumOrden = "";
         }
 
         /// <summary>
@@ -77,6 +78,18 @@ namespace SuraClaims.SISE
         {
             get { return _Importe; }
             set { _Importe = value; }
+        }
+
+        string _NumOrden;
+
+        /// <summary>
+        /// Gets or sets the value of variable NumOrden.
+        /// </summary>
+        [TestVariable("0cbfe098-7bb7-41ab-97f2-bb430ac57af0")]
+        public string NumOrden
+        {
+            get { return _NumOrden; }
+            set { _NumOrden = value; }
         }
 
 #endregion
@@ -194,16 +207,20 @@ namespace SuraClaims.SISE
             Delay.Milliseconds(0);
             
             // Validación de Pago
+            ValidarLogin(NumOrden, "Validación de Pago");
+            Delay.Milliseconds(0);
+            
+            // Validación de Pago
             //ValidarLogin(Importe, "Validación de Pago");
             //Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(26));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(27));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SisePreProd.Sistema' at 18;6.", repo.SisePreProd.SistemaInfo, new RecordItemIndex(27));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SisePreProd.Sistema' at 18;6.", repo.SisePreProd.SistemaInfo, new RecordItemIndex(28));
             //repo.SisePreProd.Sistema.Click("18;6");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Putty.CopyAllToClipboard' at 122;9.", repo.Putty.CopyAllToClipboardInfo, new RecordItemIndex(28));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Putty.CopyAllToClipboard' at 122;9.", repo.Putty.CopyAllToClipboardInfo, new RecordItemIndex(29));
             //repo.Putty.CopyAllToClipboard.Click("122;9");
             //Delay.Milliseconds(0);
             

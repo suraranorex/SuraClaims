@@ -71,6 +71,14 @@
 					variablename="Importe">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="NumOrden"
+					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
+					variableid="0cbfe098-7bb7-41ab-97f2-bb430ac57af0"
+					variablename="NumOrden">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="06e72a35-6ca5-4ba3-9245-98c73d1d3dc7"
@@ -151,8 +159,8 @@
 			datarangeactive="True"
 			datasource="ValidarLitigios_SISE"
 			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="ValidarLitigio_SISE">
 			</testcase>
 			<testmodule
@@ -749,6 +757,14 @@
 					variablename="Importe">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="NumOrden"
+					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
+					variableid="e974ad32-b266-4aa7-a8a9-7ba95ba5c8d6"
+					variablename="NumOrden">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="271d51aa-e377-420e-97c8-b964ba8309b9"
@@ -965,8 +981,8 @@
 			datarangeactive="True"
 			datasource="ValidarPagoSiniestros"
 			id="3378198a-d57f-4703-b046-8f715ee27a01"
-			maxrange="2"
-			minrange="0"
+			maxrange="5"
+			minrange="3"
 			name="ValidarPago_SISE">
 			</testcase>
 			<testmodule
@@ -1430,8 +1446,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-			maxrange="1"
-			minrange="0"
+			maxrange="3"
+			minrange="2"
 			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
 					<param
@@ -1531,8 +1547,8 @@
 			datarangeactive="True"
 			datasource="Generacion_Inspeccion"
 			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GenerarInspeccion">
 			</testcase>
 			<testmodule
@@ -1709,8 +1725,8 @@
 			datarangeactive="True"
 			datasource="PagosSiniestros"
 			id="58368d11-e725-4331-93f0-6f443d6c9119"
-			maxrange="1"
-			minrange="0"
+			maxrange="5"
+			minrange="5"
 			name="Pagos_Siniestros">
 			</testcase>
 			<testmodule
@@ -2511,8 +2527,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -2696,8 +2712,8 @@
 			datarangeactive="True"
 			datasource="Enviar_Validar_Inspeccion"
 			id="79bc1e16-5510-4b54-82af-f6e18939b1f2"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Enviar_Validar_Inspeccion">
 			</testcase>
 			<testmodule
@@ -3020,8 +3036,8 @@
 			datarangeactive="True"
 			datasource="Mediaciones_Juicios"
 			id="8d86ce00-19d6-4545-b4f6-2b02fffe0c3f"
-			maxrange="2"
-			minrange="2"
+			maxrange="0"
+			minrange="0"
 			name="Generar_Litigio">
 			</testcase>
 			<testmodule
@@ -3402,8 +3418,8 @@
 			datarangeactive="True"
 			datasource="AnularPago"
 			id="a379fb7f-16eb-45de-a8bf-0f2bba366191"
-			maxrange="2"
-			minrange="0"
+			maxrange="5"
+			minrange="3"
 			name="AnularPago">
 			</testcase>
 			<testmodule
@@ -4474,8 +4490,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPagos"
 			id="e86717b1-fd17-4adc-aac7-94fc08ee7023"
-			maxrange="1"
-			minrange="0"
+			maxrange="5"
+			minrange="5"
 			name="Aprobar_Nuevo_Pago">
 			</testcase>
 			<testmodule
@@ -6315,7 +6331,7 @@
 		filename="Anular Pago Siniestro.xlsx"
 		id="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="6"
 		name="AnularPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6347,7 +6363,7 @@
 		filename="AprobacionesPagos.xlsx"
 		id="3a168301-7879-4530-9708-7e12ebc5dbd0"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="6"
 		name="AprobacionesPagos"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6376,7 +6392,7 @@
 		filename="AprobacionesPreviasAPago.xlsx"
 		id="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
 		includefile="Checked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="AprobacionesPreviasAPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6431,7 +6447,7 @@
 		filename="EnviarValidar_Inspeccion.xlsx"
 		id="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="Enviar_Validar_Inspeccion"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6463,7 +6479,7 @@
 		filename="Generación Inspección Siniestro.xlsx"
 		id="4f9dcba6-c875-44c9-99de-3393f3c07aab"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="Generacion_Inspeccion"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6533,7 +6549,7 @@
 		filename="Pago_Siniestros_Motor.xlsx"
 		id="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
 		includefile="Checked"
-		lastknownrowcount="14"
+		lastknownrowcount="15"
 		name="PagosSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7141,7 +7157,7 @@
 		filename="ValidarLitigios_SISE.xlsx"
 		id="9b676ac0-8ee0-430a-be0d-116bebd0be1b"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="ValidarLitigios_SISE"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -7164,7 +7180,7 @@
 		filename="ValidarPagoSiniestros_SISE.xlsx"
 		id="f0248626-33eb-4fa7-8d86-54be4fdac042"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="6"
 		name="ValidarPagoSiniestros"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -7276,10 +7292,13 @@
 			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
 			</testcontainer>
 			<testcontainer
-			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
+			id="3378198a-d57f-4703-b046-8f715ee27a01">
 			</testcontainer>
 			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="6063d4bd-8cb6-4b12-a2ea-c3ec60209033">
 			</testcontainer>
 			<testcontainer
 			id="701180cf-ebf5-4f10-b762-42f1121178f3">
@@ -7295,6 +7314,9 @@
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
+			</testcontainer>
+			<testcontainer
+			id="fc751d39-25ee-498a-b674-4c6e6d8e497f">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

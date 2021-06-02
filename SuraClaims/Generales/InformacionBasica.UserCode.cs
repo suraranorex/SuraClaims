@@ -37,7 +37,7 @@ namespace SuraClaims.Generales
         {
             // TODO: Replace the following line with your code implementation.
             //throw new NotImplementedException();
-            
+            Report.Log(ReportLevel.Info, "Info", "Validando si el asegurado tiene cargado el teléfono");
             if(repo.SuraClaims.Motor.InformacionBasica.input_TelefonoNingunaInfo.Exists()){
             	Report.Log(ReportLevel.Info, "Info", "No está cargado el teléfono del asegurado");
             	InformacionBasica_CompletarTelMail.Instance.Ambiente=Ambiente;
