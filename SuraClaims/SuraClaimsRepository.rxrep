@@ -3362,6 +3362,26 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Contaba con medidas de seguridad']/../..//div[@innertext~'ninguna']
 					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="597efca3-395a-4da7-adf9-9738adea21ba"
+					name="pregunta_AntecedentesSiniestrales"
+					refimgid="905db7d1-ad17-4ea4-8f47-0c908e251a4e"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Conductor/lesionado posee antecedentes siniestrales']/../..//div[@innertext~'ninguna']
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="37c68e7f-0d8f-42ed-840d-7cb0f534edc1"
+					name="pregunta_AntecedentesFraude"
+					refimgid="905db7d1-ad17-4ea4-8f47-0c908e251a4e"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']//div[@innertext&gt;'Conductor/veh&#237;culo/lesionado posee antecedentes de fraude']/../..//div[@innertext~'ninguna']
+					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'SIQuestionDetailsSuraWorksheet-tbody']
 					</basepath>

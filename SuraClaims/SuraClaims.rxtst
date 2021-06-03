@@ -1446,8 +1446,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-			maxrange="3"
-			minrange="2"
+			maxrange="0"
+			minrange="0"
 			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
 					<param
@@ -2105,6 +2105,12 @@
 					variablename="Ambiente">
 					</var>
 				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="63e31b21-931b-49b5-8e89-36b5769be263"
+			name="PreguntasPendientes_Motor"
+			ref="06e3a70d-d41d-4f13-ada3-4e04b24e4638"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="64323418-c65c-4549-a8ed-d6f3a11fadfc"
@@ -4652,6 +4658,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="ee32b124-f47d-435d-ba45-a8bf96308cc7"
+			name="Motor">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="tipoPolizaParam"
+								id="4a707abf-3d5a-4bee-8566-19f69f31c038">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Motor">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="f019d52f-2faa-4d40-8ed9-73981a50a7ce"
 			name="MenuSuperior_BuscarSiniestro"
@@ -5814,6 +5845,14 @@
 						name="CompletarChecklistFraude">
 						</testmodule>
 						<smartfoldernode
+						id="ee32b124-f47d-435d-ba45-a8bf96308cc7"
+						name="Motor">
+							<testmodule
+							id="63e31b21-931b-49b5-8e89-36b5769be263"
+							name="PreguntasPendientes_Motor">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
 						id="ff81a40d-49d2-47f2-870d-bd85df0ac2a8"
 						name="Hogar">
 							<testmodule
@@ -6392,7 +6431,7 @@
 		filename="AprobacionesPreviasAPago.xlsx"
 		id="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="5"
 		name="AprobacionesPreviasAPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -7195,6 +7234,9 @@
 				<column>
 					Importe
 				</column>
+				<column>
+					NumOrden
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -7205,10 +7247,22 @@
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
+			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
+			</testcontainer>
+			<testcontainer
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c">
 			</testcontainer>
 			<testcontainer
+			id="23333f5f-0542-48f2-a1b0-681a739e13e3">
+			</testcontainer>
+			<testcontainer
+			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
+			</testcontainer>
+			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="701180cf-ebf5-4f10-b762-42f1121178f3">
 			</testcontainer>
 			<testcontainer
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
@@ -7232,6 +7286,12 @@
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
 			</testcontainer>
 			<testcontainer
+			id="23333f5f-0542-48f2-a1b0-681a739e13e3">
+			</testcontainer>
+			<testcontainer
+			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
+			</testcontainer>
+			<testcontainer
 			id="86b95672-af0b-4da0-a95b-2ac941c6be90">
 			</testcontainer>
 			<testcontainer
@@ -7244,6 +7304,12 @@
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f">
 			</testcontainer>
 			<testcontainer
+			id="23333f5f-0542-48f2-a1b0-681a739e13e3">
+			</testcontainer>
+			<testcontainer
+			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
+			</testcontainer>
+			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 		</testconfiguration>
@@ -7251,6 +7317,12 @@
 		name="PagoSiniestro">
 			<testcontainer
 			id="0838144c-6ecf-41be-ad50-c922fb2e404f">
+			</testcontainer>
+			<testcontainer
+			id="23333f5f-0542-48f2-a1b0-681a739e13e3">
+			</testcontainer>
+			<testcontainer
+			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
 			</testcontainer>
 			<testcontainer
 			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c">
@@ -7277,6 +7349,9 @@
 			id="e86717b1-fd17-4adc-aac7-94fc08ee7023">
 			</testcontainer>
 			<testcontainer
+			id="ee32b124-f47d-435d-ba45-a8bf96308cc7">
+			</testcontainer>
+			<testcontainer
 			id="fac5f1c3-1006-4eec-9cb1-1d3949653c42">
 			</testcontainer>
 			<testcontainer
@@ -7288,36 +7363,6 @@
 		</testconfiguration>
 		<testconfiguration
 		name="PruebaIri">
-			<testcontainer
-			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
-			</testcontainer>
-			<testcontainer
-			id="3378198a-d57f-4703-b046-8f715ee27a01">
-			</testcontainer>
-			<testcontainer
-			id="4b785685-d9a4-422f-bf84-c41d099771f3">
-			</testcontainer>
-			<testcontainer
-			id="6063d4bd-8cb6-4b12-a2ea-c3ec60209033">
-			</testcontainer>
-			<testcontainer
-			id="701180cf-ebf5-4f10-b762-42f1121178f3">
-			</testcontainer>
-			<testcontainer
-			id="89fa68a6-9618-4127-aaec-5d106b43550a">
-			</testcontainer>
-			<testcontainer
-			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
-			</testcontainer>
-			<testcontainer
-			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
-			</testcontainer>
-			<testcontainer
-			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
-			</testcontainer>
-			<testcontainer
-			id="fc751d39-25ee-498a-b674-4c6e6d8e497f">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -555,6 +555,18 @@
       <UserCode>true</UserCode>
       <id>9dee7c9e-7a26-4ea7-be09-e15895f9c153</id>
     </Compile>
+    <Compile Include="PlanDeTrabajo\PreguntasPendientes_Motor.cs">
+      <BoundTo>4afa6565-0331-4cd5-8f2f-fff857ba4647</BoundTo>
+      <DependentUpon>PreguntasPendientes_Motor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0c3462d-564f-4ccc-9b3a-9be09de8c682</id>
+    </Compile>
+    <Compile Include="PlanDeTrabajo\PreguntasPendientes_Motor.UserCode.cs">
+      <BoundTo>4afa6565-0331-4cd5-8f2f-fff857ba4647</BoundTo>
+      <DependentUpon>PreguntasPendientes_Motor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>815528cb-eee7-408f-9c1a-7495a8af3247</id>
+    </Compile>
     <Compile Include="PlanDeTrabajo\RevisarAprobarNuevoPago.cs">
       <BoundTo>7102b89d-8301-4c53-bb97-12a3a8c05d77</BoundTo>
       <DependentUpon>RevisarAprobarNuevoPago.rxrec</DependentUpon>
@@ -1508,6 +1520,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>7a765d18-1d9c-46d7-8eee-60937b402b82</id>
       <recordtableid>3f519212-8653-495e-b635-cec9f8ae22b6</recordtableid>
+    </None>
+    <None Include="PlanDeTrabajo\PreguntasPendientes_Motor.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>4afa6565-0331-4cd5-8f2f-fff857ba4647</id>
+      <recordtableid>06e3a70d-d41d-4f13-ada3-4e04b24e4638</recordtableid>
     </None>
     <None Include="PlanDeTrabajo\RevisarAprobarNuevoPago.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

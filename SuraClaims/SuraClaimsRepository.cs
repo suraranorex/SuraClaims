@@ -9451,6 +9451,8 @@ namespace SuraClaims
             RepoItemInfo _pregunta_modificacionrelatoInfo;
             RepoItemInfo _pregunta_actividadalmomentoInfo;
             RepoItemInfo _pregunta_medidasdeseguridadInfo;
+            RepoItemInfo _pregunta_antecedentessiniestralesInfo;
+            RepoItemInfo _pregunta_antecedentesfraudeInfo;
 
             /// <summary>
             /// Creates a new Preguntas  folder.
@@ -9463,6 +9465,8 @@ namespace SuraClaims
                 _pregunta_modificacionrelatoInfo = new RepoItemInfo(this, "pregunta_ModificacionRelato", ".//div[@innertext>'El asegurado modifica el relato previo']/../..//div[@innertext~'ninguna']", "", 30000, null, "4d6a0bf0-f8ff-4ead-a2e2-50fd46ace5fb");
                 _pregunta_actividadalmomentoInfo = new RepoItemInfo(this, "pregunta_ActividadAlMomento", ".//div[@innertext>'La actividad al momento']/../..//div[@innertext~'ninguna']", "", 30000, null, "2ee4eab4-1354-4ba3-9fab-6172f8244122");
                 _pregunta_medidasdeseguridadInfo = new RepoItemInfo(this, "pregunta_MedidasDeSeguridad", ".//div[@innertext>'Contaba con medidas de seguridad']/../..//div[@innertext~'ninguna']", "", 30000, null, "29ec3c10-d4df-485f-abff-38c2acca4c9b");
+                _pregunta_antecedentessiniestralesInfo = new RepoItemInfo(this, "pregunta_AntecedentesSiniestrales", ".//div[@innertext>'Conductor/lesionado posee antecedentes siniestrales']/../..//div[@innertext~'ninguna']", "", 30000, null, "597efca3-395a-4da7-adf9-9738adea21ba");
+                _pregunta_antecedentesfraudeInfo = new RepoItemInfo(this, "pregunta_AntecedentesFraude", ".//div[@innertext>'Conductor/vehículo/lesionado posee antecedentes de fraude']/../..//div[@innertext~'ninguna']", "", 30000, null, "37c68e7f-0d8f-42ed-840d-7cb0f534edc1");
             }
 
             /// <summary>
@@ -9606,6 +9610,54 @@ namespace SuraClaims
                 get
                 {
                     return _pregunta_medidasdeseguridadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The pregunta_AntecedentesSiniestrales item.
+            /// </summary>
+            [RepositoryItem("597efca3-395a-4da7-adf9-9738adea21ba")]
+            public virtual Ranorex.DivTag pregunta_AntecedentesSiniestrales
+            {
+                get
+                {
+                    return _pregunta_antecedentessiniestralesInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The pregunta_AntecedentesSiniestrales item info.
+            /// </summary>
+            [RepositoryItemInfo("597efca3-395a-4da7-adf9-9738adea21ba")]
+            public virtual RepoItemInfo pregunta_AntecedentesSiniestralesInfo
+            {
+                get
+                {
+                    return _pregunta_antecedentessiniestralesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The pregunta_AntecedentesFraude item.
+            /// </summary>
+            [RepositoryItem("37c68e7f-0d8f-42ed-840d-7cb0f534edc1")]
+            public virtual Ranorex.DivTag pregunta_AntecedentesFraude
+            {
+                get
+                {
+                    return _pregunta_antecedentesfraudeInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The pregunta_AntecedentesFraude item info.
+            /// </summary>
+            [RepositoryItemInfo("37c68e7f-0d8f-42ed-840d-7cb0f534edc1")]
+            public virtual RepoItemInfo pregunta_AntecedentesFraudeInfo
+            {
+                get
+                {
+                    return _pregunta_antecedentesfraudeInfo;
                 }
             }
         }
