@@ -186,8 +186,8 @@ namespace SuraClaims.JuiciosyMediaciones
             repo.SisePreProd.Self.PressKeys("222222{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(23));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(23));
+            Delay.Duration(3000, false);
             
             // Validación de Pago
             ValidarLogin(RAJ, "Validación del Litigio");

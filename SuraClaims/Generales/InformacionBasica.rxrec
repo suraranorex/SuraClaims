@@ -94,7 +94,7 @@ mode="Global">
 		</mouseitem>
 		<userrecorditem
 		classname="InformacionBasica"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="verificarSiTieneDatosCargados"
 		namespace="SuraClaims.Generales"

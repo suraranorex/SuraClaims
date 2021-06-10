@@ -2654,7 +2654,7 @@ V2BzHuyRU8X+pT/dFFFRNJOyKi7ofRRRUDCiiigAooooA//Z
 			</helperscreenshot>
 		</keysequenceitem>
 		<explicitdelayitem
-		duration="2000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>

@@ -134,8 +134,8 @@ namespace SuraClaims.Generales
             repo.SuraClaims.Motor.InformacionBasica.optionLI_NombreAsegurado.Click();
             Delay.Milliseconds(0);
             
-            verificarSiTieneDatosCargados();
-            Delay.Milliseconds(0);
+            //verificarSiTieneDatosCargados();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(3));
             repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();

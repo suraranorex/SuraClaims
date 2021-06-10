@@ -70,15 +70,13 @@
 					variableid="395cfa08-a455-4d8c-b136-308481011839"
 					variablename="Importe">
 					</var>
-				</databinding>
-				<missingdatabinding>
 					<var
 					dataname="NumOrden"
 					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
 					variableid="0cbfe098-7bb7-41ab-97f2-bb430ac57af0"
 					variablename="NumOrden">
 					</var>
-				</missingdatabinding>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="06e72a35-6ca5-4ba3-9245-98c73d1d3dc7"
@@ -578,8 +576,8 @@
 			datarangeactive="True"
 			datasource="SiniestroMotorUBER"
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Motor_UBER">
 			</testcase>
 			<testmodule
@@ -707,11 +705,18 @@
 			name="teardown">
 			</teardown>
 			<testmodule
-			enabled="False"
 			id="22426f8d-1365-4f78-8797-9c692f1cc192"
 			name="Obtener_NumeroAnulacion"
 			ref="4e02bff7-a18b-488d-871b-2025c36a43a6"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="23333f5f-0542-48f2-a1b0-681a739e13e3"
@@ -756,15 +761,13 @@
 					variableid="4f23624d-50e5-4776-8ffa-a10d6bc5de41"
 					variablename="Importe">
 					</var>
-				</databinding>
-				<missingdatabinding>
 					<var
 					dataname="NumOrden"
 					datasourceid="f0248626-33eb-4fa7-8d86-54be4fdac042"
 					variableid="e974ad32-b266-4aa7-a8a9-7ba95ba5c8d6"
 					variablename="NumOrden">
 					</var>
-				</missingdatabinding>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="271d51aa-e377-420e-97c8-b964ba8309b9"
@@ -986,6 +989,7 @@
 			name="ValidarPago_SISE">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="33ab20a8-ea70-4088-a219-3312ab48a7c6"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -1446,8 +1450,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPreviasAPago"
 			id="4a707abf-3d5a-4bee-8566-19f69f31c038"
-			maxrange="0"
-			minrange="0"
+			maxrange="4"
+			minrange="3"
 			name="Aprobaciones_Previas_A_Pagos">
 				<parameters>
 					<param
@@ -1551,6 +1555,31 @@
 			minrange="1"
 			name="GenerarInspeccion">
 			</testcase>
+			<smartfoldernode
+			id="4f22eb91-d0ec-4bc4-a516-a2e191dda949"
+			name="Anular">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Acción"
+								id="650f4fcc-d34b-43e1-901e-9d9c90e269f1">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Anular">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="5093bcd7-8ad9-4aa8-8135-e117b70d8ec9"
 			name="OpenBrowser"
@@ -1726,9 +1755,34 @@
 			datasource="PagosSiniestros"
 			id="58368d11-e725-4331-93f0-6f443d6c9119"
 			maxrange="5"
-			minrange="5"
+			minrange="3"
 			name="Pagos_Siniestros">
 			</testcase>
+			<smartfoldernode
+			id="593f1988-8e55-4466-96aa-28003a8856b6"
+			name="Obtener_NumeroAnulacion">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Acción"
+								id="650f4fcc-d34b-43e1-901e-9d9c90e269f1">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Anular">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="59d0bea9-1c5d-4cc7-a54d-e7bddf8263ca"
 			name="InformacionBasica"
@@ -2682,8 +2736,8 @@
 			datasource="ValidacionGeneracionSiniestro_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
-			maxrange="5"
-			minrange="3"
+			maxrange="9"
+			minrange="6"
 			name="ValidarGeneracion_SISE">
 			</testcase>
 			<testmodule
@@ -2701,6 +2755,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="7988446d-97b2-4656-a6ce-2c8da7f67c42"
 			name="OpenBrowser"
 			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
@@ -2926,8 +2981,8 @@
 			datarangeactive="True"
 			datasource="SiniestroAP_UBER"
 			id="86b95672-af0b-4da0-a95b-2ac941c6be90"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_AP_Uber">
 				<parameters>
 					<param
@@ -3183,6 +3238,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="99572a56-fa8b-4cbe-bdba-66b4fc3bc7dd"
 			name="CloseBrowser"
 			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
@@ -3423,8 +3479,9 @@
 			<testcase
 			datarangeactive="True"
 			datasource="AnularPago"
+			errorbehavior="ContinueNextIteration"
 			id="a379fb7f-16eb-45de-a8bf-0f2bba366191"
-			maxrange="5"
+			maxrange="4"
 			minrange="3"
 			name="AnularPago">
 			</testcase>
@@ -3838,8 +3895,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="9"
-			minrange="9"
+			maxrange="7"
+			minrange="7"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -3974,8 +4031,8 @@
 			datarangeactive="True"
 			datasource="ValidarAnulacionPago_SISE"
 			id="cb432aa2-813f-4ab6-9105-609d274a1598"
-			maxrange="2"
-			minrange="0"
+			maxrange="5"
+			minrange="3"
 			name="ValidarAnulacionPago_SISE">
 			</testcase>
 			<testmodule
@@ -4497,7 +4554,7 @@
 			datasource="AprobacionesPagos"
 			id="e86717b1-fd17-4adc-aac7-94fc08ee7023"
 			maxrange="5"
-			minrange="5"
+			minrange="3"
 			name="Aprobar_Nuevo_Pago">
 			</testcase>
 			<testmodule
@@ -4933,6 +4990,7 @@
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="f6c0893b-a6f9-42a9-8761-0d12788217a9"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -6208,14 +6266,22 @@
 						id="0c77e152-7670-451a-b506-45a0b2d7306e"
 						name="Ingresar_DetalleOrdenPago">
 						</testmodule>
-						<testmodule
-						id="5e6623d6-c26b-42b5-bd74-e3de2a4ee13b"
-						name="AnularPago">
-						</testmodule>
-						<testmodule
-						id="22426f8d-1365-4f78-8797-9c692f1cc192"
+						<smartfoldernode
+						id="4f22eb91-d0ec-4bc4-a516-a2e191dda949"
+						name="Anular">
+							<testmodule
+							id="5e6623d6-c26b-42b5-bd74-e3de2a4ee13b"
+							name="AnularPago">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="593f1988-8e55-4466-96aa-28003a8856b6"
 						name="Obtener_NumeroAnulacion">
-						</testmodule>
+							<testmodule
+							id="22426f8d-1365-4f78-8797-9c692f1cc192"
+							name="Obtener_NumeroAnulacion">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="c8ceee2c-2889-4390-8793-fa71959fa8fb"
 						name="teardown">
@@ -6370,7 +6436,7 @@
 		filename="Anular Pago Siniestro.xlsx"
 		id="650f4fcc-d34b-43e1-901e-9d9c90e269f1"
 		includefile="Checked"
-		lastknownrowcount="6"
+		lastknownrowcount="7"
 		name="AnularPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6393,6 +6459,9 @@
 				</column>
 				<column>
 					NroSiniestro
+				</column>
+				<column>
+					Acción
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -6431,7 +6500,7 @@
 		filename="AprobacionesPreviasAPago.xlsx"
 		id="4f042aaa-a13e-4d34-81a6-80bc26b8aa11"
 		includefile="Checked"
-		lastknownrowcount="5"
+		lastknownrowcount="7"
 		name="AprobacionesPreviasAPago"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -6623,7 +6692,7 @@
 		filename="GeneracionSiniestroAP.xlsx"
 		id="4ca1ad5f-1034-4411-b47f-2df7e9c186c7"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="SiniestroAP"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -6791,7 +6860,7 @@
 		filename="GeneracionSiniestroMotor.xlsx"
 		id="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 		includefile="Checked"
-		lastknownrowcount="17"
+		lastknownrowcount="18"
 		name="SiniestroMotor"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7153,7 +7222,7 @@
 		filename="Validacion_GeneracionSiniestro_SISE.xlsx"
 		id="83d78466-8533-4d57-9847-9d4f076d3f3a"
 		includefile="Checked"
-		lastknownrowcount="7"
+		lastknownrowcount="10"
 		name="ValidacionGeneracionSiniestro_SISE"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -7173,7 +7242,7 @@
 		filename="Validacion_AnulaciónPago_SISE.xlsx"
 		id="9f19de01-4505-4d1d-b214-102c7f03f8a5"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="6"
 		name="ValidarAnulacionPago_SISE"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -7363,6 +7432,18 @@
 		</testconfiguration>
 		<testconfiguration
 		name="PruebaIri">
+			<testcontainer
+			id="4f22eb91-d0ec-4bc4-a516-a2e191dda949">
+			</testcontainer>
+			<testcontainer
+			id="593f1988-8e55-4466-96aa-28003a8856b6">
+			</testcontainer>
+			<testcontainer
+			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="a379fb7f-16eb-45de-a8bf-0f2bba366191">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

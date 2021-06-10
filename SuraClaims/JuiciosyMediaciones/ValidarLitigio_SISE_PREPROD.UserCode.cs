@@ -58,6 +58,7 @@ namespace SuraClaims.JuiciosyMediaciones
 			//Mientras la linea no esta vacia...
 			while ((line = sr.ReadLine()) != null)
 			{
+
 				//Verificamos si la linea contiene el texto buscado
 				if (line.Contains(TextoValidacion))
 				{
