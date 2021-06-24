@@ -157,7 +157,7 @@ mode="Global">
 			</info>
 		</WaitForRecordItem>
 		<keysequenceitem
-		KeySequence="Litigio2"
+		KeySequence="Litigio"
 		duration="20ms"
 		enabled="True"
 		optional="False"

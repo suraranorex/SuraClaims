@@ -122,8 +122,8 @@ namespace SuraClaims.JuiciosyMediaciones
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Sura2040{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(5));
-            repo.SisePreProd.Self.PressKeys("Sura2040{Return}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Sura2041{Return}' with focus on 'SisePreProd'.", repo.SisePreProd.SelfInfo, new RecordItemIndex(5));
+            repo.SisePreProd.Self.PressKeys("Sura2041{Return}");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(6));
@@ -186,22 +186,18 @@ namespace SuraClaims.JuiciosyMediaciones
             repo.SisePreProd.Self.PressKeys("222222{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(23));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(23));
+            Delay.Duration(3000, false);
             
             // Validación de Pago
-            ValidarLogin(RAJ, "Validación del Litigio");
+            ValidarLogin("Juicio", "Validación de Existencia del Litigio");
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(25));
+            // Validación de Pago
+            ValidarLogin(RAJ, "Validación de RAJ");
+            Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SisePreProd.Sistema' at 18;6.", repo.SisePreProd.SistemaInfo, new RecordItemIndex(26));
-            //repo.SisePreProd.Sistema.Click("18;6");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Putty.CopyAllToClipboard' at 122;9.", repo.Putty.CopyAllToClipboardInfo, new RecordItemIndex(27));
-            //repo.Putty.CopyAllToClipboard.Click("122;9");
-            //Delay.Milliseconds(0);
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SisePreProd.Self, false, new RecordItemIndex(26));
             
         }
 

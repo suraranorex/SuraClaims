@@ -140,6 +140,9 @@ namespace SuraClaims.Inspecciones
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Inspeccion.txt_Servicios'", repo.SuraClaims.Inspeccion.txt_ServiciosInfo, new ActionTimeout(30000), new RecordItemIndex(10));
             repo.SuraClaims.Inspeccion.txt_ServiciosInfo.WaitForExists(30000);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(11));
+            Delay.Duration(3000, false);
+            
         }
 
 #region Image Feature Data

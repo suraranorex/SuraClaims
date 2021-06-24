@@ -126,8 +126,8 @@ namespace SuraClaims.Menu
             //repo.SuraClaims.Generales.MenuSuperior.IconLupaBuscarSiniestro.Click(Location.CenterRight);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestro'", repo.SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestroInfo, new ActionTimeout(30000), new RecordItemIndex(6));
-            repo.SuraClaims.Motor.InformacionBasica.lbl_ResumenDeSiniestroInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Inspeccion.txt_CrearServicio'", repo.SuraClaims.Inspeccion.txt_CrearServicioInfo, new ActionTimeout(30000), new RecordItemIndex(6));
+            repo.SuraClaims.Inspeccion.txt_CrearServicioInfo.WaitForNotExists(30000);
             
         }
 

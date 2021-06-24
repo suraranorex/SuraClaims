@@ -33,7 +33,6 @@ namespace SuraClaims
         SuraClaimsRepositoryFolders.PuTTYExitConfirmationAppFolder _puttyexitconfirmation;
         SuraClaimsRepositoryFolders.SisePreProdAppFolder _sisepreprod;
         SuraClaimsRepositoryFolders.PuttyAppFolder _putty;
-        SuraClaimsRepositoryFolders.GuidewireClaimCenterSuperUserAppFolder _guidewireclaimcentersuperuser;
         RepoItemInfo _option_nombrelesionado3Info;
 
         /// <summary>
@@ -57,7 +56,6 @@ namespace SuraClaims
             _puttyexitconfirmation = new SuraClaimsRepositoryFolders.PuTTYExitConfirmationAppFolder(this);
             _sisepreprod = new SuraClaimsRepositoryFolders.SisePreProdAppFolder(this);
             _putty = new SuraClaimsRepositoryFolders.PuttyAppFolder(this);
-            _guidewireclaimcentersuperuser = new SuraClaimsRepositoryFolders.GuidewireClaimCenterSuperUserAppFolder(this);
             _option_nombrelesionado3Info = new RepoItemInfo(this, "option_NombreLesionado3", "/dom[@domain=$Ambiente]//span[@innertext~$NombreLesionado]", 30000, null, "4fd71e6e-b10b-4348-a35d-f02ee94ebbc5");
         }
 
@@ -417,15 +415,6 @@ namespace SuraClaims
         public virtual SuraClaimsRepositoryFolders.PuttyAppFolder Putty
         {
             get { return _putty; }
-        }
-
-        /// <summary>
-        /// The GuidewireClaimCenterSuperUser folder.
-        /// </summary>
-        [RepositoryFolder("de3a444a-be10-4f2c-9e70-e9ce353d5584")]
-        public virtual SuraClaimsRepositoryFolders.GuidewireClaimCenterSuperUserAppFolder GuidewireClaimCenterSuperUser
-        {
-            get { return _guidewireclaimcentersuperuser; }
         }
     }
 
@@ -12052,46 +12041,6 @@ namespace SuraClaims
                 get
                 {
                     return _copyalltoclipboardInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The GuidewireClaimCenterSuperUserAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("de3a444a-be10-4f2c-9e70-e9ce353d5584")]
-        public partial class GuidewireClaimCenterSuperUserAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new GuidewireClaimCenterSuperUser  folder.
-            /// </summary>
-            public GuidewireClaimCenterSuperUserAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("GuidewireClaimCenterSuperUser", "/dom[@domain='preproducciongestion.segurossura.com.ar']", parentFolder, 30000, null, false, "de3a444a-be10-4f2c-9e70-e9ce353d5584", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("de3a444a-be10-4f2c-9e70-e9ce353d5584")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("de3a444a-be10-4f2c-9e70-e9ce353d5584")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }

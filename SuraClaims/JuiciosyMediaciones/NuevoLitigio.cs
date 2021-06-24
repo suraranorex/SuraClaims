@@ -133,8 +133,8 @@ namespace SuraClaims.JuiciosyMediaciones
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.JuiciosYMediaciones.Copy_of_input_TipoLitigio'", repo.SuraClaims.JuiciosYMediaciones.Copy_of_input_TipoLitigioInfo, new ActionTimeout(30000), new RecordItemIndex(5));
             repo.SuraClaims.JuiciosYMediaciones.Copy_of_input_TipoLitigioInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Litigio2' with focus on 'SuraClaims.JuiciosYMediaciones.input_Caratula'.", repo.SuraClaims.JuiciosYMediaciones.input_CaratulaInfo, new RecordItemIndex(6));
-            repo.SuraClaims.JuiciosYMediaciones.input_Caratula.PressKeys("Litigio2");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Litigio' with focus on 'SuraClaims.JuiciosYMediaciones.input_Caratula'.", repo.SuraClaims.JuiciosYMediaciones.input_CaratulaInfo, new RecordItemIndex(6));
+            repo.SuraClaims.JuiciosYMediaciones.input_Caratula.PressKeys("Litigio");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.JuiciosYMediaciones.txt_NuevoRegistro' at Center.", repo.SuraClaims.JuiciosYMediaciones.txt_NuevoRegistroInfo, new RecordItemIndex(7));

@@ -284,17 +284,17 @@ rwAyowPRgD/+r8amtJWntIpXADOoJx0pNt7lJJbGJrFs736pBEzKkKjCLnAy2KX7RqH2X7P9kbZs
 		enabled="True"
 		optional="False"
 		searchpropertyid="083bf527-f953-400f-8ea6-9e2b93b7ca28"
-		waitaction="Exists"
+		waitaction="NotExists"
 		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="5185a46f-3675-4d49-ba58-537bf34efa00"
+			id="14e1fa82-b1e3-4fb7-b9f9-dd1ae2fb1096"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'ClaimSummary-tbody']//span[@innertext='Resumen']
+					/dom[@domain=$Ambiente]//span[#'NewServiceRequest:ttlBar']
 				</path>
 				<robustPath>
 				</robustPath>
