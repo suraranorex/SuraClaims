@@ -111,7 +111,7 @@ namespace SuraClaims
             set { _NOMBRE = value; }
         }
 
-        string _Ambiente = "preproducciongestion.segurossura.com.ar";
+        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -6314,6 +6314,7 @@ namespace SuraClaims
             RepoItemInfo _txt_tipovehiculoInfo;
             RepoItemInfo _option_tipovehiculoInfo;
             RepoItemInfo _copy_of_txttipovehiculoInfo;
+            RepoItemInfo _input_empresaaseguradoraInfo;
 
             /// <summary>
             /// Creates a new SiniestroTercero  folder.
@@ -6339,6 +6340,7 @@ namespace SuraClaims
                 _txt_tipovehiculoInfo = new RepoItemInfo(this, "txt_TipoVehiculo", ".//span[@innertext='Tipo de Vehículo']/../..//input", "", 30000, null, "e71ae898-1d06-4e8e-90e0-2ec3fc7472d1");
                 _option_tipovehiculoInfo = new RepoItemInfo(this, "option_TipoVehiculo", ".//li[@innertext='Tipo de Vehículo']", "", 30000, null, "4a069812-3751-4549-9e01-7aaa6dfecaf5");
                 _copy_of_txttipovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtTipoVehiculo", ".//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "81bc0f31-f8b9-4404-9b0a-0cd49eb0ad09");
+                _input_empresaaseguradoraInfo = new RepoItemInfo(this, "input_EmpresaAseguradora", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Empresa aseguradora']/../..//input", "", 30000, null, "fc843acc-55ed-488b-b5d3-1f01d426b4cb");
             }
 
             /// <summary>
@@ -6782,6 +6784,30 @@ namespace SuraClaims
                 get
                 {
                     return _copy_of_txttipovehiculoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The input_EmpresaAseguradora item.
+            /// </summary>
+            [RepositoryItem("fc843acc-55ed-488b-b5d3-1f01d426b4cb")]
+            public virtual Ranorex.InputTag input_EmpresaAseguradora
+            {
+                get
+                {
+                    return _input_empresaaseguradoraInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_EmpresaAseguradora item info.
+            /// </summary>
+            [RepositoryItemInfo("fc843acc-55ed-488b-b5d3-1f01d426b4cb")]
+            public virtual RepoItemInfo input_EmpresaAseguradoraInfo
+            {
+                get
+                {
+                    return _input_empresaaseguradoraInfo;
                 }
             }
         }

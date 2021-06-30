@@ -399,6 +399,18 @@
       <UserCode>true</UserCode>
       <id>22745377-fd26-4487-be67-8d098321a00d</id>
     </Compile>
+    <Compile Include="Motor\CLEAS.cs">
+      <BoundTo>3cc5eee3-c5c7-45db-b261-81e13e102157</BoundTo>
+      <DependentUpon>CLEAS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2b680c5-82c1-411f-b3d5-243036007e19</id>
+    </Compile>
+    <Compile Include="Motor\CLEAS.UserCode.cs">
+      <BoundTo>3cc5eee3-c5c7-45db-b261-81e13e102157</BoundTo>
+      <DependentUpon>CLEAS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e8ef39c7-b742-449d-8df3-adbf66c4a969</id>
+    </Compile>
     <Compile Include="Motor\DetalleDanioParcial_ConCant.cs">
       <BoundTo>9977d8a8-f095-4fd8-97d0-147560ae21c3</BoundTo>
       <DependentUpon>DetalleDanioParcial_ConCant.rxrec</DependentUpon>
@@ -1456,6 +1468,11 @@
       <id>aa7ce910-5204-4eeb-830a-e09ba4759aa0</id>
       <recordtableid>34286301-52f1-4cc8-bc4c-ba086d6661a7</recordtableid>
     </None>
+    <None Include="Motor\CLEAS.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>3cc5eee3-c5c7-45db-b261-81e13e102157</id>
+      <recordtableid>a64da77e-7537-4dec-beb0-24557a2ee0c9</recordtableid>
+    </None>
     <None Include="Motor\DetalleDanioParcial_ConCant.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>9977d8a8-f095-4fd8-97d0-147560ae21c3</id>
@@ -1734,9 +1751,9 @@
       <recordtableid>fdcfb6a4-e8a3-49ff-b000-36512f6cae56</recordtableid>
     </None>
     <None Include="Motor\AgregarDaniosLesionesTerceros_Detalle.rxrec">
-      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>f67115c1-9880-48e4-84eb-9b2bc5dc803e</id>
       <recordtableid>e04fa98f-3e00-4afe-bb2e-b02a11583603</recordtableid>
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
     <None Include="Motor\AgregarDanosLesionesTerceros.rxrec">
       <id>726d36fa-b477-49e7-98c2-2938a0944ebc</id>

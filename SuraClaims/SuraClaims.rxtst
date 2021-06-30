@@ -996,6 +996,20 @@
 			name="ValidarPago_SISE">
 			</testcase>
 			<testmodule
+			id="338f6309-1716-412d-beba-8f6d17d7cb5a"
+			name="CLEAS"
+			ref="a64da77e-7537-4dec-beb0-24557a2ee0c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="33ab20a8-ea70-4088-a219-3312ab48a7c6"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -3201,6 +3215,31 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<smartfoldernode
+			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52"
+			name="CLEAS">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="CLEAS"
+								id="5387c623-a1c1-4747-9f7b-2b9b983478aa">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Sí">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="9626a6a8-8d4f-4598-b3a4-c99af11228c4"
 			name="MenuSuperior_BuscarSiniestro"
@@ -5576,6 +5615,14 @@
 						id="1c7ac8ff-1cd8-44f8-9397-b7f9088632ed"
 						name="AgregarDanosLesionesTerceros">
 						</testmodule>
+						<smartfoldernode
+						id="933bb73e-3963-4c26-9146-e3cc6e6c3d52"
+						name="CLEAS">
+							<testmodule
+							id="338f6309-1716-412d-beba-8f6d17d7cb5a"
+							name="CLEAS">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
 						id="9a5ea4c9-262c-4a4d-8c73-1361043d536a"
 						name="AgregarDaniosLesionesTerceros_Detalle">
@@ -7086,6 +7133,9 @@
 				<column>
 					Responsabilidad
 				</column>
+				<column>
+					CLEAS
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -7424,6 +7474,9 @@
 			</testcontainer>
 			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">
+			</testcontainer>
+			<testcontainer
+			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52">
 			</testcontainer>
 			<testcontainer
 			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">

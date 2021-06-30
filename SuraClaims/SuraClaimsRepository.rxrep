@@ -2282,6 +2282,16 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//span[@innertext='Tipo de Vehículo']/../..//input[@data-tabindexsaved='True']
 					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="fc843acc-55ed-488b-b5d3-1f01d426b4cb"
+					name="input_EmpresaAseguradora"
+					refimgid="dd573aac-c854-4266-95e5-5c0447a33589"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Empresa aseguradora']/../..//input
+					</item>
 				</folder>
 			</folder>
 			<folder
@@ -4572,7 +4582,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			preproducciongestion.segurossura.com.ar
+			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"
