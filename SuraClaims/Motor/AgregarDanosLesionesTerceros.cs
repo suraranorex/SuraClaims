@@ -306,8 +306,8 @@ namespace SuraClaims.Motor
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtAnioVehiculo'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtAnioVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(27));
-            repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtAnioVehiculoInfo.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'Copy_of_txtAnioVehiculo'", repo.Copy_of_txtAnioVehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(27));
+            repo.Copy_of_txtAnioVehiculoInfo.WaitForNotExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.txt_Marca' at Center.", repo.SuraClaims.Motor.txt_MarcaInfo, new RecordItemIndex(28));
             repo.SuraClaims.Motor.txt_Marca.Click();

@@ -34,6 +34,7 @@ namespace SuraClaims
         SuraClaimsRepositoryFolders.SisePreProdAppFolder _sisepreprod;
         SuraClaimsRepositoryFolders.PuttyAppFolder _putty;
         RepoItemInfo _option_nombrelesionado3Info;
+        RepoItemInfo _copy_of_txtaniovehiculoInfo;
 
         /// <summary>
         /// Gets the singleton class instance representing the SuraClaimsRepository element repository.
@@ -57,6 +58,7 @@ namespace SuraClaims
             _sisepreprod = new SuraClaimsRepositoryFolders.SisePreProdAppFolder(this);
             _putty = new SuraClaimsRepositoryFolders.PuttyAppFolder(this);
             _option_nombrelesionado3Info = new RepoItemInfo(this, "option_NombreLesionado3", "/dom[@domain=$Ambiente]//span[@innertext~$NombreLesionado]", 30000, null, "4fd71e6e-b10b-4348-a35d-f02ee94ebbc5");
+            _copy_of_txtaniovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtAnioVehiculo", "/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']", 30000, null, "58fd848e-1ebf-45bf-b6f3-b719e1fc3c04");
         }
 
 #region Variables
@@ -372,6 +374,30 @@ namespace SuraClaims
             get
             {
                 return _option_nombrelesionado3Info;
+            }
+        }
+
+        /// <summary>
+        /// The Copy_of_txtAnioVehiculo item.
+        /// </summary>
+        [RepositoryItem("58fd848e-1ebf-45bf-b6f3-b719e1fc3c04")]
+        public virtual Ranorex.InputTag Copy_of_txtAnioVehiculo
+        {
+            get
+            {
+                 return _copy_of_txtaniovehiculoInfo.CreateAdapter<Ranorex.InputTag>(true);
+            }
+        }
+
+        /// <summary>
+        /// The Copy_of_txtAnioVehiculo item info.
+        /// </summary>
+        [RepositoryItemInfo("58fd848e-1ebf-45bf-b6f3-b719e1fc3c04")]
+        public virtual RepoItemInfo Copy_of_txtAnioVehiculoInfo
+        {
+            get
+            {
+                return _copy_of_txtaniovehiculoInfo;
             }
         }
 
@@ -4114,7 +4140,6 @@ namespace SuraClaims
             RepoItemInfo _arrow_buscaproveedor_v2Info;
             RepoItemInfo _lbl_metododepagoInfo;
             RepoItemInfo _txt_aniovehiculoInfo;
-            RepoItemInfo _copy_of_txtaniovehiculoInfo;
             RepoItemInfo _txt_propietariovehiculoInfo;
             RepoItemInfo _lbl_danosInfo;
             RepoItemInfo _bttn_volverInfo;
@@ -4206,7 +4231,6 @@ namespace SuraClaims
                 _arrow_buscaproveedor_v2Info = new RepoItemInfo(this, "Arrow_BuscaProveedor_v2", ".//input[@tagvalue~'ninguna']/../../../../..//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", "", 30000, null, "ace00115-6c3b-47cb-8ef6-b86a70bdae8f");
                 _lbl_metododepagoInfo = new RepoItemInfo(this, "lbl_MetodoDePago", ".//span[@innertext='Método de pago']", "", 30000, null, "d917e759-918d-4fd7-9f15-4a6c094b06f4");
                 _txt_aniovehiculoInfo = new RepoItemInfo(this, "txt_AnioVehiculo", ".//span[@innertext='Año']/../..//input", "", 30000, null, "2c6fa320-9f7c-4baa-8f61-f18d4e1474ca");
-                _copy_of_txtaniovehiculoInfo = new RepoItemInfo(this, "Copy_of_txtAnioVehiculo", ".//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "58fd848e-1ebf-45bf-b6f3-b719e1fc3c04");
                 _txt_propietariovehiculoInfo = new RepoItemInfo(this, "txt_PropietarioVehiculo", ".//span[@innertext='Propietario']/../..//input", "", 30000, null, "3496f5d2-646d-4c8f-9e73-5f938645d37e");
                 _lbl_danosInfo = new RepoItemInfo(this, "lbl_Danos", ".//label[@innertext='Daños']", "", 30000, null, "883c3ce4-1175-4cbb-9883-d5242fe0a8e9");
                 _bttn_volverInfo = new RepoItemInfo(this, "bttn_Volver", ".//span[@innertext~'Volver']", "", 30000, null, "84859e2a-2379-40d7-8a2d-bdba7bf55aaf");
@@ -5878,30 +5902,6 @@ namespace SuraClaims
                 get
                 {
                     return _txt_aniovehiculoInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Copy_of_txtAnioVehiculo item.
-            /// </summary>
-            [RepositoryItem("58fd848e-1ebf-45bf-b6f3-b719e1fc3c04")]
-            public virtual Ranorex.InputTag Copy_of_txtAnioVehiculo
-            {
-                get
-                {
-                    return _copy_of_txtaniovehiculoInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Copy_of_txtAnioVehiculo item info.
-            /// </summary>
-            [RepositoryItemInfo("58fd848e-1ebf-45bf-b6f3-b719e1fc3c04")]
-            public virtual RepoItemInfo Copy_of_txtAnioVehiculoInfo
-            {
-                get
-                {
-                    return _copy_of_txtaniovehiculoInfo;
                 }
             }
 

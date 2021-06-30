@@ -1534,16 +1534,6 @@ name="SuraClaimsRepository">
 					<item
 					addcaps="unknown,webelement,inputtag"
 					capname="inputtag"
-					id="58fd848e-1ebf-45bf-b6f3-b719e1fc3c04"
-					name="Copy_of_txtAnioVehiculo"
-					refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
-					robustPath=""
-					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']
-					</item>
-					<item
-					addcaps="unknown,webelement,inputtag"
-					capname="inputtag"
 					id="3496f5d2-646d-4c8f-9e73-5f938645d37e"
 					name="txt_PropietarioVehiculo"
 					refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
@@ -4544,6 +4534,16 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		robustPath=""
 		searchtimeout="30000ms">
 			/dom[@domain=$Ambiente]//span[@innertext~$NombreLesionado]
+		</item>
+		<item
+		addcaps="unknown,webelement,inputtag"
+		capname="inputtag"
+		id="58fd848e-1ebf-45bf-b6f3-b719e1fc3c04"
+		name="Copy_of_txtAnioVehiculo"
+		refimgid="2fd0df68-2b4a-4b7c-a19e-803c36507896"
+		robustPath=""
+		searchtimeout="30000ms">
+			/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Año']/../..//input[@data-tabindexsaved='True']
 		</item>
 		<basepath>
 		</basepath>

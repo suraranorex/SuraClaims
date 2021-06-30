@@ -174,8 +174,8 @@ namespace SuraClaims.Pagos
             repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.celda_Importe'", repo.SuraClaims.Motor.InformacionSiniestro.celda_ImporteInfo, new ActionTimeout(5000), new RecordItemIndex(17));
-            repo.SuraClaims.Motor.InformacionSiniestro.celda_ImporteInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.celda_Importe'", repo.SuraClaims.Motor.InformacionSiniestro.celda_ImporteInfo, new ActionTimeout(50000), new RecordItemIndex(17));
+            repo.SuraClaims.Motor.InformacionSiniestro.celda_ImporteInfo.WaitForExists(50000);
             
             //Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21Info, new ActionTimeout(50000), new RecordItemIndex(18));
             //repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21Info.WaitForNotExists(50000);
