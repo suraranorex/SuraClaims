@@ -1132,11 +1132,41 @@ name="SuraClaimsRepository">
 					addcaps="unknown,webelement,inputtag"
 					capname="inputtag"
 					id="640639e1-1918-4ba1-bad4-e642ea80e841"
-					name="cb_RoboParcial"
+					name="cb_TipoRobo"
 					refimgid="1bcacb2e-7e25-4fcc-8abf-3854ae147759"
 					robustPath=""
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Robo Parcial']/../input[@type='button']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext=$TipoRobo]/../input[@type='button']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="bf1177db-7799-4a84-899e-79399f748190"
+					name="input_SubtipoRobo"
+					refimgid="9450c473-1da7-4fd8-badd-10d1928445ae"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Subtipo de Robo']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="c82d873f-a7c9-467d-a9b1-7a665e6b5e2e"
+					name="Copy_of_input_SubtipoRobo"
+					refimgid="9450c473-1da7-4fd8-badd-10d1928445ae"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Subtipo de Robo']/../..//input[@data-tabindexsaved='True']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="inputtag"
+					id="e44d9a02-999e-448c-9d5c-fb58015e46fd"
+					name="input_Locacion"
+					refimgid="9450c473-1da7-4fd8-badd-10d1928445ae"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Locación del robo']/../..//input
 					</item>
 					<item
 					addcaps="unknown,webelement,divtag"
@@ -4668,6 +4698,11 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		id="04296e39-d4be-4996-aac7-c0187b8f6f14"
 		name="Importe">
 			111
+		</var>
+		<var
+		id="3209f30e-77dc-4b11-b7ce-ff3c32d3b435"
+		name="TipoRobo">
+			Robo Total
 		</var>
 	</variables>
 </repository>

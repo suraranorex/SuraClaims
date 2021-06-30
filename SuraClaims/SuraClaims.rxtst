@@ -238,6 +238,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="0fa01c9f-d57e-447f-b343-86361084ca76"
+			name="Danios">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="DANIOS"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Sí">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="12574546-28a4-4f34-8f22-8eae7a3dc1d9"
 			name="Asignar_Estudio"
@@ -352,10 +377,10 @@
 					variablename="Ambiente">
 					</var>
 					<var
-					dataname="DetalleSiniestro"
+					dataname="NumeroCalle"
 					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
-					variableid="a974a0de-e8e2-4f6b-ab3d-b7c3a64985bd"
-					variablename="DetalleSiniestro">
+					variableid="c6cd663b-0092-477d-97f7-e5550aedec69"
+					variablename="NumeroCalle">
 					</var>
 					<var
 					dataname="CausaSiniestro"
@@ -388,6 +413,14 @@
 					variablename="Calle">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="DetalleSiniestro"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="a974a0de-e8e2-4f6b-ab3d-b7c3a64985bd"
+					variablename="DetalleSiniestro">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<setup
 			id="167e392d-01c4-4dfd-8135-c28d71d0edab"
@@ -692,6 +725,31 @@
 			minrange="0"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
+			<smartfoldernode
+			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a"
+			name="RoboTotal">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="TipoRobo"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Robo Total">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="21194456-7be9-4061-9468-c44c16801b75"
 			name="InformacionSiniestro_Subrogacion"
@@ -1287,6 +1345,31 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<smartfoldernode
+			id="4665d240-f459-49f4-8e5e-a5b97379d41d"
+			name="CompletarLocacion">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="SubtipoRobo"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Robo y/o Hurto en estacionamiento privado: de alquiler o Shopping/Supermercado/Evento/Taller">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="46755b64-fb1e-41d6-8988-f1b9c0e9343b"
 			name="MenuLateral_Acciones_Servicio"
@@ -1352,6 +1435,12 @@
 					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="d8b3e241-48f0-437d-a83c-b9eade9ea9e4"
 					variablename="Calle">
+					</var>
+					<var
+					dataname="NumeroCalle"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="40e1ab8b-6c71-4218-81ff-057fd2e6c09f"
+					variablename="NumeroCalle">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -2035,6 +2124,31 @@
 			id="5f3b2a1c-3182-4153-9f26-6a6349a462c7"
 			name="teardown">
 			</teardown>
+			<smartfoldernode
+			id="5f4a6c8a-a633-4625-b089-0b93cac91afb"
+			name="RoboParcial">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="TipoRobo"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Robo Parcial">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="5faf3bd9-f4aa-47a3-aed1-e08f83dba9cb"
 			name="ObtenerUsuarioParaAprobarPago"
@@ -2321,6 +2435,20 @@
 					<var
 					dataname="Ambiente"
 					datasourceid="8731b60a-6624-4c98-a63a-322d658dffd0"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6997e8d2-da97-4a96-93e1-3fdcf4463456"
+			name="CompletarLocacion_Robo"
+			ref="e4e3a848-756c-4dd7-a1e7-d2046526a819"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
@@ -3945,8 +4073,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="1"
-			minrange="1"
+			maxrange="14"
+			minrange="12"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -3996,6 +4124,32 @@
 					variablename="NroSiniestro">
 					</var>
 				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="c1c1ba8d-4a15-4dc3-b59c-9c84fc583a8d"
+			name="Detalle_RoboParcial"
+			ref="8299e360-ca42-4770-99e6-6c6927e3a251"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="DescripcionRobo"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="8b8b6ed9-6305-4799-b0e8-9f5e4e8b44b5"
+					variablename="DescripcionRobo">
+					</var>
+					<var
+					dataname="TipoRobo"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="3209f30e-77dc-4b11-b7ce-ff3c32d3b435"
+					variablename="TipoRobo">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="c23cf1c5-09e5-4170-9855-da1c45095f6f"
@@ -4403,6 +4557,32 @@
 					datasourceid="d92492e5-fb72-44f1-9770-e20c398f16b7"
 					variableid="bab5c512-8f69-4665-bc29-43a4f1d8a3ab"
 					variablename="Correo">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="dc91f1f4-6433-46c5-9f64-a35fa73073f9"
+			name="CompletarInfo_Danios"
+			ref="ef013e43-97f8-4676-ad68-a997ff72527a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Gravedad"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="be06168b-d338-4a89-911e-8e437eeb5034"
+					variablename="Gravedad">
+					</var>
+					<var
+					dataname="Descripcion"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="529ff587-6443-4460-8f8d-e4787bdffd8a"
+					variablename="Descripcion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4917,6 +5097,32 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="f3e98bd0-3858-4023-ba5d-a50d19bc8997"
+			name="Detalle_RoboTotal"
+			ref="e86b77da-d6b4-48f6-b0df-253a6c64968f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="TipoRobo"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="3209f30e-77dc-4b11-b7ce-ff3c32d3b435"
+					variablename="TipoRobo">
+					</var>
+					<var
+					dataname="SubtipoRobo"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="0dc9bf87-366b-4944-8629-bad23350414d"
+					variablename="SubtipoRobo">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f4068176-5638-44a5-b972-1f54c1bd554b"
 			name="StartAUT"
 			ref="fe5559b6-e1d6-43fd-bf7c-fd606e0e800d"
@@ -4950,13 +5156,15 @@
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="Ambiente"
 					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
@@ -5504,28 +5712,36 @@
 						name="Detalle_VehiculoOcupantes">
 						</testmodule>
 						<smartfoldernode
-						id="4b785685-d9a4-422f-bf84-c41d099771f3"
-						name="FT_Danios">
-							<smartfoldernode
-							id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
-							name="ConCantidadTipo">
-								<testmodule
-								id="ac92f432-187e-4136-9e7d-e6d9dfd133eb"
-								name="DetalleDanioParcial_ConCant">
-								</testmodule>
-							</smartfoldernode>
-							<smartfoldernode
-							id="89fa68a6-9618-4127-aaec-5d106b43550a"
-							name="SinCantidadTipo">
-								<testmodule
-								id="7587d8f5-1989-46db-b487-678e3ac16994"
-								name="DetalleDanioParcial_SinCantidad">
-								</testmodule>
-							</smartfoldernode>
+						id="0fa01c9f-d57e-447f-b343-86361084ca76"
+						name="Danios">
 							<testmodule
-							id="5c3787a9-8bcf-4c10-a781-139c39b9caba"
-							name="DatosProveedor">
+							id="dc91f1f4-6433-46c5-9f64-a35fa73073f9"
+							name="CompletarInfo_Danios">
 							</testmodule>
+							<smartfoldernode
+							id="4b785685-d9a4-422f-bf84-c41d099771f3"
+							name="FT_Danios">
+								<smartfoldernode
+								id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
+								name="ConCantidadTipo">
+									<testmodule
+									id="ac92f432-187e-4136-9e7d-e6d9dfd133eb"
+									name="DetalleDanioParcial_ConCant">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="89fa68a6-9618-4127-aaec-5d106b43550a"
+								name="SinCantidadTipo">
+									<testmodule
+									id="7587d8f5-1989-46db-b487-678e3ac16994"
+									name="DetalleDanioParcial_SinCantidad">
+									</testmodule>
+								</smartfoldernode>
+								<testmodule
+								id="5c3787a9-8bcf-4c10-a781-139c39b9caba"
+								name="DatosProveedor">
+								</testmodule>
+							</smartfoldernode>
 						</smartfoldernode>
 						<smartfoldernode
 						id="131f83e6-807b-424a-a3a0-7487f32f7c50"
@@ -5535,16 +5751,40 @@
 							name="Detalle_Robo">
 							</testmodule>
 							<smartfoldernode
-							id="701180cf-ebf5-4f10-b762-42f1121178f3"
-							name="FT_Robo">
+							id="20c1fd1e-f8b7-42fd-87a0-378c1947272a"
+							name="RoboTotal">
 								<testmodule
-								id="313bb389-6b66-494c-9d10-512ec8dd6384"
-								name="Robo_FT">
+								id="f3e98bd0-3858-4023-ba5d-a50d19bc8997"
+								name="Detalle_RoboTotal">
 								</testmodule>
+								<smartfoldernode
+								id="4665d240-f459-49f4-8e5e-a5b97379d41d"
+								name="CompletarLocacion">
+									<testmodule
+									id="6997e8d2-da97-4a96-93e1-3fdcf4463456"
+									name="CompletarLocacion_Robo">
+									</testmodule>
+								</smartfoldernode>
+							</smartfoldernode>
+							<smartfoldernode
+							id="5f4a6c8a-a633-4625-b089-0b93cac91afb"
+							name="RoboParcial">
 								<testmodule
-								id="426565e9-cbb5-4ad4-9808-397751c596ed"
-								name="DatosProveedor">
+								id="c1c1ba8d-4a15-4dc3-b59c-9c84fc583a8d"
+								name="Detalle_RoboParcial">
 								</testmodule>
+								<smartfoldernode
+								id="701180cf-ebf5-4f10-b762-42f1121178f3"
+								name="FT_Robo">
+									<testmodule
+									id="313bb389-6b66-494c-9d10-512ec8dd6384"
+									name="Robo_FT">
+									</testmodule>
+									<testmodule
+									id="426565e9-cbb5-4ad4-9808-397751c596ed"
+									name="DatosProveedor">
+									</testmodule>
+								</smartfoldernode>
 							</smartfoldernode>
 						</smartfoldernode>
 						<testmodule
@@ -6973,9 +7213,6 @@
 					Correo
 				</column>
 				<column>
-					DetalleSiniestro
-				</column>
-				<column>
 					CausaSiniestro
 				</column>
 				<column>
@@ -7013,6 +7250,12 @@
 				</column>
 				<column>
 					ROBO
+				</column>
+				<column>
+					TipoRobo
+				</column>
+				<column>
+					SubtipoRobo
 				</column>
 				<column>
 					DescripcionRobo
@@ -7392,6 +7635,9 @@
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
+			id="0fa01c9f-d57e-447f-b343-86361084ca76">
+			</testcontainer>
+			<testcontainer
 			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
 			</testcontainer>
 			<testcontainer
@@ -7405,6 +7651,9 @@
 			</testcontainer>
 			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
 			</testcontainer>
 			<testcontainer
 			id="701180cf-ebf5-4f10-b762-42f1121178f3">
@@ -7461,10 +7710,22 @@
 		<testconfiguration
 		name="MotorSinUBER">
 			<testcontainer
+			id="0fa01c9f-d57e-447f-b343-86361084ca76">
+			</testcontainer>
+			<testcontainer
 			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
 			</testcontainer>
 			<testcontainer
+			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
+			</testcontainer>
+			<testcontainer
+			id="4665d240-f459-49f4-8e5e-a5b97379d41d">
+			</testcontainer>
+			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
 			</testcontainer>
 			<testcontainer
 			id="701180cf-ebf5-4f10-b762-42f1121178f3">

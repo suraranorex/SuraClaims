@@ -24,22 +24,22 @@ namespace SuraClaims.Motor
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Detalle_Robo recording.
+    ///The Detalle_RoboParcial recording.
     /// </summary>
-    [TestModule("6e1ada51-7337-472f-b239-030f9dfb73d8", ModuleType.Recording, 1)]
-    public partial class Detalle_Robo : ITestModule
+    [TestModule("8299e360-ca42-4770-99e6-6c6927e3a251", ModuleType.Recording, 1)]
+    public partial class Detalle_RoboParcial : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Detalle_Robo instance = new Detalle_Robo();
+        static Detalle_RoboParcial instance = new Detalle_RoboParcial();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Detalle_Robo()
+        public Detalle_RoboParcial()
         {
             DescripcionRobo = "Rueda";
         }
@@ -47,7 +47,7 @@ namespace SuraClaims.Motor
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Detalle_Robo Instance
+        public static Detalle_RoboParcial Instance
         {
             get { return instance; }
         }
@@ -59,7 +59,7 @@ namespace SuraClaims.Motor
         /// <summary>
         /// Gets or sets the value of variable DescripcionRobo.
         /// </summary>
-        [TestVariable("95c5488e-bf8e-4973-bcfd-d37fe65942e6")]
+        [TestVariable("8b8b6ed9-6305-4799-b0e8-9f5e4e8b44b5")]
         public string DescripcionRobo
         {
             get { return _DescripcionRobo; }
@@ -77,13 +77,13 @@ namespace SuraClaims.Motor
         }
 
         /// <summary>
-        /// Gets or sets the value of variable ROBO.
+        /// Gets or sets the value of variable TipoRobo.
         /// </summary>
-        [TestVariable("9c47e05c-6176-49ef-b13e-9cc94424d9b9")]
-        public string ROBO
+        [TestVariable("3209f30e-77dc-4b11-b7ce-ff3c32d3b435")]
+        public string TipoRobo
         {
-            get { return repo.ROBO; }
-            set { repo.ROBO = value; }
+            get { return repo.TipoRobo; }
+            set { repo.TipoRobo = value; }
         }
 
 #endregion
@@ -112,12 +112,33 @@ namespace SuraClaims.Motor
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Robo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_RoboInfo, new RecordItemIndex(0));
-            repo.SuraClaims.Motor.InformacionSiniestro.cb_Robo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_TipoRobo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_TipoRoboInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Motor.InformacionSiniestro.cb_TipoRobo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 15s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_DetallesRobo'", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetallesRoboInfo, new ActionTimeout(15000), new RecordItemIndex(1));
-            repo.SuraClaims.Motor.InformacionSiniestro.txt_DetallesRoboInfo.WaitForExists(15000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Agregar_Robo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_Agregar_RoboInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Agregar_Robo.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_Robo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_RoboInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_Robo.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_Robo'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_RoboInfo, new RecordItemIndex(3));
+            Keyboard.PrepareFocus(repo.SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_Robo);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DescripcionRobo' with focus on 'SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_Robo'.", repo.SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_RoboInfo, new RecordItemIndex(4));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_Ninguna_Robo.PressKeys(DescripcionRobo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetallesRobo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetallesRoboInfo, new RecordItemIndex(5));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_DetallesRobo.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
             
         }
 

@@ -186,59 +186,9 @@ namespace SuraClaims.Motor
             repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.txt_Gravedad'", repo.SuraClaims.Motor.InformacionSiniestro.txt_GravedadInfo, new ActionTimeout(30000), new RecordItemIndex(15));
-            repo.SuraClaims.Motor.InformacionSiniestro.txt_GravedadInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionSiniestro.txtbox_Gravedad'.", repo.SuraClaims.Motor.InformacionSiniestro.txtbox_GravedadInfo, new RecordItemIndex(16));
-            Keyboard.PrepareFocus(repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Gravedad);
-            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Gravedad' with focus on 'SuraClaims.Motor.InformacionSiniestro.txtbox_Gravedad'.", repo.SuraClaims.Motor.InformacionSiniestro.txtbox_GravedadInfo, new RecordItemIndex(17));
-            repo.SuraClaims.Motor.InformacionSiniestro.txtbox_Gravedad.PressKeys(Gravedad);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new RecordItemIndex(18));
-            repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_Gravedad'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_GravedadInfo, new ActionTimeout(30000), new RecordItemIndex(19));
-            repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_GravedadInfo.WaitForNotExists(30000);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionBasica.option_Nombre' at 26;9.", repo.SuraClaims.Motor.InformacionBasica.option_NombreInfo, new RecordItemIndex(20));
-            //repo.SuraClaims.Motor.InformacionBasica.option_Nombre.Click("26;9");
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Incendio' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_IncendioInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Incendio' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_IncendioInfo, new RecordItemIndex(15));
             repo.SuraClaims.Motor.InformacionSiniestro.cb_Incendio.Click();
             Delay.Milliseconds(4620);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.bttn_Agregar'", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarInfo, new ActionTimeout(30000), new RecordItemIndex(22));
-            repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Agregar' at 18;6.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AgregarInfo, new RecordItemIndex(23));
-            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Agregar.Click("18;6");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.tag_Descripcion' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.tag_DescripcionInfo, new RecordItemIndex(24));
-            repo.SuraClaims.Motor.InformacionSiniestro.tag_Descripcion.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SuraClaims.Motor.InformacionSiniestro.tag_Descripcion'.", repo.SuraClaims.Motor.InformacionSiniestro.tag_DescripcionInfo, new RecordItemIndex(25));
-            Keyboard.PrepareFocus(repo.SuraClaims.Motor.InformacionSiniestro.tag_Descripcion);
-            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Descripcion' with focus on 'SuraClaims.Motor.InformacionSiniestro.tag_Descripcion'.", repo.SuraClaims.Motor.InformacionSiniestro.tag_DescripcionInfo, new RecordItemIndex(26));
-            repo.SuraClaims.Motor.InformacionSiniestro.tag_Descripcion.PressKeys(Descripcion);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAseguradoInfo, new RecordItemIndex(27));
-            repo.SuraClaims.Motor.InformacionSiniestro.txt_DetalleDelVehiculoAsegurado.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_DescripcionDeLosDanios'", repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_DescripcionDeLosDaniosInfo, new ActionTimeout(30000), new RecordItemIndex(28));
-            repo.SuraClaims.Motor.InformacionSiniestro.Copy_of_txtbox_DescripcionDeLosDaniosInfo.WaitForNotExists(30000);
             
         }
 

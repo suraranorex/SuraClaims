@@ -411,6 +411,30 @@
       <UserCode>true</UserCode>
       <id>e8ef39c7-b742-449d-8df3-adbf66c4a969</id>
     </Compile>
+    <Compile Include="Motor\CompletarInfo_Danios.cs">
+      <BoundTo>7be351f0-abf4-4266-b2b3-c8ce364a4932</BoundTo>
+      <DependentUpon>CompletarInfo_Danios.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0d33c99-8d8c-4b18-b930-708d79256cff</id>
+    </Compile>
+    <Compile Include="Motor\CompletarInfo_Danios.UserCode.cs">
+      <BoundTo>7be351f0-abf4-4266-b2b3-c8ce364a4932</BoundTo>
+      <DependentUpon>CompletarInfo_Danios.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>28ff4c0c-a08a-42f3-9303-054bbb7857fa</id>
+    </Compile>
+    <Compile Include="Motor\CompletarLocacion_Robo.cs">
+      <BoundTo>cf46b52c-47a6-4c45-b974-4a3d8d7a8664</BoundTo>
+      <DependentUpon>CompletarLocacion_Robo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d64b32b7-d7af-49a5-9c0a-e2df6e7ca4eb</id>
+    </Compile>
+    <Compile Include="Motor\CompletarLocacion_Robo.UserCode.cs">
+      <BoundTo>cf46b52c-47a6-4c45-b974-4a3d8d7a8664</BoundTo>
+      <DependentUpon>CompletarLocacion_Robo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>14193a13-6c03-4a7a-84aa-605359ab0bcc</id>
+    </Compile>
     <Compile Include="Motor\DetalleDanioParcial_ConCant.cs">
       <BoundTo>9977d8a8-f095-4fd8-97d0-147560ae21c3</BoundTo>
       <DependentUpon>DetalleDanioParcial_ConCant.rxrec</DependentUpon>
@@ -446,6 +470,30 @@
       <DependentUpon>Detalle_Robo.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>920d3a80-49e1-4bf3-818c-b2b125ecfb83</id>
+    </Compile>
+    <Compile Include="Motor\Detalle_RoboParcial.cs">
+      <BoundTo>f247e54d-41ec-4cfb-96a6-dae57122fed7</BoundTo>
+      <DependentUpon>Detalle_RoboParcial.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>21f42d00-83c6-41c9-b513-7ce4a24b7e13</id>
+    </Compile>
+    <Compile Include="Motor\Detalle_RoboParcial.UserCode.cs">
+      <BoundTo>f247e54d-41ec-4cfb-96a6-dae57122fed7</BoundTo>
+      <DependentUpon>Detalle_RoboParcial.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ebbebf0c-7b7f-4cd1-b815-14fd83b4a01f</id>
+    </Compile>
+    <Compile Include="Motor\Detalle_RoboTotal.cs">
+      <BoundTo>3be9e6e4-22b2-4944-9f43-e6b8e85de78a</BoundTo>
+      <DependentUpon>Detalle_RoboTotal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee7f5efa-55d8-4c4a-836d-ffa987147c76</id>
+    </Compile>
+    <Compile Include="Motor\Detalle_RoboTotal.UserCode.cs">
+      <BoundTo>3be9e6e4-22b2-4944-9f43-e6b8e85de78a</BoundTo>
+      <DependentUpon>Detalle_RoboTotal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>343eb378-7e56-4590-b37d-ea9300de8233</id>
     </Compile>
     <Compile Include="Motor\Robo_FT.cs">
       <BoundTo>f7c97ed3-6fd4-48ee-847a-22372b9fbd3c</BoundTo>
@@ -1473,6 +1521,16 @@
       <id>3cc5eee3-c5c7-45db-b261-81e13e102157</id>
       <recordtableid>a64da77e-7537-4dec-beb0-24557a2ee0c9</recordtableid>
     </None>
+    <None Include="Motor\CompletarInfo_Danios.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>7be351f0-abf4-4266-b2b3-c8ce364a4932</id>
+      <recordtableid>ef013e43-97f8-4676-ad68-a997ff72527a</recordtableid>
+    </None>
+    <None Include="Motor\CompletarLocacion_Robo.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>cf46b52c-47a6-4c45-b974-4a3d8d7a8664</id>
+      <recordtableid>e4e3a848-756c-4dd7-a1e7-d2046526a819</recordtableid>
+    </None>
     <None Include="Motor\DetalleDanioParcial_ConCant.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>9977d8a8-f095-4fd8-97d0-147560ae21c3</id>
@@ -1487,6 +1545,16 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>6461c097-8a44-4530-a5d3-7ae39a2b2915</id>
       <recordtableid>6e1ada51-7337-472f-b239-030f9dfb73d8</recordtableid>
+    </None>
+    <None Include="Motor\Detalle_RoboParcial.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>f247e54d-41ec-4cfb-96a6-dae57122fed7</id>
+      <recordtableid>8299e360-ca42-4770-99e6-6c6927e3a251</recordtableid>
+    </None>
+    <None Include="Motor\Detalle_RoboTotal.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>3be9e6e4-22b2-4944-9f43-e6b8e85de78a</id>
+      <recordtableid>e86b77da-d6b4-48f6-b0df-253a6c64968f</recordtableid>
     </None>
     <None Include="Motor\Robo_FT.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

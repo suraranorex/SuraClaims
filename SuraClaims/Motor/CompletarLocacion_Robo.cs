@@ -24,29 +24,29 @@ namespace SuraClaims.Motor
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Terminar_Detalle_VehiculoOcupantes recording.
+    ///The CompletarLocacion_Robo recording.
     /// </summary>
-    [TestModule("c2c2c4e6-a847-41d7-a0f9-0d449d03597d", ModuleType.Recording, 1)]
-    public partial class Terminar_Detalle_VehiculoOcupantes : ITestModule
+    [TestModule("e4e3a848-756c-4dd7-a1e7-d2046526a819", ModuleType.Recording, 1)]
+    public partial class CompletarLocacion_Robo : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Terminar_Detalle_VehiculoOcupantes instance = new Terminar_Detalle_VehiculoOcupantes();
+        static CompletarLocacion_Robo instance = new CompletarLocacion_Robo();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Terminar_Detalle_VehiculoOcupantes()
+        public CompletarLocacion_Robo()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Terminar_Detalle_VehiculoOcupantes Instance
+        public static CompletarLocacion_Robo Instance
         {
             get { return instance; }
         }
@@ -89,14 +89,17 @@ namespace SuraClaims.Motor
 
             Init();
 
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(0));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.input_Locacion' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.input_LocacionInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Motor.InformacionSiniestro.input_Locacion.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Eventos' with focus on 'SuraClaims.Motor.InformacionSiniestro.input_Locacion'.", repo.SuraClaims.Motor.InformacionSiniestro.input_LocacionInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.InformacionSiniestro.input_Locacion.PressKeys("Eventos");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.txt_DetallesRobo' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.txt_DetallesRoboInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Motor.InformacionSiniestro.txt_DetallesRobo.Click();
+            Delay.Milliseconds(0);
             
         }
 
