@@ -56,18 +56,6 @@ namespace SuraClaims.Pagos
 
 #region Variables
 
-        string _Importe;
-
-        /// <summary>
-        /// Gets or sets the value of variable Importe.
-        /// </summary>
-        [TestVariable("05670d16-f0eb-407d-8d6e-e98fa57edeb3")]
-        public string Importe
-        {
-            get { return _Importe; }
-            set { _Importe = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
         /// </summary>
@@ -86,6 +74,16 @@ namespace SuraClaims.Pagos
         {
             get { return repo.CausaPago; }
             set { repo.CausaPago = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Importe.
+        /// </summary>
+        [TestVariable("05670d16-f0eb-407d-8d6e-e98fa57edeb3")]
+        public string Importe
+        {
+            get { return repo.Importe; }
+            set { repo.Importe = value; }
         }
 
 #endregion
@@ -132,59 +130,58 @@ namespace SuraClaims.Pagos
             repo.SuraClaims.InformacionPagoSiniestro.txtTipoPagoPaso2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.TipoPagoPaso2' at Center.", repo.SuraClaims.InformacionPagoSiniestro.TipoPagoPaso2Info, new RecordItemIndex(5));
-            repo.SuraClaims.InformacionPagoSiniestro.TipoPagoPaso2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_TipoPagoParcial' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_TipoPagoParcialInfo, new RecordItemIndex(5));
+            repo.SuraClaims.InformacionPagoSiniestro.option_TipoPagoParcial.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2Info, new ActionTimeout(60000), new RecordItemIndex(6));
-            repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2Info.WaitForNotExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.celda_TipoPagoParcial'", repo.SuraClaims.Motor.InformacionSiniestro.celda_TipoPagoParcialInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.SuraClaims.Motor.InformacionSiniestro.celda_TipoPagoParcialInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(7));
-            Delay.Duration(6000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(7));
+            //Delay.Duration(6000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(8));
-            //repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txt_CausaDePagoPaso2' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txt_CausaDePagoPaso2Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txt_CausaDePagoPaso2' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txt_CausaDePagoPaso2Info, new RecordItemIndex(8));
             repo.SuraClaims.InformacionPagoSiniestro.txt_CausaDePagoPaso2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_CausaPago' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_CausaPagoInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_CausaPago' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_CausaPagoInfo, new RecordItemIndex(9));
             repo.SuraClaims.InformacionPagoSiniestro.option_CausaPago.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2Info, new ActionTimeout(50000), new RecordItemIndex(11));
-            repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2Info.WaitForNotExists(50000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21Info, new ActionTimeout(50000), new RecordItemIndex(10));
+            repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21Info.WaitForNotExists(50000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(12));
-            Delay.Duration(6000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(11));
+            //Delay.Duration(6000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(12));
             //repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.InformacionPagoSiniestro.Valor_ImporteAPagar' and assigning the part of its value captured by '[0-9.,]+' to variable 'Importe'.", repo.SuraClaims.InformacionPagoSiniestro.Valor_ImporteAPagarInfo, new RecordItemIndex(14));
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'SuraClaims.InformacionPagoSiniestro.Valor_ImporteAPagar' and assigning the part of its value captured by '[0-9.,]+' to variable 'Importe'.", repo.SuraClaims.InformacionPagoSiniestro.Valor_ImporteAPagarInfo, new RecordItemIndex(13));
             //Importe = repo.SuraClaims.InformacionPagoSiniestro.Valor_ImporteAPagar.Element.GetAttributeValueText("InnerText", new Regex("[0-9.,]+"));
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprReg' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprRegInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprReg' at Center.", repo.SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprRegInfo, new RecordItemIndex(14));
             repo.SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprReg.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Importe' with focus on 'SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprReg'.", repo.SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprRegInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Importe' with focus on 'SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprReg'.", repo.SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprRegInfo, new RecordItemIndex(15));
             repo.SuraClaims.InformacionPagoSiniestro.txt_ImporteAPagarConExprReg.PressKeys(Importe);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Txt_Validaciones.txt_Paso2' at Center.", repo.SuraClaims.Txt_Validaciones.txt_Paso2Info, new RecordItemIndex(16));
             repo.SuraClaims.Txt_Validaciones.txt_Paso2.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2Info, new ActionTimeout(50000), new RecordItemIndex(18));
-            repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso2Info.WaitForNotExists(50000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.celda_Importe'", repo.SuraClaims.Motor.InformacionSiniestro.celda_ImporteInfo, new ActionTimeout(5000), new RecordItemIndex(17));
+            repo.SuraClaims.Motor.InformacionSiniestro.celda_ImporteInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(19));
-            Delay.Duration(6000, false);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21'", repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21Info, new ActionTimeout(50000), new RecordItemIndex(18));
+            //repo.SuraClaims.InformacionPagoSiniestro.Copy_of_txtTipoPagoPaso21Info.WaitForNotExists(50000);
+            
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(19));
+            //Delay.Duration(8000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(20));
             

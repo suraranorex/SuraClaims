@@ -312,7 +312,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="d620f5b0-d0cf-472d-867e-76a13e3f849d"
+			id="95f5783a-7c98-452c-b845-55fb2d95cf1d"
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z][a-z]+']
@@ -325,17 +325,67 @@ mode="Global">
 		enabled="True"
 		optional="False"
 		searchpropertyid="e46b3d4a-fd55-4009-98be-d210015fa1bd"
-		waitaction="NotExists"
+		waitaction="Exists"
 		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="887f5bab-e720-4621-ba95-154067e358e6"
+			id="808f4c87-2ba6-4825-b8c4-89b12013fa4b"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="1001,305,111,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						x-grid-cell-inner&#32;
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Parcial
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						x-grid-cell-inner
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td/div[@innertext='Parcial']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -343,39 +393,13 @@ mode="Global">
 		</WaitForRecordItem>
 		<explicitdelayitem
 		duration="6000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="b38ee125-0022-428e-b89a-53b34f29f9ea"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="2988d8b7-7581-4b52-a848-8daadefc9568"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -489,7 +513,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="887f5bab-e720-4621-ba95-154067e358e6"
+			id="25a3d997-0eeb-4cba-bde8-06f82db4221f"
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input
@@ -500,7 +524,7 @@ mode="Global">
 		</WaitForRecordItem>
 		<explicitdelayitem
 		duration="6000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -732,6 +756,26 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
+		searchpropertyid="a74f97dc-9a0e-41c8-a686-42f9c275e062"
+		waitaction="Exists"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="40f12907-d8c4-4f79-b64e-770e15d02e81"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td/div[@innertext='Parcial']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="False"
 		searchpropertyid="c4f82fe5-8658-4d48-ab38-519568bef2e5"
 		waitaction="NotExists"
 		waittimeout="50000ms">
@@ -740,7 +784,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="887f5bab-e720-4621-ba95-154067e358e6"
+			id="25a3d997-0eeb-4cba-bde8-06f82db4221f"
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input
@@ -750,8 +794,8 @@ mode="Global">
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
-		duration="6000ms"
-		enabled="True"
+		duration="8000ms"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>

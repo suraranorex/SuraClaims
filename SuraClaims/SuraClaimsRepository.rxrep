@@ -1603,6 +1603,106 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//input[@type='button' and @id~'TireShopReplacementServiceInputGroup:_checkbox']
 					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="7e045e8d-275c-4ecf-b4a7-9a9d1af93865"
+					name="txt_Paso2"
+					refimgid="bed5c73c-78ab-4084-a476-174c0c448ad9"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="9ded6007-8b3c-4365-aa6b-b302c310c9a3"
+					name="txtbox_LineaReserva"
+					refimgid="d32a3979-67ed-4994-9975-40790a8bc012"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="a5329368-7a87-4171-86fd-00547a7d7bfd"
+					name="lbl_CoberturaSiniestro"
+					refimgid="9558aff7-c38f-4f5f-829b-e73079237e45"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'[A-Z.][a-z.]+']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="7837b8fa-d2b2-41e3-94a9-d08e8758a98d"
+					name="txtTipoPagoPaso2"
+					refimgid="0df7035f-9989-4b61-838e-3c7408b6dc9f"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input
+					</item>
+					<item
+					addcaps="unknown,webelement,tdtag"
+					capname="divtag"
+					id="808f4c87-2ba6-4825-b8c4-89b12013fa4b"
+					name="celda_TipoPagoParcial"
+					refimgid="ac351312-0cb8-44a4-bddb-8a7b3a4c76fa"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td/div[@innertext='Parcial']
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="57580e57-692f-465f-9b7f-b635536e0e50"
+					name="txt_CausaDePagoPaso2"
+					refimgid="3d2ae72e-c537-4d18-9f37-2576fe9e745e"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="196489e8-e12c-49d2-9d63-cc7a66a6f786"
+					name="Copy_of_txtTipoPagoPaso2"
+					refimgid="99f88c7e-90d3-498e-9f61-7c66557ae513"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input[@data-tabindexsaved='True']
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="77760107-8889-4803-aad4-81d65b1e000b"
+					name="Valor_ImporteAPagar"
+					refimgid="abbc36c0-86b4-46f8-8550-57aeab8677d4"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'[0-9]']
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="d3757ff8-3f28-4d9d-affa-93961ef6728b"
+					name="txt_ImporteAPagarConExprReg"
+					refimgid="05133f55-289b-414a-ad30-b831a95b014c"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td']/div
+					</item>
+					<item
+					addcaps="unknown,webelement,tdtag"
+					capname="divtag"
+					id="40f12907-d8c4-4f79-b64e-770e15d02e81"
+					name="celda_Importe"
+					refimgid="1387d9e2-3a27-44fe-bbb3-8b18b0a6b542"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td/div[@innertext='Parcial']/../..//td/div[@innertext~$Importe and @innertext~'$']
+					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']
 					</basepath>
@@ -3135,6 +3235,26 @@ name="SuraClaimsRepository">
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'NewServiceRequest-tbody']/tr[3]//table/tbody/tr[2]/?/?/div
 				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="95f5783a-7c98-452c-b845-55fb2d95cf1d"
+				name="option_TipoPagoParcial"
+				refimgid="2486bdeb-0af1-4b80-83db-489b47831221"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Parcial']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="25a3d997-0eeb-4cba-bde8-06f82db4221f"
+				name="Copy_of_txtTipoPagoPaso21"
+				refimgid="755a2cb2-cb6b-408c-aff5-61cc172a8f1d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input[@data-tabindexsaved='True']
+				</item>
 				<basepath>
 					/dom[@domain=$Ambiente]
 				</basepath>
@@ -4148,6 +4268,36 @@ name="SuraClaimsRepository">
 					/dom[@domain=$Ambiente]//span[@innertext='Descripción']
 				</item>
 			</folder>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="084d91fb-1efc-433d-a67c-f068a5d13bde"
+			name="Copy_of_option_LineaReserva_Asegurado"
+			refimgid="00068088-db39-4206-b1a1-19f7b99d9624"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+' and @innertext!~'ninguna']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="9da649f0-4c78-4c3d-81ff-ffb3f06937e6"
+			name="option_TipoPagoParcial"
+			refimgid="7bf159f9-2c2f-4492-bcb2-c9e10e422494"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//li[@innertext~'Parcial']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="9b2bd275-bd6a-4e02-9ef2-d352cbac4a1b"
+			name="option_CausaPago"
+			refimgid="f2cfaaa3-6663-4585-ac70-6550601b9a79"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain=$Ambiente]//li[@innertext~$CausaPago]
+			</item>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -4503,6 +4653,11 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		id="9c47e05c-6176-49ef-b13e-9cc94424d9b9"
 		name="ROBO">
 			Sí
+		</var>
+		<var
+		id="04296e39-d4be-4996-aac7-c0187b8f6f14"
+		name="Importe">
+			111
 		</var>
 	</variables>
 </repository>

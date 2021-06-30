@@ -68,18 +68,6 @@ namespace SuraClaims.SISE
             set { _NroSiniestro = value; }
         }
 
-        string _Importe;
-
-        /// <summary>
-        /// Gets or sets the value of variable Importe.
-        /// </summary>
-        [TestVariable("f53ccd93-b394-4bdb-b662-3798677877af")]
-        public string Importe
-        {
-            get { return _Importe; }
-            set { _Importe = value; }
-        }
-
         string _NroAnulacion;
 
         /// <summary>
@@ -90,6 +78,16 @@ namespace SuraClaims.SISE
         {
             get { return _NroAnulacion; }
             set { _NroAnulacion = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Importe.
+        /// </summary>
+        [TestVariable("f53ccd93-b394-4bdb-b662-3798677877af")]
+        public string Importe
+        {
+            get { return repo.Importe; }
+            set { repo.Importe = value; }
         }
 
 #endregion
