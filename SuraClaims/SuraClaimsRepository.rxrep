@@ -451,13 +451,13 @@ name="SuraClaimsRepository">
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
-				capname="spantag"
+				capname="unknown"
 				id="2988d8b7-7581-4b52-a848-8daadefc9568"
 				name="txt_Paso2"
 				refimgid="dde84747-4cdb-489e-b975-cf31c8d67bdc"
 				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext~'Paso 2']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -3112,6 +3112,16 @@ name="SuraClaimsRepository">
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="1b3f279a-591b-4620-b62f-97a8ac773e88"
+				name="option_NombrePropietario"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~$Nombre and @innertext~$Apellido]
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
 				capname="spantag"
 				id="a9be11b0-11ee-4f3d-970c-1c0fd4f83e34"
 				name="option_MayusMinus"
@@ -4703,6 +4713,10 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		id="3209f30e-77dc-4b11-b7ce-ff3c32d3b435"
 		name="TipoRobo">
 			Robo Total
+		</var>
+		<var
+		id="7ffce370-41b3-46bf-bd04-c0884c142557"
+		name="Apellido">
 		</var>
 	</variables>
 </repository>

@@ -351,6 +351,18 @@ namespace SuraClaims
             set { _TipoRobo = value; }
         }
 
+        string _Apellido = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable Apellido.
+        /// </summary>
+        [TestVariable("7ffce370-41b3-46bf-bd04-c0884c142557")]
+        public string Apellido
+        {
+            get { return _Apellido; }
+            set { _Apellido = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1885,7 +1897,7 @@ namespace SuraClaims
                 _txt_buscarocrearpolizaInfo = new RepoItemInfo(this, "txt_BuscarOCrearPoliza", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Buscar o crear']", "", 30000, null, "01d4d052-881c-410c-8cc4-fb5de403027e");
                 _txt_liquidacionesordenpagoInfo = new RepoItemInfo(this, "txt_LiquidacionesOrdenPago", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Liquidaciones']", "", 30000, null, "9c48260c-c5c0-4e8c-8513-8be1165fcf02");
                 _txt_detalleordenpagoInfo = new RepoItemInfo(this, "txt_DetalleOrdenPago", ".//tbody[#'centerPanel-tbody']//span[@innertext='Detalles de la Orden de pago']", "", 30000, null, "8504d5d5-d9a1-4d3f-a130-6b26034cdebf");
-                _txt_paso2Info = new RepoItemInfo(this, "txt_Paso2", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 2']", "", 30000, null, "2988d8b7-7581-4b52-a848-8daadefc9568");
+                _txt_paso2Info = new RepoItemInfo(this, "txt_Paso2", ".//tbody[#'centerPanel-tbody']//*[@innertext~'Paso 2']", "", 30000, null, "2988d8b7-7581-4b52-a848-8daadefc9568");
                 _txt_pasogenericoInfo = new RepoItemInfo(this, "txt_PasoGenerico", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso']", "", 30000, null, "73026996-4d36-47a0-8bbb-c3f067a16c68");
                 _txt_paso3Info = new RepoItemInfo(this, "txt_Paso3", ".//tbody[#'centerPanel-tbody']//*[@innertext~'Paso 3']", "", 30000, null, "2e7d84e4-de88-452a-a572-56dae0b4b474");
                 _txt_paso4Info = new RepoItemInfo(this, "txt_Paso4", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Paso 4']", "", 30000, null, "1a3dc6c0-e0c6-4fff-87b3-f743f6afc874");
@@ -1986,11 +1998,11 @@ namespace SuraClaims
             /// The txt_Paso2 item.
             /// </summary>
             [RepositoryItem("2988d8b7-7581-4b52-a848-8daadefc9568")]
-            public virtual Ranorex.SpanTag txt_Paso2
+            public virtual Ranorex.Unknown txt_Paso2
             {
                 get
                 {
-                    return _txt_paso2Info.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _txt_paso2Info.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 
@@ -8340,6 +8352,7 @@ namespace SuraClaims
             RepoItemInfo _nombreaseguradoInfo;
             RepoItemInfo _input_bancoemisorsugeridoInfo;
             RepoItemInfo _option_nombremayusculasInfo;
+            RepoItemInfo _option_nombrepropietarioInfo;
             RepoItemInfo _option_mayusminusInfo;
             RepoItemInfo _copy_of_optionselecbancoemisorInfo;
             RepoItemInfo _txtbox_seleccionarcuentaInfo;
@@ -8390,6 +8403,7 @@ namespace SuraClaims
                 _nombreaseguradoInfo = new RepoItemInfo(this, "NombreAsegurado", ".//a[#'Claim:ClaimInfoBar:Insured']//span[@class='infobar_elem_val']", "", 30000, null, "a474734b-6970-4a0f-8b32-28ad40818272");
                 _input_bancoemisorsugeridoInfo = new RepoItemInfo(this, "input_BancoEmisorSugerido", ".//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input", "", 30000, null, "f9a355e1-9c7b-4c3d-bac4-3438116ce4cd");
                 _option_nombremayusculasInfo = new RepoItemInfo(this, "option_NombreMayusculas", ".//li[@innertext~'[A-Z]+']", "", 30000, null, "ca3761bf-98e3-496e-9511-778773b271f2");
+                _option_nombrepropietarioInfo = new RepoItemInfo(this, "option_NombrePropietario", ".//li[@innertext~$Nombre and @innertext~$Apellido]", "", 30000, null, "1b3f279a-591b-4620-b62f-97a8ac773e88");
                 _option_mayusminusInfo = new RepoItemInfo(this, "option_MayusMinus", ".//span[@innertext='[A-Z][a-z]+']", "", 30000, null, "a9be11b0-11ee-4f3d-970c-1c0fd4f83e34");
                 _copy_of_optionselecbancoemisorInfo = new RepoItemInfo(this, "Copy_of_OptionSelecBancoEmisor", ".//tbody[#'centerPanel-tbody']//span[@innertext='Banco Emisor Sugerido']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "ee9d1cf0-ed3c-4055-83ca-b7fe21695297");
                 _txtbox_seleccionarcuentaInfo = new RepoItemInfo(this, "txtbox_SeleccionarCuenta", ".//tbody[#'centerPanel-tbody']//span[@innertext='Seleccionar cuenta']/../..//input", "", 30000, null, "29bd6f78-50c1-4c60-aea8-d30219d36b97");
@@ -9054,6 +9068,30 @@ namespace SuraClaims
                 get
                 {
                     return _option_nombremayusculasInfo;
+                }
+            }
+
+            /// <summary>
+            /// The option_NombrePropietario item.
+            /// </summary>
+            [RepositoryItem("1b3f279a-591b-4620-b62f-97a8ac773e88")]
+            public virtual Ranorex.LiTag option_NombrePropietario
+            {
+                get
+                {
+                    return _option_nombrepropietarioInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The option_NombrePropietario item info.
+            /// </summary>
+            [RepositoryItemInfo("1b3f279a-591b-4620-b62f-97a8ac773e88")]
+            public virtual RepoItemInfo option_NombrePropietarioInfo
+            {
+                get
+                {
+                    return _option_nombrepropietarioInfo;
                 }
             }
 

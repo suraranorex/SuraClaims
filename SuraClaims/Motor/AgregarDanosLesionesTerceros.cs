@@ -87,18 +87,6 @@ namespace SuraClaims.Motor
             set { _Patente = value; }
         }
 
-        string _Apellido;
-
-        /// <summary>
-        /// Gets or sets the value of variable Apellido.
-        /// </summary>
-        [TestVariable("47a4e260-de20-471c-a433-b40cb2fe5ec8")]
-        public string Apellido
-        {
-            get { return _Apellido; }
-            set { _Apellido = value; }
-        }
-
         string _Modelo;
 
         /// <summary>
@@ -175,6 +163,16 @@ namespace SuraClaims.Motor
         {
             get { return repo.NOMBRE; }
             set { repo.NOMBRE = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Apellido.
+        /// </summary>
+        [TestVariable("47a4e260-de20-471c-a433-b40cb2fe5ec8")]
+        public string Apellido
+        {
+            get { return repo.Apellido; }
+            set { repo.Apellido = value; }
         }
 
 #endregion

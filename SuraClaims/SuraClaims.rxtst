@@ -445,8 +445,8 @@
 			datasource="SiniestroAP"
 			errorbehavior="ContinueNextIteration"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="GeneracionSiniestro_AP">
 				<parameters>
 					<param
@@ -1313,13 +1313,15 @@
 					variableid="73b293f5-81d3-4f77-9d30-008f1b362d6d"
 					variablename="DANIOS">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="INCENDIO"
 					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="e9ca260d-4e46-4817-af48-e015c794bdc6"
 					variablename="INCENDIO">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -2739,8 +2741,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="0"
-			minrange="0"
+			maxrange="6"
+			minrange="1"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -4073,7 +4075,7 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="14"
+			maxrange="13"
 			minrange="12"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
@@ -5156,15 +5158,13 @@
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
 					</var>
-				</databinding>
-				<missingdatavariablesbinding>
 					<var
 					dataname="Ambiente"
 					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
-				</missingdatavariablesbinding>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
@@ -7173,7 +7173,7 @@
 		filename="GeneracionSiniestroMotor.xlsx"
 		id="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 		includefile="Checked"
-		lastknownrowcount="18"
+		lastknownrowcount="20"
 		name="SiniestroMotor"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7271,7 +7271,7 @@
 		filename="GeneracionSiniestroMotorTercero.xlsx"
 		id="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 		includefile="Checked"
-		lastknownrowcount="8"
+		lastknownrowcount="11"
 		name="SiniestroMotorTercero"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -7631,7 +7631,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="MotorSinUBER">
+	default="PruebaIri">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -7803,16 +7803,10 @@
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
 			</testcontainer>
 			<testcontainer
-			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946">
-			</testcontainer>
-			<testcontainer
-			id="79bc1e16-5510-4b54-82af-f6e18939b1f2">
+			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
-			</testcontainer>
-			<testcontainer
-			id="b3f630b5-9820-49aa-b8d5-af31bce661e3">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

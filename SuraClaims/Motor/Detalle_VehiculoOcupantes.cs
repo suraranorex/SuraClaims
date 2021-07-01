@@ -99,16 +99,6 @@ namespace SuraClaims.Motor
             set { repo.DANIOS = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable INCENDIO.
-        /// </summary>
-        [TestVariable("e9ca260d-4e46-4817-af48-e015c794bdc6")]
-        public string INCENDIO
-        {
-            get { return repo.INCENDIO; }
-            set { repo.INCENDIO = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -186,9 +176,8 @@ namespace SuraClaims.Motor
             repo.SuraClaims.Motor.InformacionSiniestro.cb_Danios.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.cb_Incendio' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.cb_IncendioInfo, new RecordItemIndex(15));
-            repo.SuraClaims.Motor.InformacionSiniestro.cb_Incendio.Click();
-            Delay.Milliseconds(4620);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(15));
+            Delay.Duration(2000, false);
             
         }
 

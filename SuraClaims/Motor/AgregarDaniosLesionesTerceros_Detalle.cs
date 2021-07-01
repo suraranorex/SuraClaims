@@ -73,6 +73,26 @@ namespace SuraClaims.Motor
             set { repo.Responsabilidad = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable NOMBRE.
+        /// </summary>
+        [TestVariable("5708cec9-a319-4013-82b4-d7025ac889ce")]
+        public string NOMBRE
+        {
+            get { return repo.NOMBRE; }
+            set { repo.NOMBRE = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Apellido.
+        /// </summary>
+        [TestVariable("7ffce370-41b3-46bf-bd04-c0884c142557")]
+        public string Apellido
+        {
+            get { return repo.Apellido; }
+            set { repo.Apellido = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -119,15 +139,18 @@ namespace SuraClaims.Motor
             repo.SuraClaims.Motor.InformacionSiniestro.txt_PropietarioVehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculasInfo, new RecordItemIndex(5));
-            repo.SuraClaims.InformacionPagoSiniestro.option_NombreMayusculas.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(5));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.InformacionPagoSiniestro.option_NombrePropietario' at Center.", repo.SuraClaims.InformacionPagoSiniestro.option_NombrePropietarioInfo, new RecordItemIndex(6));
+            repo.SuraClaims.InformacionPagoSiniestro.option_NombrePropietario.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.pestana_DescripTipoSiniestro' at Center.", repo.SuraClaims.Motor.pestana_DescripTipoSiniestroInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.pestana_DescripTipoSiniestro' at Center.", repo.SuraClaims.Motor.pestana_DescripTipoSiniestroInfo, new RecordItemIndex(7));
             repo.SuraClaims.Motor.pestana_DescripTipoSiniestro.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.lbl_Danos'", repo.SuraClaims.Motor.InformacionSiniestro.lbl_DanosInfo, new ActionTimeout(30000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Motor.InformacionSiniestro.lbl_Danos'", repo.SuraClaims.Motor.InformacionSiniestro.lbl_DanosInfo, new ActionTimeout(30000), new RecordItemIndex(8));
             repo.SuraClaims.Motor.InformacionSiniestro.lbl_DanosInfo.WaitForExists(30000);
             
         }
