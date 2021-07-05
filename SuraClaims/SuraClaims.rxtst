@@ -346,6 +346,10 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<teardown
+			id="13e05a39-4cb9-4616-a77a-0157555f8d41"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="143816d0-a6cc-4d31-867a-1d1f50762a57"
 			name="MenuLateral_Supervision_ColaMensajes"
@@ -2083,6 +2087,32 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5e275a59-6aca-4c3b-9e54-8d415f31b469"
+			name="Login"
+			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Usuario"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="a037eb49-2745-457f-8e41-ee64f17689e9"
+					variablename="Usuario">
+					</var>
+					<var
+					dataname="Contrasenia"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="67fd67fe-82f2-43df-8120-3103542a215d"
+					variablename="Contrasenia">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="5e6623d6-c26b-42b5-bd74-e3de2a4ee13b"
 			name="AnularPago"
 			ref="df5a4720-643d-42ac-aa11-b8b4bdd4b6b6"
@@ -2891,7 +2921,7 @@
 			errorbehavior="ContinueNextIteration"
 			id="78ea1c52-2921-46a4-adc3-b2aac89112c7"
 			maxrange="3"
-			minrange="2"
+			minrange="0"
 			name="ValidarGeneracion_SISE">
 			</testcase>
 			<testmodule
@@ -3345,6 +3375,20 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="91cb247c-a9e9-4649-bbf8-0a5b51c4bb11"
+			name="OpenBrowser"
+			ref="1982f119-ab8c-49d8-ad3c-582cf43fc4a4"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="URL"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="eeefd4fc-bbf2-44fb-93b7-aaf4eeafa501"
+					variablename="URL">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<smartfoldernode
 			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52"
 			name="CLEAS">
@@ -3630,6 +3674,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testcase
+			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712"
+			name="CrearAcuerdos">
+			</testcase>
 			<testmodule
 			id="a33ed60e-5d3a-49ee-a946-29205c964959"
 			name="InformacionBasica_AP_Uber"
@@ -4409,6 +4457,26 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="d3b7140f-f578-4edb-bad0-86d8009f4d9c"
+			name="MenuSuperior_BuscarSiniestro"
+			ref="978722ac-1e26-4ea1-a445-53ce8454bf4f"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="NroSiniestro"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="9f24559f-e441-47fa-9643-510005fbb861"
+					variablename="NroSiniestro">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="d4e9c074-4f0d-48d2-8f0b-61c2899139c7"
 			name="Terminar_Detalle_VehiculoOcupantes"
 			ref="c2c2c4e6-a847-41d7-a0f9-0d449d03597d"
@@ -4638,6 +4706,10 @@
 			id="deace183-af5b-4a73-892d-4ab743ef30ad"
 			name="teardown">
 			</teardown>
+			<setup
+			id="df6e99b8-3c88-49be-8718-cf34eb8312c3"
+			name="setup">
+			</setup>
 			<testmodule
 			id="e05f434c-6bb8-4c94-8e23-04a68bcc447b"
 			name="CloseBrowser"
@@ -5192,6 +5264,20 @@
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
+			id="f64fcf59-2192-44a5-b8a7-5b9f21c93c09"
+			name="CloseBrowser"
+			ref="731a292e-bd20-4de4-9bc1-f6053024bf64"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="f6690f54-7cf5-4a34-bb1f-54ee996b4f05"
 			name="Login"
 			ref="591e9e31-d5fd-4698-9036-0ba9aa89869c"
@@ -5569,6 +5655,20 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="fcb9ad08-19b8-4511-a8f9-3f52d60c7bce"
+			name="Logout"
+			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="fc6e757a-bf77-40e0-8e9f-ecbe00e01480"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="fe83aa3e-d196-4ca4-b2ee-2fcde5c25c67"
 			name="CloseBrowser"
@@ -6740,6 +6840,38 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="a2539f8a-17b0-4131-ac36-c1e1fbc82712"
+					name="CrearAcuerdos">
+						<setup
+						id="df6e99b8-3c88-49be-8718-cf34eb8312c3"
+						name="setup">
+							<testmodule
+							id="91cb247c-a9e9-4649-bbf8-0a5b51c4bb11"
+							name="OpenBrowser">
+							</testmodule>
+							<testmodule
+							id="5e275a59-6aca-4c3b-9e54-8d415f31b469"
+							name="Login">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="d3b7140f-f578-4edb-bad0-86d8009f4d9c"
+						name="MenuSuperior_BuscarSiniestro">
+						</testmodule>
+						<teardown
+						id="13e05a39-4cb9-4616-a77a-0157555f8d41"
+						name="teardown">
+							<testmodule
+							id="fcb9ad08-19b8-4511-a8f9-3f52d60c7bce"
+							name="Logout">
+							</testmodule>
+							<testmodule
+							id="f64fcf59-2192-44a5-b8a7-5b9f21c93c09"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -7631,7 +7763,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PruebaIri">
+	default="MotorSinUBER">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -7803,10 +7935,22 @@
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
 			</testcontainer>
 			<testcontainer
+			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
+			</testcontainer>
+			<testcontainer
+			id="1ae1f931-8357-4441-9040-d0db20595df1">
+			</testcontainer>
+			<testcontainer
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f">
 			</testcontainer>
 			<testcontainer
+			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
+			</testcontainer>
+			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
