@@ -2771,8 +2771,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="6"
-			minrange="1"
+			maxrange="10"
+			minrange="5"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -7403,7 +7403,7 @@
 		filename="GeneracionSiniestroMotorTercero.xlsx"
 		id="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 		includefile="Checked"
-		lastknownrowcount="11"
+		lastknownrowcount="15"
 		name="SiniestroMotorTercero"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
