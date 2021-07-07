@@ -4382,7 +4382,7 @@ namespace SuraClaims
                 _txt_detalledelvehiculodeterceroInfo = new RepoItemInfo(this, "txt_DetalleDelVehiculoDeTercero", ".//span[@innertext~'Detalle del vehículo de tercero']", "", 30000, null, "4302efb8-cd39-4c54-8614-0ed1fb2fed40");
                 _txt_nro_documento_motor_uberInfo = new RepoItemInfo(this, "txt_Nro_Documento_Motor_Uber", ".//tr[@safeclass='x-grid-row']/td[3]/div", "", 30000, null, "b666b12f-87e6-483c-9c93-677bad2f29ed");
                 _txtanioInfo = new RepoItemInfo(this, "txtAnio", "tr//table/tbody/tr[4]/td/div/div[2]/div/table//div/table/?/?/tr/td[2]/?/?/table/tbody/tr[4]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:Vehicle_Year']", "", 30000, null, "1eab2695-fc54-43e2-9a10-be567ea5250e");
-                _lbl_elementosbasicosdelvehiculoInfo = new RepoItemInfo(this, "lbl_ElementosBasicosDelVehiculo", ".//label[@innertext>'Elementos básicos del veh']", "", 30000, null, "213ed408-d8a3-461c-915e-dbb03610e484");
+                _lbl_elementosbasicosdelvehiculoInfo = new RepoItemInfo(this, "lbl_ElementosBasicosDelVehiculo", ".//*[@innertext>'Elementos básicos del veh']", "", 30000, null, "213ed408-d8a3-461c-915e-dbb03610e484");
                 _arrow_buscaproveedorInfo = new RepoItemInfo(this, "Arrow_BuscaProveedor", ".//a[@href='javascript:void(0)']/img[@src~$Ambiente+'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", "", 30000, null, "401956ec-4a22-468a-9142-cc99cd25f56e");
                 _arrow_buscaproveedor_v2Info = new RepoItemInfo(this, "Arrow_BuscaProveedor_v2", ".//input[@tagvalue~'ninguna']/../../../../..//img[@src~'/cc/resources/themes/theme-9/resources/images/app/drop_button.png']", "", 30000, null, "ace00115-6c3b-47cb-8ef6-b86a70bdae8f");
                 _lbl_metododepagoInfo = new RepoItemInfo(this, "lbl_MetodoDePago", ".//span[@innertext='Método de pago']", "", 30000, null, "d917e759-918d-4fd7-9f15-4a6c094b06f4");
@@ -6019,11 +6019,11 @@ namespace SuraClaims
             /// The lbl_ElementosBasicosDelVehiculo item.
             /// </summary>
             [RepositoryItem("213ed408-d8a3-461c-915e-dbb03610e484")]
-            public virtual Ranorex.LabelTag lbl_ElementosBasicosDelVehiculo
+            public virtual Ranorex.Unknown lbl_ElementosBasicosDelVehiculo
             {
                 get
                 {
-                    return _lbl_elementosbasicosdelvehiculoInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                    return _lbl_elementosbasicosdelvehiculoInfo.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 

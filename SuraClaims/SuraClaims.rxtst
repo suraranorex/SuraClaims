@@ -3617,8 +3617,11 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="CrearAcuerdos"
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701"
+			maxrange="1"
+			minrange="0"
 			name="Precondiciones_Acuerdos">
 				<parameters>
 					<param
@@ -3942,8 +3945,11 @@
 				</missingdatabinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="CrearAcuerdos"
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712"
+			maxrange="1"
+			minrange="0"
 			name="CrearAcuerdos">
 			</testcase>
 			<testmodule
@@ -8257,7 +8263,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PagoSiniestro">
+	default="PruebaIri">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -8425,27 +8431,6 @@
 		</testconfiguration>
 		<testconfiguration
 		name="PruebaIri">
-			<testcontainer
-			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
-			</testcontainer>
-			<testcontainer
-			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
-			</testcontainer>
-			<testcontainer
-			id="1ae1f931-8357-4441-9040-d0db20595df1">
-			</testcontainer>
-			<testcontainer
-			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f">
-			</testcontainer>
-			<testcontainer
-			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
-			</testcontainer>
-			<testcontainer
-			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
-			</testcontainer>
-			<testcontainer
-			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52">
-			</testcontainer>
 			<testcontainer
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701">
 			</testcontainer>

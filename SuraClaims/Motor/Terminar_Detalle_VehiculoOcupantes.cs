@@ -91,11 +91,15 @@ namespace SuraClaims.Motor
 
             Report.Screenshot(ReportLevel.Info, "User", "", repo.SuraClaims.Self, false, new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar' at Center.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(1));
+            //repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.Click();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking PerformClick() on item 'SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar'.", repo.SuraClaims.Motor.InformacionSiniestro.bttn_AceptarInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Motor.InformacionSiniestro.bttn_Aceptar.PerformClick();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Txt_Validaciones.txt_Paso3'", repo.SuraClaims.Txt_Validaciones.txt_Paso3Info, new ActionTimeout(30000), new RecordItemIndex(3));
             repo.SuraClaims.Txt_Validaciones.txt_Paso3Info.WaitForExists(30000);
             
         }

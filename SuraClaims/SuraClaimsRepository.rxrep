@@ -1543,13 +1543,13 @@ name="SuraClaimsRepository">
 					</item>
 					<item
 					addcaps="unknown,webelement,labeltag"
-					capname="labeltag"
+					capname="unknown"
 					id="213ed408-d8a3-461c-915e-dbb03610e484"
 					name="lbl_ElementosBasicosDelVehiculo"
 					refimgid="1cfb7cec-42b0-498b-bdf6-0e8dff2ccc3d"
 					robustPath=""
 					searchtimeout="30000ms">
-						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext&gt;'Elementos b&#225;sicos del veh']
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext&gt;'Elementos b&#225;sicos del veh']
 					</item>
 					<item
 					addcaps="unknown,webelement,imgtag"
