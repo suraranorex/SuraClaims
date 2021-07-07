@@ -20,50 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Administracion
+namespace SuraClaims.Reclamos
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The VerificarEstado_ColaMensajes recording.
+    ///The Completar_AjusteDanios recording.
     /// </summary>
-    [TestModule("057bbe76-7118-471d-b26e-9ef3c771d4c6", ModuleType.Recording, 1)]
-    public partial class VerificarEstado_ColaMensajes : ITestModule
+    [TestModule("4a37b052-84cc-4c62-8b0d-505b4a9b29f1", ModuleType.Recording, 1)]
+    public partial class Completar_AjusteDanios : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static VerificarEstado_ColaMensajes instance = new VerificarEstado_ColaMensajes();
+        static Completar_AjusteDanios instance = new Completar_AjusteDanios();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerificarEstado_ColaMensajes()
+        public Completar_AjusteDanios()
         {
-            hayProcesosSuspendidos = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static VerificarEstado_ColaMensajes Instance
+        public static Completar_AjusteDanios Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _hayProcesosSuspendidos;
-
         /// <summary>
-        /// Gets or sets the value of variable hayProcesosSuspendidos.
+        /// Gets or sets the value of variable Ambiente.
         /// </summary>
-        [TestVariable("0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2")]
-        public string hayProcesosSuspendidos
+        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
+        public string Ambiente
         {
-            get { return _hayProcesosSuspendidos; }
-            set { _hayProcesosSuspendidos = value; }
+            get { return repo.Ambiente; }
+            set { repo.Ambiente = value; }
         }
 
 #endregion
@@ -92,7 +89,16 @@ namespace SuraClaims.Administracion
 
             Init();
 
-            haySuspendidos();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.input_AjusteDanios' at Center.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Reclamos.input_AjusteDanios.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1000' with focus on 'SuraClaims.Reclamos.input_AjusteDanios'.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Reclamos.input_AjusteDanios.PressKeys("1000");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Reclamos.input_AjusteDanios'.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Reclamos.input_AjusteDanios.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
         }

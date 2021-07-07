@@ -20,50 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Administracion
+namespace SuraClaims.Reclamos
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The VerificarEstado_ColaMensajes recording.
+    ///The ActualizarReclamo recording.
     /// </summary>
-    [TestModule("057bbe76-7118-471d-b26e-9ef3c771d4c6", ModuleType.Recording, 1)]
-    public partial class VerificarEstado_ColaMensajes : ITestModule
+    [TestModule("a26bff71-87f3-49ee-a14d-bc02081a330a", ModuleType.Recording, 1)]
+    public partial class ActualizarReclamo : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static VerificarEstado_ColaMensajes instance = new VerificarEstado_ColaMensajes();
+        static ActualizarReclamo instance = new ActualizarReclamo();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerificarEstado_ColaMensajes()
+        public ActualizarReclamo()
         {
-            hayProcesosSuspendidos = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static VerificarEstado_ColaMensajes Instance
+        public static ActualizarReclamo Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _hayProcesosSuspendidos;
-
         /// <summary>
-        /// Gets or sets the value of variable hayProcesosSuspendidos.
+        /// Gets or sets the value of variable Ambiente.
         /// </summary>
-        [TestVariable("0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2")]
-        public string hayProcesosSuspendidos
+        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
+        public string Ambiente
         {
-            get { return _hayProcesosSuspendidos; }
-            set { _hayProcesosSuspendidos = value; }
+            get { return repo.Ambiente; }
+            set { repo.Ambiente = value; }
         }
 
 #endregion
@@ -92,8 +89,19 @@ namespace SuraClaims.Administracion
 
             Init();
 
-            haySuspendidos();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.bttn_Actualizar' at Center.", repo.SuraClaims.Reclamos.bttn_ActualizarInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Reclamos.bttn_Actualizar.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.bttn_FinalizarChecklist'", repo.SuraClaims.Reclamos.bttn_FinalizarChecklistInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.SuraClaims.Reclamos.bttn_FinalizarChecklistInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.bttn_FinalizarChecklist' at Center.", repo.SuraClaims.Reclamos.bttn_FinalizarChecklistInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Reclamos.bttn_FinalizarChecklist.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.bttn_CheckListFinalizado'", repo.SuraClaims.Reclamos.bttn_CheckListFinalizadoInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.SuraClaims.Reclamos.bttn_CheckListFinalizadoInfo.WaitForExists(30000);
             
         }
 

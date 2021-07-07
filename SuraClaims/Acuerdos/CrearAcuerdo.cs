@@ -20,50 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Administracion
+namespace SuraClaims.Acuerdos
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The VerificarEstado_ColaMensajes recording.
+    ///The CrearAcuerdo recording.
     /// </summary>
-    [TestModule("057bbe76-7118-471d-b26e-9ef3c771d4c6", ModuleType.Recording, 1)]
-    public partial class VerificarEstado_ColaMensajes : ITestModule
+    [TestModule("af355a22-b361-455e-a46f-d53a22291f78", ModuleType.Recording, 1)]
+    public partial class CrearAcuerdo : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static VerificarEstado_ColaMensajes instance = new VerificarEstado_ColaMensajes();
+        static CrearAcuerdo instance = new CrearAcuerdo();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerificarEstado_ColaMensajes()
+        public CrearAcuerdo()
         {
-            hayProcesosSuspendidos = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static VerificarEstado_ColaMensajes Instance
+        public static CrearAcuerdo Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _hayProcesosSuspendidos;
-
         /// <summary>
-        /// Gets or sets the value of variable hayProcesosSuspendidos.
+        /// Gets or sets the value of variable Ambiente.
         /// </summary>
-        [TestVariable("0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2")]
-        public string hayProcesosSuspendidos
+        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
+        public string Ambiente
         {
-            get { return _hayProcesosSuspendidos; }
-            set { _hayProcesosSuspendidos = value; }
+            get { return repo.Ambiente; }
+            set { repo.Ambiente = value; }
         }
 
 #endregion
@@ -92,8 +89,23 @@ namespace SuraClaims.Administracion
 
             Init();
 
-            haySuspendidos();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Acuerdos.input_RelacionadoA' at Center.", repo.SuraClaims.Acuerdos.input_RelacionadoAInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Acuerdos.input_RelacionadoA.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Acuerdos.option_ReclamoTercero' at Center.", repo.SuraClaims.Acuerdos.option_ReclamoTerceroInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Acuerdos.option_ReclamoTercero.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'SuraClaims.Acuerdos.Copy_of_input_RelacionadoA'", repo.SuraClaims.Acuerdos.Copy_of_input_RelacionadoAInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.SuraClaims.Acuerdos.Copy_of_input_RelacionadoAInfo.WaitForNotExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Acuerdos.bttn_Actualizar' at Center.", repo.SuraClaims.Acuerdos.bttn_ActualizarInfo, new RecordItemIndex(3));
+            repo.SuraClaims.Acuerdos.bttn_Actualizar.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Acuerdos.txt_Acuerdo'", repo.SuraClaims.Acuerdos.txt_AcuerdoInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            repo.SuraClaims.Acuerdos.txt_AcuerdoInfo.WaitForExists(30000);
             
         }
 

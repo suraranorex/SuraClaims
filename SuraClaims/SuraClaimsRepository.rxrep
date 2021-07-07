@@ -323,6 +323,26 @@ name="SuraClaimsRepository">
 					<item
 					addcaps="unknown,webelement,spantag"
 					capname="spantag"
+					id="cc61c545-d610-4292-a59f-0d559d0dd538"
+					name="menu_Reclamos"
+					refimgid="a54d336c-040f-43b2-a2a0-8bf9c9d606ca"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Reclamos']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="8ffd63ca-aa9e-4000-a04d-b1115a6518e7"
+					name="menu_PlanDeAccion"
+					refimgid="a54d336c-040f-43b2-a2a0-8bf9c9d606ca"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//div[#'Claim:MenuLinks-body']//span[@innertext='Plan de acción']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
 					id="bf179f07-d9fe-4560-9400-31feb7032340"
 					name="title_PlanDeTrabajo"
 					refimgid="b7236de6-ee95-4d3a-92b6-4c05ab5427b6"
@@ -558,6 +578,16 @@ name="SuraClaimsRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'ClaimFinancialsSummary-tbody']//span[@innertext&gt;'Datos financieros (Total incurrido:']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="spantag"
+				id="7901b671-18f7-435a-a060-0f24975c3915"
+				name="txt_Reclamos"
+				refimgid="0bc65920-3fc5-480d-8881-d6e46babbb3b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'ClaimExposures-tbody']//span[@innertext='Reclamos']
 				</item>
 			</folder>
 			<folder
@@ -1722,6 +1752,28 @@ name="SuraClaimsRepository">
 					robustPath=""
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td/div[@innertext='Parcial']/../..//td/div[@innertext~$Importe and @innertext~'$']
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="318ebf83-4363-4923-ade9-7708225236fe"
+					name="input_Beneficiario"
+					refimgid="29c5b250-ce6d-41ba-a9de-256bdbe97fc7"
+					refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr/td/div/table/tbody/tr[2]/td/div/table/tbody/tr[11]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[2]/div"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table/?/?/tr//table/tbody/tr[2]//table/tbody/tr[11]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[2]/div
+					</item>
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="divtag"
+					id="886fd76a-3205-4f0e-b9b1-6a469100d48b"
+					name="XGridBodyXGridWithColLinesXGrid"
+					refimgid="3a94b40f-4890-4deb-879a-90fc1b4b810b"
+					refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr/td/div/table/tbody/tr[2]/td/div/table/tbody/tr[11]/td/div/div[3]"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[2]/td/div/table/tbody/tr[11]/td/div/div[3]
 					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']
@@ -4005,6 +4057,233 @@ name="SuraClaimsRepository">
 			</folder>
 			<folder
 			capname="unknown"
+			id="60ee0e56-57da-409f-955b-b0bb896b6819"
+			isrooted="False"
+			name="Reclamos"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="inputtag"
+				id="a7d6137a-c6fe-455c-b301-dd86b13d4e1f"
+				name="rdb_AntecedentesSiniestrales1"
+				refimgid="7e64748c-9a7a-4b59-8bd5-7fd35b0f8a59"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Posee antecedentes siniestrales que podrian ser vinculantes con este hecho']/../..//label[@innertext='No']/..//input[@type='button'][1]
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="inputtag"
+				id="229ca282-793a-4ce3-be12-33ba17cf9276"
+				name="rdb_AntecedentesFraude1"
+				refimgid="7e64748c-9a7a-4b59-8bd5-7fd35b0f8a59"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Posee antecedentes de fraude']/../..//label[@innertext='No']/..//input[@type='button'][1]
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="inputtag"
+				id="7fb907df-3297-4a3c-aee3-84e976b95a67"
+				name="rdb_AntecedentesSiniestrales2"
+				refimgid="7e64748c-9a7a-4b59-8bd5-7fd35b0f8a59"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Posee antecedentes siniestrales que podrian ser vinculantes con este hecho']/../..//label[@innertext='No']/..//input[@type='button'][2]
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="inputtag"
+				id="5b968797-a6ba-45c1-9deb-6aa18663de64"
+				name="rdb_AntecedentesFraude2"
+				refimgid="7e64748c-9a7a-4b59-8bd5-7fd35b0f8a59"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext='Posee antecedentes de fraude']/../..//label[@innertext='No']/..//input[@type='button'][1]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="43bafc28-3dac-4fa2-a836-004ccda26818"
+				name="tag_Reclamo"
+				refimgid="9d777ca5-2740-46a9-9961-ba5fd3617732"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//a[@innertext~'[0-9]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="spantag"
+				id="844acba5-2b04-4d47-898b-b0aefeb29063"
+				name="txt_ItemReclamo"
+				refimgid="4c826939-a249-4edd-ab40-7592bdc64969"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~$CodigoReclamo and @innertext~'\(']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="57de4fa4-03ab-46f0-bbcc-03808d1d4601"
+				name="lbl_InformacionAdicional"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Información Adicional']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="4dbcce09-1bf4-49c9-82b2-a61201609d33"
+				name="lbl_IndicadorFraude"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Indicador de Fraude']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="36ae5e27-f38a-4296-a033-dfe2cccb21a2"
+				name="bttn_Editar"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'ditar']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="95f6c385-23a4-4ff2-84fd-b8580c0c06f9"
+				name="bttn_Aceptar"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Aceptar']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="bff41a54-823e-4cd5-97ae-2b8127112897"
+				name="bttn_Actualizar"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'alizar']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="a1edaea4-4c4c-438b-8350-51b0333d5263"
+				name="bttn_FinalizarChecklist"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Finalizar Checklist']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
+				id="368271a9-8a5c-4d3b-bf7b-45a5b7073e8f"
+				name="bttn_CheckListFinalizado"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Checklist Fraude Finalizado']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="9fb84b22-4348-478f-95bf-5867a7678088"
+				name="txt_InformacionAdicionalReclamo"
+				refimgid="a4cc4f1f-26d0-45a0-a8b6-e4db61f5404e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext&gt;'Informaci&#243;n Adicional Reclamo']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="432dc516-f1cc-4d0b-a126-8a35bd29fb4c"
+				name="txt_VehiculoInvolucrado"
+				refimgid="a4cc4f1f-26d0-45a0-a8b6-e4db61f5404e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//label[@innertext='Vehículo Involucrado']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="285e257f-c1f7-4a78-b124-66318316c0ae"
+				name="input_PorcentajeResponsabilidad"
+				refimgid="36d809a5-3554-4def-b1c6-924811ef9d3e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Porcentaje de responsabilidad']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="a370e702-4f0d-4690-8e14-1d45787b8116"
+				name="Copy_of_input_PorcentajeResponsabilidad"
+				refimgid="36d809a5-3554-4def-b1c6-924811ef9d3e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Porcentaje de responsabilidad']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="11897f3f-3874-41b4-9d41-83fa96409b22"
+				name="input_Vehiculo"
+				refimgid="36d809a5-3554-4def-b1c6-924811ef9d3e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Vehículo']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="spantag"
+				id="8be0fe2f-0d8e-469c-af12-0c6e7899cd93"
+				name="input_Incidente"
+				refimgid="36d809a5-3554-4def-b1c6-924811ef9d3e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Incidente de vehículo']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="atag"
+				id="c84651ae-a4ea-4f4a-8d1a-383a136a9d9a"
+				name="arrow_Vehiculo"
+				refimgid="36d809a5-3554-4def-b1c6-924811ef9d3e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@class='g-input-suffix']//a
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="spantag"
+				id="bdebee08-1884-4e25-8d37-1503c9bcfdb8"
+				name="option_EditarDetalles"
+				refimgid="36d809a5-3554-4def-b1c6-924811ef9d3e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Editar detalles del incidente']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="94b02da5-128c-4558-a5f8-96a28b379d60"
+				name="input_AjusteDanios"
+				refimgid="2f4070b7-3dd1-4652-ac99-84ad518712b6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Ajuste de daño']/../..//input
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
 			id="0d55e973-2dca-4495-b1f3-d6254f37d1d8"
 			isrooted="False"
 			name="AnulacionPago"
@@ -4338,6 +4617,196 @@ name="SuraClaimsRepository">
 			searchtimeout="30000ms">
 				/dom[@domain=$Ambiente]//li[@innertext~$CausaPago]
 			</item>
+			<folder
+			capname="unknown"
+			id="22bc391e-e14b-4517-be03-9d625630b3f1"
+			isrooted="False"
+			name="Acuerdos"
+			searchtimeout="0ms">
+				<item
+				capname="spantag"
+				id="70cd42c3-c0b2-467c-b6df-02c5209b4686"
+				name="bttn_NuevoAcuerdo"
+				refimgid="4803a79e-9d79-4480-b937-47c8abfe9c58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'uevo acuerdo' and @id~'Button']
+				</item>
+				<item
+				capname="spantag"
+				id="e9344964-1b0c-477e-ae8b-f2eff68c28de"
+				name="bttn_Actualizar"
+				refimgid="4803a79e-9d79-4480-b937-47c8abfe9c58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'alizar']
+				</item>
+				<item
+				capname="spantag"
+				id="51f67891-5b39-406a-b3e9-6217535438a7"
+				name="bttn_Editar"
+				refimgid="4803a79e-9d79-4480-b937-47c8abfe9c58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'ditar']
+				</item>
+				<item
+				capname="spantag"
+				id="93381fc2-106d-45a4-818f-6d587a5d1f9b"
+				name="txt_NuevoAcuerdo"
+				refimgid="4803a79e-9d79-4480-b937-47c8abfe9c58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'uevo acuerdo' and @id!~'Button']
+				</item>
+				<item
+				capname="inputtag"
+				id="4d6cdc41-8a14-4434-b887-30094bd6ce74"
+				name="input_RelacionadoA"
+				robustPath="/dom[@domain=$Ambiente]/element"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Relacionado a']/../..//input
+				</item>
+				<item
+				capname="inputtag"
+				id="9757dd2a-78e3-4a5f-baa4-889845c892ef"
+				name="Copy_of_input_RelacionadoA"
+				robustPath="/dom[@domain=$Ambiente]/element"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Relacionado a']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				capname="inputtag"
+				id="abebd227-d74d-4c49-b92f-59d1c12cef58"
+				name="input_TipoAcuerdo"
+				robustPath="/dom[@domain=$Ambiente]/element"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Tipo de Acuerdo']/../..//input
+				</item>
+				<item
+				capname="inputtag"
+				id="933be26f-2b07-4147-8a30-8fb96dfade73"
+				name="Copy_of_input_TipoAcuerdo"
+				robustPath="/dom[@domain=$Ambiente]/element"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Tipo de Acuerdo']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				capname="litag"
+				id="4f8ad5c4-b1db-41d3-b390-d1596be6cc69"
+				name="option_Interceptacion"
+				robustPath="/dom[@domain=$Ambiente]/element"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Interceptación']
+				</item>
+				<item
+				capname="litag"
+				id="2836602e-1b53-4c92-8394-0fbe4bd813c0"
+				name="option_ReclamoTercero"
+				robustPath="/dom[@domain=$Ambiente]/element"
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'3']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="spantag"
+				id="975f2eaf-e85b-4df5-8577-6150cc78bae9"
+				name="txt_Acuerdo"
+				refimgid="164904b0-e9fe-4529-b35b-77c82db7e6af"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Acuerdos' and @id~'ClaimNegotiationsScreen']
+				</item>
+				<item
+				capname="spantag"
+				id="4a25a091-0c38-4ce9-b85a-6654054e800b"
+				name="bttn_AgregarIndemnizacion"
+				refimgid="4803a79e-9d79-4480-b937-47c8abfe9c58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'gregar' and @id~'SettlementCompensation']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="af561795-5ddb-4a7d-a4dd-60eaaf9c3297"
+				name="arrow_Beneficiario"
+				refimgid="c37ffea7-c9b1-48d3-af6e-5126e45cde97"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//img[@id~'BeneficiaryCellSuraMenuIcon']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="divtag"
+				id="16054234-03e2-467b-9bc9-0cd4281ac987"
+				name="input_Beneficiario"
+				refimgid="c37ffea7-c9b1-48d3-af6e-5126e45cde97"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//img[@id~'BeneficiaryCellSuraMenuIcon']/../..//div[@class~'cell-inner']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="litag"
+				id="f881d3c0-cd1e-40a2-b26b-19d331b44fc6"
+				name="option_Beneficiario"
+				refimgid="c37ffea7-c9b1-48d3-af6e-5126e45cde97"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~$RelacionadoA]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b965eb2c-4c18-4a11-97a5-a4f2594a6670"
+				name="txt_RelacionadoA"
+				refimgid="b62dc1b9-5869-47a7-a991-ef0f221ae5ab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'[A-Z.][a-z.]+' and @innertext~'30']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="litag"
+				id="e01d18b3-f26f-44db-95e1-b1b0b91bc8aa"
+				name="option_Indemnizacion"
+				refimgid="c37ffea7-c9b1-48d3-af6e-5126e45cde97"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Indemnización']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="litag"
+				id="2045bfec-18fe-4f84-849b-31b90f7349e7"
+				name="option_Cheque"
+				refimgid="c37ffea7-c9b1-48d3-af6e-5126e45cde97"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Cheque']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="853859f0-a7d1-43fd-a7cb-0b2bcf491c0e"
+				name="celda_Indemnizacion"
+				refimgid="7ff2bab8-3ec8-4c90-ad33-ed5de0915fb8"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//div[@id~'SettlementCompensationLV-body']//div[@class~'cell-inner'][6]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="79177010-1ac2-4150-a139-ddecb8a561c3"
+				name="celda_Ninguna"
+				refimgid="b62dc1b9-5869-47a7-a991-ef0f221ae5ab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@class~'cell-inner' and @innertext~'ninguna']
+				</item>
+			</folder>
 			<basepath>
 				/dom[@domain=$Ambiente]
 			</basepath>
@@ -4717,6 +5186,14 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="7ffce370-41b3-46bf-bd04-c0884c142557"
 		name="Apellido">
+		</var>
+		<var
+		id="94400bf1-e186-474e-a5f3-ce89163bfe40"
+		name="CodigoReclamo">
+		</var>
+		<var
+		id="3c097b8f-2e66-45dc-8d20-01cf001baed3"
+		name="RelacionadoA">
 		</var>
 	</variables>
 </repository>

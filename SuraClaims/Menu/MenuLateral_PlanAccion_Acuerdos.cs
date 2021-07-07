@@ -20,50 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Administracion
+namespace SuraClaims.Menu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The VerificarEstado_ColaMensajes recording.
+    ///The MenuLateral_PlanAccion_Acuerdos recording.
     /// </summary>
-    [TestModule("057bbe76-7118-471d-b26e-9ef3c771d4c6", ModuleType.Recording, 1)]
-    public partial class VerificarEstado_ColaMensajes : ITestModule
+    [TestModule("91d18095-5ea7-445f-b6d2-122224c8731e", ModuleType.Recording, 1)]
+    public partial class MenuLateral_PlanAccion_Acuerdos : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static VerificarEstado_ColaMensajes instance = new VerificarEstado_ColaMensajes();
+        static MenuLateral_PlanAccion_Acuerdos instance = new MenuLateral_PlanAccion_Acuerdos();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerificarEstado_ColaMensajes()
+        public MenuLateral_PlanAccion_Acuerdos()
         {
-            hayProcesosSuspendidos = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static VerificarEstado_ColaMensajes Instance
+        public static MenuLateral_PlanAccion_Acuerdos Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _hayProcesosSuspendidos;
-
         /// <summary>
-        /// Gets or sets the value of variable hayProcesosSuspendidos.
+        /// Gets or sets the value of variable Ambiente.
         /// </summary>
-        [TestVariable("0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2")]
-        public string hayProcesosSuspendidos
+        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
+        public string Ambiente
         {
-            get { return _hayProcesosSuspendidos; }
-            set { _hayProcesosSuspendidos = value; }
+            get { return repo.Ambiente; }
+            set { repo.Ambiente = value; }
         }
 
 #endregion
@@ -92,8 +89,16 @@ namespace SuraClaims.Administracion
 
             Init();
 
-            haySuspendidos();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Generales.MenuLateral.menu_PlanDeAccion' at Center.", repo.SuraClaims.Generales.MenuLateral.menu_PlanDeAccionInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Generales.MenuLateral.menu_PlanDeAccion.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Acuerdos.bttn_NuevoAcuerdo' at Center.", repo.SuraClaims.Acuerdos.bttn_NuevoAcuerdoInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Acuerdos.bttn_NuevoAcuerdo.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Acuerdos.txt_NuevoAcuerdo'", repo.SuraClaims.Acuerdos.txt_NuevoAcuerdoInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.SuraClaims.Acuerdos.txt_NuevoAcuerdoInfo.WaitForExists(30000);
             
         }
 

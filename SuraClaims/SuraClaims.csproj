@@ -123,6 +123,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acuerdos\CrearAcuerdo.cs">
+      <BoundTo>07074693-6eb1-4d98-a484-cc6b01e793f4</BoundTo>
+      <DependentUpon>CrearAcuerdo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19cd0841-cb0a-4589-b591-c8ddeedf2861</id>
+    </Compile>
+    <Compile Include="Acuerdos\CrearAcuerdo.UserCode.cs">
+      <BoundTo>07074693-6eb1-4d98-a484-cc6b01e793f4</BoundTo>
+      <DependentUpon>CrearAcuerdo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dc348336-c757-46ed-a670-44d4b110dec5</id>
+    </Compile>
+    <Compile Include="Acuerdos\EditarAcuerdo.cs">
+      <BoundTo>94936fb0-0202-4839-8262-090bb5741baf</BoundTo>
+      <DependentUpon>EditarAcuerdo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>15934120-22b8-4c1d-b8cd-027a2e84b89c</id>
+    </Compile>
+    <Compile Include="Acuerdos\EditarAcuerdo.UserCode.cs">
+      <BoundTo>94936fb0-0202-4839-8262-090bb5741baf</BoundTo>
+      <DependentUpon>EditarAcuerdo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1169844b-7504-44b5-ae59-5da16f8635e3</id>
+    </Compile>
     <Compile Include="Administracion\ReaunudarProcesos.cs">
       <BoundTo>96425e72-3d7a-4bb3-ae56-f47fece3a405</BoundTo>
       <DependentUpon>ReaunudarProcesos.rxrec</DependentUpon>
@@ -362,6 +386,30 @@
       <DependentUpon>MenuLateral_JuiciosyMediaciones.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9d0653f7-bb9a-44aa-83da-2df100072cb9</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_PlanAccion_Acuerdos.cs">
+      <BoundTo>a3281dca-0e62-46f3-9671-8ce1e165393e</BoundTo>
+      <DependentUpon>MenuLateral_PlanAccion_Acuerdos.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba1097fa-68d7-4d35-8223-7676c72ef0d1</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_PlanAccion_Acuerdos.UserCode.cs">
+      <BoundTo>a3281dca-0e62-46f3-9671-8ce1e165393e</BoundTo>
+      <DependentUpon>MenuLateral_PlanAccion_Acuerdos.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>599fefdb-fab0-4eb2-b2fc-be5292741d21</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Reclamos.cs">
+      <BoundTo>30bdc81e-a705-4889-8054-00e8f8c0be6b</BoundTo>
+      <DependentUpon>MenuLateral_Reclamos.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>625bc530-5ad5-4d52-97db-4ddb91c60935</id>
+    </Compile>
+    <Compile Include="Menu\MenuLateral_Reclamos.UserCode.cs">
+      <BoundTo>30bdc81e-a705-4889-8054-00e8f8c0be6b</BoundTo>
+      <DependentUpon>MenuLateral_Reclamos.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>150e3193-77d2-42fd-ab02-d39950945d6a</id>
     </Compile>
     <Compile Include="Menu\MenuLateral_Servicio.cs">
       <BoundTo>3e92dcbe-cf32-496f-8efa-2ca171473366</BoundTo>
@@ -1245,6 +1293,78 @@
     <Compile Include="Program.cs">
       <id>5c1e12f1-5a05-471e-8a7a-65354866eb58</id>
     </Compile>
+    <Compile Include="Reclamos\ActualizarReclamo.cs">
+      <BoundTo>276fb564-bc09-4274-997a-b71c9531b5b9</BoundTo>
+      <DependentUpon>ActualizarReclamo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6dbeac5a-589f-4fde-9efb-40b6e8d36982</id>
+    </Compile>
+    <Compile Include="Reclamos\ActualizarReclamo.UserCode.cs">
+      <BoundTo>276fb564-bc09-4274-997a-b71c9531b5b9</BoundTo>
+      <DependentUpon>ActualizarReclamo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7237a9f4-8a98-4026-b4c7-25a759910d6e</id>
+    </Compile>
+    <Compile Include="Reclamos\Completar_AjusteDanios.cs">
+      <BoundTo>3514f738-cbac-494e-af44-edac5b531e81</BoundTo>
+      <DependentUpon>Completar_AjusteDanios.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>13e49cda-c256-4c1f-9756-878ac42c92fe</id>
+    </Compile>
+    <Compile Include="Reclamos\Completar_AjusteDanios.UserCode.cs">
+      <BoundTo>3514f738-cbac-494e-af44-edac5b531e81</BoundTo>
+      <DependentUpon>Completar_AjusteDanios.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>459f5583-87a3-4747-888c-6de81417c22d</id>
+    </Compile>
+    <Compile Include="Reclamos\Completar_Checklist.cs">
+      <BoundTo>154266ae-cc67-4986-bfc0-157358417d37</BoundTo>
+      <DependentUpon>Completar_Checklist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19dd47f8-503e-4cc3-bcb7-d28ecb4c6eca</id>
+    </Compile>
+    <Compile Include="Reclamos\Completar_Checklist.UserCode.cs">
+      <BoundTo>154266ae-cc67-4986-bfc0-157358417d37</BoundTo>
+      <DependentUpon>Completar_Checklist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>113d27b8-2548-4708-8ebf-3415da97ce36</id>
+    </Compile>
+    <Compile Include="Reclamos\Completar_PorcentajeResponsabilidad.cs">
+      <BoundTo>cf00f6a4-a8d6-499d-802a-8cbbf1c64a1b</BoundTo>
+      <DependentUpon>Completar_PorcentajeResponsabilidad.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e25d5ca4-5784-4f59-b623-3e5b4bf5a912</id>
+    </Compile>
+    <Compile Include="Reclamos\Completar_PorcentajeResponsabilidad.UserCode.cs">
+      <BoundTo>cf00f6a4-a8d6-499d-802a-8cbbf1c64a1b</BoundTo>
+      <DependentUpon>Completar_PorcentajeResponsabilidad.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3203c061-08f1-4366-adfb-dfef2334b9fa</id>
+    </Compile>
+    <Compile Include="Reclamos\Editar.cs">
+      <BoundTo>509e7131-9b02-47c0-8f82-187aeb78da2d</BoundTo>
+      <DependentUpon>Editar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>061ab6a1-8921-4c17-b516-6d34a84c6354</id>
+    </Compile>
+    <Compile Include="Reclamos\Editar.UserCode.cs">
+      <BoundTo>509e7131-9b02-47c0-8f82-187aeb78da2d</BoundTo>
+      <DependentUpon>Editar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f4cf9a2-9f15-4161-9e34-2aee716e7e6f</id>
+    </Compile>
+    <Compile Include="Reclamos\IngresarReclamo.cs">
+      <BoundTo>12fc8072-378f-4ddf-8364-2372119c332e</BoundTo>
+      <DependentUpon>IngresarReclamo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d70f466-0367-4f1f-99c3-d1e6f7400c54</id>
+    </Compile>
+    <Compile Include="Reclamos\IngresarReclamo.UserCode.cs">
+      <BoundTo>12fc8072-378f-4ddf-8364-2372119c332e</BoundTo>
+      <DependentUpon>IngresarReclamo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5dee7330-9cbb-4863-b365-50e4133c281e</id>
+    </Compile>
     <Compile Include="SISE\CloseAUT.cs">
       <BoundTo>fe32222a-4f5b-4e6c-9929-9364f80f99c2</BoundTo>
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
@@ -1366,6 +1486,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>9db35161-8586-45e6-bb76-2266eec61159</id>
     </Content>
+    <None Include="Acuerdos\CrearAcuerdo.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>07074693-6eb1-4d98-a484-cc6b01e793f4</id>
+      <recordtableid>af355a22-b361-455e-a46f-d53a22291f78</recordtableid>
+    </None>
+    <None Include="Acuerdos\EditarAcuerdo.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>94936fb0-0202-4839-8262-090bb5741baf</id>
+      <recordtableid>1c56b184-595a-4587-8c6c-d845721b33fa</recordtableid>
+    </None>
     <None Include="Administracion\ReaunudarProcesos.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>96425e72-3d7a-4bb3-ae56-f47fece3a405</id>
@@ -1410,6 +1540,13 @@
       <DependentUpon>SuraClaims.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>5940df33-0065-4e02-82bb-e30eea6e9cae</id>
+    </Content>
+    <Content Include="CrearAcuerdos.xlsx">
+      <Link>CrearAcuerdos.xlsx</Link>
+      <BoundTo>70e170b1-1253-45ea-8bd9-db277511b62f</BoundTo>
+      <DependentUpon>SuraClaims.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>625f407a-c6d2-498d-8047-0f86e66267ff</id>
     </Content>
     <None Include="Generales\InformacionBasica_CompletarTelMail.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1500,6 +1637,16 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>db82a624-d45f-439b-8cee-18d15d8f5c6d</id>
       <recordtableid>f00b5f5d-3efc-4768-8bc0-5ced6ff2d76d</recordtableid>
+    </None>
+    <None Include="Menu\MenuLateral_PlanAccion_Acuerdos.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>a3281dca-0e62-46f3-9671-8ce1e165393e</id>
+      <recordtableid>91d18095-5ea7-445f-b6d2-122224c8731e</recordtableid>
+    </None>
+    <None Include="Menu\MenuLateral_Reclamos.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>30bdc81e-a705-4889-8054-00e8f8c0be6b</id>
+      <recordtableid>a545bd48-f2b5-4ac9-a3db-ee2ccbae4b45</recordtableid>
     </None>
     <None Include="Menu\MenuLateral_Servicio.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
@@ -1925,6 +2072,36 @@
       <recordtableid>accabe32-c95e-42e5-a325-01f624602d1c</recordtableid>
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
     </None>
+    <None Include="Reclamos\ActualizarReclamo.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>276fb564-bc09-4274-997a-b71c9531b5b9</id>
+      <recordtableid>a26bff71-87f3-49ee-a14d-bc02081a330a</recordtableid>
+    </None>
+    <None Include="Reclamos\Completar_AjusteDanios.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>3514f738-cbac-494e-af44-edac5b531e81</id>
+      <recordtableid>4a37b052-84cc-4c62-8b0d-505b4a9b29f1</recordtableid>
+    </None>
+    <None Include="Reclamos\Completar_Checklist.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>154266ae-cc67-4986-bfc0-157358417d37</id>
+      <recordtableid>a995836d-55a4-4293-bfd7-2b567fe13d8d</recordtableid>
+    </None>
+    <None Include="Reclamos\Completar_PorcentajeResponsabilidad.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>cf00f6a4-a8d6-499d-802a-8cbbf1c64a1b</id>
+      <recordtableid>76e2c7de-f5c1-4f9d-afd8-1ec5e2090917</recordtableid>
+    </None>
+    <None Include="Reclamos\Editar.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>509e7131-9b02-47c0-8f82-187aeb78da2d</id>
+      <recordtableid>176c4576-6f6e-4b59-8219-6cf959d9e473</recordtableid>
+    </None>
+    <None Include="Reclamos\IngresarReclamo.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>12fc8072-378f-4ddf-8364-2372119c332e</id>
+      <recordtableid>3d8ef32d-056a-41ad-8ba2-b7cc4500e8f6</recordtableid>
+    </None>
     <None Include="SISE\CloseAUT.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>fe32222a-4f5b-4e6c-9929-9364f80f99c2</id>
@@ -2046,6 +2223,12 @@
     </Folder>
     <Folder Include="Inspecciones">
       <id>8f645226-8ed9-4166-b792-40332fd07894</id>
+    </Folder>
+    <Folder Include="Acuerdos">
+      <id>1cbf934a-a4a5-436d-8804-70b3ec2666a7</id>
+    </Folder>
+    <Folder Include="Reclamos">
+      <id>761847bc-bd3b-4730-a4b5-c9feecbac9a1</id>
     </Folder>
     <Folder Include="SISE">
       <id>86b31819-898d-4c1a-817d-69c8dc215b17</id>
