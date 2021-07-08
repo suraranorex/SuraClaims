@@ -25,6 +25,32 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9afd7b81-1eeb-4688-a503-601310987fa1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bd7f565b-fa68-4c3b-adf2-1ff68f93be58"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext~'Detalles']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -475,10 +501,38 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="ff627934-f6af-4474-a2b6-d5037d157412"
+		searchpropertyid="626fa8d4-3cc4-4059-bbab-0c55a3fb0956"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5b968797-a6ba-45c1-9deb-6aa18663de64"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//span[@innertext='Posee antecedentes de fraude']/../..//label[@innertext='No']/..//input[@type='button'][1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="39bfcaa2-5088-4fc9-b41b-21d283a75a83">
 			<comment>
 			</comment>
 			<bindings>
@@ -492,16 +546,19 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+			<arguments
+			id="7894b6ef-98d1-4ae5-82ff-cc1b13e352ea">
+			</arguments>
+		</invokeactionrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="c0e85ab2-b6e0-48d4-b228-0138e553405a"
+		searchpropertyid="ff627934-f6af-4474-a2b6-d5037d157412"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -510,10 +567,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="5b968797-a6ba-45c1-9deb-6aa18663de64"
+			id="95f6c385-23a4-4ff2-84fd-b8580c0c06f9"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$Ambiente]//span[@innertext='Posee antecedentes de fraude']/../..//label[@innertext='No']/..//input[@type='button'][1]
+					/dom[@domain=$Ambiente]//span[@innertext~'Aceptar']
 				</path>
 				<robustPath>
 				</robustPath>

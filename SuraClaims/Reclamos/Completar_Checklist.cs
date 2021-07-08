@@ -89,49 +89,60 @@ namespace SuraClaims.Reclamos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.input_Vehiculo'", repo.SuraClaims.Reclamos.input_VehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.lbl_Detalles' at Center.", repo.SuraClaims.Reclamos.lbl_DetallesInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Reclamos.lbl_Detalles.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.input_Vehiculo'", repo.SuraClaims.Reclamos.input_VehiculoInfo, new ActionTimeout(30000), new RecordItemIndex(1));
             repo.SuraClaims.Reclamos.input_VehiculoInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.arrow_Vehiculo' at Center.", repo.SuraClaims.Reclamos.arrow_VehiculoInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.arrow_Vehiculo' at Center.", repo.SuraClaims.Reclamos.arrow_VehiculoInfo, new RecordItemIndex(2));
             repo.SuraClaims.Reclamos.arrow_Vehiculo.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.option_EditarDetalles' at Center.", repo.SuraClaims.Reclamos.option_EditarDetallesInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.option_EditarDetalles' at Center.", repo.SuraClaims.Reclamos.option_EditarDetallesInfo, new RecordItemIndex(3));
             repo.SuraClaims.Reclamos.option_EditarDetalles.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.input_Incidente'", repo.SuraClaims.Reclamos.input_IncidenteInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.input_Incidente'", repo.SuraClaims.Reclamos.input_IncidenteInfo, new ActionTimeout(30000), new RecordItemIndex(4));
             repo.SuraClaims.Reclamos.input_IncidenteInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.lbl_IndicadorFraude' at Center.", repo.SuraClaims.Reclamos.lbl_IndicadorFraudeInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.lbl_IndicadorFraude' at Center.", repo.SuraClaims.Reclamos.lbl_IndicadorFraudeInfo, new RecordItemIndex(5));
             repo.SuraClaims.Reclamos.lbl_IndicadorFraude.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.txt_VehiculoInvolucrado'", repo.SuraClaims.Reclamos.txt_VehiculoInvolucradoInfo, new ActionTimeout(30000), new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.txt_VehiculoInvolucrado'", repo.SuraClaims.Reclamos.txt_VehiculoInvolucradoInfo, new ActionTimeout(30000), new RecordItemIndex(6));
             repo.SuraClaims.Reclamos.txt_VehiculoInvolucradoInfo.WaitForExists(30000);
             
             // Completo opciones
-            Report.Log(ReportLevel.Info, "Section", "Completo opciones", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Section", "Completo opciones", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.rdb_AntecedentesSiniestrales1' at Center.", repo.SuraClaims.Reclamos.rdb_AntecedentesSiniestrales1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.rdb_AntecedentesSiniestrales1' at Center.", repo.SuraClaims.Reclamos.rdb_AntecedentesSiniestrales1Info, new RecordItemIndex(8));
             repo.SuraClaims.Reclamos.rdb_AntecedentesSiniestrales1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.rdb_AntecedentesFraude1' at Center.", repo.SuraClaims.Reclamos.rdb_AntecedentesFraude1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.rdb_AntecedentesFraude1' at Center.", repo.SuraClaims.Reclamos.rdb_AntecedentesFraude1Info, new RecordItemIndex(9));
             repo.SuraClaims.Reclamos.rdb_AntecedentesFraude1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.rdb_AntecedentesSiniestrales2' at Center.", repo.SuraClaims.Reclamos.rdb_AntecedentesSiniestrales2Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.rdb_AntecedentesSiniestrales2' at Center.", repo.SuraClaims.Reclamos.rdb_AntecedentesSiniestrales2Info, new RecordItemIndex(10));
             repo.SuraClaims.Reclamos.rdb_AntecedentesSiniestrales2.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.bttn_Aceptar' at Center.", repo.SuraClaims.Reclamos.bttn_AceptarInfo, new RecordItemIndex(10));
-            repo.SuraClaims.Reclamos.bttn_Aceptar.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.rdb_AntecedentesFraude2' at Center.", repo.SuraClaims.Reclamos.rdb_AntecedentesFraude2Info, new RecordItemIndex(11));
             repo.SuraClaims.Reclamos.rdb_AntecedentesFraude2.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(12));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking PerformClick() on item 'SuraClaims.Reclamos.bttn_Aceptar'.", repo.SuraClaims.Reclamos.bttn_AceptarInfo, new RecordItemIndex(13));
+            repo.SuraClaims.Reclamos.bttn_Aceptar.PerformClick();
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.bttn_Aceptar' at Center.", repo.SuraClaims.Reclamos.bttn_AceptarInfo, new RecordItemIndex(14));
+            //repo.SuraClaims.Reclamos.bttn_Aceptar.Click();
+            //Delay.Milliseconds(0);
             
         }
 

@@ -66,6 +66,16 @@ namespace SuraClaims.Administracion
             set { _hayProcesosSuspendidos = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable Ambiente.
+        /// </summary>
+        [TestVariable("e7903828-6ac1-46d3-a887-f52fdafb621a")]
+        public string Ambiente
+        {
+            get { return repo.Ambiente; }
+            set { repo.Ambiente = value; }
+        }
+
 #endregion
 
         /// <summary>

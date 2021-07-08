@@ -2923,8 +2923,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="8"
-			minrange="1"
+			maxrange="4"
+			minrange="3"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -3620,8 +3620,8 @@
 			datarangeactive="True"
 			datasource="CrearAcuerdos"
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701"
-			maxrange="1"
-			minrange="0"
+			maxrange="2"
+			minrange="2"
 			name="Precondiciones_Acuerdos">
 				<parameters>
 					<param
@@ -3948,8 +3948,8 @@
 			datarangeactive="True"
 			datasource="CrearAcuerdos"
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712"
-			maxrange="1"
-			minrange="0"
+			maxrange="2"
+			minrange="2"
 			name="CrearAcuerdos">
 			</testcase>
 			<testmodule
@@ -4397,7 +4397,7 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="19"
+			maxrange="12"
 			minrange="12"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
@@ -4980,6 +4980,12 @@
 					variableid="529ff587-6443-4460-8f8d-e4787bdffd8a"
 					variablename="Descripcion">
 					</var>
+					<var
+					dataname="INCENDIO"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e9ca260d-4e46-4817-af48-e015c794bdc6"
+					variablename="INCENDIO">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -5149,6 +5155,14 @@
 			name="Completar_AjusteDanios"
 			ref="4a37b052-84cc-4c62-8b0d-505b4a9b29f1"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="f0157bf7-3464-4ef7-99da-dd30ec2fa342"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e4bf6c50-cd65-4073-abbc-aa9b44b83670"
@@ -5327,31 +5341,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="eb5286d3-1498-455a-a146-e521281452a9"
-			name="301_AjusteDanios">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="paramCodigoReclamo"
-								id="96a34073-85b9-4de0-b2aa-76e1416c0701">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="301">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="ec28f438-445e-47ab-8687-00fda75bb221"
 			name="MenuLateral_DatosFinancieros_Liquidaciones"
@@ -5607,15 +5596,13 @@
 					variableid="0e2c12ab-c4b4-4b49-b8fb-22dc0adb60e2"
 					variablename="hayProcesosSuspendidos">
 					</var>
-				</databinding>
-				<missingdatavariablesbinding>
 					<var
 					dataname="Ambiente"
 					datasourceid="b35e2924-f74b-4727-b4aa-c922e3cbd979"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
-				</missingdatavariablesbinding>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="f5301c6f-7aac-4c83-9c6c-f2bb292474bc"
@@ -7267,21 +7254,17 @@
 						name="Editar">
 						</testmodule>
 						<testmodule
-						id="5b11164d-6b0e-4f72-b0dd-5c95f683211c"
-						name="Completar_Checklist">
-						</testmodule>
-						<testmodule
 						id="50977470-afdc-4229-8260-f4f78a0b6493"
 						name="Completar_PorcentajeResponsabilidad">
 						</testmodule>
-						<smartfoldernode
-						id="eb5286d3-1498-455a-a146-e521281452a9"
-						name="301_AjusteDanios">
-							<testmodule
-							id="e364eb83-f93c-4d23-a7a5-2004be07da68"
-							name="Completar_AjusteDanios">
-							</testmodule>
-						</smartfoldernode>
+						<testmodule
+						id="e364eb83-f93c-4d23-a7a5-2004be07da68"
+						name="Completar_AjusteDanios">
+						</testmodule>
+						<testmodule
+						id="5b11164d-6b0e-4f72-b0dd-5c95f683211c"
+						name="Completar_Checklist">
+						</testmodule>
 						<testmodule
 						id="01b79494-db48-49d0-b4c9-8b7cfc0db8ff"
 						name="ActualizarReclamo">
@@ -7445,7 +7428,7 @@
 		filename="CrearAcuerdos.xlsx"
 		id="f0157bf7-3464-4ef7-99da-dd30ec2fa342"
 		includefile="Checked"
-		lastknownrowcount="3"
+		lastknownrowcount="5"
 		name="CrearAcuerdos"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -8432,7 +8415,40 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
+			id="0fa01c9f-d57e-447f-b343-86361084ca76">
+			</testcontainer>
+			<testcontainer
+			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
+			</testcontainer>
+			<testcontainer
+			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
+			</testcontainer>
+			<testcontainer
+			id="4665d240-f459-49f4-8e5e-a5b97379d41d">
+			</testcontainer>
+			<testcontainer
+			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
+			</testcontainer>
+			<testcontainer
+			id="701180cf-ebf5-4f10-b762-42f1121178f3">
+			</testcontainer>
+			<testcontainer
+			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
+			</testcontainer>
+			<testcontainer
+			id="89fa68a6-9618-4127-aaec-5d106b43550a">
+			</testcontainer>
+			<testcontainer
+			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52">
+			</testcontainer>
+			<testcontainer
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701">
+			</testcontainer>
+			<testcontainer
+			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
@@ -8441,7 +8457,7 @@
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712">
 			</testcontainer>
 			<testcontainer
-			id="eb5286d3-1498-455a-a146-e521281452a9">
+			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -4134,6 +4134,16 @@ name="SuraClaimsRepository">
 				<item
 				addcaps="unknown,webelement,litag"
 				capname="spantag"
+				id="bd7f565b-fa68-4c3b-adf2-1ff68f93be58"
+				name="lbl_Detalles"
+				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Detalles' and @innertext!~'siniestro']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="spantag"
 				id="4dbcce09-1bf4-49c9-82b2-a61201609d33"
 				name="lbl_IndicadorFraude"
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
@@ -4280,6 +4290,26 @@ name="SuraClaimsRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Ajuste de daño']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b3e05dd8-52e5-460d-a80c-9fa508401276"
+				name="txt_CompletarAjusteDanios"
+				refimgid="db8f19dd-3aa7-47cf-afc7-144bb84e4bd2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'Falta el campo obligatorio &quot;Ajuste de da&#241;o&quot;']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="atag"
+				id="bcf1c6d3-d9cd-467f-890e-28afde5361ed"
+				name="a_CompletarAjusteDanios"
+				refimgid="db8f19dd-3aa7-47cf-afc7-144bb84e4bd2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext~'Falta el campo obligatorio &quot;Ajuste de da&#241;o&quot;']/../..//a[@innertext~'[0-9]+']
 				</item>
 			</folder>
 			<folder

@@ -11598,6 +11598,7 @@ namespace SuraClaims
             RepoItemInfo _tag_reclamoInfo;
             RepoItemInfo _txt_itemreclamoInfo;
             RepoItemInfo _lbl_informacionadicionalInfo;
+            RepoItemInfo _lbl_detallesInfo;
             RepoItemInfo _lbl_indicadorfraudeInfo;
             RepoItemInfo _bttn_editarInfo;
             RepoItemInfo _bttn_aceptarInfo;
@@ -11613,6 +11614,8 @@ namespace SuraClaims
             RepoItemInfo _arrow_vehiculoInfo;
             RepoItemInfo _option_editardetallesInfo;
             RepoItemInfo _input_ajustedaniosInfo;
+            RepoItemInfo _txt_completarajustedaniosInfo;
+            RepoItemInfo _a_completarajustedaniosInfo;
 
             /// <summary>
             /// Creates a new Reclamos  folder.
@@ -11627,6 +11630,7 @@ namespace SuraClaims
                 _tag_reclamoInfo = new RepoItemInfo(this, "tag_Reclamo", ".//tbody[#'centerPanel-tbody']//a[@innertext~'[0-9]+']", "", 30000, null, "43bafc28-3dac-4fa2-a836-004ccda26818");
                 _txt_itemreclamoInfo = new RepoItemInfo(this, "txt_ItemReclamo", ".//tbody[#'centerPanel-tbody']//span[@innertext~$CodigoReclamo and @innertext~'\\(']", "", 30000, null, "844acba5-2b04-4d47-898b-b0aefeb29063");
                 _lbl_informacionadicionalInfo = new RepoItemInfo(this, "lbl_InformacionAdicional", ".//span[@innertext~'Información Adicional']", "", 30000, null, "57de4fa4-03ab-46f0-bbcc-03808d1d4601");
+                _lbl_detallesInfo = new RepoItemInfo(this, "lbl_Detalles", ".//span[@innertext~'Detalles' and @innertext!~'siniestro']", "", 30000, null, "bd7f565b-fa68-4c3b-adf2-1ff68f93be58");
                 _lbl_indicadorfraudeInfo = new RepoItemInfo(this, "lbl_IndicadorFraude", ".//span[@innertext~'Indicador de Fraude']", "", 30000, null, "4dbcce09-1bf4-49c9-82b2-a61201609d33");
                 _bttn_editarInfo = new RepoItemInfo(this, "bttn_Editar", ".//span[@innertext~'ditar']", "", 30000, null, "36ae5e27-f38a-4296-a033-dfe2cccb21a2");
                 _bttn_aceptarInfo = new RepoItemInfo(this, "bttn_Aceptar", ".//span[@innertext~'Aceptar']", "", 30000, null, "95f6c385-23a4-4ff2-84fd-b8580c0c06f9");
@@ -11642,6 +11646,8 @@ namespace SuraClaims
                 _arrow_vehiculoInfo = new RepoItemInfo(this, "arrow_Vehiculo", ".//tbody[#'centerPanel-tbody']//div[@class='g-input-suffix']//a", "", 30000, null, "c84651ae-a4ea-4f4a-8d1a-383a136a9d9a");
                 _option_editardetallesInfo = new RepoItemInfo(this, "option_EditarDetalles", ".//span[@innertext~'Editar detalles del incidente']", "", 30000, null, "bdebee08-1884-4e25-8d37-1503c9bcfdb8");
                 _input_ajustedaniosInfo = new RepoItemInfo(this, "input_AjusteDanios", ".//tbody[#'centerPanel-tbody']//span[@innertext='Ajuste de daño']/../..//input", "", 30000, null, "94b02da5-128c-4558-a5f8-96a28b379d60");
+                _txt_completarajustedaniosInfo = new RepoItemInfo(this, "txt_CompletarAjusteDanios", ".//tbody[#'centerPanel-tbody']//div[@innertext~'Falta el campo obligatorio \"Ajuste de daño\"']", "", 30000, null, "b3e05dd8-52e5-460d-a80c-9fa508401276");
+                _a_completarajustedaniosInfo = new RepoItemInfo(this, "a_CompletarAjusteDanios", ".//tbody[#'centerPanel-tbody']//div[@innertext~'Falta el campo obligatorio \"Ajuste de daño\"']/../..//a[@innertext~'[0-9]+']", "", 30000, null, "bcf1c6d3-d9cd-467f-890e-28afde5361ed");
             }
 
             /// <summary>
@@ -11821,6 +11827,30 @@ namespace SuraClaims
                 get
                 {
                     return _lbl_informacionadicionalInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lbl_Detalles item.
+            /// </summary>
+            [RepositoryItem("bd7f565b-fa68-4c3b-adf2-1ff68f93be58")]
+            public virtual Ranorex.SpanTag lbl_Detalles
+            {
+                get
+                {
+                    return _lbl_detallesInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lbl_Detalles item info.
+            /// </summary>
+            [RepositoryItemInfo("bd7f565b-fa68-4c3b-adf2-1ff68f93be58")]
+            public virtual RepoItemInfo lbl_DetallesInfo
+            {
+                get
+                {
+                    return _lbl_detallesInfo;
                 }
             }
 
@@ -12181,6 +12211,54 @@ namespace SuraClaims
                 get
                 {
                     return _input_ajustedaniosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_CompletarAjusteDanios item.
+            /// </summary>
+            [RepositoryItem("b3e05dd8-52e5-460d-a80c-9fa508401276")]
+            public virtual Ranorex.DivTag txt_CompletarAjusteDanios
+            {
+                get
+                {
+                    return _txt_completarajustedaniosInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_CompletarAjusteDanios item info.
+            /// </summary>
+            [RepositoryItemInfo("b3e05dd8-52e5-460d-a80c-9fa508401276")]
+            public virtual RepoItemInfo txt_CompletarAjusteDaniosInfo
+            {
+                get
+                {
+                    return _txt_completarajustedaniosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The a_CompletarAjusteDanios item.
+            /// </summary>
+            [RepositoryItem("bcf1c6d3-d9cd-467f-890e-28afde5361ed")]
+            public virtual Ranorex.ATag a_CompletarAjusteDanios
+            {
+                get
+                {
+                    return _a_completarajustedaniosInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The a_CompletarAjusteDanios item info.
+            /// </summary>
+            [RepositoryItemInfo("bcf1c6d3-d9cd-467f-890e-28afde5361ed")]
+            public virtual RepoItemInfo a_CompletarAjusteDaniosInfo
+            {
+                get
+                {
+                    return _a_completarajustedaniosInfo;
                 }
             }
         }

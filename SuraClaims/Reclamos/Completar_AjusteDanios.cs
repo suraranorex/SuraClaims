@@ -89,15 +89,18 @@ namespace SuraClaims.Reclamos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.input_AjusteDanios' at Center.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.input_AjusteDanios'", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.SuraClaims.Reclamos.input_AjusteDaniosInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.input_AjusteDanios' at Center.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(1));
             repo.SuraClaims.Reclamos.input_AjusteDanios.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1000' with focus on 'SuraClaims.Reclamos.input_AjusteDanios'.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1000' with focus on 'SuraClaims.Reclamos.input_AjusteDanios'.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(2));
             repo.SuraClaims.Reclamos.input_AjusteDanios.PressKeys("1000");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Reclamos.input_AjusteDanios'.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'SuraClaims.Reclamos.input_AjusteDanios'.", repo.SuraClaims.Reclamos.input_AjusteDaniosInfo, new RecordItemIndex(3));
             repo.SuraClaims.Reclamos.input_AjusteDanios.PressKeys("{Return}");
             Delay.Milliseconds(0);
             

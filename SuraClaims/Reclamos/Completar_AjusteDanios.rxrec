@@ -25,6 +25,26 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="87597742-6705-4835-8332-3ff4b85a0086"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="94b02da5-128c-4558-a5f8-96a28b379d60"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Ajuste de daño']/../..//input
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

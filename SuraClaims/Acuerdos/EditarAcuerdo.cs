@@ -170,6 +170,9 @@ namespace SuraClaims.Acuerdos
             repo.SuraClaims.Acuerdos.bttn_Actualizar.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Acuerdos.bttn_NuevoAcuerdo'", repo.SuraClaims.Acuerdos.bttn_NuevoAcuerdoInfo, new ActionTimeout(30000), new RecordItemIndex(19));
+            repo.SuraClaims.Acuerdos.bttn_NuevoAcuerdoInfo.WaitForExists(30000);
+            
         }
 
 #region Image Feature Data
