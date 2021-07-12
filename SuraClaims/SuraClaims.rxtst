@@ -497,8 +497,8 @@
 			datasource="SiniestroAP"
 			errorbehavior="ContinueNextIteration"
 			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_AP">
 				<parameters>
 					<param
@@ -3799,7 +3799,7 @@
 			errorbehavior="ContinueNextIteration"
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701"
 			maxrange="1"
-			minrange="1"
+			minrange="0"
 			name="Precondiciones_Acuerdos">
 				<parameters>
 					<param
@@ -4148,7 +4148,7 @@
 			errorbehavior="ContinueNextIteration"
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712"
 			maxrange="1"
-			minrange="1"
+			minrange="0"
 			name="CrearAcuerdos">
 			</testcase>
 			<testmodule
@@ -4669,8 +4669,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="10"
-			minrange="7"
+			maxrange="12"
+			minrange="12"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -7798,7 +7798,7 @@
 		filename="CrearAcuerdos.xlsx"
 		id="f0157bf7-3464-4ef7-99da-dd30ec2fa342"
 		includefile="Checked"
-		lastknownrowcount="5"
+		lastknownrowcount="7"
 		name="CrearAcuerdos"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -8158,7 +8158,7 @@
 		filename="GeneracionSiniestroMotor.xlsx"
 		id="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 		includefile="Checked"
-		lastknownrowcount="23"
+		lastknownrowcount="26"
 		name="SiniestroMotor"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -8728,9 +8728,6 @@
 			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
 			</testcontainer>
 			<testcontainer
-			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
-			</testcontainer>
-			<testcontainer
 			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
 			</testcontainer>
 			<testcontainer
@@ -8833,61 +8830,16 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
-			id="0fa01c9f-d57e-447f-b343-86361084ca76">
-			</testcontainer>
-			<testcontainer
-			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
-			</testcontainer>
-			<testcontainer
-			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
-			</testcontainer>
-			<testcontainer
-			id="383f3d5a-562e-4b35-b27c-c98779199203">
-			</testcontainer>
-			<testcontainer
-			id="4665d240-f459-49f4-8e5e-a5b97379d41d">
-			</testcontainer>
-			<testcontainer
-			id="4b785685-d9a4-422f-bf84-c41d099771f3">
-			</testcontainer>
-			<testcontainer
-			id="5d2b2626-baa1-4f9b-bb37-d9ccc0ced427">
-			</testcontainer>
-			<testcontainer
-			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
-			</testcontainer>
-			<testcontainer
-			id="701180cf-ebf5-4f10-b762-42f1121178f3">
-			</testcontainer>
-			<testcontainer
-			id="7e827998-0f7c-411b-9300-3ea4b417f597">
-			</testcontainer>
-			<testcontainer
-			id="89fa68a6-9618-4127-aaec-5d106b43550a">
+			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
 			</testcontainer>
 			<testcontainer
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701">
-			</testcontainer>
-			<testcontainer
-			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712">
-			</testcontainer>
-			<testcontainer
-			id="badd9c3a-b6c9-49fe-b9eb-c3a207bd4be3">
-			</testcontainer>
-			<testcontainer
-			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
-			</testcontainer>
-			<testcontainer
-			id="be11fbf0-d0ab-4ec0-8bb8-75ff68a2c6c1">
-			</testcontainer>
-			<testcontainer
-			id="ec57de3c-79dd-4a9f-a227-a492aafc9e88">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
