@@ -4669,8 +4669,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="13"
-			minrange="13"
+			maxrange="10"
+			minrange="7"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -8616,7 +8616,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="PruebaIri">
+	default="MotorSinUBER">
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -8629,13 +8629,25 @@
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c">
 			</testcontainer>
 			<testcontainer
+			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
+			</testcontainer>
+			<testcontainer
 			id="23333f5f-0542-48f2-a1b0-681a739e13e3">
 			</testcontainer>
 			<testcontainer
 			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
 			</testcontainer>
 			<testcontainer
+			id="383f3d5a-562e-4b35-b27c-c98779199203">
+			</testcontainer>
+			<testcontainer
+			id="4665d240-f459-49f4-8e5e-a5b97379d41d">
+			</testcontainer>
+			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="5d2b2626-baa1-4f9b-bb37-d9ccc0ced427">
 			</testcontainer>
 			<testcontainer
 			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
@@ -8647,7 +8659,13 @@
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
 			</testcontainer>
 			<testcontainer
+			id="7e827998-0f7c-411b-9300-3ea4b417f597">
+			</testcontainer>
+			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">
+			</testcontainer>
+			<testcontainer
+			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52">
 			</testcontainer>
 			<testcontainer
 			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
@@ -8660,6 +8678,12 @@
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
+			</testcontainer>
+			<testcontainer
+			id="be11fbf0-d0ab-4ec0-8bb8-75ff68a2c6c1">
+			</testcontainer>
+			<testcontainer
+			id="ec57de3c-79dd-4a9f-a227-a492aafc9e88">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -8707,10 +8731,16 @@
 			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
 			</testcontainer>
 			<testcontainer
+			id="383f3d5a-562e-4b35-b27c-c98779199203">
+			</testcontainer>
+			<testcontainer
 			id="4665d240-f459-49f4-8e5e-a5b97379d41d">
 			</testcontainer>
 			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="5d2b2626-baa1-4f9b-bb37-d9ccc0ced427">
 			</testcontainer>
 			<testcontainer
 			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
@@ -8720,6 +8750,9 @@
 			</testcontainer>
 			<testcontainer
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
+			</testcontainer>
+			<testcontainer
+			id="7e827998-0f7c-411b-9300-3ea4b417f597">
 			</testcontainer>
 			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">
@@ -8738,6 +8771,12 @@
 			</testcontainer>
 			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
+			</testcontainer>
+			<testcontainer
+			id="be11fbf0-d0ab-4ec0-8bb8-75ff68a2c6c1">
+			</testcontainer>
+			<testcontainer
+			id="ec57de3c-79dd-4a9f-a227-a492aafc9e88">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
