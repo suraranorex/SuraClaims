@@ -2406,6 +2406,13 @@ namespace SuraClaims
             RepoItemInfo _op_policia_noInfo;
             RepoItemInfo _btn_agregarInfo;
             RepoItemInfo _txt_tipodocInfo;
+            RepoItemInfo _input_focoincendioInfo;
+            RepoItemInfo _copy_of_input_focoincendioInfo;
+            RepoItemInfo _input_comoseapagoInfo;
+            RepoItemInfo _copy_of_input_comoseapagoInfo;
+            RepoItemInfo _option_focoincendioInfo;
+            RepoItemInfo _option_comoseapagoInfo;
+            RepoItemInfo _lbl_incendioInfo;
             RepoItemInfo _txtbox_apellidoInfo;
             RepoItemInfo _txtbox_nombreInfo;
             RepoItemInfo _txt_detalledeloslesionadosInfo;
@@ -2456,6 +2463,13 @@ namespace SuraClaims
                 _op_policia_noInfo = new RepoItemInfo(this, "op_policia_NO", ".//tbody[#'centerPanel-tbody']//span[@innertext~'policía']/../../..//label[@innertext~'No']/../input[@type='button']", "", 30000, null, "9000aee2-d1c1-46a8-8401-821981602e64");
                 _btn_agregarInfo = new RepoItemInfo(this, "btn_Agregar", ".//tbody[#'centerPanel-tbody']//span[@innertext~'gregar']", "", 30000, null, "d18137f3-0e2e-42d0-9ab2-ef14e7f2b579");
                 _txt_tipodocInfo = new RepoItemInfo(this, "txt_TipoDoc", ".//tbody[#'centerPanel-tbody']//div[@innertext='<ninguna>']", "", 30000, null, "b34ef9ce-d512-4eed-8d23-8e68139f6995");
+                _input_focoincendioInfo = new RepoItemInfo(this, "input_FocoIncendio", ".//tbody[#'centerPanel-tbody']//span[@innertext='Foco de Incendio']/../..//input", "", 30000, null, "5e5a5ac6-93df-4ac6-a3ac-8d5f904787c3");
+                _copy_of_input_focoincendioInfo = new RepoItemInfo(this, "Copy_of_input_FocoIncendio", ".//tbody[#'centerPanel-tbody']//span[@innertext='Foco de Incendio']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "f0d27a60-1827-4fec-a631-b27d029dac7b");
+                _input_comoseapagoInfo = new RepoItemInfo(this, "input_ComoSeApago", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Cómo se apagó']/../..//input", "", 30000, null, "843f325c-eadc-41a1-9626-9f5630f23ee2");
+                _copy_of_input_comoseapagoInfo = new RepoItemInfo(this, "Copy_of_input_ComoSeApago", ".//tbody[#'centerPanel-tbody']//span[@innertext~'Cómo se apagó']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "da387f15-96cf-43c6-888b-7d55cfa5d011");
+                _option_focoincendioInfo = new RepoItemInfo(this, "option_FocoIncendio", ".//li[@innertext~'Interior del vehiculo']", "", 30000, null, "560eab79-88c2-493b-94ad-ec4efad9d87c");
+                _option_comoseapagoInfo = new RepoItemInfo(this, "option_ComoSeApago", ".//li[@innertext~'Asistencia de bomberos']", "", 30000, null, "8ca6ae93-f06d-411b-94a9-ad9dde6db27a");
+                _lbl_incendioInfo = new RepoItemInfo(this, "lbl_Incendio", ".//*[@innertext='Incendio']", "", 30000, null, "e50a10a7-d89b-4222-9e15-c586882d6364");
                 _txtbox_apellidoInfo = new RepoItemInfo(this, "txtbox_Apellido", ".//tbody[#'centerPanel-tbody']//span[@innertext='Apellido']/../..//input", "", 30000, null, "5738797d-7a5a-49c0-b03f-6fde8a500b97");
                 _txtbox_nombreInfo = new RepoItemInfo(this, "txtbox_Nombre", ".//tbody[#'centerPanel-tbody']//span[@innertext='Nombre']/../..//input", "", 30000, null, "c99f4096-7df9-4e32-b169-2d4b4d417c1f");
                 _txt_detalledeloslesionadosInfo = new RepoItemInfo(this, "txt_DetalleDeLosLesionados", ".//tbody[#'centerPanel-tbody']//?[@innertext='Detalle de los lesionados']", "", 30000, null, "df0df1ea-bd96-4599-80c8-ea1af8c65712");
@@ -2829,6 +2843,174 @@ namespace SuraClaims
                 get
                 {
                     return _txt_tipodocInfo;
+                }
+            }
+
+            /// <summary>
+            /// The input_FocoIncendio item.
+            /// </summary>
+            [RepositoryItem("5e5a5ac6-93df-4ac6-a3ac-8d5f904787c3")]
+            public virtual Ranorex.InputTag input_FocoIncendio
+            {
+                get
+                {
+                    return _input_focoincendioInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_FocoIncendio item info.
+            /// </summary>
+            [RepositoryItemInfo("5e5a5ac6-93df-4ac6-a3ac-8d5f904787c3")]
+            public virtual RepoItemInfo input_FocoIncendioInfo
+            {
+                get
+                {
+                    return _input_focoincendioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_input_FocoIncendio item.
+            /// </summary>
+            [RepositoryItem("f0d27a60-1827-4fec-a631-b27d029dac7b")]
+            public virtual Ranorex.InputTag Copy_of_input_FocoIncendio
+            {
+                get
+                {
+                    return _copy_of_input_focoincendioInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_input_FocoIncendio item info.
+            /// </summary>
+            [RepositoryItemInfo("f0d27a60-1827-4fec-a631-b27d029dac7b")]
+            public virtual RepoItemInfo Copy_of_input_FocoIncendioInfo
+            {
+                get
+                {
+                    return _copy_of_input_focoincendioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The input_ComoSeApago item.
+            /// </summary>
+            [RepositoryItem("843f325c-eadc-41a1-9626-9f5630f23ee2")]
+            public virtual Ranorex.InputTag input_ComoSeApago
+            {
+                get
+                {
+                    return _input_comoseapagoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_ComoSeApago item info.
+            /// </summary>
+            [RepositoryItemInfo("843f325c-eadc-41a1-9626-9f5630f23ee2")]
+            public virtual RepoItemInfo input_ComoSeApagoInfo
+            {
+                get
+                {
+                    return _input_comoseapagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_input_ComoSeApago item.
+            /// </summary>
+            [RepositoryItem("da387f15-96cf-43c6-888b-7d55cfa5d011")]
+            public virtual Ranorex.InputTag Copy_of_input_ComoSeApago
+            {
+                get
+                {
+                    return _copy_of_input_comoseapagoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_input_ComoSeApago item info.
+            /// </summary>
+            [RepositoryItemInfo("da387f15-96cf-43c6-888b-7d55cfa5d011")]
+            public virtual RepoItemInfo Copy_of_input_ComoSeApagoInfo
+            {
+                get
+                {
+                    return _copy_of_input_comoseapagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The option_FocoIncendio item.
+            /// </summary>
+            [RepositoryItem("560eab79-88c2-493b-94ad-ec4efad9d87c")]
+            public virtual Ranorex.LiTag option_FocoIncendio
+            {
+                get
+                {
+                    return _option_focoincendioInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The option_FocoIncendio item info.
+            /// </summary>
+            [RepositoryItemInfo("560eab79-88c2-493b-94ad-ec4efad9d87c")]
+            public virtual RepoItemInfo option_FocoIncendioInfo
+            {
+                get
+                {
+                    return _option_focoincendioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The option_ComoSeApago item.
+            /// </summary>
+            [RepositoryItem("8ca6ae93-f06d-411b-94a9-ad9dde6db27a")]
+            public virtual Ranorex.LiTag option_ComoSeApago
+            {
+                get
+                {
+                    return _option_comoseapagoInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The option_ComoSeApago item info.
+            /// </summary>
+            [RepositoryItemInfo("8ca6ae93-f06d-411b-94a9-ad9dde6db27a")]
+            public virtual RepoItemInfo option_ComoSeApagoInfo
+            {
+                get
+                {
+                    return _option_comoseapagoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lbl_Incendio item.
+            /// </summary>
+            [RepositoryItem("e50a10a7-d89b-4222-9e15-c586882d6364")]
+            public virtual Ranorex.Unknown lbl_Incendio
+            {
+                get
+                {
+                    return _lbl_incendioInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lbl_Incendio item info.
+            /// </summary>
+            [RepositoryItemInfo("e50a10a7-d89b-4222-9e15-c586882d6364")]
+            public virtual RepoItemInfo lbl_IncendioInfo
+            {
+                get
+                {
+                    return _lbl_incendioInfo;
                 }
             }
 
@@ -4309,6 +4491,7 @@ namespace SuraClaims
             RepoItemInfo _celda_importeInfo;
             RepoItemInfo _input_beneficiarioInfo;
             RepoItemInfo _xgridbodyxgridwithcollinesxgridInfo;
+            RepoItemInfo _fnolvehicleincidentpopupfnolvehicleinciInfo;
 
             /// <summary>
             /// Creates a new InformacionSiniestro  folder.
@@ -4405,6 +4588,7 @@ namespace SuraClaims
                 _celda_importeInfo = new RepoItemInfo(this, "celda_Importe", ".//td/div[@innertext='Parcial']/../..//td/div[@innertext~$Importe and @innertext~'$']", "", 30000, null, "40f12907-d8c4-4f79-b64e-770e15d02e81");
                 _input_beneficiarioInfo = new RepoItemInfo(this, "input_Beneficiario", ".//table/tbody/tr[4]/td/div/div[2]/?/?/table/?/?/tr//table/tbody/tr[2]//table/tbody/tr[11]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[2]/div", "", 30000, null, "318ebf83-4363-4923-ade9-7708225236fe");
                 _xgridbodyxgridwithcollinesxgridInfo = new RepoItemInfo(this, "XGridBodyXGridWithColLinesXGrid", ".//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[2]/td/div/table/tbody/tr[11]/td/div/div[3]", "", 30000, null, "886fd76a-3205-4f0e-b9b1-6a469100d48b");
+                _fnolvehicleincidentpopupfnolvehicleinciInfo = new RepoItemInfo(this, "FNOLVehicleIncidentPopupFNOLVehicleInci", "tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[17]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:FireDamageQuestionsInputSet:fireFocus']", "", 30000, null, "35136b5e-6090-4e67-878c-59149d2e6e5b");
             }
 
             /// <summary>
@@ -6564,6 +6748,30 @@ namespace SuraClaims
                 get
                 {
                     return _xgridbodyxgridwithcollinesxgridInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FNOLVehicleIncidentPopupFNOLVehicleInci item.
+            /// </summary>
+            [RepositoryItem("35136b5e-6090-4e67-878c-59149d2e6e5b")]
+            public virtual Ranorex.InputTag FNOLVehicleIncidentPopupFNOLVehicleInci
+            {
+                get
+                {
+                    return _fnolvehicleincidentpopupfnolvehicleinciInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FNOLVehicleIncidentPopupFNOLVehicleInci item info.
+            /// </summary>
+            [RepositoryItemInfo("35136b5e-6090-4e67-878c-59149d2e6e5b")]
+            public virtual RepoItemInfo FNOLVehicleIncidentPopupFNOLVehicleInciInfo
+            {
+                get
+                {
+                    return _fnolvehicleincidentpopupfnolvehicleinciInfo;
                 }
             }
         }

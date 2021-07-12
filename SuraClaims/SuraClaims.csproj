@@ -447,6 +447,18 @@
       <UserCode>true</UserCode>
       <id>22745377-fd26-4487-be67-8d098321a00d</id>
     </Compile>
+    <Compile Include="Motor\AgregarFilaDanios.cs">
+      <BoundTo>3750ac03-a80b-422c-8312-e2b39cfb3402</BoundTo>
+      <DependentUpon>AgregarFilaDanios.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ebcbb849-8c57-4ef8-b63d-eab8bfcf4dbb</id>
+    </Compile>
+    <Compile Include="Motor\AgregarFilaDanios.UserCode.cs">
+      <BoundTo>3750ac03-a80b-422c-8312-e2b39cfb3402</BoundTo>
+      <DependentUpon>AgregarFilaDanios.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf3d1aec-47ca-4361-9d0d-71ca5f4cc4e2</id>
+    </Compile>
     <Compile Include="Motor\CLEAS.cs">
       <BoundTo>3cc5eee3-c5c7-45db-b261-81e13e102157</BoundTo>
       <DependentUpon>CLEAS.rxrec</DependentUpon>
@@ -470,6 +482,18 @@
       <DependentUpon>CompletarInfo_Danios.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>28ff4c0c-a08a-42f3-9303-054bbb7857fa</id>
+    </Compile>
+    <Compile Include="Motor\CompletarInfo_Incendio.cs">
+      <BoundTo>b821c8d9-b6a3-4b03-abd3-64022093c54c</BoundTo>
+      <DependentUpon>CompletarInfo_Incendio.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db0c0557-e105-438e-baaa-d1c16ab8acbf</id>
+    </Compile>
+    <Compile Include="Motor\CompletarInfo_Incendio.UserCode.cs">
+      <BoundTo>b821c8d9-b6a3-4b03-abd3-64022093c54c</BoundTo>
+      <DependentUpon>CompletarInfo_Incendio.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5a952360-9125-4674-a3c6-64023397fee2</id>
     </Compile>
     <Compile Include="Motor\CompletarLocacion_Robo.cs">
       <BoundTo>cf46b52c-47a6-4c45-b974-4a3d8d7a8664</BoundTo>
@@ -1663,6 +1687,11 @@
       <id>aa7ce910-5204-4eeb-830a-e09ba4759aa0</id>
       <recordtableid>34286301-52f1-4cc8-bc4c-ba086d6661a7</recordtableid>
     </None>
+    <None Include="Motor\AgregarFilaDanios.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>3750ac03-a80b-422c-8312-e2b39cfb3402</id>
+      <recordtableid>4f16d1c4-0cbb-41ef-9777-fcba520d28f2</recordtableid>
+    </None>
     <None Include="Motor\CLEAS.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>3cc5eee3-c5c7-45db-b261-81e13e102157</id>
@@ -1672,6 +1701,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>7be351f0-abf4-4266-b2b3-c8ce364a4932</id>
       <recordtableid>ef013e43-97f8-4676-ad68-a997ff72527a</recordtableid>
+    </None>
+    <None Include="Motor\CompletarInfo_Incendio.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>b821c8d9-b6a3-4b03-abd3-64022093c54c</id>
+      <recordtableid>6cbfa79b-4aea-43ba-b2d5-0c97c9fd7b4e</recordtableid>
     </None>
     <None Include="Motor\CompletarLocacion_Robo.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

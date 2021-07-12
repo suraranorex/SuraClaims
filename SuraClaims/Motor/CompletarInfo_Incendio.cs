@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SuraClaims.Reclamos
+namespace SuraClaims.Motor
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ActualizarReclamo recording.
+    ///The CompletarInfo_Incendio recording.
     /// </summary>
-    [TestModule("a26bff71-87f3-49ee-a14d-bc02081a330a", ModuleType.Recording, 1)]
-    public partial class ActualizarReclamo : ITestModule
+    [TestModule("6cbfa79b-4aea-43ba-b2d5-0c97c9fd7b4e", ModuleType.Recording, 1)]
+    public partial class CompletarInfo_Incendio : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static ActualizarReclamo instance = new ActualizarReclamo();
+        static CompletarInfo_Incendio instance = new CompletarInfo_Incendio();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ActualizarReclamo()
+        public CompletarInfo_Incendio()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ActualizarReclamo Instance
+        public static CompletarInfo_Incendio Instance
         {
             get { return instance; }
         }
@@ -89,22 +89,35 @@ namespace SuraClaims.Reclamos
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.bttn_Actualizar'", repo.SuraClaims.Reclamos.bttn_ActualizarInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.SuraClaims.Reclamos.bttn_ActualizarInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.bttn_Actualizar' at Center.", repo.SuraClaims.Reclamos.bttn_ActualizarInfo, new RecordItemIndex(1));
-            repo.SuraClaims.Reclamos.bttn_Actualizar.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.input_FocoIncendio' at Center.", repo.SuraClaims.Motor.input_FocoIncendioInfo, new RecordItemIndex(0));
+            repo.SuraClaims.Motor.input_FocoIncendio.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.bttn_FinalizarChecklist'", repo.SuraClaims.Reclamos.bttn_FinalizarChecklistInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.SuraClaims.Reclamos.bttn_FinalizarChecklistInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Reclamos.bttn_FinalizarChecklist' at Center.", repo.SuraClaims.Reclamos.bttn_FinalizarChecklistInfo, new RecordItemIndex(3));
-            repo.SuraClaims.Reclamos.bttn_FinalizarChecklist.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_FocoIncendio' at Center.", repo.SuraClaims.Motor.option_FocoIncendioInfo, new RecordItemIndex(1));
+            repo.SuraClaims.Motor.option_FocoIncendio.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'SuraClaims.Reclamos.bttn_CheckListFinalizado'", repo.SuraClaims.Reclamos.bttn_CheckListFinalizadoInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.SuraClaims.Reclamos.bttn_CheckListFinalizadoInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.lbl_Incendio' at Center.", repo.SuraClaims.Motor.lbl_IncendioInfo, new RecordItemIndex(2));
+            repo.SuraClaims.Motor.lbl_Incendio.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_input_FocoIncendio'", repo.SuraClaims.Motor.Copy_of_input_FocoIncendioInfo, new ActionTimeout(20000), new RecordItemIndex(3));
+            repo.SuraClaims.Motor.Copy_of_input_FocoIncendioInfo.WaitForNotExists(20000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.input_ComoSeApago' at Center.", repo.SuraClaims.Motor.input_ComoSeApagoInfo, new RecordItemIndex(4));
+            repo.SuraClaims.Motor.input_ComoSeApago.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.option_ComoSeApago' at Center.", repo.SuraClaims.Motor.option_ComoSeApagoInfo, new RecordItemIndex(5));
+            repo.SuraClaims.Motor.option_ComoSeApago.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SuraClaims.Motor.lbl_Incendio' at Center.", repo.SuraClaims.Motor.lbl_IncendioInfo, new RecordItemIndex(6));
+            repo.SuraClaims.Motor.lbl_Incendio.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 20s to not exist. Associated repository item: 'SuraClaims.Motor.Copy_of_input_ComoSeApago'", repo.SuraClaims.Motor.Copy_of_input_ComoSeApagoInfo, new ActionTimeout(20000), new RecordItemIndex(7));
+            repo.SuraClaims.Motor.Copy_of_input_ComoSeApagoInfo.WaitForNotExists(20000);
             
         }
 

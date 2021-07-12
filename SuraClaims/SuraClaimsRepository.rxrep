@@ -1775,6 +1775,17 @@ name="SuraClaimsRepository">
 					searchtimeout="30000ms">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[2]/td/div/table/tbody/tr[11]/td/div/div[3]
 					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="35136b5e-6090-4e67-878c-59149d2e6e5b"
+					name="FNOLVehicleIncidentPopupFNOLVehicleInci"
+					refimgid="a76dc3cd-8360-4533-9471-93d78a962f1e"
+					refpath="/dom[@domain='ssurgwsoadev4-oci.opc.oracleoutsourcing.com']//tbody[#'centerPanel-tbody']/tr/td/div/table/tbody/tr[4]/td/div/div[2]/div/table/tbody/tr[1]/td/div/table/tbody/tr/td/div/table/tbody/tr/td[1]/div/table/tbody/tr[17]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:FireDamageQuestionsInputSet:fireFocus']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']/tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[17]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:FireDamageQuestionsInputSet:fireFocus']
+					</item>
 					<basepath>
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']
 					</basepath>
@@ -1914,6 +1925,76 @@ name="SuraClaimsRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="5e5a5ac6-93df-4ac6-a3ac-8d5f904787c3"
+				name="input_FocoIncendio"
+				refimgid="4ebdc8d7-5a5b-4ff5-9184-ff6054b5a2c7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Foco de Incendio']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="f0d27a60-1827-4fec-a631-b27d029dac7b"
+				name="Copy_of_input_FocoIncendio"
+				refimgid="4ebdc8d7-5a5b-4ff5-9184-ff6054b5a2c7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext='Foco de Incendio']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="843f325c-eadc-41a1-9626-9f5630f23ee2"
+				name="input_ComoSeApago"
+				refimgid="4ebdc8d7-5a5b-4ff5-9184-ff6054b5a2c7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Cómo se apagó']/../..//input
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="da387f15-96cf-43c6-888b-7d55cfa5d011"
+				name="Copy_of_input_ComoSeApago"
+				refimgid="4ebdc8d7-5a5b-4ff5-9184-ff6054b5a2c7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//span[@innertext~'Cómo se apagó']/../..//input[@data-tabindexsaved='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="litag"
+				id="560eab79-88c2-493b-94ad-ec4efad9d87c"
+				name="option_FocoIncendio"
+				refimgid="63560f75-915c-4090-a4e3-ac4447dd9f1b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Interior del vehiculo']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="litag"
+				id="8ca6ae93-f06d-411b-94a9-ad9dde6db27a"
+				name="option_ComoSeApago"
+				refimgid="63560f75-915c-4090-a4e3-ac4447dd9f1b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//li[@innertext~'Asistencia de bomberos']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="unknown"
+				id="e50a10a7-d89b-4222-9e15-c586882d6364"
+				name="lbl_Incendio"
+				refimgid="ed410b87-87f4-4ccf-bcf5-6bf6d0e1660f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//*[@innertext='Incendio']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"

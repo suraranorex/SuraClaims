@@ -459,6 +459,26 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="16e26866-7d53-423e-af98-bae513938679"
+			name="AgregarFilaDanios"
+			ref="4f16d1c4-0cbb-41ef-9777-fcba520d28f2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Descripcion"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="ef03ca91-0d8f-48c8-a24d-5c81192ef138"
+					variablename="Descripcion">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="17270bac-09b8-440d-980a-76916c341414"
 			name="Logout"
 			ref="a0c0db04-d21d-4cb3-b5af-a01aede4d79f"
@@ -920,6 +940,26 @@
 				</parameters>
 			</testcase>
 			<testmodule
+			id="2b392429-098a-4b0b-9294-e79033ccec9c"
+			name="AgregarFilaDanios"
+			ref="4f16d1c4-0cbb-41ef-9777-fcba520d28f2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="Descripcion"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="ef03ca91-0d8f-48c8-a24d-5c81192ef138"
+					variablename="Descripcion">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2b6a3be7-1147-4c13-b39c-529473557fe2"
 			name="NuevaExposicion"
 			ref="5d57222f-571e-47c3-8251-f28f8945c89d"
@@ -1207,6 +1247,48 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="383f3d5a-562e-4b35-b27c-c98779199203"
+			name="ConCantidadTipo">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Cerradura">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Cristales">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="388b741a-88f0-48c1-849a-d85cc3e61fc0"
 			name="OpenBrowser"
@@ -1293,6 +1375,20 @@
 			id="3e866a76-65b7-47fb-8069-296f52dc3165"
 			name="setup">
 			</setup>
+			<testmodule
+			id="3f4cd32d-4681-45c0-ad04-2a77e91b9b49"
+			name="CompletarInfo_Incendio"
+			ref="6cbfa79b-4aea-43ba-b2d5-0c97c9fd7b4e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="41df9a82-aae3-4dd4-a47d-bca3e41cfe6f"
 			name="setup">
@@ -2104,6 +2200,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="5d2b2626-baa1-4f9b-bb37-d9ccc0ced427"
+			name="NoIncendio">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="INCENDIO"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="No">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="5d56849d-b18c-4580-b214-27a20670b93d"
 			name="BuscarPoliza"
@@ -2923,8 +3044,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="4"
-			minrange="3"
+			maxrange="6"
+			minrange="5"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -3237,6 +3358,48 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="7e827998-0f7c-411b-9300-3ea4b417f597"
+			name="SinCantidadTipo">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Parabrisas">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Luneta">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="7fbcb0b0-2de8-4e2b-992f-70547f676e39"
 			name="Logout"
@@ -3290,6 +3453,20 @@
 					<var
 					dataname="Ambiente"
 					datasourceid="7fa6cc35-033c-4da0-ae9a-756a6e3036de"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="818013c2-19af-4c04-b814-fda465d4a6d0"
+			name="DetalleDanioParcial_SinCantidad"
+			ref="42161acf-fda5-4099-b35c-e5468f485c5f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
 					</var>
@@ -3619,9 +3796,10 @@
 			<testcase
 			datarangeactive="True"
 			datasource="CrearAcuerdos"
+			errorbehavior="ContinueNextIteration"
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701"
-			maxrange="2"
-			minrange="2"
+			maxrange="1"
+			minrange="1"
 			name="Precondiciones_Acuerdos">
 				<parameters>
 					<param
@@ -3669,6 +3847,26 @@
 					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
 					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
 					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9a378663-bfb1-4bad-9120-86f77a56ec10"
+			name="DatosProveedor"
+			ref="d693d3b8-e744-4f49-a1c0-42ab7648eaf3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+					<var
+					dataname="CodProveedor"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="c5447b31-d851-48cb-bd1f-9354441c492a"
+					variablename="CodProveedor">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3947,9 +4145,10 @@
 			<testcase
 			datarangeactive="True"
 			datasource="CrearAcuerdos"
+			errorbehavior="ContinueNextIteration"
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712"
-			maxrange="2"
-			minrange="2"
+			maxrange="1"
+			minrange="1"
 			name="CrearAcuerdos">
 			</testcase>
 			<testmodule
@@ -3987,6 +4186,20 @@
 			minrange="2"
 			name="AnularPago">
 			</testcase>
+			<testmodule
+			id="a414cd6b-f8a0-42c2-a2b6-127653e734c3"
+			name="DetalleDanioParcial_ConCant"
+			ref="e8f563cb-d93a-41f5-8b5b-2a44ef617ff6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ambiente"
+					datasourceid="d151ac40-76cd-47f2-81c8-cba18f8d83ed"
+					variableid="e7903828-6ac1-46d3-a887-f52fdafb621a"
+					variablename="Ambiente">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="a5791425-7658-4176-8e6d-a1cc7340cbe5"
 			name="InformacionSiniestro_Motor"
@@ -4316,6 +4529,65 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="badd9c3a-b6c9-49fe-b9eb-c3a207bd4be3"
+			name="NoIncendioTotal">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="INCENDIO"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Sí">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Daños Totales por Accidente Tecnica">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Descripcion"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Daños Totales por Accidente Economica">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="bbb073c2-7b9c-41a7-a1e9-990bda3b3884"
 			name="Finalizar_InformacionSiniestro_AP_UBER"
@@ -4397,8 +4669,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="12"
-			minrange="12"
+			maxrange="13"
+			minrange="13"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -4411,6 +4683,31 @@
 			id="bdc702ab-035b-4e8b-856b-aa6412330e17"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="be11fbf0-d0ab-4ec0-8bb8-75ff68a2c6c1"
+			name="Incendio">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="INCENDIO"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Sí">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<teardown
 			id="bfa62a25-2514-45df-bb14-801cbe6a02a0"
 			name="teardown">
@@ -5402,6 +5699,31 @@
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			id="ec57de3c-79dd-4a9f-a227-a492aafc9e88"
+			name="FT_Danios">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="EsFastTrack"
+								id="d151ac40-76cd-47f2-81c8-cba18f8d83ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Sí">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<smartfoldernode
 			id="ee32b124-f47d-435d-ba45-a8bf96308cc7"
 			name="Motor">
 				<conditiongroup
@@ -6201,28 +6523,68 @@
 							name="CompletarInfo_Danios">
 							</testmodule>
 							<smartfoldernode
-							id="4b785685-d9a4-422f-bf84-c41d099771f3"
-							name="FT_Danios">
-								<smartfoldernode
-								id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
-								name="ConCantidadTipo">
-									<testmodule
-									id="ac92f432-187e-4136-9e7d-e6d9dfd133eb"
-									name="DetalleDanioParcial_ConCant">
-									</testmodule>
-								</smartfoldernode>
-								<smartfoldernode
-								id="89fa68a6-9618-4127-aaec-5d106b43550a"
-								name="SinCantidadTipo">
-									<testmodule
-									id="7587d8f5-1989-46db-b487-678e3ac16994"
-									name="DetalleDanioParcial_SinCantidad">
-									</testmodule>
-								</smartfoldernode>
+							id="5d2b2626-baa1-4f9b-bb37-d9ccc0ced427"
+							name="NoIncendio">
 								<testmodule
-								id="5c3787a9-8bcf-4c10-a781-139c39b9caba"
-								name="DatosProveedor">
+								id="2b392429-098a-4b0b-9294-e79033ccec9c"
+								name="AgregarFilaDanios">
 								</testmodule>
+								<smartfoldernode
+								id="ec57de3c-79dd-4a9f-a227-a492aafc9e88"
+								name="FT_Danios">
+									<smartfoldernode
+									id="383f3d5a-562e-4b35-b27c-c98779199203"
+									name="ConCantidadTipo">
+										<testmodule
+										id="a414cd6b-f8a0-42c2-a2b6-127653e734c3"
+										name="DetalleDanioParcial_ConCant">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="7e827998-0f7c-411b-9300-3ea4b417f597"
+									name="SinCantidadTipo">
+										<testmodule
+										id="818013c2-19af-4c04-b814-fda465d4a6d0"
+										name="DetalleDanioParcial_SinCantidad">
+										</testmodule>
+									</smartfoldernode>
+									<testmodule
+									id="9a378663-bfb1-4bad-9120-86f77a56ec10"
+									name="DatosProveedor">
+									</testmodule>
+								</smartfoldernode>
+							</smartfoldernode>
+							<smartfoldernode
+							id="badd9c3a-b6c9-49fe-b9eb-c3a207bd4be3"
+							name="NoIncendioTotal">
+								<testmodule
+								id="16e26866-7d53-423e-af98-bae513938679"
+								name="AgregarFilaDanios">
+								</testmodule>
+								<smartfoldernode
+								id="4b785685-d9a4-422f-bf84-c41d099771f3"
+								name="FT_Danios">
+									<smartfoldernode
+									id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416"
+									name="ConCantidadTipo">
+										<testmodule
+										id="ac92f432-187e-4136-9e7d-e6d9dfd133eb"
+										name="DetalleDanioParcial_ConCant">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="89fa68a6-9618-4127-aaec-5d106b43550a"
+									name="SinCantidadTipo">
+										<testmodule
+										id="7587d8f5-1989-46db-b487-678e3ac16994"
+										name="DetalleDanioParcial_SinCantidad">
+										</testmodule>
+									</smartfoldernode>
+									<testmodule
+									id="5c3787a9-8bcf-4c10-a781-139c39b9caba"
+									name="DatosProveedor">
+									</testmodule>
+								</smartfoldernode>
 							</smartfoldernode>
 						</smartfoldernode>
 						<smartfoldernode
@@ -6268,6 +6630,14 @@
 									</testmodule>
 								</smartfoldernode>
 							</smartfoldernode>
+						</smartfoldernode>
+						<smartfoldernode
+						id="be11fbf0-d0ab-4ec0-8bb8-75ff68a2c6c1"
+						name="Incendio">
+							<testmodule
+							id="3f4cd32d-4681-45c0-ad04-2a77e91b9b49"
+							name="CompletarInfo_Incendio">
+							</testmodule>
 						</smartfoldernode>
 						<testmodule
 						id="d4e9c074-4f0d-48d2-8f0b-61c2899139c7"
@@ -8286,6 +8656,9 @@
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
+			id="badd9c3a-b6c9-49fe-b9eb-c3a207bd4be3">
+			</testcontainer>
+			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
 			</testcontainer>
 		</testconfiguration>
@@ -8361,6 +8734,9 @@
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
+			id="badd9c3a-b6c9-49fe-b9eb-c3a207bd4be3">
+			</testcontainer>
+			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
 			</testcontainer>
 		</testconfiguration>
@@ -8424,10 +8800,16 @@
 			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
 			</testcontainer>
 			<testcontainer
+			id="383f3d5a-562e-4b35-b27c-c98779199203">
+			</testcontainer>
+			<testcontainer
 			id="4665d240-f459-49f4-8e5e-a5b97379d41d">
 			</testcontainer>
 			<testcontainer
 			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="5d2b2626-baa1-4f9b-bb37-d9ccc0ced427">
 			</testcontainer>
 			<testcontainer
 			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
@@ -8436,13 +8818,10 @@
 			id="701180cf-ebf5-4f10-b762-42f1121178f3">
 			</testcontainer>
 			<testcontainer
-			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
+			id="7e827998-0f7c-411b-9300-3ea4b417f597">
 			</testcontainer>
 			<testcontainer
 			id="89fa68a6-9618-4127-aaec-5d106b43550a">
-			</testcontainer>
-			<testcontainer
-			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52">
 			</testcontainer>
 			<testcontainer
 			id="96a34073-85b9-4de0-b2aa-76e1416c0701">
@@ -8457,7 +8836,16 @@
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712">
 			</testcontainer>
 			<testcontainer
+			id="badd9c3a-b6c9-49fe-b9eb-c3a207bd4be3">
+			</testcontainer>
+			<testcontainer
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
+			</testcontainer>
+			<testcontainer
+			id="be11fbf0-d0ab-4ec0-8bb8-75ff68a2c6c1">
+			</testcontainer>
+			<testcontainer
+			id="ec57de3c-79dd-4a9f-a227-a492aafc9e88">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
