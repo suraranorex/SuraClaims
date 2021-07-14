@@ -688,8 +688,8 @@
 			datasource="SiniestroMotorUBER"
 			errorbehavior="ContinueNextIteration"
 			id="1bb4515c-f4ce-4bdf-801d-976310e49b4c"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Motor_UBER">
 			</testcase>
 			<testmodule
@@ -795,8 +795,8 @@
 			datasource="SiniestroHogar"
 			errorbehavior="ContinueNextIteration"
 			id="1f947bb9-e5c8-435e-aedc-2c4eb29ddf1f"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_Hogar">
 			</testcase>
 			<smartfoldernode
@@ -1160,6 +1160,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="3226c0b5-9804-4b91-9057-04878b6cf663"
+			name="Pagos">
+			</smartfoldernode>
 			<testcase
 			datarangeactive="True"
 			datasource="ValidarPagoSiniestros"
@@ -3044,8 +3048,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="6"
-			minrange="5"
+			maxrange="15"
+			minrange="13"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -3517,8 +3521,8 @@
 			datasource="SiniestroAP_UBER"
 			errorbehavior="ContinueNextIteration"
 			id="86b95672-af0b-4da0-a95b-2ac941c6be90"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GeneracionSiniestro_AP_Uber">
 				<parameters>
 					<param
@@ -4669,8 +4673,8 @@
 			datasource="SiniestroMotor"
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
-			maxrange="12"
-			minrange="12"
+			maxrange="13"
+			minrange="7"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -7163,6 +7167,10 @@
 						id="5faf3bd9-f4aa-47a3-aed1-e08f83dba9cb"
 						name="ObtenerUsuarioParaAprobarPago">
 						</testmodule>
+						<smartfoldernode
+						id="3226c0b5-9804-4b91-9057-04878b6cf663"
+						name="Pagos">
+						</smartfoldernode>
 						<teardown
 						id="d25182fe-792b-4912-acf9-508f7ebc4d78"
 						name="teardown">
@@ -8256,7 +8264,7 @@
 		filename="GeneracionSiniestroMotorTercero.xlsx"
 		id="5387c623-a1c1-4747-9f7b-2b9b983478aa"
 		includefile="Checked"
-		lastknownrowcount="13"
+		lastknownrowcount="17"
 		name="SiniestroMotorTercero"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
@@ -8616,7 +8624,34 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="MotorSinUBER">
+	default="PruebaIri">
+		<testconfiguration
+		name="CrearAcuerdos">
+			<testcontainer
+			id="96a34073-85b9-4de0-b2aa-76e1416c0701">
+			</testcontainer>
+			<testcontainer
+			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="GenerarInspeccion">
+			<testcontainer
+			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946">
+			</testcontainer>
+			<testcontainer
+			id="79bc1e16-5510-4b54-82af-f6e18939b1f2">
+			</testcontainer>
+			<testcontainer
+			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
+			</testcontainer>
+			<testcontainer
+			id="b3f630b5-9820-49aa-b8d5-af31bce661e3">
+			</testcontainer>
+		</testconfiguration>
 		<testconfiguration
 		name="GenerarSiniestroMotor">
 			<testcontainer
@@ -8791,13 +8826,7 @@
 			id="2a07542c-9c89-4c3c-9c89-ba49107eb139">
 			</testcontainer>
 			<testcontainer
-			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c">
-			</testcontainer>
-			<testcontainer
-			id="3378198a-d57f-4703-b046-8f715ee27a01">
-			</testcontainer>
-			<testcontainer
-			id="4a707abf-3d5a-4bee-8566-19f69f31c038">
+			id="3226c0b5-9804-4b91-9057-04878b6cf663">
 			</testcontainer>
 			<testcontainer
 			id="569181f3-2976-4be8-ac1f-332f09fab645">
@@ -8806,25 +8835,10 @@
 			id="58368d11-e725-4331-93f0-6f443d6c9119">
 			</testcontainer>
 			<testcontainer
-			id="6063d4bd-8cb6-4b12-a2ea-c3ec60209033">
-			</testcontainer>
-			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
 			id="e86717b1-fd17-4adc-aac7-94fc08ee7023">
-			</testcontainer>
-			<testcontainer
-			id="ee32b124-f47d-435d-ba45-a8bf96308cc7">
-			</testcontainer>
-			<testcontainer
-			id="fac5f1c3-1006-4eec-9cb1-1d3949653c42">
-			</testcontainer>
-			<testcontainer
-			id="fc751d39-25ee-498a-b674-4c6e6d8e497f">
-			</testcontainer>
-			<testcontainer
-			id="ff81a40d-49d2-47f2-870d-bd85df0ac2a8">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
