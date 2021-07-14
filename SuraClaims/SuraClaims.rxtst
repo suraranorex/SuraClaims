@@ -1847,8 +1847,8 @@
 			datasource="Generacion_Inspeccion"
 			errorbehavior="ContinueNextIteration"
 			id="4c888c52-c1e6-428b-9c3b-7c7cfb130946"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="GenerarInspeccion">
 			</testcase>
 			<teardown
@@ -3059,8 +3059,8 @@
 			datasource="SiniestroMotorTercero"
 			errorbehavior="ContinueNextIteration"
 			id="74636897-ffc0-47a8-b8dd-7f508da01f4a"
-			maxrange="13"
-			minrange="13"
+			maxrange="15"
+			minrange="14"
 			name="GeneracionSiniestro_Motor_Tercero">
 			</testcase>
 			<testmodule
@@ -3245,8 +3245,8 @@
 			datasource="Enviar_Validar_Inspeccion"
 			errorbehavior="ContinueNextIteration"
 			id="79bc1e16-5510-4b54-82af-f6e18939b1f2"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Enviar_Validar_Inspeccion">
 			</testcase>
 			<testmodule
@@ -8649,7 +8649,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="GenerarLitigio">
+	default="PruebaIri">
 		<testconfiguration
 		name="Anulaciones">
 			<testcontainer
@@ -8915,6 +8915,21 @@
 			</testcontainer>
 			<testcontainer
 			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="ValidarGeneracion_SISE">
+			<testcontainer
+			id="1ad70017-2732-44c4-8bd4-6f5d0760bd2c">
+			</testcontainer>
+			<testcontainer
+			id="1ae1f931-8357-4441-9040-d0db20595df1">
+			</testcontainer>
+			<testcontainer
+			id="78ea1c52-2921-46a4-adc3-b2aac89112c7">
+			</testcontainer>
+			<testcontainer
+			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
