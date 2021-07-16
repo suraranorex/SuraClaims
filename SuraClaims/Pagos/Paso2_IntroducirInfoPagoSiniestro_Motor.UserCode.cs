@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SuraClaims.Pagos
 {
-    public partial class ObtenerUsuarioParaAprobarPago
+    public partial class Paso2_IntroducirInfoPagoSiniestro_Motor
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,19 +31,6 @@ namespace SuraClaims.Pagos
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void obtenerNombreUsuario()
-        {
-            // TODO: Replace the following line with your code implementation.
-            //throw new NotImplementedException();
-        
-            if(NombreAprobadorPago.Equals("Veronica Yanina Bronzi"))
-            	NombreUsuario="ybronzi";  
-            if(NombreAprobadorPago.Equals("Diego Sebastian Gariffo"))
-            	NombreUsuario="dgariffo";
-            if(NombreAprobadorPago.Equals("Yesica Romina Suarez"))
-            	NombreUsuario="rsuarez";
         }
 
     }

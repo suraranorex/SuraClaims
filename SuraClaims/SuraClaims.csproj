@@ -627,6 +627,18 @@
       <UserCode>true</UserCode>
       <id>b6123a13-0024-446b-853e-e607599ac8ee</id>
     </Compile>
+    <Compile Include="Pagos\Paso2_IntroducirInfoPagoSiniestro_Motor.cs">
+      <BoundTo>3b4670ee-2c26-4a93-b71d-d9aff2cfa21d</BoundTo>
+      <DependentUpon>Paso2_IntroducirInfoPagoSiniestro_Motor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1b8f0aa0-628b-49c5-8748-af4adfb813d7</id>
+    </Compile>
+    <Compile Include="Pagos\Paso2_IntroducirInfoPagoSiniestro_Motor.UserCode.cs">
+      <BoundTo>3b4670ee-2c26-4a93-b71d-d9aff2cfa21d</BoundTo>
+      <DependentUpon>Paso2_IntroducirInfoPagoSiniestro_Motor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f3096b0-6012-4302-a785-a1da2ce4c1c8</id>
+    </Compile>
     <Compile Include="Pagos\ValidarPago.cs">
       <DependentUpon>ValidarPago.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1761,6 +1773,11 @@
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
       <id>c866925a-1f08-40d8-ae24-8f1e10250431</id>
       <recordtableid>4e02bff7-a18b-488d-871b-2025c36a43a6</recordtableid>
+    </None>
+    <None Include="Pagos\Paso2_IntroducirInfoPagoSiniestro_Motor.rxrec">
+      <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>
+      <id>3b4670ee-2c26-4a93-b71d-d9aff2cfa21d</id>
+      <recordtableid>d75d1d77-da49-4d03-92bb-afbec1a51974</recordtableid>
     </None>
     <None Include="Pagos\ValidarPago.rxrec">
       <BoundTo>d7df2e8d-950c-49f4-9e89-f7fcace2078d</BoundTo>

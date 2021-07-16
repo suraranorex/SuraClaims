@@ -111,7 +111,7 @@ namespace SuraClaims
             set { _NOMBRE = value; }
         }
 
-        string _Ambiente = "ssurgwsoadev4-oci.opc.oracleoutsourcing.com";
+        string _Ambiente = "preproducciongestion.segurossura.com.ar";
 
         /// <summary>
         /// Gets or sets the value of variable Ambiente.
@@ -4489,6 +4489,7 @@ namespace SuraClaims
             RepoItemInfo _valor_importeapagarInfo;
             RepoItemInfo _txt_importeapagarconexprregInfo;
             RepoItemInfo _celda_importeInfo;
+            RepoItemInfo _celda_importemotorInfo;
             RepoItemInfo _input_beneficiarioInfo;
             RepoItemInfo _xgridbodyxgridwithcollinesxgridInfo;
             RepoItemInfo _fnolvehicleincidentpopupfnolvehicleinciInfo;
@@ -4586,6 +4587,7 @@ namespace SuraClaims
                 _valor_importeapagarInfo = new RepoItemInfo(this, "Valor_ImporteAPagar", ".//div[@innertext~'[0-9]']", "", 30000, null, "77760107-8889-4803-aad4-81d65b1e000b");
                 _txt_importeapagarconexprregInfo = new RepoItemInfo(this, "txt_ImporteAPagarConExprReg", ".//table[@class='x-grid-item']/tbody//td[@safeclass~'g-cell-edit [a-z-]+ x-grid-cell x-grid-cell-gridcolumn-[0-9]+ x-grid-td']/div", "", 30000, null, "d3757ff8-3f28-4d9d-affa-93961ef6728b");
                 _celda_importeInfo = new RepoItemInfo(this, "celda_Importe", ".//td/div[@innertext='Parcial']/../..//td/div[@innertext~$Importe and @innertext~'$']", "", 30000, null, "40f12907-d8c4-4f79-b64e-770e15d02e81");
+                _celda_importemotorInfo = new RepoItemInfo(this, "celda_ImporteMotor", ".//td/div[@innertext=$CausaPago]/../..//td/div[@innertext~'$' and @innertext~'[0-9]+' and @innertext!~$CausaPago]", "", 30000, null, "70aca38f-a19e-44a8-a225-290a494a0752");
                 _input_beneficiarioInfo = new RepoItemInfo(this, "input_Beneficiario", ".//table/tbody/tr[4]/td/div/div[2]/?/?/table/?/?/tr//table/tbody/tr[2]//table/tbody/tr[11]/td/div/div[3]/div[1]/div[1]/table/tbody/tr/td[2]/div", "", 30000, null, "318ebf83-4363-4923-ade9-7708225236fe");
                 _xgridbodyxgridwithcollinesxgridInfo = new RepoItemInfo(this, "XGridBodyXGridWithColLinesXGrid", ".//table/tbody/tr[4]/td/div/div[2]/?/?/table//div/table/tbody/tr[2]/td/div/table/tbody/tr[11]/td/div/div[3]", "", 30000, null, "886fd76a-3205-4f0e-b9b1-6a469100d48b");
                 _fnolvehicleincidentpopupfnolvehicleinciInfo = new RepoItemInfo(this, "FNOLVehicleIncidentPopupFNOLVehicleInci", "tr//table/tbody/tr[4]/td/div/div[2]/?/?/table/tbody/tr[1]//table//div/table/?/?/tr/td[1]/?/?/table/tbody/tr[17]/td/div/div/div/div[1]/input[@name='FNOLVehicleIncidentPopup:FNOLVehicleIncidentScreen:FireDamageQuestionsInputSet:fireFocus']", "", 30000, null, "35136b5e-6090-4e67-878c-59149d2e6e5b");
@@ -6704,6 +6706,30 @@ namespace SuraClaims
             }
 
             /// <summary>
+            /// The celda_ImporteMotor item.
+            /// </summary>
+            [RepositoryItem("70aca38f-a19e-44a8-a225-290a494a0752")]
+            public virtual Ranorex.DivTag celda_ImporteMotor
+            {
+                get
+                {
+                    return _celda_importemotorInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The celda_ImporteMotor item info.
+            /// </summary>
+            [RepositoryItemInfo("70aca38f-a19e-44a8-a225-290a494a0752")]
+            public virtual RepoItemInfo celda_ImporteMotorInfo
+            {
+                get
+                {
+                    return _celda_importemotorInfo;
+                }
+            }
+
+            /// <summary>
             /// The input_Beneficiario item.
             /// </summary>
             [RepositoryItem("318ebf83-4363-4923-ade9-7708225236fe")]
@@ -8753,6 +8779,7 @@ namespace SuraClaims
             RepoItemInfo _cell_contactoInfo;
             RepoItemInfo _gdvcolumnxcontainerxcontainerdefaInfo;
             RepoItemInfo _option_tipopagoparcialInfo;
+            RepoItemInfo _input_pagoparcialInfo;
             RepoItemInfo _copy_of_txttipopagopaso21Info;
 
             /// <summary>
@@ -8771,12 +8798,12 @@ namespace SuraClaims
                 _txt_codigoreciboInfo = new RepoItemInfo(this, "txt_CodigoRecibo", ".//tbody[#'centerPanel-tbody']//span[@innertext='Texto de recibo']/../..//textarea[@innertext~'[A-Z]+']", "", 30000, null, "3a48f820-7e6e-4030-8776-cceeeae52db6");
                 _arrow_selectlineareservaInfo = new RepoItemInfo(this, "arrow_SelectLineaReserva", ".//tbody[#'centerPanel-tbody']//div[@id='NormalCreateCheckWizard:CheckWizard_CheckPaymentsScreen:NewCheckPaymentPanelSet:NewPaymentDetailDV:ReserveLineInputSet:ReserveLine-trigger-picker']", "", 30000, null, "3dc91bca-1b05-42ca-ab04-80007792efee");
                 _option_lineareserva_aseguradoInfo = new RepoItemInfo(this, "option_LineaReserva_Asegurado", ".//li[@innertext~'1ª']", "", 30000, null, "8b36f745-0981-4400-9bcc-cfd4bded5cb4");
-                _copy_of_option_lineareserva_aseguradoInfo = new RepoItemInfo(this, "Copy_of_option_LineaReserva_Asegurado", ".//li[@innertext~'[A-Z]+' and @innertext!~'ninguna']", "", 30000, null, "a1ff42a3-2202-4107-a670-0ba41520778d");
+                _copy_of_option_lineareserva_aseguradoInfo = new RepoItemInfo(this, "Copy_of_option_LineaReserva_Asegurado", ".//li[@innertext~'[A-Z]+' and @innertext!~'ninguna' and @innertext!~'Fast Track']", "", 30000, null, "a1ff42a3-2202-4107-a670-0ba41520778d");
                 _txttipopagopaso2Info = new RepoItemInfo(this, "txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input", "", 30000, null, "4b15420f-5a87-41de-a98e-11831cf57486");
                 _copy_of_txttipopagopaso2Info = new RepoItemInfo(this, "Copy_of_txtTipoPagoPaso2", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago' and @data-tabindexsaved='True']/../..//input", "", 30000, null, "887f5bab-e720-4621-ba95-154067e358e6");
                 _txtbox_lineareservaInfo = new RepoItemInfo(this, "txtbox_LineaReserva", ".//tbody[#'centerPanel-tbody']//span[@innertext='Línea de reserva']/../..//input", "", 30000, null, "8d2ba8b4-903b-4fc1-a4b7-ef3a29c5f02f");
                 _tipopagopaso2Info = new RepoItemInfo(this, "TipoPagoPaso2", ".//li[@innertext~'Parcial']", "", 30000, null, "d620f5b0-d0cf-472d-867e-76a13e3f849d");
-                _txt_causadepagopaso2Info = new RepoItemInfo(this, "txt_CausaDePagoPaso2", ".//tbody[#'centerPanel-tbody']//div[@innertext='<ninguna>']", "", 30000, null, "3485d91d-51c2-4db4-a30e-4ab9f0a400c0");
+                _txt_causadepagopaso2Info = new RepoItemInfo(this, "txt_CausaDePagoPaso2", ".//tbody[#'centerPanel-tbody']//*[@innertext='<ninguna>']", "", 30000, null, "3485d91d-51c2-4db4-a30e-4ab9f0a400c0");
                 _option_causapagoInfo = new RepoItemInfo(this, "option_CausaPago", ".//li[@innertext~$CausaPago]", "", 30000, null, "b78f5e07-19e6-4952-8c99-6d6669a8bae9");
                 _copy_of_option_causapagoInfo = new RepoItemInfo(this, "Copy_of_option_CausaPago", ".//li[@innertext~$CausaPago and @data-tabindexsaved='True']", "", 30000, null, "bf1219c2-1942-45fe-ae64-313e17c70c7a");
                 _valor_importeapagarInfo = new RepoItemInfo(this, "Valor_ImporteAPagar", ".//tbody[#'centerPanel-tbody']//div[@innertext~'[0-9]']", "", 30000, null, "fd7fdef6-ed8d-406b-a780-3c5ac0e626c2");
@@ -8804,6 +8831,7 @@ namespace SuraClaims
                 _cell_contactoInfo = new RepoItemInfo(this, "cell_Contacto", ".//tbody[#'NewMatter-tbody']//div[@class='g-helper-cell-text']", "", 30000, null, "6f48e0d0-6a28-4d1d-8f85-5e90125987c9");
                 _gdvcolumnxcontainerxcontainerdefaInfo = new RepoItemInfo(this, "GDvColumnXContainerXContainerDefa", ".//tbody[#'NewServiceRequest-tbody']/tr[3]//table/tbody/tr[2]/?/?/div", "", 30000, null, "f5df43c3-dcdc-48ce-a1ab-8c24b533a37a");
                 _option_tipopagoparcialInfo = new RepoItemInfo(this, "option_TipoPagoParcial", ".//li[@innertext~'Parcial']", "", 30000, null, "95f5783a-7c98-452c-b845-55fb2d95cf1d");
+                _input_pagoparcialInfo = new RepoItemInfo(this, "input_PagoParcial", ".//span[@innertext~'Tipo de pago']/../..//input[@tagvalue~'Parcial']", "", 30000, null, "c68ce1f7-7de6-44b9-954e-f5b69aa332ad");
                 _copy_of_txttipopagopaso21Info = new RepoItemInfo(this, "Copy_of_txtTipoPagoPaso21", ".//tbody[#'centerPanel-tbody']//span[@innertext='Tipo de pago']/../..//input[@data-tabindexsaved='True']", "", 30000, null, "25a3d997-0eeb-4cba-bde8-06f82db4221f");
             }
 
@@ -9195,11 +9223,11 @@ namespace SuraClaims
             /// The txt_CausaDePagoPaso2 item.
             /// </summary>
             [RepositoryItem("3485d91d-51c2-4db4-a30e-4ab9f0a400c0")]
-            public virtual Ranorex.DivTag txt_CausaDePagoPaso2
+            public virtual Ranorex.Unknown txt_CausaDePagoPaso2
             {
                 get
                 {
-                    return _txt_causadepagopaso2Info.CreateAdapter<Ranorex.DivTag>(true);
+                    return _txt_causadepagopaso2Info.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 
@@ -9860,6 +9888,30 @@ namespace SuraClaims
                 get
                 {
                     return _option_tipopagoparcialInfo;
+                }
+            }
+
+            /// <summary>
+            /// The input_PagoParcial item.
+            /// </summary>
+            [RepositoryItem("c68ce1f7-7de6-44b9-954e-f5b69aa332ad")]
+            public virtual Ranorex.InputTag input_PagoParcial
+            {
+                get
+                {
+                    return _input_pagoparcialInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_PagoParcial item info.
+            /// </summary>
+            [RepositoryItemInfo("c68ce1f7-7de6-44b9-954e-f5b69aa332ad")]
+            public virtual RepoItemInfo input_PagoParcialInfo
+            {
+                get
+                {
+                    return _input_pagoparcialInfo;
                 }
             }
 

@@ -42,6 +42,7 @@ namespace SuraClaims.Pagos
         public ObtenerUsuarioParaAprobarPago()
         {
             NombreAprobadorPago = "";
+            NombreUsuario = "";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace SuraClaims.Pagos
         {
             get { return _NombreAprobadorPago; }
             set { _NombreAprobadorPago = value; }
+        }
+
+        string _NombreUsuario;
+
+        /// <summary>
+        /// Gets or sets the value of variable NombreUsuario.
+        /// </summary>
+        [TestVariable("6da07ea7-e883-402a-a133-a309d6c02bf9")]
+        public string NombreUsuario
+        {
+            get { return _NombreUsuario; }
+            set { _NombreUsuario = value; }
         }
 
         /// <summary>
@@ -116,6 +129,9 @@ namespace SuraClaims.Pagos
             Report.Log(ReportLevel.Info, "User", "El usuario que debe aprobar el pago es:", new RecordItemIndex(3));
             
             Report.Log(ReportLevel.Info, "User", NombreAprobadorPago, new RecordItemIndex(4));
+            
+            obtenerNombreUsuario();
+            Delay.Milliseconds(0);
             
         }
 

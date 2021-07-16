@@ -24,32 +24,31 @@ namespace SuraClaims.Pagos
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Paso2_IntroducirInfoPagoSiniestro recording.
+    ///The Paso2_IntroducirInfoPagoSiniestro_Motor recording.
     /// </summary>
-    [TestModule("250db27b-9f3d-4c29-9126-9d70d0958e48", ModuleType.Recording, 1)]
-    public partial class Paso2_IntroducirInfoPagoSiniestro : ITestModule
+    [TestModule("d75d1d77-da49-4d03-92bb-afbec1a51974", ModuleType.Recording, 1)]
+    public partial class Paso2_IntroducirInfoPagoSiniestro_Motor : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::SuraClaims.SuraClaimsRepository repository.
         /// </summary>
         public static global::SuraClaims.SuraClaimsRepository repo = global::SuraClaims.SuraClaimsRepository.Instance;
 
-        static Paso2_IntroducirInfoPagoSiniestro instance = new Paso2_IntroducirInfoPagoSiniestro();
+        static Paso2_IntroducirInfoPagoSiniestro_Motor instance = new Paso2_IntroducirInfoPagoSiniestro_Motor();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Paso2_IntroducirInfoPagoSiniestro()
+        public Paso2_IntroducirInfoPagoSiniestro_Motor()
         {
             Importe = "100";
-            CausaPago = "1-INDEMNIZACION";
             Ambiente = "preproducciongestion.segurossura.com.ar";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Paso2_IntroducirInfoPagoSiniestro Instance
+        public static Paso2_IntroducirInfoPagoSiniestro_Motor Instance
         {
             get { return instance; }
         }
@@ -69,7 +68,7 @@ namespace SuraClaims.Pagos
         /// <summary>
         /// Gets or sets the value of variable CausaPago.
         /// </summary>
-        [TestVariable("bac19b35-bb0d-4da7-842e-052197a827bc")]
+        [TestVariable("a2d5eee9-fb17-4618-ba38-ada13891d3bb")]
         public string CausaPago
         {
             get { return repo.CausaPago; }
@@ -79,7 +78,7 @@ namespace SuraClaims.Pagos
         /// <summary>
         /// Gets or sets the value of variable Importe.
         /// </summary>
-        [TestVariable("05670d16-f0eb-407d-8d6e-e98fa57edeb3")]
+        [TestVariable("a008f86d-cf1c-4cd2-b3b4-fa38fd7c5754")]
         public string Importe
         {
             get { return repo.Importe; }

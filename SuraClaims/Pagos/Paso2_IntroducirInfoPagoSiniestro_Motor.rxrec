@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="250db27b-9f3d-4c29-9126-9d70d0958e48"
+id="d75d1d77-da49-4d03-92bb-afbec1a51974"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,19 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Paso2_IntroducirInfoPagoSiniestro"
+	classname="Paso2_IntroducirInfoPagoSiniestro_Motor"
 	namespace="SuraClaims.Pagos">
 	</codegen>
 	<variables>
 		<var
-		id="05670d16-f0eb-407d-8d6e-e98fa57edeb3"
+		id="a008f86d-cf1c-4cd2-b3b4-fa38fd7c5754"
 		name="Importe">
 			100
-		</var>
-		<var
-		id="bac19b35-bb0d-4da7-842e-052197a827bc"
-		name="CausaPago">
-			1-INDEMNIZACION
 		</var>
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
@@ -790,7 +785,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Paso2_IntroducirInfoPagoSiniestro.UserCode.cs
+		Paso2_IntroducirInfoPagoSiniestro_Motor.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -1754,6 +1754,16 @@ name="SuraClaimsRepository">
 						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td/div[@innertext='Parcial']/../..//td/div[@innertext~$Importe and @innertext~'$']
 					</item>
 					<item
+					addcaps="unknown,webelement,tdtag"
+					capname="divtag"
+					id="70aca38f-a19e-44a8-a225-290a494a0752"
+					name="celda_ImporteMotor"
+					refimgid="1387d9e2-3a27-44fe-bbb3-8b18b0a6b542"
+					robustPath=""
+					searchtimeout="30000ms">
+						/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//td/div[@innertext=$CausaPago]/../..//td/div[@innertext~'$' and @innertext~'[0-9]+' and @innertext!~$CausaPago]
+					</item>
+					<item
 					addcaps="unknown,webelement,divtag"
 					capname="divtag"
 					id="318ebf83-4363-4923-ade9-7708225236fe"
@@ -3091,7 +3101,7 @@ name="SuraClaimsRepository">
 				refimgid="541e518f-d94b-47c2-bd71-701414865be4"
 				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+' and @innertext!~'ninguna']
+					/dom[@domain=$Ambiente]//li[@innertext~'[A-Z]+' and @innertext!~'ninguna' and @innertext!~'Fast Track']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -3135,13 +3145,13 @@ name="SuraClaimsRepository">
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
-				capname="divtag"
+				capname="unknown"
 				id="3485d91d-51c2-4db4-a30e-4ab9f0a400c0"
 				name="txt_CausaDePagoPaso2"
 				refimgid="802f65ce-7ccc-4ef1-b7c8-7413951c33b7"
 				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//div[@innertext='&lt;ninguna&gt;']
+					/dom[@domain=$Ambiente]//tbody[#'centerPanel-tbody']//*[@innertext='&lt;ninguna&gt;']
 				</item>
 				<item
 				addcaps="unknown,webelement,litag"
@@ -3417,6 +3427,16 @@ name="SuraClaimsRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain=$Ambiente]//li[@innertext~'Parcial']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="inputtag"
+				id="c68ce1f7-7de6-44b9-954e-f5b69aa332ad"
+				name="input_PagoParcial"
+				refimgid="2486bdeb-0af1-4b80-83db-489b47831221"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain=$Ambiente]//span[@innertext~'Tipo de pago']/../..//input[@tagvalue~'Parcial']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -5202,7 +5222,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="e7903828-6ac1-46d3-a887-f52fdafb621a"
 		name="Ambiente">
-			ssurgwsoadev4-oci.opc.oracleoutsourcing.com
+			preproducciongestion.segurossura.com.ar
 		</var>
 		<var
 		id="40d4fbbd-ac5c-4801-a089-9b02b3349092"

@@ -27,6 +27,10 @@ mode="Global">
 		id="b3b80e17-9472-4fa4-9ad6-9aea40ad62be"
 		name="NombreAprobadorPago">
 		</var>
+		<var
+		id="6da07ea7-e883-402a-a133-a309d6c02bf9"
+		name="NombreUsuario">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -123,6 +127,21 @@ mode="Global">
 				</binding>
 			</bindings>
 		</loggingrecorditem>
+		<userrecorditem
+		classname="ObtenerUsuarioParaAprobarPago"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="obtenerNombreUsuario"
+		namespace="SuraClaims.Pagos"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="5d3a3fd1-a1ee-4ed6-b22c-ff14204c9a99">
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="1f211d9f-6e4d-4e50-b07e-7fc5a1f035d7"

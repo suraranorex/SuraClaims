@@ -187,8 +187,8 @@
 			datasource="ValidarLitigios_SISE"
 			errorbehavior="ContinueNextIteration"
 			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9"
-			maxrange="0"
-			minrange="0"
+			maxrange="2"
+			minrange="2"
 			name="ValidarLitigio_SISE"
 			reportlevel="Warn;30">
 			</testcase>
@@ -882,8 +882,12 @@
 				</conditiongroup>
 			</smartfoldernode>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="PagosSiniestros"
+			errorbehavior="ContinueNextIteration"
 			id="23b8c9cb-08c4-4e6c-a1f6-4f08a85545f8"
+			maxrange="5"
+			minrange="5"
 			name="Pagos_y_aprobacion">
 				<parameters>
 					<param
@@ -1002,8 +1006,8 @@
 			datarangeactive="True"
 			datasource="AprobacionesPagos"
 			id="2baf817f-ea9f-4a11-b7dd-7a86a51f946c"
-			maxrange="0"
-			minrange="0"
+			maxrange="5"
+			minrange="3"
 			name="ValidarPago">
 			</testcase>
 			<testmodule
@@ -2071,6 +2075,12 @@
 			maxrange="0"
 			minrange="0"
 			name="Pagos_Siniestros">
+				<parameters>
+					<param
+					name="tipoPoliza"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<smartfoldernode
 			id="593f1988-8e55-4466-96aa-28003a8856b6"
@@ -2464,8 +2474,8 @@
 					<var
 					dataname="UsuarioAprobador"
 					datasourceid="23b8c9cb-08c4-4e6c-a1f6-4f08a85545f8"
-					variableid="b3b80e17-9472-4fa4-9ad6-9aea40ad62be"
-					variablename="NombreAprobadorPago">
+					variableid="6da07ea7-e883-402a-a133-a309d6c02bf9"
+					variablename="NombreUsuario">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4693,7 +4703,7 @@
 			errorbehavior="ContinueNextIteration"
 			id="bc3fb22a-a353-463b-9ee7-233d85169e9a"
 			maxrange="13"
-			minrange="7"
+			minrange="13"
 			name="GeneracionSiniestro_Motor">
 				<parameters>
 					<param
@@ -6184,14 +6194,6 @@
 					variablename="Ambiente">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="DANIOS"
-					datasourceid="5387c623-a1c1-4747-9f7b-2b9b983478aa"
-					variableid="73b293f5-81d3-4f77-9d30-008f1b362d6d"
-					variablename="DANIOS">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="faf0fe18-c109-47de-b7eb-c692b4530552"
@@ -7831,7 +7833,7 @@
 		filename="CrearAcuerdos.xlsx"
 		id="f0157bf7-3464-4ef7-99da-dd30ec2fa342"
 		includefile="Checked"
-		lastknownrowcount="7"
+		lastknownrowcount="5"
 		name="CrearAcuerdos"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -8559,7 +8561,7 @@
 		filename="Validacion_GeneracionSiniestro_SISE.xlsx"
 		id="83d78466-8533-4d57-9847-9d4f076d3f3a"
 		includefile="Checked"
-		lastknownrowcount="11"
+		lastknownrowcount="17"
 		name="ValidacionGeneracionSiniestro_SISE"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Hoja1"
@@ -8899,22 +8901,88 @@
 		<testconfiguration
 		name="PruebaIri">
 			<testcontainer
-			id="18220eea-a4f8-44f7-afd4-f60ddb93ec13">
+			id="0838144c-6ecf-41be-ad50-c922fb2e404f">
 			</testcontainer>
 			<testcontainer
-			id="74636897-ffc0-47a8-b8dd-7f508da01f4a">
+			id="0dbc2166-98e3-4f07-9a6c-ccc3a74988d9">
 			</testcontainer>
 			<testcontainer
-			id="933bb73e-3963-4c26-9146-e3cc6e6c3d52">
+			id="0fa01c9f-d57e-447f-b343-86361084ca76">
 			</testcontainer>
 			<testcontainer
-			id="96a34073-85b9-4de0-b2aa-76e1416c0701">
+			id="131f83e6-807b-424a-a3a0-7487f32f7c50">
+			</testcontainer>
+			<testcontainer
+			id="20c1fd1e-f8b7-42fd-87a0-378c1947272a">
+			</testcontainer>
+			<testcontainer
+			id="23b8c9cb-08c4-4e6c-a1f6-4f08a85545f8">
+			</testcontainer>
+			<testcontainer
+			id="2de0db2e-56e3-4c2f-9a69-5a7bf744697a">
+			</testcontainer>
+			<testcontainer
+			id="383f3d5a-562e-4b35-b27c-c98779199203">
+			</testcontainer>
+			<testcontainer
+			id="4665d240-f459-49f4-8e5e-a5b97379d41d">
+			</testcontainer>
+			<testcontainer
+			id="4a401cbb-e90c-4f99-8a3f-de77a7c54954">
+			</testcontainer>
+			<testcontainer
+			id="4b785685-d9a4-422f-bf84-c41d099771f3">
+			</testcontainer>
+			<testcontainer
+			id="5180fe8f-6894-45ed-b658-a0191278ff53">
+			</testcontainer>
+			<testcontainer
+			id="569181f3-2976-4be8-ac1f-332f09fab645">
+			</testcontainer>
+			<testcontainer
+			id="58368d11-e725-4331-93f0-6f443d6c9119">
+			</testcontainer>
+			<testcontainer
+			id="5d2b2626-baa1-4f9b-bb37-d9ccc0ced427">
+			</testcontainer>
+			<testcontainer
+			id="5f4a6c8a-a633-4625-b089-0b93cac91afb">
+			</testcontainer>
+			<testcontainer
+			id="701180cf-ebf5-4f10-b762-42f1121178f3">
+			</testcontainer>
+			<testcontainer
+			id="7112eb20-9985-4964-8f8a-199e6b184430">
+			</testcontainer>
+			<testcontainer
+			id="7e827998-0f7c-411b-9300-3ea4b417f597">
+			</testcontainer>
+			<testcontainer
+			id="89fa68a6-9618-4127-aaec-5d106b43550a">
+			</testcontainer>
+			<testcontainer
+			id="9a5e7377-0c9d-4ea0-9d8f-169c7a00e416">
 			</testcontainer>
 			<testcontainer
 			id="9e955975-c7b8-44cb-a041-f63a40bc3880">
 			</testcontainer>
 			<testcontainer
-			id="a2539f8a-17b0-4131-ac36-c1e1fbc82712">
+			id="badd9c3a-b6c9-49fe-b9eb-c3a207bd4be3">
+			</testcontainer>
+			<testcontainer
+			id="bc3fb22a-a353-463b-9ee7-233d85169e9a">
+			</testcontainer>
+			<testcontainer
+			id="be11fbf0-d0ab-4ec0-8bb8-75ff68a2c6c1">
+			</testcontainer>
+			<testcontainer
+			id="cb432aa2-813f-4ab6-9105-609d274a1598">
+			</testcontainer>
+			<testcontainer
+			id="e86717b1-fd17-4adc-aac7-94fc08ee7023">
+			</testcontainer>
+			<testcontainer
+			id="ec57de3c-79dd-4a9f-a227-a492aafc9e88">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
